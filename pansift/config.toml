@@ -88,6 +88,10 @@ description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Clou
         name    = "Contact"
         url     = "/contact"
         weight  = 6
+    [[menu.nav]]
+        name    = "Get 10 Free Screens"
+        url     = "https://client.pansift.com"
+        weight  = 7
     
     # Footer Service Menu
     [[menu.service]]

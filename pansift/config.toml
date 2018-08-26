@@ -1,0 +1,122 @@
+baseURL = "https://panland.netlify.com/"
+languageCode = "en-us"
+title = "PanSift. Technical recruitment and pre hire assessment test."
+theme = "navigator-hugo"
+description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent. Structured hiring. Technical recruitment pre hire assessment test. Competency based interview. Skills testing. Structured interview. Admin skills test."
+
+# Site Params
+[params]
+  og_image = "/images/pansift_social_client_v21.png"
+  googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
+  keywords = "technical recruitment, pre hire assessment test, skill assessment, skills assessment test, employment assessment test, pre employment assessment, competency based interview, skills testing, hiring assessment test, hiring assessments, router test, pre employment skills testing, employment skills test, employment testing services, new hire assessment tests, online employment testing, hrtech, hiring assessment tools, it technical assessment test, structured interview, admin skills test, employment screening software, job screening process, candidate screening process, pre employment testing software, candidate testing software, structured interview process, employee hiring assessment, scientific hiring, screening as a service, sourcing as a service, structured interview hiring, structured hiring, structured hiring process, take home assessment, job screening software, job screening tools, best job screening questions, automated applicant screening, technical recruitment tools, tech recruiting tools, tool hire recruitment, best new recruiting tools, quantitative aptitude amazon, aptitude test amazon, aptitude test cisco, aptitude test linux, aws skills assessment, free employment tests samples, candidate skills testing, free online competency assessment, employment agency skills test, free employment screening tests, pre employment assessment candidate, applicant testing software, pre employment technical skills, best pre employment testing, online candidate assessment"
+    home = "Home"
+    logo = "images/mini_header_bnw_v2.png"
+    dateFormat = "6 January 2006"
+    footerDescription = "The Best Technical Recruitment use a pre hire Assessment Test."
+
+    # Hero Area Section
+    [params.hero]
+        enable  = true
+        heading = "The Best Technical Recruitment use a pre hire Assessment Test."
+        description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent."
+        button  = true
+        btnText = "Get Started For Free"
+        btnURL  = "https://client.pansift.com/"
+        videoThumb = "images/slider/3_steps_v14.png"
+        videoURL   = "https://www.youtube.com/embed/I6untRQ8O6U"
+
+    # About 2 Section
+    [params.aboutSm]
+        enable  = true
+        title   = "We have explored the digital landscape with passion for a long time"
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+
+    # Blog Section On Homepage
+    [params.blog]
+        enable  = true
+        topTitle= "OUR UNTOLD STORY"
+        title   = "Blog."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+
+    # Call to Action Section on About Page
+    [params.cta]
+        enable  = true
+        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+        title   = "Let's Create Something Together"
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        btnText = "Contact Us"
+
+    # Contact Section
+    [params.contact]
+        enable  = true
+        topTitle= "DROP US A NOTE"
+        title   = "Contact Us."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        address = "14/05, Stockhome <br> Victori Palace , United States"
+        phone   = "(03) 9283 2617"
+        fax     = "+61 3827 3590"
+        facebook= "https://www.facebook.com/"
+        twitter = "https://twitter.com/"
+        linkedin= "https://www.linkedin.com/"
+        dribbble= "https://dribbble.com/"
+        instagram= "https://www.instagram.com/"
+        mapLatitude = "51.507351"
+        mapLongitude= "-0.127758"
+        mapMarker   = "images/marker.png"
+
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "About"
+        url     = "/about"
+        weight  = 2
+    [[menu.nav]]
+        name    = "Service"
+        url     = "/service"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Portfolio"
+        url     = "/portfolio"
+        weight  = 4
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "/blog"
+        weight  = 5
+    [[menu.nav]]
+        name    = "Contact"
+        url     = "/contact"
+        weight  = 6
+    
+    # Footer Service Menu
+    [[menu.service]]
+        name    = "Graphic Design"
+        url     = "/service"
+        weight  = 1
+    [[menu.service]]
+        name    = "Web Design"
+        url     = "/service"
+        weight  = 2
+    [[menu.service]]
+        name    = "Web Development"
+        url     = "/service"
+        weight  = 3
+
+    # Footer Quick links Menu
+    [[menu.quicklink]]
+        name    = "Partners"
+        url     = "/about"
+        weight  = 1
+    [[menu.quicklink]]
+        name    = "About"
+        url     = "/about"
+        weight  = 2
+    [[menu.quicklink]]
+        name    = "FAQ's"
+        url     = "/about"
+        weight  = 3
+    [[menu.quicklink]]
+        name    = "Badges"
+        url     = "/about"
+        weight  = 4

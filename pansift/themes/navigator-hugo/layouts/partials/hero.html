@@ -1,0 +1,37 @@
+{{ if .Site.Params.hero.enable }}
+{{ "<!-- Hero Area -->" | safeHTML }}
+<section class="hero-area">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <br />
+      <center>
+        <div id="video-bound" class="text-center" style="max-width: 720px; max-height: 450px;" style="background-color: black;">
+          <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" style="height: 100%; width:100%" data-setup='{"fluid": true}' poster="https://assets1.pansift.com/assets/3_steps_v14.png">
+          <source src="https://sim.pansift.com/hiring_v12.mp4" type='video/mp4'>
+          <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+          </video>
+        </div>
+      </center>
+    </div>
+    <div class="col-md-6">
+      <div class="block">
+        <h2><strong>The Best</strong> Technical Recruitment use a pre hire <strong>Assessment Test.</strong></h2>
+        {{ with .Site.Params.hero.description }}
+        <h5>{{ . }}</h5>
+        {{ end }}
+        <br />
+        <form onsubmit="event.preventDefault(); secondstage('try_email');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
+          <input type="email" name="try_email" id="try_email" placeholder="Enter your email">
+          <input type="submit" value="Get Started Free" style="cursor: pointer;">
+        </form>
+        <center><small>No strings, full access. No credit card required.</small></center>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{{ end }}

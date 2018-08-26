@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+{{ .Hugo.Generator }}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{{ .Site.Title }}</title>
+<meta content="{{ .Site.Params.description }}" name="description">
+<meta name="author" content="Pansift.com"> 
+<link rel="canonical" href="https://pansift.com/">
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
+
+<meta name="google-site-verification" content="{{ .Site.Params.Googleverification }}">
+
+<meta content="{{ .Site.Title }}" property="og:title">
+<meta content="{{ .Site.BaseURL }}" property="og:url">
+<meta content="{{ .Site.Params.og_image }}" property="og:image">
+<meta content="{{ .Site.Title }}" property="og:site_name">
+<meta content="{{ .Site.Params.description }}" property="og:description">
+<meta content="{{ .Site.Title }}" itemprop="name">
+<meta content="{{ .Site.Params.Description }}" itemprop="description">
+<meta content="{{ .Site.Params.og_image }}" itemprop="image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="{{ .Site.Title }}" name="twitter:title">
+<meta content="{{ .Site.Params.description }}" name="twitter:description">
+<meta content="{{ .Site.Params.og_image }}" name="twitter:image">
+<meta content="{{ .Site.Params.description }}" name="description">
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXBBXQJ');</script>
+<!-- End Google Tag Manager -->
+
+<script type='application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "VideoObject",
+    "contentUrl": "https://youtu.be/I6untRQ8O6U",
+    "playerType": "YouTube",
+    "uploadDate": "2018-08-25 18:21:23 +0100",
+    "thumbnailUrl": "https://i.ytimg.com/vi/I6untRQ8O6U/sddefault.jpg",
+    "description": "PanSift. Technical recruitment and pre hire assessment test.",
+    "name": "PanSift. The Best Technical Recruitment use a pre hire Assessment Test."
+}
+</script>
+
+
+<title>{{ .Site.Title }}</title>
+
+{{ "<!-- Mobile Specific Meta -->" | safeHTML }}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ "<!-- Favicon -->" | safeHTML }}
+<link rel="shortcut icon" type="image/x-icon" href="{{ "images/favicon.png" | absURL }}" />
+
+{{"<!-- Stylesheets -->" | safeHTML}}
+{{ "<!-- Themefisher Icon font -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "plugins/themefisher-font/style.css" | absURL }}">
+{{ "<!-- bootstrap.min css -->" | safeHTML}}
+<link rel="stylesheet" href="{{ "plugins/bootstrap/dist/css/bootstrap.min.css" | absURL }}">
+{{ "<!-- Lightbox.min css -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "plugins/lightbox2/dist/css/lightbox.min.css" | absURL }}">
+{{ "<!-- Slick Carousel -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "plugins/slick-carousel/slick/slick.css" | absURL }}">
+<link rel="stylesheet" href="{{ "plugins/slick-carousel/slick/slick-theme.css" | absURL }}">
+{{ "<!-- VideoJS -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "plugins/videojs/dist/css/video-js.min.css" | absURL }}">
+<link rel="stylesheet" href="{{ "plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}">
+{{ "<!-- Main Stylesheet -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+
+</head>
+
+<body id="body">

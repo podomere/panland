@@ -1,32 +1,68 @@
 {{ if .Site.Data.simulate.enable }}
-{{ "<!-- Service Section Start -->" | safeHTML }}
-<section class="service-list section bg-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="title text-center">
-                    {{ with .Site.Data.simulate.topTitle }}<h4>{{.}}</h4>{{ end }}
-                    {{ with .Site.Data.simulate.title }}<h2>{{.}}</h2><span class="border"></span>{{ end }}
-                    {{ with .Site.Data.simulate.subtitle }}<p>{{.}}</p>{{ end }}
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            {{ range .Site.Data.simulate.item }}
-            <div class="col-md-4">
-                <div class="block">
-                    {{ with .icon }}<i class="{{.}}"></i>{{ end }}
-                    {{ with .title }}<h3>{{.}}</h3>{{ end }}
-                    <ul>
-                        {{ range .list }}
-                        <li>{{.name}}</li>
-                        {{ end }}
-                    </ul>
-                </div>
-            </div>
-            {{ end }}
-        </div>
+{{ "<!-- Simulate Section Start -->" | safeHTML }}
+<section class="service-list section bg-white">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="title text-center">
+        {{ with .Site.Data.simulate.topTitle }}<h4>{{.}}</h4>{{ end }}
+        {{ with .Site.Data.simulate.title }}<h2>{{.}}</h2><span class="border"></span>{{ end }}
+        {{ with .Site.Data.simulate.subtitle }}<p>{{.}}</p>{{ end }}
+      </div>
     </div>
+  </div>
+  <div class="row">
+    {{ range .Site.Data.simulate.item }}
+    <div class="col-md-12">
+      <div id="mapholder">
+        <div id="mapid" style="z-index: 100; height: 250px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="address-block contact-meta-block">
+        <i class="fas fa-flask"></i>
+        <h4>NetDevOps</h4>
+        <p>git, AWS, ansible..</p>
+        <a class="btn btn-main" href="https://sim.pansift.com/simdemo/go?sim=netdevops">Instant Challenge</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="address-block contact-meta-block">
+        <i class="fas fa-flask"></i>
+        <h4>Amazon AWS</h4>
+        <p>EC2, S3, ELB, IAM..</p>
+        <a class="btn btn-main" href="https://sim.pansift.com/simdemo/go?sim=amazon">Instant Challenge</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="address-block contact-meta-block">
+        <i class="fas fa-flask"></i>
+        <h4>Cisco R&S</h4>
+        <p>IP, VLAN, STP, OSPF, BGP..</p>
+        <a class="btn btn-main" href="https://sim.pansift.com/simdemo/go?sim=cisco">Instant Challenge</a>
+      </div>
+    </div>
+<div class="col-12 col-md-4">
+      <div class="address-block contact-meta-block">
+        <i class="fas fa-flask"></i>
+        <h4>Linux POSIX basics</h4>
+        <p>Go back to basics with your CLI.</p>
+        <a class="btn btn-main" href="https://sim.pansift.com/simdemo/go?sim=linux">Instant Challenge</a>
+      </div>
+    </div>
+<div class="col-12 col-md-4">
+      <div class="address-block contact-meta-block">
+        <i class="fas fa-flask"></i>
+        <h4>802.11 PCAPs</h4>
+        <p>Get your t-shark skills on !</p>
+        <a class="btn btn-main" href="https://sim.pansift.com/simdemo/go?sim=802.11">Instant Challenge</a>
+      </div>
+    </div>  
+</div>
+</div>
 </section>
-{{ "<!-- Service Section Start -->" | safeHTML }}
+{{ "<!-- Simulate Section Start -->" | safeHTML }}
 {{ end }}

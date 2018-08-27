@@ -1,7 +1,7 @@
 enable    : true
-topTitle  : Trust But Veryify
-title     : Simulate
-subtitle  : Have a trusted advisor or engineer take an immediate assessment. Try a technical lab simulation. No login required.  Desktop / laptop candidate challenge only.
+topTitle  : Trust But Verify
+title     : Candidate Simulations
+subtitle  : Have a trusted advisor or engineer try out an immediate example assessment. No sign up or log in required as you are dropped straight in to a live lab simulation. Desktop / laptop challenge only.
 item      :
   - icon  : tf-ion-ios-copy-outline
     title : Branding
@@ -10,19 +10,3 @@ item      :
       - name : Advertising / Campaigns  
       - name : Product Design
       - name : Video / Photography
-
-  - icon  : tf-ion-ios-alarm-outline
-    title : Branding
-    list  :
-      - name : Web Design
-      - name : E- Commerce Site Design
-      - name : App Development
-      - name : Mobile UI Design
-
-  - icon  : tf-ion-ios-book-outline
-    title : IOS App Development
-    list  :
-      - name : Game Development
-      - name : Game Design
-      - name : Social Media Marketing
-      - name : Mobile UI Design

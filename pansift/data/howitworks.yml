@@ -1,16 +1,8 @@
 enable    : true
-topTite   : LITTLE MORE BRIEF
+topTite   : Trust But Verify
 title     : Simulation Based Screening
 subtitle  : Uncover the difference between theory and practice!
 tabItem   :
-  - id        : browser
-    title     : Browser Based
-    heading   : Simulations require online engagement.
-    content   : >
-      Candidates / applicants must engage in real-world tasks and simulations to demonstrate their skills and unlock answers. Labs ( CLI / GUI ) are via browser on standard web ports.
-    image     : images/howitworks/cloud.jpg
-    icon      : fas fa-cloud
-
   - id        : multi
     title     : Multi-Skilling
     heading   : Screens use real world simulations to score candidates.
@@ -18,6 +10,15 @@ tabItem   :
      Choose from pre-defined simulations for screening candidates. Alternatively you can drag and drop skills (from our library) to build your own simulations.
     image     : images/howitworks/cogs.jpg
     icon      : fas fa-cogs
+
+  - id        : browser
+    title     : Browser Based
+    heading   : Simulations require online engagement.
+    content   : >
+      Candidates / applicants must engage in real-world tasks and simulations to demonstrate their skills and unlock answers. Labs ( CLI / GUI ) are via browser on standard web ports.
+    image     : images/howitworks/cloud.jpg
+    icon      : fas fa-cloud-upload-alt
+
 
   - id        : time
     title     : Time Boxed

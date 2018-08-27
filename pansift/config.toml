@@ -29,7 +29,8 @@ theme = "navigator-hugo"
     # About 2 Section
     [params.aboutSm]
         enable  = true
-        title   = "CVs are both broken and bias. Use actionable data to support decision making."
+        title   = "CVs are broken and bias." 
+        subtitle = "Use actionable data to support decision making throughout the hiring funnel."
 
     # Blog Section On Homepage
     [params.blog]
@@ -41,9 +42,9 @@ theme = "navigator-hugo"
     # Call to Action Section on About Page
     [params.cta]
         enable  = true
-        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+        bg      = "images/call-to-action/cockpit_v3.jpg"
         title   = "Engineering or hiring leader?"
-        subtitle= "No strings, full access with 10 free screens. Take a quick test flight."
+        subtitle= "Take a quick test flight with 10 free screens."
         btnText = "Get Started Free"
 
     # Contact Section

@@ -5,6 +5,7 @@
         <div class="row">
             <div class="col">
                 <div class="title">
+                    {{ with .Site.Data.simulate.topTitle }}<h4>{{.}}</h4>{{ end }}
                     {{ with .Site.Data.howitworks.topTitle }}<h4>{{ . }}</h4>{{ end }}
                     {{ with .Site.Data.howitworks.title }}
                     <h2>{{ . }}</h2>

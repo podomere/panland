@@ -11,8 +11,8 @@
   // }
 
   /* $(window).on("load",function(){
-    $('#preloader').fadeOut('slow',function(){$(this).remove();});
-  }); */
+     $('#preloader').fadeOut('slow',function(){$(this).remove();});
+     }); */
 
   /* ========================================================================= */
   /*	Portfolio Filtering Hook
@@ -256,6 +256,42 @@
                   }]
       });
     }, 1000);
+  }
+
+  if ($('#mapid').length) {
+    var mymap = null;
+      var  mymap = L.map('mapid',{zoomControl: false, minZoom: 2, maxZoom: 2, zoom: 2}).setView([53, 6], 2);
+      L.tileLayer('https://api.mapbox.com/styles/v1/pansift/cjj4p9yei4ig22srzi0315fpm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGFuc2lmdCIsImEiOiJjamo0NTZmcGUxZ2d1M2txZzFlYWFzcWF5In0.SP3kz57m0HFfNU_EubbMYA').addTo(mymap);
+      function new_challenge(lat,lng) {
+        var popup = L.popup({closeButton:false})
+      .setLatLng([lat, lng])
+      .setContent("<center><b>Practice Simulation Taken</b></center>")
+      .openOn(mymap);
+    L.marker([lat, lng], {zIndexOffset: 1000}).addTo(mymap);
+      }
+      $.get("https://sim.pansift.com/pracsimlocs?max=1000", function(data, status, xhr){
+        // console.log(data);
+        // console.log(xhr.status);
+        if (data !== undefined && Array.isArray(data) && xhr.status === 200){
+          var numData = data.length;
+          var halfData = Math.floor(numData/2)
+        // console.log(numData);
+        var index = 0;
+      for (index = 0; index < Math.floor(data.length/2); index++) {
+        var lat = data[index].split(',')[0];
+        var lng = data[index].split(',')[1];
+        L.marker([lat, lng], {opacity: 0.7}).addTo(mymap);
+      }
+      var secondindex = halfData;
+      setInterval(function() {
+        var lat = data[secondindex].split(',')[0];
+        var lng = data[secondindex].split(',')[1];
+        new_challenge(lat,lng);
+        // console.log(data[index]);
+        secondindex = (secondindex + 1) % (numData);
+      }, (Math.floor(Math.random() * (10000 - 4000 + 1) + 4000)));
+        }
+      });
   }
 
 })(jQuery);

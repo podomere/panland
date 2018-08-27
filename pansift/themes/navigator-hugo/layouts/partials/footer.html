@@ -60,7 +60,9 @@
 <script src="{{ "plugins/mixitup/dist/mixitup.min.js" | absURL }}"></script>
 {{ "<!-- Video js -->" | safeHTML }}
 <script src="{{ "plugins/videojs/dist/js/video.min.js" | absURL }}"></script>
-<script src="{{ "plugins/videojs-overlay/dist/js/videojs-overlay.min.js" | absURL }}"></script>
+<script async src="{{ "plugins/videojs-overlay/dist/js/videojs-overlay.min.js" | absURL }}"></script>
+{{ "<!-- Leaflet js -->" | safeHTML }}
+<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
 {{ "<!-- Custom js -->" | safeHTML }}
 <script src="{{ "js/script.js" | absURL }}"></script>
 

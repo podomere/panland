@@ -1,19 +1,21 @@
 {{ if .Site.Params.aboutSm.enable }}
 {{ "<!-- Start About Section -->" | safeHTML }}
-<section class="about-2 section bg-gray" id="about">
+<section class="about-2 section bg-gray" id="about" style="padding: 50px 0 !important;">
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-5">
       {{ with .Site.Params.aboutSm.title }}
-      <h2>{{ . }}</h2>
+      <h2>{{ . | safeHTML }}</h2>
+      {{ end }}
+      {{ with .Site.Params.aboutSm.subtitle }}
+      <h5>{{ . | safeHTML }}</h5>
       {{ end }}
     </div>
     <div class="col-12 col-md-7">
       <center>
-      <form onsubmit="event.preventDefault(); secondstage('footer_email1');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
-        <input type="email" name="try_email" id="footer_email1" placeholder="Enter your email">
-        <input type="submit" value="Get Started Free" style="cursor: pointer;">
-      </form>
+        <i class="fas fa-database fa-5x ml-3 mt-5"></i>
+        <i class="fas fa-chart-pie fa-5x ml-3 mt-5"></i>
+        <i class="fas fa-chart-bar fa-5x ml-3 mt-5"></i>
       </center>
     </div>
   </div>

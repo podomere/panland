@@ -1,11 +1,11 @@
 {{ if .Site.Params.cta.enable }}
 {{ "<!-- Start Call To Action -->" | safeHTML }}
-<section class="call-to-action section" style='background-image: url("{{ .Site.Params.cta.bg | absURL }}");'>
+<section class="call-to-action section" style='background-image: url("{{ .Site.Params.cta.bg | absURL }}");height: 100%; width: 100%;'>
     <div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				{{ with .Site.Params.cta.title }}<h2>{{ . }}</h2>{{ end }}
-                {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
+				{{ with .Site.Params.cta.title }}<h2>{{ . | safeHTML }}</h2>{{ end }}
+        {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
 			</div>
     <div class="col-md-12">
       <center>
@@ -13,6 +13,7 @@
         <input type="email" name="try_email" id="cta_email" placeholder="Enter your email">
         <input type="submit" value="Get Started Free" style="cursor: pointer;">
       </form>
+      <small>No strings, full access. <strong>No credit card required.</strong></small>
       </center>
     </div>
 		</div>

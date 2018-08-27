@@ -1,18 +1,18 @@
-{{ if .Site.Data.service.enable }}
+{{ if .Site.Data.simulate.enable }}
 {{ "<!-- Service Section Start -->" | safeHTML }}
 <section class="service-list section bg-gray">
     <div class="container">
         <div class="row">
             <div class="col">
                 <div class="title text-center">
-                    {{ with .Site.Data.service.topTitle }}<h4>{{.}}</h4>{{ end }}
-                    {{ with .Site.Data.service.title }}<h2>{{.}}</h2><span class="border"></span>{{ end }}
-                    {{ with .Site.Data.service.subtitle }}<p>{{.}}</p>{{ end }}
+                    {{ with .Site.Data.simulate.topTitle }}<h4>{{.}}</h4>{{ end }}
+                    {{ with .Site.Data.simulate.title }}<h2>{{.}}</h2><span class="border"></span>{{ end }}
+                    {{ with .Site.Data.simulate.subtitle }}<p>{{.}}</p>{{ end }}
                 </div>
             </div>
         </div>
         <div class="row">
-            {{ range .Site.Data.service.item }}
+            {{ range .Site.Data.simulate.item }}
             <div class="col-md-4">
                 <div class="block">
                     {{ with .icon }}<i class="{{.}}"></i>{{ end }}

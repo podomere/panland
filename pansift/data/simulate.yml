@@ -1,7 +1,7 @@
 enable    : true
-topTitle  : A LIST OF SERVICES
-title     : Our Service.
-subtitle  : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+topTitle  : Trust But Veryify
+title     : Simulate
+subtitle  : Have a trusted advisor or engineer take an immediate assessment. Try a technical lab simulation. No login required.  Desktop / laptop candidate challenge only.
 item      :
   - icon  : tf-ion-ios-copy-outline
     title : Branding

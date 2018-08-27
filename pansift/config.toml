@@ -2,12 +2,13 @@ baseURL = "https://panland.netlify.com/"
 languageCode = "en-us"
 title = "PanSift. Technical recruitment and pre hire assessment test."
 theme = "navigator-hugo"
-description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent. Structured hiring. Technical recruitment pre hire assessment test. Competency based interview. Skills testing. Structured interview. Admin skills test."
 
 # Site Params
 [params]
+  description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent. Structured hiring. Technical recruitment pre hire assessment test. Competency based interview. Skills testing. Structured interview. Admin skills test."
   og_image = "/images/pansift_social_client_v21.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
+  microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
   keywords = "technical recruitment, pre hire assessment test, skill assessment, skills assessment test, employment assessment test, pre employment assessment, competency based interview, skills testing, hiring assessment test, hiring assessments, router test, pre employment skills testing, employment skills test, employment testing services, new hire assessment tests, online employment testing, hrtech, hiring assessment tools, it technical assessment test, structured interview, admin skills test, employment screening software, job screening process, candidate screening process, pre employment testing software, candidate testing software, structured interview process, employee hiring assessment, scientific hiring, screening as a service, sourcing as a service, structured interview hiring, structured hiring, structured hiring process, take home assessment, job screening software, job screening tools, best job screening questions, automated applicant screening, technical recruitment tools, tech recruiting tools, tool hire recruitment, best new recruiting tools, quantitative aptitude amazon, aptitude test amazon, aptitude test cisco, aptitude test linux, aws skills assessment, free employment tests samples, candidate skills testing, free online competency assessment, employment agency skills test, free employment screening tests, pre employment assessment candidate, applicant testing software, pre employment technical skills, best pre employment testing, online candidate assessment"
     home = "Home"
     logo = "images/mini_header_bnw_v2.png"
@@ -28,7 +29,7 @@ description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Clou
     # About 2 Section
     [params.aboutSm]
         enable  = true
-        title   = "Engineering or Hiring Leader? Reduce risk and decrease costs with a pre hire assessment test."
+        title   = "CVs are both broken and bias. Use actionable data to support decision making."
 
     # Blog Section On Homepage
     [params.blog]
@@ -41,9 +42,9 @@ description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Clou
     [params.cta]
         enable  = true
         bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-        title   = "Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-        btnText = "Contact Us"
+        title   = "Engineering or hiring leader?"
+        subtitle= "No strings, full access with 10 free screens. Take a quick test flight."
+        btnText = "Get Started Free"
 
     # Contact Section
     [params.contact]
@@ -54,11 +55,8 @@ description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Clou
         address = "14/05, Stockhome <br> Victori Palace , United States"
         phone   = "(03) 9283 2617"
         fax     = "+61 3827 3590"
-        facebook= "https://www.facebook.com/"
         twitter = "https://twitter.com/"
         linkedin= "https://www.linkedin.com/"
-        dribbble= "https://dribbble.com/"
-        instagram= "https://www.instagram.com/"
         mapLatitude = "51.507351"
         mapLongitude= "-0.127758"
         mapMarker   = "images/marker.png"
@@ -94,32 +92,32 @@ description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Clou
     
     # Footer Service Menu
     [[menu.service]]
-        name    = "Graphic Design"
-        url     = "/service"
+        name    = "How It Works"
+        url     = "/howitworks"
         weight  = 1
     [[menu.service]]
-        name    = "Web Design"
-        url     = "/service"
+        name    = "How It Works"
+        url     = "/howitworks"
         weight  = 2
     [[menu.service]]
-        name    = "Web Development"
-        url     = "/service"
+        name    = "How It Works"
+        url     = "/howitworks"
         weight  = 3
 
     # Footer Quick links Menu
     [[menu.quicklink]]
-        name    = "Partners"
-        url     = "/about"
+        name    = "How It Works"
+        url     = "/howitworks"
         weight  = 1
     [[menu.quicklink]]
-        name    = "About"
-        url     = "/about"
+        name    = "Pricing"
+        url     = "/pricing"
         weight  = 2
     [[menu.quicklink]]
         name    = "FAQ's"
-        url     = "/about"
+        url     = "/faq"
         weight  = 3
     [[menu.quicklink]]
-        name    = "Badges"
-        url     = "/about"
+        name    = "Team"
+        url     = "/team"
         weight  = 4

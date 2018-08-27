@@ -6,8 +6,15 @@
 			<div class="col-md-12 text-center">
 				{{ with .Site.Params.cta.title }}<h2>{{ . }}</h2>{{ end }}
                 {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
-				{{ with .Site.Params.cta.btnText }}<a href="{{ "/contact" | absURL }}" class="btn btn-main">{{ . }}</a>{{ end }}
 			</div>
+    <div class="col-md-12">
+      <center>
+      <form onsubmit="event.preventDefault(); secondstage('cta_email');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
+        <input type="email" name="try_email" id="cta_email" placeholder="Enter your email">
+        <input type="submit" value="Get Started Free" style="cursor: pointer;">
+      </form>
+      </center>
+    </div>
 		</div>
 	</div>
 </section>

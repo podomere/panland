@@ -10,7 +10,8 @@
 <link rel="canonical" href="https://pansift.com/">
 <meta name="keywords" content="{{ .Site.Params.keywords }}">
 
-<meta name="google-site-verification" content="{{ .Site.Params.Googleverification }}">
+<meta name="google-site-verification" content="{{ .Site.Params.GoogleVerification }}">
+<meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}">
 
 <meta content="{{ .Site.Title }}" property="og:title">
 <meta content="{{ .Site.BaseURL }}" property="og:url">
@@ -55,8 +56,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {{ "<!-- Favicon -->" | safeHTML }}
-<link rel="shortcut icon" type="image/x-icon" href="{{ "images/favicon.png" | absURL }}" />
-
+<link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+ 
 {{"<!-- Stylesheets -->" | safeHTML}}
 {{ "<!-- Themefisher Icon font -->" | safeHTML }}
 <link rel="stylesheet" href="{{ "plugins/themefisher-font/style.css" | absURL }}">

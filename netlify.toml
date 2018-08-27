@@ -32,11 +32,7 @@ HUGO_ENABLEGITINFO = "true"
 
 [[headers]]
   for = "/plugins/themefisher-font/fonts/*.woff"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Content-Type = "application/font-woff"
-
   for = "/plugins/themefisher-font/fonts/*.ttf"
   [headers.values]
     Access-Control-Allow-Origin = "*"
-    Content-Type = "application/font-ttf"
+    Content-Type = "application/font-woff"

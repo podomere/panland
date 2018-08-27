@@ -4,7 +4,7 @@
     <div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				{{ with .Site.Params.cta.title }}<h2>{{ . | safeHTML }}</h2>{{ end }}
+				{{ with .Site.Params.cta.title }}<h1>{{ . | safeHTML }}</h1>{{ end }}
         {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
 			</div>
     <div class="col-md-12">

@@ -1,45 +1,22 @@
 enable  : true
-topTitle: TEAM MEMBER
+topTitle: We are connectors.
 title   : Our Team.
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+subtitle: With a heavy focus on connecting people and building community, we also architect, automate, and build a broad spectrum of platforms and solutions.
 
 member  :
-  - image         : images/team/member-1.jpg
-    name          : Shawshank Redemption
-    designation   : Head Of Marketing
+  - image         : images/team/donal_profile.jpg
+    name          : Donal O Duibhir
+    designation   : Founder / CTO
     description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+      Donal is a buddhist informed permaculture network geek who sees everything as interconnected. From corporate multinationals, to startups, farming, and chasing unicorns... you might find him digging potatoes, tweaking the RF/Wifi in a coworking space, designing a data-centre fabric, or developing web apps.... <br /><br />CCNP, CCDP, CISSP #32103, CWNA, JNCIA, PACE, B.Sc. Comp Sci.
+    linkedinURL   : https://linkedin.com/in/podomere
+    twitterURL    : https://twitter.com/irldexter
 
-  - image         : images/team/member-2.jpg
-    name          : Leo Departure
-    designation   : Web Developer
+  - image         : images/team/cristian_profile.jpg
+    name          : Cristian Sirbu
+    designation   : Advisor
     description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+      Cristian is a network engineer, trainer, and community builder with a particular interest in design / architecture, automation, and solving business problems with technology. He's been around a while, building, breaking, and fixing networks of various sorts and sizes, while also having fun coding and admining systems.<br /><br /> CCIE #43453, JCNIA, B.Eng.Comp Sci, M.Sc. Mobile and High Speed Telecommunications Networks
+    linkedinURL   : https://www.linkedin.com/in/sirbucristian/
+    twitterURL    : https://twitter.com/cmsirbu
 
-  - image         : images/team/member-3.jpg
-    name          : Remoni Rio
-    designation   : Senior Developer
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-
-  - image         : images/team/member-4.jpg
-    name          : Lawandeski Roma
-    designation   : Designer
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/

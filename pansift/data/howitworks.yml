@@ -5,7 +5,7 @@ subtitle  : Uncover the difference between theory and practice!
 tabItem   :
   - id        : multi
     title     : Multi-Skilling
-    heading   : Screens use real world simulations to score candidates.
+    heading   : Screens use real world simulations to evaluate candidates hard skills.
     content   : >
      Choose from pre-defined simulations for screening candidates. Alternatively you can drag and drop skills (from our library) to build your own simulations.
     image     : images/howitworks/cogs.jpg

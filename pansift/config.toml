@@ -52,16 +52,11 @@ theme = "navigator-hugo"
         enable  = true
         topTitle= "DROP US A NOTE"
         title   = "Contact Us."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-        address = "14/05, Stockhome <br> Victori Palace , United States"
-        phone   = "(03) 9283 2617"
-        fax     = "+61 3827 3590"
-        twitter = "https://twitter.com/"
-        linkedin= "https://www.linkedin.com/"
-        mapLatitude = "51.507351"
-        mapLongitude= "-0.127758"
-        mapMarker   = "images/marker.png"
-
+        subtitle= "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent. Structured hiring."
+        address = "Unit 23, Trinity Technology & Enterprise Campus, <br />Dublin 2, D02WR66, Ireland"
+        email   = "info@pansift.com"
+        twitter = "https://twitter.com/pansifter"
+        linkedin= "https://www.linkedin.com/company/pansift"
 
 # Site Menus
 [menu]
@@ -71,24 +66,24 @@ theme = "navigator-hugo"
         url     = "/howitworks"
         weight  = 2
     [[menu.nav]]
-        name    = "Service"
-        url     = "/service"
+        name    = "Simulate"
+        url     = "/simulate"
         weight  = 3
     [[menu.nav]]
-        name    = "Portfolio"
-        url     = "/portfolio"
+        name    = "Why"
+        url     = "/why"
         weight  = 4
     [[menu.nav]]
         name    = "Blog"
         url     = "/blog"
         weight  = 5
     [[menu.nav]]
-        name    = "Contact"
-        url     = "/contact"
+        name    = "Team"
+        url     = "/team"
         weight  = 6
     [[menu.nav]]
-        name    = "Get 10 Free Screens"
-        url     = "https://client.pansift.com"
+        name    = "Log In"
+        url     = "https://client.pansift.com/clients/sign_in"
         weight  = 7
     
     # Footer Service Menu

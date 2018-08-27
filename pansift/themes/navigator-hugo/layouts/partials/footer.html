@@ -1,44 +1,52 @@
 {{ "<!-- Footer Start -->" | safeHTML }}
 <footer id="footer" class="bg-one">
-    <div class="top-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>About</h3>
-                    {{ with .Site.Params.footerDescription }}<p>{{ . }}</p>{{ end }}
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Our Services</h3>
-                    <ul>
-                        {{ range .Site.Menus.service }}
-                        <li>
-                            <a href="{{ .URL }}">{{ .Name }}</a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        {{ range .Site.Menus.quicklink }}
-                        <li>
-                            <a href="{{ .URL }}">{{ .Name }}</a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Subscribe Now</h3>
-                    <form class="subscribe-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                        <button type="submit" class="btn btn-main-sm">Subscribe Now</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+<div class="top-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <h3>About</h3>
+        <ul>
+          <li>
+          <a href="https://defensible.ie" target="_blank">Defensible Limited</a>
+          </li>
+          <li>
+          <p>CRO: 610070, TAX / VAT: IE 3490731JH</p>
+          </li>
+          <li>
+          <a href="https://sim.pansift.com/privacy/privacy.html" target="_blank">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <h3>Our Services</h3>
+        <ul>
+          {{ range .Site.Menus.service }}
+          <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>
+          <a href="https://stackshare.io/pansift/pansift" target="_blank"><img src=""> </a>
+          </li>
+          {{ range .Site.Menus.quicklink }}
+          <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <h3>Special Offer</h3>
+        <a class="btn btn-main" href="https://client.pansift.com">Get 10 Free Screens</a>
+      </div>
     </div>
+  </div>
+</div>
 </footer>
 {{ "<!-- end footer -->" | safeHTML }}
 

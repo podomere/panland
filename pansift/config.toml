@@ -40,6 +40,12 @@ summaryLength = 30
         title   = "Raise the Bar : Blog"
         subtitle= "Tactics, techniques and procedures for keeping pace with modern technology!"
 
+    # Time to Hire Section
+    [params.tth]
+        enable  = true
+        title   = "Time to Hire"
+        subtitle= "Reduce your Time to Hire and be confident you don't lose the best candidates"
+
     # Call to Action Section on About Page
     [params.cta]
         enable  = true
@@ -54,7 +60,7 @@ summaryLength = 30
         topTitle= "DROP US A NOTE"
         title   = "Contact Us."
         subtitle= "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent. Structured hiring."
-        address = "Unit 23, Trinity Technology & Enterprise Campus, <br />Dublin 2, D02WR66, Ireland"
+        address = "Unit 23, Trinity Technology & Enterprise Campus, Dublin 2, D02WR66, Ireland"
         email   = "info@pansift.com"
         twitter = "https://twitter.com/pansifter"
         linkedin= "https://www.linkedin.com/company/pansift"
@@ -67,12 +73,12 @@ summaryLength = 30
         url     = "/howitworks"
         weight  = 2
     [[menu.nav]]
-        name    = "Simulate"
-        url     = "/simulate"
-        weight  = 3
-    [[menu.nav]]
         name    = "Why"
         url     = "/why"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Simulate"
+        url     = "/simulate"
         weight  = 4
     [[menu.nav]]
         name    = "Blog"

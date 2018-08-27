@@ -1,0 +1,19 @@
+{{ if .Site.Params.tth.enable }}
+{{ "<!-- Start TTH Section -->" | safeHTML }}
+<section class="section bg-white" id="tth" style="padding: 50px 0 !important;">
+<div class="row">
+  <div class="col">
+    <div class="title text-center">
+      {{ with .Site.Params.tth.title }}
+      <h2>{{ . | safeHTML }}</h2>
+      {{ end }}
+      <p>
+      <a href="" ><img class="img-fluid" src="/images/blog/time-to-hire-image-v7.png" width="1024" height="551"></a>
+      </p>
+
+    </div>
+  </div>
+</div>
+</section>
+{{ "<!-- End TTH section -->" | safeHTML }}
+{{ end }}

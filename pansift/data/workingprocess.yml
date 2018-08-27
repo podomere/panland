@@ -19,13 +19,13 @@ item    :
     icon    : fas fa-globe-americas
     title   : Flexible (Online)
     description : >
-      Candidates have flexibility to complete from anywhere (local or remote screening without travel) and at their own pace. ✓
+      Candidates have flexibility to complete from anywhere (e.g. local or remote screening without any travel time) and at their own pace. ✓
 
   - number  : 4
     icon    : fas fa-filter
     title   : Filters (Implicitly)
     description : >
-     By requesting a screen you are implicitly checking an applicants commitment to engaging in the hiring process (i.e. the validity of their application). ✓
+     By requesting a screen you are implicitly checking an applicants commitment to engaging in the hiring process (i.e. the validity). ✓
 
   - number  : 5
     icon    : fas fa-fighter-jet

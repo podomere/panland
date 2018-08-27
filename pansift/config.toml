@@ -2,6 +2,7 @@ baseURL = "https://panland.netlify.com/"
 languageCode = "en-us"
 title = "PanSift. Technical recruitment and pre hire assessment test."
 theme = "navigator-hugo"
+summaryLength = 30
 
 # Site Params
 [params]
@@ -35,9 +36,9 @@ theme = "navigator-hugo"
     # Blog Section On Homepage
     [params.blog]
         enable  = true
-        topTitle= "OUR UNTOLD STORY"
-        title   = "Blog."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        topTitle= "What you need to know about hiring"
+        title   = "Raise the Bar : Blog"
+        subtitle= "Tactics, techniques and procedures for keeping pace with modern technology!"
 
     # Call to Action Section on About Page
     [params.cta]
@@ -113,3 +114,7 @@ theme = "navigator-hugo"
         name    = "Team"
         url     = "/team"
         weight  = 3
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true

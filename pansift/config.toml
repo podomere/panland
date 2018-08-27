@@ -46,6 +46,12 @@ summaryLength = 30
         title   = "Time to Hire"
         subtitle= "Reduce your Time to Hire and be confident you don't lose the best candidates"
 
+    # Search Section
+    [params.tth]
+        enable  = true
+        title   = "Search Technical Skills"
+        subtitle= "For a skills assessment test"
+
     # Call to Action Section on About Page
     [params.cta]
         enable  = true
@@ -77,16 +83,16 @@ summaryLength = 30
         url     = "/why"
         weight  = 3
     [[menu.nav]]
-        name    = "Simulate"
-        url     = "/simulate"
+        name    = "Pricing"
+        url     = "/pricing"
         weight  = 4
     [[menu.nav]]
         name    = "Blog"
         url     = "/blog"
         weight  = 5
     [[menu.nav]]
-        name    = "Team"
-        url     = "/team"
+        name    = "Training"
+        url     = "/training"
         weight  = 6
     [[menu.nav]]
         name    = "Log In"

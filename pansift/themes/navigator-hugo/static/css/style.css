@@ -476,7 +476,7 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: #226BAB;
+  color: #222;
   font-size: 15px;
   font-weight: 700;
   line-height: 26px;
@@ -498,7 +498,7 @@ a:focus, a:hover {
 
 .navigation .navbar-nav > li > a:hover, .navigation .navbar-nav > li > a:active, .navigation .navbar-nav > li > a:focus {
   background: none;
-  color: #bdc3c7;
+  color: #226BAB;
   text-decoration: underline;
 }
 

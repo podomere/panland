@@ -1,45 +1,98 @@
 {{ if .Site.Data.pricing.enable }}
 {{ "<!-- Start Pricing section -->" | safeHTML }}
 <section class="pricing-table section" id="pricing">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="title text-center">
-                    {{ with .Site.Data.pricing.topTitle }}<h4>{{.}}</h4>{{ end }}
-                    {{ with .Site.Data.pricing.title }}
-                    <h2>{{.}}</h2>
-                    <span class="border"></span>
-                    {{ end }}
-                    {{ with .Site.Data.pricing.subtitle }}<p>{{.}}</p>{{ end }}
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            {{ range .Site.Data.pricing.item }}
-            {{ "<!-- single pricing table -->" | safeHTML }}
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="pricing-item">
-                    {{ "<!-- plan name & value -->" | safeHTML }}
-                    <div class="price-title bg-pricing">
-                        {{ with .name }}<h3>{{.}}</h3>{{ end }}
-                        {{ with .price }}<strong class="value">{{.}}</strong>{{ end }}
-                        {{ with .description }}<p>{{.}}</p>{{ end }}
-                    </div>
-                    {{ "<!-- plan description -->" | safeHTML }}
-                    <ul>
-                        {{ range .featurelist }}
-                        <li>{{.item}}</li>
-                        {{ end }}
-                    </ul>
-                    {{ "<!-- signup button -->" | safeHTML }}
-                    <a class="btn btn-main" href="{{.btnURL}}">{{.btnText}}</a>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-        <!-- End row -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="title text-center">
+        {{ with .Site.Data.pricing.topTitle }}<h4>{{.}}</h4>{{ end }}
+        {{ with .Site.Data.pricing.title }}
+        <h2>{{.}}</h2>
+        <span class="border"></span>
+        {{ end }}
+        {{ with .Site.Data.pricing.subtitle }}<p>{{.}}</p>{{ end }}
+      </div>
     </div>
-    <!-- End container -->
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2>Hiring Agent Accounts</h2>
+      <div id="number_of_agents">
+        <div id="slider-format" style="margin: 20px;"></div>
+        <center><input id="input-format" style="border: 0; font-size: 2em;margin: 15px;background: white;" disabled="true"></center>
+      </div>
+    </div>
+    <div class="col">
+      <h2>Candidate Screens</h2>
+      <div id="number_of_screens">
+        <div id="slider-format-screens" style="margin: 15px;"></div>
+        <center><input id="input-format-screens" style="border: 0; font-size: 2em;margin: 20px;background: white;" disabled="true"></center> 
+      </div>
+    </div>
+    <div class="col">
+      <h2>Cost</h2>
+      <div id="cost_container" style="font-size: 3em;">
+        <div id="total_cost"><strong>0 € p/m</strong></div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
+    <ul>
+      <li>
+    The default solo hiring account is <strong>FREE 0.00€</strong> EUR per month (No credit card required) inc.<strong> starter 10x FREE SCREENS</strong> 
+      </li>
+      <br />
+      <li>
+Additional hiring team accounts over and above the default solo account are subscription based at € 99.00 EUR each per month and <strong>include bonus 50 free screens per agent per month</strong>
+       </li>
+     </ul>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
+    <ul>
+      <li>
+<strong>Add-on / Top-Up Options</strong>
+      </li>
+      <li>
+Purchase at any time "in-app" and / or multiples thereof,<strong> non-recurring</strong>, and do not expire!
+      </li>
+      <br />
+      <li>
+10 screen pack 29€ EUR
+      </li>
+      <li>
+20 screen pack 49€ EUR
+      </li>
+      <li>
+50 screen pack 99€ EUR
+      </li>
+      <li>
+100 screen pack 169€ EUR
+      </li>
+      <br />
+      <li>
+(recurring )
+      </li>
+      <li>
+Sourcing pack 49€ EUR (coming soon)
+      </li>
+    </ul>
+</div>
+  <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12 mt-5">
+    <center>
+      <form onsubmit="event.preventDefault(); secondstage('cta_email');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
+        <input type="email" name="try_email" id="cta_email" placeholder="Enter your email">
+        <input type="submit" value="Get Started Free" style="cursor: pointer;">
+      </form>
+      <small>No strings, full access. <strong>No credit card required.</strong></small>
+    </center>
+  </div>
+  </div>
+
+  <!-- End row -->
+</div>
+<!-- End container -->
 </section>
 {{ "<!-- End section -->" | safeHTML }}
 {{ end }}

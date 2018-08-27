@@ -1,4 +1,4 @@
-baseURL = "https://panland.netlify.com/"
+baseURL = "https://pansift.com/"
 languageCode = "en-us"
 title = "PanSift. Technical recruitment and pre hire assessment test."
 theme = "navigator-hugo"
@@ -47,10 +47,16 @@ summaryLength = 30
         subtitle= "Reduce your Time to Hire and be confident you don't lose the best candidates"
 
     # Search Section
-    [params.tth]
+    [params.search]
         enable  = true
         title   = "Search Technical Skills"
-        subtitle= "For a skills assessment test"
+        subtitle= "Improve your job screening process with testable skills and automated applicant screening"
+
+    # Search Section
+    [params.training]
+        enable  = true
+        title   = "Technical Training"
+        subtitle= "Featured Pluralsight training ( inc. 15% off Annual Subscriptions )"
 
     # Call to Action Section on About Page
     [params.cta]
@@ -77,10 +83,14 @@ summaryLength = 30
     [[menu.nav]]
         name    = "How It Works"
         url     = "/howitworks"
-        weight  = 2
+        weight  = 1
     [[menu.nav]]
         name    = "Why"
         url     = "/why"
+        weight  = 2
+    [[menu.nav]]
+        name    = "Search"
+        url     = "/search"
         weight  = 3
     [[menu.nav]]
         name    = "Pricing"

@@ -1,5 +1,5 @@
 ---
-published: false
+draft: true
 title: 'Employees, pets or cattle?'
 image: images/blog/duck.jpg
 date: 2018-01-01T17:04:41+06:00

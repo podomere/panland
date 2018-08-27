@@ -1,44 +1,41 @@
 enable  : true
-topTitle: EASY PRICING
+topTitle: Simple and Transparent Pricing
 title   : Pricing.
-subtitle : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+subtitle : The default solo hiring account is FREE (No credit card required!) and includes 10 free candidate screens.
 
 item  :
-  - name        : BASIC
-    price       : $99
-    description : Perfect for single freelancers who work by themselves
+  - name        : 10 Screens (Non-recurring)
+    price       : €29
+    description : Perfect for infrequent sourcers or solo recruiters
     featurelist :
-      - item: 1GB Disk Space 
-      - item: 10 Email Account 
-      - item: Script Installer 
-      - item: 1 GB Storage 
-      - item: 10 GB Bandwidth 
-      - item: 24/7 Tech Support
+      - item: Non-recurring cost. Add on to default.
+      - item: First 10 free on sign up
     btnText     : Sign Up
-    btnURL      : https://themefisher.com/
+    btnURL      : https://client.pansift.com/clients/sign_up
 
-  - name        : ADVANCE
-    price       : $199
-    description : Suitable for small businesses with up to 5 employees
+  - name        : 20 Screens
+    price       : €49
+    description : Perfect for low volume sourcers or small teams
     featurelist :
-      - item: 1GB Disk Space 
-      - item: 10 Email Account 
-      - item: Script Installer 
-      - item: 1 GB Storage 
-      - item: 10 GB Bandwidth 
-      - item: 24/7 Tech Support 
+      - item: Non-recurring cost. Add on to default.
+      - item: First 10 free on sign up
     btnText     : Sign Up
-    btnURL      : https://themefisher.com/
+    btnURL      : https://client.pansift.com/clients/sign_up
 
-  - name        : PROFESSIONAL
-    price       : $299
-    description : Great for large businesses with more than 5 employees
+  - name        : 50 Screens
+    price       : €99
+    description : Perfect non-consistent bursty needs. Same price as extra agent.
     featurelist :
-      - item: 1GB Disk Space 
-      - item: 10 Email Account 
-      - item: Script Installer 
-      - item: 1 GB Storage 
-      - item: 10 GB Bandwidth 
-      - item: 24/7 Tech Support
+      - item: Non-recurring cost. Add on to default.
+      - item: First 10 free on sign up
     btnText     : Sign Up
-    btnURL      : https://themefisher.com/
+    btnURL      : https://client.pansift.com/clients/sign_up
+  
+  - name        : 100 Screens
+    price       : €169
+    description : Perfect for higher volumes like events or new teams.
+    featurelist :
+      - item: Non-recurring cost. Add on to default.
+      - item: First 10 free on sign up
+    btnText     : Sign Up
+    btnURL      : https://client.pansift.com/clients/sign_up

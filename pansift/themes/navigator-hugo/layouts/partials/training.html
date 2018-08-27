@@ -1,0 +1,111 @@
+{{ if .Site.Data.training.enable }}
+{{ "<!-- training Section Start -->" | safeHTML }}
+<section class="training section bg-gray" id="training">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="title text-center">
+        {{ with .Site.Data.training.topTitle }}<h4>{{ . }}</h4>{{ end }}
+        {{ with .Site.Data.training.title }}
+        <h2>{{ . }}</h2>
+        <span class="border"></span>
+        {{ end }}
+        {{ with .Site.Data.training.subtitle }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="col-12 justify-content-center align-items-center">
+    <center><div class="blog-tags">
+        <div class="tag">
+          <a href="https://aff.pansift.com/python" target="_blank">Python</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/docker" target="_blank">Docker</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/cisco" target="_blank">Cisco</a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/juniper" target="_blank">Juniper</a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/openstack" target="_blank">OpenStack</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/golang" target="_blank">Go</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/ipv6" target="_blank">IPv6</a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/kubernetes" target="_blank">Kubernetes</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/ansible" target="_blank">Ansible</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/salt" target="_blank">Salt</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/chef" target="_blank">Chef</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/puppet-4" target="_blank">Puppet</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/consul" target="_blank">Consul</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/terraform" target="_blank">Terraform</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/kvm" target="_blank">KVM</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/vsphere" target="_blank">vSphere</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/hyper-v" target="_blank">Hyper-V</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/cisco" target="_blank">CCENT</a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/cisco" target="_blank">CCNA</a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/cisco" target="_blank">CCNP</a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/cisco" target="_blank">CCIE</a></div>
+
+
+        <div class="tag">
+          <a href="https://aff.pansift.com/amazon" target="_blank">Amazon</a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/amazon" target="_blank">AWS Devops</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/amazon" target="_blank">AWS Security</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/amazon" target="_blank">AWS VPC</a>
+        </div>
+
+
+        <div class="tag">
+          <a href="https://aff.pansift.com/linux" target="_blank">Linux</a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/git" target="_blank">git</a>
+        </div>
+
+        <div class="tag">
+          <a href="https://aff.pansift.com/git" target="_blank">git Fundamentals</a>
+        </div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/git" target="_blank">git Advanced </a></div>
+        <div class="tag">
+          <a href="https://aff.pansift.com/comptia" target="_blank">CompTIA Network+</a></div>
+
+    </div>
+  <a class="btn btn-main btn-lg" href="https://pluralsight.pansift.com">Full Search Training</a>
+</center>
+  </div>
+</div>
+</section>
+{{ "<!-- End section -->" | safeHTML }}
+{{ end }}

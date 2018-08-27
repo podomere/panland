@@ -1,28 +1,34 @@
 enable  : true
-topTitle: HOW WE WORKS
-title   : Our Work Process
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+topTitle: Structured Hiring Assessments
+title   : Why use Simulation Based Screening
+subtitle: For technical recruitment <br />(including a better candidate screening process or skills assessment).
 item    :
   - number  : 1
-    icon    : tf-ion-ios-briefcase-outline
-    title   : Project Analysis
+    icon    : fas fa-balance-scale
+    title   : Objective (Non-biased)
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+      Remove bias with consistent, automated, deterministic screening. Screens are scored automatically (inc. against timing benchmarks). ✓
 
   - number  : 2
-    icon    : tf-ion-ios-alarm-outline
-    title   : Time Management
+    icon    : fas fa-hand-holding-usd
+    title   : Cheaper (Automated)
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+      Automation allows for greater speed, scale, and lower costs. Save on expensive talent/engineering human time early in your funnel. ✓
 
   - number  : 3
-    icon    : tf-ion-ios-email-outline
-    title   : Mail Support
+    icon    : fas fa-globe-americas
+    title   : Flexible (Online)
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+      Candidates have flexibility to complete from anywhere (local or remote screening without travel) and at their own pace. ✓
 
   - number  : 4
-    icon    : tf-ion-ios-locked-outline
-    title   : Secure System
+    icon    : fas fa-filter
+    title   : Filters (Implicitly)
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+     By requesting a screen you are implicitly checking an applicants commitment to engaging in the hiring process (i.e. the validity of their application). ✓
+
+  - number  : 5
+    icon    : fas fa-fighter-jet
+    title   : Faster (By up to 50%)
+    description : >
+      Reduced time to hire / time to fill based upon empirical data ✓

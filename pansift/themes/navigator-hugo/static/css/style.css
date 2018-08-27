@@ -446,7 +446,7 @@ a:focus, a:hover {
 }
 
 .single-page-header {
-  background: #fff;
+  background: #ecf0f1;
   padding: 15px 0 0 0;
   text-align: left;
   color: #fff;
@@ -563,7 +563,7 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  padding: 150px 0;
+  padding: 75px 0 150px 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

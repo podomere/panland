@@ -14,7 +14,7 @@
 <meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}">
 {{ $isHomePage := eq .Title .Site.Title }}
 <meta content="{{ .Title }}{{ if eq $isHomePage false }} Pansift - Structured Hiring {{ end }}" property="og:title">
-<meta content="{{ .Site.BaseURL }}" property="og:url">
+<meta content="{{ .Permalink }}" property="og:url">
 <meta content="{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:site_name">
 <meta content="{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" itemprop="name">
 {{ if isset .Params "image" }}

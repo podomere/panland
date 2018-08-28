@@ -11,7 +11,7 @@
 <meta name="keywords" content="{{ .Site.Params.keywords }}">
 
 <meta name="google-site-verification" content="{{ .Site.Params.GoogleVerification }}">
-<meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}">
+<meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}" />
 {{ $isHomePage := eq .Title .Site.Title }}
 <meta content="{{ .Title }}{{ if eq $isHomePage false }} Pansift - Structured Hiring {{ end }}" property="og:title">
 <meta content="{{ .Permalink }}" property="og:url">

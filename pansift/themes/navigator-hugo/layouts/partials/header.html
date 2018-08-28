@@ -4,7 +4,7 @@
 {{ .Hugo.Generator }}
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>{{ .Site.Title }}</title>
+<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 <meta content="{{ .Site.Params.description }}" name="description">
 <meta name="author" content="Pansift.com"> 
 <link rel="canonical" href="https://pansift.com/">
@@ -12,20 +12,35 @@
 
 <meta name="google-site-verification" content="{{ .Site.Params.GoogleVerification }}">
 <meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}">
-
-<meta content="{{ .Site.Title }}" property="og:title">
+{{ $isHomePage := eq .Title .Site.Title }}
+<meta content="{{ .Title }}{{ if eq $isHomePage false }} Pansift - Structured Hiring {{ end }}" property="og:title">
 <meta content="{{ .Site.BaseURL }}" property="og:url">
+<meta content="{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:site_name">
+<meta content="{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" itemprop="name">
+{{ if isset .Params "image" }}
+<meta content="{{ .Params.image | absURL }}" property="og:image">
+<meta content="{{ .Params.image | absURL }}" itemprop="image">
+<meta content="{{ .Params.image | absURL}}" name="twitter:image">
+{{ else }}
 <meta content="{{ .Site.Params.og_image }}" property="og:image">
-<meta content="{{ .Site.Title }}" property="og:site_name">
-<meta content="{{ .Site.Params.description }}" property="og:description">
-<meta content="{{ .Site.Title }}" itemprop="name">
-<meta content="{{ .Site.Params.Description }}" itemprop="description">
 <meta content="{{ .Site.Params.og_image }}" itemprop="image">
-<meta content="summary_large_image" name="twitter:card">
-<meta content="{{ .Site.Title }}" name="twitter:title">
-<meta content="{{ .Site.Params.description }}" name="twitter:description">
 <meta content="{{ .Site.Params.og_image }}" name="twitter:image">
-<meta content="{{ .Site.Params.description }}" name="description">
+{{ end }}
+{{ if isset .Params "subtitle" }}
+<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}" name="description">
+<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" property="og:description">
+<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" itemprop="description">
+<meta content="{{ .Title }}" name="twitter:title">
+<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" name="twitter:description">
+{{ else }}
+<meta content="{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}" name="description">
+<meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" property="og:description">
+<meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" itemprop="description">
+<meta content="{{ .Title }}" name="twitter:title">
+<meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }}" name="twitter:description">
+{{ end }}
+
+<meta content="summary_large_image" name="twitter:card">
 
 
 <!-- Google Tag Manager -->

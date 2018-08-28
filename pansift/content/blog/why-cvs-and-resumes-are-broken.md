@@ -1,8 +1,8 @@
 ---
 author: Donal
 published: true
-title: Why CVs and Résumés are broken
-subtitle: And how simulations solve for Proof of Experience
+title: Why CVs and Résumés are broken.
+subtitle: And how simulations solve for Proof of Experience.
 tags:
   - cv
   - resume

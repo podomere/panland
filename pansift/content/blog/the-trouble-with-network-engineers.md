@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: The trouble with Network Engineers
+title: The trouble with Network Engineers.
 author: Donal
 tags:
   - hrtech

@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-title: Overcoming Survivor Bias When Hiring
-subtitle: Fundamental Attribution Errors
+title: Overcoming Survivor Bias When Hiring.
+subtitle: Fundamental Attribution Errors.
 image: /images/blog/survivor_bias.png
 date: '2018-04-27'
 author: Donal

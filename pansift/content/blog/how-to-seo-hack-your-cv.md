@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: How to SEO hack your CV
+title: How to SEO hack your CV.
 subtitle: Tips and tricks to beat traditional Boolean search.
 author: Donal
 tags:

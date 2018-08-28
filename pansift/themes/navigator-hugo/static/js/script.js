@@ -236,7 +236,7 @@
   // NOTE ABOUT USING THE NATIVE JAVASCRIPT VERSUS JQUERY LENGTH CHECKS AS IOS8 BUG FOR LENGTH
 
 
-  if(document.getElementById("video-js") !== null){
+  if(document.getElementsByClassName("video-js") !== null){
   //if ($('.video-js').length) {
     setTimeout(function(){ 
       $('.video-js')[0].player.on('ended', function() {

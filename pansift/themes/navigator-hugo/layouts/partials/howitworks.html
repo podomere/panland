@@ -16,12 +16,12 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12 mt-3">
+    <div class="col-lg-6 col-md-12 mt-3">
       <div class="commonTab">
         <ul role="tablist" class="nav nav-tabs justify-content-center" id="myTab">
           {{ range $index, $element := .Site.Data.howitworks.tabItem }}
           <li class="nav-item">
-          <a class="nav-link {{ if eq $index 0 }}active{{ end }}" id="{{ .id }}-tab" data-toggle="tab" href="#{{.id}}" role="tab" aria-controls="{{.id}}" aria-selected="{{ if eq $index 0 }}true{{ end }}"><h3>{{ .title }} {{ with .icon }}<i style="color: #fff" class="{{ . | safeHTML }} fa-1x float-right mt-1 ml-2"></i>{{ end }}</h3></a>
+          <a class="nav-link {{ if eq $index 0 }}active{{ end }} mt-2" id="{{ .id }}-tab" data-toggle="tab" href="#{{.id}}" role="tab" aria-controls="{{.id}}" aria-selected="{{ if eq $index 0 }}true{{ end }}">{{ .title }}</a>
           </li>
           {{ end }}
         </ul>
@@ -29,25 +29,25 @@
           {{ range $index, $element := .Site.Data.howitworks.tabItem }}
           <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" role="tabpanel" aria-labelledby="{{.id}}-tab" id="{{.id}}">
             <div class="row">
-              <div class="col-md-6 align-self-center">
-                {{ with .heading }}<h1>{{ . }}</h1>{{ end }}
-                {{ with .content }}<p style="font-size: 1.5em;">{{ . | safeHTML }}{{ end }}</p>
-              </div>
-              <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                <div id="video-bound" class="text-center">
-                  <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" style="max-width: 720px;" controls preload="none" data-setup='{}' poster="/images/hero/3_steps_v15.png">
-                  <source src="https://sim.pansift.com/hiring_v13.mp4" type='video/mp4'>
-                  <p class="vjs-no-js">
-                  To view this video please enable JavaScript, and consider upgrading to a web browser that
-                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                  </p>
-                  </video>
-                </div>
+              <div class="col-md-12 align-self-center">
+                <h1>{{ with .heading }}{{ . }}{{ end }}</h1>
+                {{ with .content }}<p style="font-size: 1.5em;">{{ . | safeHTML }}{{ end }}{{ with .icon }}<i style="color: #9a9a9a" class="{{ . | safeHTML }} mt-1 ml-1"></i>{{ end }}</p>
               </div>
             </div>
           </div>
           {{ end }}
         </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <div id="video-bound" class="text-center">
+        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" style="max-width: 720px;" controls preload="none" data-setup='{}' poster="/images/hero/3_steps_v15.png">
+        <source src="https://sim.pansift.com/hiring_v13.mp4" type='video/mp4'>
+        <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+        </video>
       </div>
     </div>
   </div>

@@ -1,28 +1,28 @@
 {{ "<!-- Fixed Navigation -->" | safeHTML }}
 <section class="header navigation">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-                        <img src="{{ with .Site.Params.logo }}{{ . | absURL }}{{ end }}" alt="logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            {{ range .Site.Menus.nav }}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-                            </li>
-                            {{ end }}
-                        </ul>
-                        <a class="btn btn-main btn-main-sm" style="font-weight: 900 !important;" href="https://client.pansift.com/clients/sign_up">Get 10 Free Screens</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        <img src="{{ with .Site.Params.logo }}{{ . | absURL }}{{ end }}" alt="{{ .Site.Params.description }}" height="22" width="84">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          {{ range .Site.Menus.nav }}
+          <li class="nav-item">
+          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        <a class="btn btn-main btn-main-sm ml-3" style="padding: 5px 8px; font-weight: 900 !important;" href="https://client.pansift.com/clients/sign_up">Get 10 Free Screens</a>
+      </div>
+      </nav>
     </div>
+  </div>
+</div>
 </section>

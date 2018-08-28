@@ -5,7 +5,7 @@ subtitle  : Uncover the difference between theory and practice!
 tabItem   :
   - id        : multi
     title     : Multi-Skilling
-    heading   : Screens use real world simulations to evaluate skills.
+    heading   : Real world tasks evaluate skills
     content   : >
      Choose from pre-defined simulations for screening candidates. Alternatively you can drag and drop skills (from our library) to build your own simulations.
     image     : images/howitworks/cogs.jpg
@@ -13,7 +13,7 @@ tabItem   :
 
   - id        : browser
     title     : Browser Based
-    heading   : 100% Online Immediate Access.
+    heading   : Immediate Access
     content   : >
       Candidates / applicants must engage in real-world tasks and simulations to demonstrate their skills and unlock answers. Labs ( CLI / GUI ) are via browser on standard web ports.
     image     : images/howitworks/cloud.jpg
@@ -22,7 +22,7 @@ tabItem   :
 
   - id        : time
     title     : Time Boxed
-    heading   : Benchmarked proficiency.
+    heading   : Benchmarked proficiency
     content   : >
      Candidates are also rated on speed. Questions are timed. A 30-40 minute screen made up of 10-15 simulated skills is recommended. Set a deadline, get results!
     image     : images/howitworks/hourglass.jpg
@@ -30,7 +30,7 @@ tabItem   :
 
   - id        : candidate
     title     : Candidate Experience
-    heading   : Maximum flexibility.
+    heading   : Maximum flexibility
     content   : >
      Candidates get to demonstrate their skills in real world scenarios. They can start, stop, and update answers (or do research), all the way up to the deadline. Hiring teams can send all applicants a screen or just to certain candidates at any stage of the hiring pipeline.
     image     : images/howitworks/happyface.jpg

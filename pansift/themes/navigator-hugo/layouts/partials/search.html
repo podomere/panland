@@ -1,14 +1,14 @@
 {{ if .Site.Params.search.enable }}
 {{ "<!-- Start Search Section -->" | safeHTML }}
-<section class="search section bg-gray" id="about" style="padding: 50px 0 !important;">
+<section class="search section bg-gray" id="about" style="padding: 100px 0 !important;">
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-12">
       {{ with .Site.Params.search.title }}
-      <h2>{{ . | safeHTML }}</h2>
+      <h1 class="text-center">{{ . | safeHTML }}</h1>
       {{ end }}
       {{ with .Site.Params.search.subtitle }}
-      <h5>{{ . | safeHTML }}</h5>
+      <h5 class="text-center">{{ . | safeHTML }}</h5>
       {{ end }}
     </div>
     <div class="col-12 col-md-12 mt-2">

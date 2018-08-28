@@ -97,12 +97,12 @@ summaryLength = 30
         url     = "/pricing"
         weight  = 4
     [[menu.nav]]
-        name    = "Blog"
-        url     = "/blog"
-        weight  = 5
-    [[menu.nav]]
         name    = "Training"
         url     = "/training"
+        weight  = 5
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "/blog"
         weight  = 6
     [[menu.nav]]
         name    = "Log In"
@@ -111,31 +111,31 @@ summaryLength = 30
     
     # Footer Service Menu
     [[menu.service]]
-        name    = "How It Works"
-        url     = "/howitworks"
+        name    = "Blog"
+        url     = "/blog"
         weight  = 1
     [[menu.service]]
-        name    = "How It Works"
+        name    = "Training"
         url     = "/howitworks"
         weight  = 2
-    [[menu.service]]
-        name    = "How It Works"
-        url     = "/howitworks"
-        weight  = 3
 
     # Footer Quick links Menu
     [[menu.quicklink]]
         name    = "Pricing"
         url     = "/pricing"
-        weight  = 1
+        weight  = 3
     [[menu.quicklink]]
-        name    = "FAQ's"
-        url     = "/faq"
+        name    = "Search"
+        url     = "/search"
         weight  = 2
     [[menu.quicklink]]
         name    = "Team"
         url     = "/team"
-        weight  = 3
+        weight  = 4
+    [[menu.quicklink]]
+        name    = "Contact Us"
+        url     = "/contact"
+        weight  = 1
 
 [blackfriday]
   plainIDAnchors = true

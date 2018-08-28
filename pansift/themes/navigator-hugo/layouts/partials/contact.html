@@ -1,66 +1,66 @@
 {{ if .Site.Params.contact.enable }}
 {{ "<!-- Start Contact Us -->" | safeHTML }}
 <section class="contact-us section bg-gray" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="title text-center">
-                    {{ with .Site.Params.contact.topTitle }}<h4>{{.}}</h4>{{ end }}
-                    {{ with .Site.Params.contact.title }}
-                    <h2>{{.}}</h2>
-                    <span class="border"></span>
-                    {{ end }}
-                    {{ with .Site.Params.contact.subtitle }}<p>{{.}}</p>{{ end }}
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="address-block contact-meta-block">
-                    <i class="tf-ion-android-pin"></i>
-                    <h4>Our Location</h4>
-                    {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="phone-block contact-meta-block">
-                    <i class="tf-ion-ios-telephone"></i>
-                    <h4>Email Us</h4>
-                    <p>
-                      <a href="mailto:{{ with .Site.Params.contact.email }}{{.}}{{ end }}">info@pansift.com</a> 
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="social-icons-block contact-meta-block">
-                    <i class="tf-ion-ios-contact"></i>
-                    <h4>Also via</h4>
-                    <ul class="list-inline social-icon">
-                        {{ with .Site.Params.contact.twitter }}
-                        <li class="list-inline-item">
-                            <a href="{{.}}">
-                                <i class="tf-ion-social-twitter"></i>
-                            </a>
-                        </li>
-                        {{ end }}
-                        {{ with .Site.Params.contact.linkedin }}
-                        <li class="list-inline-item">
-                            <a href="{{.}}">
-                                <i class="tf-ion-social-linkedin"></i>
-                            </a>
-                        </li>
-                        {{ end }}
-                        {{ with .Site.Params.contact.dribbble }}
-                        <li class="list-inline-item">
-                            <a href="{{.}}">
-                                <i class="tf-ion-social-dribbble"></i>
-                            </a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </div>
-            </div>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="title text-center">
+        {{ with .Site.Params.contact.topTitle }}<h4>{{.}}</h4>{{ end }}
+        {{ with .Site.Params.contact.title }}
+        <h2>{{.}}</h2>
+        <span class="border"></span>
+        {{ end }}
+        {{ with .Site.Params.contact.subtitle }}<p>{{.}}</p>{{ end }}
+      </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="address-block contact-meta-block">
+        <i class="fas fa-map-marker"></i>
+        <h4>Our Location</h4>
+        {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="phone-block contact-meta-block">
+        <i class="far fa-envelope-open"></i>
+        <h4>Email Us</h4>
+        <p>
+        <a href="mailto:{{ with .Site.Params.contact.email }}{{.}}{{ end }}">info@pansift.com</a> 
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="social-icons-block contact-meta-block">
+        <i class="fab fa-connectdevelop"></i>
+        <h4>Also via</h4>
+        <ul class="list-inline social-icon">
+          {{ with .Site.Params.contact.twitter }}
+          <li class="list-inline-item">
+          <a href="{{.}}">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          </li>
+          {{ end }}
+          {{ with .Site.Params.contact.linkedin }}
+          <li class="list-inline-item">
+          <a href="{{.}}">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          </li>
+          {{ end }}
+          {{ with .Site.Params.contact.dribbble }}
+          <li class="list-inline-item">
+          <a href="{{.}}">
+            <i class="tf-ion-social-dribbble"></i>
+          </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 {{ end }}

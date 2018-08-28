@@ -233,7 +233,11 @@
   /*	if Video is present?
   /* ========================================================================= */	
 
-  if ($('.video-js').length) {
+  // NOTE ABOUT USING THE NATIVE JAVASCRIPT VERSUS JQUERY LENGTH CHECKS AS IOS8 BUG FOR LENGTH
+
+
+  if(document.getElementById("video-js") !== null){
+  //if ($('.video-js').length) {
     setTimeout(function(){ 
       $('.video-js')[0].player.on('ended', function() {
         dataLayer.push({'event': 'finished_watching_explainer', 'category':'Visitor', 'action':'Video Watched', 'label':'Video','value':'1'})
@@ -258,7 +262,8 @@
     }, 1000);
   }
 
-  if ($('#mapid').length) {
+  if(document.getElementById("mapid") !== null){
+  //if ($('#mapid').length) {
     var mymap = null;
     var  mymap = L.map('mapid',{zoomControl: false, minZoom: 2, maxZoom: 2, zoom: 2}).setView([53, 6], 2);
     L.tileLayer('https://api.mapbox.com/styles/v1/pansift/cjj4p9yei4ig22srzi0315fpm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGFuc2lmdCIsImEiOiJjamo0NTZmcGUxZ2d1M2txZzFlYWFzcWF5In0.SP3kz57m0HFfNU_EubbMYA').addTo(mymap);
@@ -294,7 +299,8 @@
     });
   }
 
-  if ($('#aa-input-container').length) {
+  if(document.getElementById("aa-input-container") !== null){
+  //if ($('#aa-input-container').length) {
     var al_client = algoliasearch('AJV2LM71WS', 'afe14bbaabe07eb4792c82ca6bda3449');
     var al_index = al_client.initIndex('Skill');
     //initialize autocomplete on search input (ID selector must match)
@@ -320,7 +326,8 @@
     al_autocomplete();
   }
 
-  if ($('#number_of_agents').length) {
+  if(document.getElementById("number_of_agents") !== null){
+  // if ($('#number_of_agents').length) {
 
     function calculate_total_costs() {
 

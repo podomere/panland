@@ -23,7 +23,7 @@ What are you optimising for? What are you measuring? What is your business' oper
 
 ## Employee Lifetime Value (ELV)
 
-Whether your technology stack is designed to augment human activities or not, you need to attract and retain the smartest and most collaborative people you can find. Once hired, it is imperative that employees stay, grow, and contribute - rather than churn out the door (losing institutional knowledge and incurring increased expense to back fill positions). But how do you measure their skills and qualities, can you afford not to independently verify as much about them as early as you can?
+Whether your technology stack is designed to augment human activities or not, you need to attract and retain the smartest and most collaborative people you can find. Once hired, it is imperative that employees stay, grow, and contribute - rather than churn out the door (losing institutional knowledge and incurring increased expense to back fill positions). But how do you measure their skills and experise, can you afford not to independently verify as much about them as early as you can?
 
 An employee who makes themselves dispensable by creatively automating away their workload (to free themselves up to work on more challenging or valuable tasks) is worth their weight in gold. These people will generally have mastered not just the fundamentals in their domain, but have gone on to express their expertise like a jazz musician. This is a far cry from treating employees as commodities who can be easily interchanged. But how do you find creative automators and not automatons?
 

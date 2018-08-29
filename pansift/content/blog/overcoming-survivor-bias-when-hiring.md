@@ -23,17 +23,17 @@ The traditional example is from World War II with planes that returned from raid
 
 Why is this important? Well, it highlights that we often tend to attribute success to *superficial signals* rather than understanding the context that led to an entity's success. When hiring, what is your sample size and control group for evaluating an individual contributor's claimed skills, experience, and successes? How can they prove their track record is due to their own capability and not solely due to external or other organisational factors? Can you rely on a candidate to deliver results if hired, or was their previous success due to other team members, embedded processes, or just timing? So the question then arises, what capabilities can you independently and actually verify?
 
-### Risk and Culture
+## Risk and Culture
 Culture is constantly being *patched* in an organisation. Employees morph due to their experiences and environments both in and out of work, yet when a new hire comes onboard and merges with a team, *culture* shifts once again (whether for better or worse). No matter how hard you try, you can not outsource your organisation's risk when *patching* your own culture. Albeit some will say you can *transfer* risk, your organisation still ultimately owns its own outcomes. Irrespective of finger pointing or a *single throat to choke*, risk can not be transferred. All you can do is mitigate, minimise, or accept risks. When confidence is low in internal talent sourcing and screening, some companies place a premium on *another* company's brand (and their hiring program). They then consciously bias applicants from those companies. This can be seen as an attempt to acquire pre-vetted "talent" from other organisations. This shortcut is a dubious stopgap rather than creating better internal sourcing and screening processes, processes that should independently and objectively verify candidate skills.
 
-### Brand Based Acquihires
+## Brand Based Acquihires
 This brand "acquihire" practice can be thought of as trying to acquire a slice of another company's success, culture, or trajectory. It is a brand based filter and an attempt to simplify decision making via a *pre-qualified* talent pool (oftentimes existing as an unofficial policy or open secret in organisations). In closed circles you may hear "*I want someone from Facebook, Apple, or Google*". This can also lead to those new hires subsequently justifying technical or business decisions with "*this is what we did at company* **X**" (which alone, is never a sound approach!). There is an assumption that person **Y**'s experience with (or simply exposure to) a technology or scale, will somehow directly translate to success in *your* organisation. There's also an underlying expectation that these new *brand* hires will be able to de-risk your organisation's trajectory in to the future... 
 
 Unfortunately [CVs and Résumés are fundamentally broken](https://blog.pansift.com/2018-01-06-why-cvs-and-resumes-are-broken/) thus the risk still falls on **your** organisation's hiring team to verify a candidate's skills to ensure they will be effective and at least, hit the ground running.
 
 <img src="/images/blog/dirty_lens.jpeg" class="w-100 mb-3">
 
-### Peter and Dunning-Kruger in Action
+## Peter and Dunning-Kruger in Action
 Typically you may never **really** know why someone leaves their previous organisation (as you are only privy to what they *choose* to tell you!).
 
 - have they reached a ceiling and are now seeking new challenges?
@@ -51,7 +51,7 @@ The [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effe
 
 So, how does [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) affect self-written [CVs and Résumés](https://blog.pansift.com/2018-01-06-why-cvs-and-resumes-are-broken/)? Also, what actually happens in early interviews or screening activities if the person screening a candidate or CV is not **proficient** in the domain themselves? At what point should you ask candidates to demonstrate their claimed skills (and additionally how, when, and where)? Even if you are hiring solely for attitude (rather than experience), can a candidate hit the ground running or will they require months of specific training to become competent *and* effective? 
 
-### Caveat Emptor
+## Caveat Emptor
 It is extremely time consuming for domain experts or senior staff to independently screen and verify all applicant or candidate skills. This checking of fundamental hard skills *can however* be automated in many domains. This saves on expensive human time and speeds up *time-to-hire* whilst also facilitating wider recruiting funnels. Additionally, imagine having your own candidate skills analytics to use in your structured hiring process to support not just decision making but as talking points in later stage interviews with your senior engineering staff or leadership.
 
 <div class="card">

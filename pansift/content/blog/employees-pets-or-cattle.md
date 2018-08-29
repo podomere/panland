@@ -18,9 +18,9 @@ For information technology jobs and related engineering careers, the hiring proc
 # Structured Hiring and Applicant Testing
 
 ## Technical Job Description
-List the minimum viable fundamental skills and ensure that desirable skills are not incorrectly labelled as fundamental. Also highlight the benefits to the candidate in terms of learning opportunities regarding new technologies (aside from traditional benefits packages). 
+List the minimum viable fundamental skills and ensure that desirable skills are not incorrectly labelled as fundamental. Also highlight the benefits to the candidate in terms of learning opportunities regarding new and current technologies (aside from just the traditional benefits packages). 
 
-* Make sure that the benefits to the candidate are listed as you are selling to not just the reader but everyone they speak to about their job application.
+* Make sure that the benefits to the candidate are listed as you are marketing to not just the reader but *everyone* they speak to about their job application and maybe someone they know is your next hire.
 
 ## Pre hire Assessment Tests (Measuring Skills)
 When a technical recruiter, sourcer or hiring manager is trying to verify claimed skills, it can be helpful to have applicants perform some form of task to demonstrate their technical competency. Unrelated to a psychometric or personality assessment (nor any other behavioural assessment) a job aptitude test can provide at least some data points that either support or deny a CV or résumé.

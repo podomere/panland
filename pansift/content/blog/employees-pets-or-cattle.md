@@ -5,6 +5,7 @@ subtitle: Dumb boxes and smart engineers or...
 image: images/blog/cow.jpg
 date: {}
 author: Donal
+published: true
 ---
 Let's talk about culture, the hiring process, and candidate experience. Talent teams including technical recruitment and sourcing are both the scouts and gatekeepers of an organization's culture. They are high level stewards of an organisation's true operating system, its people.
 
@@ -14,11 +15,11 @@ This phrase applies to approach of what to try and commoditise and where to embe
 
 # Employee Lifetime Value (ELV)
 
-As software is eating the world, organisations are from a macro perspective, becoming technology organisations. The question then arises about how you design, build, and operate your company around a continuity of people, process, and technology. 
+As software is eating the world, organisations are (from a macro perspective) becoming *technology organisations* though still built and run by people. The question then arises about how you design, build, and operate your company around a continuity of people, process, and technology. 
 
-What are you optimsing for? What are you measuring? What is your business' operating environment? And what do you value most?
+What are you optimsing for? What are you measuring? What is your business' operating environment? What do you value most?
 
-> > Is technology's role to augment, refine, or replace human activity?
+> > Is technology's role to augment, replace, or refine human activity?
 
 # Employee Lifetime Value (ELV)
 

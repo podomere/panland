@@ -42,7 +42,8 @@ Typically you may never **really** know why someone leaves their previous organi
 - are they on a PIP(Performance Improvement Plan) and already being managed out?
 - or more scarily perhaps, have they already reached their level of incompetence ( e.g. the [Peter Principle](https://en.wikipedia.org/wiki/Peter_principle)) ?
 <br><br>
-There could be lots of reasons but for any hire, it's still incredibly important to distinguish between a candidate's **confidence** and **competence**. Where is their proof of experience and can they demonstrate their competence?
+
+There could be lots of reasons but for any hire, it's still incredibly important to distinguish between a candidate's **confidence** and **competence**. Where is their proof of experience and can they demonstrate their competence?  
 
 The [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) effect is a cognitive bias wherein people of low ability have illusory superiority. They mistakenly assess their own cognitive ability as greater than it really is. Additionally, there is a pronounced difference by traditional genders, as noted by *The Atlantic* in a piece called "[The Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/)" which notes; 
 

@@ -1,11 +1,10 @@
 ---
-draft: true
 title: 'Employees, pets or cattle? Part 1.'
 subtitle: Dumb boxes and smart engineers or...
 image: images/blog/cow.jpg
 date: {}
 author: Donal
-published: true
+published: false
 ---
 Let's talk about culture, the hiring process, and candidate experience. Talent teams including technical recruitment and sourcing are both the scouts and gatekeepers of an organization's culture. They are high level stewards of an organisation's true operating system, its people.
 

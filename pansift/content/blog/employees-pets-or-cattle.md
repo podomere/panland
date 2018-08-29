@@ -5,7 +5,6 @@ subtitle: Dumb boxes and smart engineers or...
 image: images/blog/cow.jpg
 date: {}
 author: Donal
-published: true
 ---
 Let's talk about culture, the hiring process, and the candidate experience. Talent teams including technical recruitment and sourcing are the scouts and gatekeepers of an organization's culture. They are high level stewards of an organisation's true operating system, its people. Contrast that with a prospective applicant or candidate's first engagement with an organization where they are forming both conscious and unconscious external opinions about your organization. Irrespective of your expertise and intent, they already have a feeling and instinct about your brand, one that's been informed by marketing and general market sentiment.
 

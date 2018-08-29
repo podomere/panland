@@ -20,7 +20,7 @@
   </div>
   <div class="row justify-content-center">
     {{ range $index,  $element:= .Site.Data.workingprocess.item }}
-    <div class="col-{{ if eq $index 6 }}12 {{else}}6 {{end}} col-md-6 col-sm-12 col-xs-12 mt-1 p-1">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-1 p-1">
       <div class="service-item text-center">
         {{ with .number }}
         <span class="count">{{ . }}.</span>

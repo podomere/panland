@@ -12,19 +12,18 @@ Let's talk about culture, the hiring process, and candidate experience. Talent t
 
 Unfortunately there's a growing dichotomy between organisations that consider their people an asset and those that think employees are a necessary evil. In an age of increasing automation, many departments are beginning to adopt one of two associated perspectives whereby they embrace platforms or technologies that lead to "smart boxes/dumb people" rather than "dumb boxes/smart people".
 
-This turn of phrase refers to differing approaches relating to disposability and commoditisation. It speaks of where to embed 'smart' in the layers of organisational and platform design. Originally the concept applied to [network devices](https://pansift.com/blog/the-trouble-with-network-engineers/) and their vendors yet it is equally applicable to organisational design. For many years there's been talk of core versus context, outsourcing and outtasking versus in-house, but there's one asset every organisation should covet: the best and most resilient people. People who collectively express values and actions that form a culture, a culture which becomes your organisation's true *Operating System*.
 
 ## Cloud Architecture
 
 As software is eating the world, organisations are (from a macro perspective) all becoming *technology organisations* (though still built and run by people). The question then arises how to design, build, operate, and replenish your company based on a continuity of people, process, and technology. 
 
-What are you optimsing for? What are you measuring? What is your business' operating environment? What do you value most? What is sustainable?
+What are you optimising for? What are you measuring? What is your business' operating environment? What do you value most? What is sustainable?
 
 > > Is technology's role to augment, replace, or refine human activity?
 
 ## Employee Lifetime Value (ELV)
 
-Whether your technology stack is designed to augment human activities or not, you need to attract and retain the smartest and most collaborative people you can find. Once hired, it is imperative that employees stay, grow, and contribute - rather than churn out the door (losing institutional knowledge and incuring increased expense to back fill positions). But how do you measure their skills and qualities, can you afford not to independently verify as much about them as early as you can?
+Whether your technology stack is designed to augment human activities or not, you need to attract and retain the smartest and most collaborative people you can find. Once hired, it is imperative that employees stay, grow, and contribute - rather than churn out the door (losing institutional knowledge and incurring increased expense to back fill positions). But how do you measure their skills and qualities, can you afford not to independently verify as much about them as early as you can?
 
 An employee who makes themselves dispensable by creatively automating away their workload (to free themselves up to work on more challenging or valuable tasks) is worth their weight in gold. These people will generally have mastered not just the fundamentals in their domain, but have gone on to express their expertise like a jazz musician. This is a far cry from treating employees as commodities who can be easily interchanged. But how do you find creative automators and not automatons?
 

@@ -6,7 +6,17 @@ image: images/blog/cow.jpg
 date: {}
 author: Donal
 ---
-Let's talk about culture, the hiring process, and the candidate experience. Talent teams including technical recruitment and sourcing are the scouts and gatekeepers of an organization's culture. They are high level stewards of an organisation's true operating system, its people. Contrast that with a prospective applicant or candidate's first engagement with an organization where they are forming both conscious and unconscious external opinions about your organization. Irrespective of your expertise and intent, they already have a feeling and instinct about your brand, one that's been informed by marketing and general market sentiment.
+Let's talk about culture, the hiring process, and candidate experience. Talent teams including technical recruitment and sourcing are both the scouts and gatekeepers of an organization's culture. They are high level stewards of an organisation's true operating system, its people.
+
+Unfortunately there's a growing dichotomy between those organisations who consider their people an asset, and those who think employees are a necessary evil. In an age of increasing automation, many departments are beginning to adopt one of two associated perspectives whereby they embrace platforms or technologies that result in "smart boxes/dumb people" or "dumb boxes/smart people". 
+
+As software is eating the world and all organisations are becoming in some way technology organisations, it begs the question about how you design, build, and operate your company. What are you optimsing for? What are you measuring? What is your business? And what do you value?
+
+If your organisation is comprised of people and your technology is designed to augment human activity (rather than outright replace it), you will still need to attract and retain the smartest people you can. Once hired it is optimal that employees stay, grow, and contribute rather than churn and incur expense to back fill positions. There's a difference between an employee making themselves dispensable to free themselves up to work on more challenging or valuable tasks versus treating employees as commodities that can be easily interchanged. 
+
+If you agree that one goal is to attract and retain staff then read on...
+
+Irrespective of your expertise and intent, an applicant (or candidate)'s already have a feeling and instinct about your brand, one that's been informed by marketing and general market sentiment.
 
 Most importantly, their perspective has been influenced by peer and personal experiences of your brand. If an applicant is interested in working with your organization, everything touchpoint from here on in shapes their sentiment exponentially. How they are treated sets the tone not just for their potential future employment with you, but if they are unsuccessful, they then become influencers in the market regarding your hiring practices and perceived culture. This is something to be painfully aware of in the age of network recruitment.
 
@@ -31,3 +41,4 @@ For information technology jobs and related engineering careers, the hiring proc
   <div class="card-header"><b>PS</b></div>
   <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request automated initial technical screens. We call the process of testing candidates in real live scenarios "<a href="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening"</a>. It allows for wider funnels and less bias whilst saving costs and reducing <b>time-to-hire</b>.</div>
 </div>
+

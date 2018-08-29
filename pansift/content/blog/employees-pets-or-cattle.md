@@ -2,18 +2,18 @@
 draft: true
 title: 'Employees, pets or cattle?'
 subtitle: Dumb boxes and smart engineers or...
-image: images/blog/duck.jpg
-date: {}
+image: images/blog/cow.jpg
+date: 2018-01-01T11:04:41.000Z
 author: Donal
 published: true
 ---
 Let's talk about culture, hiring, and the candidate experience. HR(Human Resources) and talent teams are the gatekeepers of an organization's culture and thus are also the high level stewards of its true operating system, its people. From the moment a prospective applicant or candidate engages with an organization they are forming both conscious and unconscious opinions about said organization. They also already have a gut reaction or instinct to the brand informed by previous marketing and market sentiment.
 
-More importantly their perspective has been influenced by peer or personal experiences of said brand. Now that an applicant is interested in working with an organization, everything from here on in shapes their sentiment exponentially. How they are treated sets the tone for their potential future employment (but also if they are unsuccessful, they then become influencers in the market).
+More importantly, their perspective has been influenced by peer or personal experiences of said brand. Now that an applicant is interested in working with an organization, everything from here on in shapes their sentiment exponentially. How they are treated sets the tone for their potential future employment (but also if they are unsuccessful, they then become influencers in the market). This is something to be painfully aware of in the age of network recruitment.
 
-Having a structured hiring process that's communicated well such that the applicant or candidate's expectation is set, reflects a culture that thinks things through, respects their (future) workforce, and plans or optimises for its people. Although everyone is different, a consistent and repeatable process which minimizes bias is something which scales. Once operating from a framework, customization is possible, but a 100% bespoke process each time is sloppy, inefficient, and a bad signal.
+Having a structured hiring process that's communicated well such that the applicant or candidate's expectation is set reflects a culture that thinks things through, respects a future workforce, and plans or optimises for its own people. Although everyone is different, a consistent and repeatable process which minimizes bias is something which scales. Once operating from a framework, customization is possible, but a 100% bespoke process each time is sloppy, inefficient, and a bad signal.
 
-For information technology jobs and their associated engineering careers the hiring process often includes an online aptitude test (and competency based interview questions) as popular ways to independently verify job skills (a form of 'human' test driven development of their organization). Fundamentally CVs are broken and biased, but even more so in such an unregulated and fast moving industry, so independent verification is crucial.
+For information technology jobs and related engineering careers, the hiring process often includes an online aptitude test (and competency based interview questions) as popular ways to independently verify job skills (a form of 'human' test driven development for teams if you will). Fundamentally CVs are broken and biased, but even more so in today's unregulated and fast moving I.T. industry. Independent verification is crucial in the latest recruitment for engineers.
 
 # Structured Hiring and Applicant Testing
 

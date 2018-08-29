@@ -26,7 +26,7 @@ What are you optimsing for? What are you measuring? What is your business' opera
 
 If your organisation is comprised of people and your technology stack is designed to augment human activity (rather than outright replace it) you will still need to attract and retain the smartest people you can. Once hired, it is optimal that employees stay, grow, and contribute rather than churn out the door with institutional knowledge (incuring increased expense to back fill positions). An employee who makes themselves dispensable by automating away their workload (to free themselves up to work on more challenging or valuable tasks) is worth their weight in gold. This is a far cry from treating employees as commodities who can be easily interchanged. 
 
-# Acquisition, Retention, Referral
+## Acquisition, Retention, Referral
 
 Irrespective of your hiring process, marketing, and intent, an applicant (or candidate) already has a feeling and instinct about most brands. A feeling that's been informed by previous marketing and general market sentiment. Most importantly, their perspective has been influenced by peer and personal experiences of your brand. If an applicant is interested in working with your organization, every touchpoint from here on in shapes their sentiment exponentially. How they are treated sets the tone not just for their potential future employment with you, but if they are unsuccessful, they then become influencers in the market regarding your hiring practices and perceived culture. This is something to be painfully aware of in the age of network recruitment.
 

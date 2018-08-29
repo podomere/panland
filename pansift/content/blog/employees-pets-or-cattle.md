@@ -22,7 +22,9 @@ When a technical recruiter, sourcer or hiring manager is trying to verify claime
 
 Advanced technical recruitment teams are increasingly using a *skills* verification test. These tests are sometimes referred to as a skills test, job assessment, or take home test. They are different from general aptitude tests in that they actually attempt to have an applicant or candidate show distinct capabilities in relation to a role's more narrow set of skills (as per an individual job description).
 
-## Competency Questions
+## Dumb boxes or Smart Engineers
+
+## Pets or Cattle
 
 ## Panel Interviews
 

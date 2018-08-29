@@ -40,12 +40,6 @@ Advanced technical recruitment teams are increasingly using a *skills* verificat
 
 For information technology jobs and related engineering careers, the hiring process is increasingly including an online aptitude test (and/or competency based interview questions) as a way to independently verify job skills (a form of 'human' test driven development for organisational software if you will). Fundamentally [CVs are broken and biased](https://pansift.com/blog/why-cvs-and-resumes-are-broken/), but even more so in today's unregulated and fast moving I.T. industry. Independent verification is crucial in the latest recruitment for engineers.
 
-## Dumb boxes or Smart Engineers
-
-## Pets or Cattle
-
-## Panel Interviews
-
 <div class="card">
   <div class="card-header"><b>PS</b></div>
   <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request automated initial technical screens. We call the process of testing candidates in real live scenarios "<a href="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening"</a>. It allows for wider funnels and less bias whilst saving costs and reducing <b>time-to-hire</b>.</div>

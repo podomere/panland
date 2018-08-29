@@ -13,14 +13,14 @@ Most importantly, their perspective has been influenced by peer and personal exp
 
 Having a structured hiring process which is communicated well from the outset moulds an applicant or candidate's expectations. A structured and non-bias process reflects a culture that thinks things through, respects its current and future workforce, and shows that it optimises for both internal and external entities. Although we're all different, a consistent and repeatable process which minimizes bias is something which can scale. When operating from a framework some customization is possible yet a 100% bespoke process (each time) is sloppy, inefficient, and a very bad signal.
 
-For information technology jobs and related engineering careers, the hiring process is increasingly including an online aptitude test (and/or competency based interview questions) as a way to independently verify job skills (a form of 'human' test driven development for organisational software if you will). Fundamentally [CVs are broken and biased](https://pansift.com/blog/why-cvs-and-resumes-are-broken/), but even more so in today's unregulated and fast moving I.T. industry. Independent verification is crucial in the latest recruitment for engineers.
-
 # Structured Hiring and Applicant Testing
 
 ## Pre hire Assessment Tests (Measuring Skills)
 When a technical recruiter, sourcer or hiring manager is trying to verify claimed skills it can be helpful to have applicants perform some form of task to demonstrate their technical competency. Unrelated to a psychometric or personality assessment (or any other behavioural assessment) a job aptitude test can provide at least some data points that either support or refute a CV or résumé.
 
 Advanced technical recruitment teams are increasingly using a *skills* verification test. These tests are sometimes referred to as a skills test, job assessment, or take home test. They are different from general aptitude tests in that they actually attempt to have an applicant or candidate show distinct capabilities in relation to a role's more narrow set of skills (as per an individual job description).
+
+For information technology jobs and related engineering careers, the hiring process is increasingly including an online aptitude test (and/or competency based interview questions) as a way to independently verify job skills (a form of 'human' test driven development for organisational software if you will). Fundamentally [CVs are broken and biased](https://pansift.com/blog/why-cvs-and-resumes-are-broken/), but even more so in today's unregulated and fast moving I.T. industry. Independent verification is crucial in the latest recruitment for engineers.
 
 ## Dumb boxes or Smart Engineers
 

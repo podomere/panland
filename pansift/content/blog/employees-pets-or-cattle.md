@@ -1,6 +1,6 @@
 ---
 draft: true
-title: 'Employees, pets or cattle?'
+title: 'Employees, pets or cattle? Part 1.'
 subtitle: Dumb boxes and smart engineers or...
 image: images/blog/cow.jpg
 date: 2018-01-01T11:04:41.000Z

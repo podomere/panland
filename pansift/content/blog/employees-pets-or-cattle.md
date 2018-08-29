@@ -13,7 +13,7 @@ More importantly, their perspective has been influenced by peer or personal expe
 
 Having a structured hiring process that's communicated well such that the applicant or candidate's expectation is set reflects a culture that thinks things through, respects a future workforce, and plans or optimises for its own people. Although everyone is different, a consistent and repeatable process which minimizes bias is something which scales. Once operating from a framework, customization is possible, but a 100% bespoke process each time is sloppy, inefficient, and a bad signal.
 
-For information technology jobs and related engineering careers, the hiring process often includes an online aptitude test (and competency based interview questions) as popular ways to independently verify job skills (a form of 'human' test driven development for teams if you will). Fundamentally CVs are broken and biased, but even more so in today's unregulated and fast moving I.T. industry. Independent verification is crucial in the latest recruitment for engineers.
+For information technology jobs and related engineering careers, the hiring process often includes an online aptitude test (and competency based interview questions) as popular ways to independently verify job skills (a form of 'human' test driven development for teams if you will). Fundamentally [CVs are broken and biased](https://pansift.com/blog/why-cvs-and-resumes-are-broken/), but even more so in today's unregulated and fast moving I.T. industry. Independent verification is crucial in the latest recruitment for engineers.
 
 # Structured Hiring and Applicant Testing
 

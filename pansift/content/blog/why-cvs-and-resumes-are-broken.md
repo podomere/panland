@@ -5,6 +5,7 @@ title: Why CVs and Résumés are broken.
 subtitle: And how simulations solve for Proof of Experience.
 tags:
   - cv
+  - hiring process
   - resume
   - job search
   - cover letter

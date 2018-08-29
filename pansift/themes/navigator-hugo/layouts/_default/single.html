@@ -3,24 +3,25 @@
 {{ partial "navigation.html" . }}
 
 <section class="blog-single section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="w-100 mb-3" alt="{{ .Summary }}"></a>
-                <h2>{{ .Title }}</h2>
-                <div class="post-meta mb-5">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            {{ .Params.subtitle }}
-                        </li>
-                    </ul>
-                </div>
-                {{ .Content }}
-<a data-sumome-share-id=8cbda623-9f56-4575-abed-bc3779c5e865></a>
-
-            </div>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="w-100 mb-3" alt="{{ .Summary }}"></a>
+      <h2>{{ .Title }}</h2>
+      <div class="post-meta mb-5">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+          {{ .Params.subtitle }}
+          </li>
+        </ul>
+      </div>
+      {{ .Content }}
+      <div class="mt-5">
+        <a data-sumome-share-id=8cbda623-9f56-4575-abed-bc3779c5e865></a>
+      </div>
     </div>
+  </div>
+</div>
 </section>
 <script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='126d2915621f0a98259bca2e8035fd77c73cc92051d493d7e7d60ebeae1b27a6';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
 

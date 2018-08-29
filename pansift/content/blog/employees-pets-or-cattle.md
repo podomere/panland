@@ -3,7 +3,7 @@ draft: true
 title: 'Employees, pets or cattle? Part 1.'
 subtitle: Dumb boxes and smart engineers or...
 image: images/blog/cow.jpg
-date: 2018-01-01T11:04:41.000Z
+date: {}
 author: Donal
 published: true
 ---
@@ -31,5 +31,7 @@ Advanced technical recruitment teams are increasingly using a *skills* verificat
 
 ## Panel Interviews
 
-
-
+<div class="card">
+  <div class="card-header"><b>PS</b></div>
+  <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request automated initial technical screens. We call the process of testing candidates in real live scenarios "<a href="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening"</a>. It allows for wider funnels and less bias whilst saving costs and reducing <b>time-to-hire</b>.</div>
+</div>

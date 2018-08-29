@@ -8,7 +8,7 @@ published: false
 ---
 Let's talk about culture, the hiring process, and candidate experience. Talent teams including technical recruitment and sourcing are both the scouts and gatekeepers of an organization's culture. They are high level stewards of an organisation's true operating system, its people.
 
-## Smart Boxes / Dumb People or Dumb Boxes and Smart People
+## Dumb Boxes and Smart People
 
 Unfortunately there's a growing dichotomy between 'organisations' that consider their people an asset and those that think employees are a necessary evil. In an age of increasing automation, many departments are beginning to adopt one of two associated perspectives whereby they embrace platforms or technologies that lead to "smart boxes/dumb people" rather than "dumb boxes/smart people".
 

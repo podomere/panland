@@ -20,7 +20,8 @@ summaryLength = 30
     [params.hero]
         enable  = true
         heading = "The Best Technical Recruitment use a pre hire Assessment Test."
-        description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent. Simulation based screening."
+        description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent with Simulation Based Screening."
+
         button  = true
         btnText = "Free Sign Up"
         btnURL  = "https://client.pansift.com/"

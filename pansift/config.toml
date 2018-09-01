@@ -20,7 +20,7 @@ summaryLength = 30
     [params.hero]
         enable  = true
         heading = "The Best Technical Recruitment use a pre hire Assessment Test."
-        description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent."
+        description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent. Simulation based screening."
         button  = true
         btnText = "Free Sign Up"
         btnURL  = "https://client.pansift.com/"
@@ -89,25 +89,17 @@ summaryLength = 30
         url     = "/why"
         weight  = 2
     [[menu.nav]]
-        name    = "Search"
-        url     = "/search"
-        weight  = 4
-    [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"
         weight  = 3
     [[menu.nav]]
-        name    = "Training"
-        url     = "/training"
-        weight  = 5
-    [[menu.nav]]
         name    = "Blog"
         url     = "/blog"
-        weight  = 6
+        weight  = 4
     [[menu.nav]]
         name    = "Login"
         url     = "https://client.pansift.com/clients/sign_in"
-        weight  = 7
+        weight  = 5
     
     # Footer Service Menu
     [[menu.service]]

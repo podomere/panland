@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+{{ partial "navigation.html" . }}
+
+{{ partial "page-title" . }}
+
+{{ partial "cookies.html" . }}
+
+{{ partial "cta.html" . }}
+
+{{ partial "footer.html" . }}

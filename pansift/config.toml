@@ -59,6 +59,12 @@ summaryLength = 30
         title   = "Technical Training"
         subtitle= "Featured Pluralsight training ( inc. 15% off Annual Subscriptions )"
 
+    # Search Section
+    [params.cookies]
+        enable  = true
+        title   = "Cookies"
+        subtitle= "Cookie policy"
+
     # Call to Action Section on About Page
     [params.cta]
         enable  = true
@@ -129,6 +135,10 @@ summaryLength = 30
         name    = "Contact Us"
         url     = "/contact"
         weight  = 1
+    [[menu.quicklink]]
+        name    = "Cookies"
+        url     = "/cookies"
+        weight  = 5
 
 [blackfriday]
   plainIDAnchors = true

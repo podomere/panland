@@ -2,9 +2,9 @@
 
 {{ partial "navigation.html" . }}
 
-{{ partial "page-title" . }}
+{{ partial "page-title.html" . }}
 
-{{ partial "cookie-policy" . }}
+{{ partial "cookiepolicy.html" . }}
 
 {{ partial "cta.html" . }}
 

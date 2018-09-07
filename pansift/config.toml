@@ -136,7 +136,7 @@ summaryLength = 30
         url     = "/contact"
         weight  = 1
     [[menu.quicklink]]
-        name    = "Cookies"
+        name    = "Cookie Policy"
         url     = "/cookies"
         weight  = 5
 

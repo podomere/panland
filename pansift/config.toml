@@ -20,7 +20,7 @@ summaryLength = 30
     [params.hero]
         enable  = true
         heading = "The Best Technical Recruitment use a pre hire Assessment Test."
-        description = "Reduce risk, decrease costs, and accelerate Time-to-Hire. Verify talent for Cloud, Infrastructure, and Ops roles with Simulation Based Screening."
+        description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent."
 
         button  = true
         btnText = "Free Sign Up"

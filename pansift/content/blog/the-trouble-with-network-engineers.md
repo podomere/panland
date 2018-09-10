@@ -39,7 +39,7 @@ Today there are even greater mixed skills roles such as [SRE (Site Reliability E
 These new **multiskilled roles** have arisen due to the criticality of modern networks coupled with inefficiencies in traditional organisational structures. 
 
 <div class="card">
-  <h4 class="card-header"><b>PS : Tips</b></h4>
+  <h4 class="card-header"><b>PS : Tip</b></h4>
   <div class="card-body">The role of a network engineer has evolved but the hiring process hasn’t kept pace. For hiring teams this means lower placement rates and a higher cost structure as recruiters are increasingly stretched in their sourcing and screening activities. This challenge is one that <a href ="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> addresses with <a href ="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a>.
   </div>
 </div>
@@ -71,7 +71,7 @@ Whether posting job advertisements on traditional platforms, trawling through in
 Unfortunately the above is unrealistic, yet more and more services are beginning to provide **expert pre-screened talent pools** whereby they themselves (or their expert platforms) proxy the sourcing and screening on an organisations behalf. This then helps to populate an organisation's funnel faster... with candidates who are **actually in possession** of the skills claimed.
 
 <div class="card">
-  <h4 class="card-header"><b>PS : Tips</b></h4>
+  <h4 class="card-header"><b>PS : Tip</b></h4>
   <div class="card-body"><a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> also unlocks a pre-screened candidate pool (as an add-on) whereby candidates have actually used our <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> engine to screen their own CV or Linkedin profiles.</div>
 </div> 
 <br>

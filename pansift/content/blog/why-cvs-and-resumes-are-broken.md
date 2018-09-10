@@ -23,7 +23,7 @@ This may be a little difficult to swallow but CVs and resumes are fundamentally 
 
 With the written word it's not difficult for _many_ to project themselves as an enterprising and dynamic achiever ( [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) ), whilst some undersell themselves ( [The Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) ). Independent of resume format, with a little marketing spin and some flourishes here and there (and maybe some unethical [keyword stuffing](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/) ) there's suddenly a problem of **validity** when sourcing or screening candidates. But who would do such a thing? Surely candidates are not all biased and only list current skills?
 
-## Who does what?
+## How To Market Yourself?
 
 So, apart from resume templates and a cover letter, CVs and profiles are, erm... **self-written** with a specific goal in mind! When a candidate embellishes or oversells their skills and experience, hiring teams get a percentage of non-trustworthy information. This misinformation influences who to engage with further during sourcing and screening. In computer parlance this defective input leads to what's called [GIGO](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) [(Garbage In, Garbage Out)](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out). Albeit most people are trustworthy, candidates are still biased towards themselves. But is there any fault in _optimising_ a piece of _marketing literature_ for a specific goal? Where are the false advertising police I hear you cry and how much human time is spent checking the claims made?
 
@@ -31,11 +31,11 @@ So, apart from resume templates and a cover letter, CVs and profiles are, erm...
 
 Unfortunately each method of encapsulating information is biased but still the de facto currency for initial decision making. Sometimes it's better to think of these artifacts and mediums as purely personal advertisements or **marketing flyers**. If they contain too much information a candidate risks losing the focus and attention of a human reader, too little, and not enough _surface_ or _context_ is exposed to be [found](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/). Interestingly, job advertisements and position descriptions suffer similar issues with their phrasing and keywords which has lead to crowd sourced reviewing sites for companies. Either way, any keywords or claims should be _validatable_ and _verifiable_.
 
-## Back Scratching for Fun and Profit
+## Simple Back Scratching for Fun and Profit
 
 Asking colleagues or previous managers for references is also flawed and fraught with a societal weight for them to be overtly _positive_ (though in some jurisdictions managers are legally required to be wholly neutral). Candidates also tend to only nominate those whom they've had productive or good working relationships with. **Endorsements** on platforms like Linkedin create reciprocal pressure to sycophantically stroke the other persons ego... more [GIGO](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) alarms! So, must we revalidate every aspect of a candidate from scratch?
 
-## Human or Machine Readable?
+## Tips for Human or Machine Readable?
 
 Currently it seems we're in an environment where candidates need to optimise CVs and profiles for both **human and machine** readability by: 
 * telling a human story about the impact they've had in previous roles

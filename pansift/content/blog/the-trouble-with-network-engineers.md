@@ -40,7 +40,7 @@ These new **multiskilled roles** have arisen due to the criticality of modern ne
 
 <div class="card">
   <h4 class="card-header"><b>PS : Tip</b></h4>
-  <div class="card-body">The role of a network engineer has evolved but the hiring process hasn’t kept pace. For hiring teams this means lower placement rates and a higher cost structure as recruiters are increasingly stretched in their sourcing and screening activities. This challenge is one that <a href ="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> addresses with <a href ="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a>.
+  <div class="card-body">The role of a network engineer has evolved but the hiring process hasn’t kept pace. For hiring teams this means lower placement rates and a higher cost structure as recruiters are increasingly stretched in their sourcing and screening activities. This challenge is one that <a href ="https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> solves.
   </div>
 </div>
 <br>
@@ -61,9 +61,9 @@ Also, by requiring the demonstration of skills and not solely relying upon **bia
 
 Structured Hiring is a topic as broad as it is deep and it constantly evolves. We shall focus on `2` specific aspects in relation to hiring network engineers.
 
->>  Where do we normally find network engineers? ([Sourcing Talent](#sourcing-talent))
+>>  Where do we normally find network engineers? ([Sourcing Talent](#how-to-source-talent))
 
->> How do we know they can do what they claim? ([Screening Talent](#screening-talent))  
+>> How do we know they can do what they claim? ([Screening Talent](#simple-screening-of-talent))  
 
 ### How to Source Talent
 Whether posting job advertisements on traditional platforms, trawling through internal databases, or leveraging professional networks seeking candidates, the holy grail would be that of a perfect candidate arriving pre-screened for both _attitude and experience_ (with the added assumption being they are looking for new opportunities and are ready to move to a new role!). In such a perfect world, all that would remain would be doing due diligence, negotiating an offer, and ensuring culture **add** for the organisation.
@@ -72,7 +72,7 @@ Unfortunately the above is unrealistic, yet more and more services are beginning
 
 <div class="card">
   <h4 class="card-header"><b>PS : Tip</b></h4>
-  <div class="card-body"><a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> also unlocks a pre-screened candidate pool (as an add-on) whereby candidates have actually used our <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> engine to screen their own CV or Linkedin profiles.</div>
+  <div class="card-body"><a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> also unlocks a pre-screened candidate pool (as an add-on) whereby candidates have actually used our <a href="https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> engine to screen their own CV or Linkedin profiles.</div>
 </div> 
 <br>
 <br>
@@ -89,4 +89,4 @@ Optimally, one wants to hire for _both attitude and experience_ with as much ver
 > In almost all network engineering specialisations, fundamental _hard_ skills include a working knowledge of (but are not limited to): IPv4, IPv6, TCP/IP, arp, 802.3, SNMP, syslog, NTP, SSH, BGP, OSPF, VRF, MPLS, VTP, 802.3af, VLANs, subnetting, 802.1q, 802.3ad, STP, LLDP, multicast, VRRP, GLBP, DHCP, ACLs, NAT, IPFIX.
 
 ## Review the Basics
-Indeed the challenge is to verify that a network engineering candidate in a hiring funnel **actually has**, and can also **demonstrate**, the fundamental and/or desirable skills required for a role. By validating the correctness and accuracy of a position description and by verifying the candidate's skills, faster decisions can be made that also lead to better quality hires. As we’re increasingly able to simulate different environments, the future may yet hold a version of Star Trek’s [Kobayashi Maru](https://en.wikipedia.org/wiki/Kobayashi_Maru) test, but until then we have [Simulation Based Screening](https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs). If you don't have enough evidence to back up your decisions (i.e. are unable to objectively contrast and compare candidates), then it's likely _unconscious biases_ will lead to **expensive bad hires** in the near future.
+Indeed the challenge is to verify that a network engineering candidate in a hiring funnel **actually has**, and can also **demonstrate**, the fundamental and/or desirable skills required for a role. By validating the correctness and accuracy of a position description and by verifying the candidate's skills, faster decisions can be made that also lead to better quality hires. As we’re increasingly able to simulate different environments, the future may yet hold a version of Star Trek’s [Kobayashi Maru](https://en.wikipedia.org/wiki/Kobayashi_Maru) test, but until then we have [Simulation Based Screening](https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs). If you don't have enough evidence to back up your decisions (i.e. are unable to objectively contrast and compare candidates), then it's likely _unconscious biases_ will lead to **expensive bad hires** in the near future.

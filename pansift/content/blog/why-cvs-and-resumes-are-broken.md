@@ -55,7 +55,7 @@ Certifications and qualifications are one form of communication compression whic
 One increasingly popular option for hiring teams is to give the candidate tasks that simulate a real world scenario. This allows for them to be independently evaluated. Some organisations set take home projects but make unreasonable requests on a candidate’s time e.g. `4`-`20` hours or more. Many of these projects or tasks still require expert **human time** to grade them which doesn't scale and is costly.
 
 <div class="card ">
-  <h3 class="card-header"><b>PS</b></h3>
+  <h3 class="card-header"><b>PS : Tips</b></h3>
   <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. This method is called <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> and it allows for wider funnels and less bias whilst saving costs and reducing <b>time to hire</b>.
   </div>
 </div> 

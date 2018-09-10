@@ -56,8 +56,11 @@ One increasingly popular option for hiring teams is to give the candidate tasks 
 
 <div class="card ">
   <h3 class="card-header"><b>PS</b></h3>
-  <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. By using <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank"><b>ML </b>(Machine Learning)</a> and <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank"><b>NLP </b>(Natural Language Processing)</a> we extract <b>testable skills</b> and then build <b>custom  simulations</b> to test claimed skills. You can also use predefined simulations or even drag and drop skills to build your own. This method is called <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> and it allows for wider funnels and less bias whilst saving costs and reducing <b>time to hire</b>.</div></div> 
-
+  <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. This method is called <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> and it allows for wider funnels and less bias whilst saving costs and reducing <b>time to hire</b>.
+  </div>
+</div> 
+<br>
+<br>
 Human time is expensive and a _resource_ best spent on evaluating a candidate's soft skills, collaboration, creativity, and attitude. Further depth of expertise can be checked by human experts once the candidate has proven they are in possession of the basic fundamental and desirable skills. Be it someone in talent acquisition, recruiting, management, or an internal domain expert, **time should not be wasted** administering and re-administering the same _hard skills_ test over and over again. Automation can be leveraged to (remotely or locally) separate the _wheat from the chaff_ and help identify those who are serious about committing to a role rather than those just playing the law of averages. 
 
 <img src="/images/blog/time-to-hire-image-v7.png" class="w-100 mb-3">

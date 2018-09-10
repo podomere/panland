@@ -41,6 +41,10 @@ summaryLength = 30
         title   = "Raise the Bar : Blog"
         subtitle= "Tactics, techniques and procedures for keeping pace with modern technology!"
 
+    # Blog CTA Section On Homepage
+    [params.blog-cta]
+        enable  = true
+
     # Time to Hire Section
     [params.tth]
         enable  = true

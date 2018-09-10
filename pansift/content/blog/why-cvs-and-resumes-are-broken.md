@@ -21,7 +21,7 @@ image: /images/blog/cv_broken.jpg
 ---
 This may be a little difficult to swallow but CVs and resumes are fundamentally broken. Apart from the fact that it's difficult for someone to describe their own capabilities, it's even harder to do so **objectively**. During a job search, a candidate knows they're in a competitive environment so there's always pressure to inflate one's expertise a little to get noticed. Here's where [GIGO](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) kicks in yet few are willing to acknowledge its existence. Let me explain...
 
-With the written word it's not difficult for _many_ to project themselves as an enterprising and dynamic achiever ( [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) ), whilst some undersell themselves ( [The Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) ). Independent of resume format, with a little marketing spin and some flourishes here and there (and maybe some unethical [keyword stuffing](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/) ) there's suddenly a problem of **validity** when sourcing or screening candidates. But who would do such a thing? Surely candidates are not all biased and only list current skills?
+With the written word it's not difficult for _many_ to project themselves as an enterprising and dynamic achiever ( [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) ), whilst some undersell themselves ( [The Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) ). Independent of resume format, with a little marketing spin and some flourishes here and there (and maybe some unethical [keyword stuffing](https://pansift.com/blog/how-to-seo-hack-your-cv/) ) there's suddenly a problem of **validity** when sourcing or screening candidates. But who would do such a thing? Surely candidates are not all biased and only list current skills?
 
 ## How To Market Yourself?
 
@@ -29,7 +29,7 @@ So, apart from resume templates and a cover letter, CVs and profiles are, erm...
 
 ## Curriculum Vitae, Résumé, or LinkedIn?
 
-Unfortunately each method of encapsulating information is biased but still the de facto currency for initial decision making. Sometimes it's better to think of these artifacts and mediums as purely personal advertisements or **marketing flyers**. If they contain too much information a candidate risks losing the focus and attention of a human reader, too little, and not enough _surface_ or _context_ is exposed to be [found](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/). Interestingly, job advertisements and position descriptions suffer similar issues with their phrasing and keywords which has lead to crowd sourced reviewing sites for companies. Either way, any keywords or claims should be _validatable_ and _verifiable_.
+Unfortunately each method of encapsulating information is biased but still the de facto currency for initial decision making. Sometimes it's better to think of these artifacts and mediums as purely personal advertisements or **marketing flyers**. If they contain too much information a candidate risks losing the focus and attention of a human reader, too little, and not enough _surface_ or _context_ is exposed to be [found](https://pansift.com/blog/how-to-seo-hack-your-cv/). Interestingly, job advertisements and position descriptions suffer similar issues with their phrasing and keywords which has lead to crowd sourced reviewing sites for companies. Either way, any keywords or claims should be _validatable_ and _verifiable_.
 
 ## Simple Back Scratching for Fun and Profit
 
@@ -40,7 +40,7 @@ Asking colleagues or previous managers for references is also flawed and fraught
 Currently it seems we're in an environment where candidates need to optimise CVs and profiles for both **human and machine** readability by: 
 * telling a human story about the impact they've had in previous roles
 * describing their capabilities and listing their expertise (skills)
-* ensuring that any data mining, discovery, or re-discovery by [ATS / machine agents](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/) is catered for ( e.g. [How to SEO hack your CV](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/) )
+* ensuring that any data mining, discovery, or re-discovery by [ATS / machine agents](https://pansift.com/blog/how-to-seo-hack-your-cv/) is catered for ( e.g. [How to SEO hack your CV](https://pansift.com/blog/how-to-seo-hack-your-cv/) )
 
 ## Proof of Work or Proof of Experience?
 
@@ -56,7 +56,7 @@ One increasingly popular option for hiring teams is to give the candidate tasks 
 
 <div class="card ">
   <h4 class="card-header"><b>PS : Tip</b></h4>
-  <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. This method is called <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> and it allows for wider funnels and less bias whilst saving costs and reducing <b>time to hire</b>.
+  <div class="card-body">We recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. This method is called <a href="https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> and it allows for wider funnels and less bias whilst saving costs and reducing <b>time to hire</b>.
   </div>
 </div> 
 <br>
@@ -65,4 +65,4 @@ Human time is expensive and a _resource_ best spent on evaluating a candidate's 
 
 <img src="/images/blog/time-to-hire-image-v7.png" class="w-100 mb-3">
 
-If you don't have enough objective evidence to back up your decisions then it's highly likely **unconscious bias** will lead to expensive or bad hires. With the goals of reduced costs and faster _time to hire_, everyone's looking for non-zero sum games. As we're increasingly able to simulate different environments (and in the future via augmented reality and virtual reality) a range of different types of [Simulation Based Screening](https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs) present themselves.
+If you don't have enough objective evidence to back up your decisions then it's highly likely **unconscious bias** will lead to expensive or bad hires. With the goals of reduced costs and faster _time to hire_, everyone's looking for non-zero sum games. As we're increasingly able to simulate different environments (and in the future via augmented reality and virtual reality) a range of different types of [Simulation Based Screening](https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs) present themselves.

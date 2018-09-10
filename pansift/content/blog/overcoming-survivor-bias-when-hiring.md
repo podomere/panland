@@ -53,8 +53,3 @@ So, how does [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kr
 
 ## Caveat Emptor
 It is extremely time consuming for domain experts or senior staff to independently screen and verify all applicant or candidate skills. This checking of fundamental hard skills *can however* be automated in many domains. This saves on expensive human time and speeds up *time-to-hire* whilst also facilitating wider recruiting funnels. Additionally, imagine having your own candidate skills analytics to use in your structured hiring process to support not just decision making but as talking points in later stage interviews with your senior engineering staff or leadership.
-
-<div class="card">
-  <div class="card-header"><b>PS</b></div>
-  <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request automated initial technical screens. By using a position description, CV, or candidate profile as a form of <i>keyword currency</i> we build custom simulations to test a practitioner's claimed skilling. You can also use predefined simulations or build your own. We call the process of testing candidates in real live scenarios "<a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening"</a>. It allows for wider funnels and less bias whilst saving costs and reducing <b>time-to-hire</b>.</div>
-</div>

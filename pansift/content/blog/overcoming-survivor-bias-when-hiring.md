@@ -36,11 +36,11 @@ Unfortunately [CVs and Résumés are fundamentally broken](https://blog.pansift.
 ## Peter and Dunning-Kruger Checklist
 Typically you may never **really** know why someone leaves their previous organisation (as you are only privy to what they *choose* to tell you!).
 
-- have they reached a ceiling and are now seeking new challenges?
-- have other life or family changes initiated a move?
-- is it a financial decision, better remuneration, or for increased flexibility?
-- are they on a PIP(Performance Improvement Plan) and already being managed out?
-- or more scarily perhaps, have they already reached their level of incompetence ( e.g. the [Peter Principle](https://en.wikipedia.org/wiki/Peter_principle)) ?
+- - have they reached a ceiling and are now seeking new challenges?
+- - have other life or family changes initiated a move?
+- - is it a financial decision, better remuneration, or for increased flexibility?
+- - are they on a PIP(Performance Improvement Plan) and already being managed out?
+- - or more scarily perhaps, have they already reached their level of incompetence ( e.g. the [Peter Principle](https://en.wikipedia.org/wiki/Peter_principle)) ?
 <br><br>
 
 There could be lots of reasons but for any hire, it's still incredibly important to distinguish between a candidate's **confidence** and **competence**. Where is their proof of experience and can they demonstrate their competence?  

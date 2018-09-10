@@ -72,13 +72,13 @@ Unfortunately the above is unrealistic, yet more and more services are beginning
 
 <div class="card">
   <h4 class="card-header"><b>PS : Tip</b></h4>
-  <div class="card-body"><a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> also unlocks a pre-screened candidate pool (as an add-on) whereby candidates have actually used our <a href="https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> engine to screen their own CV or Linkedin profiles.</div>
+  <div class="card-body">As we build <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we're also building a pre-screened candidate pool (as an add-on) whereby candidates have used <a href="https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> to screen their own CV or Linkedin profiles.</div>
 </div> 
 <br>
 <br>
   
 ### Simple Screening of Talent
-Traditional hiring decisions may seem a bit haphazard when compared to more modern **data-driven** determinations. Previously, a recruiter, hiring manager, or talent acquisition team member (with or without domain expertise) may have been manually sifting through applicant's CVs, scanning databases for keywords using '[Boolean](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/)' searches, or using other traditional methods. This is the top of the 'funnel' in most scenarios. Unfortunately though, some of the best candidates can be easily overlooked. Conversely and undesirably, those who look good on 'paper' (or who game the system with [simple keyword manipulation](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/)) may make it to the next phase. 
+Traditional hiring decisions may seem a bit haphazard when compared to more modern **data-driven** determinations. Previously, a recruiter, hiring manager, or talent acquisition team member (with or without domain expertise) may have been manually sifting through applicant's CVs, scanning databases for keywords using '[Boolean](https://pansift.com/blog/how-to-seo-hack-your-cv/)' searches, or using other traditional methods. This is the top of the 'funnel' in most scenarios. Unfortunately though, some of the best candidates can be easily overlooked. Conversely and undesirably, those who look good on 'paper' (or who game the system with [simple keyword manipulation](https://pansift.com/blog/how-to-seo-hack-your-cv/)) may make it to the next phase. 
 
 So, if initial screening isn't optimising for the widest and most accurate funnel, then human time spent phone screening, videoconferencing, and in person interviewing might not be targeting the best candidates but rather the best **marketers**.
 

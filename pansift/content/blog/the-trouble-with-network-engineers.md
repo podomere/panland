@@ -40,7 +40,11 @@ These new **multiskilled roles** have arisen due to the criticality of modern ne
 
 <div class="card">
   <div class="card-header"><b>PS</b></div>
-  <div class="card-body">The role of a network engineer has evolved but the hiring process hasn’t kept pace. For hiring teams this means lower placement rates and a higher cost structure as recruiters are increasingly stretched in their sourcing and screening activities. This challenge is one that <a href ="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> addresses with <a href ="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a>.</div></div>
+  <div class="card-body">The role of a network engineer has evolved but the hiring process hasn’t kept pace. For hiring teams this means lower placement rates and a higher cost structure as recruiters are increasingly stretched in their sourcing and screening activities. This challenge is one that <a href ="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> addresses with <a href ="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a>.
+  </div>
+</div>
+<br>
+<br> 
 
 ## Guide to Structured Hiring
 'Structured Hiring' helps bring about a more consistent, evidence based, and auditable process in each step of an organisation's hiring endeavours. 
@@ -70,8 +74,8 @@ Unfortunately the above is unrealistic, yet more and more services are beginning
   <div class="card-header"><b>PS</b></div>
   <div class="card-body"><a href="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> also unlocks a pre-screened candidate pool (as an add-on) whereby candidates have actually used our <a href="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> engine to screen their own CV or Linkedin profiles.</div>
 </div> 
-  
-  
+<br>
+<br>
   
 ### Simple Screening of Talent
 Traditional hiring decisions may seem a bit haphazard when compared to more modern **data-driven** determinations. Previously, a recruiter, hiring manager, or talent acquisition team member (with or without domain expertise) may have been manually sifting through applicant's CVs, scanning databases for keywords using '[Boolean](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/)' searches, or using other traditional methods. This is the top of the 'funnel' in most scenarios. Unfortunately though, some of the best candidates can be easily overlooked. Conversely and undesirably, those who look good on 'paper' (or who game the system with [simple keyword manipulation](https://blog.pansift.com/2017-12-12-how-to-seo-hack-your-cv/)) may make it to the next phase. 
@@ -87,6 +91,8 @@ Optimally, one wants to hire for _both attitude and experience_ with as much ver
 <div class="card">
   <div class="card-header"><b>PS</b></div>
   <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request no more that <b><code>40</code> minutes to <code>2</code> hours</b> for an automated initial technical screen. By using <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank"><b>ML </b>(Machine Learning)</a> and <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank"><b>NLP </b>(Natural Language Processing)</a> we <b>extract testable skills</b> and then build <b>custom</b> simulations to test claimed skills. We call the process of testing candidates in real live scenarios <a href="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a>. It allows for wider funnels and less bias whilst saving costs and reducing <b>time-to-hire</b>.</div></div> 
+<br>
+<br>
 
 ## Review the Basics
 Indeed the challenge is to verify that a network engineering candidate in a hiring funnel **actually has**, and can also **demonstrate**, the fundamental and/or desirable skills required for a role. By validating the correctness and accuracy of a position description and by verifying the candidate's skills, faster decisions can be made that also lead to better quality hires. As we’re increasingly able to simulate different environments, the future may yet hold a version of Star Trek’s [Kobayashi Maru](https://en.wikipedia.org/wiki/Kobayashi_Maru) test, but until then we have [Simulation Based Screening](https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs). If you don't have enough evidence to back up your decisions (i.e. are unable to objectively contrast and compare candidates), then it's likely _unconscious biases_ will lead to **expensive bad hires** in the near future.

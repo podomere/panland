@@ -42,8 +42,11 @@ summaryLength = 30
         subtitle= "Tactics, techniques and procedures for keeping pace with modern technology!"
 
     # Blog CTA Section On Homepage
-    [params.blog-cta]
+    [params.blog_cta]
         enable  = true
+        topTitle= ""
+        title   = ""
+        subtitle= ""
 
     # Time to Hire Section
     [params.tth]

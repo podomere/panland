@@ -29,8 +29,3 @@ As long as your keyword list **actually applies** to **your experience** in what
 
 ## Easy Countermeasures
 Irrespective of whether you use keyword stuffing or not, if a hiring team uses a technical screen such as [Simulation Based Screening](https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs) then you better be `100%` honest and up-to-date on all the skills you list!!
-
-<div class="card">
-  <div class="card-header"><b>PS</b></div>
-  <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request automated initial technical screens. By using a position description, CV, or candidate profile as a form of <i>keyword currency</i> we build <b>custom</b> simulations to test a practitioner's claimed skilling. Practitioners can even screen their own CVs and choose to join our data driven candidate pool. We call the process of testing candidates in real live scenarios "<a href="https://try.pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening"</a>. It allows for wider funnels and less bias whilst saving costs and reducing <b>time-to-hire</b>.</div>
-</div>

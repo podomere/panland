@@ -36,11 +36,11 @@ Unfortunately [CVs and Résumés are fundamentally broken](https://blog.pansift.
 ## Peter and Dunning-Kruger Checklist
 Typically you may never **really** know why someone leaves their previous organisation (as you are only privy to what they *choose* to tell you!).
 
-- have they reached a ceiling and are now seeking new challenges?
-- have other life or family changes initiated a move?
-- is it a financial decision, better remuneration, or for increased flexibility?
-- are they on a PIP(Performance Improvement Plan) and already being managed out?
-- or more scarily perhaps, have they already reached their level of incompetence ( e.g. the [Peter Principle](https://en.wikipedia.org/wiki/Peter_principle)) ?
+- - have they reached a ceiling and are now seeking new challenges?
+- - have other life or family changes initiated a move?
+- - is it a financial decision, better remuneration, or for increased flexibility?
+- - are they on a PIP(Performance Improvement Plan) and already being managed out?
+- - or more scarily perhaps, have they already reached their level of incompetence ( e.g. the [Peter Principle](https://en.wikipedia.org/wiki/Peter_principle)) ?
 <br><br>
 
 There could be lots of reasons but for any hire, it's still incredibly important to distinguish between a candidate's **confidence** and **competence**. Where is their proof of experience and can they demonstrate their competence?  
@@ -56,5 +56,5 @@ It is extremely time consuming for domain experts or senior staff to independent
 
 <div class="card">
   <div class="card-header"><b>PS</b></div>
-  <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request automated initial technical screens. By using a position description, CV, or candidate profile as a form of <i>keyword currency</i>, we then use <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank"><b>ML </b>(Machine Learning)</a> and <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank"><b>NLP </b>(Natural Language Processing)</a> to <b>extract testable skills</b>. You can also use predefined simulations or even drag and drop skills keywords to automagically build your own. We call the process of testing candidates in real live scenarios "<a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening"</a>. It allows for wider funnels and less bias whilst saving costs and reducing <b>time-to-hire</b>.</div>
+  <div class="card-body">At <a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">PanSift</a> we recommend that organisations request automated initial technical screens. By using a position description, CV, or candidate profile as a form of <i>keyword currency</i> we build custom simulations to test a practitioner's claimed skilling. You can also use predefined simulations or build your own. We call the process of testing candidates in real live scenarios "<a href="https://pansift.com/?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening"</a>. It allows for wider funnels and less bias whilst saving costs and reducing <b>time-to-hire</b>.</div>
 </div>

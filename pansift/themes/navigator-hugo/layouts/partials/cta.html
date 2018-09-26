@@ -1,23 +1,24 @@
 {{ if .Site.Params.cta.enable }}
 {{ "<!-- Start Call To Action -->" | safeHTML }}
 <section class="call-to-action section" style='background-image: url("{{ .Site.Params.cta.bg | absURL }}");height: 100%; width: 100%;'>
-    <div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				{{ with .Site.Params.cta.title }}<h1>{{ . | safeHTML }}</h1>{{ end }}
-        {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
-			</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      {{ with .Site.Params.cta.title }}<h1>{{ . | safeHTML }}</h1>{{ end }}
+      {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
+    </div>
     <div class="col-md-12">
       <center>
-      <form onsubmit="event.preventDefault(); secondstage('cta_email');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
-        <input type="email" name="try_email" id="cta_email" placeholder="Enter your email">
-        <input type="submit" value="Free Sign Up" style="cursor: pointer;">
-      </form>
-      <small>No strings, full access. <strong>No credit card required.</strong></small>
+        <form onsubmit="event.preventDefault(); secondstage('cta_email');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
+          <input type="email" name="try_email" id="cta_email" placeholder="Enter your email">
+          <input type="submit" value="Get Started" style="cursor: pointer;">
+        </form>
+      <small>No strings. Full access. <strong>No credit card required.</strong></small><br />
+      <small>Existing Customers <strong><a href="https://client.pansift.com/clients/sign_in">Login</a></strong></small>
       </center>
     </div>
-		</div>
-	</div>
+  </div>
+</div>
 </section>
 {{ "<!-- Start Call To Action -->" | safeHTML }}
 {{ end }}

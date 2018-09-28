@@ -78,7 +78,7 @@ summaryLength = 30
         bg      = "images/call-to-action/cockpit_v3.jpg"
         title   = "Engineering or hiring leader ?"
         subtitle= "Take a quick test flight with 10 free screens."
-        btnText = "Get Started Free"
+        btnText = "Start Screening"
 
     # Contact Section
     [params.contact]

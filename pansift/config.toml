@@ -60,7 +60,7 @@ summaryLength = 30
         title   = "Search PanSift Technical Skills"
         subtitle= "Improve your job screening process with testable skills and automated applicant screening"
 
-    # Search Section
+    # Training Section
     [params.training]
         enable  = true
         title   = "Technical Training"

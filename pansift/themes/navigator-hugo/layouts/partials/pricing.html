@@ -1,6 +1,9 @@
 {{ if .Site.Data.pricing.enable }}
 {{ "<!-- Start Pricing section -->" | safeHTML }}
 <section class="pricing-table section" id="pricing">
+{{ "<!-- NoUISlider and WNumb js -->" | safeHTML }}
+<script src="{{ "plugins/nouislider/dist/js/nouislider.min.js" | absURL }}"></script>
+<script src="{{ "plugins/wnumb/dist/js/wNumb.min.js" | absURL }}"></script>
 <div class="container">
   <div class="row">
     <div class="col">

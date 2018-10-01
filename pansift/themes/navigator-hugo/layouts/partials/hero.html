@@ -1,6 +1,9 @@
 {{ if .Site.Params.hero.enable }}
 {{ "<!-- Hero Area -->" | safeHTML }}
 <section class="hero-area">
+{{ "<!-- Video js -->" | safeHTML }}
+<script src="{{ "plugins/videojs/dist/js/video.min.js" | absURL }}"></script>
+<script src="{{ "plugins/videojs-overlay/dist/js/videojs-overlay.min.js" | absURL }}"></script>
 <div class="container">
   <div class="row">
     <div class="col-12 col-xl-7 col-lg-12 col-md-12 col-sm-12" style="padding: 0;">

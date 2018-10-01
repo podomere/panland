@@ -1,6 +1,9 @@
 {{ if .Site.Params.search.enable }}
 {{ "<!-- Start Search Section -->" | safeHTML }}
 <section class="search section bg-gray" id="about" style="padding: 100px 0 !important;">
+{{ "<!-- Algolia and Autocomplete js -->" | safeHTML }}
+<script src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
+<script src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-12">

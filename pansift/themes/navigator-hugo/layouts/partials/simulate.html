@@ -1,6 +1,8 @@
 {{ if .Site.Data.simulate.enable }}
 {{ "<!-- Simulate Section Start -->" | safeHTML }}
 <section id="pracsims" class="service-list section bg-white">
+{{ "<!-- Leaflet js -->" | safeHTML }}
+<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
 <div class="container">
   <div class="row">
     <div class="col">

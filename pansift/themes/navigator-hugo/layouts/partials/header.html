@@ -41,9 +41,8 @@
     {{ end }}
 
     <meta content="summary_large_image" name="twitter:card">
-
     <script>
-      {{ getenv "BRANCH" }}
+      window.ab_branch = '{{ getenv "BRANCH" }}';
     </script>
     <!-- Google Tag Manager -->
     <script type="text/plain" data-cookieconsent="statistics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

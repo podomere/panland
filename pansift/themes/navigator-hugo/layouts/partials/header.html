@@ -42,7 +42,10 @@
 
     <meta content="summary_large_image" name="twitter:card">
 
-
+    <script>
+      dataLayer = window.dataLayer || [];
+      dataLayer.push('event', 'page_view', { 'Branch': "{{ getenv 'BRANCH' }}" });
+    </script>
     <!-- Google Tag Manager -->
     <script type="text/plain" data-cookieconsent="statistics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -127,7 +130,7 @@
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
 
   <!-- Cookiebot -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="36478925-83e6-4823-8253-383befc9659f" type="text/javascript" async></script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="36478925-83e6-4823-8253-383befc9659f" type="text/javascript" async></script>
   <!-- Cookiebot -->
 </head>
 

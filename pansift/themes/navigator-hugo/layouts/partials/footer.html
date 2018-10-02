@@ -64,9 +64,7 @@
 {{ "<!-- Custom js -->" | safeHTML }}
 <script src="{{ "js/script.js" | absURL }}"></script>
 <script>
-  ga('send', 'pageview', {
-    'Branch':  '{{ getenv "BRANCH" }}'
-  });
+  dataLayer.push('event', 'page_view', { 'Branch': '{{ getenv "BRANCH" }}' });
 </script>
 </body>
 

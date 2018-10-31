@@ -95,7 +95,7 @@ summaryLength = 30
 [menu]
     # Navbar Menus
     [[menu.nav]]
-        name    = "How It Works"
+        name    = "How"
         url     = "/howitworks"
         weight  = 1
     [[menu.nav]]
@@ -107,8 +107,8 @@ summaryLength = 30
         url     = "/pricing"
         weight  = 3
     [[menu.nav]]
-        name    = "Blog"
-        url     = "/blog"
+        name    = "Training"
+        url     = "/training"
         weight  = 4
     [[menu.nav]]
         name    = "Login"

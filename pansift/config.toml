@@ -103,12 +103,16 @@ summaryLength = 30
         url     = "/why"
         weight  = 2
     [[menu.nav]]
-        name    = "Pricing"
-        url     = "/pricing"
+        name    = "Blog"
+        url     = "/blog"
         weight  = 3
     [[menu.nav]]
         name    = "Training"
         url     = "/training"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Pricing"
+        url     = "/pricing"
         weight  = 4
     [[menu.nav]]
         name    = "Login"

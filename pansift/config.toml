@@ -95,7 +95,7 @@ summaryLength = 30
 [menu]
     # Navbar Menus
     [[menu.nav]]
-        name    = "How"
+        name    = "How It Works"
         url     = "/howitworks"
         weight  = 1
     [[menu.nav]]

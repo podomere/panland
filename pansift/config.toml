@@ -6,7 +6,7 @@ summaryLength = 30
 
 # Site Params
 [params]
-  description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infrastructure, and Ops talent. Structured hiring. Technical recruitment pre hire assessment test. Competency based interview. Skills testing. Structured interview. Admin skills test."
+  description = "Micro test with simulations to screen a new breed of infrastructure engineer. Hit your hiring targets, reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Network, and Ops talent."
   og_image = "/images/pansift_social_client_v22.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -19,8 +19,8 @@ summaryLength = 30
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "The Best Technical Recruitment use a pre hire Assessment Test."
-        description = "Reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Infra, and Ops talent."
+        heading = "This has been overridden"
+        description = "Hit your hiring targets and reduce risk for Cloud, Network, and Operations talent."
 
         button  = true
         btnText = "Free Sign Up"

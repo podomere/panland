@@ -3,7 +3,7 @@
 <section class="contact-us section bg-gray" id="contact">
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-12">
       <div class="title text-center">
         {{ with .Site.Params.contact.topTitle }}<h4>{{.}}</h4>{{ end }}
         {{ with .Site.Params.contact.title }}
@@ -15,26 +15,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-md-4">
-      <div class="address-block contact-meta-block">
-        <i class="fas fa-map-marker"></i>
-        <h4>Our Location</h4>
-        {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
-      </div>
+    <div class="col-12 col-md-12 text-center" style="min-height:600px !important;">
+      <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/ac910693de91d0b793c2c0c4d8eb92883633726"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>
     </div>
-    <div class="col-12 col-md-4">
-      <div class="phone-block contact-meta-block">
-        <i class="far fa-envelope-open"></i>
-        <h4>Email Us</h4>
-        <p>
-        <a href="mailto:{{ with .Site.Params.contact.email }}{{.}}{{ end }}">info@pansift.com</a> 
-        </p>
-      </div>
-    </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 offset-md-2">
       <div class="social-icons-block contact-meta-block">
         <i class="fab fa-connectdevelop"></i>
-        <h4>Also via</h4>
+        <h4>Online Presence</h4>
         <ul class="list-inline social-icon">
           {{ with .Site.Params.contact.twitter }}
           <li class="list-inline-item">
@@ -50,14 +37,14 @@
           </a>
           </li>
           {{ end }}
-          {{ with .Site.Params.contact.dribbble }}
-          <li class="list-inline-item">
-          <a href="{{.}}">
-            <i class="tf-ion-social-dribbble"></i>
-          </a>
-          </li>
-          {{ end }}
         </ul>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="address-block contact-meta-block">
+        <i class="fas fa-map-marker"></i>
+        <h4>Our Location</h4>
+        {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
       </div>
     </div>
   </div>

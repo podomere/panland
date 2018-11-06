@@ -63,7 +63,7 @@ summaryLength = 30
     [params.training]
         enable  = true
         title   = "Technical Training"
-        subtitle= "Featured Pluralsight training ( inc. 15% off Annual Subscriptions )"
+        subtitle= "Pluralsight training ( inc. 15% off Annual Subscriptions )"
 
     # Search Section
     [params.cookies]

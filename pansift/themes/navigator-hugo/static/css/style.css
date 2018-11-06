@@ -8,7 +8,7 @@ body {
 p {
   font-family: "Titillium Web", sans-serif;
   color: #9a9a9a;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1565,6 +1565,10 @@ a:focus, a:hover {
 .post-excerpt {
   padding: 0 20px;
   margin-bottom: 60px;
+}
+
+.blog-p p {
+  font-size: 1.5em !important;
 }
 
 .post-excerpt h3 a {

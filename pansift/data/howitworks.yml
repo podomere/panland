@@ -32,7 +32,7 @@ tabItem   :
     title     : Candidate Experience
     heading   : Maximum flexibility
     content   : >
-     Candidates get to demonstrate their skills in real world scenarios. They can start, stop, and update answers (or do research), all the way up to the deadline. Hiring teams can send all applicants a screen or just to certain candidates at any stage of the hiring pipeline.
+     Candidates get to demonstrate their skills in real world scenarios. They can start, stop, and update answers (or do research), all the way up to the deadline. Hiring teams can send all applicants (or a subset of candidates) a screen at any stage of the hiring pipeline.
     image     : images/howitworks/happyface.jpg
     icon      : far fa-smile-wink
 

@@ -21,9 +21,8 @@ summaryLength = 30
         enable  = true
         heading = "This has been overridden"
         description = "Hit your hiring targets and reduce risk for Cloud, Network, and Operations talent."
-
         button  = true
-        btnText = "Free Sign Up"
+        btnTxt = "Simulate Now"
         btnURL  = "https://client.pansift.com/"
         videoThumb = "images/slider/3_steps_v14.png"
         videoURL   = "https://www.youtube.com/embed/I6untRQ8O6U"
@@ -78,7 +77,13 @@ summaryLength = 30
         bg      = "images/call-to-action/cockpit_v3.jpg"
         title   = "Engineering or hiring leader ?"
         subtitle= "Take a quick test flight with 10 free screens."
-        btnText = "Start Screening"
+        btnTxt = "Simulate Now"
+
+    # Pricing
+    [params.pricing]
+        enable  = true
+        btnTxt = "Simulate Now"
+
 
     # Contact Section
     [params.contact]

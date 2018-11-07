@@ -6,7 +6,7 @@ summaryLength = 30
 
 # Site Params
 [params]
-  description = "Micro test using simulations to screen a new breed of infrastructure engineer. Hit your hiring targets, reduce risk, decrease costs, and accelerate Time-to-Hire for Cloud, Network, and Ops talent."
+  description = "Micro test using simulations to screen a new breed of infrastructure engineer. Hit your hiring targets and reduce risk for Cloud, Network, and Operations talent."
   og_image = "/images/pansift_social_client_v22.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"

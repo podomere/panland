@@ -1,7 +1,7 @@
 [build]
 base = "pansift"
 publish = "pansift/public"
-command = "hugo --minify"
+command = "hugo"
 
 [context.production.environment]
 HUGO_VERSION = "0.47.1"

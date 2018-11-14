@@ -136,17 +136,9 @@ summaryLength = 30
 
     # Footer Quick links Menu
     [[menu.quicklink]]
-        name    = "Pricing"
-        url     = "/pricing"
-        weight  = 3
-    [[menu.quicklink]]
-        name    = "Search"
-        url     = "/search"
-        weight  = 2
-    [[menu.quicklink]]
         name    = "Team"
         url     = "/team"
-        weight  = 4
+        weight  = 2
     [[menu.quicklink]]
         name    = "Contact Us"
         url     = "/contact"
@@ -154,7 +146,7 @@ summaryLength = 30
     [[menu.quicklink]]
         name    = "Cookie Policy"
         url     = "/cookies"
-        weight  = 5
+        weight  = 3
 
 [blackfriday]
   plainIDAnchors = true

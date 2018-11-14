@@ -132,8 +132,8 @@ enableGitInfo = true
     
     # Footer Service Menu
     [[menu.service]]
-        name    = "Blog"
-        url     = "/blog"
+        name    = "Screening"
+        url     = "/howitworks"
         weight  = 1
     [[menu.service]]
         name    = "Training"
@@ -141,10 +141,6 @@ enableGitInfo = true
         weight  = 2
 
     # Footer Quick links Menu
-    [[menu.quicklink]]
-        name    = "Team"
-        url     = "/team"
-        weight  = 2
     [[menu.quicklink]]
         name    = "Contact Us"
         url     = "/contact"

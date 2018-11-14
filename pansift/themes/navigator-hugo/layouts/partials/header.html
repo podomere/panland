@@ -68,11 +68,15 @@
     { 
       "@context": "http://schema.org", 
       "@type": "LocalBusiness", 
-      "name" : "PanSift", 
+      "name" : "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}", 
       "url": "https://pansift.com", 
       "logo": "https://pansift.com/android-chrome-384x384.png", 
       "image": "https://pansift.com/android-chrome-384x384.png", 
-      "description": "Micro test using simulations to screen a new breed of infrastructure engineer. Hit your hiring targets and reduce risk for Cloud, Network, and Operations talent.", 
+      {{ if isset .Params "subtitle" }}
+      "description": "{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", 
+      {{ else }}
+      "description": "{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", 
+      {{ end }}
       "address": { 
         "@type": "PostalAddress", 
         "addressLocality": "Dublin", 
@@ -89,12 +93,17 @@
     {
       "@context": "http://schema.org/",
       "@type": "VideoObject",
-      "contentUrl": "https://youtu.be/I6untRQ8O6U",
-      "playerType": "YouTube",
+      "contentUrl": "https://sim.pansift.com/hiring_v13.mp4",
+      "playerType": "HTML5",
       "uploadDate": "2018-08-25 18:21:23 +0100",
-      "thumbnailUrl": "https://i.ytimg.com/vi/I6untRQ8O6U/sddefault.jpg",
+      "thumbnailUrl": "/images/hero/3_steps_v15.png",
+      {{ if isset .Params "subtitle" }}
+      "description": "{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", 
+      {{ else }}
+      "description": "{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", 
+      {{ end }}
       "description": "PanSift. Technical recruitment and pre hire assessment test.",
-      "name": "PanSift. The Best Technical Recruitment use a pre hire Assessment Test."
+      "name": "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}"
     }
   </script>
   <!-- Rich Data / Structured Data -->

@@ -1,8 +1,13 @@
-baseURL = "https://pansift.com/"
+baseURL = "https://pansift.com"
 languageCode = "en-us"
 title = "PanSift. Technical recruitment and pre hire assessment test."
 theme = "navigator-hugo"
 summaryLength = 30
+
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0
 
 # Site Params
 [params]

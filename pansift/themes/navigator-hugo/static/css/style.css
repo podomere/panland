@@ -908,15 +908,15 @@ a:focus, a:hover {
 
 .social-icon li a {
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 78px;
+  width: 50px;
   text-align: center;
   color: #2980b9;
 }
 
 .social-icon li a i {
   display: inline-block;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 50px;
   margin: 0;
 }
@@ -950,7 +950,7 @@ a:focus, a:hover {
 
 .contact-meta-block {
   margin-top: 30px;
-  padding: 40px 0;
+  padding: 40px 0px 50px 0px;
   min-height: 250px;
   text-align: center;
   background: #222;

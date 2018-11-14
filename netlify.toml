@@ -38,3 +38,7 @@ HUGO_ENABLEGITINFO = "true"
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Content-Type = "application/font-woff"
+
+[[redirects]]
+  from = "/byloggingin"
+  to = "https://client.pansift.com"

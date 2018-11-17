@@ -1,0 +1,25 @@
+{{ if .Site.Params.netdevops.enable }}
+{{ "<!-- Start NetDevOps Section -->" | safeHTML }}
+<section class="about-2 section bg-gray" id="about" style="padding: 50px 0 !important;">
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-7">
+      {{ with .Site.Params.netdevops.title }}
+      <h1>{{ . | safeHTML }}</h1>
+      {{ end }}
+      {{ with .Site.Params.netdevops.subtitle }}
+      <h5>{{ . | safeHTML }}</h5>
+      {{ end }}
+    </div>
+    <div class="col-12 col-md-5">
+      <center>
+        <i class="fas fa-laptop fa-5x ml-3 mt-1"></i>
+        <i class="fas fa-balance-scale fa-5x ml-3 mt-1"></i>
+        <i class="fas fa-cloud-upload-alt fa-5x ml-3 mt-1"></i>
+      </center>
+    </div>
+  </div>
+</div>
+</section>
+{{ "<!-- End NetDevOps section -->" | safeHTML }}
+{{ end }}

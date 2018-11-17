@@ -33,11 +33,17 @@ enableGitInfo = true
         videoThumb = "images/slider/3_steps_v14.png"
         videoURL   = "https://www.youtube.com/embed/I6untRQ8O6U"
 
-    # About 2 Section
+    # CVs
     [params.aboutSm]
         enable  = true
         title   = "CVs are biased and broken." 
         subtitle = "Use actionable data to support decision making throughout the hiring funnel."
+
+    # NetDevOps
+    [params.netdevops]
+        enable  = true
+        title   = "NetDevOps and NRE skills testing." 
+        subtitle = "Network Reliability Engineering de-risked with proof of experience testing across mixed traditional and modern labs."
 
     # Blog Section On Homepage
     [params.blog]

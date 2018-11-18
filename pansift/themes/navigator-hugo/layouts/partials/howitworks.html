@@ -34,7 +34,7 @@
             <div class="row">
               <div class="col-md-12 align-self-center">
                 <h1>{{ with .heading }}{{ . }}{{ end }}</h1>
-                {{ with .content }}<p style="font-size: 1.5em;">{{ . | safeHTML }}{{ end }}{{ with .icon }}<i style="color: #9a9a9a" class="{{ . | safeHTML }} mt-1 ml-1"></i>{{ end }}</p>
+                {{ with .content }}<p style="font-size: 1.5em;">{{ . | safeHTML }}{{ end }}<a href="/search">{{ with .icon }}<i class="{{ . | safeHTML }} mt-1 ml-1"></i>{{ end }}</a></p>
               </div>
             </div>
           </div>

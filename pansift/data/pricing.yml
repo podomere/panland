@@ -1,7 +1,7 @@
 enable  : true
-topTitle: Simple and Transparent Pricing
-title   : Pricing.
-subtitle : The default solo hiring account is FREE (No credit card required!) and includes 10 free candidate screens.
+topTitle: Simple and Transparent
+title   : Pricing
+subtitle : 1x default hiring account FREE (No credit card)
 
 item  :
   - name        : 10 Screens (Non-recurring)

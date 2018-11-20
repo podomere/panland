@@ -12,7 +12,7 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  description = "Micro test using simulations to screen a new breed of infrastructure engineer. Hit your hiring targets and reduce risk for Cloud, Network, and Operations talent."
+  description = "Automated screening of a new breed of cloud engineers using micro simulations and labs. Hit your hiring targets, save time, and reduce risk for Cloud, Network, and Operations talent."
   og_image = "/images/pansift_social_client_v22.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -26,7 +26,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         heading = "This has been overridden"
-        description = "Hit your hiring targets and reduce risk for Cloud, Network, and Operations talent."
+        description = "Hit your hiring targets, save time, and reduce risk for Cloud, Network, and Operations talent."
         button  = true
         btnTxt = "Simulate Now"
         btnURL  = "https://client.pansift.com/"

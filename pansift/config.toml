@@ -75,7 +75,7 @@ enableGitInfo = true
     [params.training]
         enable  = true
         title   = "Technical Training"
-        subtitle= "Pluralsight ( inc. 28% off Annual Membership )"
+        subtitle= "With Pluralsight ( inc. 28% off Annual Membership )"
 
     # Search Section
     [params.cookies]

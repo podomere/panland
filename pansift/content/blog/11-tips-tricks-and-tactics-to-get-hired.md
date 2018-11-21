@@ -66,17 +66,17 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
   
 ## 5. Ingestion Process
 
-- [x] Is it going direct via email to a recruiter, sourcer, or the hiring manager... or is it going via an upload on a web based form? 
-- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack it, ethically.
+- [x] Is your CV going direct via email to a recruiter, sourcer, or the hiring manager? Or is it going via an upload on a web based form and being scraped for text and details?
+- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack the process, ethically. 
   
   
 ## 6. CV and Résumé Format
 
-- [x] Short, sharp, and sweet - as a human recruiter will parse your CV flyer in less than 20 seconds on first glance and a machine will do it in microseconds to seconds
+- [x] Short, sharp, and sweet - as a human recruiter may parse your CV 'flyer' in less than 20 seconds for first glance. A machine will do it in microseconds... are you in or out of the funnel?
 - [x] This is a sales pitch in a competitive landscape, treat it as such.
 - [x] Search for and pay attention to advice from people like [Evilrecruiter's: CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/) and related privacy [post](https://www.evilrecruiter.com/maintaining-a-semblence-of-privacy-while-looking-for-a-job/)
-- [x] Typos, misspellings, and bad grammar are unacceptable when services like automatic spell checkers and tools like [HemingwayApp](https://hemingwayapp.com/) or [Grammarly](https://www.grammarly.com/) exist. It's also a total **faux-pas** for engineering roles to have even one character out of place. Errors reflect your level of attention to detail, your ability to double check and enlist help, and of course it shows your professional writing and communication ability in the target language. **Your CV is a piece of marketing literature. A digital billboard for your services and experience**. Your CV is, for all intents and purposes, you (until you meet someone IRL(In Real Life)).
-- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader (and/or best fitting a curve or spline in an algorithm).
+- [x] Typos, misspellings, and bad grammar are unacceptable when services like automatic spell checkers and tools like [HemingwayApp](https://hemingwayapp.com/) or [Grammarly](https://www.grammarly.com/) exist. It's also a total **faux-pas** for engineering roles to have even one character out of place. Errors reflect your level of attention to detail, your ability to double check and enlist help, and of course it shows your professional writing and communication ability in the target language. **Your CV is a piece of marketing literature. A digital billboard for your services and experience**. Your CV is, for all intents and purposes, **you** (until you meet or connect with someone from the hiring team, hopefully IRL(In Real Life)).
+- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader who is screening you (and/or best fitting a curve or spline in an algorithm).
   
   
 ## 7. ATS (Applicant Tracking Systems) Keywords

@@ -22,7 +22,7 @@ tags:
   - cover letter
 image: /images/blog/tips.jpeg
 published: true
-title: 11 Tips and Tactics to Get Hired
+title: '11 Tips, Tricks, and Tactics to Get Hired'
 ---
 The Internet (*and* moreso the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone especially if digital! 
 

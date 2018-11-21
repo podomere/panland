@@ -3,12 +3,25 @@ layout: post
 subtitle: Modern CV hacks for a new landscape
 author: Donal
 tags:
+  - cv
+  - resume
+  - scientific hiring
+  - first principles
+  - structured hiring
   - hrtech
   - screening
   - sourcing
   - tips
+  - tricks
   - cvs
+  - ai
+  - nlp
+  - hiring process
+  - resume
+  - job search
+  - cover letter
 image: /images/blog/tips.png
+published: false
 ---
 
 # 11 Tips and Tactics to Get Hired
@@ -42,7 +55,7 @@ image: /images/blog/tips.png
  - Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
  - So an A.I. is being trained and matching on, or fitting to an incorrect incomplete Job Description tied to a self-written marketing flyer written by a self-interested party in a competitive landscape.
 
-Ingestion
+## Ingestion
  - Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack it, ethically.
  - Is it going direct via email to a recruiter, sourcer, or the hiring manager... or is it going via an upload on a web based form?
 
@@ -57,8 +70,9 @@ Ingestion
 ## Recruiters and Sourcers
  - Is the recruiter via an agency versus in-house? Why does it matter, well, what are they incentivized on and how?
  - Are they playing the volume game?
- - Few actually act as your "agent" so don't think they are in there advocating or selling you like you imagine.
- - Own your own outcomes and manage your recruiter by setting and agreeing bi-directional expectations
+ - Are they reformatting your CV? Are they actually sending through your cover letter?
+ - Few actually act as your "agent" so don't deceive yourself that they are in there advocating or selling on your behalf as you might imagine.
+ - Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
 
 ## Hiring Managers
  - You really want the hiring manager to know your name in advance and be asking for your details or expecting them.
@@ -69,7 +83,7 @@ Ingestion
  - Non-zero sum games (especially if there's a finders fee/bonus) work well, if someone stands to gain to have you possibly come on board.
  - The downside can be hiring in clusters or tribes creating homogeneity. Try and discern this early in your investigations.
 
-## __Research
+## Research
  - Find people in the organisation or 2-3 degree deep connections to them, and get in touch.
  - Get their emails via lead gen and email enrichment tools if you must.
 

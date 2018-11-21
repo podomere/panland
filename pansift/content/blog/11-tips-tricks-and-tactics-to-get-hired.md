@@ -24,17 +24,17 @@ image: /images/blog/tips.jpeg
 published: true
 title: '11 Tips, Tricks, and Tactics to Get Hired'
 ---
-The Internet (*and* moreso the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone! 
+The Internet (*and* more so the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone! 
 
 ## 1. The Noise Problem
 
 - [x] Hiring teams are busy identifying signal from both inside and outside of their own organizations.
 - [x] There's a hiring funnel and you need to get in to it. Don't fail at the first hurdle. You have to capture the attention of **not just** humans **but** machines too. 
-- [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from **2** directions (or via a minimum of 2 mediums). Just like in sales, the more priming and conceptual *touches* (3x-8x) that you can muster without annoying people, the more mindshare you get for subsequent engagement or interviews. Reinforcement regarding your name being heard or read (in a good context of course) frequently is desirable.
+- [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from **2** directions (or via a minimum of 2 mediums). Just like in sales, the more priming and conceptual *touches* (3x-8x) that you can muster without annoying people, the more mind share you get for subsequent engagement or interviews. Reinforcement regarding your name being heard or read (in a good context of course) frequently is desirable.
 - [x] Don't ever fool yourself, you are **selling** a part of yourself; your time, your expertise, your energy, your life. You are renting out your labour and/or mind amidst a **competitive** landscape. 
 - [x] Whether you are extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 
 - [x] Give away knowledge and energy to your professional community without any expectation of receiving anything back and you'll be a better person for it. If there's no community there or around you, build it yourself.
-- [x] Don't ever try to game or exploit community - yet the more you give, the more you learn, and the more well known you will probably become. This renown should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to talk about in interviews (if you get that far) and call it a form of enlightened self-interest.
+- [x] Don't ever try to game or exploit community - yet the more you give, the more you learn, and the more well-known you will probably become. This renown should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to talk about in interviews (if you get that far) and call it a form of enlightened self-interest.
 
 ## 2. The Underlay Problem
 
@@ -47,7 +47,7 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 ## 3. The Portfolio Problem (Proof of Experience)
 
 - [x] Show don't tell. Can you actually show something or let them see and interact with something you've built? No? Build something. This is one reason why [FLOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) is good.
-- [x] Have you got any video of yourself communicating or presenting? Video is also open to a hiring person's bias but it's better than nothing showing how you present and communinicate. This favours extroverts but perhaps you could give a lightening talk at a local Meetup to start and ask a friend to take a little footage of it.
+- [x] Have you got any video of yourself communicating or presenting? Video is also open to a hiring person's bias but it's better than nothing showing how you present and communicate. This favours extroverts but perhaps you could give a lightening talk at a local Meetup to start and ask a friend to take a little footage of it.
 - [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outsied of work that you can show people (see above).
 
 ## 4. The Search Problem
@@ -67,7 +67,7 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 
 ## 6. CV and Résumé Format
 
-- [x] Short, sharp, and sweet - as a human recruiter will parse your CV "flyer" in less than 20 seconds on first glance and a machine will do it in microseconds to seconds
+- [x] Short, sharp, and sweet - as a human recruiter will parse your CV flyer in less than 20 seconds on first glance and a machine will do it in microseconds to seconds
 - [x] This is a sales pitch in a competitive landscape, treat it as such.
 - [x] Search for and pay attention to [CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/)
 - [x] Typos, misspellings, and bad grammar are unacceptable in the day and age of things like automatic spell checkers, tools like [HemingwayApp](https://hemingwayapp.com/), and https://www.grammarly.com/. It's a total **faux-pas** for engineering roles. Errors reflect your attention to detail, ability to double check or enlist help, and of course it shows your level of professional writing and communication ability in the target language. Your CV is a piece of marketing literature. A digital billboard for your services.
@@ -81,15 +81,15 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 ## 8. Recruiters and Sourcers are Human
 
 - [x] Is the recruiter via an agency or in-house? Why does it matter, well, what are they incentivized by and how? Understand this to understand how they are playing the game.
-- [x] Is their strategy quality or quantity? Are they a cog in a giant machine or intereseted in building their companies brand with long term relationships? 
+- [x] Is their strategy quality or quantity? Are they a cog in a giant machine or interested in building their companies brand with long term relationships? 
 - [x] Are they reformatting your CV and sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon? Ask for feedback. Call them. Don't default to email.
 - [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you 2-3 times over 6-8 years. You might be worth 30-60K to them or more if they can tap **your** network too (see [#1](/1-the-noise-problem)).
 - [x] Few actually act as your "agent" so don't deceive yourself that they are in there advocating or selling on your behalf as you might imagine.
 - [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
-- [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with a person, make it. Never rely on digital alone. Reinforce your existance.
+- [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with a person, make it. Never rely on digital alone. Reinforce your existence.
 - [x] Follow up. Follow up every 3-4 days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
-- [x] Again. Use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance intentionally.
-- [x] Meet your recruiter face to face IRL or via video call at a minimum. Reinforce you exist and are not an avatar at the end of an email.
+- [x] Again, use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance **intentionally**.
+- [x] Meet your recruiter face to face IRL(In Real Life) or at least via a video call. Reinforce you exist as a living breathing person and are not just an avatar at the end of an email.
 
 ## 9. Prime the Hiring Manager and Team
 

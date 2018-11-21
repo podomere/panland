@@ -57,7 +57,8 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 
 - [x] Is your CV going direct via email to a recruiter, sourcer, or the hiring manager? Or is it going via an upload on a web based form and being scraped for text and details?
 - [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack the process, ethically. 
-
+  
+  
 ## 5. The Search Problem
 
 - [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like so called 'X-ray search' from [Recruitin](https://recruitin.net/) and standard [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).

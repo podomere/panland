@@ -24,10 +24,9 @@ image: /images/blog/tips.jpeg
 published: true
 title: 11 Tips and Tactics to Get Hired
 ---
+The Internet (*and* moreso the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone, especially via digital means! 
 
 ## 1. The Noise Problem
-
-The Internet (*and* moreso the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone, especially via digital means! 
 
 - [x] Hiring teams are busy identifying signal both inside and outside of their own organizational footprint. 
 - [x] There's a hiring funnel and you need to get in it so don't fail at the first hurdle. You have to capture attention of **both** humans and machines in most cases. 
@@ -48,12 +47,12 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 ## 3. The Portfolio Problem
 
 - [x] Show don't tell, can you actually show something or let them see and interact with something you've built? No? Build something.
-- [x] Have you got any video of yourself communicating or presenting? Open to a hiring person's bias but better than nothing.
-- [x] Is all your work 'Commercial in Confidence', well then you better try to make something with no strings you can show people (see above).  
+- [x] Have you got any video of yourself communicating or presenting? Video is also open to a hiring person's bias but it's better than nothing showing how you present and communinicate. This favours extroverts but perhaps you could give a lightening talk at a local Meetup to start and ask a friend to take a little footage of it.
+- [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outsied of work that you can show people (see above).  
   
 ## 4. The Search Problem
 
-- [x] Hiring tools, platforms, and webapps are not smart enough, yet. You can effectively SEO(Search Engine Optimize) your CV, as most just use simple and limited Boolean Search including tools like [https://recruitin.net/](https://recruitin.net/) and [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
+- [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like [https://recruitin.net/](https://recruitin.net/) and [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
 - [x] Even the new age of machine learning and so called hiring A.I. is built on tainted datasets which are optimizing by what ever "words" they electively wrote on their CV and many don't take in to account which CVs were successful for which roles.
 - [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
 - [x] So an A.I. is being trained and matching on, or fitting to an incorrect incomplete Job Description tied to a self-written marketing flyer written by a self-interested party in a competitive landscape.  

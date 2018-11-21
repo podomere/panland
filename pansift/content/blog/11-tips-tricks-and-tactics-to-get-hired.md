@@ -75,7 +75,7 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
 - [x] Short, sharp, and sweet - as a human recruiter will parse your CV flyer in less than 20 seconds on first glance and a machine will do it in microseconds to seconds
 - [x] This is a sales pitch in a competitive landscape, treat it as such.
 - [x] Search for and pay attention to [CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/)
-- [x] Typos, misspellings, and bad grammar are unacceptable in the day and age of things like automatic spell checkers, tools like [HemingwayApp](https://hemingwayapp.com/), and https://www.grammarly.com/. It's a total **faux-pas** for engineering roles. Errors reflect your attention to detail, ability to double check or enlist help, and of course it shows your level of professional writing and communication ability in the target language. Your CV is a piece of marketing literature. A digital billboard for your services.
+- [x] Typos, misspellings, and bad grammar are unacceptable when services like automatic spell checkers and tools like [HemingwayApp](https://hemingwayapp.com/) or [Grammarly](https://www.grammarly.com/) exist. It's also a total **faux-pas** for engineering roles to have even one character out of place. Errors reflect your level of attention to detail, your ability to double check and enlist help, and of course it shows your professional writing and communication ability in the target language. **Your CV is a piece of marketing literature. A digital billboard for your services and experience**. Your CV is, for all intents and purposes, you (until you meet someone IRL(In Real Life)).
 - [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader (and/or best fitting a curve or spline in an algorithm).
   
   
@@ -96,7 +96,7 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
 - [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with a person, make it. Never rely on digital alone. Reinforce your existence.
 - [x] Follow up. Follow up every **3-4** days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
 - [x] Again, use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance **intentionally**.
-- [x] Meet your recruiter face to face IRL(In Real Life) or at least via a video call. Reinforce you exist as a living breathing person and are not just an avatar at the end of an email.
+- [x] Meet your recruiter face to face IRL or at least via a video call. Reinforce you exist as a living breathing person and are not just an avatar at the end of an email.
   
   
 ## 9. Prime the Hiring Manager and Team

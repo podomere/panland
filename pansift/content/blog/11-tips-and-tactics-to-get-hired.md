@@ -26,8 +26,10 @@ title: 11 Tips and Tactics to Get Hired
 ---
 
 ## 1. The Noise Problem
-The Internet *and* moreso the Web is full of noise. So is most people's minds. Remember this! Hiring teams are busy identifying signal both inside and outside of their own organizational footprint. 
 
+The Internet (*and* moreso the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone, especially via digital means! 
+
+- [x] Hiring teams are busy identifying signal both inside and outside of their own organizational footprint. 
 - [x] There's a hiring funnel and you need to get in it so don't fail at the first hurdle. You have to capture attention of **both** humans and machines in most cases. 
 - [x] Your signal will go further if it's stronger and comes from more directions (multipath) with a minimum pincer manoeuvre i.e. come at it from 2 directions or contact via a minimum of 2 means. 
 - [x] It's both what you know and who you know (or who you can get to know) so try to get in touch with the right people (see above). 

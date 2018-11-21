@@ -79,7 +79,7 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 - [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader who is screening you (or your CV has been translated to numbers and is now a candidate for the best fitting curve or spline in an algorithm).
   
   
-## 7. ATS (Applicant Tracking Systems) Keywords
+## 7. ATS (Applicant Tracking System) and Keywords
 
 - [x] If an agency or organisation already have your CV, you want it to **resurface** (as often as possible) when keywords are searched for open roles
 - [x] What is your skills surface? Maximize it, ethically. You can [invisibly keyword stuff](https://pansift.com/blog/how-to-seo-hack-your-cv/) as long as keywords are valid. Software agents and algorithms doing parsing will read the text irrespective and index it.
@@ -87,14 +87,14 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
   
 ## 8. Recruiters and Sourcers are Human
 
-- [x] Is the recruiter via an agency or in-house? Why does it matter, well, what are they incentivized by and how? Understand this to understand how they are playing the game.
-- [x] Is their strategy quality or quantity? Are they a cog in a giant machine or interested in building their companies brand with long term relationships? 
-- [x] Are they reformatting your CV and sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon? Ask for feedback. Call them. Don't default to email.
-- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you **2-3** times over **6-8** years. You might be worth 30-60K to them or more if they can tap **your** network too (see [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
-- [x] Few actually act as your "agent" so don't deceive yourself that they are in there advocating or selling on your behalf as you might imagine.
+- [x] Is the recruiter via an agency or in-house? Why does it matter, well, what are they incentivized by and how? Understand this to understand how they 'play' the game. What are their KPIs(Key Performance Indicators) and what are their goals?
+- [x] Is their strategy quality or quantity? Are they a cog in a giant machine or interested in building their companies sustainable brand with long term relationships? 
+- [x] Are they reformatting or editing your CV and then sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon? Ask for feedback. Call them. Don't just default to email.
+- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you **2-3** times over a **6-8** year period. You might be worth 20-40K+ to them or even more if they can tap **your** professional network too (see [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
+- [x] Recuiters who act as your "agent" are few and far between so don't deceive yourself that they are in there advocating or selling entirely on your behalf (as you might imagine).
 - [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
-- [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with a person, make it. Never rely on digital alone. Reinforce your existence.
-- [x] Follow up. Follow up every **3-4** days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
+- [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with them, establish it. Never rely on digital alone. Reinforce your existence, frequently, it's all about mindshare.
+- [x] Follow up frequently. Follow up every **3-4** days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
 - [x] Again, use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance **intentionally**.
 - [x] Meet your recruiter face to face IRL or at least via a video call. Reinforce you exist as a living breathing person and are not just an avatar at the end of an email.
   

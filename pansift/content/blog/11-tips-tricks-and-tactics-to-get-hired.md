@@ -115,15 +115,15 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
 - [x] Non-zero sum games (especially if there's a finders fee/bonus) work well, if someone stands to gain to have you possibly come on board.
 - [x] The downside can be hiring in clusters or tribes creating homogeneity. Try and discern this early in your investigations.
 - [x] References and referees only matter in the later stages or during character checks.
-- [x] Always say "References on request". Everyone know's you've picked affirming people.
+- [x] Always say "References on request". Everyone know's you've picked affirming people and sometimes these relationship change or their details and situations change.
   
   
-## 11. Research is Important Because...
+## 11. Important Research
 
 - [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/1-the-noise-problem) ).
 - [x] You can get or validate their professional emails via 'lead gen' and email enrichment tools if need be.
-- [x] Do your homework and quickly skill up with **new** basics (even if listed as only desirable skills). This shows you are willing and able to learn, improve, and explore new areas autonomously. You show an interest in keeping up-to-date with the ecosystem and self-direct learning with platforms like [Pluralsight](https://pluralsight.pansift.com)
-- [x] Arm yourself with as much independent data as you can. Maybe you learn sooner than later you don't actually want this role or to be a part of an organisation of this type (unless you have to).
-- [x] During the process of asking questions and connecting with people what often happens is new opportunities present themselves! You just need to let people know you are looking and open to new things.
+- [x] Do your homework and quickly skill up with **new** basics (even if listed as only desirable skills). This shows you are willing and able to learn, improve, and explore new areas autonomously. Show an interest in keeping up-to-date with your skills ecosystem and demonstrate self-directed learning with platforms like [Pluralsight](https://pluralsight.pansift.com)
+- [x] Arm yourself with as much independent data as you can. Maybe you learn sooner rather than later you don't actually want this specific role or to be a part of an organisation of this type (unless you really have to!).
+- [x] During the process of asking questions and connecting with a range of people around you new opportunities frquently present themselves! You just need to let people know you are looking, that you are open to new things, and give more than you take!
   
 > If you really want this job, you need to work for it. Long gone are the days of point, shoot, and wait. Get off your ass and through *your own actions* (not others) collapse down the multiverse to the one with the greatest probability of you getting as far down the funnel as you can, ethically! **Own your outcomes. Carve your future**.

@@ -25,7 +25,7 @@ published: true
 ---
 
 ## The Noise Problem
-* The Internet is full of noise and so are most peoples minds, remember this!
+* The Internet *and* moreso the Web is full of noise. So is most people's minds. Remember this!
  Hiring teams are busy finding signal in their internal and external organizational noise
 * There's a hiring funnel and you need to get in it so don't fail at the first hurdle
 * You have to capture attention of both humans and machines in most cases

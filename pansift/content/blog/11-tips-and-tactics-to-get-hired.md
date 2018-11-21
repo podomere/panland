@@ -21,7 +21,7 @@ tags:
   - job search
   - cover letter
 image: /images/blog/tips.jpeg
-published: false
+published: true
 ---
 
 # 11 Tips and Tactics to Get Hired
@@ -50,7 +50,7 @@ published: false
  - Is all your work 'Commercial in Confidence', well then you better try to make something with no strings you can show people (see above).
 
 ## The Search Problem
- - Hiring tools are not smart. You can SEO your CV as most of them just use Boolean Search.
+ - Hiring tools, platforms, and webapps are not smart enough, yet. You can effectively SEO(Search Engine Optimize) your CV, as most just use simple and limited Boolean Search including tools like [https://recruitin.net/](https://recruitin.net/) and [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
  - Even the new age of machine learning and so called hiring A.I. is built on tainted datasets which are optimizing by what ever "words" they electively wrote on their CV and many don't take in to account which CVs were successful for which roles.
  - Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
  - So an A.I. is being trained and matching on, or fitting to an incorrect incomplete Job Description tied to a self-written marketing flyer written by a self-interested party in a competitive landscape.

@@ -76,7 +76,7 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 - [x] Your CV is a sales pitch in a competitive landscape, treat it as such.
 - [x] Search for and pay attention to advice from people like [Evilrecruiter's: CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/) and related privacy [post](https://www.evilrecruiter.com/maintaining-a-semblence-of-privacy-while-looking-for-a-job/)
 - [x] Typos, misspellings, and bad grammar are unacceptable when services like automatic spell checkers and tools like [HemingwayApp](https://hemingwayapp.com/) and [Grammarly](https://www.grammarly.com/) exist. It's also a total **faux-pas** for engineering roles to have even one character out of place. Errors reflect your level of attention to detail, your ability to double check and enlist help, and of course it shows your professional writing and communication ability in the target language. **Your CV is a piece of marketing literature. A digital billboard for your services and experience**. Your CV is, for all intents and purposes, **you** (until you meet or connect with someone from the hiring team, hopefully IRL(In Real Life)).
-- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader who is screening you (and/or best fitting a curve or spline in an algorithm).
+- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader who is screening you (or your CV has been translated to numbers and is now a candidate for the best fitting curve or spline in an algorithm).
   
   
 ## 7. ATS (Applicant Tracking Systems) Keywords

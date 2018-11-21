@@ -34,13 +34,13 @@ The Internet *and* moreso the Web is full of noise. So is most people's minds. R
 - [x] Whether you are extrovert or introvert get involved in community groups  related to your target domain (online and offline) and deepen your network, connections, contacts, and knowledge.  
   
 ## The Underlay Problem
- - Your CV is a piece of marketing literature and self-written (thus on shaky ground to begin with)
- - Most defaults are now to distrust CVs as people realize they are broken tokens
- - How can you actually prove your experience in advance of or during an interview?
- - You are trying to overcome your own bias and that of others, this is a hard problem
- - Confidence Gap 
- - The language you use is important and meaningful (see Marketing)
- - Typos, misspellings, and bad grammar reflect badly (x2) for engineering roles, as it reflects your attention to detail, ability to double check, and level of professional writing and communication in the target language  
++ Your CV is a piece of marketing literature and self-written (thus on shaky ground to begin with)
++ Most defaults are now to distrust CVs as people realize they are broken tokens
++ How can you actually prove your experience in advance of or during an interview?
++ You are trying to overcome your own bias and that of others, this is a hard problem
++ Confidence Gap 
++ The language you use is important and meaningful (see Marketing)
++ Typos, misspellings, and bad grammar reflect badly (x2) for engineering roles, as it reflects your attention to detail, ability to double check, and level of professional writing and communication in the target language  
   
 ## The Portfolio Problem
  - Show don't tell, can you actually show something or let them see and interact with something you've built? No? Build something.

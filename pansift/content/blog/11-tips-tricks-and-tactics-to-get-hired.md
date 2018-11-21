@@ -40,7 +40,7 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 ## 2. The Underlay Problem
 
 - [x] Your CV is a piece of marketing literature. It is self-written. You are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience and their preferred medium intimately. So, become a temporary marketing expert, sales champion, and intimately know both your audience and medium.
-- [x] Many hiring teams default to **distrust CVs** as people realize they are **broken tokens** yet are still our least worst common currency. This is an open secret.
+- [x] Many hiring teams default to **distrust CVs** as people realize they are **[broken tokens](https://pansift.com/blog/why-cvs-and-resumes-are-broken/)** yet are still our least worst common currency. This is an open secret.
 - [x] How can you actually prove your experience in advance of, or during an interview? This is your nut to crack or theirs to test you with. Apart from your attitude everything else is a vague and opaque approximation of condensed [Kabuki](https://en.wikipedia.org/wiki/Kabuki) theatre. 
 - [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) is ongoing and pronounced. Confidence does not equal competence.
 - [x] You are trying to overcome your own bias and that of others, this is a hard problem, don't give up. Language is important. Use it well and pay attention to theirs.
@@ -62,9 +62,9 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 ## 5. The Search Problem
 
 - [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited **Boolean Search** including tools like so called 'X-Ray search' from [Recruitin](https://recruitin.net/) and standard [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
-- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [Textio](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in both Job Descriptions/Advertisements and also in your CV.
-- [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
-- [x] Even the new age of machine learning and so called A.I. is built on tainted datasets leading to badly trained algorithms. They use candidate written CV text (and look for simple keywords and keyphrases or use Natural Language Processing to extract dates, names, and skills) and many don't take in to account which CVs were actually successful for what roles (e.g. to teach the algorithms further about succesful applicants).
+- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [Textio](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in both **Job Descriptions/Advertisements** and also in your **CV**.
+- [x] Also the **Job Description** or **Position Description** that becomes the **Job Advertisement** is often inaccurate and itself just marketing literature (see above).
+- [x] Even the new age of machine learning and so called **A.I.** is built on tainted datasets leading to badly trained algorithms. They use candidate written CV text (and look for simple keywords and keyphrases or use Natural Language Processing to extract dates, names, and skills) and many don't take in to account which CVs were actually successful for what roles (e.g. to teach the algorithms further about succesful applicants).
 - [x] So there are A.I.s being trained on and matching **incorrect incomplete Job Descriptions** with **candidate's self-written marketing flyers** that were tweaked for a competitive landscape.... hmmmm...  
 
 <img src="/images/blog/cat.jpeg" class="w-100 mb-3">

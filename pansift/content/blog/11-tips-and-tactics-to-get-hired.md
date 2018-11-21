@@ -29,10 +29,12 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 ## 1. The Noise Problem
 
 - [x] Hiring teams are busy identifying signal both inside and outside of their own organizational footprint. 
-- [x] There's a hiring funnel and you need to get in it so don't fail at the first hurdle. You have to capture attention of **both** humans and machines in most cases. 
-- [x] Your signal will go further if it's stronger and comes from more directions (multipath) with a minimum pincer manoeuvre i.e. come at it from 2 directions or contact via a minimum of 2 means. 
-- [x] It's both what you know and who you know (or who you can get to know) so try to get in touch with the right people (see above). 
-- [x] Whether you are extrovert or introvert get involved in community groups  related to your target domain (online and offline) and deepen your network, connections, contacts, and knowledge.  
+- [x] There's a hiring funnel and you need to get in it, so don't fail at the first hurdle by following some steps below. You have to capture the attention of **both** humans **and** machines in many cases. 
+- [x] Your signal will go further if it's stronger and comes from more directions (multipath). At a minimum use a pincer manoeuvre and come at a hiring team from 2 directions (or contact via a minimum of 2 means). Just like in sales, priming and more conceptual *touches* (3x-8x) before being engaged is better than none. The more reinforcment regarding hearing or reading your name the better.
+- [x] It's both **what** you know **and who** you know (or who you can get to know or know about you) so try to get in touch with the right people sooner rather than later (see above 3x-8x). 
+- [x] Whether you are extrovert or introvert, get involved in community groups related to your target domain (online and offline) and deepen your network, connections, contacts, and knowledge.
+- [x] Give away knowledge and energy to your professional community without any expectation of receiving anything back and you'll be a better person for it. 
+- [x] Don't ever try to game or exploit community yet the more you give, the more you learn and the more well known you will become. This should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to talk about in interviews if you get that far. 
   
 ## 2. The Underlay Problem
 

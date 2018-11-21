@@ -1,6 +1,6 @@
 ---
 layout: post
-subtitle: Modern CV hacks for a new landscape
+subtitle: Modern CV Hacks for a New Landscape
 author: Donal
 tags:
   - cv
@@ -22,16 +22,13 @@ tags:
   - cover letter
 image: /images/blog/tips.jpeg
 published: true
+title: 11 Tips and Tactics to Get Hired
 ---
 
 ## The Noise Problem
-* The Internet is full of noise and so are most peoples minds, remember this!
- Hiring teams are busy finding signal in their internal and external organizational noise
-* There's a hiring funnel and you need to get in it so don't fail at the first hurdle
-* You have to capture attention of both humans and machines in most cases
-* Your signal will go further if it's stronger and comes from more directions (multipath) with a minimum pincer manoeuvre 
-* It's both what you know and who you know (or who you can get to know) so try to get in touch with the right people (see above)
-* Whether you are extrovert or introvert get involved in community groups related to your target domain to build your network, connections, contacts, and knowledge  
+The Internet *and* moreso the Web is full of noise. So is most people's minds. Remember this!
+  
+Hiring teams are busy finding signal in their internal and external organizational noise. There's a hiring funnel and you need to get in it so don't fail at the first hurdle. You have to capture attention of both humans and machines in most cases. Your signal will go further if it's stronger and comes from more directions (multipath) with a minimum pincer manoeuvre. It's both what you know and who you know (or who you can get to know) so try to get in touch with the right people (see above). Whether you are extrovert or introvert get involved in community groups  related to your target domain (online and offline) and deepen your network, connections, contacts, and knowledge.
   
 ## The Underlay Problem
  - Your CV is a piece of marketing literature and self-written (thus on shaky ground to begin with)

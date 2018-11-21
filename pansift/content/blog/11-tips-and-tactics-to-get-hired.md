@@ -1,3 +1,5 @@
+# 11 Tips and Tactics to Get Hired
+
 ## The Noise Problem
  - The Internet is full of noise and so are most peoples minds, remember this!
  - Hiring teams are busy finding signal in their internal and external organizational noise

@@ -39,8 +39,8 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
   
 ## 2. The Underlay Problem
 
-- [x] Your CV is a piece of marketing literature. It is self-written. You are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience intimately. Become a temporary marketing expert, sales champion, and intimately know your audience and medium.
-- [x] Many hiring teams default to **distrust CVs** as people realize they are **broken tokens** but still the least worst thing we have. This is an open secret.
+- [x] Your CV is a piece of marketing literature. It is self-written. You are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience and their preferred medium intimately. So, become a temporary marketing expert, sales champion, and intimately know both your audience and medium.
+- [x] Many hiring teams default to **distrust CVs** as people realize they are **broken tokens** yet are still our common currency. This is an open secret.
 - [x] How can you actually prove your experience in advance of, or during an interview? This is your nut to crack or theirs to test you with. Everything else is a vague and opaque approximation of condensed [Kabuki](https://en.wikipedia.org/wiki/Kabuki) theatre. 
 - [x] You are trying to overcome your own bias and that of others, this is a hard problem, don't give up. Language is important. Use it well and pay attention to theirs.
 - [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) is ongoing and pronounced. Confidence does not equal competence.

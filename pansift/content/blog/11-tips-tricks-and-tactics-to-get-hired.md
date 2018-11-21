@@ -52,22 +52,21 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 - [x] Have you got any video of yourself communicating or presenting? Video is also vulnerable to a hiring person's bias but it's better than having nothing. The benefits outweigh the drawbacks in terms of showing how you present and communicate. This favours extroverts but perhaps you could give a lightening talk at a local meetup group (and ask a friend to record it).
 - [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outside of your work that you can share and show people (don't forget [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
   
-  
-## 4. The Search Problem
-
-- [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like so called 'X-ray search' from [Recruitin](https://recruitin.net/) and standard [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
-- [x] Even the new age of machine learning and so called A.I. is built on tainted datasets. They use candidate written CV text (looking for keywords) and many don't take in to account which CVs were successful for which roles (to teach the algorithms further).
-- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [Textio](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in both Job Descriptions/Advertisements and also in your CV.
-- [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
-- [x] So there's an A.I. being trained on and matching an **incorrect incomplete Job Description** with a **self-written candidate marketing flyer** tweaked for a competitive landscape.  
-
-<img src="/images/blog/cat.jpeg" class="w-100 mb-3">
-  
-  
-## 5. Ingestion Process
+    
+## 4. The Ingestion Process
 
 - [x] Is your CV going direct via email to a recruiter, sourcer, or the hiring manager? Or is it going via an upload on a web based form and being scraped for text and details?
 - [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack the process, ethically. 
+
+## 5. The Search Problem
+
+- [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like so called 'X-ray search' from [Recruitin](https://recruitin.net/) and standard [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
+- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [Textio](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in both Job Descriptions/Advertisements and also in your CV.
+- [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
+- [x] Even the new age of machine learning and so called A.I. is built on tainted datasets leading to badly trained algorithms. They use candidate written CV text (and look for simple keywords and keyphrases or use Natural Language Processing to extract dates, names, and skills) and many don't take in to account which CVs were actually successful for what roles (e.g. to teach the algorithms further about succesful applicants).
+- [x] So there are A.I.s being trained on and matching **incorrect incomplete Job Descriptions** with **candidate's self-written marketing flyers** that were tweaked for a competitive landscape.... hmmmm...  
+
+<img src="/images/blog/cat.jpeg" class="w-100 mb-3">
   
   
 ## 6. CV and Résumé Format
@@ -81,8 +80,8 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
   
 ## 7. ATS (Applicant Tracking Systems) Keywords
 
-- [x] If they already have your CV and you want it to **resurface** as often as possible when keywords are searched for open roles
-- [x] Skills surface. Maximize it, ethically. You can [invisibly keyword stuff](https://pansift.com/blog/how-to-seo-hack-your-cv/) as long as they are valid. The machine will read the text irrespective.
+- [x] If an agency or organisation already have your CV, you want it to **resurface** (as often as possible) when keywords are searched for open roles
+- [x] What is your skills surface? Maximize it, ethically. You can [invisibly keyword stuff](https://pansift.com/blog/how-to-seo-hack-your-cv/) as long as keywords are valid. Software agents and algorithms doing parsing will read the text irrespective and index it.
   
   
 ## 8. Recruiters and Sourcers are Human

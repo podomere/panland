@@ -30,22 +30,19 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 
 - [x] Hiring teams are busy identifying signal from both inside and outside of their own organizations.
 - [x] There's a hiring funnel and you need to get in to it. Don't fail at the first hurdle. You have to capture the attention of **not just** humans **but** machines too. 
-- [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from **2** directions (or via a minimum of 2 mediums). Just like in sales, the more priming and conceptual *touches* (3x-8x) that you can muster without annoying people, you will get more mindshare for any subsequent engagement and interviews. The more reinforcement regarding your name being heard or read (in a good context of course) the better.
-- [x] Don't ever fool yourself, you are **selling** a part of yourself; your time, your expertise, your energy. You are renting out your labour and/or mind in a **competitive** landscape. 
-- [x] It's both **what** you know **and who** you know (or who you can **get to know** or **get to know about you**). Try to get in touch with the right people sooner rather than later (see above 3x-8x) even to just reasarch the role, company culture, and reality of the situation. 
+- [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from **2** directions (or via a minimum of 2 mediums). Just like in sales, the more priming and conceptual *touches* (3x-8x) that you can muster without annoying people, the more mindshare you get for subsequent engagement or interviews. Reinforcement regarding your name being heard or read (in a good context of course) frequently is desirable.
+- [x] Don't ever fool yourself, you are **selling** a part of yourself; your time, your expertise, your energy, your life. You are renting out your labour and/or mind amidst a **competitive** landscape. 
 - [x] Whether you are extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 
-- [x] Give away knowledge and energy to your professional community without any expectation of receiving anything back and you'll be a better person for it.
-- [x] Don't ever try to game or exploit community - yet the more you give, the more you learn and the more well known you may become. This should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to talk about in interviews if you get that far. Call it a form of enlightened self-interest.
+- [x] Give away knowledge and energy to your professional community without any expectation of receiving anything back and you'll be a better person for it. If there's no community there or around you, build it yourself.
+- [x] Don't ever try to game or exploit community - yet the more you give, the more you learn, and the more well known you will probably become. This renown should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to talk about in interviews (if you get that far) and call it a form of enlightened self-interest.
 
 ## 2. The Underlay Problem
 
-- [x] Your CV is a piece of marketing literature and is self-written (thus you are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience intimately).
-- [x] Many hiring teams default to distrust CVs as people realize they are broken tokens but the least worst thing we have. This is an open secret. #1 Rule. Don't talk about CV club.
-- [x] How can you actually prove your experience in advance of, or during an interview? This is your nut to crack, or theirs to test you. Everything else is a vague and opaque approximation of [Kabuki](https://en.wikipedia.org/wiki/Kabuki) theatre. 
-- [x] You are trying to overcome your own bias and that of others, this is a hard problem
-- [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) 
-- [x] Typos, misspellings, and bad grammar reflect badly (x2) for engineering roles, as it reflects your attention to detail, ability to double check, and level of professional writing and communication in the target language  
-- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader (and/or best fitting a curve or spline in an algorithm).
+- [x] Your CV is a piece of marketing literature. It is self-written. You are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience intimately. Become a temporary marketing expert, sales champion, and intimately know your audience and medium.
+- [x] Many hiring teams default to **distrust CVs** as people realize they are **broken tokens** but still the least worst thing we have. This is an open secret.
+- [x] How can you actually prove your experience in advance of, or during an interview? This is your nut to crack or theirs to test you with. Everything else is a vague and opaque approximation of condensed [Kabuki](https://en.wikipedia.org/wiki/Kabuki) theatre. 
+- [x] You are trying to overcome your own bias and that of others, this is a hard problem, don't give up. Language is important. Use it well and pay attention to theirs.
+- [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) is ongoing and pronounced. Confidence does not equal competence.
 
 ## 3. The Portfolio Problem (Proof of Experience)
 
@@ -73,6 +70,8 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] Short, sharp, and sweet - as a human recruiter will parse your CV "flyer" in less than 20 seconds on first glance and a machine will do it in microseconds to seconds
 - [x] This is a sales pitch in a competitive landscape, treat it as such.
 - [x] Search for and pay attention to [CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/)
+- [x] Typos, misspellings, and bad grammar are unacceptable in the day and age of things like automatic spell checkers, tools like [HemingwayApp](https://hemingwayapp.com/), and https://www.grammarly.com/. It's a total **faux-pas** for engineering roles. Errors reflect your attention to detail, ability to double check or enlist help, and of course it shows your level of professional writing and communication ability in the target language. Your CV is a piece of marketing literature. A digital billboard for your services.
+- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader (and/or best fitting a curve or spline in an algorithm).
 
 ## 7. ATS (Applicant Tracking Systems) Keywords
 
@@ -92,10 +91,14 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] Again. Use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance intentionally.
 - [x] Meet your recruiter face to face IRL or via video call at a minimum. Reinforce you exist and are not an avatar at the end of an email.
 
-## 9. Prime the Hiring Manager
+## 9. Prime the Hiring Manager and Team
 
-- [x] You really want the hiring manager to know your name in advance and be asking for your details or expecting them.
-- [x] The hiring manager and hiring team should hear your name from multiple sources in terms of internal employees so shake the tree, nicely. Get in touch with as many people you know there (or could get in touch with) to find out what it's like to work there. 
+- [x] You really want the hiring manager to know your name in advance and to be asking for your details themselves or at least be expecting them as one of the candidates. See [#1](/1-the-noise-problem)
+- [x] The hiring manager and hiring team should hear your name from multiple sources. It's helpful if internal employees (and/or wider industry circles) have heard of you, so shake the tree a little, nicely and get out there and mix it up a bit! See [#1](/1-the-noise-problem)
+- [x] Figure out as much as you can about the hiring team and their backgrounds so you can show a level of interest and potential spot connections you were not aware of. Professional digital stalking of this nature is ok and to be expected.
+- [x] It's both **what** you know **and who** you know (or who you can **get to know** or **get to know about you**). Try to get in touch with the **right people in the hiring team** sooner rather than later, even to just reasarch the role, company culture, and reality of the situation. 
+- [x] Get in touch with as many people you know in the organisation (or could get in touch with) even if not part of the hiring team to find out what it's like to actually work there. This also has the benefit of showing you did your research. This is a bonus in interviews as it shows you are a self-starter and can add value by independently figuring out an environment.
+- [x] When dealing with people you are also planting seeds for either this engagement or the next. Remember that people move organisations and jobs. A person is not a person, they are also gateways to clusters, tribes, and networks. Your messaging and name can benefit from network effects so 'always be seeding'. 
 
 ## 10. Referrals and Referees
 
@@ -108,8 +111,9 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 ## 11. Research is Important Because...
 
 - [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per [#1](/1-the-noise-problem) ).
-- [x] You can get or validate their professional emails via 'lead gen' and email enrichment tools if need be. 
-- [x] Arm yourself with as much independent data as you can, maybe you don't actually want this role or to be a part of this organisation (unless you have to)
-- [x] During the process of asking questions and connecting with people what often happens is new opportunities present themselves, you just need to let people know you are looking.
+- [x] You can get or validate their professional emails via 'lead gen' and email enrichment tools if need be.
+- [x] Do your homework and quickly skill up with **new** basics (even if listed as only desirable skills). This shows you are willing and able to learn, improve, and explore new areas autonomously. You show an interest in keeping up-to-date with the ecosystem and self-direct learning with platforms like [Pluralsight](https://pluralsight.pansift.com)
+- [x] Arm yourself with as much independent data as you can. Maybe you learn sooner than later you don't actually want this role or to be a part of an organisation of this type (unless you have to).
+- [x] During the process of asking questions and connecting with people what often happens is new opportunities present themselves! You just need to let people know you are looking and open to new things.
   
 > If you want this job, you need to work for it, not point and shoot and wait. Get off your ass and through *your* actions (not others) collapse down the multiverse to the one with the greatest probability of you getting in to, and as far down the funnel as you can, ethically!

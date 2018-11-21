@@ -28,11 +28,11 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 
 ## 1. The Noise Problem
 
-- [x] Hiring teams are busy identifying signal both inside and outside of their own organizational footprint. 
-- [x] There's a hiring funnel and you need to get in it, so don't fail at the first hurdle by following some steps below. You have to capture the attention of **both** humans **and** machines in many cases. 
-- [x] Your signal will go further if it's stronger and comes from more directions (multipath). At a minimum use a pincer manoeuvre and come at a hiring team from 2 directions (or contact via a minimum of 2 means). Just like in sales, the more priming and conceptual *touches* (3x-8x) you can muster before being engaged or interviewed, the better. The more reinforcment regarding your name being heard or read the better.
-- [x] Don't fool yourself, you are selling yourself, your time, your expertise. You are renting out your labour and/or mind in a **competitive** landscape. 
-- [x] It's both **what** you know **and who** you know (or who you can get to know or get to know about you). Try to get in touch with the right people sooner rather than later (see above 3x-8x) even just to do reasarch about the role, company culture, and reality of the situation. 
+- [x] Hiring teams are busy identifying signal inside and outside of their own organizations.
+- [x] There's a hiring funnel and you need to get in it. Don't fail at the first hurdle. You have to capture the attention of **not just** humans **but** machines too. 
+- [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from 2 directions (or via a minimum of 2 mediums). Just like in sales, the more priming and conceptual *touches* (3x-8x) you can muster without annoying people, gives you mindshare for engagement and interviews. The more reinforcement regarding your name being heard or read the better.
+- [x] Don't ever fool yourself, you are **selling** a part of yourself, your time, your expertise, your energy. You are renting out your labour and/or mind in a **competitive** landscape. 
+- [x] It's both **what** you know **and who** you know (or who you can **get to know** or **get to know about you**). Try to get in touch with the right people sooner rather than later (see above 3x-8x) even to just reasarch the role, company culture, and reality of the situation. 
 - [x] Whether you are extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 
 - [x] Give away knowledge and energy to your professional community without any expectation of receiving anything back and you'll be a better person for it.
 - [x] Don't ever try to game or exploit community - yet the more you give, the more you learn and the more well known you may become. This should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to talk about in interviews if you get that far. Call it a form of enlightened self-interest.
@@ -81,11 +81,16 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
   
 ## 8. Recruiters and Sourcers are Human
 
-- [x] Is the recruiter via an agency versus in-house? Why does it matter, well, what are they incentivized on and how?
-- [x] Are they playing the volume game?
-- [x] Are they reformatting your CV? Are they actually sending through your cover letter?
+- [x] Is the recruiter via an agency or in-house? Why does it matter, well, what are they incentivized by and how? Understand this to understand how they are playing the game.
+- [x] Is their strategy quality or quantity? Are they a cog in a giant machine or intereseted in building their companies brand with long term relationships? 
+- [x] Are they reformatting your CV and sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon? Ask for feedback. Call them. Don't default to email.
+- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you 2-3 times over 6-8 years. You might be worth 30-60K to them or more if they can tap **your** network too (see [#1](/1-the-noise-problem)).
 - [x] Few actually act as your "agent" so don't deceive yourself that they are in there advocating or selling on your behalf as you might imagine.
-- [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.  
+- [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
+- [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with a person, make it. Never rely on digital alone. Reinforce your existance.
+- [x] Follow up. Follow up every 3-4 days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
+- [x] Again. Use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance intentionally.
+- [x] Meet your recruiter face to face IRL or via video call at a minimum. Reinforce you exist and are not an avatar at the end of an email.
   
 ## 9. Prime the Hiring Manager
 
@@ -102,7 +107,7 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
   
 ## 11. Research is Important Because...
 
-- [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per #1 ).
+- [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per [#1](/1-the-noise-problem) ).
 - [x] You can get or validate their professional emails via 'lead gen' and email enrichment tools if need be. 
 - [x] Arm yourself with as much independent data as you can, maybe you don't actually want this role or to be a part of this organisation (unless you have to)
 - [x] During the process of asking questions and connecting with people what often happens is new opportunities present themselves, you just need to let people know you are looking.

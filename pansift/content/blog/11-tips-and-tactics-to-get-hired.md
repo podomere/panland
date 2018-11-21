@@ -1,3 +1,16 @@
+---
+layout: post
+subtitle: Modern CV hacks for a new landscape
+author: Donal
+tags:
+  - hrtech
+  - screening
+  - sourcing
+  - tips
+  - cvs
+image: /images/blog/tips.png
+---
+
 # 11 Tips and Tactics to Get Hired
 
 ## The Noise Problem
@@ -61,4 +74,3 @@ Ingestion
  - Get their emails via lead gen and email enrichment tools if you must.
 
 If you want this job, you need to work for it, not point and shoot and wait. Get off your ass and through *your* actions (not others) collapse down the multiverse to the one with the greatest probability of you getting in to, and as far down the funnel as you can, ethically.
-

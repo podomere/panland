@@ -1,6 +1,6 @@
 ---
 layout: post
-subtitle: Modern CV Hacks for a New Landscape
+subtitle: Navigating and Hacking a New Landscape
 author: Donal
 tags:
   - cv

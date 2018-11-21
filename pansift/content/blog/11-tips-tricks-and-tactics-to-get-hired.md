@@ -24,12 +24,12 @@ image: /images/blog/tips.jpeg
 published: true
 title: '11 Tips, Tricks, and Tactics to Get Hired'
 ---
-The Internet (*and* more so the Web) is full of noise and so are many minds. Remember this when you are trying to get a signal through to someone! 
+The Internet (*and* more so the Web) is full of noise and increasingly, so are many people's minds. Remember this when you are trying to get a signal through to someone during their day! 
 
 ## 1. The Noise Problem
 
-- [x] Hiring teams are busy identifying signal from both inside and outside of their own organizations.
-- [x] There's a hiring funnel and you need to get in to it. Don't fail at the first hurdle. You have to capture the attention of **not just** humans **but** machines too. 
+- [x] Hiring teams are busy identifying signals from both inside and outside of their own organizations.
+- [x] There's a hiring funnel and you need to get in to it. Don't fail at the first hurdle. You have to capture the attention of **not just** humans **but** also machines too. 
 - [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from **2** directions (or via a minimum of **2** mediums). Just like in sales, the more priming and conceptual *touches* (**3x-8x**) that you can muster without annoying people, the more mind share you get for subsequent engagement or interviews. Reinforcement of your name being heard or read frequently (in a good context of course) is desirable.
 - [x] Don't ever fool yourself, you are **selling** a part of yourself; your time, your expertise, your energy, your life. You are renting out your labour and/or mind amidst a **competitive** landscape. 
 - [x] Whether you are extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 

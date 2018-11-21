@@ -109,13 +109,13 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 - [x] When dealing with people you are also planting seeds for either this engagement or the next. Remember that people move organisations and jobs. A person is not a person, they are also gateways to clusters, tribes, and networks. Your messaging and name can benefit from network effects so 'always be seeding'. 
   
   
-## 10. Referrals and Referees
+## 10. Referrals, References, and Referees
 
-- [x] The best way to get your CV seen and increase the time spent by the hiring team reviewing it is via referrals. You have to invest to gain social capital you can then spend. See the point about community (on and offline [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
-- [x] Non-zero sum games (especially if there's a finders fee/bonus) work well, if someone stands to gain to have you possibly come on board.
-- [x] The downside can be hiring in clusters or tribes creating homogeneity. Try and discern this early in your investigations.
+- [x] The best way to get your CV seen and increase the time spent by the hiring team reviewing it is via referrals. You have to invest time to gain social capital that you can then spend one on one. See the point about community (on and offline [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
+- [x] Non-zero sum games work well (especially if there's a finders fee/bonus), if someone internally stands to gain by having you possibly come on board.
+- [x] The downside can be hiring in clusters or tribes that creates homogeneity. Try and discern this early in your investigations. Diversity is strength.
 - [x] References and referees only matter in the later stages or during character checks.
-- [x] Always say "References on request". Everyone know's you've picked affirming people and sometimes these relationship change or their details and situations change.
+- [x] Always write "References on request". Everyone know's you've picked character affirming people yet sometimes these relationship can change or their details or situations change.
   
   
 ## 11. Important Research

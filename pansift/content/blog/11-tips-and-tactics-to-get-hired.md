@@ -60,8 +60,8 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
   
 ## 5. Ingestion Process
 
-- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack it, ethically.
-- [x] Is it going direct via email to a recruiter, sourcer, or the hiring manager... or is it going via an upload on a web based form?  
+- [x] Is it going direct via email to a recruiter, sourcer, or the hiring manager... or is it going via an upload on a web based form? 
+- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack it, ethically. 
   
 ## 6. CV and Résumé Format
 

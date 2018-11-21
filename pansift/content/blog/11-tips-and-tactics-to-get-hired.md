@@ -44,8 +44,10 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] How can you actually prove your experience in advance of, or during an interview? This is your nut to crack, or theirs to test you. Everything else is a vague and opaque approximation of [Kabuki](https://en.wikipedia.org/wiki/Kabuki) theatre. 
 - [x] You are trying to overcome your own bias and that of others, this is a hard problem
 - [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) 
-- [x] The language you use is important and meaningful (see Marketing)
 - [x] Typos, misspellings, and bad grammar reflect badly (x2) for engineering roles, as it reflects your attention to detail, ability to double check, and level of professional writing and communication in the target language  
+- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader (and/or best fitting a curve or spline in an algorithm)
+
+<img src="/images/blog/cat.jpeg" class="w-100 mb-3">
   
 ## 3. The Portfolio Problem (Proof of Experience)
 

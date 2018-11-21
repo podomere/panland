@@ -14,10 +14,10 @@
     <meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}" />
     <meta name="yandex-verification" content="0fd0817a6be1735d" />
     {{ $isHomePage := eq .Title .Site.Title }}
-    <meta content="{{ .Title }}{{ if eq $isHomePage false }} : Pansift - Automated Screening {{ end }}" property="og:title">
+    <meta content="{{ .Title }}{{ if eq $isHomePage false }}{{ end }}" property="og:title">
     <meta content="{{ .Permalink }}" property="og:url">
-    <meta content="{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:site_name">
-    <meta content="{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" itemprop="name">
+    <meta content="{{ .Title }}{{ if eq $isHomePage false }} - PanSift{{ end }}" property="og:site_name">
+    <meta content="{{ .Title }}{{ if eq $isHomePage false }} - PanSift{{ end }}" itemprop="name">
     {{ if isset .Params "image" }}
     <meta content="{{ .Params.image | absURL }}" property="og:image">
     <meta content="{{ .Params.image | absURL }}" itemprop="image">

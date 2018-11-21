@@ -1,6 +1,6 @@
 ---
 layout: post
-subtitle: Modern CV hacks for a new landscape
+subtitle: Modern CV Hacks for a New Landscape
 author: Donal
 tags:
   - cv
@@ -22,6 +22,7 @@ tags:
   - cover letter
 image: /images/blog/tips.jpeg
 published: true
+title: 11 Tips and Tactics to Get Hired
 ---
 
 ## The Noise Problem

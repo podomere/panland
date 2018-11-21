@@ -65,7 +65,7 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 - [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [Textio](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in both **Job Descriptions/Advertisements** and also in your **CV**.
 - [x] Also the **Job Description** or **Position Description** that becomes the **Job Advertisement** is often inaccurate and itself just marketing literature (see above).
 - [x] Even the new age of machine learning and so called **A.I.** is built on tainted datasets leading to badly trained algorithms. They use candidate written CV text (and look for simple keywords and keyphrases or use Natural Language Processing to extract dates, names, and skills) and many don't take in to account which CVs were actually successful for what roles (e.g. to teach the algorithms further about succesful applicants).
-- [x] So there are A.I.s being trained on and matching **incorrect incomplete Job Descriptions** with **candidate's self-written marketing flyers** that were tweaked for a competitive landscape.... hmmmm...  
+- [x] So there are A.I.s being trained on and matching **incorrect and incomplete Job Descriptions** with **candidate's self-written marketing flyers** that were tweaked for competitive landscapes.... hmmmm...  
 
 <img src="/images/blog/cat.jpeg" class="w-100 mb-3">
   

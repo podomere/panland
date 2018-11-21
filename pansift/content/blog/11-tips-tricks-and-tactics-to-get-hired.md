@@ -24,13 +24,13 @@ image: /images/blog/tips.jpeg
 published: true
 title: '11 Tips, Tricks, and Tactics to Get Hired'
 ---
-The Internet (*and* more so the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone! 
+The Internet (*and* more so the Web) is full of noise and so are many minds. Remember this when you are trying to get a signal through to someone! 
 
 ## 1. The Noise Problem
 
 - [x] Hiring teams are busy identifying signal from both inside and outside of their own organizations.
 - [x] There's a hiring funnel and you need to get in to it. Don't fail at the first hurdle. You have to capture the attention of **not just** humans **but** machines too. 
-- [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from **2** directions (or via a minimum of 2 mediums). Just like in sales, the more priming and conceptual *touches* (3x-8x) that you can muster without annoying people, the more mind share you get for subsequent engagement or interviews. Reinforcement regarding your name being heard or read (in a good context of course) frequently is desirable.
+- [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from **2** directions (or via a minimum of **2** mediums). Just like in sales, the more priming and conceptual *touches* (**3x-8x**) that you can muster without annoying people, the more mind share you get for subsequent engagement or interviews. Reinforcement of your name being heard or read (in a good context of course) frequently is desirable.
 - [x] Don't ever fool yourself, you are **selling** a part of yourself; your time, your expertise, your energy, your life. You are renting out your labour and/or mind amidst a **competitive** landscape. 
 - [x] Whether you are extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 
 - [x] Give away knowledge and energy to your professional community without any expectation of receiving anything back and you'll be a better person for it. If there's no community there or around you, build it yourself.
@@ -54,7 +54,7 @@ The Internet (*and* more so the Web) is full of noise and so are most people's m
 
 - [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like [https://recruitin.net/](https://recruitin.net/) and [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
 - [x] Even the new age of machine learning and so called A.I. is built on tainted datasets. They use candidate written CV text (looking for keywords) and many don't take in to account which CVs were successful for which roles (to teach the algorithms further).
-- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [https://textio.com/](https://textio.com/) can help break this cycle by revealing unconscious gender bias early in both Job Descriptions/Advertisements and in your CV.
+- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [https://textio.com/](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in both Job Descriptions/Advertisements and also in your CV.
 - [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
 - [x] So an A.I. is being trained and matching on, or fitting to an incorrect incomplete Job Description tied to a self-written marketing flyer written by a self-interested party in a competitive landscape.  
 
@@ -75,19 +75,19 @@ The Internet (*and* more so the Web) is full of noise and so are most people's m
   
 ## 7. ATS (Applicant Tracking Systems) Keywords
 
-- [x] If they already have your CV you want it to resurface as often as possible when keywords are searched for open roles
-- [x] Skills surface. Maximize it, ethically. You can invisibly keyword stuff as long as they are valid. The machine will read the text irrespective.
+- [x] If they already have your CV and you want it to **resurface** as often as possible when keywords are searched for open roles
+- [x] Skills surface. Maximize it, ethically. You can [invisibly keyword stuff](https://pansift.com/blog/how-to-seo-hack-your-cv/) as long as they are valid. The machine will read the text irrespective.
   
 ## 8. Recruiters and Sourcers are Human
 
 - [x] Is the recruiter via an agency or in-house? Why does it matter, well, what are they incentivized by and how? Understand this to understand how they are playing the game.
 - [x] Is their strategy quality or quantity? Are they a cog in a giant machine or interested in building their companies brand with long term relationships? 
 - [x] Are they reformatting your CV and sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon? Ask for feedback. Call them. Don't default to email.
-- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you 2-3 times over 6-8 years. You might be worth 30-60K to them or more if they can tap **your** network too (see [#1](/1-the-noise-problem)).
+- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you **2-3** times over **6-8** years. You might be worth 30-60K to them or more if they can tap **your** network too (see [#1](/1-the-noise-problem)).
 - [x] Few actually act as your "agent" so don't deceive yourself that they are in there advocating or selling on your behalf as you might imagine.
 - [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
 - [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with a person, make it. Never rely on digital alone. Reinforce your existence.
-- [x] Follow up. Follow up every 3-4 days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
+- [x] Follow up. Follow up every **3-4** days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
 - [x] Again, use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance **intentionally**.
 - [x] Meet your recruiter face to face IRL(In Real Life) or at least via a video call. Reinforce you exist as a living breathing person and are not just an avatar at the end of an email.
   

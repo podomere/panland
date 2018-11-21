@@ -46,8 +46,6 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) 
 - [x] Typos, misspellings, and bad grammar reflect badly (x2) for engineering roles, as it reflects your attention to detail, ability to double check, and level of professional writing and communication in the target language  
 - [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader (and/or best fitting a curve or spline in an algorithm)
-
-<img src="/images/blog/cat.jpeg" class="w-100 mb-3">
   
 ## 3. The Portfolio Problem (Proof of Experience)
 
@@ -62,6 +60,8 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [https://textio.com/](https://textio.com/) can help break this cycle by revealing unconscious gender bias early in both Job Descriptions/Advertisements and in your CV.
 - [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
 - [x] So an A.I. is being trained and matching on, or fitting to an incorrect incomplete Job Description tied to a self-written marketing flyer written by a self-interested party in a competitive landscape.  
+
+<img src="/images/blog/cat.jpeg" class="w-100 mb-3">
   
 ## 5. Ingestion Process
 
@@ -102,7 +102,9 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
   
 ## 11. Research is Important Because...
 
-- [x] Find people in the organisation or 2-3 degree deep connections to them, and get in touch.
-- [x] Get their emails via lead gen and email enrichment tools if you must.  
+- [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per #1 ).
+- [x] You can get or validate their professional emails via 'lead gen' and email enrichment tools if need be. 
+- [x] Arm yourself with as much independent data as you can, maybe you don't actually want this role or to be a part of this organisation (unless you have to)
+- [x] During the process of asking questions and connecting with people what often happens is new opportunities present themselves, you just need to let people know you are looking.
   
 > If you want this job, you need to work for it, not point and shoot and wait. Get off your ass and through *your* actions (not others) collapse down the multiverse to the one with the greatest probability of you getting in to, and as far down the funnel as you can, ethically!

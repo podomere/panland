@@ -36,7 +36,7 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] Whether you are extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 
 - [x] Give away knowledge and energy to your professional community without any expectation of receiving anything back and you'll be a better person for it.
 - [x] Don't ever try to game or exploit community - yet the more you give, the more you learn and the more well known you may become. This should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to talk about in interviews if you get that far. Call it a form of enlightened self-interest.
-  
+
 ## 2. The Underlay Problem
 
 - [x] Your CV is a piece of marketing literature and is self-written (thus you are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience intimately).
@@ -45,14 +45,14 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] You are trying to overcome your own bias and that of others, this is a hard problem
 - [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) 
 - [x] Typos, misspellings, and bad grammar reflect badly (x2) for engineering roles, as it reflects your attention to detail, ability to double check, and level of professional writing and communication in the target language  
-- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader (and/or best fitting a curve or spline in an algorithm)
-  
+- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader (and/or best fitting a curve or spline in an algorithm).
+
 ## 3. The Portfolio Problem (Proof of Experience)
 
 - [x] Show don't tell. Can you actually show something or let them see and interact with something you've built? No? Build something. This is one reason why [FLOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) is good.
 - [x] Have you got any video of yourself communicating or presenting? Video is also open to a hiring person's bias but it's better than nothing showing how you present and communinicate. This favours extroverts but perhaps you could give a lightening talk at a local Meetup to start and ask a friend to take a little footage of it.
-- [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outsied of work that you can show people (see above).  
-  
+- [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outsied of work that you can show people (see above).
+
 ## 4. The Search Problem
 
 - [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like [https://recruitin.net/](https://recruitin.net/) and [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
@@ -66,19 +66,19 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 ## 5. Ingestion Process
 
 - [x] Is it going direct via email to a recruiter, sourcer, or the hiring manager... or is it going via an upload on a web based form? 
-- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack it, ethically. 
-  
+- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack it, ethically.
+
 ## 6. CV and Résumé Format
 
 - [x] Short, sharp, and sweet - as a human recruiter will parse your CV "flyer" in less than 20 seconds on first glance and a machine will do it in microseconds to seconds
 - [x] This is a sales pitch in a competitive landscape, treat it as such.
 - [x] Search for and pay attention to [CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/)
-  
+
 ## 7. ATS (Applicant Tracking Systems) Keywords
 
 - [x] If they already have your CV you want it to resurface as often as possible when keywords are searched for open roles
-- [x] Skills surface. Maximize it, ethically. You can invisibly keyword stuff as long as they are valid. The machine will read the text irrespective.  
-  
+- [x] Skills surface. Maximize it, ethically. You can invisibly keyword stuff as long as they are valid. The machine will read the text irrespective.
+
 ## 8. Recruiters and Sourcers are Human
 
 - [x] Is the recruiter via an agency or in-house? Why does it matter, well, what are they incentivized by and how? Understand this to understand how they are playing the game.
@@ -91,12 +91,12 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] Follow up. Follow up every 3-4 days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
 - [x] Again. Use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance intentionally.
 - [x] Meet your recruiter face to face IRL or via video call at a minimum. Reinforce you exist and are not an avatar at the end of an email.
-  
+
 ## 9. Prime the Hiring Manager
 
 - [x] You really want the hiring manager to know your name in advance and be asking for your details or expecting them.
 - [x] The hiring manager and hiring team should hear your name from multiple sources in terms of internal employees so shake the tree, nicely. Get in touch with as many people you know there (or could get in touch with) to find out what it's like to work there. 
-  
+
 ## 10. Referrals and Referees
 
 - [x] Best way to get your CV seen and increase the time spent by the hiring team reviewing it is via referrals. You have to invest to gain social capital you can then spend. See the point about community (on and offline).
@@ -104,7 +104,7 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] The downside can be hiring in clusters or tribes creating homogeneity. Try and discern this early in your investigations.
 - [x] References and referees only matter in the later stages or during character checks.
 - [x] Always say "References on request". Everyone know's you've picked affirming people.
-  
+
 ## 11. Research is Important Because...
 
 - [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per [#1](/1-the-noise-problem) ).

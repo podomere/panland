@@ -49,8 +49,8 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
 ## 3. The Portfolio Problem (Proof of Experience)
 
 - [x] Show don't tell. Can you actually show something or let them see and interact with something you've built? No? Build something. This is one reason why [FLOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) is good.
-- [x] Have you got any video of yourself communicating or presenting? Video is also open to a hiring person's bias but it's better than nothing showing how you present and communicate. This favours extroverts but perhaps you could give a lightening talk at a local Meetup to start and ask a friend to take a little footage of it.
-- [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outsied of work that you can show people (see above).
+- [x] Have you got any video of yourself communicating or presenting? Video is also vulnerable to a hiring person's bias but it's better than having nothing. The benefits outweigh the drawbacks in terms of showing how you present and communicate. This favours extroverts but perhaps you could give a lightening talk at a local meetup group (and ask a friend to record it).
+- [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outside of your work that you can share and show people (don't forget [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/1-the-noise-problem)).
   
   
 ## 4. The Search Problem
@@ -90,7 +90,7 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
 - [x] Is the recruiter via an agency or in-house? Why does it matter, well, what are they incentivized by and how? Understand this to understand how they are playing the game.
 - [x] Is their strategy quality or quantity? Are they a cog in a giant machine or interested in building their companies brand with long term relationships? 
 - [x] Are they reformatting your CV and sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon? Ask for feedback. Call them. Don't default to email.
-- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you **2-3** times over **6-8** years. You might be worth 30-60K to them or more if they can tap **your** network too (see [#1](/1-the-noise-problem)).
+- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you **2-3** times over **6-8** years. You might be worth 30-60K to them or more if they can tap **your** network too (see [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/1-the-noise-problem)).
 - [x] Few actually act as your "agent" so don't deceive yourself that they are in there advocating or selling on your behalf as you might imagine.
 - [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
 - [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with a person, make it. Never rely on digital alone. Reinforce your existence.
@@ -101,8 +101,8 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
   
 ## 9. Prime the Hiring Manager and Team
 
-- [x] You really want the hiring manager to know your name in advance and to be asking for your details themselves or at least be expecting them as one of the candidates. See [#1](/1-the-noise-problem)
-- [x] The hiring manager and hiring team should hear your name from multiple sources. It's helpful if internal employees (and/or wider industry circles) have heard of you, so shake the tree a little, nicely and get out there and mix it up a bit! See [#1](/1-the-noise-problem)
+- [x] You really want the hiring manager to know your name in advance and to be asking for your details themselves or at least be expecting them as one of the candidates. See [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/1-the-noise-problem)
+- [x] The hiring manager and hiring team should hear your name from multiple sources. It's helpful if internal employees (and/or wider industry circles) have heard of you, so shake the tree a little, nicely and get out there and mix it up a bit! See [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/1-the-noise-problem)
 - [x] Figure out as much as you can about the hiring team and their backgrounds so you can show a level of interest and potential spot connections you were not aware of. Professional digital stalking of this nature is ok and to be expected.
 - [x] It's both **what** you know **and who** you know (or who you can **get to know** or **get to know about you**). Try to get in touch with the **right people in the hiring team** sooner rather than later, even to just reasarch the role, company culture, and reality of the situation. 
 - [x] Get in touch with as many people you know in the organisation (or could get in touch with) even if not part of the hiring team to find out what it's like to actually work there. This also has the benefit of showing you did your research. This is a bonus in interviews as it shows you are a self-starter and can add value by independently figuring out an environment.
@@ -111,7 +111,7 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
   
 ## 10. Referrals and Referees
 
-- [x] The best way to get your CV seen and increase the time spent by the hiring team reviewing it is via referrals. You have to invest to gain social capital you can then spend. See the point about community (on and offline [#1](/1-the-noise-problem)).
+- [x] The best way to get your CV seen and increase the time spent by the hiring team reviewing it is via referrals. You have to invest to gain social capital you can then spend. See the point about community (on and offline [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/1-the-noise-problem)).
 - [x] Non-zero sum games (especially if there's a finders fee/bonus) work well, if someone stands to gain to have you possibly come on board.
 - [x] The downside can be hiring in clusters or tribes creating homogeneity. Try and discern this early in your investigations.
 - [x] References and referees only matter in the later stages or during character checks.
@@ -120,7 +120,7 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
   
 ## 11. Research is Important Because...
 
-- [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per [#1](/1-the-noise-problem) ).
+- [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/1-the-noise-problem) ).
 - [x] You can get or validate their professional emails via 'lead gen' and email enrichment tools if need be.
 - [x] Do your homework and quickly skill up with **new** basics (even if listed as only desirable skills). This shows you are willing and able to learn, improve, and explore new areas autonomously. You show an interest in keeping up-to-date with the ecosystem and self-direct learning with platforms like [Pluralsight](https://pluralsight.pansift.com)
 - [x] Arm yourself with as much independent data as you can. Maybe you learn sooner than later you don't actually want this role or to be a part of an organisation of this type (unless you have to).

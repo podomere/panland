@@ -66,7 +66,8 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 ## 6. CV and Résumé Format
 
 - [x] Short, sharp, and sweet - as a human recruiter will parse your CV "flyer" in less than 20 seconds on first glance and a machine will do it in microseconds to seconds
-- [x] This is a sales pitch in a competitive landscape, treat it as such.  
+- [x] This is a sales pitch in a competitive landscape, treat it as such.
+- [x] Search for and pay attention to [CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/)
   
 ## 7. ATS (Applicant Tracking Systems) Keywords
 

@@ -20,7 +20,7 @@ tags:
   - resume
   - job search
   - cover letter
-image: /images/blog/tips.png
+image: /images/blog/tips.jpeg
 published: false
 ---
 

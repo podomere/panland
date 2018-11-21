@@ -1,6 +1,6 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "PanSift. Technical recruitment and pre hire assessment test."
+title = "PanSift. Technical recruitment and pre hire assessment testing."
 theme = "navigator-hugo"
 summaryLength = 30
 enableGitInfo = true

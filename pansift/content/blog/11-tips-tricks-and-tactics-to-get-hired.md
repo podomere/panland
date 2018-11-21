@@ -55,9 +55,9 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
   
 ## 4. The Search Problem
 
-- [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like [https://recruitin.net/](https://recruitin.net/) and [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
+- [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like so called 'X-ray search' from [Recruitin](https://recruitin.net/) and standard [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
 - [x] Even the new age of machine learning and so called A.I. is built on tainted datasets. They use candidate written CV text (looking for keywords) and many don't take in to account which CVs were successful for which roles (to teach the algorithms further).
-- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [https://textio.com/](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in both Job Descriptions/Advertisements and also in your CV.
+- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [Textio](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in both Job Descriptions/Advertisements and also in your CV.
 - [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
 - [x] So an A.I. is being trained and matching on, or fitting to an incorrect incomplete Job Description tied to a self-written marketing flyer written by a self-interested party in a competitive landscape.  
 
@@ -126,4 +126,4 @@ The Internet (*and* more so the Web) is full of noise and so are many minds. Rem
 - [x] Arm yourself with as much independent data as you can. Maybe you learn sooner than later you don't actually want this role or to be a part of an organisation of this type (unless you have to).
 - [x] During the process of asking questions and connecting with people what often happens is new opportunities present themselves! You just need to let people know you are looking and open to new things.
   
-> If you really want this job, you need to work for it. Long gone are the days of point, shoot, and wait. Get off your ass and through *your* own actions (not others) collapse down the multiverse to the one with the greatest probability of you getting as far down the funnel as you can, ethically! Own your outcomes. Carve your future.
+> If you really want this job, you need to work for it. Long gone are the days of point, shoot, and wait. Get off your ass and through *your own actions* (not others) collapse down the multiverse to the one with the greatest probability of you getting as far down the funnel as you can, ethically! **Own your outcomes. Carve your future**.

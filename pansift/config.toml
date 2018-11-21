@@ -50,7 +50,7 @@ enableGitInfo = true
         enable  = true
         topTitle= "What you need to know about hiring"
         title   = "Raise the Bar : Blog"
-        subtitle= "Tactics, techniques and procedures for keeping pace with modern technology!"
+        subtitle= "Tactics, techniques and procedures to keep pace with modern HR Tech!"
 
     # Blog CTA Section On Homepage
     [params.blog_cta]

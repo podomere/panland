@@ -53,7 +53,8 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 ## 4. The Search Problem
 
 - [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like [https://recruitin.net/](https://recruitin.net/) and [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
-- [x] Even the new age of machine learning and so called hiring A.I. is built on tainted datasets which are optimizing by what ever "words" they electively wrote on their CV and many don't take in to account which CVs were successful for which roles.
+- [x] Even the new age of machine learning and so called A.I. is built on tainted datasets. They use candidate written CV text (looking for keywords) and many don't take in to account which CVs were successful for which roles (to teach the algorithms further).
+- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [https://textio.com/](https://textio.com/) can help break this cycle by revealing unconscious gender bias early in both Job Descriptions/Advertisements and in your CV.
 - [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
 - [x] So an A.I. is being trained and matching on, or fitting to an incorrect incomplete Job Description tied to a self-written marketing flyer written by a self-interested party in a competitive landscape.  
   

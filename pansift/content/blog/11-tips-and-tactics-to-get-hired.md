@@ -87,4 +87,4 @@ published: false
  - Find people in the organisation or 2-3 degree deep connections to them, and get in touch.
  - Get their emails via lead gen and email enrichment tools if you must.
 
-If you want this job, you need to work for it, not point and shoot and wait. Get off your ass and through *your* actions (not others) collapse down the multiverse to the one with the greatest probability of you getting in to, and as far down the funnel as you can, ethically.
+> If you want this job, you need to work for it, not point and shoot and wait. Get off your ass and through *your* actions (not others) collapse down the multiverse to the one with the greatest probability of you getting in to, and as far down the funnel as you can, ethically!

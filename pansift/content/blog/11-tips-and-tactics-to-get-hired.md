@@ -44,9 +44,9 @@ The Internet (*and* moreso the Web) is full of noise and so are most people's mi
 - [x] The language you use is important and meaningful (see Marketing)
 - [x] Typos, misspellings, and bad grammar reflect badly (x2) for engineering roles, as it reflects your attention to detail, ability to double check, and level of professional writing and communication in the target language  
   
-## 3. The Portfolio Problem
+## 3. The Portfolio Problem (Proof of Experience)
 
-- [x] Show don't tell, can you actually show something or let them see and interact with something you've built? No? Build something.
+- [x] Show don't tell. Can you actually show something or let them see and interact with something you've built? No? Build something. This is one reason why [FLOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) is good.
 - [x] Have you got any video of yourself communicating or presenting? Video is also open to a hiring person's bias but it's better than nothing showing how you present and communinicate. This favours extroverts but perhaps you could give a lightening talk at a local Meetup to start and ask a friend to take a little footage of it.
 - [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outsied of work that you can show people (see above).  
   

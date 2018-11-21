@@ -24,48 +24,53 @@ image: /images/blog/tips.jpeg
 published: true
 title: 11 Tips and Tactics to Get Hired
 ---
-The Internet (*and* moreso the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone, especially via digital means! 
+The Internet (*and* moreso the Web) is full of noise and so are most people's minds. Remember this when you are trying to get a signal through to someone especially if digital! 
 
 ## 1. The Noise Problem
 
 - [x] Hiring teams are busy identifying signal both inside and outside of their own organizational footprint. 
-- [x] There's a hiring funnel and you need to get in it so don't fail at the first hurdle. You have to capture attention of **both** humans and machines in most cases. 
-- [x] Your signal will go further if it's stronger and comes from more directions (multipath) with a minimum pincer manoeuvre i.e. come at it from 2 directions or contact via a minimum of 2 means. 
-- [x] It's both what you know and who you know (or who you can get to know) so try to get in touch with the right people (see above). 
-- [x] Whether you are extrovert or introvert get involved in community groups  related to your target domain (online and offline) and deepen your network, connections, contacts, and knowledge.  
+- [x] There's a hiring funnel and you need to get in it, so don't fail at the first hurdle by following some steps below. You have to capture the attention of **both** humans **and** machines in many cases. 
+- [x] Your signal will go further if it's stronger and comes from more directions (multipath). At a minimum use a pincer manoeuvre and come at a hiring team from 2 directions (or contact via a minimum of 2 means). Just like in sales, the more priming and conceptual *touches* (3x-8x) you can muster before being engaged or interviewed, the better. The more reinforcment regarding your name being heard or read the better.
+- [x] Don't fool yourself, you are selling yourself, your time, your expertise. You are renting out your labour and/or mind in a **competitive** landscape. 
+- [x] It's both **what** you know **and who** you know (or who you can get to know or get to know about you). Try to get in touch with the right people sooner rather than later (see above 3x-8x) even just to do reasarch about the role, company culture, and reality of the situation. 
+- [x] Whether you are extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 
+- [x] Give away knowledge and energy to your professional community without any expectation of receiving anything back and you'll be a better person for it.
+- [x] Don't ever try to game or exploit community - yet the more you give, the more you learn and the more well known you may become. This should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to talk about in interviews if you get that far. Call it a form of enlightened self-interest.
   
 ## 2. The Underlay Problem
 
-- [x] Your CV is a piece of marketing literature and self-written (thus on shaky ground to begin with)
-- [x] Most defaults are now to distrust CVs as people realize they are broken tokens
-- [x] How can you actually prove your experience in advance of or during an interview?
+- [x] Your CV is a piece of marketing literature and is self-written (thus you are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience intimately).
+- [x] Many hiring teams default to distrust CVs as people realize they are broken tokens but the least worst thing we have. This is an open secret. #1 Rule. Don't talk about CV club.
+- [x] How can you actually prove your experience in advance of, or during an interview? This is your nut to crack, or theirs to test you. Everything else is a vague and opaque approximation of [Kabuki](https://en.wikipedia.org/wiki/Kabuki) theatre. 
 - [x] You are trying to overcome your own bias and that of others, this is a hard problem
 - [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) 
 - [x] The language you use is important and meaningful (see Marketing)
 - [x] Typos, misspellings, and bad grammar reflect badly (x2) for engineering roles, as it reflects your attention to detail, ability to double check, and level of professional writing and communication in the target language  
   
-## 3. The Portfolio Problem
+## 3. The Portfolio Problem (Proof of Experience)
 
-- [x] Show don't tell, can you actually show something or let them see and interact with something you've built? No? Build something.
+- [x] Show don't tell. Can you actually show something or let them see and interact with something you've built? No? Build something. This is one reason why [FLOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) is good.
 - [x] Have you got any video of yourself communicating or presenting? Video is also open to a hiring person's bias but it's better than nothing showing how you present and communinicate. This favours extroverts but perhaps you could give a lightening talk at a local Meetup to start and ask a friend to take a little footage of it.
 - [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outsied of work that you can show people (see above).  
   
 ## 4. The Search Problem
 
 - [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited Boolean Search including tools like [https://recruitin.net/](https://recruitin.net/) and [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin).
-- [x] Even the new age of machine learning and so called hiring A.I. is built on tainted datasets which are optimizing by what ever "words" they electively wrote on their CV and many don't take in to account which CVs were successful for which roles.
+- [x] Even the new age of machine learning and so called A.I. is built on tainted datasets. They use candidate written CV text (looking for keywords) and many don't take in to account which CVs were successful for which roles (to teach the algorithms further).
+- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [https://textio.com/](https://textio.com/) can help break this cycle by revealing unconscious gender bias early in both Job Descriptions/Advertisements and in your CV.
 - [x] Also the Job Description or Position Description that becomes the Job Advertisement is often inaccurate and itself just marketing literature (see above).
 - [x] So an A.I. is being trained and matching on, or fitting to an incorrect incomplete Job Description tied to a self-written marketing flyer written by a self-interested party in a competitive landscape.  
   
 ## 5. Ingestion Process
 
-- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack it, ethically.
-- [x] Is it going direct via email to a recruiter, sourcer, or the hiring manager... or is it going via an upload on a web based form?  
+- [x] Is it going direct via email to a recruiter, sourcer, or the hiring manager... or is it going via an upload on a web based form? 
+- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack it, ethically. 
   
 ## 6. CV and Résumé Format
 
 - [x] Short, sharp, and sweet - as a human recruiter will parse your CV "flyer" in less than 20 seconds on first glance and a machine will do it in microseconds to seconds
-- [x] This is a sales pitch in a competitive landscape, treat it as such.  
+- [x] This is a sales pitch in a competitive landscape, treat it as such.
+- [x] Search for and pay attention to [CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/)
   
 ## 7. ATS (Applicant Tracking Systems) Keywords
 

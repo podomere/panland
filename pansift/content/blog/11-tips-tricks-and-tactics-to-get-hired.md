@@ -34,7 +34,7 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 - [x] Don't ever fool yourself, you are **selling** a part of yourself; your time, your expertise, your energy, and your life. You are renting out your labour and/or mind amidst a **competitive** landscape. Your CV is your personal advertisement and it must leverage more than just psychology to be seen let alone heard.
 - [x] Whether you are an extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 
 - [x] Give away knowledge and energy to those communities without any expectation of receiving anything back. You'll be a better person for it. If there's no existing community to be found, build it yourself.
-- [x] Don't ever try to game or exploit community - yet the more you give, the more you learn, and the more well-known you will probably become. This renown should be an altruistic byproduct and not an engineered goal. At a minimum, you might have more interesting things to put in your CV or talk about in interviews (if you get that far). Let's call it a form of enlightened self-interest.
+- [x] Don't ever try to game or exploit communities. Yet the more you give, the more you learn and the more well-known you will *likely* become. This renown should be an altruistic byproduct not an engineered goal. At a minimum, you might have more interesting things to put on your CV or talk about in interviews. Let's call this a form of enlightened self-interest.
   
   
 ## 2. The Underlay Problem

@@ -81,17 +81,17 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
   
 ## 7. ATS (Applicant Tracking System) and Keywords
 
-- [x] If an agency or organisation already have your CV you want it to **resurface** as often as possible when keywords are searched in relation to open roles
+- [x] If an agency or organisation already has your CV, you want it to **resurface** as often as possible when **keywords** are searched for in relation to open roles
 - [x] What is your skills surface? Maximize it, ethically. You can [invisibly keyword stuff](https://pansift.com/blog/how-to-seo-hack-your-cv/) as long as keywords are valid. Software agents and algorithms doing parsing will read the text irrespective and index it.
   
   
 ## 8. Recruiters and Sourcers are Human
 
-- [x] Is the recruiter representing an agency or is *in-house*? Why does it matter, well, what are they incentivized by and how? What are their KPIs(Key Performance Indicators) and what are their goals? Understand this to understand how they 'play' the game.
-- [x] Is their strategy quality or quantity? Are they a cog in a giant machine or actually interested in building up their company's brand with long term relationships? 
-- [x] Are they reformatting and repackaging your CV (or even editing) and then sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon and what are you missing? Ask for feedback. Call them. Don't just default to email.
-- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you **2-3** times over a **6-8** year period. You might be worth 20-40K+ to them or even more especially if they can tap **your** professional network too (see [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
-- [x] Recuiters who act as your "*agent*" are few and far between so don't deceive yourself that they are advocating and selling entirely on your behalf (as you might have imagined).
+- [x] Is the recruiter representing an agency or is *in-house*? Why does it matter, well, what are they incentivized by and how? What are their KPIs(Key Performance Indicators) and what are their goals? Understand this to understand how they *play* the game.
+- [x] Is their strategy **quality** or **quantity**? Are they a cog in a giant machine or actually interested in building up their company's brand with long term relationships? 
+- [x] Are they reformatting and repackaging your CV (or even editing it) and then sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out already and why? What can you improve upon and what are you missing? Ask for feedback. Call them. Don't just default to email.
+- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters *could* place you **2-3** times over a **6-8** year period. You might be worth 20-40K+ to them or even more especially if they can tap **your** professional network too (see [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
+- [x] Recuiters who act as your *agent* are few and far between so don't deceive yourself that they are advocating and selling entirely on your behalf (as you may have imagined).
 - [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
 - [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with them, **establish it**. Never rely on digital alone. Reinforce your existence, *frequently*, it's all about **mindshare**.
 - [x] Follow up *frequently*. Follow up every **3-4** days unless you've both set a schedule already. Never stop following up until someone tells you to stop. **Use the phone**. Acknowledge with email.

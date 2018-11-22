@@ -112,7 +112,7 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
 ## 10. Referrals, References, and Referees
 
 - [x] The best way to get your CV seen and increase the time spent on it by hiring teams when reviewing it is via referrals. You have to invest time to gain social capital that you can then spend on **1-on-1** requests. See the point about community (both on and offline [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
-- [x] Non-zero sum games work well. If someone internally stands to gain by having you come on board (especially if they get a finders fee/referral bonus) they become your internal champion.
+- [x] Non-zero sum games work best. If someone internal stands to gain by having you join the organisation (especially if they get a finders fee/referral bonus) they will become your internal champion and contribute to your mindshare.
 - [x] The downside can be hiring in clusters or tribes that creates homogeneity. Try and discern this early in your investigations. Diversity is strength.
 - [x] References and referees only matter in the later stages or during character checks.
 - [x] Always write "References on request". Everyone know's you've picked character affirming people yet sometimes these relationship can change or their details or situations change.

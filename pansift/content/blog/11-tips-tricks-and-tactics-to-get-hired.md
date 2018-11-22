@@ -96,7 +96,7 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
 - [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with them, **establish it**. Never rely on digital alone. Reinforce your existence, *frequently*, it's all about **mindshare**.
 - [x] Follow up *frequently*. Follow up every **3-4** days unless you've both set a schedule already. Never stop following up until someone tells you to stop. **Use the phone**. Acknowledge with email.
 - [x] Again, **use the phone**. This is your **primary** tool not your secondary. If you default to email you are both creating distance **intentionally**.
-- [x] Meet your recruiter face-to-face IRL or at least via a video call. Reinforce you exist as a living breathing person and are not just an avatar at the end of an email.
+- [x] Meet your recruiter face-to-face IRL (or at least via a video call). Reinforce you exist as a living breathing person and are not *just* an avatar at the end of an email.
   
   
 ## 9. Prime the Hiring Manager and Team

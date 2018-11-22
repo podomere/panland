@@ -24,7 +24,7 @@ image: /images/blog/tips.jpeg
 published: true
 title: '11 Tips, Tricks, and Tactics to Get Hired'
 ---
-The Internet (*and* more so the Web) is full of noise and increasingly, so are many people's minds. Remember this when you are trying to get a signal through to someone during their day! 
+The Internet (*and* more so the Web) is full of noise. People's minds are constantly bombarded and they struggle to decode clear and actionable signals. Remember this when you are trying to get **your signal** through...
 
 ## 1. The Noise Problem
 

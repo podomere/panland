@@ -76,34 +76,34 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 - [x] Your CV is a sales pitch in a competitive landscape, treat it as such.
 - [x] Search for and pay attention to advice from people like [Evilrecruiter's: CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/) and related privacy [post](https://www.evilrecruiter.com/maintaining-a-semblence-of-privacy-while-looking-for-a-job/)
 - [x] Typos, misspellings, and bad grammar are unacceptable when services like automatic spell checkers and tools like [HemingwayApp](https://hemingwayapp.com/) and [Grammarly](https://www.grammarly.com/) exist. It's also a total **faux-pas** for engineering roles to have even one character out of place. Errors reflect your level of attention to detail, your ability to double check and enlist help, and of course it shows your professional writing and communication ability in the target language. **Your CV is a piece of marketing literature. A digital billboard for your services and experience**. Your CV is, for all intents and purposes, **you** (until you meet or connect with someone from the hiring team, hopefully IRL(In Real Life)).
-- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader who is screening you (or your CV has been translated to numbers and is now a candidate for the best fitting curve or spline in an algorithm).
+- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader who is screening you (or your CV has been translated to numbers and is now an algorithmic candidate for the best fitting curve or spline).
   
   
 ## 7. ATS (Applicant Tracking System) and Keywords
 
-- [x] If an agency or organisation already have your CV, you want it to **resurface** (as often as possible) when keywords are searched for open roles
+- [x] If an agency or organisation already have your CV you want it to **resurface** as often as possible when keywords are searched in relation to open roles
 - [x] What is your skills surface? Maximize it, ethically. You can [invisibly keyword stuff](https://pansift.com/blog/how-to-seo-hack-your-cv/) as long as keywords are valid. Software agents and algorithms doing parsing will read the text irrespective and index it.
   
   
 ## 8. Recruiters and Sourcers are Human
 
-- [x] Is the recruiter via an agency or in-house? Why does it matter, well, what are they incentivized by and how? Understand this to understand how they 'play' the game. What are their KPIs(Key Performance Indicators) and what are their goals?
-- [x] Is their strategy quality or quantity? Are they a cog in a giant machine or interested in building their companies sustainable brand with long term relationships? 
-- [x] Are they reformatting or editing your CV and then sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon? Ask for feedback. Call them. Don't just default to email.
-- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you **2-3** times over a **6-8** year period. You might be worth 20-40K+ to them or even more if they can tap **your** professional network too (see [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
-- [x] Recuiters who act as your "agent" are few and far between so don't deceive yourself that they are in there advocating or selling entirely on your behalf (as you might imagine).
+- [x] Is the recruiter representing an agency or is *in-house*? Why does it matter, well, what are they incentivized by and how? What are their KPIs(Key Performance Indicators) and what are their goals? Understand this to understand how they 'play' the game.
+- [x] Is their strategy quality or quantity? Are they a cog in a giant machine or actually interested in building up their company's brand with long term relationships? 
+- [x] Are they reformatting and repackaging your CV (or even editing) and then sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out and why? What can you improve upon and what are you missing? Ask for feedback. Call them. Don't just default to email.
+- [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters could place you **2-3** times over a **6-8** year period. You might be worth 20-40K+ to them or even more especially if they can tap **your** professional network too (see [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
+- [x] Recuiters who act as your "*agent*" are few and far between so don't deceive yourself that they are advocating and selling entirely on your behalf (as you might have imagined).
 - [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
-- [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with them, establish it. Never rely on digital alone. Reinforce your existence, frequently, it's all about mindshare.
-- [x] Follow up frequently. Follow up every **3-4** days unless you've both set a schedule already. Never stop following up until someone tells you to stop. Use the phone. Acknowledge with email.
-- [x] Again, use the phone. This is your primary tool not your secondary. If you default to email you are both creating distance **intentionally**.
+- [x] Call your recruiter or coordinator frequently to check-in. If you don't have a voice relationship with them, **establish it**. Never rely on digital alone. Reinforce your existence, *frequently*, it's all about **mindshare**.
+- [x] Follow up *frequently*. Follow up every **3-4** days unless you've both set a schedule already. Never stop following up until someone tells you to stop. **Use the phone**. Acknowledge with email.
+- [x] Again, **use the phone**. This is your primary tool not your secondary. If you default to email you are both creating distance **intentionally**.
 - [x] Meet your recruiter face to face IRL or at least via a video call. Reinforce you exist as a living breathing person and are not just an avatar at the end of an email.
   
   
 ## 9. Prime the Hiring Manager and Team
 
-- [x] You really want the hiring manager to know your name in advance and to be asking for your details themselves or at least be expecting them as one of the candidates. See [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)
-- [x] The hiring manager and hiring team should hear your name from multiple sources. It's helpful if internal employees (and/or wider industry circles) have heard of you, so shake the tree a little, nicely and get out there and mix it up a bit! See [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)
-- [x] Figure out as much as you can about the hiring team and their backgrounds so you can show a level of interest and potential spot connections you were not aware of. Professional digital stalking of this nature is ok and to be expected.
+- [x] You really want the hiring manager to know your name well in advance. You want them to be asking for your details themselves or at least be expecting them as one of the candidates. See [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)
+- [x] The hiring manager and hiring team should hear your name from multiple sources. It's helpful if internal employees (and/or wider industry circles) have heard of you, so shake the tree a little (*nicely*) and get out there and mix it up a bit! See [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)
+- [x] Figure out as much as you can about the hiring team and their backgrounds so you can show a level of interest and potentially spot connections you were not aware of. **Digitally stalking professionals** like this is ok and to be expected.
 - [x] It's both **what** you know **and who** you know (or who you can **get to know** or **get to know about you**). Try to get in touch with the **right people in the hiring team** sooner rather than later, even to just reasarch the role, company culture, and reality of the situation. 
 - [x] Get in touch with as many people you know in the organisation (or could get in touch with) even if not part of the hiring team to find out what it's like to actually work there. This also has the benefit of showing you did your research. This is a bonus in interviews as it shows you are a self-starter and can add value by independently figuring out an environment.
 - [x] When dealing with people you are also planting seeds for either this engagement or the next. Remember that people move organisations and jobs. A person is not a person, they are also gateways to clusters, tribes, and networks. Your messaging and name can benefit from network effects so 'always be seeding'. 
@@ -111,8 +111,8 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
   
 ## 10. Referrals, References, and Referees
 
-- [x] The best way to get your CV seen and increase the time spent by the hiring team reviewing it is via referrals. You have to invest time to gain social capital that you can then spend one on one. See the point about community (on and offline [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
-- [x] Non-zero sum games work well (especially if there's a finders fee/bonus), if someone internally stands to gain by having you possibly come on board.
+- [x] The best way to get your CV seen and increase the time spent on it by hiring teams when reviewing it is via referrals. You have to invest time to gain social capital that you can then spend on 1-on-1 time. See the point about community (both on and offline [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
+- [x] Non-zero sum games work well. If someone internally stands to gain by having you come on board (especially if they get a finders fee/referral bonus) they become your internal champion.
 - [x] The downside can be hiring in clusters or tribes that creates homogeneity. Try and discern this early in your investigations. Diversity is strength.
 - [x] References and referees only matter in the later stages or during character checks.
 - [x] Always write "References on request". Everyone know's you've picked character affirming people yet sometimes these relationship can change or their details or situations change.
@@ -127,3 +127,5 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
 - [x] During the process of asking questions and connecting with a range of people new opportunities frquently present themselves! You just need to let people know you are looking, that you are open to new things, and ensure you give more than you take!
   
 > If you really want this job, you need to work for it. Long gone are the days of point, shoot, and wait. Get off your ass and through *your own actions* (not others) collapse down the multiverse to the one with the greatest probability of you getting as far down the funnel as you can, ethically! **Own your outcomes. Carve your future**.
+
+Note: If you do secure an offer, then learn about negotiating [here](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/) and [here](http://infohost.nmt.edu/~shipman/org/noel.html)

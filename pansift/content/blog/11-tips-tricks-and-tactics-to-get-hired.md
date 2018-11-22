@@ -120,10 +120,10 @@ The Internet (*and* more so the Web) is full of noise and increasingly, so are m
   
 ## 11. Important Research
 
-- [x] Find relevant people in the target organisation who you can talk to about the role (even if 2-3 degrees away from you on say LinkedIn) and get in touch with them via your contacts (or go hunting as per [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem) ).
-- [x] You can get or validate their professional emails via 'lead gen' and email enrichment tools if need be.
-- [x] Do your homework and quickly skill up with **new** basics (even if listed as only desirable skills). This shows you are willing and able to learn, improve, and explore new areas autonomously. Show an interest in keeping up-to-date with your skills ecosystem and demonstrate self-directed learning with platforms like [Pluralsight](https://pluralsight.pansift.com)
-- [x] Arm yourself with as much independent data as you can. Maybe you learn sooner rather than later you don't actually want this specific role or to be a part of an organisation of this type (unless you really have to!).
-- [x] During the process of asking questions and connecting with a range of people around you new opportunities frquently present themselves! You just need to let people know you are looking, that you are open to new things, and give more than you take!
+- [x] Find relevant people in the target organisation who you can talk to about the role (even if they are 2-3 degrees away from you on LinkedIn). Get in touch with them via your own contacts (or go hunting as per [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem) ).
+- [x] You can find out or validate people's professional emails via lead generation and email enrichment tools (if need be).
+- [x] Do your homework and quickly expose yourself to **new and additional** skills (even if they are listed only as desirable skills). This shows you are willing and able to learn and explore new areas autonomously. Show an interest in keeping up-to-date within your domain (or adjacent ones) and demonstrate self-directed learning with platforms like [Pluralsight](https://pluralsight.pansift.com)
+- [x] Arm yourself with as much independent data as you can. Maybe you learn sooner rather than later that you don't actually want this specific role or to be part of this organisation (unless you really have to!).
+- [x] During the process of asking questions and connecting with a range of people new opportunities frquently present themselves! You just need to let people know you are looking, that you are open to new things, and ensure you give more than you take!
   
 > If you really want this job, you need to work for it. Long gone are the days of point, shoot, and wait. Get off your ass and through *your own actions* (not others) collapse down the multiverse to the one with the greatest probability of you getting as far down the funnel as you can, ethically! **Own your outcomes. Carve your future**.

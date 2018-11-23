@@ -50,7 +50,7 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
 
 - [x] Show don't tell. Can you actually show something or let them see and interact with something you've built? No? Build something. This is one reason why [FLOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) is good.
 - [x] Have you got any video of yourself communicating or presenting? Video is also vulnerable to a hiring person's bias but it's better than having nothing. The benefits outweigh the drawbacks in terms of showing how you present and communicate. This favours extroverts but perhaps you could give a lightening talk at a local meetup group (and ask a friend to record it).
-- [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outside of your work that you can share and show people (don't forget [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
+- [x] Is all your work '**Commercial in Confidence**'? Well then, you better try to make or write up something outside of your work that you can share and show people (don't forget [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
   
     
 ## 4. The Ingestion Process

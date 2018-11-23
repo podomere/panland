@@ -28,4 +28,4 @@ A simple way to optimise your CV for the domain you work in is to _pad_ your CV 
 As long as your keyword list **actually applies** to **your experience** in whatever domain you operate in, there is no problem. The longer the list, the better the search surface whilst not being aesthetically off-putting for humans. Think of it as moving an unsightly list to a smaller corner of your CV (which is _machine readable_) so you can focus on telling the more human story about the impact you've made in each of your roles :)
 
 ## Easy Countermeasures
-Irrespective of whether you use keyword stuffing or not, if a hiring team uses a technical screen such as [Simulation Based Screening](https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs) then you better be `100%` honest and up-to-date on all the skills you list!!
+Irrespective of whether you use keyword stuffing or not, if a hiring team uses a technical screen such as [Simulation Based Screening](https://pansift.com/howitworks) then you better be `100%` honest and up-to-date on all the skills you list!!

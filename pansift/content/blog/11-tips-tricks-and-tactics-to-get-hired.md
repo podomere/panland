@@ -31,16 +31,16 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
 - [x] Hiring teams are busy identifying signals from both inside and outside of their own organizations.
 - [x] There's a hiring funnel and you need to get in to it. Don't fail at the first hurdle. You have to capture the attention of **not just** humans **but** also machines too. 
 - [x] Your signal will go further if it's **stronger** and comes from multiple directions (multipath). At a minimum use the [pincer manoeuvre](https://en.wikipedia.org/wiki/Pincer_movement) and come at a hiring team from **2** directions (or via a minimum of **2** mediums). Just like in sales, the more priming and conceptual *touches* (**3x-8x**) that you can muster without annoying people, the more mind share you get for subsequent engagement or interviews. Reinforcement of your name being heard or read frequently (in a good context of course) is desirable.
-- [x] Don't ever fool yourself, you are **selling** a part of yourself; your time, your expertise, your energy, and your life. You are renting out your labour and/or mind amidst a **competitive** landscape. Your CV is your personal advertisement and it must leverage more than just psychology to be seen let alone heard.
+- [x] Don't ever fool yourself, you are **selling** a part of yourself; your time, your expertise, your energy, and your life. You are renting out your labour and/or mind amidst a **competitive** landscape. Your CV or résumé is your personal advertisement and it must leverage more than just psychology to be seen let alone heard.
 - [x] Whether you are an extrovert or introvert, get involved in community groups related to your target domain (either online and/or offline) and deepen your network, connections, contacts, and knowledge. 
 - [x] Give away knowledge and energy to those communities without any expectation of receiving anything back. You'll be a better person for it. If there's no existing community to be found, build it yourself.
-- [x] Don't ever try to game or exploit communities. Yet the more you give, the more you learn and the more well-known you will *likely* become. This renown should be an altruistic byproduct not an engineered goal. At a minimum, you might have more interesting things to put on your CV or talk about in interviews. Let's call this a form of enlightened self-interest.
+- [x] Don't ever try to game or exploit communities. Yet the more you give, the more you learn and the more well-known you will *likely* become. This renown should be an altruistic byproduct not an engineered goal. At a minimum, you might have more interesting things to put on your CV(résumé) or to talk about in interviews. Let's call this a form of enlightened self-interest.
   
   
 ## 2. The Underlay Problem
 
-- [x] Your CV is a piece of marketing literature. It is self-written. You are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience and their preferred medium intimately. So, become a temporary marketing expert, sales champion, and intimately know both your audience and medium.
-- [x] Many hiring teams default to **distrust CVs** as people realize they are **[broken tokens](https://pansift.com/blog/why-cvs-and-resumes-are-broken/)** yet are still our least worst common currency. This is an open secret.
+- [x] Your CV(résumé) is a piece of marketing literature. It is self-written. You are on shaky ground to begin with unless you are a marketing guru and sales champion who knows their audience and their preferred medium intimately. So, become a temporary marketing expert, sales champion, and intimately know both your audience and medium.
+- [x] Many hiring teams default to **distrust CVs(résumés)** as people realize they are **[broken tokens](https://pansift.com/blog/why-cvs-and-resumes-are-broken/)** yet are still our least worst common currency. This is an open secret.
 - [x] How can you actually prove your experience in advance of, or during an interview? This is your nut to crack or theirs to test you with. Apart from your attitude everything else is a vague and opaque approximation of condensed [Kabuki](https://en.wikipedia.org/wiki/Kabuki) theatre. 
 - [x] The gendered [Confidence Gap](https://www.theatlantic.com/magazine/archive/2014/05/the-confidence-gap/359815/) is ongoing and pronounced. Confidence does not equal competence.
 - [x] You are trying to overcome your own bias and that of others, this is a hard problem, don't give up. Language is important. Use it well and pay attention to theirs.
@@ -50,38 +50,38 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
 
 - [x] Show don't tell. Can you actually show something or let them see and interact with something you've built? No? Build something. This is one reason why [FLOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) is good.
 - [x] Have you got any video of yourself communicating or presenting? Video is also vulnerable to a hiring person's bias but it's better than having nothing. The benefits outweigh the drawbacks in terms of showing how you present and communicate. This favours extroverts but perhaps you could give a lightening talk at a local meetup group (and ask a friend to record it).
-- [x] Is all your work 'Commercial in Confidence'? Well then, you better try to make or write up something outside of your work that you can share and show people (don't forget [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
+- [x] Is all your work '**Commercial in Confidence**'? Well then, you better try to make or write up something outside of your work that you can share and show people (don't forget [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
   
     
 ## 4. The Ingestion Process
 
-- [x] Is your CV going direct via email to a recruiter, sourcer, or the hiring manager? Or is it going via an upload on a web based form and being scraped for text and details?
-- [x] Ask yourself how your CV makes it to the eyes of the hiring manager? Map it. Now hack the process, ethically. 
+- [x] Is your CV(résumé) going direct via email to a recruiter, sourcer, or the hiring manager? Or is it going via an upload on a web based form and being scraped for text and details?
+- [x] Ask yourself how your CV(résumé) makes it to the eyes of the hiring manager? Map it. Now hack the process, ethically. 
   
   
 ## 5. The Search Problem
 
-- [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV, as most just use simple and limited **Boolean Search** including [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin) and so called 'X-Ray search' from [Recruitin](https://recruitin.net/).
-- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [Textio](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in **Job Descriptions/Advertisements** (and even in your **CV**).
+- [x] Hiring platforms and webapps are not smart enough, yet. You can effectively [SEO(Search Engine Optimize)](https://pansift.com/blog/how-to-seo-hack-your-cv/) your CV(résumé) as most just use simple and limited [**Boolean Search**](https://pansift.com/blog/how-to-seo-hack-your-cv/). Examples include [LinkedIn Search](https://www.linkedin.com/help/linkedin/answer/75814/using-boolean-search-on-linkedin) and so called 'X-Ray search' from [Recruitin](https://recruitin.net/).
+- [x] Algorithms also typically get trained on datasets that contain mostly male language patterns thus reinforcing male characteristics and attributes. Tools like [Textio](https://textio.com/) can help break this cycle by revealing unconscious [gender bias](https://textio.ai/watch-your-gender-tone-2728016066ec) early in **Job Descriptions/Advertisements** (and even in your **CV(résumé)**).
 - [x] Also the **Job Description** or **Position Description** that becomes the **Job Advertisement** is often inaccurate and itself just marketing literature (see above).
-- [x] Even the new age of machine learning and so called **A.I.** is built on tainted datasets leading to badly trained algorithms. They use candidate written CV text (and look for simple keywords and keyphrases or use **Natural Language Processing** to extract dates, names, organisations, and skills) and many don't take in to account which CVs were actually successful and for what roles (e.g. to strengthen the algorithms further about succesful applicant characteristics).
+- [x] Even the new age of machine learning and so called **A.I.** is built on tainted datasets leading to badly trained algorithms. They use candidate written CV(résumé) text (and look for simple keywords and keyphrases or use **Natural Language Processing** to extract dates, names, organisations, and skills) and many don't take in to account which CVs(résumés) were actually successful and for what roles (e.g. to strengthen the algorithms further about succesful applicant characteristics).
 - [x] So there are A.I.s being trained on and matching **incorrect and incomplete Job Descriptions** with **candidate's self-written marketing flyers** that were tweaked for competitive landscapes.... hmmmm...  
 
 <img src="/images/blog/cat.jpeg" class="w-100 mb-3">
   
   
-## 6. CV and Résumé Format
+## 6. CV / Résumé Format
 
-- [x] You CV should be short, sharp, and sweet - as a human recruiter may parse your CV '*flyer*' in less than **20 seconds** with their first glance and a machine will do it in microseconds... are you in or out of the funnel? What keywords were they looking for?
-- [x] Your CV is a micro sales pitch in a competitive landscape, treat it as such. It's not just a list, you need to optimize for both form and function. 
+- [x] You CV(résumé) should be short, sharp, and sweet - as a human recruiter may parse your CV '*flyer*' in less than **20 seconds** with their first glance and a machine will do it in microseconds... are you in or out of the funnel? What keywords were they looking for?
+- [x] Your CV(résumé) is a micro sales pitch in a competitive landscape, treat it as such. It's not just a list, you need to optimize for both form and function. 
 - [x] Search for and pay attention to advice from people like [Evilrecruiter's: CV Do's and Don'ts](https://www.evilrecruiter.com/cv_advice/) and related privacy [post](https://www.evilrecruiter.com/maintaining-a-semblence-of-privacy-while-looking-for-a-job/)
-- [x] Typos, misspellings, and bad grammar are unacceptable when services like automatic spell checkers and tools like [HemingwayApp](https://hemingwayapp.com/) and [Grammarly](https://www.grammarly.com/) exist. It's also a total **faux-pas** for engineering roles to have even one character out of place. Errors reflect your level of attention to detail, your ability to double check and enlist help, and of course it shows your professional writing and communication ability in the target language. **Your CV is a piece of marketing literature. A digital billboard for your services and experience**. Your CV is, for all intents and purposes, **you** (until you meet or connect with someone from the hiring team, hopefully IRL(In Real Life)).
-- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader who is screening you. Your CV is also being translated to numbers and is now an algorithmic candidate for a best [fitting curve or spline](https://youtu.be/ajGX7odA87k).
+- [x] Typos, misspellings, and bad grammar are unacceptable when services like automatic spell checkers and tools like [HemingwayApp](https://hemingwayapp.com/) and [Grammarly](https://www.grammarly.com/) exist. It's also a total **faux-pas** for engineering roles to have even one character out of place. Errors reflect your level of attention to detail, your ability to double check and enlist help, and of course it shows your professional writing and communication ability in the target language. **Your CV(résumé) is a piece of marketing literature. A digital billboard for your services and experience**. Your CV(résumé) is, for all intents and purposes, **you** (until you meet or connect with someone from the hiring team, hopefully IRL(In Real Life)).
+- [x] The language you use is important and meaningful. You are conjuring up imagery in the mind of the reader who is screening you. Your CV(résumé) is also being translated to numbers and is now an algorithmic candidate for a best [fitting curve or spline](https://youtu.be/ajGX7odA87k).
   
   
 ## 7. ATS (Applicant Tracking System) and Keywords
 
-- [x] If an agency or organisation already has your CV, you want it to **resurface** as often as possible when **keywords** are searched for in relation to open roles
+- [x] If an agency or organisation already has your CV(résumé), you want it to **resurface** as often as possible when **keywords** are searched for in relation to open roles
 - [x] What is your skills surface? Maximize it, ethically. You can [invisibly keyword stuff](https://pansift.com/blog/how-to-seo-hack-your-cv/) as long as keywords are valid. Software agents and algorithms doing parsing will read the text irrespective and index it.
   
   
@@ -89,7 +89,7 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
 
 - [x] Is the recruiter representing an agency or is *in-house*? Why does it matter, well, what are they incentivized by and how? What are their KPIs(Key Performance Indicators) and what are their goals? Understand this to understand how they *play* the game.
 - [x] Is their strategy **quality** or **quantity**? Are they a cog in a giant machine or actually interested in building up their company's brand with long term relationships? 
-- [x] Are they reformatting and repackaging your CV (or even editing it) and then sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out already and why? What can you improve upon and what are you missing? Ask for feedback. Call them. Don't just default to email.
+- [x] Are they reformatting and repackaging your CV(résumé) or even editing it and **then** sending it on? Are they actually sending through your cover letter? Has the recruiter "screened" you out already and why? What can you improve upon and what are you missing? Ask for feedback. Call them. Don't just default to email.
 - [x] Short term focused recruiters may just be playing the numbers game (or are new at this) but long term focused recruiters *could* place you **2-3** times over a **6-8** year period. You might be worth 20-40K+ to them or even more especially if they can tap **your** professional network too (see [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
 - [x] Recuiters who act as your *agent* are few and far between so don't deceive yourself that they are advocating and selling entirely on your behalf (as you may have imagined).
 - [x] Own your own outcomes. Manage your recruiter and set and agree bi-directional expectations and communication timelines.
@@ -111,7 +111,7 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
   
 ## 10. Referrals, References, and Referees
 
-- [x] The best way to get your CV seen and increase the time spent on it by hiring teams when reviewing it is via referrals. You have to invest time to gain social capital that you can then spend on **1-on-1** requests. See the point about community (both on and offline [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
+- [x] The best way to get your CV(résumé) seen and increase the time spent on it by hiring teams when reviewing it is via referrals. You have to invest time to gain social capital that you can then spend on **1-on-1** requests. See the point about community (both on and offline [#1](/blog/11-tips-tricks-and-tactics-to-get-hired/#1-the-noise-problem)).
 - [x] Non-zero sum games work best. If someone internal stands to gain by having you join the organisation (especially if they get a finders fee/referral bonus) they will become your internal champion and contribute to your mindshare.
 - [x] The downside of too many referrals can be that of hiring in clusters or tribes that result in homogeneity. Try and discern this early in your investigations. Diversity is strength.
 - [x] References and referees only matter in the later stages or as part of final character checks.

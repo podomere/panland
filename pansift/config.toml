@@ -148,9 +148,13 @@ enableGitInfo = true
 
     # Footer Quick links Menu
     [[menu.quicklink]]
+        name    = "Blog Tags"
+        url     = "/tags"
+        weight  = 1
+    [[menu.quicklink]]
         name    = "Contact Us"
         url     = "/contact"
-        weight  = 1
+        weight  = 2
     [[menu.quicklink]]
         name    = "Cookie Policy"
         url     = "/cookies"

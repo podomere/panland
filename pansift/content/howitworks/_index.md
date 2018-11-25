@@ -6,7 +6,7 @@ description : Trust but verify with Simulation Based Screening.
 aliases:
   - /home
   - /how-it-works
-  - /faw
+  - /faq
   - /buthowdoesitwork
   - /firstaquestion
   - /self-screen

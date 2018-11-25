@@ -1,4 +1,4 @@
-baseURL = "https://pansift.com"
+baseURL = "https://pansift.com/"
 languageCode = "en-us"
 title = "PanSift. Technical recruitment and pre hire assessment testing."
 theme = "navigator-hugo"

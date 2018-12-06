@@ -26,7 +26,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         heading = "This has been overridden"
-        description = "Save time, hit your targets, and reduce risk for Cloud, Network, and Operations talent using objective data."
+        description = "Hit your targets, save time, and reduce risk for Cloud, Network, and Operations talent with objective pre-hire data."
         button  = true
         btnTxt = "Hiring Demo"
         btnURL  = "https://client.pansift.com/"

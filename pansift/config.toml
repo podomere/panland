@@ -43,7 +43,7 @@ enableGitInfo = true
     [params.netdevops]
         enable  = true
         title   = "NetDevOps, SRE, and NRE skills testing." 
-        subtitle = "Network Reliability Engineering de-risked using Proof of Experience labs."
+        subtitle = "Network Reliability Engineering and Site Reliability Engineering de-risked using 'Proof of Experience' labs."
 
     # Blog Section On Homepage
     [params.blog]

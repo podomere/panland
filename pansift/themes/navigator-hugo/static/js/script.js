@@ -245,7 +245,7 @@
       $('.video-js')[0].player.on('play', function() {
         dataLayer.push({'event': 'started_watching_explainer', 'category':'Visitor', 'action':'Video Played', 'label':'Video','value':'1'})
       });
-      var overlay_content = '<div class="col-12 justify-content-center align-items-center"><a href="/why"><div style="font-weight: bold; color: white !important;" class="btn btn-success mb-1 ml-1">Manager</div></a><a href="/pricing"><div style="font-weight: bold; color: white !important;" class="btn btn-primary ml-1 mb-1">Recruiter</div></a><a href="#pracsims"><div style="font-weight: bold; color: white !important;" class="btn btn-info ml-1 mb-1">Engineer</div></a><p style="font-weight: bold; color: white !important;" class="mt-2">What is your current role?</p></div>';
+      var overlay_content = '<div class="col-12 justify-content-center align-items-center"><a href="/why"><div style="font-weight: bold; color: white !important;" class="btn btn-success mb-1 ml-1">Manager</div></a><a href="/pricing"><div style="font-weight: bold; color: white !important;" class="btn btn-primary ml-1 mb-1">Recruiter</div></a><a href="#pracsims"><div style="font-weight: bold; color: white !important;" class="btn btn-info ml-1 mb-1">Engineer</div></a><p style="font-weight: bold; color: white !important;" class="mt-2">What is your hiring role?</p></div>';
       $('.video-js')[0].player.overlay({
         overlays: [{
                     start: 'pause',

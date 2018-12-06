@@ -2021,7 +2021,7 @@ a:focus, a:hover {
 }
 
 .tag {
-  background: #eee;
+  background: #ddd;
   border-radius: 3px 0 0 3px;
   color: #999;
   display: inline-block;
@@ -2049,7 +2049,7 @@ a:focus, a:hover {
 .tag::after {
   background: #fff;
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
+  border-left: 10px solid #ddd;
   border-top: 13px solid transparent;
   content: '';
   position: absolute;

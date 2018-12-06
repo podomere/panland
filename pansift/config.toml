@@ -89,12 +89,12 @@ enableGitInfo = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
         title   = "Engineering or hiring leader ?"
         subtitle= "Take a quick test flight with 10 free screens."
-        btnTxt = "Simulate Now"
+        btnTxt = "Hiring Demo"
 
     # Pricing
     [params.pricing]
         enable  = true
-        btnTxt = "Simulate Now"
+        btnTxt = "Hiring Demo"
 
 
     # Contact Section

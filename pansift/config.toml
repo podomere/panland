@@ -12,7 +12,7 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  description = "Automated screening for a new breed of cloud engineers using micro simulations and labs. Hit your hiring targets, save time, and reduce risk for Cloud, Network, and Operations talent."
+  description = "Automated screening for a new breed of cloud engineers using micro simulations and labs. Hit your hiring hiring targets, save time, and reduce risk for Cloud, Network, and Operations talent."
   og_image = "/images/pansift_social_client_v22.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"

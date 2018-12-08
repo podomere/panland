@@ -120,21 +120,21 @@ enableGitInfo = true
         url     = "/why"
         weight  = 2
     [[menu.nav]]
-        name    = "Blog"
-        url     = "/blog"
-        weight  = 4
+        name    = "Practice"
+        url     = "#pracsims"
+        weight  = 3
     [[menu.nav]]
         name    = "Training"
         url     = "/training"
-        weight  = 3
+        weight  = 4
     [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"
-        weight  = 3
+        weight  = 5
     [[menu.nav]]
         name    = "Login"
         url     = "https://client.pansift.com/clients/sign_in"
-        weight  = 5
+        weight  = 6
     
     # Footer Service Menu
     [[menu.service]]
@@ -145,6 +145,10 @@ enableGitInfo = true
         name    = "Training"
         url     = "/training"
         weight  = 2
+    [[menu.service]]
+        name    = "Blog"
+        url     = "/blog"
+        weight  = 3
 
     # Footer Quick links Menu
     [[menu.quicklink]]

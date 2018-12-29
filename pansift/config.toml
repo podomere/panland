@@ -36,8 +36,8 @@ enableGitInfo = true
     # CVs
     [params.aboutSm]
         enable  = true
-        title   = "CVs and résumés are biased and broken." 
-        subtitle = "Use actionable data to support decision making throughout the hiring funnel for evaluating skills."
+        title   = "CVs and résumés are broken." 
+        subtitle = "Use actionable data to support non-biased decision making throughout the hiring funnel for evaluating skills."
 
     # NetDevOps
     [params.netdevops]

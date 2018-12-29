@@ -121,7 +121,7 @@ enableGitInfo = true
         weight  = 2
     [[menu.nav]]
         name    = "Practice"
-        url     = "#pracsims"
+        url     = "/#pracsims"
         weight  = 3
     [[menu.nav]]
         name    = "Training"

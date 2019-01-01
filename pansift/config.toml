@@ -120,7 +120,7 @@ enableGitInfo = true
         url     = "/why"
         weight  = 2
     [[menu.nav]]
-        name    = "Free Practice"
+        name    = "Engineers"
         url     = "/#pracsims"
         weight  = 3
     [[menu.nav]]

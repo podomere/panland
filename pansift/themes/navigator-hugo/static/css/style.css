@@ -1734,7 +1734,8 @@ a:focus, a:hover {
 ==================================================================*/
 .top-footer {
   background-color: #222222;
-  border-top: 1px solid #404040;
+  /* border-top: 1px solid #404040; */
+  border-top: 1px solid #222222;
   padding: 100px 0 80px;
 }
 

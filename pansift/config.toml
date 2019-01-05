@@ -120,21 +120,25 @@ enableGitInfo = true
         url     = "/why"
         weight  = 2
     [[menu.nav]]
-        name    = "Engineers"
-        url     = "/#pracsims"
-        weight  = 3
-    [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Contact"
+        url     = "/contact"
         weight  = 4
+    [[menu.nav]]
+        name    = "Engineers"
+        url     = "/#pracsims"
+        weight  = 5
     [[menu.nav]]
         name    = "Blog"
         url     = "/blog"
-        weight  = 5
+        weight  = 6
     [[menu.nav]]
         name    = "Login"
         url     = "https://client.pansift.com/clients/sign_in"
-        weight  = 6
+        weight  = 7
     
     # Footer Service Menu
     [[menu.service]]

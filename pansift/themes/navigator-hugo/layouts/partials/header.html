@@ -143,6 +143,8 @@
   <!-- Algolia Search Live DB -->
   <script src="http://localhost:1313/plugins/algolia/dist/js/algoliasearch.min.js"></script>
   <script src="http://localhost:1313/plugins/algolia/dist/js/autocomplete.min.js"></script>
+  {{ "<!-- jQuery -->" | safeHTML }}
+   <script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
   {{ "<!-- Custom js -->" | safeHTML }}
   <script src="{{ "js/script.js" | absURL }}"></script>
 

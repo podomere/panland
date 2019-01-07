@@ -8,93 +8,91 @@
         <ul>
           <li>
           <a href="https://stackshare.io/pansift/pansift" target="_blank"><img src="/images/tech_stack.png" width="72" height="20">
-          </li>
-          <li>
-          <a href="https://defensible.ie" target="_blank">Defensible Limited <i class="fas fa-external-link-alt"></i></a>
-          </li>
-          <li>
-          <p>CRO: 610070, TAX / VAT: IE 3490731JH</p>
-          </li>
-          <li>
-          <a href="https://www.algolia.com" target="_blank"><img src="/images/search-by-algolia-dark-background_20.png" width="140" height="20"> 
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <h3>Services</h3>
-        <ul>
-          {{ range .Site.Menus.service }}
-          <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <h3>Quick Links</h3>
-        <ul>
-          {{ range .Site.Menus.quicklink }}
-          <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
-          <li>
-          <a href="https://sim.pansift.com/privacy/privacy.html" target="_blank">Privacy Policy <i class="fas fa-external-link-alt"></i></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <h3>Special Offer</h3>
-        <a class="btn btn-main-sm" style="font-weight: 900 !important;" href="https://client.pansift.com/clients/sign_up">Get 10 Free Screens</a>
+            </li>
+            <li>
+            <a href="https://defensible.ie" target="_blank">Defensible Limited <i class="fas fa-external-link-alt"></i></a>
+            </li>
+            <li>
+            <p>CRO: 610070, TAX / VAT: IE 3490731JH</p>
+            </li>
+            <li>
+            <a href="https://www.algolia.com" target="_blank"><img src="/images/search-by-algolia-dark-background_20.png" width="140" height="20"> 
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Services</h3>
+            <ul>
+              {{ range .Site.Menus.service }}
+              <li>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Quick Links</h3>
+            <ul>
+              {{ range .Site.Menus.quicklink }}
+              <li>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+              <li>
+              <a href="https://sim.pansift.com/privacy/privacy.html" target="_blank">Privacy Policy <i class="fas fa-external-link-alt"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Special Offer</h3>
+            <a class="btn btn-main-sm" style="font-weight: 900 !important;" href="https://client.pansift.com/clients/sign_up">Get 10 Free Screens</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</footer>
-{{ "<!-- end footer -->" | safeHTML }}
+    </footer>
+    {{ "<!-- end footer -->" | safeHTML }}
 
 
-{{ "<!-- Essential Scripts -->" | safeHTML }}
+    {{ "<!-- Essential Scripts -->" | safeHTML }}
 
-{{ "<!-- jQuery -->" | safeHTML }}
-<script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
-{{ "<!-- Bootstrap -->" | safeHTML }}
-<script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>
-<script src="{{ "plugins/bootstrap/dist/js/bootstrap.min.js" | absURL }}"></script>
-{{ "<!-- Algolia Search Live DB -->" | safeHTML }}
-<script src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
-<script src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
-{{ "<!-- Custom js -->" | safeHTML }}
-<script src="{{ "js/script.js" | absURL }}"></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/57bc6ce8311d6c5be04eff90/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-<!-- LinkedIn Ads and Insight Management -->
-<script type="text/javascript">
-_linkedin_partner_id = "587796";
-window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-</script><script type="text/javascript">
-(function(){var s = document.getElementsByTagName("script")[0];
-var b = document.createElement("script");
-b.type = "text/javascript";b.async = true;
-b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-s.parentNode.insertBefore(b, s);})();
-</script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=587796&fmt=gif" />
-</noscript>
-<!-- End LinkedIn --> 
-</body>
-
+    {{ "<!-- jQuery -->" | safeHTML }}
+    <script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
+    {{ "<!-- Bootstrap -->" | safeHTML }}
+    <script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>
+    <script src="{{ "plugins/bootstrap/dist/js/bootstrap.min.js" | absURL }}"></script>
+    {{ "<!-- Algolia Search Live DB -->" | safeHTML }}
+    <script src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
+    <script src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
+    {{ "<!-- Custom js -->" | safeHTML }}
+    <script src="{{ "js/script.js" | absURL }}"></script>
+       <!-- LinkedIn Ads and Insight Management -->
+     <script type="text/javascript">
+       _linkedin_partner_id = "587796";
+       window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+       window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+       </script><script type="text/javascript">
+       (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=587796&fmt=gif" />
+    </noscript>
+    <!-- End LinkedIn --></body>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+       s1.async=true;
+       s1.src='https://embed.tawk.to/57bc6ce8311d6c5be04eff90/default';
+       s1.charset='UTF-8';
+       s1.setAttribute('crossorigin','*');
+       s0.parentNode.insertBefore(s1,s0);
+       })();
+     </script>
+     <!--End of Tawk.to Script-->
 </html>

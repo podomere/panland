@@ -1926,7 +1926,7 @@ a:focus, a:hover {
   position: relative; 
 }
 .aa-input-search {
-  width: 240px;
+  width: 290px;
   padding: 12px 28px 12px 12px;
   border: 2px solid #e4e4e4;
   border-radius: 4px;
@@ -1950,7 +1950,7 @@ a:focus, a:hover {
     box-shadow: 4px 4px 0 rgba(58, 150, 207, 0.1); 
 }
 .aa-input-nav {
-  width: 290px;
+  width: 240px;
   padding: 5px 28px 5px 12px;
   border: 2px solid #e4e4e4;
   border-radius: 4px;
@@ -2003,7 +2003,7 @@ a:focus, a:hover {
   width: 100% !important;
   margin-top: 10px;
   box-shadow: 4px 4px 0 rgba(241, 241, 241, 0.35);
-  font-size: 15px;
+  font-size: 12px;
   border-radius: 4px;
   box-sizing: border-box; 
 }

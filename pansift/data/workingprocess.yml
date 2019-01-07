@@ -1,7 +1,7 @@
 enable  : true
 topTitle: Structured Hiring Assessments
 title   : Why use Simulation Based Screening?
-subtitle: Data backed decisions provide faster technical recruitment <br />and provide a better candidate screening process.
+subtitle: Data backed decisions provide faster technical recruitment and a better candidate screening process.
 item    :
   - number  : 1
     icon    : fas fa-balance-scale

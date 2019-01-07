@@ -130,11 +130,11 @@ enableGitInfo = true
     [[menu.nav]]
         name    = "Engineers"
         url     = "/#pracsims"
-        weight  = 5
+        weight  = 6
     [[menu.nav]]
         name    = "Blog"
         url     = "/blog"
-        weight  = 6
+        weight  = 5
     [[menu.nav]]
         name    = "Login"
         url     = "https://client.pansift.com/clients/sign_in"
@@ -156,17 +156,21 @@ enableGitInfo = true
 
     # Footer Quick links Menu
     [[menu.quicklink]]
+        name    = "Team"
+        url     = "/team"
+        weight  = 1
+    [[menu.quicklink]]
         name    = "Blog Tags"
         url     = "/tags"
-        weight  = 1
+        weight  = 2
     [[menu.quicklink]]
         name    = "Contact Us"
         url     = "/contact"
-        weight  = 2
+        weight  = 3
     [[menu.quicklink]]
         name    = "Cookie Policy"
         url     = "/cookies"
-        weight  = 3
+        weight  = 4
 
 [blackfriday]
   plainIDAnchors = true

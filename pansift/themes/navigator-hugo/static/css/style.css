@@ -461,6 +461,20 @@ a:focus, a:hover {
   padding: 0 !important;
 }
 
+.search-inline {
+  background: #fff;
+  padding: 15px 0 0 0;
+  text-align: left;
+  color: #fff;
+  position: relative;
+}
+
+.search-inline .breadcrumb {
+  background: transparent;
+  display: inline-block;
+  padding: 0 !important;
+}
+
 .single-page-header .breadcrumb li {
   display: inline-block;
 }
@@ -558,7 +572,8 @@ a:focus, a:hover {
 
 .navbar-brand {
   height: auto;
-  padding: 8px 0;
+  padding: 0px 0;
+  font-size: 1rem;
 }
 
 .navbar-brand h1 {
@@ -1911,7 +1926,7 @@ a:focus, a:hover {
   position: relative; 
 }
 .aa-input-search {
-  width: 290px;
+  width: 240px;
   padding: 12px 28px 12px 12px;
   border: 2px solid #e4e4e4;
   border-radius: 4px;
@@ -1934,6 +1949,29 @@ a:focus, a:hover {
     border-color: #3a96cf;
     box-shadow: 4px 4px 0 rgba(58, 150, 207, 0.1); 
 }
+.aa-input-nav {
+  width: 290px;
+  padding: 5px 28px 5px 12px;
+  border: 2px solid #e4e4e4;
+  border-radius: 4px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+  .aa-input-nav::-webkit-search-decoration, .aa-input-nav::-webkit-search-cancel-button, .aa-input-nav::-webkit-search-results-button, .aa-input-nav::-webkit-search-results-decoration {
+    display: none;
+}
+  .aa-input-nav:focus {
+    outline: 0;
+    border-color: #3a96cf;
+    box-shadow: 4px 4px 0 rgba(58, 150, 207, 0.1);
+}
 .aa-input-icon {
   height: 16px;
   width: 16px;
@@ -1943,6 +1981,16 @@ a:focus, a:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: #e4e4e4; 
+}
+.aa-input-icon-nav {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #e4e4e4;
 }
 .aa-hint {
   color: #e4e4e4; 

@@ -7,16 +7,16 @@
         <h3>About</h3>
         <ul>
           <li>
-          <a href="/team">Team</a>
-          </li>
-          <li>
-          <a href="https://stackshare.io/pansift/pansift" target="_blank"><img src="/images/tech_stack.png" width="72" height="20"> <i class="fas fa-external-link-alt"></i></a>
+          <a href="https://stackshare.io/pansift/pansift" target="_blank"><img src="/images/tech_stack.png" width="72" height="20">
           </li>
           <li>
           <a href="https://defensible.ie" target="_blank">Defensible Limited <i class="fas fa-external-link-alt"></i></a>
           </li>
           <li>
           <p>CRO: 610070, TAX / VAT: IE 3490731JH</p>
+          </li>
+          <li>
+          <a href="https://www.algolia.com" target="_blank"><img src="/images/search-by-algolia-dark-background_20.png" width="140" height="20"> 
           </li>
         </ul>
       </div>
@@ -61,7 +61,9 @@
 {{ "<!-- Bootstrap -->" | safeHTML }}
 <script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>
 <script src="{{ "plugins/bootstrap/dist/js/bootstrap.min.js" | absURL }}"></script>
-
+{{ "<!-- Algolia Search Live DB -->" | safeHTML }}
+<script src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
+<script src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
 {{ "<!-- Custom js -->" | safeHTML }}
 <script src="{{ "js/script.js" | absURL }}"></script>
 <!--Start of Tawk.to Script-->

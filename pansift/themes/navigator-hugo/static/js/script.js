@@ -214,20 +214,6 @@
   /* ========================================================================= */
   /* var scroll = new SmoothScroll('a[href*="#"]'); */
 
-  /* ========================================================================= */
-  /*	Header Scroll Background Change
-  /* ========================================================================= */	
-
-  $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-    //console.log(scroll);
-    if (scroll > 200) {
-      //console.log('a');
-      $(".navigation").addClass("sticky-header");
-    } else {
-      //console.log('a');
-      $(".navigation").removeClass("sticky-header");
-    }});
 
   /* ========================================================================= */
   /*	if Video is present?
@@ -299,59 +285,6 @@
     });
   }
 
-  if(document.getElementById("aa-input-nav-container") !== null){
-  //if ($('#aa-input-container').length) {
-    var al_client = algoliasearch('AJV2LM71WS', 'afe14bbaabe07eb4792c82ca6bda3449');
-    var al_index = al_client.initIndex('Skill');
-    //initialize autocomplete on search input (ID selector must match)
-
-    function al_autocomplete(){
-      autocomplete('#aa-search-nav',
-          { hint: true }, {
-                             source: autocomplete.sources.hits(al_index, {hitsPerPage: 7}),
-        //value to be displayed in input control after user's suggestion selection
-        displayKey: 'name',
-        //hash of templates used when rendering dataset
-        templates: {
-          //'suggestion' templating function used to render a single suggestion
-          suggestion: function(suggestion) {
-                        return '<span>' +
-        suggestion._highlightResult.name.value +'</span><span class="label label-success pull-right">Available</span>';
-                      }
-        }
-                           }).on('autocomplete:selected', function(event, suggestion, dataset) {
-        location.href = "https://client.pansift.com/clients/sign_up";
-      });;
-    }
-    al_autocomplete();
-  }
-
-  if(document.getElementById("aa-input-container") !== null){
-  //if ($('#aa-input-container').length) {
-    var al_client = algoliasearch('AJV2LM71WS', 'afe14bbaabe07eb4792c82ca6bda3449');
-    var al_index = al_client.initIndex('Skill');
-    //initialize autocomplete on search input (ID selector must match)
-
-    function al_autocomplete(){
-      autocomplete('#aa-search-input',
-          { hint: false }, {
-                             source: autocomplete.sources.hits(al_index, {hitsPerPage: 7}),
-        //value to be displayed in input control after user's suggestion selection
-        displayKey: 'name',
-        //hash of templates used when rendering dataset
-        templates: {
-          //'suggestion' templating function used to render a single suggestion
-          suggestion: function(suggestion) {
-                        return '<span>' +
-        suggestion._highlightResult.name.value +'</span><span class="label label-success pull-right">Available</span>';
-                      }
-        }
-                           }).on('autocomplete:selected', function(event, suggestion, dataset) {
-        location.href = "https://client.pansift.com/clients/sign_up";
-      });;
-    }
-    al_autocomplete();
-  }
 
   if(document.getElementById("number_of_agents") !== null){
   // if ($('#number_of_agents').length) {
@@ -450,6 +383,75 @@
     });  
   }
 
+  if(document.getElementById("aa-input-nav-container") !== null){
+  //if ($('#aa-input-container').length) {
+    var al_client = algoliasearch('AJV2LM71WS', 'afe14bbaabe07eb4792c82ca6bda3449');
+    var al_index = al_client.initIndex('Skill');
+    //initialize autocomplete on search input (ID selector must match)
+
+    function al_autocomplete(){
+      autocomplete('#aa-search-nav',
+          { hint: true }, {
+                             source: autocomplete.sources.hits(al_index, {hitsPerPage: 7}),
+        //value to be displayed in input control after user's suggestion selection
+        displayKey: 'name',
+        //hash of templates used when rendering dataset
+        templates: {
+          //'suggestion' templating function used to render a single suggestion
+          suggestion: function(suggestion) {
+                        return '<span>' +
+        suggestion._highlightResult.name.value +'</span><span class="label label-success pull-right">Available</span>';
+                      }
+        }
+                           }).on('autocomplete:selected', function(event, suggestion, dataset) {
+        location.href = "https://client.pansift.com/clients/sign_up";
+      });;
+    }
+    al_autocomplete();
+  }
+
+  if(document.getElementById("aa-input-container") !== null){
+  //if ($('#aa-input-container').length) {
+    var al_client = algoliasearch('AJV2LM71WS', 'afe14bbaabe07eb4792c82ca6bda3449');
+    var al_index = al_client.initIndex('Skill');
+    //initialize autocomplete on search input (ID selector must match)
+
+    function al_autocomplete(){
+      autocomplete('#aa-search-input',
+          { hint: false }, {
+                             source: autocomplete.sources.hits(al_index, {hitsPerPage: 7}),
+        //value to be displayed in input control after user's suggestion selection
+        displayKey: 'name',
+        //hash of templates used when rendering dataset
+        templates: {
+          //'suggestion' templating function used to render a single suggestion
+          suggestion: function(suggestion) {
+                        return '<span>' +
+        suggestion._highlightResult.name.value +'</span><span class="label label-success pull-right">Available</span>';
+                      }
+        }
+                           }).on('autocomplete:selected', function(event, suggestion, dataset) {
+        location.href = "https://client.pansift.com/clients/sign_up";
+      });;
+    }
+    al_autocomplete();
+  }
+
+  /* ========================================================================= */
+  /*	Header Scroll Background Change
+  /* ========================================================================= */	
+
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    if (scroll > 200) {
+      //console.log('a');
+      $(".navigation").addClass("sticky-header");
+    } else {
+      //console.log('a');
+      $(".navigation").removeClass("sticky-header");
+    }});
+
 })(jQuery);
 
 function secondstage (field_id) {
@@ -457,6 +459,3 @@ function secondstage (field_id) {
   dataLayer.push({'event': 'client_pre_signup', 'ecategory':'client_pre_signup', 'eaction':'client_pre_signup'});
   document.location = "https://client.pansift.com/clients/sign_up?try_email="+try_email;
 }
-
-
-

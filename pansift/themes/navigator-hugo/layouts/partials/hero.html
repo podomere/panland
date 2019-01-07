@@ -1,14 +1,11 @@
 {{ if .Site.Params.hero.enable }}
 {{ "<!-- Hero Area -->" | safeHTML }}
 <section class="hero-area">
-{{ "<!-- Video js -->" | safeHTML }}
-<script src="{{ "plugins/videojs/dist/js/video.min.js" | absURL }}"></script>
-<script src="{{ "plugins/videojs-overlay/dist/js/videojs-overlay.min.js" | absURL }}"></script>
 <div class="container">
   <div class="row">
     <div class="col-12 col-xl-7 col-lg-12 col-md-12 col-sm-12" style="padding: 0;">
       <div id="video-bound" class="text-center">
-        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="none" data-setup='{}' poster="/images/hero/3_steps_v15.png">
+        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="none" data-setup='{"skipInitialFocus": false, "enableInactiveFocus": true}' poster="/images/hero/3_steps_v15.png">
         <source src="https://sim.pansift.com/hiring_v13.mp4" type='video/mp4'>
         <p class="vjs-no-js">
         To view this video please enable JavaScript, and consider upgrading to a web browser that

@@ -125,6 +125,8 @@
   {{"<!-- Stylesheets -->" | safeHTML}}
   {{ "<!-- bootstrap.min css -->" | safeHTML}}
   <link rel="stylesheet" href="{{ "plugins/bootstrap/dist/css/bootstrap.min.css" | absURL }}">
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
   {{ "<!-- VideoJS -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/videojs/dist/css/video-js.min.css" | absURL }}">
   <link rel="stylesheet" href="{{ "plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}">
@@ -134,8 +136,15 @@
   <link rel="stylesheet" href="{{ "plugins/leaflet/dist/css/leaflet.css" | absURL }}" media="none" onload="this.media='all'"/>
   {{ "<!-- NoUISlider Map -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/nouislider/dist/css/nouislider.min.css" | absURL }}" media="none" onload="this.media='all'"/>
-  {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+
+  {{ "<!-- Video js -->" | safeHTML }}
+  <script src="{{ "plugins/videojs/dist/js/video.min.js" | absURL }}"></script>
+  <script src="{{ "plugins/videojs-overlay/dist/js/videojs-overlay.min.js" | absURL }}"></script>
+  <!-- Algolia Search Live DB -->
+  <script src="http://localhost:1313/plugins/algolia/dist/js/algoliasearch.min.js"></script>
+  <script src="http://localhost:1313/plugins/algolia/dist/js/autocomplete.min.js"></script>
+  {{ "<!-- Custom js -->" | safeHTML }}
+  <script src="{{ "js/script.js" | absURL }}"></script>
 
   <!-- Cookiebot -->
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="36478925-83e6-4823-8253-383befc9659f" type="text/javascript" async></script>

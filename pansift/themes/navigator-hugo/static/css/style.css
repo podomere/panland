@@ -965,9 +965,9 @@ a:focus, a:hover {
 }
 
 .contact-meta-block {
-  margin-top: 30px;
-  padding: 40px 0px 50px 0px;
-  min-height: 250px;
+  margin-top: 10px;
+  padding: 20px 0px 20px 0px;
+  min-height: 200px;
   text-align: center;
   background: #222;
   color: white;
@@ -1993,7 +1993,7 @@ a:focus, a:hover {
   fill: #e4e4e4;
 }
 .aa-hint {
-  color: #e4e4e4; 
+  color: #7f8c8d; 
 }
 .aa-dropdown-menu {
   background-color: #fff;

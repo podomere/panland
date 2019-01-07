@@ -112,33 +112,29 @@ enableGitInfo = true
 [menu]
     # Navbar Menus
     [[menu.nav]]
+        name    = "Skills"
+        url     = "/search"
+        weight  = 3
+    [[menu.nav]]
         name    = "How"
         url     = "/howitworks"
-        weight  = 1
+        weight  = 2
     [[menu.nav]]
         name    = "Why"
         url     = "/why"
-        weight  = 2
+        weight  = 1
     [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"
-        weight  = 3
+        weight  = 4
     [[menu.nav]]
         name    = "Contact"
         url     = "/contact"
-        weight  = 4
-    [[menu.nav]]
-        name    = "Engineers"
-        url     = "/#pracsims"
-        weight  = 6
+        weight  = 5
     [[menu.nav]]
         name    = "Blog"
         url     = "/blog"
-        weight  = 5
-    [[menu.nav]]
-        name    = "Login"
-        url     = "https://client.pansift.com/clients/sign_in"
-        weight  = 7
+        weight  = 8
     
     # Footer Service Menu
     [[menu.service]]

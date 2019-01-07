@@ -224,7 +224,6 @@
 
   if(document.getElementsByClassName("video-js") !== null && $('.video-js')[0] !== undefined ){
   //if ($('.video-js').length) {
-    setTimeout(function(){ 
       $('.video-js')[0].player.on('ended', function() {
         dataLayer.push({'event': 'finished_watching_explainer', 'category':'Visitor', 'action':'Video Watched', 'label':'Video','value':'1'})
       });
@@ -245,7 +244,6 @@
         align: 'top'
                   }]
       });
-    }, 1000);
   }
 
   if(document.getElementById("mapid") !== null){

@@ -223,7 +223,8 @@
 
 
   if(document.getElementsByClassName("video-js") !== null && $('.video-js')[0] !== undefined ){
-  //if ($('.video-js').length) {
+    //if ($('.video-js').length) {
+    setTimeout(function(){
       $('.video-js')[0].player.on('ended', function() {
         dataLayer.push({'event': 'finished_watching_explainer', 'category':'Visitor', 'action':'Video Watched', 'label':'Video','value':'1'})
       });
@@ -244,10 +245,11 @@
         align: 'top'
                   }]
       });
+    }, 1000);
   }
 
   if(document.getElementById("mapid") !== null){
-  //if ($('#mapid').length) {
+    //if ($('#mapid').length) {
     var mymap = null;
     var  mymap = L.map('mapid',{zoomControl: false, minZoom: 2, maxZoom: 2, zoom: 2}).setView([53, 6], 2);
     L.tileLayer('https://api.mapbox.com/styles/v1/pansift/cjj4p9yei4ig22srzi0315fpm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGFuc2lmdCIsImEiOiJjamo0NTZmcGUxZ2d1M2txZzFlYWFzcWF5In0.SP3kz57m0HFfNU_EubbMYA').addTo(mymap);
@@ -285,7 +287,7 @@
 
 
   if(document.getElementById("number_of_agents") !== null){
-  // if ($('#number_of_agents').length) {
+    // if ($('#number_of_agents').length) {
 
     function calculate_total_costs() {
 
@@ -382,7 +384,7 @@
   }
 
   if(document.getElementById("aa-input-container") !== null){
-  //if ($('#aa-input-container').length) {
+    //if ($('#aa-input-container').length) {
     var al_client = algoliasearch('AJV2LM71WS', 'afe14bbaabe07eb4792c82ca6bda3449');
     var al_index = al_client.initIndex('Skill');
     //initialize autocomplete on search input (ID selector must match)
@@ -423,10 +425,10 @@
       $(".navigation").removeClass("sticky-header");
     }});
 
-})(jQuery);
+  })(jQuery);
 
-function secondstage (field_id) {
-  var try_email = document.getElementById(field_id).value;
-  dataLayer.push({'event': 'client_pre_signup', 'ecategory':'client_pre_signup', 'eaction':'client_pre_signup'});
-  document.location = "https://client.pansift.com/clients/sign_up?try_email="+try_email;
-}
+  function secondstage (field_id) {
+    var try_email = document.getElementById(field_id).value;
+    dataLayer.push({'event': 'client_pre_signup', 'ecategory':'client_pre_signup', 'eaction':'client_pre_signup'});
+    document.location = "https://client.pansift.com/clients/sign_up?try_email="+try_email;
+  }

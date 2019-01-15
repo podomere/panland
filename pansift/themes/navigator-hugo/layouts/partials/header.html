@@ -23,9 +23,9 @@
     <meta content="{{ .Params.image | absURL }}" itemprop="image">
     <meta content="{{ .Params.image | absURL}}" name="twitter:image">
     {{ else }}
-    <meta content="{{ .Site.Params.og_image }}" property="og:image">
-    <meta content="{{ .Site.Params.og_image }}" itemprop="image">
-    <meta content="{{ .Site.Params.og_image }}" name="twitter:image">
+    <meta content="{{ .Site.Params.og_image | absURL }}" property="og:image">
+    <meta content="{{ .Site.Params.og_image | absURL }}" itemprop="image">
+    <meta content="{{ .Site.Params.og_image | absURL }}" name="twitter:image">
     {{ end }}
     {{ if isset .Params "subtitle" }}
     <meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}" name="description">

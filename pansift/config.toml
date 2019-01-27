@@ -127,14 +127,6 @@ enableGitInfo = true
         name    = "Pricing"
         url     = "/pricing"
         weight  = 4
-    [[menu.nav]]
-        name    = "Contact"
-        url     = "/contact"
-        weight  = 5
-    [[menu.nav]]
-        name    = "Blog"
-        url     = "/blog"
-        weight  = 8
     
     # Footer Service Menu
     [[menu.service]]

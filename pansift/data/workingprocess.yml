@@ -1,7 +1,7 @@
 enable  : true
 topTitle: Structured Hiring Assessments
 title   : Why use Simulation Based Screening?
-subtitle: Objective, cheaper, flexible, implicit filtering, faster.
+subtitle: Objective, cheaper, flexible, implicit filtering, and faster.
 item    :
   - number  : 1
     icon    : fas fa-balance-scale
@@ -25,10 +25,10 @@ item    :
     icon    : fas fa-filter
     title   : Implicit Filtering
     description : >
-     By requesting a screen you are implicitly checking an applicants commitment to engaging in the hiring process (i.e. the validity). ✓
+     By requesting a screen you are implicitly checking an applicant's commitment to engaging in the hiring process (i.e. the application validity). ✓
 
   - number  : 5
     icon    : fas fa-fighter-jet
     title   : Faster (By up to 50%)
     description : >
-      Reduced time to hire / time to fill based upon empirical data ✓
+      Reduced time to hire / time to fill based with the confidence of empirical data and that the candidate will hit the ground running ✓

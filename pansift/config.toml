@@ -36,21 +36,21 @@ enableGitInfo = true
     # CVs
     [params.aboutSm]
         enable  = true
-        title   = "CVs and résumés are broken." 
-        subtitle = "Use actionable data to support non-biased decision making throughout the hiring funnel."
+        title   = "CVs and résumés are broken" 
+        subtitle = "Use actionable data to make non-biased decisions."
 
     # NetDevOps
     [params.netdevops]
         enable  = true
-        title   = "NetDevOps, SRE, and NRE skills." 
-        subtitle = "Network Reliability Engineering and Site Reliability Engineering de-risked using 'Proof of Experience' labs."
+        title   = "NetDevOps, SRE, and NRE skills" 
+        subtitle = "De-risk applicants with 'Proof of Experience' labs."
 
     # Blog Section On Homepage
     [params.blog]
         enable  = true
         topTitle= "What you need to know about hiring"
         title   = "Raise the Bar : Blog"
-        subtitle= "Tactics, techniques and procedures to keep pace with modern HR Tech!"
+        subtitle= "Tactics, techniques and procedures for talent teams!"
 
     # Blog CTA Section On Homepage
     [params.blog_cta]
@@ -68,7 +68,7 @@ enableGitInfo = true
     # Search Section
     [params.search]
         enable  = true
-        title   = "Search PanSift Testable Skills"
+        title   = "Search Testable Skills"
         subtitle= "Micro test using simulations to screen a new breed of engineers."
 
     # Training Section

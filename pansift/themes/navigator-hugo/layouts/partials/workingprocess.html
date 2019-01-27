@@ -4,14 +4,37 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <div class="title text-center">
+      <div class="title text-center" style="padding: 0px !important;">
         {{ with .Site.Data.workingprocess.topTitle }}
         <h4>{{ . }}</h4>
         {{ end }}
         {{ with .Site.Data.workingprocess.title }}
         <h2>{{ . }}</h2>
-        <span class="border"></span>
         {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="service-2 section bg-white" style="padding: 0px !important;">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="text-center">
+        <a href="/search" ><img class="img-fluid" src="/images/blog/time-to-hire-image-v7.png" width="1024" height="551"></a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="service-2 section bg-gray" style="padding: 50px 0 !important;">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="title text-center" style="padding: 0px !important;">
+        <h4>Multiple</h4>
+        <h2>Benefits</h2>
+        <span class="border"></span>
         {{ with .Site.Data.workingprocess.subtitle | safeHTML }}
         <p>{{ . }}</p>
         {{ end }}

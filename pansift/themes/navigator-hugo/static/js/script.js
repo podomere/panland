@@ -231,7 +231,7 @@
       $('.video-js')[0].player.on('play', function() {
         dataLayer.push({'event': 'started_watching_explainer', 'category':'Visitor', 'action':'Video Played', 'label':'Video','value':'1'})
       });
-      var overlay_content = '<div class="col-12 justify-content-center align-items-center"><a href="/why"><div style="font-weight: bold; color: white !important;" class="btn btn-success mb-1 ml-1">Manager</div></a><a href="/pricing"><div style="font-weight: bold; color: white !important;" class="btn btn-primary ml-1 mb-1">Recruiter</div></a><a href="#pracsims"><div style="font-weight: bold; color: white !important;" class="btn btn-info ml-1 mb-1">Engineer</div></a><p style="font-weight: bold; color: white !important;" class="mt-2">What is your hiring role?</p></div>';
+      var overlay_content = '<div class="col-12 justify-content-center align-items-center"><a href="/why"><div style="font-weight: bold; color: white !important;" class="btn btn-success mb-1 ml-1">Manager</div></a><a href="/pricing"><div style="font-weight: bold; color: white !important;" class="btn btn-primary ml-1 mb-1">Recruiter</div></a><a href="#pracsims"><div style="font-weight: bold; color: white !important;" class="btn btn-info ml-1">Engineer</div></a></div>';
       $('.video-js')[0].player.overlay({
         overlays: [{
                     start: 'pause',
@@ -383,6 +383,19 @@
     });  
   }
 
+  function check_viewport() {
+    if ($(window).width() < 1024) {
+      $("#aa-input-nav-container").remove();
+      $("#pracsims").remove();
+      $("#instant-labs-button").remove();
+    }
+    else {
+    }
+  }
+  $(window).on("load", function() {
+    check_viewport();
+  });
+
   if(document.getElementById("aa-input-container") !== null){
     //if ($('#aa-input-container').length) {
     var al_client = algoliasearch('AJV2LM71WS', 'afe14bbaabe07eb4792c82ca6bda3449');
@@ -409,6 +422,7 @@
     }
     al_autocomplete();
   }
+
 
   /* ========================================================================= */
   /*	Header Scroll Background Change

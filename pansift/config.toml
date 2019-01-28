@@ -68,8 +68,8 @@ enableGitInfo = true
     # Search Section
     [params.search]
         enable  = true
-        title   = "Search Testable Skills"
-        subtitle= "Micro test using simulations to screen a new breed of engineers."
+        title   = "Skill Search"
+        subtitle= "Micro test per skill using live cloud simulations."
 
     # Training Section
     [params.training]

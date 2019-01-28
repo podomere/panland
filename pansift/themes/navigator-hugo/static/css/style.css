@@ -587,7 +587,7 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 20px 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,7 +603,7 @@ a:focus, a:hover {
 
 @media (max-width: 480px) {
   .hero-area {
-    padding: 0px;
+    padding: 10px;
   }
 }
 

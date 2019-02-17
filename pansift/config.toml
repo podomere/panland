@@ -87,7 +87,7 @@ enableGitInfo = true
     [params.cta]
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
-        title   = "Engineering or hiring leader ?"
+        title   = "Hiring or screening engineers ?"
         subtitle= "Take a quick test flight with 10 free screens."
         btnTxt = "Try it for free"
 

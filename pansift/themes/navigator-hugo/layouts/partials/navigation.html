@@ -7,7 +7,7 @@
         <a class="navbar-brand" href="{{ .Site.BaseURL }}">
           <img src="{{ with .Site.Params.logo }}{{ . | absURL }}{{ end }}" alt="{{ .Site.Params.description }}" height="22" width="84">
         </a>
-        {{ if ne .Page.Title "Search" }}
+        {{ if or (.IsHome) (eq .Page.Title "Why") (eq .Page.Title "How It Works") (eq .Page.Title "Contact") (eq .Page.Title "Blog. Raise the Bar.") }}
         <div class="aa-input-container" id="aa-input-nav-container">
           <input type="search" id="aa-search-nav" class="aa-input-nav" placeholder="Search Skills..." name="search" autocomplete="off" autofocus="false" />
           <svg height="16" width="16" class="aa-input-icon-nav" viewBox="654 -372 1664 1664">

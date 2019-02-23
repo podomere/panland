@@ -6,15 +6,16 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 mx-auto">
-      <a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="rounded w-100 mb-3" alt="{{ .Summary }}"></a>
+      <span data-sumome-listbuilder-embed-id="9d038b98a9f29f282fbfc8c1b2b3125d1b7e448f58c9efe2081fad89c8b7fff0"></span>
       <h1>{{ .Title }}</h1>
-      <div class="post-meta mb-5">
+      <div class="post-meta mb-3">
         <ul class="list-inline">
           <li class="list-inline-item">
           {{ .Params.subtitle }}
           </li>
         </ul>
       </div>
+      <a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="rounded w-100 mb-3" alt="{{ .Summary }}"></a>
       {{ .Content }}
       <div class="mt-5">
         {{ partial "blog-cta.html" . }}

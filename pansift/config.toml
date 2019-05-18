@@ -26,7 +26,9 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         heading = "This has been overridden in the page itself"
-        description = "So you don't have to! Just like a pilot is trained and tested in a simulator, PanSift uses simulations to objectively screen applicants, candidates or new hires. Hit hiring targets, save time, reduce risk, or plan training for IT engineering talent."
+        description = "So you don't have to! Just like a pilot is trained and tested in a simulator, we use simulations to objectively screen applicants, candidates or new hires. 
+
+Hit hiring targets, save time, reduce risk, or plan training for IT engineering talent."
         button  = true
         btnTxt = "Try it for free"
         btnURL  = "https://client.pansift.com/"

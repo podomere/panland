@@ -5,6 +5,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+    <meta content="{{ .Site.Params.description }}" name="description">
     <meta name="author" content="donal"> 
     <link rel="canonical" href="{{ .Permalink }}">
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
@@ -102,7 +103,6 @@
       {{ else }}
       "description": "{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", 
       {{ end }}
-      "description": "PanSift. Technical recruitment and pre hire assessment test.",
       "name": "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}"
     }
   </script>

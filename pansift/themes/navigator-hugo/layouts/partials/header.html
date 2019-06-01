@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
   <head>
-    {{ .Hugo.Generator }}
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
     <meta content="{{ .Site.Params.description }}" name="description">

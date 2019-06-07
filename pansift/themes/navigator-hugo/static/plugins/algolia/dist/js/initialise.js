@@ -20,7 +20,7 @@
             }
           }
           }).on('autocomplete:selected', function(event, suggestion, dataset) {
-          location.href = "https://client.pansift.com/clients/sign_up";
+          location.href = "/#pracsims";
         });;
       }
       al_autocomplete();

@@ -275,7 +275,7 @@
       champion_select = champions_v6[Math.floor(Math.random()*champions_v6.length)];
       new_champion(champion_select[0],champion_select[1]);
       // console.log(data[index]);
-    }, (Math.floor(Math.random() * (10000 - 4000 + 1) + 2000)));
+    }, (Math.floor(Math.random() * (10000 - 4000 + 1) + 4000)));
   }
 
 

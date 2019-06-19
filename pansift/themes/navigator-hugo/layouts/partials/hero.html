@@ -1,13 +1,14 @@
 {{ if .Site.Params.hero.enable }}
 {{ "<!-- Hero Area -->" | safeHTML }}
-<section class="hero-area">
+<section class="hero-area" style="background-color: #222;">
 <div class="container">
   <div class="row">
-    <div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12 mb-3">
+    <div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12">
       <div class="block">
-        <h1>We <strong>test</strong> cloud <strong>skills,</strong><br /> so you don't have to.</h1>
-          {{ with .Site.Params.hero.description | safeHTML }}
-        <h5>{{ . }}</h5>
+        <h1 class="mt-3" style="color: #fff;">The future is offline, but who are your champions and advocates?</h1>
+        <br /> <br/>
+        {{ with .Site.Params.hero.description | safeHTML }}
+        <h5 style="color: #fff;">{{ . }}</h5>
         {{ end }}
         <br />
         <center>
@@ -20,18 +21,19 @@
         </center>
       </div>
     </div>
-    <div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12" style="">
-      <div id="video-bound" class="text-center">
-        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="none" data-setup='{"skipInitialFocus": false, "enableInactiveFocus": true}' poster="/images/hero/3_steps_v15.png">
-        <source src="https://sim.pansift.com/hiring_v13.mp4" type='video/mp4'>
-        <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a web browser that
-        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-        </p>
-        </video>
+    <div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12" style="">
+      <div id="sumo" class="text-center">
+        <span data-sumome-listbuilder-embed-id="414282493e0b28df20fa32bf90d5b91c30924b011f1f937ef4817bb6372739b9"></span>
       </div>
+      <br/>
+      <br/>
     </div>
   </div>
-  </div>
-  </section>
-  {{ end }}
+</div>
+</section>
+<div id="mapholder">
+  <div id="mapid" style="z-index: 100; height: 400px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
+</div>
+{{ "<!-- Leaflet js -->" | safeHTML }}
+<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
+{{ end }}

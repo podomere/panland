@@ -1,6 +1,6 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "PanSift. Technical recruitment and pre hire assessment testing."
+title = "PanSift. Identify your true champions and advocates."
 theme = "navigator-hugo"
 summaryLength = 30
 enableGitInfo = true
@@ -12,7 +12,7 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  description = "Just like a pilot is trained and tested in a simulator, PanSift uses simulations to objectively screen applicants or candidates. Hit your hiring targets, save time, and reduce risk for Cloud, Network, and Operations talent."
+  description = ""
   og_image = "https://pansift.com/images/pansift_social_client_v23.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -20,13 +20,13 @@ enableGitInfo = true
     home = "Home"
     logo = "images/mini_header_bnw_v3.png"
     dateFormat = "6 January 2006"
-    footerDescription = "The Best Technical Recruitment use a pre hire Assessment Test."
+    footerDescription = "The best events are intelligent!"
 
     # Hero Area Section
     [params.hero]
         enable  = true
         heading = "This has been overridden in the page itself"
-      description = "Hit your hiring targets, reduce risk, and save time.<br /><br />Just like pilots in a simulator, we use simulations to identify strengths and weaknesses. Set the bar and screen technical skills objectively or focus new hire training with confidence."
+      description = "We're going through some <strong>Deep Learning</strong> and relaunching our SaaS soon with some artificially intelligent predictive analytics and simulations!"
         button  = true
         btnTxt = "Try it for free"
         btnURL  = "https://client.pansift.com/"
@@ -111,21 +111,25 @@ enableGitInfo = true
 # Site Menus
 [menu]
     # Navbar Menus
+    #[[menu.nav]]
+    #    name    = "Skills"
+    #    url     = "/search"
+    #    weight  = 3
+    #[[menu.nav]]
+    #    name    = "How"
+    #    url     = "/howitworks"
+    #    weight  = 2
+    #[[menu.nav]]
+    #    name    = "Why"
+    #    url     = "/why"
+    #    weight  = 1
+    #[[menu.nav]]
+    #    name    = "Pricing"
+    #    url     = "/pricing"
+    #    weight  = 4
     [[menu.nav]]
-        name    = "Skills"
-        url     = "/search"
-        weight  = 3
-    [[menu.nav]]
-        name    = "How"
-        url     = "/howitworks"
-        weight  = 2
-    [[menu.nav]]
-        name    = "Why"
-        url     = "/why"
-        weight  = 1
-    [[menu.nav]]
-        name    = "Pricing"
-        url     = "/pricing"
+        name    = "Training"
+        url     = "/training"
         weight  = 4
     [[menu.nav]]
         name    = "Blog"
@@ -133,10 +137,10 @@ enableGitInfo = true
         weight  = 5
     
     # Footer Service Menu
-    [[menu.service]]
-        name    = "Screening"
-        url     = "/howitworks"
-        weight  = 1
+    #[[menu.service]]
+    #    name    = "Screening"
+    #    url     = "/howitworks"
+    #    weight  = 1
     [[menu.service]]
         name    = "Training"
         url     = "/training"
@@ -151,6 +155,10 @@ enableGitInfo = true
         name    = "Team"
         url     = "/team"
         weight  = 1
+    [[menu.quicklink]]
+        name    = "Training"
+        url     = "/training"
+        weight  = 5
     [[menu.quicklink]]
         name    = "Blog Tags"
         url     = "/tags"

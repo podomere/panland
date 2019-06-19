@@ -119,6 +119,7 @@ a:focus, a:hover {
 
 .section {
   padding: 25px 0 100px 0;
+  background-color: #fff;
 }
 
 @media (max-width: 480px) {

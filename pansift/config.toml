@@ -26,7 +26,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         heading = "This has been overridden in the page itself"
-      description = "We're going through some <strong>Deep Learning</strong> and relaunching our SaaS soon with some artificially intelligent predictive analytics and simulations!"
+      description = "We're initiating some <strong>Deep Learning</strong> and relaunching our SaaS with some artificially intelligent predictive analytics and simulations!"
         button  = true
         btnTxt = "Try it for free"
         btnURL  = "https://client.pansift.com/"
@@ -36,8 +36,8 @@ enableGitInfo = true
     # CVs
     [params.aboutSm]
         enable  = true
-        title   = "CVs and résumés are broken" 
-        subtitle = "Use actionable data to make non-biased decisions."
+        title   = "Leverage your force multipliers" 
+        subtitle = "and use actionable data to make non-biased decisions."
 
     # NetDevOps
     [params.netdevops]
@@ -158,19 +158,19 @@ enableGitInfo = true
     [[menu.quicklink]]
         name    = "Training"
         url     = "/training"
-        weight  = 5
+        weight  = 2
     [[menu.quicklink]]
         name    = "Blog Tags"
         url     = "/tags"
-        weight  = 2
+        weight  = 3
     [[menu.quicklink]]
         name    = "Contact Us"
         url     = "/contact"
-        weight  = 3
+        weight  = 4
     [[menu.quicklink]]
         name    = "Cookie Policy"
         url     = "/cookies"
-        weight  = 4
+        weight  = 5
 
 [blackfriday]
   plainIDAnchors = true

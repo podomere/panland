@@ -56,7 +56,7 @@ One increasingly popular option for hiring teams is to give the candidate tasks 
 
 <div class="card ">
   <h4 class="card-header"><b>PS : Tip</b></h4>
-  <div class="card-body">We recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. This method is called <a href="https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> and it allows for wider funnels and less bias whilst saving costs and reducing <b>time to hire</b>.
+  <div class="card-body">We recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. This method is called <a href="https://pansift.com?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> and it allows for wider funnels and less bias whilst saving costs and reducing <b>time to hire</b>.
   </div>
 </div> 
 <br>
@@ -65,4 +65,4 @@ Human time is expensive and a _resource_ best spent on evaluating a candidate's 
 
 <img src="/images/blog/time-to-hire-image-v7.png" class="w-100 mb-3">
 
-If you don't have enough objective evidence to back up your decisions then it's highly likely **unconscious bias** will lead to expensive or bad hires. With the goals of reduced costs and faster _time to hire_, everyone's looking for non-zero sum games. As we're increasingly able to simulate different environments (and in the future via augmented reality and virtual reality) a range of different types of [Simulation Based Screening](https://pansift.com/howitworks?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs) present themselves.
+If you don't have enough objective evidence to back up your decisions then it's highly likely **unconscious bias** will lead to expensive or bad hires. With the goals of reduced costs and faster _time to hire_, everyone's looking for non-zero sum games. As we're increasingly able to simulate different environments (and in the future via augmented reality and virtual reality) a range of different types of [Simulation Based Screening](https://pansift.com?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs) present themselves.

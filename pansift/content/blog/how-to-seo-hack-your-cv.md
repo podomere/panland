@@ -31,4 +31,4 @@ Don't forget to ensure there are no typos or grammatical errors by double-checki
 As long as your keyword list **actually applies** to **your experience** in whatever domain you operate in, there is no problem. The longer the list, the better the search surface whilst not being aesthetically off-putting for humans. Think of it as moving an unsightly list to a smaller corner of your CV (which is _machine readable_) so you can focus on telling the more human story about the impact you've made in each of your roles :)
 
 ## Easy Countermeasures
-Irrespective of whether you use keyword stuffing or not, if a hiring team uses a technical screen using technology such as [Simulation Based Screening](https://pansift.com/howitworks) then you better be `100%` honest and up-to-date on all the skills you have listed!!
+Irrespective of whether you use keyword stuffing or not, if a hiring team uses a technical screen using technology such as [Simulation Based Screening](https://pansift.com) then you better be `100%` honest and up-to-date on all the skills you have listed!!

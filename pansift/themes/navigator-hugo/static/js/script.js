@@ -261,7 +261,7 @@
       champion_select = champions_v4[Math.floor(Math.random()*champions_v4.length)];
       var lat = champion_select[0];
       var lng = champion_select[1];
-      L.marker([lat,lng], {opacity: 0.7}).addTo(mymap);
+      L.marker([lat,lng], {opacity: 0.5}).addTo(mymap);
     }
     function new_champion(lat,lng) {
       var popup = L.popup({closeButton:false})

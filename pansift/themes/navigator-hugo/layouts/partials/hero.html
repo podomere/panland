@@ -1,5 +1,10 @@
 {{ if .Site.Params.hero.enable }}
 {{ "<!-- Hero Area -->" | safeHTML }}
+<div id="mapholder">
+  <div id="mapid" style="z-index: 100; height: 200px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
+</div>
+{{ "<!-- Leaflet js -->" | safeHTML }}
+<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
 <section class="hero-area" style="background-color: #222;">
 <div class="container">
   <div class="row">
@@ -31,9 +36,4 @@
   </div>
 </div>
 </section>
-<div id="mapholder">
-  <div id="mapid" style="z-index: 100; height: 200px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
-</div>
-{{ "<!-- Leaflet js -->" | safeHTML }}
-<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
 {{ end }}

@@ -17,7 +17,7 @@
   <div class="row justify-content-center">
     {{ range .Site.Data.team.member }}
     {{ "<!-- team member -->" | safeHTML }}
-    <div class="col-12 col-md-3 col-sm-6">
+    <div class="col-12 col-md-6 col-sm-6">
       <div class="team-member text-center">
         <div class="member-photo">
           <img class="img-fluid" src="{{.image | absURL }}" alt="team people" height="100%" width="100%">

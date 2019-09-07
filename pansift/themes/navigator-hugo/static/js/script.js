@@ -266,7 +266,7 @@
     function new_champion(lat,lng) {
       var popup = L.popup({closeButton:false})
         .setLatLng([lat, lng])
-        .setContent("<center><b>Champion Identified</b></center>")
+        .setContent("<center><b>Token Triggered</b></center>")
         .openOn(mymap);
       L.marker([lat,lng], {zIndexOffset: 1000}).addTo(mymap);
     }

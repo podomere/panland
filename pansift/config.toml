@@ -1,6 +1,6 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "PanSift. Identify your true champions and advocates."
+title = "PanSift. Continuous Deterministic Security."
 theme = "navigator-hugo"
 summaryLength = 30
 enableGitInfo = true
@@ -20,16 +20,16 @@ enableGitInfo = true
     home = "Home"
     logo = "images/mini_header_bnw_v3.png"
     dateFormat = "6 January 2006"
-    footerDescription = "The best events are intelligent!"
+    footerDescription = "Because security can, (and should) be black and white."
 
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "This has been overridden in the page itself"
-      description = "We're initiating some Deep Learning and relaunching our SaaS"
+        heading = "Deterministic Continuous Security.</br>Because security can (and should)</br> be black and white."
+        description = "Tokens and canaries for AppSec, NetSec, DevSecOps, and CI/CD pipelines. Automatically deployed per Pull Request."
         button  = true
         btnTxt = "Try it for free"
-        btnURL  = "https://client.pansift.com/"
+        btnURL  = "https://app.pansift.com/"
         videoThumb = "images/slider/3_steps_v14.png"
         videoURL   = "https://www.youtube.com/embed/I6untRQ8O6U"
 
@@ -103,7 +103,7 @@ enableGitInfo = true
         topTitle= "DROP US A NOTE"
         title   = "Contact Us."
         subtitle= ""
-        address = "Dublin 5 Ireland"
+        address = "Dublin 5</br> Ireland"
         email   = "info@pansift.com"
         twitter = "https://twitter.com/pansifter"
         linkedin= "https://www.linkedin.com/company/pansift"

@@ -26,7 +26,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         heading = "Deterministic Continuous Security.</br>Because security can (and should)</br> be black and white."
-        description = "Tokens and canaries for AppSec, NetSec, DevSecOps, and CI/CD pipelines. Automatically deployed per Pull Request."
+        description = "Tokens (canaries) automatically deployed per pull request. Applicable for AppSec, NetSec, DevSecOps, and CI/CD pipelines. Amplify your defender's situational awareness and detect breaches before others do..."
         button  = true
         btnTxt = "Try it for free"
         btnURL  = "https://app.pansift.com/"

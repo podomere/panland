@@ -25,7 +25,7 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Deterministic Continuous Security.</br>Because security can (and should)</br> be black and white."
+        heading = "P.S. Don't forget your tokens! Deterministic Continuous Security.</br>Because security can (and should)</br> be black and white."
         description = "Tokens (canaries) automatically deployed per pull request. Applicable for AppSec, NetSec, DevSecOps, and CI/CD pipelines. Amplify your defender's situational awareness and detect breaches before others do..."
         button  = true
         btnTxt = "Try it for free"

@@ -6,9 +6,9 @@
     <div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12">
       <div class="block">
         <h1 class="mt-3" style="color: #fff;"><strong style="font-weight: 900;">
-        {{ with .Site.Params.hero.heading | safeHTML }}
-          {{ . }}
-        {{ end }}
+            {{ with .Site.Params.hero.heading | safeHTML }}
+            {{ . }}
+            {{ end }}
         </strong></h1>
         <br /> <br/>
         {{ with .Site.Params.hero.description | safeHTML }}
@@ -26,10 +26,12 @@
       </div>
     </div>
     <div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12" style="">
+      <div id = "brands" class="text-center">
+        <i class="fab fa-github fa-5x px-3" style="color: white;"></i><i class="fab fa-aws fa-5x px-3" style="color: white;"></i><i class="fas fa-code-branch fa-5x px-3" style="color: white;"></i>
+      </div>
       <div id="sumo" class="text-center">
         <span data-sumome-listbuilder-embed-id="414282493e0b28df20fa32bf90d5b91c30924b011f1f937ef4817bb6372739b9"></span>
       </div>
-      <br/>
       <br/>
     </div>
   </div>

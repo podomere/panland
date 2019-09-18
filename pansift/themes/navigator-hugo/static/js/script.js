@@ -408,5 +408,5 @@
   function secondstage (field_id) {
     var try_email = document.getElementById(field_id).value;
     dataLayer.push({'event': 'client_pre_signup', 'ecategory':'client_pre_signup', 'eaction':'client_pre_signup'});
-    document.location = "https://client.pansift.com/clients/sign_up?try_email="+try_email;
+    document.location = "https://app.pansift.com/clients/sign_up?try_email="+try_email;
   }

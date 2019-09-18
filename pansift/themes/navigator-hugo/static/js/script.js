@@ -266,7 +266,7 @@
     function new_champion(lat,lng) {
       var popup = L.popup({closeButton:false})
         .setLatLng([lat, lng])
-        .setContent("<center><b>Token Triggered</b></center>")
+        .setContent('<center><b>Token Triggered <i class="fas fa-shield-alt"></i></b></center>')
         .openOn(mymap);
       L.marker([lat,lng], {zIndexOffset: 1000}).addTo(mymap);
     }
@@ -275,7 +275,7 @@
       champion_select = champions_v6[Math.floor(Math.random()*champions_v6.length)];
       new_champion(champion_select[0],champion_select[1]);
       // console.log(data[index]);
-    }, (Math.floor(Math.random() * 6000 + 5000)));
+    }, (Math.floor(Math.random() * 6000 + 8000)));
   }
 
 

@@ -26,7 +26,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         heading = "Deterministic Continuous Security. Because security can <i style = 'color: #000;'>and should</i></br> be black and white."
-        description = "Honey tokens (canaries) <span style = 'color: white;'>automatically deployed and rotated per pull request</span>. For Security/Infosec, DevSecOps, DevOps, or any team tasked with security. Amplify your defender's situational awareness from within and <span style = 'color: white;'>detect breaches</span> before outsiders do..."
+        description = "Honey tokens (canaries) <span style = 'color: white;'>automatically deployed and rotated per pull request</span>. For Infosec, DevSecOps, DevOps, or any teams tasked with security. Amplify your defender's situational awareness from within and <span style = 'color: white;'>detect breaches</span> before outsiders do..."
         button  = true
         btnTxt = "Try it for free"
         btnURL  = "https://app.pansift.com/"

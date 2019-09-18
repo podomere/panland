@@ -25,8 +25,8 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Deterministic Continuous Security.</br>Because security can (and should)</br> be black and white.</br></br>P.S. Don't forget your tokens!"
-        description = "Tokens (canaries) automatically deployed per pull request. Applicable for AppSec, NetSec, DevSecOps, and CI/CD pipelines. Amplify your defender's situational awareness and detect breaches before outsiders do..."
+        heading = "Deterministic Continuous Security. Because security can <i style = 'color: #000;'>and should</i></br> be black and white."
+        description = "Honey tokens (canaries) <span style = 'color: white;'>automatically deployed and rotated per pull request</span>. For Security/Infosec, DevSecOps, DevOps, or any team tasked with security. Amplify your defender's situational awareness from within and <span style = 'color: white;'>detect breaches</span> before outsiders do..."
         button  = true
         btnTxt = "Try it for free"
         btnURL  = "https://app.pansift.com/"
@@ -74,7 +74,7 @@ enableGitInfo = true
     # Training Section
     [params.training]
         enable  = true
-        title   = "Technical Training"
+        title   = "Technical / Security Training"
         subtitle= "With Pluralsight ( inc. 28% off Annual Membership )"
 
     # Search Section

@@ -10,9 +10,12 @@
             {{ . }}
             {{ end }}
         </strong></h1>
-        <br /> <br/>
+        <br/>
+        <div id = "brands" class="text-center" style="">
+          <i class="fab fa-github fa-4x px-3 pb-4" style="color: white;font-weight: 900;"></i></i><i class="fab fa-aws fa-4x px-3 pb-4" style="color: white;"></i><i class="fas fa-code-branch fa-4x px-3 pb-4" style="color: white;font-weight: 900;"></i>
+        </div>
         {{ with .Site.Params.hero.description | safeHTML }}
-        <h5 style="color: #fff;">{{ . }}</h5>
+        <h5 style="color: #bdc3c7;">{{ . }}</h5>
         {{ end }}
         <br />
         <center>
@@ -21,25 +24,25 @@
             <input type="submit" value="{{ .Site.Params.hero.btnTxt }}" style="cursor: pointer;">
           </form> -->
           <!-- <small>Full access with 10 candidate screens. <strong>No credit card required.</strong></small><br /> -->
-          <!-- <small>Existing Customers <strong><a href="https://client.pansift.com/clients/sign_in">Login</a></strong></small> -->
+          <!-- <small>Existing Customers <strong><a href="https://app.pansift.com/clients/sign_in">Login</a></strong></small> -->
         </center>
       </div>
     </div>
-    <div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12" style="">
-      <div id = "brands" class="text-center">
-        <i class="fab fa-github fa-5x px-3" style="color: white;"></i><i class="fab fa-aws fa-5x px-3" style="color: white;"></i><i class="fas fa-code-branch fa-5x px-3" style="color: white;"></i>
+    <div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12 text-center" style="">
+      <h3 class="mt-3" style="color: #fff;"><strong style="font-weight: 900;">
+          P.S. Don't forget your tokens!
+        </h3>
+        <div id="sumo" class="text-center">
+          <span data-sumome-listbuilder-embed-id="414282493e0b28df20fa32bf90d5b91c30924b011f1f937ef4817bb6372739b9"></span>
+        </div>
+        <br/>
       </div>
-      <div id="sumo" class="text-center">
-        <span data-sumome-listbuilder-embed-id="414282493e0b28df20fa32bf90d5b91c30924b011f1f937ef4817bb6372739b9"></span>
-      </div>
-      <br/>
     </div>
   </div>
-</div>
-</section>
-<div id="mapholder">
-  <div id="mapid" style="z-index: 100; height: 200px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
-</div>
-{{ "<!-- Leaflet js -->" | safeHTML }}
-<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
-{{ end }}
+  </section>
+  <div id="mapholder">
+    <div id="mapid" style="z-index: 100; height: 200px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
+  </div>
+  {{ "<!-- Leaflet js -->" | safeHTML }}
+  <script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
+  {{ end }}

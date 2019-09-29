@@ -288,24 +288,19 @@
       var excess_screens = sliderFormatScreens.noUiSlider.get() - ((sliderFormat.noUiSlider.get() - 1) * 50);
       var excess_screens = excess_screens < 0 ? 0 : excess_screens;
       var number_of_a_packs = 0;
-      var cost_of_a_packs = 99;
       var number_of_b_packs = 0;
+      var number_of_c_packs = 0;
+      var cost_of_a_packs = 99;
       var cost_of_b_packs = 49;
       var cost_of_c_packs = 29;
-      var number_of_e_packs = 0;
-      var cost_of_e_packs = 169;
       var b_remainder = 0;
       var c_remainder = 0;
-      var a_remainder = 0;
-      var e_remainder = excess_screens % 100;
+      var a_remainder  = excess_screens % 50;
 
-      if (e_remainder >= 0 ) {
-        var number_of_e_packs = Math.floor(excess_screens / 100);
+      if (a_remainder >= 0 ) {
+        var number_of_a_packs = Math.floor(excess_screens / 50);
       }
-      if (e_remainder >= 0 && e_remainder % 50 >= 0) {
-        var number_of_a_packs = Math.floor(e_remainder / 50);
-        var a_remainder = e_remainder % 50;
-      }
+
       if (a_remainder >= 0 && a_remainder % 20 >= 0) {
         var number_of_b_packs = Math.floor(a_remainder / 20);
         var b_remainder = a_remainder % 20;
@@ -313,7 +308,7 @@
       if (a_remainder >= 0 && a_remainder % 20 >= 0 && b_remainder % 20 >= 0) {
         var c_remainder = Math.floor(b_remainder / 10);
       }
-      var total_cost = agent_cost + (number_of_a_packs * cost_of_a_packs) + (number_of_b_packs * cost_of_b_packs) + (c_remainder * cost_of_c_packs) + (number_of_e_packs * cost_of_e_packs);
+      var total_cost = agent_cost + (number_of_a_packs * cost_of_a_packs) + (number_of_b_packs * cost_of_b_packs) + (c_remainder * cost_of_c_packs);
       $('#total_cost').text(total_cost + '€ p/m');
     }
 

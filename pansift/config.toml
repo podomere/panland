@@ -36,7 +36,7 @@ enableGitInfo = true
     # CVs
     [params.aboutSm]
         enable  = true
-        title   = "Leverage your true force multipliers"
+        title   = "Reduce noise and amplify the signal"
         subtitle = ""
 
     # NetDevOps
@@ -123,22 +123,22 @@ enableGitInfo = true
     #    name    = "Why"
     #    url     = "/why"
     #    weight  = 1
-    #[[menu.nav]]
-    #    name    = "Pricing"
-    #    url     = "/pricing"
-    #    weight  = 4
+    [[menu.nav]]
+        name    = "Pricing"
+        url     = "/pricing"
+        weight  = 1
     [[menu.nav]]
         name    = "Contact"
         url     = "/contact"
-        weight  = 6
+        weight  = 4
     [[menu.nav]]
         name    = "Training"
         url     = "/training"
-        weight  = 4
+        weight  = 2
     [[menu.nav]]
-        name    = "Blog"
+        name    = "Talent"
         url     = "/blog"
-        weight  = 5
+        weight  = 3
     
     # Footer Service Menu
     #[[menu.service]]

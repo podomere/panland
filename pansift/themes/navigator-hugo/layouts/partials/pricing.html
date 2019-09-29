@@ -19,21 +19,21 @@
   </div> -->
   <div class="row">
     <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
-      <h2>Hiring Team Member</h2>
+      <h2>Team Member(s)</h2>
       <div id="number_of_agents">
         <div id="slider-format" style="margin: 20px;"></div>
-        <center><input id="input-format" style="border: 0; font-size: 2em;margin: 20px;background: white;" disabled="true"></center>
+        <center><input id="input-format" style="border: 0; font-size: 3em;margin: 20px;background: white;" disabled="true"></center>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
-      <h2>Candidate Screens</h2>
+      <h2>Token Deploys</h2>
       <div id="number_of_screens">
-        <div id="slider-format-screens" style="margin: 15px;"></div>
-        <center><input id="input-format-screens" style="border: 0; font-size: 2em;margin: 20px;background: white;" disabled="true"></center> 
+        <div id="slider-format-screens" style="margin: 20px;"></div>
+        <center><input id="input-format-screens" style="border: 0; font-size: 3em;margin: 20px;background: white;" disabled="true"></center> 
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
-      <h2>Cost</h2>
+      <h2>Monthly Cost</h2>
       <div id="cost_container" style="font-size: 3em;">
         <div id="total_cost"><strong>0 € p/m</strong></div>
       </div>
@@ -42,42 +42,43 @@
   </div>
   <div class="row">
     <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
-    <ul>
-      <li>
-    The default solo hiring agent account is <strong>FREE 0.00€</strong> EUR per month (No credit card required) inc.<strong> starter 10x FREE CANDIDATE SCREENS</strong> 
-      </li>
-      <br />
-      <li>
-Additional hiring team agent accounts over and above the default solo account are subscription based at € 99.00 EUR each per month and <strong>include bonus 50 free candidate screens per agent per month.</strong>
-       </li>
-     </ul>
+      <ul>
+        <li>
+        The default solo account is <strong>FREE</strong>. No credit card required on signup and includes a one time bonus of <strong><span class="badge badge-secondary">33</span> FREE TOKEN DEPLOYS</strong> 
+        </li>
+        <br />
+        <li>
+        Additional team member accounts are € 99.00 EUR each per month and <strong>include a bonus <span class="badge badge-secondary">50</span> token deploys per agent per month recurring top-up!</strong>
+        </li>
+      </ul>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
-    <ul>
-      <li>
-<strong>Add-on / Top-Up Options</strong>
-      </li>
-      <li>
-Purchase at any time "in-app" or multiples thereof.<strong> Non-recurring</strong> and do not expire!
-      </li>
-      <br />
-      <li>
-10 screen pack 29€ EUR
-      </li>
-      <li>
-20 screen pack 49€ EUR
-      </li>
-      <li>
-50 screen pack 99€ EUR
-      </li>
-      <li>
-100 screen pack 169€ EUR
-      </li>
-      <br />
-    </ul>
-</div>
-  <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12 mt-5">
-    <center>
+      <ul>
+        <li>
+        <strong>Adhoc Token Topup Packs</strong>
+        </li>
+        <li>
+        <span class="badge badge-secondary">10</span> token deploy pack 29€ EUR
+        </li>
+        <li>
+        <span class="badge badge-secondary">20</span> token deploy pack 49€ EUR
+        </li>
+        <li>
+        <span class="badge badge-secondary">50</span> token deploy pack 99€ EUR
+        </li>
+        <br/>
+        <li>
+        <a href="/contact"><strong>Contact Us </strong></a>for larger packs!
+        </li>
+        <br />
+      </ul>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+      <center>
+        <div id="sumo" class="text-center">
+          <span data-sumome-listbuilder-embed-id="414282493e0b28df20fa32bf90d5b91c30924b011f1f937ef4817bb6372739b9"></span>
+        </div>
+      </center>
       <!-- <form onsubmit="event.preventDefault(); secondstage('cta_email');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
         <input type="email" name="try_email" id="cta_email" placeholder="Enter your email">
         <input type="submit" value="{{ .Site.Params.pricing.btnTxt }}" style="cursor: pointer;">
@@ -86,9 +87,15 @@ Purchase at any time "in-app" or multiples thereof.<strong> Non-recurring</stron
       <small><strong>No credit card required.</strong></small> -->
     </center>
   </div>
-  </div>
-
-  <!-- End row -->
+</div>
+<div class="row">
+    <div>
+    <br/>
+    <br/>
+  <strong>Note:</strong> Tokens are rotated per <strong>Pull Request</strong> and target the configured deploy branch. Repository default is the <span class="badge badge-secondary">3</span> latest tokens remain active at any time. Active token depth per repository increases by <span class="badge badge-secondary">1</span> per added team member. Old tokens are voided.
+    </div>
+</div>
+<!-- End row -->
 </div>
 <!-- End container -->
 </section>

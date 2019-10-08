@@ -25,8 +25,9 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Deterministic Continuous Security. Token your build before someone else does. Because security can <i style = 'color: #000;'>and should</i></br> be black and white."
-        description = "For <span style = 'color: white;'>Infosec</span>, <span style = 'color: white;'>DevOps</span>, and any teams tasked with <span style = 'color: white;'>security</span> or <span style = 'color: white;'>observability</span>. Honey tokens (canariesi/tripwires) <span style = 'color: white;'>automatically deployed and rotated per pull request</span> on your nominated <span style = 'color: white;'>deploy branch</span>. Amplify your <span style = 'color: white;'>defender's situational awareness</span> and <span style = 'color: white;'>detect breaches before outsiders do</span>... Don't leave your organisation or customers exposed for <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> and combat F.U.D."
+        heading = "Deterministic Continuous Security. Token your build before someone else does. Security can <i style = 'color: #000;'>and should</i> be black and white."
+        description = "For <span style = 'color: white;'>Infosec</span>, <span style = 'color: white;'>DevOps</span>, and any teams tasked with <span style = 'color: white;'>security</span> or <span style = 'color: white;'>observability</span>. Honey tokens (canaries/tripwires) <span style = 'color: white;'>automatically deployed and rotated per pull request</span> on your nominated <span style = 'color: white;'>deploy branch</span>. Amplify your <span style = 'color: white;'>defender's situational awareness</span> and <span style = 'color: white;'>detect breaches before outsiders do</span>. Don't leave your organisation or customers exposed for <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a>!"
+        description2 = "Reduce noise and combat F.U.D. with high fidelity and high cardinality breach detection delivered automagically to your builds and deploys."
         button  = true
         btnTxt = "Try it for free"
         btnURL  = "https://app.pansift.com/"

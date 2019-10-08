@@ -61,8 +61,16 @@
                 templates: {
                   //'suggestion' templating function used to render a single suggestion
                   suggestion: function(suggestion) {
+                    if (suggestion.aws_access_key) {
+                      token = (suggestion.aws_access_key).substring(0,14)+'..';
+                    } else if(suggestion.token) {
+                      token = suggestion.token;
+                    }
+                    else {
+                      token = "";
+                    }
                     return '<span>' +
-                      (suggestion.aws_access_key).substring(0,16)+'..</span><span class="label label-success pull-right">'+suggestion._highlightResult.type_of.value+'</span>';
+                      token+'</span><span class="label label-success pull-right">'+suggestion._highlightResult.type_of.value+'</span>';
                   }
                 }
                 }).on('autocomplete:selected', function(event, suggestion, dataset) {

@@ -5,7 +5,7 @@
 <section class="page-404 text-center d-flex align-items-center">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div style="color: #ffffff;" class="col-md-12">
         <h1>404</h1>
         <h2>Page Not Found</h2>
         <p>Sorry, but the page you were trying to view does not exist.</p>
@@ -15,27 +15,11 @@
   </div>
 </section>
 	
-{{ partial "cta.html" . }}
-
 {{ "<!-- jQuery -->" | safeHTML }}
 <script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
 {{ "<!-- Bootstrap -->" | safeHTML }}
 <script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>
 <script src="{{ "plugins/bootstrap/dist/js/bootstrap.min.js" | absURL }}"></script>
-{{ "<!-- Parallax -->" | safeHTML }}
-<script src="{{ "plugins/parallax/jquery.parallax-1.1.3.js" | absURL }}"></script>
-{{ "<!-- lightbox -->" | safeHTML }}
-<script src="{{ "plugins/lightbox2/dist/js/lightbox.min.js" | absURL }}"></script>
-{{ "<!-- Slick Carousel -->" | safeHTML }}
-<script src="{{ "plugins/slick-carousel/slick/slick.min.js" | absURL }}"></script>
-{{ "<!-- Portfolio Filtering -->" | safeHTML }}
-<script src="{{ "plugins/mixitup/dist/mixitup.min.js" | absURL }}"></script>
-{{ "<!-- Smooth Scroll js -->" | safeHTML }}
-{{ "<!-- Custom js -->" | safeHTML }}
 <script src="{{ "js/script.js" | absURL }}"></script>
 
 {{ partial "footer.html" . }}
-
-</body>
-
-</html>

@@ -1,0 +1,59 @@
+{{ if .Site.Params.faketestimonials.enable }}
+{{ "<!-- Start Testimonaials section -->" | safeHTML }}
+<section class="section" id="faketestimonials">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="title text-center">
+        {{ with .Site.Params.faketestimonials.topTitle }}<h4>{{.}}</h4>{{ end }}
+        {{ with .Site.Params.faketestimonials.title }}
+        <h2>{{.}}</h2>
+        <span class="border"></span>
+        {{ end }}
+        {{ with .Site.Params.faketestimonials.subtitle }}<p>{{.}}</p>{{ end }}
+      </div>
+    </div>
+  </div> 
+  <div id="customers" class="row">
+  </div>
+</div>
+<!-- End row -->
+</div>
+<!-- End container -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+<script>
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  var customers = Array(9).fill(0);
+  $(customers).each(function (index){
+    $("#customers").append("<div class='col-xl-4 col-lg-4 col-md-6 col-xs-12 text-center'><h2 id='custname_'"+index.toString()+"'></h2><a href='/pricing'><img id='custimage_'"+index.toString()+"' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' data-src='' class='img-responsive rounded-circle lozad'></a><br/><small id='custtitle_'"+index.toString()+"'></small><h4 id='custcompany_'"+index.toString()+"'></h4><br/></br></div>");
+    $("[id^='custimage']").each(function (index){
+    $(this).attr("data-src","/images/faketestimonials/"+(getRandomInt(1, 510)).toString()+".jpeg");
+    });
+    $("[id^='custname']").each(function (index){
+    $(this).html((faker.name.firstName()).substring(0,1)+'. '+faker.name.lastName());
+    });
+    $("[id^='custtitle']").each(function (index){
+    $(this).html(faker.name.title());
+    });
+    $("[id^='custcompany']").each(function (index){
+    $(this).html(faker.company.companyName());
+    });
+    });
+  </script>
+  <script data-cookieconsent="functionality" src="{{ "plugins/lozad/lozad.min.js" | absURL }}"></script>
+  <script>
+    const el = document.querySelectorAll('img, iframe');
+    const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+    observer.observe();
+  </script>
+  <script>
+    var randomName = faker.name.firstName();
+    console.log(randomName);
+  </script>
+  </section>
+  {{ "<!-- End section -->" | safeHTML }}
+  {{ end }}

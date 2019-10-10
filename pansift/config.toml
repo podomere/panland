@@ -39,6 +39,13 @@ enableGitInfo = true
         enable  = true
         title   = "Reduce noise and amplify the signal"
         subtitle = ""
+ 
+   # CVs
+    [params.faketestimonials]
+        topTitle =  "Who do you trust?"
+        enable  = true
+        title   = "Testimonials?"
+        subtitle = "In a world of AI, disinformation, bots, and agents, are actions deterministic? Can you spot the canary?"
 
     # NetDevOps
     [params.netdevops]

@@ -45,7 +45,7 @@ enableGitInfo = true
         topTitle =  "Who do you trust?"
         enable  = true
         title   = "Testimonials?"
-        subtitle = "In a world of AI, disinformation, bots, and agents, are actions deterministic? Can you spot the canary?"
+        subtitle = "In a world of AI, disinformation, and bots... can you spot the canary?"
 
     # NetDevOps
     [params.netdevops]

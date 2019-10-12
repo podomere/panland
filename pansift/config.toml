@@ -46,7 +46,7 @@ enableGitInfo = true
         enable  = true
         title   = "Testimonials?"
         subtitle = "Amidst AI, disinformation, and bots.. spot the human?"
-    punchline = "Some attackers are sentient and some are automated agents.<br/>None of the humans above exist.<br/>They are all AI generated.<br/>No entity should have access to certain parts of your systems or applications.<br/><br/>Actions speak louder than words so by using honey tokens per deploy, <br/>you get <span style='font-size: 1.1em;' class='badge badge-warning'>high quality/cardinality</span> breach signal.<br/>A combination of intent + action by attackeds leads to your ability to deploy Deterministic Continuous Security. <br/><br/>You can even figure out if your team need more security training too!"
+    punchline = "Some attackers are sentient and some are automated agents.<br/>None of the humans above exist.<br/>They are all AI generated.<br/><br/>No entity should have access to certain parts of your systems or applications and actions speak louder than words.<br/>By using honey tokens per deploy, you get <span style='font-size: 1.1em;' class='badge badge-warning'>high quality/cardinality</span> breach signal.<br/>A combination of intent + action by attackers leads to your ability to deploy Deterministic Continuous Security. <br/><br/>You can even figure out if your team need more security training too!"
 
 
     # NetDevOps

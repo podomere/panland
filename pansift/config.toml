@@ -25,9 +25,9 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Deterministic Continuous Security. Token your build before someone else does. Security can <i style = 'color: #000;'>and should</i> be black and white."
-        description = "For <span style = 'color: white;'>Infosec</span>, <span style = 'color: white;'>DevOps</span>, and any teams tasked with <span style = 'color: white;'>security</span> or <span style = 'color: white;'>observability</span>. Honey tokens (canaries/tripwires) <span style = 'color: white;'>automatically deployed and rotated per pull request</span> on your nominated <span style = 'color: white;'>deploy branch</span>. Amplify your <span style = 'color: white;'>defender's situational awareness</span> and <span style = 'color: white;'>detect breaches before outsiders do</span>. Don't leave your organisation or customers exposed for <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a>!"
-        description2 = "Reduce noise and combat F.U.D! High fidelity and high cardinality breach detection delivered automagically to your builds and deploys."
+        heading = "Deterministic Continuous Security delivers peace of mind. Token your build before someone else does..."
+        description = "For <span style = 'color: white;'>Infosec</span>, <span style = 'color: white;'>DevOps</span>, and any risk or technical teams tasked with <span style = 'color: white;'>security</span> or <span style = 'color: white;'>observability</span>. Honey tokens (canaries/tripwires/credentials) <span style = 'color: white;'>automatically deployed and rotated per pull request</span> on your nominated <span style = 'color: white;'>base branch</span>. Don't leave your organisation or customers exposed for <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days!"
+        description2 = ""
         button  = true
         btnTxt = "Try it for free"
         btnURL  = "https://app.pansift.com/"
@@ -37,15 +37,17 @@ enableGitInfo = true
     # CVs
     [params.aboutSm]
         enable  = true
-        title   = "Reduce noise and amplify the signal"
-        subtitle = ""
+        title   = "Because security can and should be <span style = 'color: #000;'>black</span> and <span style = 'color: #fff;'>white</span>."
+        subtitle = "Combat F.U.D. with high fidelity and high cardinality breach detection."
  
    # CVs
     [params.faketestimonials]
-        topTitle =  "Who do you trust?"
+        topTitle =  "Trust but Verify"
         enable  = true
         title   = "Testimonials?"
-        subtitle = "In a world of AI, disinformation, and bots... can you spot the canary?"
+        subtitle = "Amidst AI, disinformation, and bots.. spot the human?"
+    punchline = "Some attackers are sentient and some are automated agents.<br/>None of the humans above exist.<br/>They are all AI generated.<br/>No entity should have access to certain parts of your systems or applications.<br/><br/>Actions speak louder than words so by using honey tokens per deploy, <br/>you get <span style='font-size: 1.1em;' class='badge badge-warning'>high quality/cardinality</span> breach signal.<br/>A combination of intent + action = Deterministic Continuous Security. <br/>You can even figure out if your team need more security training too!"
+
 
     # NetDevOps
     [params.netdevops]
@@ -119,10 +121,10 @@ enableGitInfo = true
 # Site Menus
 [menu]
     # Navbar Menus
-    #[[menu.nav]]
-    #    name    = "Skills"
-    #    url     = "/search"
-    #    weight  = 3
+    [[menu.nav]]
+        name    = "Testimonials"
+        url     = "/faketestimonials"
+        weight  = 2
     #[[menu.nav]]
     #    name    = "How"
     #    url     = "/howitworks"
@@ -138,43 +140,43 @@ enableGitInfo = true
     [[menu.nav]]
         name    = "Contact"
         url     = "/contact"
-        weight  = 2
+        weight  = 5
     [[menu.nav]]
         name    = "Training"
         url     = "/training"
-        weight  = 4
+        weight  = 3
     [[menu.nav]]
         name    = "Talent"
         url     = "/blog"
-        weight  = 3
+        weight  = 4
     
-    # Footer Service Menu
-    #[[menu.service]]
-    #    name    = "Screening"
-    #    url     = "/howitworks"
-    #    weight  = 1
-    [[menu.service]]
+    # Footer Quick links Menu
+    [[menu.quick]]
+        name    = "Pricing"
+        url     = "/pricing"
+        weight  = 1
+    [[menu.quick]]
+        name    = "Testimonials"
+        url     = "/faketestimonials"
+        weight  = 3
+    [[menu.quick]]
         name    = "Training"
         url     = "/training"
         weight  = 2
-    [[menu.service]]
-        name    = "Blog"
-        url     = "/blog"
-        weight  = 3
+    [[menu.quick]]
+        name    = "Contact"
+        url     = "/contact"
+        weight  = 4
 
-    # Footer Quick links Menu
-    [[menu.quicklink]]
+    # Footer About Menu
+    [[menu.about]]
         name    = "Team"
         url     = "/team"
         weight  = 1
-    [[menu.quicklink]]
-        name    = "Training"
-        url     = "/training"
-        weight  = 2
-    [[menu.quicklink]]
+    [[menu.about]]
         name    = "Cookie Policy"
         url     = "/cookies"
-        weight  = 5
+        weight  = 2
 
 [blackfriday]
   plainIDAnchors = true

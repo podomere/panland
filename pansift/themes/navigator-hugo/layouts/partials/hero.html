@@ -1,6 +1,6 @@
 {{ if .Site.Params.hero.enable }}
 {{ "<!-- Hero Area -->" | safeHTML }}
-<section class="hero-area" style="background-color: #222;">
+<section class="hero-area" style="background-color: #222; padding-bottom: 30px;">
 <div class="container">
   <div class="row">
     <div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12">
@@ -44,23 +44,11 @@
       </div>
     </div>
   </div>
-  </section>
-  <div id="mapholder">
-    <div id="mapid" style="z-index: 100; height: 200px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
-  </div>
-  <section class="hero-area" style="background-color: #222;">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12">
-        <div class="block">
-          {{ with .Site.Params.hero.description2 | safeHTML }}
-          <h5 style="color: #bdc3c7;">{{ . }}</h5>
-          {{ end }}
-        </div>
-      </div>
+</section>
+    <div id="mapholder" style="padding-bottom: 100px; background-color: #222;">
+      <div id="mapid" style="z-index: 100; height: 200px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
     </div>
-  </div>
-  </section>
-  {{ "<!-- Leaflet js -->" | safeHTML }}
-  <script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
-  {{ end }}
+    {{ "<!-- Leaflet js -->" | safeHTML }}
+    <script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
+<script data-cookieconsent="functionality" async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='126d2915621f0a98259bca2e8035fd77c73cc92051d493d7e7d60ebeae1b27a6';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+{{ end }}

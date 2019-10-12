@@ -1,12 +1,22 @@
 {{ "<!-- Footer Start -->" | safeHTML }}
 <footer id="footer" class="bg-one">
-<div class="top-footer">
+<div class="top-footer" style="padding-bottom: 0;">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: left !important;">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center" style="">
         <h3>Quick Links</h3>
         <ul>
-          {{ range .Site.Menus.quicklink }}
+          {{ range .Site.Menus.quick }}
+          <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center" style="">
+        <h3>About</h3>
+        <ul>
+          {{ range .Site.Menus.about }}
           <li>
           <a href="{{ .URL }}">{{ .Name }}</a>
           </li>
@@ -14,32 +24,30 @@
           <li>
           <a href="https://app.pansift.com/privacy/privacy.html" target="_blank">Privacy Policy <i class="fas fa-external-link-alt"></i></a>
           </li>
+          <li>
+          <a href="https://defensible.ie" target="_blank">Defensible Limited <i class="fas fa-external-link-alt"></i></a>
+          </li>
         </ul>
       </div>
-      <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="">
+        <p class="text-center">CRO: 610070, TAX / VAT: IE 3490731JH</p>
       </div>
-      <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: right !important;">
-        <h3>About</h3>
-        <ul>
-          <li>
-          <a href="https://stackshare.io/pansift/pansift" target="_blank"><img src="/images/tech_stack.png" width="72" height="20">
-            </li>
-            <li>
-            <a href="https://defensible.ie" target="_blank">Defensible Limited <i class="fas fa-external-link-alt"></i></a>
-            </li>
-            <li>
-            <p>CRO: 610070, TAX / VAT: IE 3490731JH</p>
-            </li>
-            <li>
-            <a href="https://www.algolia.com" target="_blank"><img src="/images/search-by-algolia-dark-background_20.png" width="140" height="20"> 
-              </li>
-            </ul>
+    </div>
+  </div>
+</div>
+<div class="bottom-footer" style="background-color: white;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="">
+            <br/>
+        PanSift <a href="https://stackshare.io/pansift/pansift" target="_blank"><img src="/images/tech_stack.png" width="72" height="20"></a> + <a href="https://www.algolia.com/?utm_source=instantsearch.js&utm_medium=website&utm_content=instantsearchjs.netlify.com&utm_campaign=poweredby" target="_blank"><img src="/images/search-by-algolia-light-background_20.png" width="140" height="20">
+            <br/>
+            <br/>
           </div>
         </div>
       </div>
     </div>
     </footer>
-    <script data-cookieconsent="functionality" async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='126d2915621f0a98259bca2e8035fd77c73cc92051d493d7e7d60ebeae1b27a6';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
     {{ "<!-- end footer -->" | safeHTML }}
 
 
@@ -67,11 +75,11 @@
 <!-- End LinkedIn -->
 <!-- FullStory Testing -->
 <script data-cookieconsent="usability" async>
-window['_fs_debug'] = false;
-window['_fs_host'] = 'fullstory.com';
-window['_fs_org'] = 'PAE3E';
-window['_fs_namespace'] = 'FS';
-(function(m,n,e,t,l,o,g,y){
+  window['_fs_debug'] = false;
+  window['_fs_host'] = 'fullstory.com';
+  window['_fs_org'] = 'PAE3E';
+  window['_fs_namespace'] = 'FS';
+  (function(m,n,e,t,l,o,g,y){
     if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
     g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
     o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_host+'/s/fs.js';
@@ -82,11 +90,11 @@ window['_fs_namespace'] = 'FS';
     g.consent=function(a){g("consent",!arguments.length||a)};
     g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
     g.clearUserCookie=function(){};
-})(window,document,window['_fs_namespace'],'script','user');
+  })(window,document,window['_fs_namespace'],'script','user');
 </script>
 <!-- End Full Story -->
-    <!-- Cookiebot -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="36478925-83e6-4823-8253-383befc9659f" type="text/javascript" async></script>
-    <!-- Cookiebot -->
-   </body>
+<!-- Cookiebot -->
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="36478925-83e6-4823-8253-383befc9659f" type="text/javascript" async></script>
+<!-- Cookiebot -->
+  </body>
  </html>

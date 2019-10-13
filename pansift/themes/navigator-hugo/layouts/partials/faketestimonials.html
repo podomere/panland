@@ -1,6 +1,6 @@
 {{ if .Site.Params.faketestimonials.enable }}
 {{ "<!-- Start Testimonaials section -->" | safeHTML }}
-<section class="section" id="faketestimonials">
+<section class="service-2 section bg-gray" id="faketestimonials">
 <div class="container">
   <div class="row">
     <div class="col">
@@ -16,15 +16,45 @@
   </div> 
   <div id="customers" class="row">
   </div>
-  <div><center><a id="entity_button" href="#" style="" class="btn btn-lg btn-dark mb-3 mt-2">Try Again <i class="fas fa-user-secret"></i></a></center></div>
-
-  <div class="title text-center">
-    {{ with .Site.Params.faketestimonials.punchline }}<pre><code>{{. | safeHTML}}</code></pre>{{ end }}
-  </div> 
+  <div><center><a id="entity_button" href="#" style="font-weight: 900;" class="btn btn-lg btn-outline-dark mb-4 mt-2">Try Again <i class="fas fa-user-secret"></i></a></center></div>
+  <!-- End row -->
+  <div class="row justify-content-center">
+    <div class="col-md-4 col-sm-6 p-0">
+      <div class="service-item text-center">
+        <span class="count">1.</span>
+        <i class="fas fa-diagnoses"></i>
+        <h4>Noise</h4>
+        <p>{{ with .Site.Params.faketestimonials.one }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div> 
+    <div class="col-md-4 col-sm-6 p-0">
+      <div class="service-item text-center">
+        <span class="count">2.</span>
+        <i class="fas fa-location-arrow"></i>
+        <h4>Intent + Action</h4>
+        <p>{{ with .Site.Params.faketestimonials.two }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 p-0">
+      <div class="service-item text-center">
+        <span class="count">3.</span>
+        <i class="fas fa-signal"></i>
+        <h4>Signal</h4>
+        <p>{{ with .Site.Params.faketestimonials.three }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div>
+    <!-- End row -->
+    <div class="clearfix"></div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    {{ with .Site.Params.faketestimonials.punchline }}<p>{{. | safeHTML}}<p>{{ end }}
+  </div>
+  <!-- End container -->
 </div>
-<!-- End row -->
-</div>
-<!-- End container -->
+</section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
 <script data-cookieconsent="functionality" src="{{ "plugins/lozad/lozad.min.js" | absURL }}"></script>
 <script>
@@ -83,7 +113,6 @@
     entities(); 
   });
 </script>
-</section>
 <style>
   .tooltip-inner {
     font-size: 1.5em;

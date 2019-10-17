@@ -36,7 +36,7 @@
     <meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" property="og:description">
     <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" itemprop="description">
     <meta content="{{ .Title }}" name="twitter:title">
-    <meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }}" name="twitter:description">
+    <meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" name="twitter:description">
     {{ end }}
 
     <meta content="summary_large_image" name="twitter:card">

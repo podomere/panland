@@ -2180,4 +2180,10 @@ a:focus, a:hover {
 .noUi-connect {
   background: #2980B9 !important;
 }
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(31,106,190,.5) !important;
+}
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(31,106,190,.5) !important;
+}
 /*# sourceMappingURL=maps/style.css.map */

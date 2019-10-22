@@ -1,7 +1,7 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
 title = "PanSift. Continuous Deterministic Security."
-description = "Peace of Mind for Defenders and Developers. Control and detect attackers with continuous high fidelity breach detection."
+description = "Peace of Mind for Defenders and Developers. Detect attackers with continuous high fidelity breach detection."
 theme = "navigator-hugo"
 summaryLength = 30
 enableGitInfo = true
@@ -13,7 +13,7 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  description = "Peace of Mind for Defenders and Developers. Control and detect attackers with continuous high fidelity breach detection."
+  description = "Peace of Mind for Defenders and Developers. Detect attackers with continuous high fidelity breach detection."
   og_image = "https://pansift.com/images/pansift_social_client_v27.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"

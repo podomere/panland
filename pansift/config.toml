@@ -50,7 +50,7 @@ enableGitInfo = true
         subtitle = "Amidst AI, disinformation, and bots.. <br/> can you spot the human?"
     punchline = "You can even figure out if your team need more security training too!"
         one = "Some attackers are sentient, some are not. None of the humans above exist. They are all AI generated."
-        two = "There are critical parts of your systems or applications that no parties should have access to. When honey tokens are tripped it reveals not just the intent but presence of attackers."
+        two = "There are critical parts of your systems or applications that no parties should have access to. When honeytokens are tripped it reveals not just the intent but presence of attackers."
         three = "By using honey tokens per deploy, you get <span style='font-size: 1.1em;' class='badge badge-dark mb-2'>high fidelity</span>, and <span style='font-size: 1.1em;' class='badge badge-dark'>high cardinality</span> breach signal."
 
 

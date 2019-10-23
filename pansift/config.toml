@@ -150,10 +150,10 @@ enableGitInfo = true
         name    = "Training"
         url     = "/training"
         weight  = 3
-    [[menu.nav]]
-        name    = "Talent"
-        url     = "/blog"
-        weight  = 4
+#    [[menu.nav]]
+#        name    = "Talent"
+#        url     = "/blog"
+#        weight  = 4
     
     # Footer Quick links Menu
     [[menu.quick]]

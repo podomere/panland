@@ -5,18 +5,6 @@
 <script data-cookieconsent="functionality" src="{{ "plugins/nouislider/dist/js/nouislider.min.js" | absURL }}"></script>
 <script data-cookieconsent="functionality" src="{{ "plugins/wnumb/dist/js/wNumb.min.js" | absURL }}"></script>
 <div class="container">
-  <!-- <div class="row">
-    <div class="col">
-      <div class="title text-center">
-        {{ with .Site.Data.pricing.topTitle }}<h4>{{.}}</h4>{{ end }}
-        {{ with .Site.Data.pricing.title }}
-        <h2>{{.}}</h2>
-        <span class="border"></span>
-        {{ end }}
-        {{ with .Site.Data.pricing.subtitle }}<p>{{.}}</p>{{ end }}
-      </div>
-    </div>
-  </div> -->
   <div class="row">
     <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
       <h2>Team Member(s)</h2>
@@ -32,27 +20,28 @@
         <center><input id="input-format-screens" style="border: 0; font-size: 3em;margin: 20px;background: white;" disabled="true"></center> 
       </div>
     </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
+    <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12 mb-4">
+      <center>
       <h2>Monthly Cost</h2>
       <div id="cost_container" style="font-size: 3em;">
         <div id="total_cost"><strong>0 € p/m</strong></div>
       </div>
+        <br/>
+        <strong><a href="https://github.com/apps/pansift" target="_blank" class="btn btn-lg btn-success mb-4"> <i style="font-size: 1.5em;" class="fab fa-github"></i><span style="font-size: 1.5em; font-weight: 900;"> Try PanSift App </span></a></strong>
+      </center>
     </div>
 
   </div>
   <div class="row">
-    <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 mb-4">
       <ul>
         <li>
-        The default solo account is <strong>FREE</strong>. No credit card required on signup and includes a one time bonus of <strong><span class="badge badge-secondary">32</span> FREE TOKEN DEPLOYS</strong> 
+        The default solo account is <strong>FREE</strong>. <br/>No credit card required on signup and includes a one time bonus of <strong><span class="badge badge-secondary">32</span> FREE TOKEN DEPLOYS</strong> 
         </li>
         <br />
-        <li>
-        Additional team member accounts are € 99.00 EUR each per month and <strong>include a bonus <span class="badge badge-secondary">50</span> token deploys per agent per month recurring top-up!</strong>
-        </li>
       </ul>
     </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 mb-4">
       <ul>
         <li>
         <strong>Adhoc Token Topup Packs</strong>
@@ -66,27 +55,15 @@
         <li>
         <span class="badge badge-secondary">50</span> token deploy pack 99€ EUR
         </li>
-        <br/>
-        <li>
-        <a href="/contact"><strong>Contact Us </strong></a>for larger packs!
-        </li>
-        <br />
       </ul>
     </div>
-    <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
-      <center>
-        <div id="sumo" class="text-center">
-          <span data-sumome-listbuilder-embed-id="414282493e0b28df20fa32bf90d5b91c30924b011f1f937ef4817bb6372739b9"></span>
-        </div>
-      </center>
-      <!-- <form onsubmit="event.preventDefault(); secondstage('cta_email');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
-        <input type="email" name="try_email" id="cta_email" placeholder="Enter your email">
-        <input type="submit" value="{{ .Site.Params.pricing.btnTxt }}" style="cursor: pointer;">
-      </form> -->
-      <!-- <small>No strings. Full access inc. <strong>10</strong> free candidate screens. </small><br />
-      <small><strong>No credit card required.</strong></small> -->
-    </center>
-  </div>
+    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" style="">
+      <ul>
+        <li>
+        Additional team member accounts are € 99.00 EUR each per month and <strong>include a bonus <span class="badge badge-secondary">50</span> token deploys per agent per month recurring automated top-up!</strong>
+        </li>
+      </ul>
+    </div>
 </div>
 <div class="row">
     <div>
@@ -99,6 +76,4 @@
 </div>
 <!-- End container -->
 </section>
-{{ "<!-- End section -->" | safeHTML }}
-<script data-cookieconsent="functionality" async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='126d2915621f0a98259bca2e8035fd77c73cc92051d493d7e7d60ebeae1b27a6';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
 {{ end }}

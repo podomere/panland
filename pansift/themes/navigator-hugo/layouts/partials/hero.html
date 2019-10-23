@@ -24,25 +24,26 @@
         <br/>
         <strong><a href="https://github.com/apps/pansift" target="_blank" class="btn btn-lg btn-success mt-4"> <i style="font-size: 1.5em;" class="fab fa-github"></i><span style="font-size: 1.5em; font-weight: 900;"> Try PanSift App </span></a></strong>
         <h5 class="mt-4 mb-4" style="color: #fff;">
-          P.S. Remember you can pre-flight test <br/>on a personal *private* repository.
+          P.S. Run a pre-flight test <br/>on your *private* repository now!
         </h5>
         <a href="https://twitter.com/intent/retweet?tweet_id=1184838231944245249" target="_blank" class="btn btn-primary mb-3 mr-2" style="background-color: #222222; border-color: #1F6ABE;" >RT / Share <i class="fab fa-twitter"></i></a>
         <a href="https://www.linkedin.com/feed/update/urn:li:activity:6590595287096532992/" target="_blank" class="btn btn-primary mb-3 ml-2" style="background-color: #222222; border-color: #1F6ABE;" > On Linked <i class="fab fa-linkedin-in"></i></a>
-        <!-- <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Aactivity%3A6590595287096532992%2F&title=PanSift%20%3A%20Deterministic%20Continuous%20Security&summary=Deterministic%20Continuous%20Security%20delivers%20peace%20of%20mind.%20Token%20your%20build%20before%20someone%20else%20does&source=LinkedIn" target="_blank" class="btn btn-primary ml-2" style="background-color: #222222; border-color: #1F6ABE;" > On Linked <i class="fab fa-linkedin-in"></i></a> -->
       </center>
     </div>
-    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" style="">
+    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="">
       {{ with .Site.Params.hero.description | safeHTML }}
       <h5 style="color: #bdc3c7;">{{ . }}</h5>
       {{ end }}
     </div>
+    <br/>
+    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" style="padding-top: 50px; background-color: #222;">
+<div id="mapholder" style="padding-bottom: 50px; background-color: #222;">
+  <div id="mapid" style="border-radius: 50px; z-index: 100; height: 100px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
+</div>
+</div>
   </div>
 </div>
 </section>
-<div id="mapholder" style="padding-bottom: 100px; background-color: #222;">
-  <div id="mapid" style="z-index: 100; height: 200px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
-</div>
 {{ "<!-- Leaflet js -->" | safeHTML }}
-<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}"></script>
-<script data-cookieconsent="functionality" async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='126d2915621f0a98259bca2e8035fd77c73cc92051d493d7e7d60ebeae1b27a6';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}" type="text/javascript"></script>
 {{ end }}

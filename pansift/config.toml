@@ -27,7 +27,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         heading = "Peace of Mind for Defenders and Developers. Detect attackers with high fidelity breach detection."
-        description = "Nothing is 100% secure. <span style='color: white;'>Breaches are inevitable</span> so <span style='color: white;'>PanSift automagically honeytokens each build</span>. Use an attacker's <span style='color: white;'>kill-chain</span> against them as they pivot through your systems. Frictionless install (<span style='color: white;'>30 seconds or less</span>) on any private Github repository. No codebase access requested or required. Don't leave your organisation or customers exposed for <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days or more..."
+        description = "Nothing is 100% secure. <span style='color: white;'>Breaches are inevitable</span> so <span style='color: white;'>PanSift honeytokens (tripwires) your target deploy branch</span> per Pull Request. By using an attacker's <span style='color: white;'>kill-chain</span> against them, defenders detect breaches faster. With a frictionless install (<span style='color: white;'>30 seconds or less</span>) on any private Github repository (and no codebase access requested or required) you control the attackers path. Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days or more to find out you've been breached..."
         description2 = ""
         button  = true
         btnTxt = "Github Install"

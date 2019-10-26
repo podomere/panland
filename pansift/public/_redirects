@@ -1,6 +1,6 @@
-https://master--panland.netlify.com/* https://pansift/:splat 302!
-https://master--panland.netlify.com/ https://pansift 302!
-/why* https://pansift/:splat 302!
-/why/ https://pansift 302!
-/simulate* https://pansift/:splat 302!
-/simulate/ https://pansift 302!
+https://master--panland.netlify.com/* https://pansift.com/:splat 302!
+https://master--panland.netlify.com/ https://pansift.com 302!
+/why* https://pansift.com/:splat 302!
+/why/ https://pansift.com 302!
+/simulate* https://pansift.com/:splat 302!
+/simulate/ https://pansift.com 302!

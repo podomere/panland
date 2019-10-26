@@ -1,6 +1,6 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "PanSift. Continuous Deterministic Security."
+title = "PanSift. Deterministic Security."
 description = "Peace of Mind for Defenders and Developers. Detect, direct, and control attackers with continuous high fidelity breach detection."
 theme = "navigator-hugo"
 summaryLength = 30

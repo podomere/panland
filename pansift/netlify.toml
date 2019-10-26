@@ -1,7 +1,0 @@
-[[redirects]]
-  from = "https://master--panland.netlify.com"
-  to = "https://pansift.com"
-
-[[redirects]]
-  from = "https://master--panland.netlify.com/*"
-  to = "https://pansift.com/:splat"

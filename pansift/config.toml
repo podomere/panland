@@ -186,3 +186,19 @@ enableGitInfo = true
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
+
+[[redirects]]
+  from = "/simulate"
+  to = "/"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/why"
+  to = "/"
+  status = 302
+  force = true
+[[redirects]]
+  from = "https://master--panland.netlify.com/*"
+  to = "/:splat"
+  status = 302
+  force = true

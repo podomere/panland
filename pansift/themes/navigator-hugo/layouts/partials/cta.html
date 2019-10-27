@@ -1,24 +1,28 @@
 {{ if .Site.Params.cta.enable }}
 {{ "<!-- Start Call To Action -->" | safeHTML }}
-<section class="call-to-action section" style='background-image: url("{{ .Site.Params.cta.bg | absURL }}");height: 100%; width: 100%;'>
+<section class="call-to-action section lozad" data-background-image="{{ .Site.Params.cta.bg | absURL }}" style="background-color: #222222;" background-image="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
 <div class="container">
   <div class="row">
     <div class="col-md-12 text-center">
       {{ with .Site.Params.cta.title }}<h1>{{ . | safeHTML }}</h1>{{ end }}
-      {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
     </div>
     <div class="col-md-12">
       <center>
-        <form onsubmit="event.preventDefault(); secondstage('cta_email');" novalidate="novalidate" class="quicksignup-box" accept-charset="UTF-8">
-          <input type="email" name="try_email" id="cta_email" placeholder="Enter your email">
-          <input type="submit" value="{{ .Site.Params.cta.btnTxt }}" style="cursor: pointer;">
-        </form>
-      <small>No strings. Full access. <strong>No credit card required.</strong></small><br />
-      <small>Existing Customers <strong><a href="https://client.pansift.com/clients/sign_in">Login</a></strong></small>
+        <strong><a href="https://github.com/apps/pansift" target="_blank" onclick="ga('gtm1.send','event','Client','visit_install_from_homepage');" class="btn btn-lg btn-success mt-4"> <i style="font-size: 1.5em;" class="fab fa-github"></i><span style="font-size: 1.5em; font-weight: 900;"> {{ with .Site.Params.cta.btnTxt }}{{ . | safeHTML }}{{ end }}</span></a></strong>
       </center>
+    </div>
+    <div class="col-md-12 text-center pt-4">
+      {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
     </div>
   </div>
 </div>
 </section>
 {{ "<!-- Start Call To Action -->" | safeHTML }}
 {{ end }}
+<script>
+$(function () {
+      el = document.querySelectorAll('.lozad');
+      observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+      observer.observe();
+  });
+</script>

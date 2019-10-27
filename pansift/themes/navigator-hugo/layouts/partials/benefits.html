@@ -1,0 +1,92 @@
+{{ if .Site.Params.benefits.enable }}
+{{ "<!-- Start Benefits section -->" | safeHTML }}
+<section class="service-2 section bg-gray" id="benefits">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="title text-center">
+        {{ with .Site.Params.benefits.topTitle }}<h4>{{. | safeHTML}}</h4>{{ end }}
+        {{ with .Site.Params.benefits.title }}
+        <h2>{{.}}</h2>
+        <span class="border"></span>
+        {{ end }}
+        {{ with .Site.Params.benefits.subtitle }}<p>{{. | safeHTML}}</p>{{ end }}
+      </div>
+    </div>
+  </div> 
+  <!-- End row -->
+  <div class="row justify-content-center">
+    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
+      <div class="service-item text-center">
+        <span class="count">1.</span>
+        <i class="fas fa-user-shield"></i>
+        <h4>{{ with .Site.Params.benefits.onetitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <p>{{ with .Site.Params.benefits.one }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div> 
+    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
+      <div class="service-item text-center">
+        <span class="count">2.</span>
+        <i class="fas fa-tachometer-alt"></i>
+        <h4>{{ with .Site.Params.benefits.twotitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <p>{{ with .Site.Params.benefits.two }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
+      <div class="service-item text-center">
+        <span class="count">3.</span>
+        <i class="fas fa-exclamation-triangle"></i>
+        <h4>{{ with .Site.Params.benefits.threetitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <p>{{ with .Site.Params.benefits.three }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
+      <div class="service-item text-center">
+        <span class="count">4.</span>
+        <i class="fas fa-grin-wink"></i>
+        <h4>{{ with .Site.Params.benefits.fourtitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <p>{{ with .Site.Params.benefits.four }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
+      <div class="service-item text-center">
+        <span class="count">5.</span>
+        <i class="fas fa-gamepad"></i>
+        <h4>{{ with .Site.Params.benefits.fivetitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <p>{{ with .Site.Params.benefits.five }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
+      <div class="service-item text-center">
+        <span class="count">6.</span>
+        <i class="fas fa-assistive-listening-systems"></i>
+        <h4>{{ with .Site.Params.benefits.sixtitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <p>{{ with .Site.Params.benefits.six }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
+      <div class="service-item text-center">
+        <span class="count">7.</span>
+        <i class="fas fa-hands-helping"></i>
+        <h4>{{ with .Site.Params.benefits.seventitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <p>{{ with .Site.Params.benefits.seven }}<p>{{. | safeHTML}}</p>{{ end }}
+        </p>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+    <!-- End row -->
+  <div class="row justify-content-center mt-3">
+    <h4>{{ with .Site.Params.benefits.punchline }}{{. | safeHTML}}{{ end }}</h4>
+  </div>
+  <!-- End container -->
+</div>
+</section>
+{{ "<!-- End section -->" | safeHTML }}
+{{ end }}

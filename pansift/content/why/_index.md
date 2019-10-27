@@ -1,6 +1,6 @@
 ---
 title: Why
-date: 2018-07-07T15:45:06+06:00
+date: 2019-10-27T12:38:27+00:00
 draft: false
-description: Data backed decisions provide faster technical recruitment and a better candidate screening process.
+description:
 ---

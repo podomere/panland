@@ -36,23 +36,43 @@ enableGitInfo = true
         videoThumb = "images/slider/3_steps_v14.png"
         videoURL   = "https://www.youtube.com/embed/I6untRQ8O6U"
 
-    # CVs
     [params.aboutSm]
         enable  = true
         title   = "Because security can and should be <span style = 'color: #000;'>black</span> and <span style = 'color: #fff;'>white</span>."
         subtitle = "Combat F.U.D. with high fidelity and high cardinality breach detection."
  
-   # CVs
     [params.faketestimonials]
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Testimonials?"
         subtitle = "Amidst AI, disinformation, and bots.. <br/> can you spot the human?"
     punchline = "You can even figure out if your team need more security training too!"
-        one = "Some attackers are sentient, some are not. None of the humans above exist. They are all AI generated."
-        two = "There are critical parts of your systems or applications that no parties should have access to. When honeytokens are tripped it reveals not just the intent but presence of attackers."
-        three = "By using honey tokens per deploy, you get <span style='font-size: 1.1em;' class='badge badge-dark mb-2'>high fidelity</span>, and <span style='font-size: 1.1em;' class='badge badge-dark'>high cardinality</span> breach signal."
+        one = "Some attackers are sentient, some are not. None of the humans above exist. They are all AI generated. Separating the signal from the noise is hard."
+        two = "There are critical parts of your systems/apps that no external entities should have access to. Tripped honeytokens reveal not just the presence but the intent of attackers."
+        three = "By using honeytokens per pull request and deploy, you get <span style='font-size: 1.1em;' class='badge badge-dark mb-2'>high fidelity</span>, and <span style='font-size: 1.1em;' class='badge badge-dark'>high cardinality</span> breach signal."
 
+    [params.benefits]
+        topTitle =  "Trust but Verify"
+        enable  = true
+        title   = "The Benefits"
+        subtitle = "Control The Outcomes"
+        punchline = "Peace of mind for Defenders and Developers."
+        onetitle = "Detect"
+        one = "Low cost, high fidelity, <strong> and </strong>high yield breach detection"
+        fourtitle = "Ease"
+        four = "Easy install for security and non-security teams alike"
+        fivetitle = "Control"
+        five = "Detect, control, and direct attacks before they go deeper"
+        eighttitle = "Sentience"
+        eight = "Identify sentient attackers trying to move laterally"
+        sixtitle = "Amplify"
+        six = "Empower Blue Teams to demo and test capabilities"
+        twotitle = "Accelerate"
+        two = "Reduce incident containment times by detecting sooner"
+        threetitle = "Contain"
+        three = "Get ahead of breaches before exfiltration occurs"
+        seventitle = "Train"
+        seven = "Target security training budget on staff who require it"
 
     # NetDevOps
     [params.netdevops]
@@ -102,9 +122,9 @@ enableGitInfo = true
     [params.cta]
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
-        title   = "Hiring or screening engineers ?"
-        subtitle= "Take a quick test flight with 10 free screens."
-        btnTxt = "Try it for free"
+        title   = "Increase your Security Observability Now"
+        subtitle= "Run a free 30s pre-flight test on a personal private repository !"
+        btnTxt = "Github App Install"
 
     # Pricing
     [params.pricing]

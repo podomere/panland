@@ -50,13 +50,12 @@
     <div class="clearfix"></div>
   </div>
   <div class="row justify-content-center mt-3">
-    {{ with .Site.Params.faketestimonials.punchline }}<p>{{. | safeHTML}}<p>{{ end }}
+    <h4>{{ with .Site.Params.faketestimonials.punchline }}{{. | safeHTML}}{{ end }}</h4>
   </div>
   <!-- End container -->
 </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
-<script data-cookieconsent="functionality" src="{{ "plugins/lozad/lozad.min.js" | absURL }}"></script>
 <script>
   function getRandomInt(min, max) {
     min = Math.ceil(min);

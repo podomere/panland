@@ -66,7 +66,7 @@
     $('#customers').empty();
     var customers = Array(3).fill(0);
     $.when($(customers).each(function (index){
-      $("#customers").append("<div class='col-xl-4 col-lg-4 col-md-6 col-xs-12 text-center'><h2 id='custname_'"+index.toString()+"'></h2><a id='custlink_'"+index.toString()+"' href='#' \
+      $("#customers").append("<div class='col-xl-4 col-lg-4 col-md-4 col-xs-12 text-center'><h2 id='custname_'"+index.toString()+"'></h2><a id='custlink_'"+index.toString()+"' href='#' \
           data-toggle='tooltip' data-placement='left' title='Nope, try again!'><img id='custimage_'"+index.toString()+"' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' \
           data-src='' class='img-responsive rounded-circle lozad'></a><br/><small id='custtitle_'"+index.toString()+"'></small><h4 id='custcompany_'"+index.toString()+"'></h4><br/></br></div>");
 

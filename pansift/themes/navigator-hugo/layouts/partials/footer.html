@@ -4,34 +4,38 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center" style="">
-        <h3>Quick Links</h3>
-        <ul>
-          {{ range .Site.Menus.quick }}
-          <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
-        </ul>
-        <br/>
-        <a href="https://twitter.com/intent/retweet?tweet_id=1187392991813603328" target="_blank" class="btn btn-primary mb-2 mr-2" style="background-color: #38A1F3; border-color: #1F6ABE;" >RT / Share <i class="fab fa-twitter"></i></a>
+          <h3>Quick Links</h3>
+        <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center" style="">
+          <ul>
+            {{ range .Site.Menus.quick }}
+            <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          <br/>
+          <a href="https://twitter.com/intent/retweet?tweet_id=1187392991813603328" target="_blank" class="btn btn-primary mb-2" style="background-color: #38A1F3; border-color: #1F6ABE;" >RT / Share <i class="fab fa-twitter"></i></a>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center" style="">
-        <h3>About</h3>
-        <ul>
-          {{ range .Site.Menus.about }}
-          <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
-          <li>
-          <a href="https://app.pansift.com/privacy/privacy.html" target="_blank">Privacy Policy <i class="fas fa-external-link-alt"></i></a>
-          </li>
-          <li>
-          <a href="https://defensible.ie" target="_blank">Defensible Limited <i class="fas fa-external-link-alt"></i></a>
-          </li>
-        </ul>
-        <br/>
-        <a href="https://www.linkedin.com/feed/update/urn:li:activity:6593457294820810752" target="_blank" class="btn btn-primary mb-2 ml-2" style="background-color: #0077B5; border-color: #1F6ABE;" > On Linked <i class="fab fa-linkedin-in"></i></a>
+          <h3>About</h3>
+        <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center" style="">
+          <ul>
+            {{ range .Site.Menus.about }}
+            <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+            <li>
+            <a href="https://app.pansift.com/privacy/privacy.html" target="_blank">Privacy Policy <i class="fas fa-external-link-alt"></i></a>
+            </li>
+            <li>
+            <a href="https://defensible.ie" target="_blank">Defensible Ltd <i class="fas fa-external-link-alt"></i></a>
+            </li>
+          </ul>
+          <br/>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:6593457294820810752" target="_blank" class="btn btn-primary mb-2" style="background-color: #0077B5; border-color: #1F6ABE;" > On Linked <i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="">
         <p class="text-center">CRO: 610070, TAX / VAT: IE 3490731JH</p>
@@ -75,28 +79,28 @@
      s1.setAttribute('crossorigin','*');
      s0.parentNode.insertBefore(s1,s0);
      })();
-   </script>
-   <script data-cookieconsent="usability" type="text/javascript" async>
-     window['_fs_debug'] = false;
-     window['_fs_host'] = 'fullstory.com';
-     window['_fs_org'] = 'PAE3E';
-     window['_fs_namespace'] = 'FS';
-     (function(m,n,e,t,l,o,g,y){
-       if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-       g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-       o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_host+'/s/fs.js';
-       y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-       g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-       g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-       g.log = function(a,b) { g("log", [a,b]) };
-       g.consent=function(a){g("consent",!arguments.length||a)};
-       g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-       g.clearUserCookie=function(){};
-     })(window,document,window['_fs_namespace'],'script','user');
-   </script>
-   <!-- End Full Story -->
-   <!-- Cookiebot -->
-   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="36478925-83e6-4823-8253-383befc9659f" type="text/javascript" async></script>
-   <!-- Cookiebot -->
+</script>
+<script data-cookieconsent="usability" type="text/javascript" async>
+  window['_fs_debug'] = false;
+  window['_fs_host'] = 'fullstory.com';
+  window['_fs_org'] = 'PAE3E';
+  window['_fs_namespace'] = 'FS';
+  (function(m,n,e,t,l,o,g,y){
+   if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+   g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+   o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_host+'/s/fs.js';
+   y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+   g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+   g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+   g.log = function(a,b) { g("log", [a,b]) };
+   g.consent=function(a){g("consent",!arguments.length||a)};
+   g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+   g.clearUserCookie=function(){};
+   })(window,document,window['_fs_namespace'],'script','user');
+</script>
+<!-- End Full Story -->
+<!-- Cookiebot -->
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="36478925-83e6-4823-8253-383befc9659f" type="text/javascript" async></script>
+<!-- Cookiebot -->
  </body>
  </html>

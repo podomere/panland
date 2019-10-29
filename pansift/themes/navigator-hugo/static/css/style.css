@@ -1274,7 +1274,8 @@ a:focus, a:hover {
   position: absolute;
   top: 0;
   left: 20px;
-  color: #f3f1f1;
+  /* color: #f3f1f1; */
+  color: #bdc3c7;
   font-weight: 700;
 }
 

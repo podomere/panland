@@ -248,7 +248,7 @@
 
   if(document.getElementById("mapid") !== null){
     var mymap = null;
-    var  mymap = L.map('mapid',{zoomControl: false, minZoom: 2, maxZoom: 2, zoom: 2}).setView([53, 6], 2);
+    var  mymap = L.map('mapid',{attributionControl:false, zoomControl: false, minZoom: 2, maxZoom: 2, zoom: 2}).setView([53, 6], 2);
     L.tileLayer('https://api.mapbox.com/styles/v1/pansift/cjj4p9yei4ig22srzi0315fpm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGFuc2lmdCIsImEiOiJjamo0NTZmcGUxZ2d1M2txZzFlYWFzcWF5In0.SP3kz57m0HFfNU_EubbMYA').addTo(mymap);
     function getRandomInRange(from, to, fixed) {
       return (Math.random() * (to - from) + from).toFixed(fixed) * 1;

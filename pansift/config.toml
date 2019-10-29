@@ -27,8 +27,8 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         heading = "Peace of mind for Defenders + Devs. Detect, direct, and control attackers with high fidelity breach detection."
-        description = "Nothing is 100% secure. <span style='color: white;'>Breaches are inevitable</span>. By using an attacker's <span style='color: white;'>kill-chain</span> against them, defenders detect breaches faster. <span style='color: white;'>PanSift honeytokens (tripwires) your target deploy branch</span> per pull request. With a frictionless install (<span style='color: white;'>30 seconds or less</span>) on any <span style='color: white;'>private</span> Github repository (with no codebase access requested or required), you can control an attackers path. <br/>Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days or more to find out you've been breached..."
-        description2 = ""
+        description = "Nothing is 100% secure. <span style='color: white;'>Breaches are inevitable</span>. PanSift auto-inserts unique <span style='color: white;'>honeytokens</span> (lures/tripwires) on your nominated <span style='color: white;'>branch</span> per <span style='color: white;'>Pull Request</span>.  By using an attacker's <span style='color: white;'>kill-chain</span> against them, defenders <span style='color: white;'>detect</span> breaches faster." 
+        description2 = "With a frictionless install (<span style='color: white;'>30 seconds or less</span>) on any <span style='color: white;'>private</span> Github repository (with no codebase access requested or required), you can control an attackers path. Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days or more to find out you've been breached..."
         button  = true
         btnTxt = "Github Install"
         btnTest = "Low risk test on a personal private repository" 
@@ -55,7 +55,7 @@ enableGitInfo = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "The Benefits"
-        subtitle = "Control The Outcomes"
+        subtitle = "Control Outcomes"
         punchline = "Peace of mind for Defenders and Developers."
         onetitle = "Detect"
         one = "Low cost <strong>high yield</strong> breach detection"
@@ -123,7 +123,7 @@ enableGitInfo = true
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
         title   = "Increase your Security Observability Now"
-        subtitle= "Run a free 30s pre-flight test on a personal private repository !"
+        subtitle= "Run a free <strong>30 second</strong> pre-flight test on a personal <strong>private</strong> repository !"
         btnTxt = "Github App Install"
 
     # Pricing

@@ -28,11 +28,11 @@
       </div>
         <br/>
         <strong>
-          <a href="https://github.com/apps/pansift" onclick="ga('gtm1.send','event','Client','visit_install_from_pricing');" target="_blank" class="btn btn-lg btn-success mb-4"> <i style="font-size: 1.5em;" class="fab fa-github"></i><span style="font-size: 1.5em; font-weight: 900;"> Github App Install </span>
+          <a href="https://github.com/apps/pansift" onclick="ga('gtm1.send','event','Client','visit_install_from_pricing');" target="_blank" class="btn btn-lg btn-success mb-4"> <i style="font-size: 1.5em;" class="fab fa-github"></i><span style="font-size: 1.5em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }}</span>
           </a>
         </strong>
           <br/>
-          <small>P.S. Run a free 30s pre-flight test on a personal private repository now!</small>
+          <small>P.S. Run a free 30 second pre-flight test on a personal private repository now!</small>
       </center>
     </div>
 
@@ -74,7 +74,7 @@
     <div>
     <br/>
     <br/>
-  <strong>Note:</strong> Tokens are rotated per <strong>Pull Request</strong> and target the configured base branch per repository. Repository default token branch is <span style='font-size: 1em;' class='badge badge-secondary'>master</span> but configurable per repository. 
+  <strong>Note:</strong> Tokens are rotated per <strong>Pull Request</strong> and target the <strong>nominated</strong> branch per repository. Repository default tokened branch is <span style='font-size: 1em;' class='badge badge-secondary'>master</span> but fully configurable. 
     </div>
 </div>
 <!-- End row -->

@@ -23,6 +23,8 @@ enableGitInfo = true
     dateFormat = "6 January 2006"
     footerDescription = "Because security can (and should) be black and white."
     btnTxt = "PanSift Github App"
+    marketing_tweet = "1189663292312211456"
+    marketing_linkedin = "6595640699503288320"
 
     # Hero Area Section
     [params.hero]

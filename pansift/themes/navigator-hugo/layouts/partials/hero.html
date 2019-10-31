@@ -26,8 +26,8 @@
         <h5 class="mt-4 mb-4" style="color: #fff;">
           P.S. Run a free 30 second pre-flight test on a personal private repository now!
         </h5>
-        <a href="https://twitter.com/intent/retweet?tweet_id=1187392991813603328" target="_blank" class="btn btn-primary mb-3 mr-2" style="background-color: #222222; border-color: #1F6ABE;" >RT / Share <i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/feed/update/urn:li:activity:6593457294820810752" target="_blank" class="btn btn-primary mb-3 ml-2" style="background-color: #222222; border-color: #1F6ABE;" > On Linked <i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/intent/retweet?tweet_id={{ with .Site.Params.marketing_tweet | safeHTML }}{{ . }}{{ end }}" target="_blank" class="btn btn-primary mb-3 mr-2" style="background-color: #222222; border-color: #1F6ABE;" >RT / Share <i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:{{ with .Site.Params.marketing_linkedin | safeHTML }}{{ . }}{{ end }}" target="_blank" class="btn btn-primary mb-3 ml-2" style="background-color: #222222; border-color: #1F6ABE;" > On Linked <i class="fab fa-linkedin-in"></i></a>
       </center>
     </div>
     <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="">

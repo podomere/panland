@@ -28,7 +28,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
       <div class="tab-content" id="myTabContent">
         {{ range $index, $element := .Site.Data.howitworks.tabItem }}
         <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" role="tabpanel" aria-labelledby="{{.id}}-tab" id="{{.id}}">
@@ -50,12 +50,12 @@
     <div class="col">
       <hr>
       <div class="title" style="padding: 0 !important;">
-        <h3>Watch an Example Rapid Install</h3>
+        <h4>Watch an Example Rapid Install and Tokening</h4>
       </div>
     </div>
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div id="video-bound" class="text-center">
-        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" controls preload="none" data-setup='{}' poster="">
+        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" controls preload="none" data-setup='{}' poster="/images/hero/3_steps_v15.png">
         <source src="https://pansift.com/video/ps_intro_video_v2_opt.mp4" type='video/mp4'>
         <p class="vjs-no-js">
         To view this video please enable JavaScript, and consider upgrading to a web browser that

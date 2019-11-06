@@ -237,9 +237,9 @@
         end: 'playing',
         align: 'top'
                   }, {
-                    start: '59',
+                    start: '150',
         content: overlay_content,
-        end: '61',
+        end: '155',
         align: 'top'
                   }]
       });

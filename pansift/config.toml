@@ -150,13 +150,13 @@ enableGitInfo = true
 [menu]
     # Navbar Menus
     [[menu.nav]]
-        name    = "Testimonials"
+        name    = "Deception"
         url     = "/faketestimonials"
         weight  = 2
-    #[[menu.nav]]
-    #    name    = "How"
-    #    url     = "/howitworks"
-    #    weight  = 2
+    [[menu.nav]]
+        name    = "How it Works"
+        url     = "/howitworks"
+        weight  = 1
     #[[menu.nav]]
     #    name    = "Why"
     #    url     = "/why"
@@ -164,7 +164,7 @@ enableGitInfo = true
     [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"
-        weight  = 1
+        weight  = 3
     [[menu.nav]]
         name    = "Contact"
         url     = "/contact"
@@ -172,7 +172,7 @@ enableGitInfo = true
     [[menu.nav]]
         name    = "Training"
         url     = "/training"
-        weight  = 3
+        weight  = 4
 #    [[menu.nav]]
 #        name    = "Talent"
 #        url     = "/blog"
@@ -184,7 +184,7 @@ enableGitInfo = true
         url     = "/pricing"
         weight  = 1
     [[menu.quick]]
-        name    = "Testimonials"
+        name    = "Deception"
         url     = "/faketestimonials"
         weight  = 3
     [[menu.quick]]

@@ -8,7 +8,6 @@
   <div class="row">
     <div class="col">
       <div class="title" style="padding: 0 !important;">
-        {{ with .Site.Data.howitworks.topTitle }}<h4>{{ . }}</h4>{{ end }}
         {{ with .Site.Data.howitworks.title }}
         <h2>{{ . }}</h2>
         <span class="border"></span>
@@ -18,7 +17,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-6 col-md-12 mt-3">
+    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mt-3">
       <div class="commonTab">
         <ul role="tablist" class="nav nav-tabs justify-content-center" id="myTab">
           {{ range $index, $element := .Site.Data.howitworks.tabItem }}
@@ -27,24 +26,37 @@
           </li>
           {{ end }}
         </ul>
-        <div class="tab-content" id="myTabContent">
-          {{ range $index, $element := .Site.Data.howitworks.tabItem }}
-          <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" role="tabpanel" aria-labelledby="{{.id}}-tab" id="{{.id}}">
-            <div class="row">
-              <div class="col-md-12 align-self-center">
-                <h3>{{ with .heading }}{{ . }}{{ end }}</h3>
-                {{ with .content }}<p style="font-size: 1.2em;">{{ . | safeHTML }}{{ end }}<a href="https://github.com/apps/pansift">{{ with .icon }}<i class="{{ . | safeHTML }} mt-1 ml-1"></i>{{ end }}</a></p>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-        </div>
       </div>
     </div>
-    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3">
+      <div class="tab-content" id="myTabContent">
+        {{ range $index, $element := .Site.Data.howitworks.tabItem }}
+        <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" role="tabpanel" aria-labelledby="{{.id}}-tab" id="{{.id}}">
+          <div class="row">
+            <div class="col-xl-8 col-md-6 align-self-center">
+              <h3 class="text-center">{{ with .heading }}{{ . }}{{ end }}</h3>
+              {{ with .content }}<p style="font-size: 1.2em;">{{ . | safeHTML }}{{ end }}</p>
+            </div>
+            <div class="col-xl-4 col-md-6 align-self-center">
+              <center><a href="https://github.com/apps/pansift">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <hr>
+      <div class="title" style="padding: 0 !important;">
+        <h3>Watch an Example Rapid Install</h3>
+      </div>
+    </div>
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div id="video-bound" class="text-center">
-        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" style="max-width: 720px;" controls preload="none" data-setup='{}' poster="/images/hero/3_steps_v15.png">
-        <source src="https://pansift.com/video/ps_intro_video_v1_opt.mp4" type='video/mp4'>
+        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" controls preload="none" data-setup='{}' poster="">
+        <source src="https://pansift.com/video/ps_intro_video_v2_opt.mp4" type='video/mp4'>
         <p class="vjs-no-js">
         To view this video please enable JavaScript, and consider upgrading to a web browser that
         <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>

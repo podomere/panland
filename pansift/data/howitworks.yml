@@ -1,38 +1,28 @@
 enable    : true
-topTite   : Trust But Verify
-title     : Simulation Based Screening
-subtitle  : Uncover the difference between theory and practice!
+topTitle   : Deception Tech
+title     : How it Works
+subtitle  : PanSift installs as a Github App on repositories / branches.
 tabItem   :
-  - id        : multi
-    title     : Multi-Skilling
-    heading   : Real world tasks evaluate skills
+  - id        : attack
+    title     : 1. Attackers
+    heading   : Phases of an Attack.
     content   : >
-     Choose from pre-defined simulations for screening candidates. Alternatively you can drag and drop skills (from our library) to build your own simulations.
-    image     : images/howitworks/cogs.jpg
-    icon      : fas fa-cogs
-
-  - id        : browser
-    title     : Browser Based
-    heading   : Immediate Access
-    content   : >
-      Candidates / applicants must engage in real-world tasks and simulations to demonstrate their skills and unlock answers. Labs ( CLI / GUI ) are via browser on standard web ports.
+      It is inevitable that attackers will exploit a vulnerability and get some level of initial access to your infrastructure, systems, or app. They don't stay put and continue to penetrate deeper, move laterally, and attempt to escalate privileges. They harvest and access credentials, API keys, and hostnames related to key accounts or systems.
     image     : images/howitworks/cloud.jpg
     icon      : fas fa-cloud-upload-alt
 
-
-  - id        : time
-    title     : Time Boxed
-    heading   : Benchmarked proficiency
+  - id        : token
+    title     : 2. Honeytokens
+    heading   : Inexpensive Lures with Super Signal !
     content   : >
-     Candidates are also rated on speed. Questions are timed. A 30-40 minute screen made up of 10-15 simulated skills is recommended. Set a deadline, get results!
+      A honeytoken is a digital lure or tripwire. They can be a pseudo-valid usernames/passwords, an API key, a hostname, a PDF file, or other digital asset. They are designed so that once they are accessed or used, they alert your security team. A good example is a set of AWS client/secret keys left in a configuration file that no one but trusted staff should have access to. Once used or accessed, the honeytoken is tripped, and it's time to react to this high-fidelity signal of intrusion.
     image     : images/howitworks/hourglass.jpg
     icon      : fas fa-hourglass-half
 
-  - id        : candidate
-    title     : Candidate Experience
-    heading   : Maximum flexibility
+  - id        : install
+    title     : 3. Simple Install
+    heading   : Nominated Branch and per Pull Request
     content   : >
-     Candidates get to demonstrate their skills in real world scenarios. They can start, stop, and update answers (or do research), all the way up to the deadline. Hiring teams can send all applicants (or a subset of candidates) a screen at any stage of the hiring pipeline.
-    image     : images/howitworks/happyface.jpg
-    icon      : far fa-smile-wink
-
+      <strong>PanSift does not need nor request access to your code.</strong> PanSift automatically honeytokens a specific file per Pull Request. You can leave the tokens there or move them to other parts of your build during deploys, dress them up as you see fit! Use PanSift across <strong>private</strong> repositories/branches that are subsequently deployed anywhere where there is risk of exploit, attack, or compromise such as Internet facing SaaS, cloud infrastructure, or restricted internal systems or apps.
+    image     : images/howitworks/cogs.jpg
+    icon      : fas fa-cogs

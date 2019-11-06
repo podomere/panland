@@ -8,7 +8,6 @@
   <div class="row">
     <div class="col">
       <div class="title" style="padding: 0 !important;">
-        {{ with .Site.Data.simulate.topTitle }}<h4>{{.}}</h4>{{ end }}
         {{ with .Site.Data.howitworks.topTitle }}<h4>{{ . }}</h4>{{ end }}
         {{ with .Site.Data.howitworks.title }}
         <h2>{{ . }}</h2>
@@ -33,8 +32,8 @@
           <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" role="tabpanel" aria-labelledby="{{.id}}-tab" id="{{.id}}">
             <div class="row">
               <div class="col-md-12 align-self-center">
-                <h1>{{ with .heading }}{{ . }}{{ end }}</h1>
-                {{ with .content }}<p style="font-size: 1.5em;">{{ . | safeHTML }}{{ end }}<a href="/search">{{ with .icon }}<i class="{{ . | safeHTML }} mt-1 ml-1"></i>{{ end }}</a></p>
+                <h3>{{ with .heading }}{{ . }}{{ end }}</h3>
+                {{ with .content }}<p style="font-size: 1.2em;">{{ . | safeHTML }}{{ end }}<a href="https://github.com/apps/pansift">{{ with .icon }}<i class="{{ . | safeHTML }} mt-1 ml-1"></i>{{ end }}</a></p>
               </div>
             </div>
           </div>

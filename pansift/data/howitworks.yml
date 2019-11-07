@@ -7,7 +7,7 @@ tabItem   :
     title     : 1. Attacker Phases
     heading   : Operating in a post-breach world.
     content   : >
-      It is inevitable that attackers will exploit a vulnerability and get some level of initial access to your infrastructure, systems, or app. They don't sit still and continue to penetrate deeper, move laterally, and attempt to escalate privileges to gather data. They harvest access credentials, API keys, and hostnames related to key accounts or systems.
+      It is inevitable that attackers will exploit a vulnerability and get some level of initial access to your infrastructure, systems, or apps. They don't sit still and continue to penetrate deeper, move laterally, and attempt to escalate privileges to gather data. They harvest access credentials, API keys, and hostnames related to key accounts or systems.
     image     : images/howitworks/cloud.jpg
     icon      : fas fa-biohazard
 

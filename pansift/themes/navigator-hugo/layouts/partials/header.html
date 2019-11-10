@@ -88,10 +88,11 @@
     {
       "@context": "http://schema.org/",
       "@type": "VideoObject",
-      "contentUrl": "https://sim.pansift.com/hiring_v13.mp4",
+      "description": "How does PanSift work?",
+      "contentUrl": "https://pansift.com/video/ps_intro_video_v2_opt.mp4",
       "playerType": "HTML5",
-      "uploadDate": "2018-08-25 18:21:23 +0100",
-      "thumbnailUrl": "/images/hero/3_steps_v15.png",
+      "uploadDate": "2019-11-10 18:21:23 +0100",
+      "thumbnailUrl": "https://pansift.com//images/hero/3_steps_v15.png",
       {{ if isset .Params "subtitle" }} "description": "{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", {{ else }} "description": "{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}",{{ end }}
       "name": "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}"
     }

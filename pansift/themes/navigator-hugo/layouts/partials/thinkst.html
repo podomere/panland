@@ -5,17 +5,14 @@
   <div class="row">
     <div class="col-12 col-md-12 text-center">
       <a href="https://canary.tools/?utm_source=pansift&utm_medium=web&utm_campaign=pansift_reseller" target="_blank">
-      {{ with .Site.Params.thinkst.title }}
-      <h1>{{ . | safeHTML }}</h1>
-      {{ end }}
-      {{ with .Site.Params.thinkst.subtitle }}
-      <h5>{{ . | safeHTML }}</h5>
-      {{ end }}
-      </br>
-      <img class="d-inline img-responsive rounded lozad" width="200" height="32" data-src="/images/thinkst/canary_logo_light_2x_color.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></img>
+        {{ with .Site.Params.thinkst.subtitle }}
+        <h5>{{ . | safeHTML }}</h5>
+        {{ end }}
+        <img class="mb-4 mr-3 d-inline-block img-responsive rounded lozad" width="200" height="32" data-src="/images/thinkst/canary_logo_light_2x_color.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></img>
+        {{ with .Site.Params.thinkst.title }}
+        <h1 class="d-inline-block">{{ . | safeHTML }}</h1>
+        {{ end }}
       </a>
-      </br>
-      </br>
     </div>
   </div>
 </div>

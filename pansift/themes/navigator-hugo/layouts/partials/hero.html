@@ -12,10 +12,12 @@
         </strong></h1>
         <br/>
         <div id = "brands" class="text-center" style="">
-          <img class="ml-2 mr-2" src="/images/hero/github.svg" height="62" width="64"></img>
-          <img class="ml-2 mr-2" src="/images/hero/aws.svg" height="62" width="64"></img>
-          <img class="ml-2 mr-2" src="/images/hero/address-card.svg" height="62" width="64"></img>
-          <img class="ml-2 mr-2" src="/images/hero/code-branch.svg" height="62" width="64"></img><br/><br/>
+          <img class="ml-2 mr-2" title="Github" alt="Github" src="/images/hero/github.svg" height="64" width="64"></img>
+          <span style="font-size: 2em; color: #ffffff;">+</span>
+          <img class="ml-2 mr-2" title="Thinkst Canary Tools" alt="Thinkst Canary Tools" src="/images/hero/canary_square_white_small.png" height="64" width="64"></img>
+          <span style="font-size: 2em; color: #ffffff;">=</span>
+          <img class="ml-2 mr-2" title="Defense" alt="Defense" src="/images/hero/fa-shield-alt.svg" height="64" width="64"></img>
+          <br/><br/>
         </div>
       </div>
     </div>
@@ -31,19 +33,15 @@
       </center>
     </div>
     <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="">
-      {{ with .Site.Params.hero.description | safeHTML }}
-      <h5 style="color: #bdc3c7;">{{ . }}</h5>
-      {{ end }}
+      <h5 style="color: #bdc3c7;">
+      {{ with .Site.Params.hero.description | safeHTML }} {{ . }} {{ end }}
+      {{ with .Site.Params.hero.description2 | safeHTML }} {{ . }} {{ end }}
+      </h5>
     </div>
     <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" style="padding-top: 10px; background-color: #222;">
       <div id="mapholder" style="padding-bottom: 50px; background-color: #222;">
         <div id="mapid" style="z-index: 100; height: 100px; width: 100%; outline: 0; border-color: #3a96cf; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
       </div>
-    </div>
-    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="">
-      {{ with .Site.Params.hero.description2 | safeHTML }}
-      <h5 style="color: #bdc3c7;">{{ . }}</h5>
-      {{ end }}
     </div>
   </div>
 </div>

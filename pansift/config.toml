@@ -31,7 +31,7 @@ enableGitInfo = true
         enable  = true
         heading = "Peace of mind for Defenders + Devs. Auto-insert unique honeytokens (lures/tripwires) per deploy."
         description = "Nothing is 100% secure. <span style='color: white;'>Breaches are inevitable</span>. Detect, direct, and <span style='color: white;'>control</span> attackers with high fidelity breach detection.  By using an attacker's movements and reconnaissance against them, defenders <span style='color: white;'>detect</span> and <span style='color: white;'>contain</span> breaches faster." 
-        description2 = "With a frictionless install (<span style='color: white;'>30 seconds or less</span>) on any <span style='color: white;'>private</span> Github repository (with <span style='color: white;'>no codebase access</span> requested or required), you can control an attackers path. Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days or more to find out you've been breached..."
+        description2 = "Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days or more to find out you've been breached... install PanSift and start tokening your Github deploys now!"
         button  = true
         btnTxt = "Github Install"
         btnTest = "Low risk test on a personal private repository" 
@@ -43,6 +43,11 @@ enableGitInfo = true
         enable  = true
         title   = "Because security can and should be <span style = 'color: #000;'>black</span> and <span style = 'color: #fff;'>white</span>."
         subtitle = "Combat F.U.D. with high fidelity and high cardinality breach detection."
+
+    [params.thinkst]
+        enable  = true
+        title   = "<span style = 'color: #fff;'>Know. When it matters!</span>"
+        subtitle = "PanSift integrates free and commercial honeytokens from the industry standard provider, Thinkst."
  
     [params.faketestimonials]
         topTitle =  "Trust but Verify"

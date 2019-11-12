@@ -131,7 +131,7 @@ enableGitInfo = true
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
         title   = "Increase your Security Observability Now"
-        subtitle= "Run a free <strong>30 second</strong> pre-flight test on a personal <strong>private</strong> repository !"
+        subtitle= "Run a free <strong>30 second</strong> pre-flight test on your personal <strong>private</strong> repository !"
         btnTxt = "Github App Install"
 
     # Pricing

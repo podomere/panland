@@ -159,7 +159,7 @@ enableGitInfo = true
         url     = "/faketestimonials"
         weight  = 2
     [[menu.nav]]
-        name    = "How it Works"
+        name    = "How"
         url     = "/howitworks"
         weight  = 1
     #[[menu.nav]]
@@ -173,6 +173,10 @@ enableGitInfo = true
     [[menu.nav]]
         name    = "Contact"
         url     = "/contact"
+        weight  = 6
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "/blog"
         weight  = 5
     [[menu.nav]]
         name    = "Training"

@@ -1,5 +1,6 @@
 ---
 layout: post
+date: "2019-11-20T13:53:40"
 subtitle: Deterministic Security
 author: Donal
 tags:
@@ -23,7 +24,7 @@ tags:
   - blue team
   - defense
 image: /images/blog/redkeys.jpg
-published: false
+published: true
 title: 'No More FUD'
 ---
 

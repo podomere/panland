@@ -1,5 +1,6 @@
 ---
 author: Donal
+date: "2019-07-20T08:43:40"
 published: true
 title: Why CVs and Résumés are broken.
 subtitle: And how simulations solve for Proof of Experience.
@@ -17,7 +18,7 @@ tags:
   - first principles
   - screening as a service
   - sourcing as a service
-image: /images/blog/cv_broken.jpg
+image: /images/blog/gigo.jpg
 ---
 This may be a little difficult to swallow but CVs and resumes are fundamentally broken. Apart from the fact that it's difficult for someone to describe their own capabilities, it's even harder to do so **objectively**. During a job search, a candidate knows they're in a competitive environment so there's always pressure to inflate one's expertise a little to get noticed. Here's where [GIGO](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) kicks in yet few are willing to acknowledge its existence. Let me explain...
 

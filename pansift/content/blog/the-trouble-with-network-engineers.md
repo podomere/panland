@@ -1,5 +1,6 @@
 ---
 layout: post
+date: "2019-01-20T08:43:40"
 published: true
 title: The trouble with Network Engineers.
 author: Donal

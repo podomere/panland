@@ -1,5 +1,6 @@
 ---
 layout: post
+date: "2019-10-20T08:43:40"
 subtitle: Navigating and Hacking a New Landscape
 author: Donal
 tags:
@@ -22,7 +23,7 @@ tags:
   - cover letter
 image: /images/blog/tips.jpeg
 published: true
-title: '11 Tips, Tricks, and Tactics to Get Hired'
+title: '11 Tips, Tricks, and Tactics'
 ---
 The Internet (*and* more so the Web) is full of noise. People's minds are constantly bombarded and they struggle to decode clear and actionable signals. Remember this when you are trying to get **your signal** through...
 

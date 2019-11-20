@@ -1,10 +1,10 @@
 ---
 layout: post
 published: true
-title: Overcoming Survivor Bias When Hiring.
+title: Overcoming Survivor Bias.
 subtitle: Fundamental Attribution Errors.
 image: /images/blog/survivor_bias.png
-date: '2018-04-27'
+date: "2019-11-19T08:43:40"
 author: Donal
 tags:
   - cv

@@ -6,7 +6,7 @@
 <section class="blog section" id="blog">
     <div class="container">
         <div class="row">
-            {{ range (.Paginator 6).Pages }}
+            {{ range (.Paginator 12).Pages }}
             {{ "<!-- single blog post -->" | safeHTML }}
             <article class="col-12 col-md-4">
                 <div class="post-item">
@@ -41,8 +41,8 @@
 </section>
 {{ "<!-- Blog Section End -->" | safeHTML }}
 
-{{ partial "about-sm.html" . }}
+<!-- {{ partial "about-sm.html" . }} -->
 
-<!-- {{ partial "cta.html" . }} -->
+{{ partial "cta.html" . }}
 
 {{ partial "footer.html" . }}

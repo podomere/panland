@@ -30,7 +30,7 @@ title: No More FUD
 
 In 1974 Jerome H Saltzer and Michael D. Schroeder wrote about [**The Protection of Information in Computer Systems** ](http://web.mit.edu/Saltzer/www/publications/protection/) and to this day, not a lot has changed. 
 
-You don't have to be Grace Hopper, Joanna Rutkowska, Dan Geer, Marcus Ranum, or Bruce Schneier to know one thing is certain, the nature of interconnected systems present an intrinsic risk (due to their interdependency). As Dan Geer points out, "risk is a factor of dependency". 
+You don't have to be Grace Hopper, Joanna Rutkowska, Dan Geer, Marcus Ranum, or Bruce Schneier to know one thing is certain, the nature of interconnected systems presents an intrinsic risk (due to their interdependency). As Dan Geer points out, "risk is a factor of dependency". 
 
 So it is that we as digital defenders, attempt to facilitate decision making and provide some semblance of defensibility (while constrained by finite time and resources). Be it for actors, agents, or assets, we seek to quantify risk in a mostly digital realm. Alas, as we strive to keep pace with change, the fabric of our code, systems, and their transitive trusts quickly elude our cognitive grasp. Interconnectivity provides utility, but when aspiring for observability, we create ourselves ever more challenges. Rarely do we run less code or decrease attack surfaces.
 

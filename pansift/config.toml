@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "PanSift. Deterministic Security."
 description = "Peace of Mind for Defenders and Developers. Detect, direct, and control attackers with continuous high fidelity breach detection."
 theme = "navigator-hugo"
-summaryLength = 30
+summaryLength = 15
 enableGitInfo = true
 
 [sitemap]

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2019-11-20T13:53:40'
-subtitle: Deterministic Security
+subtitle: Deterministic Security Spaces
 author: Donal
 tags:
   - infosec

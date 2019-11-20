@@ -24,7 +24,7 @@ tags:
   - blue team
   - defense
 image: /images/blog/redkeys.jpg
-published: false
+published: true
 title: No More FUD
 ---
 

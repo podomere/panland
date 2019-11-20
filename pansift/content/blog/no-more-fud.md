@@ -23,6 +23,8 @@ tags:
   - risk management
   - blue team
   - defense
+  - sec_o11y
+  - security observability
 image: /images/blog/redkeys.jpg
 published: true
 title: No More FUD

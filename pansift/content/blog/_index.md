@@ -1,6 +1,6 @@
 ---
-title: Blog. Raise the Bar.
-subtitle: What you need to know about technical hiring. Tactics, techniques and procedures for keeping pace with modern technology!
-date: 2018-07-07T18:23:33+06:00
+title: Blog. Deterministic Security.
+subtitle: No more FUD in a post breach world.
+date: 2019-11-20T09:23:33+06:00
 ---
 

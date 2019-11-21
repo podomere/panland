@@ -15,6 +15,8 @@ tags:
   - honeypots
   - honeynets
   - OWASP
+  - mitre att&ck
+  - mitre attack
   - secdevops
   - devops
   - nre

@@ -10,6 +10,7 @@ tags:
   - incident response
   - first principles
   - deception
+  - deception tech
   - honeytokens
   - honeypots
   - honeynets

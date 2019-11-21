@@ -266,7 +266,7 @@
     function new_champion(lat,lng) {
       var popup = L.popup({closeButton:false})
         .setLatLng([lat, lng])
-        .setContent('<center><b>Breach Detected <i class="fas fa-biohazard"></i></b></center>')
+        .setContent('<center><strong> Breach Detected <i class="fas fa-shield-alt"></i></strong></center>')
         .openOn(mymap);
       L.marker([lat,lng], {zIndexOffset: 1000}).addTo(mymap);
     }

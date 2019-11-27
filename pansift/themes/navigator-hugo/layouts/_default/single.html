@@ -16,16 +16,9 @@
       </div>
       <a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="rounded w-100 mb-3" alt="{{ .Summary }}"></a>
       {{ .Content }}
-      <div class="blog-tags">
-        {{ $taxonomy := "tags" }}
-        {{ with .Param $taxonomy }}
-        {{ range $index, $tag := . }}
-        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-        <a href="{{ .Permalink }}"><div class="tag">{{ $tag | urlize }}</div></a>
-        {{- end -}}
-        {{- end -}}
-        {{ end }}
-      </div>
+
+      {{ partial "tags.html" .}}
+
       <div class="mt-5">
         <span data-sumome-listbuilder-embed-id="9d038b98a9f29f282fbfc8c1b2b3125d1b7e448f58c9efe2081fad89c8b7fff0"></span>
       </div>

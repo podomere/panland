@@ -3,33 +3,7 @@ layout: post
 date: '2019-11-20T13:53:40'
 subtitle: Deterministic Security Spaces
 author: Donal
-tags:
-  - infosec
-  - active defense
-  - asymmetric defenses
-  - detection
-  - breach detection
-  - incident response
-  - first principles
-  - deception
-  - deception tech
-  - honeytokens
-  - honeypots
-  - honeynets
-  - OWASP
-  - mitre att&ck
-  - mitre attack
-  - secdevops
-  - devops
-  - nre
-  - sre
-  - resiliency engineering
-  - reliability engineering
-  - risk management
-  - blue team
-  - defense
-  - sec_o11y
-  - security observability
+tags: ["infosec", "active defense", "asymmetric defenses", "detection", "breach detection", "incident response", "first principles", "deception", "deception tech", "honeytokens", "honeypots", "honeynets", "OWASP", "mitre att&ck", "mitre attack", "secdevops", "devops", "nre", "sre", "resiliency engineering", "reliability engineering", "risk management", "blue team", "defense", "sec_o11y", "security observability" ]
 image: /images/blog/redkeys.jpg
 published: true
 title: No More FUD

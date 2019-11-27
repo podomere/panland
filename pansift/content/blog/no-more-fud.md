@@ -5,6 +5,8 @@ subtitle: Deterministic Security Spaces
 author: Donal
 tags:
   - infosec
+  - active defense
+  - asymmetric defenses
   - detection
   - breach detection
   - incident response

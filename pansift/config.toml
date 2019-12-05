@@ -31,10 +31,10 @@ enableGitInfo = true
         enable  = true
         heading = "Take back control with active defense and detection. Deceive and direct attackers to prevent damage."
         description = "Nothing is 100% secure. <span style='color: white;'>Breaches are inevitable</span>. Detect, direct, and <span style='color: white;'>control</span> attackers with high fidelity breach detection.  By using an attacker's movements and reconnaissance against them, defenders <span style='color: white;'>detect</span> and <span style='color: white;'>contain</span> breaches faster." 
-        description2 = "Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days or more to find out you've been breached... install <span style='color: white;'>PanSift</span> and start automatically honeytokening your <span style='color: white;'>Github</span> deploys now!"
+        description2 = "Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days or more to find out you've been breached... install <span style='color: white;'>PanSift</span> now and start automatically honeytokening your <span style='color: white;'>Github</span> deploys !"
         button  = true
         btnTxt = "Github Install"
-        btnTest = "Low risk test on a personal private repository" 
+        btnTest = "Low risk test on a private repository" 
         btnURL  = "https://github.com/apps/pansift"
         videoThumb = "images/slider/3_steps_v14.png"
         videoURL   = "https://www.youtube.com/embed/I6untRQ8O6U"
@@ -131,7 +131,7 @@ enableGitInfo = true
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
         title   = "Increase your Security Observability Now"
-        subtitle= "Run a free <strong>30 second</strong> pre-flight test on your personal <strong>private</strong> repository !"
+        subtitle= "Run a free <strong>30 second</strong> pre-flight test on a <strong>private</strong> repository now !"
         btnTxt = "Github App Install"
 
     # Pricing

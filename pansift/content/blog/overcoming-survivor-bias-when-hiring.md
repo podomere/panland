@@ -36,11 +36,11 @@ Unfortunately [CVs and Résumés are fundamentally broken](https://pansift.com/b
 ## Peter and Dunning-Kruger Checklist
 Typically you may never **really** know why someone leaves their previous organisation (as you are only privy to what they *choose* to tell you!).
 
-- have they reached a ceiling and are now seeking new challenges?
-- have other life or family changes initiated a move?
-- is it a financial decision, better remuneration, or for increased flexibility?
-- are they on a PIP(Performance Improvement Plan) and already being managed out?
-- or more scarily perhaps, have they already reached their level of incompetence ( e.g. the [Peter Principle](https://en.wikipedia.org/wiki/Peter_principle)) ?
+- [x] have they reached a ceiling and are now seeking new challenges?
+- [x] have other life or family changes initiated a move?
+- [x] is it a financial decision, better remuneration, or for increased flexibility?
+- [x] are they on a PIP(Performance Improvement Plan) and already being managed out?
+- [x] or more scarily perhaps, have they already reached their level of incompetence ( e.g. the [Peter Principle](https://en.wikipedia.org/wiki/Peter_principle)) ?
 <br><br>
 
 There could be lots of reasons but for any hire, it's still incredibly important to distinguish between a candidate's **confidence** and **competence**. Where is their proof of experience and can they demonstrate their competence?  
@@ -52,4 +52,4 @@ The [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effe
 So, how does [Dunning–Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) affect self-written [CVs and Résumés](https://pansift.com/blog/why-cvs-and-resumes-are-broken/)? Also, what actually happens in early interviews or screening activities if the person screening a candidate or CV is not **proficient** in the domain themselves? At what point should you ask candidates to demonstrate their claimed skills (and additionally how, when, and where)? Even if you are hiring solely for attitude (rather than experience), can a candidate hit the ground running or will they require months of specific training to become competent *and* effective? 
 
 ## Caveat Emptor
-It is extremely time consuming for domain experts or senior staff to independently screen and verify all applicant or candidate skills. This checking of fundamental hard skills *can however* be automated in many domains. This saves on expensive human time and speeds up *time-to-hire* whilst also facilitating wider recruiting funnels. Additionally, imagine having your own candidate skills analytics to use in your structured hiring process to support not just decision making but as talking points in later stage interviews with your senior engineering staff or leadership.
+It is extremely time consuming for domain experts or senior staff to independently screen and verify all applicant or candidate skills. This checking of fundamental hard skills *can however* be automated in many domains. This saves on expensive human time and speeds up *time-to-hire* whilst also facilitating wider recruiting funnels. Additionally, imagine having your own candidate skills analytics that can be used in a structured hiring process, to support not just decision making, but also as talking points in later stage interviews with senior staff and leadership.

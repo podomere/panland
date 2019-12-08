@@ -118,8 +118,9 @@ enableGitInfo = true
     # Training Section
     [params.training]
         enable  = true
-        title   = "Technical / Security Training"
-        subtitle= "With Pluralsight ( inc. 28% off Annual Membership )"
+        topTitle = "Technical / Security Training"
+        title   = "Grow Your Information And Cyber Security Skills"
+        subtitle= "Partner Recommended Courses ( save up to 11% annually )"
 
     # Search Section
     [params.cookies]

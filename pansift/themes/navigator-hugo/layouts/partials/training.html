@@ -5,12 +5,12 @@
   <div class="row">
     <div class="col">
       <div class="title text-center" style="padding: 0px !important;">
-        {{ with .Site.Data.training.topTitle }}<h4>{{ . }}</h4>{{ end }}
-        {{ with .Site.Data.training.title }}
+        {{ with .Site.Params.training.topTitle }}<h4>{{ . }}</h4>{{ end }}
+        {{ with .Site.Params.training.title }}
         <h2>{{ . }}</h2>
         <span class="border"></span>
         {{ end }}
-        {{ with .Site.Data.training.subtitle | safeHTML }}<p>{{ . }}</p>{{ end }}
+        {{ with .Site.Params.training.subtitle | safeHTML }}<p>{{ . }}</p>{{ end }}
       </div>
     </div>
   </div>

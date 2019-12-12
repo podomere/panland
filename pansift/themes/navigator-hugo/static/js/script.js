@@ -378,7 +378,7 @@
     else {
     }
   }
-  $(window).on("load", function() {
+  $(window).on("ready", function() {
     check_viewport();
   });
 

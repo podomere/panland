@@ -521,7 +521,7 @@ a:focus, a:hover {
 
 @media (max-width: 768px) {
   .navigation .navbar-nav > li > a {
-    padding: 8px 0 !important;
+    padding: 8px !important;
   }
   #aa-input-nav-container {
     visibility: hidden;

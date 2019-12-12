@@ -371,18 +371,6 @@
     });  
   }
 
-  function check_viewport() {
-    if ($(window).width() < 1024) {
-      $("#aa-input-nav-container").remove();
-    }
-    else {
-    }
-  }
-  $(window).on("ready", function() {
-    check_viewport();
-  });
-
-
   /* ========================================================================= */
   /*	Header Scroll Background Change
   /* ========================================================================= */	

@@ -41,6 +41,11 @@
   </div>
 </div>
 </section>
+  <script>
+    if ($(window).width() < 1024) {
+      $("#mapholder").remove();
+    }
+  </script>
 {{ "<!-- Leaflet js -->" | safeHTML }}
 <script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}" type="text/javascript"></script>
 {{ end }}

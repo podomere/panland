@@ -53,6 +53,14 @@ a:focus, a:hover {
   color: #2980b9;
 }
 
+.nav-cta {
+  color: #ffffff !important;
+}
+
+.nav-cta:focus, .nav-cta:hover {
+  color: #1F6ABE !important;
+}
+
 .btn-main, .btn-main-sm {
   background-color: #2980b9;
   background-image: linear-gradient(100deg, #3498db, #2980b9);

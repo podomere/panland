@@ -1,16 +1,16 @@
-{{ if .Site.Params.faketestimonials.enable }}
+{{ if .Site.Params.deception.enable }}
 {{ "<!-- Start Testimonaials section -->" | safeHTML }}
-<section class="service-2 section bg-gray" id="faketestimonials">
+<section class="service-2 section bg-gray" id="deception">
 <div class="container">
   <div class="row">
     <div class="col">
       <div class="title text-center">
-        {{ with .Site.Params.faketestimonials.topTitle }}<h4>{{. | safeHTML}}</h4>{{ end }}
-        {{ with .Site.Params.faketestimonials.title }}
+        {{ with .Site.Params.deception.topTitle }}<h4>{{. | safeHTML}}</h4>{{ end }}
+        {{ with .Site.Params.deception.title }}
         <h2>{{.}}</h2>
         <span class="border"></span>
         {{ end }}
-        {{ with .Site.Params.faketestimonials.subtitle }}<p>{{. | safeHTML}}</p>{{ end }}
+        {{ with .Site.Params.deception.subtitle }}<p>{{. | safeHTML}}</p>{{ end }}
       </div>
     </div>
   </div> 
@@ -24,7 +24,7 @@
         <span class="count">1.</span>
         <i class="fas fa-diagnoses"></i>
         <h4>Noise</h4>
-        <p>{{ with .Site.Params.faketestimonials.one }}<p>{{. | safeHTML}}</p>{{ end }}
+        <p>{{ with .Site.Params.deception.one }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
     </div> 
@@ -33,7 +33,7 @@
         <span class="count">2.</span>
         <i class="fas fa-location-arrow"></i>
         <h4>Intent + Action</h4>
-        <p>{{ with .Site.Params.faketestimonials.two }}<p>{{. | safeHTML}}</p>{{ end }}
+        <p>{{ with .Site.Params.deception.two }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
     </div>
@@ -42,7 +42,7 @@
         <span class="count">3.</span>
         <i class="fas fa-signal"></i>
         <h4>Signal</h4>
-        <p>{{ with .Site.Params.faketestimonials.three }}<p>{{. | safeHTML}}</p>{{ end }}
+        <p>{{ with .Site.Params.deception.three }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
     </div>
@@ -50,7 +50,7 @@
     <div class="clearfix"></div>
   </div>
   <div class="row justify-content-center mt-3">
-    <h4>{{ with .Site.Params.faketestimonials.punchline }}{{. | safeHTML}}{{ end }}</h4>
+    <h4>{{ with .Site.Params.deception.punchline }}{{. | safeHTML}}{{ end }}</h4>
   </div>
   <!-- End container -->
 </div>
@@ -71,7 +71,7 @@
           data-src='' class='img-responsive rounded-circle lozad'></a><br/><small id='custtitle_'"+index.toString()+"'></small><h4 id='custcompany_'"+index.toString()+"'></h4><br/></br></div>");
 
       $("[id^='custimage']").each(function (index){
-        $(this).attr("data-src","/images/faketestimonials/"+(getRandomInt(1, 507)).toString()+".jpeg");
+        $(this).attr("data-src","/images/deception/"+(getRandomInt(1, 507)).toString()+".jpeg");
       });
 
       $("[id^='custname']").each(function (index){

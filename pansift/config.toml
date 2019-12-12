@@ -32,7 +32,7 @@ enableGitInfo = true
         enable  = true
         heading = "Breaches are inevitable.</br>Regain control with active defense.</br>PanSift your pipeline!"
         description = "Nothing is 100% secure. Detect, direct, and <span style='color: white;'>control</span> attackers with digital lures and tripwires. By using an attacker's movements and reconnaissance against them, defenders <span style='color: white;'>detect</span> and <span style='color: white;'>contain</span> breaches faster." 
-        description2 = "Install <span style='color: white;'>PanSift</span> now and automatically <a href='/#how-it-works'><span style='color: white; text-decoration: underline;'>honeytoken</a> your <span style='color: white;'>Github</span> deploys. Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days to find out you've been breached when you can actively defend in <a href='/#how-it-works'><span style='color: white; text-decoration: underline;'>minutes</a>."
+        description2 = "Install <span style='color: white;'>PanSift</span> on your at risk Github repositories to automatically <a href='/#how-it-works'><span style='color: white; text-decoration: underline;'>honeytoken</a> per pull request. </br>Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white; text-decoration: underline;'>279</span></a> days to find out you've been breached. </br>Actively defend in <a href='/#how-it-works'><span style='color: white; text-decoration: underline;'>minutes</a>, not months."
         button  = true
         btnTxt = "Live PanSift App Tour"
         btnTest = "Take a live test tour with your Github login!" 
@@ -50,15 +50,15 @@ enableGitInfo = true
         title   = "<span style = 'color: #fff;'>Know. When it matters!</span>"
         subtitle = "PanSift integrates free and commercial honeytokens from the industry standard provider, Thinkst."
  
-    [params.faketestimonials]
+    [params.deception]
         topTitle =  "Trust but Verify"
         enable  = true
-        title   = "Testimonials?"
-        subtitle = "Amidst AI, disinformation, and bots.. <br/> can you spot the human?"
+        title   = "Deception Tech"
+        subtitle = "Amidst AI, disinformation, and bots.. <br/> can you spot and click the human?"
     punchline = "You can even figure out if your team need more security training too!"
         one = "Some attackers are sentient, some are not. None of the humans above exist. They are all AI generated. Separating the signal from the noise is hard."
-        two = "There are critical parts of your systems/apps that no external entities should have access to. Tripped honeytokens reveal not just the presence but the intent of attackers."
-        three = "By using honeytokens per pull request and deploy, you get <span style='font-size: 1.1em;' class='badge badge-dark mb-2'>high fidelity</span>, and <span style='font-size: 1.1em;' class='badge badge-dark'>high cardinality</span> breach signal."
+        two = "There are critical parts of your systems/apps that no external entities should have access to. Tripped honeytokens reveal not just the presence of but the intent of attackers."
+        three = "By using honeytokens per pull request (on a deploy branch), you get <span style='font-size: 1.1em;' class='badge badge-dark mb-2'>high fidelity</span>, and <span style='font-size: 1.1em;' class='badge badge-dark'>high cardinality</span> breach signal."
 
     [params.benefits]
         topTitle =  "Trust but Verify"
@@ -117,7 +117,7 @@ enableGitInfo = true
 
     # Training Section
     [params.training]
-        enable  = true
+        enable  = false
         topTitle = "Technical / Security Training"
         title   = "Grow Your Information And Cyber Security Skills"
         subtitle= "Partner Recommended Courses ( save up to 11% annually )"
@@ -158,7 +158,7 @@ enableGitInfo = true
     # Navbar Menus
     [[menu.nav]]
         name    = "Deception"
-        url     = "/faketestimonials"
+        url     = "/deception"
         weight  = 2
     [[menu.nav]]
         name    = "How"
@@ -172,22 +172,22 @@ enableGitInfo = true
         name    = "Pricing"
         url     = "/pricing"
         weight  = 3
-    [[menu.nav]]
-        name    = "Contact"
-        url     = "/contact"
-        weight  = 6
+#    [[menu.nav]]
+#        name    = "Contact"
+#        url     = "/contact"
+#        weight  = 6
     [[menu.nav]]
         name    = "Blog"
         url     = "/blog"
-        weight  = 5
-    [[menu.nav]]
-        name    = "Training"
-        url     = "/training"
         weight  = 4
 #    [[menu.nav]]
-#        name    = "Talent"
-#        url     = "/blog"
+#        name    = "Training"
+#        url     = "/training"
 #        weight  = 4
+    [[menu.nav]]
+        name    = "Login"
+        url     = "https://app.pansift.com"
+        weight  = 5
     
     # Footer Quick links Menu
     [[menu.quick]]

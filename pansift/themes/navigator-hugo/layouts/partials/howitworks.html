@@ -1,6 +1,6 @@
 {{ if .Site.Data.howitworks.enable }}
 {{ "<!-- howitworks Section Start -->" | safeHTML }}
-<section class="about-mission-vision section">
+<section id="howitworks" class="about-mission-vision section">
 {{ "<!-- Video js -->" | safeHTML }}
 <script src="{{ "plugins/videojs/dist/js/video.min.js" | absURL }}"></script>
 <script src="{{ "plugins/videojs-overlay/dist/js/videojs-overlay.min.js" | absURL }}"></script>
@@ -17,43 +17,24 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mt-3">
-      <div class="commonTab">
-        <ul role="tablist" class="nav nav-tabs justify-content-center" id="myTab">
-          {{ range $index, $element := .Site.Data.howitworks.tabItem }}
-          <li class="nav-item">
-          <a class="nav-link {{ if eq $index 0 }}active{{ end }} mt-2" id="{{ .id }}-tab" data-toggle="tab" href="#{{.id}}" role="tab" aria-controls="{{.id}}" aria-selected="{{ if eq $index 0 }}true{{ end }}">{{ .title }}</a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
-      <div class="tab-content" id="myTabContent">
-        {{ range $index, $element := .Site.Data.howitworks.tabItem }}
-        <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" role="tabpanel" aria-labelledby="{{.id}}-tab" id="{{.id}}">
-          <div class="row">
-            <div class="col-xl-8 col-md-6 align-self-center">
-              <h3 class="text-center">{{ with .heading }}{{ . }}{{ end }}</h3>
-              {{ with .content }}<p style="font-size: 1.2em;">{{ . | safeHTML }}{{ end }}</p>
-            </div>
-            <div class="col-xl-4 col-md-6 align-self-center">
-              <center><a href="https://github.com/apps/pansift">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center>
-            </div>
-          </div>
+    {{ range $index, $element := .Site.Data.howitworks.tabItem }}
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3 mb-3">
+      <h1>{{ .title }}</h1>
+      <div class="row mt-3 mb-5">
+        <div class="col-xl-8 col-md-6">
+          <h3 class="" style="color: #2980b9;">{{ with .heading }}{{ . }}{{ end }}</h3>
+          {{ with .content }}<p style="font-size: 1.2em;">{{ . | safeHTML }}{{ end }}</p>
         </div>
-        {{ end }}
+        <div class="col-xl-4 col-md-6 align-self-center">
+          <center><a href="#video-row">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center>
+        </div>
       </div>
     </div>
+    {{ end }}
   </div>
-  <div class="row">
-    <div class="col">
-      <hr>
-      <div class="title" style="padding: 0 !important;">
+  <div id="video-row" class="row mb-5">
+    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 text-center">
         <h4>Watch an Example Rapid Install and Tokening</h4>
-      </div>
-    </div>
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div id="video-bound" class="text-center">
         <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" controls preload="none" data-setup='{}' poster="/images/hero/3_steps_v15.png">
         <source src="https://pansift.com/video/ps_intro_video_v2_opt.mp4" type='video/mp4'>

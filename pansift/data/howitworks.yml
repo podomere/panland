@@ -4,7 +4,7 @@ title     : How it Works
 subtitle  : PanSift installs as a Github App on a repository branch.
 tabItem   :
   - id        : attack
-    title     : 1. Attacker Phases
+    title     : Attacker Phases
     heading   : Operating in a post-breach world.
     content   : >
       It is inevitable that attackers will exploit a vulnerability and get some level of initial access to your infrastructure, systems, or apps. They don't sit still and continue to penetrate deeper, move laterally, and attempt to escalate privileges to gather data. They harvest access credentials, API keys, and hostnames related to key accounts or systems.
@@ -12,21 +12,21 @@ tabItem   :
     icon      : fas fa-biohazard
 
   - id        : token
-    title     : 2. What is a Honeytoken ?
+    title     : What is a Honeytoken
     heading   : Inexpensive Lures with Super Signal !
     content   : >
       A honeytoken is a digital lure or tripwire. They can be pseudo-valid usernames/passwords, an API key, a hostname, a PDF file, or other digital asset. They are designed so that once they are accessed or used, they alert your security team (like a canary in a coal mine!). A good example is a set of AWS client/secret keys left in a configuration file that no one but trusted staff should have access to. Once used or accessed, the honeytoken is tripped, and it's time to react to this high-fidelity signal of intrusion.
     icon      : fas fa-satellite-dish
 
   - id        : detect
-    title     : 3. Detect and Defend
+    title     : Detect and Defend
     heading   : From months to minutes...
     content   : >
       <strong>PanSift</strong> empowers your defenders and developers to gain the upper hand by amplifying their situational awareness, enabling rapid incident response, and increasing peace of mind! Embrace a new form of continuous determinstic security and don't leave your organisation or customer data exposed for months! 
     icon      : fas fa-shield-alt
 
   - id        : install
-    title     : 4. Install Pansift
+    title     : Install Pansift
     heading   : Per Pull Request on Nominated Branches
     content   : >
       <strong>PanSift does not need nor request access to your code.</strong> PanSift automatically honeytokens a specific file per Pull Request. You can leave a honeytoken there or move it to other parts of your build during deploys (dress them up as you see fit)! Use PanSift across <strong>private</strong> repositories/branches that are deployed anywhere where there is risk of exploit, attack, or compromise such as Internet facing SaaS, cloud infrastructure, or restricted internal systems or apps.

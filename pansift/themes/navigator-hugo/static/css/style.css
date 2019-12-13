@@ -59,6 +59,7 @@ a:focus, a:hover {
 
 .nav-cta:focus, .nav-cta:hover {
   color: #1F6ABE !important;
+  background-color: #ffffff !important;
 }
 
 .btn-main, .btn-main-sm {

@@ -116,19 +116,26 @@
   <link rel="stylesheet" href="{{ "plugins/bootstrap/dist/css/bootstrap.min.css" | absURL }}">
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+  {{ if or (.IsHome) (eq .Page.Title "How It Works")}}
   {{ "<!-- VideoJS -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/videojs/dist/css/video-js.min.css" | absURL }}">
   <link rel="stylesheet" href="{{ "plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}">
+  {{ end }}
   {{ "<!-- Font Awesome -->" | safeHTML }}
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" media="none" onload="this.media='all'">
+  {{ if (.IsHome)}}
   {{ "<!-- Leaflet Map -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/leaflet/dist/css/leaflet.css" | absURL }}" media="none" onload="this.media='all'"/>
+  {{ end }}
+  {{ if (eq .Page.Title "Pricing")}}
   {{ "<!-- NoUISlider Map -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/nouislider/dist/css/nouislider.min.css" | absURL }}" media="none" onload="this.media='all'"/>
-
+  {{ end }}
+  {{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "Deception") (eq .Page.Title "Blog. Raise the Bar.") (eq .Page.Title "Training") }}
   <!-- Algolia Search Live DB -->
   <script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
   <script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
+  {{ end }}
   {{ "<!-- jQuery -->" | safeHTML }}
   <script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
   

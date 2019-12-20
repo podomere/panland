@@ -49,6 +49,7 @@ enableGitInfo = true
         enable  = true
         title   = "<span style = 'color: #fff;'>Know. When it matters!</span>"
         subtitle = "Register a free PanSift account and <strong>claim 5%</strong> off Thinkst Canary Tools with your custom code *"
+        description = "Pansift integrates free and commercial Canary Tools."
  
     [params.deception]
         topTitle =  "Trust but Verify"

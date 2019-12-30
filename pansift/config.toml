@@ -160,7 +160,7 @@ enableGitInfo = true
     [[menu.nav]]
         name    = "Deception"
         url     = "/deception"
-        weight  = 3
+        weight  = 2
     [[menu.nav]]
         name    = "How"
         url     = "/howitworks"
@@ -184,7 +184,7 @@ enableGitInfo = true
     [[menu.nav]]
         name    = "Benefits"
         url     = "/benefits"
-        weight  = 2
+        weight  = 3
     [[menu.nav]]
         name    = "Login"
         url     = "https://app.pansift.com"

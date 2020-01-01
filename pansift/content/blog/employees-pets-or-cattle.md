@@ -1,5 +1,5 @@
 ---
-title: 'Employees, pets or cattle? Part 1.'
+title: 'Employees, pets or cattle? Part 1'
 date: "2019-09-20T08:43:40"
 subtitle: Dumb boxes and smart people or...
 image: images/blog/cow.jpg

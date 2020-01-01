@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-title: Overcoming Survivor Bias.
-subtitle: Fundamental Attribution Errors.
+title: Overcoming Survivor Bias
+subtitle: Fundamental Attribution Errors
 image: /images/blog/survivor_bias.png
 date: "2019-11-19T08:43:40"
 author: Donal

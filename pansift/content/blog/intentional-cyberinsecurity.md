@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: Intentional Cyberinsecurity
 date: '2020-01-01T10:53:40'
@@ -32,7 +33,6 @@ tags:
 - sec_o11y
 - security_observability
 image: /images/blog/cyberinsecurity-v2.jpg
-published: true
 ---
 
 For many this may be their first foray in to deception technology though it has a rich history in any domain of conflict. When dealing with sentient attackers operating in territories you control, there is ample opportunity to deceive and misdirect these miscreants to your own benefit. 

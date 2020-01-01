@@ -35,7 +35,7 @@ enableGitInfo = true
         description2 = "Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white;'>279</span></a> days to find out you've been breached. Honeytoken your apps and infrastructure to actively defend in <a href='/#how-it-works'><span style='color: white; text-decoration: underline;'>minutes</a> not months."
         button  = true
         btnTxt = "Live PanSift App Tour"
-        btnTest = "Take a live test tour with your Github login!" 
+        btnTest = "Take a live test tour using your Github login!" 
         btnURL  = "https://app.pansift.com/github/oauth"
         videoThumb = "images/slider/3_steps_v14.png"
         videoURL   = "https://www.youtube.com/embed/I6untRQ8O6U"
@@ -134,7 +134,7 @@ enableGitInfo = true
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
         title   = "Take back control while increasing your Security Observability!"
-        subtitle= "Take a <strong>live</strong> test tour with your <strong>Github</strong> login!"
+        subtitle= "Take a <strong>live</strong> test tour using your <strong>Github</strong> login!"
         btnTxt = "Live App Tour"
 
     # Pricing

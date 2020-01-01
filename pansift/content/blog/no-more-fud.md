@@ -55,15 +55,3 @@ If we realise that:
 ... we then begin to seek simpler, earlier, and more deterministic strategies for defense. Ones with tactics and techniques predicated on definitive **security observability(sec_o11y)** as detection is a precursor to action. We should be converging towards simpler sampling and triggers that lead to earlier and better state awareness (which easily scale as complexity inevitably rises). 
 
 Attack patterns begin from a **non or low** privileged state, agents then seek to expand access and privileges to a new state (or place), where they can achieve persistance and aspects of controlability. If we can begin to deceive attackers by inserting ourselves intentionally in to their paths, we can infiltrate **their state spaces**. We should be able to **deterministically detect, observe, and control** them whilst operating on our own home turf. Technically, we should have the upper hand... especially with simple tripwires such as [**honeytokens**](/howitworks).
-
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">PanSift Tip</h5>
-    <p class="card-text">
-      By building low cost deception technology in to your infrastructure, systems, and code deployment pipelines early on, you can empower your digital defense teams and scale your security obervability. Why not try some free <strong><a href"/">honeytoken</a></strong> deploys on your CI/CD pipeline for better incident response triggers?
-	</p>
-    <a class="card-link" href="/howitworks">How</a>
-    <a class="card-link" href="/deception">Deception</a>
-    <a class="card-link" href="/benefits">Benefits</a>
-  </div>
-</div>

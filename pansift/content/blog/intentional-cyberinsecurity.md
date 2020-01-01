@@ -48,9 +48,11 @@ Whether it's cloud based systems or on-premises devices, an attacker must engage
   <div class="card-body">
     <h5 class="card-title">PanSift Tip</h5>
     <p class="card-text">
-      By building low cost deception technology in to your infrastructure, systems, and code deployment pipelines early on, you can empower your digital defense teams and scale your security obervability. Why not try some free [*honeytoken*](/howitworks) deploys on your CI/CD pipeline for better incident response triggers?
+      By building low cost deception technology in to your infrastructure, systems, and code deployment pipelines early on, you can empower your digital defense teams and scale your security obervability. Why not try some free <strong><a href"/">honeytoken</a></strong> deploys on your CI/CD pipeline for better incident response triggers?
 	</p>
     <a class="card-link" href="/howitworks">How</a>
     <a class="card-link" href="/deception">Deception</a>
+    <a class="card-link" href="/benefits">Benefits</a>
   </div>
 </div>
+  

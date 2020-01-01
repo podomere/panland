@@ -43,16 +43,3 @@ Today, deception technology is even more far reaching and poignant due to how ou
 In this digital world one thing is guaranteed; code contains bugs, systems have weaknesses, and humans are fallible. Either individually or in combination these vulnerabilities are what attackers seek to exploit when moving through their attack phases. During reconaissance they will not pass up on subsequent utilisation of low hanging fruit such as misconfigurations and mislaid credentials (as they need to escalate their privilieges across a network domain). By feigning internal weaknesses in your digital systems (rather than your external ones) it is possible to deceive an attacker in to divulging their presence in minutes rather than months. 
 
 Whether it's cloud based systems or on-premises devices, an attacker must engage with their targets in some manner be it by reading, writing, or executing some data across a channel. For them to continue to map and move they also need to resolve hostnames. To assume roles, understand access privileges, or leverage new vectors of attack they need to test the credentials they find or exploit. Each of these steps lends themselves to using deception technology to uncovering an attacker sooner rather than later. By feigning weakness and leaving false logins, neutered API keys, and hostname lures in strategic locations, you can detect, direct, and even control an attackers next steps. Now *they* only need to trip up and fail once, not you! This effectively turns the tables on an attacker and raises their bar to remain undetected. In this post-breach world, compromise is inevitable yet data, financial, and reputation loss is not.
-
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">PanSift Tip</h5>
-    <p class="card-text">
-      By building low cost deception technology in to your infrastructure, systems, and code deployment pipelines early on, you can empower your digital defense teams and scale your security obervability. Why not try some free <strong><a href"/">honeytoken</a></strong> deploys on your CI/CD pipeline for better incident response triggers?
-	</p>
-    <a class="card-link" href="/howitworks">How</a>
-    <a class="card-link" href="/deception">Deception</a>
-    <a class="card-link" href="/benefits">Benefits</a>
-  </div>
-</div>
-  

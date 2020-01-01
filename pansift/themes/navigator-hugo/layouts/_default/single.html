@@ -17,6 +17,8 @@
       <a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="rounded w-100 mb-3" alt="{{ .Summary }}"></a>
       {{ .Content  | safeHTML }}
 
+      {{ partial "post-micro-tip.html" .}}
+
       {{ partial "tags.html" .}}
 
       <div class="mt-5">

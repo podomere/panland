@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Intentional Cyberinsecurity
 date: '2020-01-01T10:53:40'

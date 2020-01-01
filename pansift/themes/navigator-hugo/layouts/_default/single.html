@@ -15,7 +15,7 @@
         </ul>
       </div>
       <a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="rounded w-100 mb-3" alt="{{ .Summary }}"></a>
-      {{ .Content }}
+      {{ .Content  | safeHTML }}
 
       {{ partial "tags.html" .}}
 

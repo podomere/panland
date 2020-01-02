@@ -43,6 +43,7 @@
     <script>
       window.ab_branch = {{ getenv "BRANCH" }};
     </script>
+    {{ if in (.Site.BaseURL | string) "pansift.com" }}
     <!-- Google Tag Manager -->
     <script type="text/plain" data-cookieconsent="statistics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -50,6 +51,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WXBBXQJ');</script>
   <!-- End Google Tag Manager -->
+  {{ end }}
   <!-- Rich Data / Structured Data -->
   <script type="application/ld+json"> 
     { 
@@ -138,7 +140,7 @@
   {{ end }}
   {{ "<!-- jQuery -->" | safeHTML }}
   <script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
-  
-  </head>
 
-  <body id="body" style="background-color: #fff;">
+</head>
+
+<body id="body" style="background-color: #fff;">

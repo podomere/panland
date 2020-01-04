@@ -1,7 +1,7 @@
 enable    : true
 topTitle   : Deception Tech
 title     : How it Works
-subtitle  : PanSift installs as a Github App on a repository and integrates with Thinkst Canary Tools out of the box.
+subtitle  : "PanSift installs as a Github App on a chosen repository. It honeytokens with Thinkst canarytokens out-of-the-box!"
 tabItem   :
   - id        : attack
     title     : Attacker Phases

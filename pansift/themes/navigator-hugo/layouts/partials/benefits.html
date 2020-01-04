@@ -1,6 +1,6 @@
 {{ if .Site.Params.benefits.enable }}
 {{ "<!-- Start Benefits section -->" | safeHTML }}
-<section class="service-2 section bg-gray" id="benefits">
+<section class="service-2 section" background-color="#FFFFFF" id="benefits" style="padding-bottom: 0;">
 <div class="container">
   <div class="row">
     <div class="col">
@@ -19,7 +19,7 @@
       <div class="service-item text-center">
         <span class="count">1.</span>
         <i class="fas fa-user-shield"></i>
-        <h4>{{ with .Site.Params.benefits.onetitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <h4>{{ with .Site.Params.benefits.onetitle }}{{. | safeHTML}}</h4>{{ end }}
         <p>{{ with .Site.Params.benefits.one }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
@@ -28,7 +28,7 @@
       <div class="service-item text-center">
         <span class="count">2.</span>
         <i class="fas fa-tachometer-alt"></i>
-        <h4>{{ with .Site.Params.benefits.twotitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <h4>{{ with .Site.Params.benefits.twotitle }}{{. | safeHTML}}</h4>{{ end }}
         <p>{{ with .Site.Params.benefits.two }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
@@ -37,7 +37,7 @@
       <div class="service-item text-center">
         <span class="count">3.</span>
         <i class="fas fa-exclamation-triangle"></i>
-        <h4>{{ with .Site.Params.benefits.threetitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <h4>{{ with .Site.Params.benefits.threetitle }}{{. | safeHTML}}</h4>{{ end }}
         <p>{{ with .Site.Params.benefits.three }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
@@ -46,7 +46,7 @@
       <div class="service-item text-center">
         <span class="count">4.</span>
         <i class="fas fa-grin-wink"></i>
-        <h4>{{ with .Site.Params.benefits.fourtitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <h4>{{ with .Site.Params.benefits.fourtitle }}{{. | safeHTML}}</h4>{{ end }}
         <p>{{ with .Site.Params.benefits.four }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
@@ -55,7 +55,7 @@
       <div class="service-item text-center">
         <span class="count">5.</span>
         <i class="fas fa-gamepad"></i>
-        <h4>{{ with .Site.Params.benefits.fivetitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <h4>{{ with .Site.Params.benefits.fivetitle }}{{. | safeHTML}}</h4>{{ end }}
         <p>{{ with .Site.Params.benefits.five }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
@@ -64,7 +64,7 @@
       <div class="service-item text-center">
         <span class="count">6.</span>
         <i class="fas fa-assistive-listening-systems"></i>
-        <h4>{{ with .Site.Params.benefits.sixtitle }}<p>{{. | safeHTML}}</h4>{{ end }}
+        <h4>{{ with .Site.Params.benefits.sixtitle }}{{. | safeHTML}}</h4>{{ end }}
         <p>{{ with .Site.Params.benefits.six }}<p>{{. | safeHTML}}</p>{{ end }}
         </p>
       </div>
@@ -72,8 +72,11 @@
     <div class="clearfix"></div>
   </div>
     <!-- End row -->
-  <div class="col text-center mt-3">
+  <div class="col text-center mt-4">
+    </br>
     <h4>{{ with .Site.Params.benefits.punchline }}{{. | safeHTML}}{{ end }}</h4>
+    </br>
+    <a href="/howitworks/#video-row"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/benefits/laptop_inlay.png"></img></a>
   </div>
   <!-- End container -->
 </div>

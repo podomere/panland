@@ -30,7 +30,7 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Data breaches are inevitable.</br>Regain control with active defense. Defend better. PanSift your pipeline!"
+        heading = "Data breaches are inevitable.</br>Regain control with active defense. PanSift your pipeline!"
         description = "Nothing is 100% secure. Detect, direct, and <span style='color: white;'>control</span> attackers with digital lures and tripwires. By using an attacker's movements and reconnaissance against them, defenders <span style='color: white;'>detect</span> and <span style='color: white;'>contain</span> breaches faster." 
         description2 = "Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white;'>279</span></a> days to find out you've been breached. Honeytoken your apps and infrastructure to actively defend in <a href='/#how-it-works'><span style='color: white; text-decoration: underline;'>minutes</a> not months."
         button  = true

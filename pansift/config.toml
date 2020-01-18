@@ -13,7 +13,7 @@ enableGitInfo = true
 # Site Params
 [params]
   description = "Data breaches are inevitable. Regain control with active defense. PanSift your pipeline!"
-  og_image = "https://pansift.com/images/pansift_social_client_v28.png"
+  og_image = "https://pansift.com/images/pansift_social_client_v29.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
   keywords = "infosec, killchain, killchains, breach, breach detection, incident response, honeytokens, honeypots, deception, OWASP, secdevops, devops, nre, network reliability, sre, site reliability, blue teams, blue teaming, honeytokens, risk management, defense, honeynets, network reliability engineering"

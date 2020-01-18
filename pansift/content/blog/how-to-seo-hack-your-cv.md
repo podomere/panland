@@ -3,7 +3,7 @@ layout: post
 date: "2019-08-20T08:43:40"
 published: true
 title: How to SEO hack your CV
-subtitle: Tips and tricks to beat traditional Boolean search
+subtitle: Tips and tricks to beat traditional Boolean search.
 author: Donal
 tags:
   - hrtech

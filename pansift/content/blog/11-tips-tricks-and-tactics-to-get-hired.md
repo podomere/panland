@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2019-10-20T08:43:40"
-subtitle: Navigating and Hacking a New Landscape
+subtitle: Navigating and Hacking a New Landscape.
 author: Donal
 tags:
   - cv

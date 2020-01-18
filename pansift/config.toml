@@ -189,6 +189,10 @@ enableGitInfo = true
         name    = "Login"
         url     = "https://app.pansift.com"
         weight  = 6
+    [[menu.nav]]
+        name    = "Sign Up"
+        url     = "https://app.pansift.com/clients/sign_up"
+        weight  = 7
     
     # Footer Quick links Menu
     [[menu.quick]]

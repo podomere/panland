@@ -118,7 +118,7 @@
   <link rel="stylesheet" href="{{ "plugins/bootstrap/dist/css/bootstrap.min.css" | absURL }}">
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
-  {{ if or (.IsHome) (eq .Page.Title "How It Works")}}
+  {{ if or (.IsHome) (eq .Page.Title "How It Works") (eq .Page.Title "Deception")}}
   {{ "<!-- VideoJS -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/videojs/dist/css/video-js.min.css" | absURL }}">
   <link rel="stylesheet" href="{{ "plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}">

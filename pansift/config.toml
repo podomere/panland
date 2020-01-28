@@ -156,13 +156,13 @@ enableGitInfo = true
 [menu]
     # Navbar Menus
     [[menu.nav]]
-        name    = "Deception"
+        name    = "Deception Tech"
         url     = "/deception"
         weight  = 3
-    [[menu.nav]]
-        name    = "How"
-        url     = "/howitworks"
-        weight  = 2
+#    [[menu.nav]]
+#        name    = "How"
+#        url     = "/howitworks"
+#        weight  = 2
     #[[menu.nav]]
     #    name    = "Why"
     #    url     = "/why"
@@ -179,10 +179,10 @@ enableGitInfo = true
         name    = "Blog"
         url     = "/blog"
         weight  = 5
-    [[menu.nav]]
-        name    = "Benefits"
-        url     = "/benefits"
-        weight  = 1
+#   [[menu.nav]]
+#       name    = "Benefits"
+#       url     = "/benefits"
+#       weight  = 1
     [[menu.nav]]
         name    = "Login"
         url     = "https://app.pansift.com"

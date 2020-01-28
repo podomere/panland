@@ -30,22 +30,30 @@
         <div id="mapholder" style="padding-bottom: 20px; background-color: #222;">
           <div id="mapid" style="z-index: 100; height: 217px; width: 100%; outline: 0; border-color: #3a96cf; border-radius: 10px; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
         </div>
-        <div id="" class="">
-          <a href="https://app.pansift.com/github/oauth" rel="nofollow" onclick="ga('gtm1.send','event','Client','visit_install_from_homepage');" class="btn btn-lg btn-success text-center mt-3"> <i style="font-size: 1em;" class="fab fa-github"></i><span style="font-size: 1.3em; font-weight: 900;"> Live App Tour</span></a>
-        </div>
-        <div id="" class="mt-1">
-          <small style="color: #ffffff;">A no strings live test tour using your <strong>Github</strong> login!</small>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center" style="padding: 0px;">
+            <a href="https://github.com/apps/pansift" rel="nofollow" onclick="ga('gtm1.send','event','Client','visit_install_from_homepage');" class="btn btn-lg btn-primary text-center mt-3" style="background-color: #222222; border-color: #1F6ABE;"> <i style="font-size: 1em;" class="fab fa-github"></i><span style="font-size: 1.3em; font-weight: 900;"> Test Install </span></a>
+            <div id="" class="mt-1">
+              <small style="color: #ffffff;">Test on a personal private <strong>Github</strong> repo!</small>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center" style="padding: 0px;">
+            <a href="https://app.pansift.com/github/oauth" rel="nofollow" onclick="ga('gtm1.send','event','Client','visit_install_from_homepage');" class="btn btn-lg btn-success text-center mt-3"> <i style="font-size: 1em;" class="fab fa-github"></i><span style="font-size: 1.3em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }}</span></a>
+            <div id="" class="mt-1">
+              <small style="color: #ffffff;">A no strings fully featured <strong>live</strong> tour! </small>
+            </div>
+          </div>
         </div>
       </center>
     </div>
   </div>
 </div>
 </section>
-  <script>
-    if ($(window).width() < 1024) {
-      $("#mapholder").remove();
-    }
-  </script>
+<script>
+  if ($(window).width() < 1024) {
+    $("#mapholder").remove();
+  }
+</script>
 {{ "<!-- Leaflet js -->" | safeHTML }}
 <script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}" type="text/javascript"></script>
 {{ end }}

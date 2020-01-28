@@ -3,16 +3,26 @@
 <section class="call-to-action section lozad" data-background-image="{{ .Site.Params.cta.bg | absURL }}" style="background-color: #222222;" background-image="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
 <div class="container">
   <div class="row">
-    <div class="col-md-12 text-center">
+    <div class="col-md-12 text-center mb-3">
       {{ with .Site.Params.cta.title }}<h1>{{ . | safeHTML }}</h1>{{ end }}
     </div>
     <div class="col-md-12">
       <center>
-        <strong><a href="https://app.pansift.com/github/oauth" rel="nofollow" onclick="ga('gtm1.send','event','Client','visit_install_from_cta');" class="btn btn-lg btn-success mt-4"> <i style="font-size: 1.5em;" class="fab fa-github"></i><span style="font-size: 1.3em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }}</span></a></strong>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center" style="padding: 0px;">
+            <a href="https://github.com/apps/pansift" rel="nofollow" onclick="ga('gtm1.send','event','Client','visit_install_from_homepage');" class="btn btn-lg btn-primary text-center mt-3" style="background-color: #222222; border-color: #1F6ABE;"> <i style="font-size: 1em;" class="fab fa-github"></i><span style="font-size: 1.3em; font-weight: 900;"> Test Install </span></a>
+            <div id="" class="mt-4">
+              <p style="color: #ffffff;">Test on a personal private <strong>Github</strong> repo!</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center" style="padding: 0px;">
+            <a href="https://app.pansift.com/github/oauth" rel="nofollow" onclick="ga('gtm1.send','event','Client','visit_install_from_homepage');" class="btn btn-lg btn-success text-center mt-3"> <i style="font-size: 1em;" class="fab fa-github"></i><span style="font-size: 1.3em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }}</span></a>
+            <div id="" class="mt-4">
+              <p style="color: #ffffff;">A no strings fully featured <strong>live</strong> tour! </p>
+            </div>
+          </div>
+        </div>
       </center>
-    </div>
-    <div class="col-md-12 text-center pt-4">
-      {{ with .Site.Params.cta.subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
     </div>
   </div>
 </div>
@@ -20,9 +30,9 @@
 {{ "<!-- Start Call To Action -->" | safeHTML }}
 {{ end }}
 <script>
-$(function () {
-      el = document.querySelectorAll('.lozad');
-      observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
-      observer.observe();
+  $(function () {
+    el = document.querySelectorAll('.lozad');
+    observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+    observer.observe();
   });
 </script>

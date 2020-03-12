@@ -42,7 +42,9 @@ HUGO_ENABLEGITINFO = "true"
 [[redirects]]
   from = "/byloggingin"
   to = "https://app.pansift.com"
+  force = true
 
 [[redirects]]
   from = "https://blog.pansift.com"
   to = "https://pansift.com/blog"
+  force = true

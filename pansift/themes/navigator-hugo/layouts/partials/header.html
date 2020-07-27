@@ -11,6 +11,8 @@
     <meta name="google-site-verification" content="{{ .Site.Params.GoogleVerification }}">
     <meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}" />
     <meta name="yandex-verification" content="0fd0817a6be1735d" />
+    <meta name="have-i-been-pwned-verification" value="64bac8a2b8d2b23b11d5b9efb6fe6906">
+
     {{ $isHomePage := eq .Title .Site.Title }}
     <meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:title">
     <meta content="{{ .Permalink }}" property="og:url">

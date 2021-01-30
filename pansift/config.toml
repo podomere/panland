@@ -1,8 +1,8 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "PanSift. Deterministic Security."
+title = "PanSift. Rapidly find and fix issues."
 theme = "navigator-hugo"
-summaryLength = 15
+summaryLength = 37
 enableGitInfo = true
 
 [sitemap]
@@ -12,7 +12,7 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  description = "Data breaches are inevitable. Regain control with active defense. PanSift your pipeline!"
+  description = "Make the invisible visible. Rapidly find and fix network or system issues, remotely."
   og_image = "https://pansift.com/images/pansift_social_client_v30.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -28,15 +28,15 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Data breaches are inevitable.</br>Regain control with active defense. PanSift your pipeline!"
+        heading = "Make the invisible visible.</br>Rapidly find and fix network or system issues, remotely. Help your family, friends, and team stay connected."
         description = "Nothing is 100% secure. Detect, direct, and <span style='color: white;'>control</span> attackers with digital lures and tripwires. By using an attacker's movements and reconnaissance against them, defenders <span style='color: white;'>detect</span> and <span style='color: white;'>contain</span> breaches faster." 
-        description2 = "Don't wait <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white;'>279</span></a> days to find out you've been breached. Honeytoken your apps and infrastructure to actively defend in <a href='/#how-it-works'><span style='color: white; text-decoration: underline;'>minutes</a> not months."
+        description2 = "Remotely monitor, <a href='https://databreachcalculator.mybluemix.net/executive-summary' target='_blank'><span style='color: white;'>pinpoint</span></a>, and prove where Wifi, wired, and system issues are, then fix them. Real-time or <a href='/#how-it-works'><span style='color: white; text-decoration: underline;'>retrospective</a> visibility, whenever problems occur."
         button  = true
-        btnTxt = "Live PanSift App Tour"
+        btnTxt = "Live Demo"
         btnTest = "Take a live test tour using your Github login!" 
-        btnURL  = "https://app.pansift.com/github/oauth"
-        videoThumb = "images/slider/3_steps_v14.png"
-        videoURL   = "https://www.youtube.com/embed/I6untRQ8O6U"
+        btnURL  = "https://app.pansift.com/"
+        videoThumb = "images/slider/3_steps_v15.png"
+        videoURL   = "https://www.youtube.com/embed/xxxxxxxxx"
 
     [params.aboutSm]
         enable  = true
@@ -90,7 +90,7 @@ enableGitInfo = true
 
     # Blog Section On Homepage
     [params.blog]
-        enable  = true
+        enable  = false
         topTitle= "What you need to know about hiring"
         title   = "Raise the Bar : Blog"
         subtitle= "Tactics, techniques and procedures for talent teams!"
@@ -131,9 +131,9 @@ enableGitInfo = true
     [params.cta]
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
-        title   = "Take back control while increasing your Security Observability!"
-        subtitle= "Take a <strong>live</strong> test tour using your <strong>Github</strong> login!"
-        btnTxt = "Live App Tour"
+        title   = "Observe, monitor, find, and fix issues for your friends, family, and team."
+        subtitle= ""
+        btnTxt = "Live Demo"
 
     # Pricing
     [params.pricing]
@@ -163,22 +163,22 @@ enableGitInfo = true
 #        name    = "How"
 #        url     = "/howitworks"
 #        weight  = 2
-    #[[menu.nav]]
-    #    name    = "Why"
-    #    url     = "/why"
-    #    weight  = 1
-    [[menu.nav]]
-        name    = "Pricing"
-        url     = "/pricing"
-        weight  = 4
 #    [[menu.nav]]
-#        name    = "Contact"
-#        url     = "/contact"
-#        weight  = 6
-    [[menu.nav]]
-        name    = "Blog"
-        url     = "/blog"
-        weight  = 5
+#        name    = "Why"
+#        url     = "/why"
+#        weight  = 1
+#    [[menu.nav]]
+#        name    = "Pricing"
+#        url     = "/pricing"
+#        weight  = 4
+     [[menu.nav]]
+         name    = "Contact"
+         url     = "/contact"
+         weight  = 6
+#    [[menu.nav]]
+#        name    = "Blog"
+#        url     = "/blog"
+#        weight  = 5
 #   [[menu.nav]]
 #       name    = "Benefits"
 #       url     = "/benefits"
@@ -197,14 +197,14 @@ enableGitInfo = true
         name    = "Pricing"
         url     = "/pricing"
         weight  = 1
-    [[menu.quick]]
-        name    = "Deception"
-        url     = "/faketestimonials"
-        weight  = 3
-    [[menu.quick]]
-        name    = "Training"
-        url     = "/training"
-        weight  = 2
+    #[[menu.quick]]
+    #    name    = "Deception"
+    #    url     = "/faketestimonials"
+    #    weight  = 3
+    #[[menu.quick]]
+    #    name    = "Training"
+    #    url     = "/training"
+    #    weight  = 2
     [[menu.quick]]
         name    = "Contact"
         url     = "/contact"

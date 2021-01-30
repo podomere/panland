@@ -1,0 +1,22 @@
+{{ if .Site.Params.offer.enable }}
+{{ "<!-- Start offer -->" | safeHTML }}
+<section class="about-2 section" id="offer" style="padding: 20px 0 !important;background-color: #333;color: #bdc3c7;">
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-12 text-center">
+      <a href="https://aff.pansift.com/troubleshoot" rel="nofollow">
+        {{ with .Site.Params.offer.subtitle }}
+        <h5 class="mb-3">{{ . | safeHTML }}</h5>
+        {{ end }}
+        <a href="https://aff.pansift.com/troubleshoot" target="_blank">
+        <img class="mb-4 mr-3 d-inline-block img-responsive rounded lozad" width="196" height="48" data-src="/images/offer/pluralsight-logo-white-transparent.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></img>
+        {{ with .Site.Params.offer.title }}
+        <h1 class="d-inline-block">{{ . | safeHTML }}</h1>
+        {{ end }}
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+{{ "<!-- End About section -->" | safeHTML }}
+{{ end }}

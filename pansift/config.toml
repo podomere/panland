@@ -1,6 +1,6 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "PanSift. Rapidly find and fix issues."
+title = "PanSift. Find and fix."
 theme = "navigator-hugo"
 summaryLength = 37
 enableGitInfo = true
@@ -21,7 +21,7 @@ enableGitInfo = true
     logo = "images/mini_header_bnw_v3.png"
     dateFormat = "6 January 2006"
     footerDescription = "Because security can (and should) be black and white."
-    btnTxt = "Live Demo"
+    btnTxt = "Early Access"
     marketing_tweet = "1189663292312211456"
     marketing_linkedin = "6595640699503288320"
 
@@ -30,9 +30,9 @@ enableGitInfo = true
         enable  = true
         heading = "Rapidly 'find and fix' network or system issues remotely. Better support for your team, tribe, or family. Stay connected and sane."
         description = "" 
-        description2 = "<a href='/contact'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. <br>Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind."
+        description2 = "<a href='/early'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind."
         button  = true
-        btnTxt = "Live Demo"
+        btnTxt = "Early Access"
         btnTest = "Take a live test tour using your Github login!" 
         btnURL  = "https://app.pansift.com/"
         videoThumb = "images/slider/3_steps_v15.png"
@@ -45,8 +45,8 @@ enableGitInfo = true
 
     [params.offer]
         enable  = true
-        title   = "<span style = 'color: #fff;'>Make the invisible visible!</span>"
-        subtitle = "Register for early access to PanSift, meanwhile <strong>learn</strong> how to manually troubleshoot the most basic issues yourself."
+        title   = "<span style = 'color: #fff;'>Make the invisible visible and learn at </span>"
+        subtitle = "Register for early access to PanSift. Meanwhile you can <strong>learn</strong> to troubleshoot the most basic issues yourself."
         description = ""
  
     [params.deception]
@@ -63,10 +63,10 @@ enableGitInfo = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Benefits"
-        subtitle = "Get your time and sanity back!"
-        punchline = "Peace of mind in an era of remote work and non-managed networks."
+        subtitle = "Get your time and sanity back."
+        punchline = "Peace of mind in an era of remote work and non-managed networks!"
         onetitle = "Pinpoint Issues"
-        one = "Find wired and <strong>wireless</strong> issues in seconds. Track system and network health"
+        one = "Find wired, <strong>wireless</strong>, and system issues in seconds. Track machine health for when it's needed most."
         fourtitle = "Ease of Install"
         four = "<strong>One-click</strong> Github app install for security/non-security teams alike"
         fivetitle = "Control Spaces"
@@ -75,10 +75,10 @@ enableGitInfo = true
         eight = "Identify sentient attackers trying to move laterally"
         sixtitle = "Amplify Teams"
         six = "<strong>Empower</strong> Blue Teams to demo and test their capabilities"
-        twotitle = "Accelerate Response"
-        two = "Immediate and uptodate metrics and root causes"
+        twotitle = "Accelerated Support"
+        two = "Immediate and up to date metrics, anomaly detection, and root cause(s)."
         threetitle = "Retrospective Troubleshooting"
-        three = "Go back in time to when problems actually occured rather than waiting for them to happen again"
+        three = "Go back in time to when problems actually occured rather than waiting for them to happen again."
         seventitle = "Train"
         seven = "Target security training budget on staff who require it"
 
@@ -131,15 +131,21 @@ enableGitInfo = true
     [params.cta]
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
-        title   = "Monitor, find, and fix issues for your friends, family, or team."
+        title   = "Monitor, find, and fix issues for your team, tribe, or family."
         subtitle= ""
-        btnTxt = "Live Demo"
+        btnTxt = "Early Access"
 
     # Pricing
     [params.pricing]
         enable  = true
         btnTxt = "Try it for free"
 
+    # Early Section
+    [params.early]
+        enable  = true
+        topTitle= "Get Early Access"
+        title   = "Be first in the queue!"
+        subtitle= ""
 
     # Contact Section
     [params.contact]
@@ -171,10 +177,10 @@ enableGitInfo = true
 #        name    = "Pricing"
 #        url     = "/pricing"
 #        weight  = 4
-     [[menu.nav]]
-         name    = "Contact"
-         url     = "/contact"
-         weight  = 1
+#    [[menu.nav]]
+#         name    = "Contact"
+#         url     = "/contact"
+#         weight  = 1
 #    [[menu.nav]]
 #        name    = "Blog"
 #        url     = "/blog"
@@ -183,20 +189,24 @@ enableGitInfo = true
 #       name    = "Benefits"
 #       url     = "/benefits"
 #       weight  = 1
-    [[menu.nav]]
-        name    = "Login"
-        url     = "/contact"
-        weight  = 6
-    [[menu.nav]]
-        name    = "Sign Up"
-        url     = "/contact"
-        weight  = 7
+#    [[menu.nav]]
+#        name    = "Login"
+#        url     = "/contact"
+#        weight  = 6
+#    [[menu.nav]]
+#        name    = "Sign Up"
+#        url     = "/contact"
+#        weight  = 7
     
     # Footer Quick links Menu
     [[menu.quick]]
-        name    = "Pricing"
-        url     = "/pricing"
+        name    = "Team"
+        url     = "/team"
         weight  = 1
+    [[menu.quick]]
+   #     name    = "Pricing"
+   #     url     = "/pricing"
+   #     weight  = 1
     #[[menu.quick]]
     #    name    = "Deception"
     #    url     = "/faketestimonials"
@@ -212,9 +222,6 @@ enableGitInfo = true
 
     # Footer About Menu
     [[menu.about]]
-        name    = "Team"
-        url     = "/team"
-        weight  = 1
     [[menu.about]]
         name    = "Cookie Policy"
         url     = "/cookies"

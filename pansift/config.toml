@@ -30,7 +30,7 @@ enableGitInfo = true
         enable  = true
         heading = "Rapidly find and fix network or system issues. Remote troubleshooting for your family, tribe, or team. Stay connected, remain productive."
         description = "" 
-        description2 = "Make the invisible visible. <a href='/contact'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur. <br>Real-time and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a> troubleshooting for peace of mind."
+        description2 = "<a href='/contact'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur. <br>Real-time and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a> troubleshooting for peace of mind."
         button  = true
         btnTxt = "Live Demo"
         btnTest = "Take a live test tour using your Github login!" 

@@ -46,7 +46,7 @@ enableGitInfo = true
     [params.offer]
         enable  = true
         title   = "<span style = 'color: #fff;'>Make the invisible visible!</span>"
-        subtitle = "Register for early access to PanSift or <strong>learn</strong> how to manually troubleshoot the most basic issues yourself."
+        subtitle = "Register for early access to PanSift, meanwhile <strong>learn</strong> how to manually troubleshoot the most basic issues yourself."
         description = ""
  
     [params.deception]

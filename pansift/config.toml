@@ -12,7 +12,7 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  description = "Rapidly find and fix network or system issues. Remotely support your family, friends, or team."
+  description = "Rapidly 'find and fix' network or system issues remotely. Better support for your team, tribe, or family."
   og_image = "https://pansift.com/images/pansift_social_client_v30.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -28,9 +28,9 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Rapidly find and fix network or system issues. Remote troubleshooting for your family, tribe, or team. Stay connected, remain productive."
+        heading = "Rapidly 'find and fix' network or system issues remotely. Better support for your team, tribe, or family. Stay connected and sane."
         description = "" 
-        description2 = "<a href='/contact'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur. <br>Real-time and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a> troubleshooting for peace of mind."
+        description2 = "<a href='/contact'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. <br>Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind."
         button  = true
         btnTxt = "Live Demo"
         btnTest = "Take a live test tour using your Github login!" 
@@ -63,10 +63,10 @@ enableGitInfo = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Benefits"
-        subtitle = "Control Your Security Outcomes"
-        punchline = "Peace of mind for Defenders and Developers."
-        onetitle = "Detect Breaches"
-        one = "Low cost <strong>high yield</strong> breach detection in minutes not months"
+        subtitle = "Get your time and sanity back!"
+        punchline = "Peace of mind in an era of remote work and non-managed networks."
+        onetitle = "Pinpoint Issues"
+        one = "Find wired and <strong>wireless</strong> issues in seconds. Track system and network health"
         fourtitle = "Ease of Install"
         four = "<strong>One-click</strong> Github app install for security/non-security teams alike"
         fivetitle = "Control Spaces"
@@ -76,9 +76,9 @@ enableGitInfo = true
         sixtitle = "Amplify Teams"
         six = "<strong>Empower</strong> Blue Teams to demo and test their capabilities"
         twotitle = "Accelerate Response"
-        two = "Reduce incident response times by <strong>detecting</strong> and reacting sooner"
-        threetitle = "Contain Leaks"
-        three = "Get ahead of attackers <strong>before</strong> exfiltration occurs"
+        two = "Immediate and uptodate metrics and root causes"
+        threetitle = "Retrospective Troubleshooting"
+        three = "Go back in time to when problems actually occured rather than waiting for them to happen again"
         seventitle = "Train"
         seven = "Target security training budget on staff who require it"
 

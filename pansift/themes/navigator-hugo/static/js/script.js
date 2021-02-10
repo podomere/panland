@@ -270,11 +270,14 @@
         .openOn(mymap);
       L.marker([lat,lng], {zIndexOffset: 1000}).addTo(mymap);
     }
-
-    setInterval(function() {
+    var repetitions = 0;
+    var intervalID = setInterval(function() {
       champion_select = champions_v6[Math.floor(Math.random()*champions_v6.length)];
       new_champion(champion_select[0],champion_select[1]);
       // console.log(data[index]);
+      if (++repetitions === 15) {
+        window.clearInterval(intervalID);
+      }
     }, (Math.floor(Math.random() * 6000 + 8000)));
   }
 

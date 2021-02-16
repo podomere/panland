@@ -1,6 +1,6 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "PanSift. Find and fix."
+title = "Pansift. Rapid find and fix."
 theme = "navigator-hugo"
 summaryLength = 37
 enableGitInfo = true
@@ -12,15 +12,15 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  description = "Rapidly 'find and fix' network or system issues remotely. Better support for your team, tribe, or family."
+  description = "Rapid 'find and fix' for remote network and system issues. Better support for your team, tribe, or family."
   og_image = "https://pansift.com/images/pansift_social_client_v31.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
-  keywords = "infosec, killchain, killchains, breach, breach detection, incident response, honeytokens, honeypots, deception, OWASP, secdevops, devops, nre, network reliability, sre, site reliability, blue teams, blue teaming, honeytokens, risk management, defense, honeynets, network reliability engineering"
+  keywords = "incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"
     home = "Home"
     logo = "images/mini_header_bnw_v3.png"
     dateFormat = "6 January 2006"
-    footerDescription = "Because security can (and should) be black and white."
+    footerDescription = ""
     btnTxt = "Early Access"
     marketing_tweet = "1189663292312211456"
     marketing_linkedin = "6595640699503288320"
@@ -28,7 +28,7 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Rapidly 'find and fix' network or system issues remotely. Better support for your team, tribe, or family. Stay connected and sane."
+        heading = "Rapid find and fix for remote network and system issues. Better support for your team, tribe, or family. Stay connected and sane."
         description = "" 
         description2 = "<a href='/early'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind."
         button  = true

@@ -12,7 +12,7 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  description = "Rapid 'find and fix' for remote network and system issues. Better support for your team, tribe, or family."
+  description = "Rapid 'find and fix' for network and system issues, remotely. Better support for your team, tribe, or family."
   og_image = "https://pansift.com/images/pansift_social_client_v31.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -28,12 +28,12 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "Rapid find and fix for remote network and system issues. Better support for your team, tribe, or family. Stay connected and sane."
+        heading = "Rapid find and fix for network and system issues, remotely. Better support for your team, tribe, or family. Stay connected and sane."
         description = "" 
         description2 = "<a href='/early'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind. Active monitoring, from the real edge."
         button  = true
         btnTxt = "Early Access"
-        btnTest = "Take a live test tour using your Github login!" 
+        btnTest = "" 
         btnURL  = "https://app.pansift.com/"
         videoThumb = "images/slider/3_steps_v15.png"
         videoURL   = "https://www.youtube.com/embed/xxxxxxxxx"

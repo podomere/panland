@@ -75,12 +75,21 @@
       </br>
       <h4>{{ with .Site.Params.benefits.punchline }}{{. | safeHTML}}{{ end }}</h4>
       </br>
-      <a href="/contact"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/benefits/laptop_inlay_2.png"></img></a>
+      <a href="https://research.pansift.com" target="_blank" rel="nofollow"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/benefits/laptop_inlay_2.png"></img></a>
     </div>
   </div>
   <!-- End row -->
-  <!-- End container -->
-</div>
-</section>
-{{ "<!-- End section -->" | safeHTML }}
-{{ end }}
+  <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" style="padding: 0px;">
+      <a href="https://research.pansift.com" target="_blank" rel="nofollow" onclick="ga('gtm1.send','event','Client','visit_research_from_homepage');" class="btn btn-lg text-center mt-1" style="color: #222222; background-color: #BFBFBF; border-color: #222222;"> <i style="font-size: 1em;" class="fas fa-hands-helping"></i><span style="font-size: 1.3em; font-weight: 900;"> Troubleshooting Survey </span></a>
+      <div id="" class="mt-4">
+        <p style="color: #222222;">Take the survey and contribute your experience to keep people <strong>connected</strong> !</p>
+      </div>
+      </br>
+      </br>
+    </div>
+    <!-- End container -->
+  </div>
+  </section>
+  {{ "<!-- End section -->" | safeHTML }}
+  {{ end }}

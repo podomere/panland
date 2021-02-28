@@ -78,7 +78,7 @@ enableGitInfo = true
         twotitle = "Accelerate Outcomes/Support"
         two = "<strong>Immediate</strong> and up to date metrics, anomaly detection, and root cause(s) identification for a faster fix."
         threetitle = "Retrospective Troubleshooting"
-        three = "Go back in time to when problems <strong>actually</strong> occured rather than waiting for them to happen again."
+        three = "Go back in time to when problems <strong>actually</strong> occurred rather than waiting for them to happen again."
         seventitle = "Train"
         seven = "Target security training budget on staff who require it"
 

@@ -32,7 +32,7 @@ enableGitInfo = true
         #heading = "Rapid find and fix for network and system issues, remotely. Better technical support for your team, tribe, or family. Stay connected and sane."
         heading = "Flying blind doing remote support? Need your team, tribe, or family to stay connected and sane? Make the invisible visible with Pansift."
         description = "" 
-        description2 = "<a href='/early'><span style='color: white;'>Pinpoint</span></a>, and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind. Active monitoring, from the real edge."
+        description2 = "<a href='/early'><span style='color: white;'>Pinpoint</span></a> and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind. Find and fix with active monitoring from the real edge."
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

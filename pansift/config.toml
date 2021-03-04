@@ -13,7 +13,7 @@ enableGitInfo = true
 # Site Params
 [params]
   #description = "Stay connected and sane. Rapid find and fix for network and system issues, remotely. Better technical support for your team, tribe, or family."
-  description = "Flying blind doing remote support? Need your team, tribe, or family to stay connected and sane? Make the invisible visible with Pansift."
+  description = "Flying blind doing remote support? Need your team, tribe, or family to stay connected and sane?<br>Make the invisible visible."
   og_image = "https://pansift.com/images/pansift_social_client_v32.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -30,7 +30,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         #heading = "Rapid find and fix for network and system issues, remotely. Better technical support for your team, tribe, or family. Stay connected and sane."
-        heading = "Flying blind doing remote support? Need your team, tribe, or family to stay connected and sane? Make the invisible visible with Pansift."
+        heading = "Flying blind doing remote support? Need your team, tribe, or family to stay connected and sane?<br>Make the invisible visible."
         description = "" 
         description2 = "<a href='/early'><span style='color: white;'>Pinpoint</span></a> and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind. Find and fix with active monitoring from the real edge."
         button  = true

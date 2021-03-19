@@ -30,7 +30,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         #heading = "Rapid find and fix for network and system issues, remotely. Better support for your team, tribe, or family. Stay connected and sane."
-        heading = "Flying blind doing remote support for your team, tribe, or family?<br>Make the invisible visible. Stay conected and sane."
+        heading = "Flying blind doing remote support for your team, tribe, or family? Make the invisible visible. Stay conected and sane."
         description = "" 
         description2 = "<br><a href='/early'><span style='color: white;'>Pinpoint</span></a> and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind.<br>Active monitoring from the real edge."
         button  = true

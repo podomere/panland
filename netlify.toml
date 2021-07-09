@@ -50,7 +50,7 @@ HUGO_ENABLEGITINFO = "true"
   force = true
 
 [[redirects]]
-  from = "https://ingest2.pansift.com"
+  from = "https://ingest4.pansift.com"
   to = "https://pansift.com"
   force = true
 

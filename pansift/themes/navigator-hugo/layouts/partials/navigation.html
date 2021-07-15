@@ -18,8 +18,8 @@
         (function ($) {
         if(document.getElementById("aa-input-nav-container") !== null){
         //if ($('#aa-input-container').length) {
-        var al_client = algoliasearch('AJV2LM71WS', 'afe14bbaabe07eb4792c82ca6bda3449');
-        var al_index = al_client.initIndex('Canary');
+        var al_client = algoliasearch('AJV2LM71WS', '5e6f9e73a96000a01f3f272b8509c15e');
+        var al_index = al_client.initIndex('Agent');
         //initialize autocomplete on search input (ID selector must match)
 
         function al_autocomplete(){
@@ -27,15 +27,15 @@
           { hint: true }, {
             source: autocomplete.sources.hits(al_index, {hitsPerPage: 7}),
             //value to be displayed in input control after user's suggestion selection
-            displayKey: 'aws_access_key',
+            displayKey: 'host',
             //hash of templates used when rendering dataset
             templates: {
               //'suggestion' templating function used to render a single suggestion
               suggestion: function(suggestion) {
-                if (suggestion.aws_access_key) {
-                  token = (suggestion.aws_access_key).substring(0,14)+'..';
-                  } else if(suggestion.token) {
-                  token = suggestion.token;
+                if (suggestion.host) {
+                  token = (suggestion.host).substring(0,14)+'..';
+                  } else if(suggestion.model_label) {
+                  token = suggestion.model_label;
                 }
                 else {
                   token = "";

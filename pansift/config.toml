@@ -13,11 +13,11 @@ enableGitInfo = true
 # Site Params
 [params]
   #description = "Stay connected and sane. Rapid find and fix for network and system issues, remotely. Better technical support for your team, tribe, or family."
-  description = "Flying blind doing remote support for colleagues, family, or friends? Make the invisible visible with Pansift.</center>"
+  description = "Flying blind doing remote support for your team, tribe, or family? Make the invisible visible. Stay conected and sane. Instrument your user edge."
   og_image = "https://pansift.com/images/pansift_social_client_v32.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
-  keywords = "incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"
+  keywords = "userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"
     home = "Home"
     logo = "images/mini_header_bnw_v3.png"
     dateFormat = "6 January 2006"
@@ -30,7 +30,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         #heading = "Rapid find and fix for network and system issues, remotely. Better support for your team, tribe, or family. Stay connected and sane, instrument the edge!"
-        heading = "Flying blind doing remote support for your team, tribe, or family? Make the invisible visible. Stay conected and sane. Instrument the edge."
+        heading = "Flying blind doing remote support for your team, tribe, or family? Make the invisible visible. Stay conected and sane. Instrument your user edge."
         description = "" 
         description2 = "<br><a href='/early'><span style='color: white;'>Pinpoint</span></a> and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for peace of mind. Active monitoring from the <strong>real</strong> edge."
         button  = true

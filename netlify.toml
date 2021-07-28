@@ -58,3 +58,8 @@ HUGO_ENABLEGITINFO = "true"
   from = "https://ingest-default.pansift.com"
   to = "https://pansift.com"
   force = true
+
+[[redirects]]
+  from = "/demo"
+  to = "https://app.pansift.com/demo"
+  force = true

@@ -1,150 +1,155 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
-    <meta content="{{ .Site.Params.description }}" name="description">
-    <meta name="author" content="donal"> 
-    <link rel="canonical" href="{{ .Permalink }}">
-    <meta name="keywords" content="{{ .Site.Params.keywords }}">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+		<meta content="{{ .Site.Params.description }}" name="description">
+		<meta name="author" content="donal"> 
+		<link rel="canonical" href="{{ .Permalink }}">
+		<meta name="keywords" content="{{ .Site.Params.keywords }}">
 
-    <meta name="google-site-verification" content="{{ .Site.Params.GoogleVerification }}">
-    <meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}" />
-    <meta name="yandex-verification" content="0fd0817a6be1735d" />
+		<meta name="google-site-verification" content="{{ .Site.Params.GoogleVerification }}">
+		<meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}" />
+		<meta name="yandex-verification" content="0fd0817a6be1735d" />
 
-    {{ $isHomePage := eq .Title .Site.Title }}
-    <meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:title">
-    <meta content="{{ .Permalink }}" property="og:url">
-    <meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:site_name">
-    <meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" itemprop="name">
-    {{ if isset .Params "image" }}
-    <meta content="{{ .Params.image | absURL }}" property="og:image">
-    <meta content="{{ .Params.image | absURL }}" itemprop="image">
-    <meta content="{{ .Params.image | absURL}}" name="twitter:image">
-    {{ else }}
-    <meta content="{{ .Site.Params.og_image | absURL }}" property="og:image">
-    <meta content="{{ .Site.Params.og_image | absURL }}" itemprop="image">
-    <meta content="{{ .Site.Params.og_image | absURL }}" name="twitter:image">
-    {{ end }}
-    {{ if isset .Params "subtitle" }}
-    <meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" name="description">
-    <meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" property="og:description">
-    <meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" itemprop="description">
-    <meta content="{{ .Title }}" name="twitter:title">
-    <meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" name="twitter:description">
-    {{ else }}
-    <meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }}{{ .Site.Params.description }}" name="description">
-    <meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" property="og:description">
-    <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" itemprop="description">
-    <meta content="{{ .Title }}" name="twitter:title">
-    <meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" name="twitter:description">
-    {{ end }}
+		{{ $isHomePage := eq .Title .Site.Title }}
+		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:title">
+		<meta content="{{ .Permalink }}" property="og:url">
+		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:site_name">
+		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" itemprop="name">
+		{{ if isset .Params "image" }}
+		<meta content="{{ .Params.image | absURL }}" property="og:image">
+		<meta content="{{ .Params.image | absURL }}" itemprop="image">
+		<meta content="{{ .Params.image | absURL}}" name="twitter:image">
+		{{ else }}
+		<meta content="{{ .Site.Params.og_image | absURL }}" property="og:image">
+		<meta content="{{ .Site.Params.og_image | absURL }}" itemprop="image">
+		<meta content="{{ .Site.Params.og_image | absURL }}" name="twitter:image">
+		{{ end }}
+		{{ if isset .Params "subtitle" }}
+		<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" name="description">
+		<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" property="og:description">
+		<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" itemprop="description">
+		<meta content="{{ .Title }}" name="twitter:title">
+		<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" name="twitter:description">
+		{{ else }}
+		<meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }}{{ .Site.Params.description }}" name="description">
+		<meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" property="og:description">
+		<meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" itemprop="description">
+		<meta content="{{ .Title }}" name="twitter:title">
+		<meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" name="twitter:description">
+		{{ end }}
 
-    <meta content="summary_large_image" name="twitter:card">
-    <script>
-      window.ab_branch = {{ getenv "BRANCH" }};
-    </script>
-    {{ if in (.Site.BaseURL | string) "pansift.com" }}
-    <!-- Google Tag Manager -->
-    <script type="text/plain" data-cookieconsent="statistics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WXBBXQJ');</script>
-  <!-- End Google Tag Manager -->
-  {{ end }}
-  <!-- Rich Data / Structured Data -->
-  <script type="application/ld+json"> 
-    { 
-      "@context": "http://schema.org", 
-      "@type": "Organization", 
-      "name" : "PanSift", 
-      "url": "https://pansift.com", 
-      "sameAs" : [ 
-      "https://twitter.com/pansifter", 
-      "https://www.linkedin.com/company/pansift/" 
-      ] 
-    } 
-  </script> 
-  <script type="application/ld+json"> 
-    { 
-      "@context": "http://schema.org", 
-      "@type": "LocalBusiness", 
-      "name" : "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}", 
-      "url": "https://pansift.com", 
-      "logo": "https://pansift.com/android-chrome-384x384.png", 
-      "image": "https://pansift.com/android-chrome-384x384.png", 
-      {{ if isset .Params "subtitle" }} "description": "{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", {{ else }} "description": "{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}",{{ end }}
-      "address": { 
-        "@type": "PostalAddress", 
-        "addressLocality": "Dublin", 
-        "addressRegion": "IE", 
-        "streetAddress": "Dublin 5", 
-        "postalCode": "D05"
-      }, 
-      "openingHours": [ 
-      "Mo-Fr 10:00-16:00"
-      ] 
-    } 
-  </script>
-  <script type='application/ld+json'>
-    {
-      "@context": "http://schema.org/",
-      "@type": "VideoObject",
-      "contentUrl": "https://pansift.com/video/ps_intro_video_v2_opt.mp4",
-      "playerType": "HTML5",
-      "uploadDate": "2019-11-10 18:21:23 +0100",
-      "thumbnailUrl": "https://pansift.com//images/hero/3_steps_v15.png",
-      {{ if isset .Params "subtitle" }} "description": "{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", {{ else }} "description": "{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}",{{ end }}
-      "name": "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}"
-    }
-  </script>
-  <!-- Rich Data / Structured Data -->
+		<meta content="summary_large_image" name="twitter:card">
+		<script>
+			window.ab_branch = {{ getenv "BRANCH" }};
+		</script>
+		{{ if in (.Site.BaseURL | string) "pansift.com" }}
+		<!-- Google Tag Manager -->
+		<script type="text/plain" data-cookieconsent="statistics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WXBBXQJ');</script>
+		<!-- End Google Tag Manager -->
+		<script>
+			ga(function() {
+				var google_tracker_name = ga.getAll()[0].get('name');
+			});
+		</script>
+		{{ end }}
+		<!-- Rich Data / Structured Data -->
+		<script type="application/ld+json"> 
+			{ 
+			"@context": "http://schema.org", 
+			"@type": "Organization", 
+			"name" : "PanSift", 
+			"url": "https://pansift.com", 
+			"sameAs" : [ 
+			"https://twitter.com/pansifter", 
+			"https://www.linkedin.com/company/pansift/" 
+			] 
+		} 
+		</script> 
+		<script type="application/ld+json"> 
+			{ 
+			"@context": "http://schema.org", 
+			"@type": "LocalBusiness", 
+			"name" : "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}", 
+			"url": "https://pansift.com", 
+			"logo": "https://pansift.com/android-chrome-384x384.png", 
+			"image": "https://pansift.com/android-chrome-384x384.png", 
+			{{ if isset .Params "subtitle" }} "description": "{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", {{ else }} "description": "{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}",{{ end }}
+			"address": { 
+				"@type": "PostalAddress", 
+				"addressLocality": "Dublin", 
+				"addressRegion": "IE", 
+				"streetAddress": "Dublin 5", 
+				"postalCode": "D05"
+			}, 
+			"openingHours": [ 
+			"Mo-Fr 10:00-16:00"
+			] 
+		} 
+		</script>
+		<script type='application/ld+json'>
+			{
+			"@context": "http://schema.org/",
+			"@type": "VideoObject",
+			"contentUrl": "https://pansift.com/video/ps_intro_video_v2_opt.mp4",
+			"playerType": "HTML5",
+			"uploadDate": "2019-11-10 18:21:23 +0100",
+			"thumbnailUrl": "https://pansift.com//images/hero/3_steps_v15.png",
+			{{ if isset .Params "subtitle" }} "description": "{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}", {{ else }} "description": "{{ if eq $isHomePage false }}{{ .Description }} {{ end }}{{ .Site.Params.description }}",{{ end }}
+			"name": "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}"
+		}
+		</script>
+		<!-- Rich Data / Structured Data -->
 
-  <title>{{ .Site.Title }}</title>
+		<title>{{ .Site.Title }}</title>
 
-  {{ "<!-- Mobile Specific Meta -->" | safeHTML }}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ "<!-- Mobile Specific Meta -->" | safeHTML }}
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {{ "<!-- Favicon -->" | safeHTML }}
-  <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | absURL }}" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		{{ "<!-- Favicon -->" | safeHTML }}
+		<link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | absURL }}" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-  {{"<!-- Stylesheets -->" | safeHTML}}
-  {{ "<!-- bootstrap.min css -->" | safeHTML}}
-  <link rel="stylesheet" href="{{ "plugins/bootstrap/dist/css/bootstrap.min.css" | absURL }}">
-  {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
-  {{ if or (.IsHome) (eq .Page.Title "How It Works") (eq .Page.Title "Deception")}}
-  {{ "<!-- VideoJS -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "plugins/videojs/dist/css/video-js.min.css" | absURL }}">
-  <link rel="stylesheet" href="{{ "plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}">
-  {{ end }}
-  {{ "<!-- Font Awesome -->" | safeHTML }}
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" media="none" onload="this.media='all'">
-  {{ if (.IsHome)}}
-  {{ "<!-- Leaflet Map -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "plugins/leaflet/dist/css/leaflet.css" | absURL }}" media="none" onload="this.media='all'"/>
-  {{ end }}
-  {{ if (eq .Page.Title "Pricing")}}
-  {{ "<!-- NoUISlider Map -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "plugins/nouislider/dist/css/nouislider.min.css" | absURL }}" media="none" onload="this.media='all'"/>
-  {{ end }}
-  {{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "Deception") (eq .Page.Title "Blog. Raise the Bar.") (eq .Page.Title "Training") }}
-  <!-- Algolia Search Live DB -->
-  <script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
-  <script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
-  {{ end }}
-  {{ "<!-- jQuery -->" | safeHTML }}
-  <script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
+		{{"<!-- Stylesheets -->" | safeHTML}}
+		{{ "<!-- bootstrap.min css -->" | safeHTML}}
+		<link rel="stylesheet" href="{{ "plugins/bootstrap/dist/css/bootstrap.min.css" | absURL }}">
+		{{ "<!-- Main Stylesheet -->" | safeHTML }}
+		<link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+		{{ if or (.IsHome) (eq .Page.Title "How It Works") (eq .Page.Title "Deception")}}
+		{{ "<!-- VideoJS -->" | safeHTML }}
+		<link rel="stylesheet" href="{{ "plugins/videojs/dist/css/video-js.min.css" | absURL }}">
+		<link rel="stylesheet" href="{{ "plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}">
+		{{ end }}
+		{{ "<!-- Font Awesome -->" | safeHTML }}
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" media="none" onload="this.media='all'">
+		{{ if (.IsHome)}}
+		{{ "<!-- Leaflet Map -->" | safeHTML }}
+		<link rel="stylesheet" href="{{ "plugins/leaflet/dist/css/leaflet.css" | absURL }}" media="none" onload="this.media='all'"/>
+		{{ end }}
+		{{ if (eq .Page.Title "Pricing")}}
+		{{ "<!-- NoUISlider Map -->" | safeHTML }}
+		<link rel="stylesheet" href="{{ "plugins/nouislider/dist/css/nouislider.min.css" | absURL }}" media="none" onload="this.media='all'"/>
+		{{ end }}
+		{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "Deception") (eq .Page.Title "Blog. Raise the Bar.") (eq .Page.Title "Training") }}
+		<!-- Algolia Search Live DB -->
+		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
+		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
+		{{ end }}
+		{{ "<!-- jQuery -->" | safeHTML }}
+		<script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
 
-	<!-- Feeding some leads? -->
-	<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)},1); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('YEgkB8lRJ0x4ep3Z'); </script>
+		<!-- Feeding some leads? -->
+		<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)},1); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('YEgkB8lRJ0x4ep3Z'); </script>
 
-</head>
+	</head>
 
-<body id="body" style="background-color: #fff;">
+	<body id="body" style="background-color: #fff;">

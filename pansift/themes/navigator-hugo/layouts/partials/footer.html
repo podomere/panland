@@ -56,11 +56,6 @@
 
 
 {{ "<!-- Essential Scripts -->" | safeHTML }}
-<script>
-ga(function() {
-  var google_tracker_name = ga.getAll()[0].get('name');
-	});
-</script>
 {{ "<!-- Bootstrap -->" | safeHTML }}
 <script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>
 <script src="{{ "plugins/bootstrap/dist/js/bootstrap.min.js" | absURL }}"></script>
@@ -68,6 +63,13 @@ ga(function() {
 <script data-cookieconsent="functionality" type="text/javascript" src="{{ "js/script.js" | absURL }}"></script>
 {{ "<!-- Lazy loading -->" | safeHTML }}
 <script data-cookieconsent="functionality" src="{{ "plugins/lozad/lozad.min.js" | absURL }}"></script>
+<script>
+	$(function () {
+		el = document.querySelectorAll('.lozad');
+		observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+		observer.observe();
+	});
+</script>
 <!--Start of Tawk.to Script-->
 <script data-cookieconsent="functionality" type="text/javascript" async>
 	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

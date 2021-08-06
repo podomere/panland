@@ -57,20 +57,9 @@
 
 {{ "<!-- Essential Scripts -->" | safeHTML }}
 <script>
-	function check_ga() {
-		if (typeof ga === 'function' && ga.loaded){
-			if (ga.getAll().length > 0) {
-				var google_tracker_name = ga.getAll()[0].get('name');
-			}
-			else {
-				setTimeout(check_ga,500);
-			}
-		} else {
-			//console.log('Not loaded');
-			setTimeout(check_ga,500);
-		}
-	}
-check_ga();
+ga(function() {
+  var google_tracker_name = ga.getAll()[0].get('name');
+	});
 </script>
 {{ "<!-- Bootstrap -->" | safeHTML }}
 <script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>

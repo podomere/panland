@@ -53,12 +53,23 @@
 		})(window,document,'script','dataLayer','GTM-WXBBXQJ');</script>
 		<!-- End Google Tag Manager -->
 		<script>
-var google_tracker_name = "";
-$(function() {
-	ga(function() {
-		google_tracker_name = ga.getAll()[0].get('name');
-	})
-});
+var google_tracker_name = ""
+function check_ga() {
+	if (typeof ga === 'function' && ga.loaded){
+		if (ga.getAll().length > 0) {
+			ga(function() {
+				google_tracker_name = ga.getAll()[0].get('name');
+			});
+		}
+		else {
+			setTimeout(check_ga,1000);
+		}
+	} else {
+		// console.log('Not loaded');
+		setTimeout(check_ga,1000);
+	}
+}
+check_ga();
 		</script>
 		{{ end }}
 		<!-- Rich Data / Structured Data -->

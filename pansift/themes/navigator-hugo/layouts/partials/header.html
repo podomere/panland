@@ -53,10 +53,12 @@
 		})(window,document,'script','dataLayer','GTM-WXBBXQJ');</script>
 		<!-- End Google Tag Manager -->
 		<script>
-		var google_tracker_name = "";
-			ga(function() {
-				google_tracker_name = ga.getAll()[0].get('name');
-			});
+var google_tracker_name = "";
+$(function() {
+	ga(function() {
+		google_tracker_name = ga.getAll()[0].get('name');
+	})
+});
 		</script>
 		{{ end }}
 		<!-- Rich Data / Structured Data -->

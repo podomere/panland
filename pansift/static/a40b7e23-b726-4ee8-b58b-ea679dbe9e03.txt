@@ -1,0 +1,9 @@
+From Donovan: donovan@hop.ie
+
+Sure. You can point them to some of my articles:
+https://css-tricks.com/lazy-loading-images-in-svelte/
+https://www.creativebloq.com/3d/how-create-impressive-3d-graphics-css3-21410672
+https://tutsplus.com/authors/donovan-hutchinson
+https://www.smashingmagazine.com/2014/08/a-better-404-page/
+Also I created and wrote every article on https://cssanimation.rocks
+I also wrote a couple of posts for NearForm https://www.nearform.com/author/donovan-huchinson/

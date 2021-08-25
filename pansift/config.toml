@@ -1,6 +1,6 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "Pansift. Rapid find/fix."
+title = "Pansift. Rapid find / fix."
 theme = "navigator-hugo"
 summaryLength = 37
 enableGitInfo = true
@@ -14,7 +14,7 @@ enableGitInfo = true
 [params]
   # description = "Stay connected and sane. Rapid find and fix for network and system issues, remotely. Better technical support for your team, tribe, or family."
   # description = "Flying blind doing remote support for your team, tribe, or family? Make the invisible visible. Stay conected and sane. Instrument your user edge."
-	description = "Pinpoint and prove where Wifi, Internet, or system issues occur. Real-time, retrospective, and remote troubleshooting for your Mac(s)."
+	description = "Pinpoint and prove where Wifi, Internet, or system issues occur. Real-time, retrospective, and remote troubleshooting."
   og_image = "https://pansift.com/images/pansift_social_client_v32.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -31,7 +31,7 @@ enableGitInfo = true
     [params.hero]
         enable  = true
         #heading = "Rapid find and fix for network and system issues, remotely. Better support for your team, tribe, or family. Stay connected and sane, instrument the real user edge!"
-				heading = "<a href='https://app.pansift.com/demo'><span style='color: white;'><u>Pinpoint</u></span></a> and prove where Wifi, ISP, or system issues occur. Real-time, <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for your Mac(s)."
+				heading = "<a href='https://app.pansift.com/demo'><span style='color: white;'><u>Pinpoint</u></span></a> and prove where Wifi, ISP, or system issues occur. Real-time, <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting."
         # heading = "Flying blind doing remote support for your team, tribe, or family? Make the invisible visible. Stay conected and sane. Instrument you the real user edge!"
         description = "" 
         # description2 = "<br><a href='/early'><span style='color: white;'>Pinpoint</span></a> and prove where Wifi, ISP, or system issues occur in offices, shared workspaces, or at home. Real-time, <a href='/#benefits'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='/#benefits'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting for rapid peace of mind. Active monitoring from the <strong>real</strong> edge."

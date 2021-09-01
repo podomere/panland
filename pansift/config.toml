@@ -23,7 +23,7 @@ enableGitInfo = true
     logo = "images/mini_header_bnw_v3.png"
     dateFormat = "6 January 2006"
     footerDescription = ""
-    btnTxt = "Early Demo"
+    btnTxt = "Live Demo"
     marketing_tweet = "1189663292312211456"
     marketing_linkedin = "6595640699503288320"
 

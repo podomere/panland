@@ -68,12 +68,12 @@ enableGitInfo = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Benefits"
-        subtitle = "How can you improve <strong>user experience</strong> if you can't see what the user is experiencing?"
-        punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back whether at work or home."
+        subtitle = "Improve <strong>user experience</strong> by seeing what the user <strong>actually experiences</strong>. Whether it's <strong>sales demos</strong>, <strong>customer success calls</strong>, or family conferences... ensure you can solve issues rapidly and remotely."
+        punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
         onetitle = "Pinpoint Issues Effortlessly and Remotely"
         one = "Find wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."
         twotitle = "Accelerated Outcomes For Support"
-        two = "<strong>Claim back your time</strong> with up to date metrics, anomaly detection, and root cause(s) identification for a faster fix."
+        two = "<strong>Claim back your time</strong> with up to date metrics, anomaly detection, and root cause(s) identification."
         threetitle = "Timetravel with Retrospective Troubleshooting"
         three = "Go back in time to when problems <strong>actually</strong> occurred rather than waiting for them to happen again."
         fourtitle = "Weeks Of Offline Buffering"
@@ -87,7 +87,7 @@ enableGitInfo = true
         eighttitle = "Synchronous Graphing"
         eight = "Interactive graphs and tabs all <strong>update</strong> when you zoom, pan, tab, or query. Rapidly linked contexts give the whole picture."
         ninetitle = "Continuous Synthetic Testing!"
-        nine = "IPv4, IPv6 info, dynamic MAC/OUI lookups, WLAN SSID / MCS / SNR / rogues, DNS, HTTP / TTFB, system stats. All <strong>in-path.</strong>"
+        nine = "IPv4, IPv6 info, dynamic MAC/OUI lookups, WLAN SSID / MCS / SNR / rogues, DNS, HTTP / TTFB, system stats etc. All <strong>in-path !</strong>"
 
     # NetDevOps
     [params.netdevops]

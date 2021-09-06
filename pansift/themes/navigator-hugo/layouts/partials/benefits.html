@@ -1,122 +1,149 @@
 {{ if .Site.Params.benefits.enable }}
 {{ "<!-- Start Benefits section -->" | safeHTML }}
 <section class="service-2 section" background-color="#FFFFFF" id="benefits" style="padding-bottom: 0;">
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="title text-center">
-        {{ with .Site.Params.benefits.title }}
-        <h2>{{.}}</h2>
-        <span class="border"></span>
-        {{ end }}
-        {{ with .Site.Params.benefits.subtitle }}<p>{{. | safeHTML}}</p>{{ end }}
-      </div>
-    </div>
-  </div> 
-  <!-- End row -->
-  <div class="row justify-content-center">
-    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">1.</span>
-        <i class="fas fa-bullseye"></i>
-        <h4>{{ with .Site.Params.benefits.onetitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.one }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div> 
-    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">2.</span>
-        <i class="fas fa-stopwatch"></i>
-        <h4>{{ with .Site.Params.benefits.twotitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.two }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">3.</span>
-        <i class="fas fa-history"></i>
-        <h4>{{ with .Site.Params.benefits.threetitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.three }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">4.</span>
-        <i class="fas fa-network-wired"></i>
-        <h4>{{ with .Site.Params.benefits.fourtitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.four }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div> 
-    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">5.</span>
-        <i class="fas fa-thumbtack"></i>
-        <h4>{{ with .Site.Params.benefits.fivetitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.five }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div> 
-    <div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">6.</span>
-        <i class="fas fa-compress-alt"></i>
-        <h4>{{ with .Site.Params.benefits.sixtitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.six }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div> 
-<div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">7.</span>
-        <i class="fas fa-compress-alt"></i>
-        <h4>{{ with .Site.Params.benefits.seventitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.seven }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div>
-<div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">8.</span>
-        <i class="fas fa-compress-alt"></i>
-        <h4>{{ with .Site.Params.benefits.eighttitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.eight }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div>
-<div class="col-md-4 col-sm-6 col-xs-12 p-0">
-      <div class="service-item text-center">
-        <span class="count">9.</span>
-        <i class="fas fa-compress-alt"></i>
-        <h4>{{ with .Site.Params.benefits.ninetitle }}{{. | safeHTML}}</h4>{{ end }}
-        <p>{{ with .Site.Params.benefits.nine }}<p>{{. | safeHTML}}</p>{{ end }}
-        </p>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class="col text-center">
-      </br>
-      </br>
-      <h4>{{ with .Site.Params.benefits.punchline }}{{. | safeHTML}}{{ end }}</h4>
-      </br>
-      <a href="https://app.pansift.com/demo" target="_blank" rel="nofollow"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/benefits/laptop_inlay_3.png"></img></a>
-    </div>
-  </div>
-  <!-- End row -->
-  <div class="row">
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" style="padding: 0px;">
-      <a href="https://app.pansift.com/demo" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_research_from_homepage');" class="btn btn-lg text-center mt-1" style="color: #222222; background-color: #BFBFBF; border-color: #222222;"> <i style="font-size: 1em;" class="fas fa-hands-helping"></i><span style="font-size: 1.3em; font-weight: 900;"> Check out the demo! </span></a>
-      <div id="" class="mt-4">
-        <p style="color: #222222;">Take a peak at how to keep your tribes <strong>connected</strong> !</p>
-      </div>
-      </br>
-      </br>
-    </div>
-    <!-- End container -->
-  </div>
-  </section>
-  {{ "<!-- End section -->" | safeHTML }}
-  {{ end }}
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="title text-center">
+					{{ with .Site.Params.benefits.title }}
+					<h2>{{.}}</h2>
+					<span class="border"></span>
+					{{ end }}
+					{{ with .Site.Params.benefits.subtitle }}<p>{{. | safeHTML}}</p>{{ end }}
+				</div>
+			</div>
+		</div> 
+		<div class="row mt-2 mb-5">
+			<div class="clearfix"></div>
+			<div class="col text-center">
+				<a href="https://app.pansift.com/demo" target="_blank" rel="nofollow"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/benefits/laptop_inlay_macro_v1.png"></img></a>
+			</div>
+		</div>
+		<!-- End row -->
+		<div class="row justify-content-center">
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">1.</span>
+					<i class="fas fa-bullseye"></i>
+					<h4>{{ with .Site.Params.benefits.onetitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.one }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div> 
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">2.</span>
+					<i class="fas fa-stopwatch"></i>
+					<h4>{{ with .Site.Params.benefits.twotitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.two }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">3.</span>
+					<i class="fas fa-history"></i>
+					<h4>{{ with .Site.Params.benefits.threetitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.three }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-5 mb-5">
+			<div class="clearfix"></div>
+			<div class="col text-center">
+				<a href="https://app.pansift.com/demo" target="_blank" rel="nofollow"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/benefits/laptop_inlay_ip_v1.png"></img></a>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">4.</span>
+					<i class="fas fa-network-wired"></i>
+					<h4>{{ with .Site.Params.benefits.fourtitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.four }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div> 
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">5.</span>
+					<i class="fas fa-thumbtack"></i>
+					<h4>{{ with .Site.Params.benefits.fivetitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.five }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div> 
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">6.</span>
+					<i class="fas fa-compress-alt"></i>
+					<h4>{{ with .Site.Params.benefits.sixtitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.six }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div> 
+		</div>
+
+		<div class="row mt-5 mb-5">
+			<div class="clearfix"></div>
+			<div class="col text-center">
+				<a href="https://app.pansift.com/demo" target="_blank" rel="nofollow"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/benefits/laptop_inlay_wifi_v1.png"></img></a>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">7.</span>
+					<i class="fas fa-compress-alt"></i>
+					<h4>{{ with .Site.Params.benefits.seventitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.seven }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">8.</span>
+					<i class="fas fa-compress-alt"></i>
+					<h4>{{ with .Site.Params.benefits.eighttitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.eight }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<span class="count">9.</span>
+					<i class="fas fa-compress-alt"></i>
+					<h4>{{ with .Site.Params.benefits.ninetitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.benefits.nine }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col text-center">
+				</br>
+				<a href="https://app.pansift.com/demo" target="_blank" rel="nofollow"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/benefits/laptop_inlay_http_v1.png"></img></a>
+				</br>
+				</br>
+				<h4>{{ with .Site.Params.benefits.punchline }}{{. | safeHTML}}{{ end }}</h4>
+				</br>
+			</div>
+		</div>
+		<!-- End row -->
+		<div class="row mt-2">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" style="padding: 0px;">
+				<a href="https://app.pansift.com/demo" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_benefits');" class="btn btn-lg text-center mt-1" style="color: #222222; background-color: #BFBFBF; border-color: #222222;"> <i style="font-size: 1em;" class="fas fa-hands-helping"></i><span style="font-size: 1.3em; font-weight: 900;"> Check out the demo! </span></a>
+				<div id="" class="mt-4">
+					<p style="color: #222222;">Take a peak at how to keep your tribes <strong>connected</strong> !</p>
+				</div>
+				</br>
+				</br>
+			</div>
+			<!-- End container -->
+		</div>
+</section>
+{{ "<!-- End section -->" | safeHTML }}
+{{ end }}

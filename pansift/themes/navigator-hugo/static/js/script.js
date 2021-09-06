@@ -284,73 +284,32 @@
 
   if(document.getElementById("number_of_agents") !== null){
     // if ($('#number_of_agents').length) {
-
-    function calculate_total_costs() {
-
-      var agent_cost = (sliderFormat.noUiSlider.get() - 1) * 99;
-      var excess_screens = sliderFormatScreens.noUiSlider.get() - ((sliderFormat.noUiSlider.get() - 1) * 50);
-      var excess_screens = excess_screens < 0 ? 0 : excess_screens;
-      var number_of_a_packs = 0;
-      var number_of_b_packs = 0;
-      var number_of_c_packs = 0;
-      var cost_of_a_packs = 99;
-      var cost_of_b_packs = 49;
-      var cost_of_c_packs = 29;
-      var b_remainder = 0;
-      var c_remainder = 0;
-      var a_remainder  = excess_screens % 50;
-
-      if (a_remainder >= 0 ) {
-        var number_of_a_packs = Math.floor(excess_screens / 50);
-      }
-
-      if (a_remainder >= 0 && a_remainder % 20 >= 0) {
-        var number_of_b_packs = Math.floor(a_remainder / 20);
-        var b_remainder = a_remainder % 20;
-      }
-      if (a_remainder >= 0 && a_remainder % 20 >= 0 && b_remainder % 20 >= 0) {
-        var c_remainder = Math.floor(b_remainder / 10);
-      }
-      var total_cost = agent_cost + (number_of_a_packs * cost_of_a_packs) + (number_of_b_packs * cost_of_b_packs) + (c_remainder * cost_of_c_packs);
-      $('#total_cost').text(total_cost + '€ p/m');
-    }
-
-    var sliderFormatScreens = document.getElementById('slider-format-screens');
-    noUiSlider.create(sliderFormatScreens, {
-      start: [ 0 ],
-      connect: [true, false],
-      step: 10,
-      range: {
-        'min': [ 0 ],
-      'max': [ 1100 ]
-      },
-      format: wNumb({
-                decimals: 0
-              })
-    });
-    var inputFormatScreens = document.getElementById('input-format-screens');
-    sliderFormatScreens.noUiSlider.on('update', function( screenvalues, screenhandle ) {
-      inputFormatScreens.value = screenvalues[screenhandle];
-    });
-
-    inputFormatScreens.addEventListener('change', function(){
-      sliderFormatScreens.noUiSlider.set(this.value);
-      calculate_total_costs();
-    });
-
-    var sliderFormat = document.getElementById('slider-format');
+    
+		var sliderFormat = document.getElementById('slider-format');
     noUiSlider.create(sliderFormat, {
-      start: [ 1 ],
+      start: [ 0 ],
       connect: [true, false],
       step: 1,
       range: {
-        'min': [ 1 ],
-      'max': [ 10 ]
+        'min': [ 0 ],
+      'max': [ 50 ]
       },
       format: wNumb({
                 decimals: 0
               })
     });
+
+    function calculate_total_costs() {
+      var agent_cost = 0;
+			if (sliderFormat.noUiSlider.get() < 3) {
+				agent_cost = 0;
+			} else {
+				agent_cost = (sliderFormat.noUiSlider.get()) * 9;
+			}
+      var total_cost = agent_cost 
+      $('#total_cost').html('<strong>' + total_cost + '€ p/m </strong>');
+    }
+
 
     var inputFormat = document.getElementById('input-format');
     sliderFormat.noUiSlider.on('update', function( values, handle ) {
@@ -361,17 +320,9 @@
       calculate_total_costs();
     });
 
-    function crossUpdate ( value, slider ) {
-      // Set the value
-      slider.noUiSlider.set((value-1)*50);
-    }
     sliderFormat.noUiSlider.on('slide', function( values, handle ){
-      crossUpdate(values[handle], sliderFormatScreens);
       calculate_total_costs();
     });
-    sliderFormatScreens.noUiSlider.on('slide', function ( handle, values) {
-      calculate_total_costs();
-    });  
   }
 
   /* ========================================================================= */

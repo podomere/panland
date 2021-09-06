@@ -62,7 +62,7 @@
       <a style="white-space:nowrap;" class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
       </li>
       {{ end }}
-      <li class="nav-item mt-1">
+      <li class="nav-item mt-1 ml-3">
       <a href="https://app.pansift.com/demo" style="white-space:nowrap; padding: .1rem .5rem !important;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_navigation');" class="btn btn-sm btn-success nav-cta"><i style="font-size: 1em;" class="fas fa-user-clock align-middle"></i><span class="align-middle" style="font-size: 1em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }} </span></a>
       </li>
     </ul>

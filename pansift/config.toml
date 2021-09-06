@@ -50,8 +50,8 @@ enableGitInfo = true
 
     [params.offer]
         enable  = true
-        title   = "<span style = 'color: #fff;'>Find, fix, and skill up at </span>"
-        subtitle = "Register for early access to PanSift (but while you're waiting, <strong>learn</strong> to troubleshoot the most basic issues yourself)."
+        title   = "<span style = 'color: #fff;'>Pansift for a rapid find and fix.</span>"
+        subtitle = "Life is too short to waste fumbling about in the dark! Light up your users data path and performance. Claim your time back."
         description = ""
  
     [params.deception]
@@ -178,14 +178,14 @@ enableGitInfo = true
 #        name    = "Why"
 #        url     = "/why"
 #        weight  = 1
-#    [[menu.nav]]
-#        name    = "Pricing"
-#        url     = "/pricing"
-#        weight  = 4
-#    [[menu.nav]]
-#         name    = "Contact"
-#         url     = "/contact"
-#         weight  = 1
+    [[menu.nav]]
+        name    = "Pricing"
+        url     = "/pricing"
+        weight  = 1
+    [[menu.nav]]
+         name    = "Contact"
+         url     = "/contact"
+         weight  = 2
 #    [[menu.nav]]
 #        name    = "Blog"
 #        url     = "/blog"
@@ -209,9 +209,9 @@ enableGitInfo = true
         url     = "/team"
         weight  = 1
     [[menu.quick]]
-   #     name    = "Pricing"
-   #     url     = "/pricing"
-   #     weight  = 1
+        name    = "Pricing"
+        url     = "/pricing"
+        weight  = 1
     #[[menu.quick]]
     #    name    = "Deception"
     #    url     = "/faketestimonials"

@@ -20,14 +20,14 @@
 					<h3>About</h3>
 					<div class="col-xs-12 col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center" style="">
 						<ul>
+							<li>
+								<a href="/team">Team</a>
+							</li>
 							{{ range .Site.Menus.about }}
 							<li>
 								<a href="{{ .URL }}">{{ .Name }}</a>
 							</li>
 							{{ end }}
-							<li>
-								<a href="https://app.pansift.com/privacy/privacy.html" target="_blank">Privacy Policy <i class="fas fa-external-link-alt"></i></a>
-							</li>
 							<li>
 								<a href="https://defensible.ie" target="_blank">Defensible Ltd <i class="fas fa-external-link-alt"></i></a>
 							</li>

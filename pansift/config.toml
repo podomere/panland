@@ -203,10 +203,10 @@ enableGitInfo = true
 #        weight  = 7
     
     # Footer Quick links Menu
-    [[menu.quick]]
-        name    = "Team"
-        url     = "/team"
-        weight  = 1
+    # [[menu.quick]]
+    #    name    = "Team"
+    #    url     = "/team"
+    #    weight  = 1
     [[menu.quick]]
         name    = "Pricing"
         url     = "/pricing"
@@ -225,7 +225,6 @@ enableGitInfo = true
         weight  = 4
 
     # Footer About Menu
-    [[menu.about]]
     [[menu.about]]
         name    = "Cookie Policy"
         url     = "/cookies"

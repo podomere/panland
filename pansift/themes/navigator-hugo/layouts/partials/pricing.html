@@ -6,18 +6,21 @@
 <script data-cookieconsent="functionality" src="{{ "plugins/wnumb/dist/js/wNumb.min.js" | absURL }}"></script>
 <div class="container">
   <div class="row">
-    <div class="col-xl-8 col-lg-8 col-md-6 col-xs-12">
-      <h2>Number of Devices (e.g. laptop agents)</h2>
+    <div class="col-xl-8 col-lg-8 col-md-6 col-xs-12 mb-2">
+      <h2>Number of Devices (agents)</h2>
       <div id="number_of_agents">
-        <div id="slider-format" style="margin: 20px;"></div>
-        <center><input id="input-format" style="border: 0; font-size: 3em;margin: 20px;background: white;" disabled="true"></center>
+        <div id="slider-format" style="margin: 20px"></div>
+        	<center><input id="input-format" style="border: 0; font-weight: 900;font-size: 4em;margin: 20px;background: white;" disabled="true"></center>
       </div>
     </div>
-    <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12 mb-4">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 mb-4 border rounded p-2 mb-1" style="border-radius: 40px;">
       <center>
       <h2>Monthly Cost</h2>
       <div id="cost_container" style="font-size: 3em;">
         <div id="total_cost"><strong>0 € p/m</strong></div>
+      </div>
+      <div id="base_cost_container" style="font-size: 1.5em;">
+        <div id="base_cost"><strong>( 9 € per agent month )</strong></div>
       </div>
         <br/>
         <strong>

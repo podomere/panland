@@ -18,7 +18,7 @@ enableGitInfo = true
   og_image = "https://pansift.com/images/pansift_social_client_v32.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
-  keywords = "userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"
+  keywords = "future of work, userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"
     home = "Home"
     logo = "images/mini_header_bnw_v3.png"
     dateFormat = "6 January 2006"
@@ -30,7 +30,7 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Work from <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>anywhere</a> with confidence! Rapid find and fix for Wifi, ISP, and connectivity issues."
+				heading = "Work from <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>anywhere</a> with <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>confidence</a>. Regain control with a rapid find and fix for your team's Wifi, ISP, and connectivity issues."
         description = "" 
         description2 = "Real-time, <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting in the face of <strong>unmanaged</strong> networks. Why fly blind doing remote support? Make the invisible visible. Stay conected and sane. Instrument your user edge."
         button  = true
@@ -64,7 +64,7 @@ enableGitInfo = true
     [params.benefits]
         topTitle =  "Trust but Verify"
         enable  = true
-        title   = "Benefits"
+        title   = "Benefits for the Future of Work"
         subtitle = "Improve <strong>user experience</strong> by seeing what the user <strong>actually experiences</strong>. Whether it's <strong>sales demos</strong>, <strong>customer success calls</strong>, or family conferences... ensure you can solve issues rapidly and remotely."
         punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
         onetitle = "Pinpoint Issues Effortlessly and Remotely"

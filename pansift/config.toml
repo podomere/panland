@@ -83,7 +83,7 @@ enableGitInfo = true
         seven = "High frequency testing (<strong>30s</strong> for most tests) giving the highest fidelity. Non-normalized data means deep debugging!"
         eighttitle = "Synchronous Graphing"
         eight = "Interactive graphs and tabs all <strong>update</strong> when you zoom, pan, tab, or query. Rapidly linked contexts give the whole picture."
-        ninetitle = "Continuous Synthetic Testing!"
+        ninetitle = "Real User Monitoring!"
         nine = "IPv4, IPv6 info, dynamic MAC/OUI lookups, WLAN SSID / MCS / SNR / rogues, DNS, HTTP / TTFB, system stats etc. All <strong>in-path !</strong>"
 
     # NetDevOps

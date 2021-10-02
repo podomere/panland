@@ -1,4 +1,4 @@
-enable    : true
+enable    : false
 topTitle   : Deception Tech
 title     : How it Works
 subtitle  : PanSift installs as a Github App on a chosen repository. It honeytokens with Thinkst canarytokens out-of-the-box!

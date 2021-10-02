@@ -1,4 +1,4 @@
-enable  : true
+enable  :   false
 item  :
   - icon  : tf-ion-ios-copy-outline
     title : WordPress Theme

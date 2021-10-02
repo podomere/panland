@@ -1,4 +1,4 @@
-enable  : true
+enable  : false
 item    :
   - positionRight : false
     image : images/about/about-1.jpg

@@ -65,7 +65,7 @@ Unfortunately the above is unrealistic, yet more and more services are beginning
 
 <div class="card ">
   <h4 class="card-header"><b>PS : Tip</b></h4>
-  <div class="card-body">We recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. You or your team can ensure that the candidate has adequate connectivity using <a href="https://pansift.com?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=findandfix">Pansift</a> and enables to ensure that candidates have suitable Internet connectivity for a whole range of tasks ensuring quality of experience for <b>sales, support, or success</b> roles.
+  <div class="card-body">We recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. You or your team can ensure that the candidate has adequate network connectivity using <a href="https://pansift.com?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=findandfix">Pansift</a> for a whole range of online tasks ensuring a superior connection for <b>sales, support, or success</b> roles.
   </div>
 </div>
 <br>

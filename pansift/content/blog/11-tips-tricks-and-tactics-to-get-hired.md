@@ -129,4 +129,4 @@ The Internet (*and* more so the Web) is full of noise. People's minds are consta
   
 > If you really want **this** job you need to work for it. Long gone are the days of point, shoot, and wait. Get off your ass and through *your own actions* (not those of others) collapse down the multiverse to the one with the **greatest probability** of you getting as far down the funnel as you can, ethically! **Own your outcomes. Carve your future**.
 
-Note: If you do secure an offer then learn what you need to know about negotiating [here](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/) and [here](http://infohost.nmt.edu/~shipman/org/noel.html).
+Note: If you do secure an offer then learn what you need to know about negotiating [here](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/) and [here](https://web.archive.org/web/20190331115035/http://infohost.nmt.edu/~shipman/org/noel.html).

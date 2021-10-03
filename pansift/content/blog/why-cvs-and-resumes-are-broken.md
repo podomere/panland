@@ -57,9 +57,9 @@ One increasingly popular option for hiring teams is to give the candidate tasks 
 
 <div class="card ">
   <h4 class="card-header"><b>PS : Tip</b></h4>
-  <div class="card-body">We recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. This method is called <a href="https://pansift.com?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=sbs">Simulation Based Screening</a> and it allows for wider funnels and less bias whilst saving costs and reducing <b>time to hire</b>.
+  <div class="card-body">We recommend that organisations request no more that <code>40</code> minutes to <code>2</code> hours for an automated initial technical screen. You or your team can ensure that the candidate has adequate connectivity using <a href="https://pansift.com?utm_source=psblog&utm_medium=hyperlink&utm_campaign=launch&utm_content=findandfix">Pansift</a> and enables to ensure that candidates have suitable Internet connectivity for a whole range of tasks ensuring quality of experience for <b>sales, support, or success</b> roles.
   </div>
-</div> 
+</div>
 <br>
 <br>
 Human time is expensive and a _resource_ best spent on evaluating a candidate's soft skills, collaboration, creativity, and attitude. Further depth of expertise can be checked by human experts once the candidate has proven they are in possession of the basic fundamental and desirable skills. Be it someone in talent acquisition, recruiting, management, or an internal domain expert, **time should not be wasted** administering and re-administering the same _hard skills_ test over and over again. Automation can be leveraged to (remotely or locally) separate the _wheat from the chaff_ and help identify those who are serious about committing to a role rather than those just playing the law of averages. 

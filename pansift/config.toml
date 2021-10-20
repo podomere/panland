@@ -30,7 +30,7 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Let your team work from <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>anywhere</a> with <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>confidence</a>. Easily find and fix any Wifi, ISP, or connectivity issues, <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>remotely</a>. Save time. Regain <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>control</a>."
+				heading = "Let your team work from <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>anywhere</a> with <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>confidence</a>. Easily find and fix Wifi, ISP, or connectivity issues, <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>remotely</a>. Save time. Regain <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>control</a>."
         description = "" 
         description2 = "Real-time, <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>retrospective</a>, and <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>remote</a> troubleshooting in the face of <strong>unmanaged</strong> networks. Why fly blind doing remote support? Make the invisible visible. Stay connected and sane. Instrument your user edge."
         button  = true

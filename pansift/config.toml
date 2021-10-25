@@ -14,8 +14,8 @@ enableGitInfo = true
 [params]
   # description = "Stay connected and sane. Rapid find and fix for network and system issues, remotely. Better technical support for your team, tribe, or family."
   # description = "Flying blind doing remote support for your team, tribe, or family? Make the invisible visible. Stay connected and sane. Instrument your user edge."
-	description = "Rapid find and fix. Pinpoint and prove where Wifi, Internet, and system issues occur. Real-time, retrospective, and remote troubleshooting."
-  og_image = "https://pansift.com/images/pansift_social_client_v32.png"
+	description = "Remote troubleshooting is hard. Empower your team to work from anywhere with confidence! Rapid find and fix for Wifi, ISP, DNS and laptop issues."
+  og_image = "https://pansift.com/images/laptop_inlay_insights_v1_social.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
   keywords = "future of work, userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"

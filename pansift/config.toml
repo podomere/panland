@@ -1,6 +1,6 @@
 baseURL = "https://pansift.com"
 languageCode = "en-us"
-title = "PanSift. Rapid find / fix."
+title = "PanSift for a rapid find and fix."
 theme = "navigator-hugo"
 summaryLength = 37
 enableGitInfo = true

@@ -32,7 +32,7 @@ enableGitInfo = true
         enable  = true
 				heading = "Remote <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>troubleshooting</a> is hard. Find and fix <strong>Wifi</strong>, <strong>ISP</strong>, <strong>DNS</strong> and <strong>laptop</strong> issues with <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>ease</a>. Empower your team to work from anywhere."
         description = "" 
-        description2 = "Regain control and confidence while enabling rapid support. Automatic, real-time, retrospective, and remote troubleshooting in the face of <strong>unmanaged</strong> networks. Don't fly blind, keep them connected and sane!"
+        description2 = "Regain control and confidence while enabling rapid support. Automatic, real-time, retrospective, and remote troubleshooting in the face of <strong>unmanaged</strong> networks. Don't fly blind, keep them connected, don't stress!"
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

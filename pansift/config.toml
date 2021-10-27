@@ -30,9 +30,9 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Remote and easy connectivity and system <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>troubleshooting</a> so your team can <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>work</a> from anywhere."
+				heading = "Remote and easy <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>troubleshooting</a> for connectivity issues so your team can <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>work</a> from anywhere."
         description = "" 
-        description2 = "Regain control and confidence while enabling rapid support. Automatic, real-time, retrospective, and remote troubleshooting in the face of <strong>unmanaged</strong> networks. Don't fly blind, keep them connected, don't stress!"
+        description2 = "Provide confident and rapid support. Automatic, retrospective, and remote troubleshooting. Regain control in the face of <strong>unmanaged</strong> networks. Don't fly blind, save time and stress!"
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

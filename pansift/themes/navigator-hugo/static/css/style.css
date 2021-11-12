@@ -2046,7 +2046,8 @@ a:focus, a:hover {
           align-items: center; 
 }
   .aa-suggestion:hover, .aa-suggestion.aa-cursor {
-    background-color: rgba(241, 241, 241, 0.35); 
+    /* background-color: rgba(241, 241, 241, 0.35); */
+    background-color: rgba(0, 123, 255, 0.5); 
 }
   .aa-suggestion > span:first-child {
     color: #333; 

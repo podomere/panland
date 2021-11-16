@@ -42,8 +42,8 @@ enableGitInfo = true
 
     [params.aboutSm]
         enable  = true
-        title   = "Because security can and should be <span style = 'color: #000;'>black</span> and <span style = 'color: #fff;'>white</span>."
-        subtitle = "Combat F.U.D. with high fidelity and high cardinality breach detection."
+        title   = "Troubleshooting can and should be <span style = 'color: #000;'>black</span> and <span style = 'color: #fff;'>white</span>."
+        subtitle = "Combat support fatigue with high fidelity automated troubleshooting."
 
     [params.offer]
         enable  = true
@@ -64,7 +64,7 @@ enableGitInfo = true
     [params.benefits]
         topTitle =  "Trust but Verify"
         enable  = true
-        title   = "Benefits for the Future of Work"
+        title   = "Benefits and Features for the Future of Work"
         subtitle = "Improve <strong>user experience</strong> by knowing what the user <strong>actually experiences</strong>. Whether for <strong>sales demos</strong>, <strong>customer success calls</strong>, or family conferences... ensure you can solve issues rapidly and remotely with in-path <strong>Real User Monitoring</strong>."
         punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
         onetitle = "Pinpoint Issues Effortlessly and Remotely"
@@ -146,6 +146,13 @@ enableGitInfo = true
 
     # Early Section
     [params.early]
+        enable  = true
+        topTitle= "Get Early Access"
+        title   = "Be first in the queue!"
+        subtitle= ""
+    
+	# How It Works
+    [params.howitworks]
         enable  = true
         topTitle= "Get Early Access"
         title   = "Be first in the queue!"

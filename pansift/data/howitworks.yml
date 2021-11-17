@@ -4,23 +4,23 @@ title     : How PanSift Works
 subtitle  : PanSift installs as a lightweight agent on a laptop. You then claim it in the web app and can troubleshoot remotely!
 tabItem   :
   - id        : continuous
-    title     : Continuous In-Path Testing
-    heading   : Embrace the wireless remote-first world.
+    title     : Continuous Testing
+    heading   : Embrace the remote-first wireless world.
     content   : >
       Pansift is continuously monitoring and reporting a whole suite of metrics relating to the network and health of the user's laptop. This <strong>in-path</strong> monitoring is the only true way to understand what the user is experiencing and what the network conditions are really like. <br><br><strong>Note:</strong> PanSift even watches the radio airspace and can suggest better channels to use to solve all manner of problems with video conferencing, gaming, and voice calls.
     image     : images/howitworks/cloud.jpg
     icon      : fas fa-wifi
 
   - id        : token
-    title     : What's Under the Hood?
+    title     : Under the Hood
     heading   : The best Time Series Database (TSDB)... 
     content   : >
       By using well known and trusted building blocks (such as <a href="https://www.influxdata.com/products/influxdb/" target="_blank">InfluxDB</a> and <a href="https://www.influxdata.com/time-series-platform/telegraf/" target="_blank">Telegraf</a>) we can develop and roll-out new features rapidly and with confidence across the rest of our platform.
     icon      : fas fa-database
 
   - id        : install
-    title     : Install An Agent To Start
-    heading   : Claim your bucket UUID in the web app.
+    title     : Install An Agent
+    heading   : Then claim your bucket / UUID.
     content   : >
       <strong>Once installed and claimed </strong> PanSift automatically watches and troubleshoots your specific environment to generate insights on your agents so you or your team can rapidly diagnose issues remotely.
     image     : images/howitworks/cogs.jpg
@@ -29,7 +29,7 @@ tabItem   :
 
   - id        : claim
     title     : Automatic Troubleshooting
-    heading   : Sane defaults with custom targets! 
+    heading   : Sane defaults + custom targets! 
     content   : >
       <strong>PanSift</strong> empowers you and your IT support team to rapidly diagnose a whole host of issues remotely (and even retrospectively). Whether for family or work, find peace of mind and reduce everyone's stress by embracing the type of monitoring you do for your servers. Control the more complex edge where mobility and remote work mean unmanaged networks and more variability!  
     icon      : fas fa-robot

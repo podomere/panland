@@ -30,7 +30,7 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Easy remote <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>troubleshooting</a> so your team can <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>work</a> from anywhere."
+				heading = "Easy remote <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>troubleshooting</a> so you and your team can <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>work</a> from anywhere with confidence."
         description = "" 
         description2 = "Save everyone time and stress. Automatic and remote troubleshooting with a focus on network connectivity (wired and wireless). Provide confident and rapid support no matter the location or network owner."
         button  = true
@@ -64,8 +64,8 @@ enableGitInfo = true
     [params.benefits]
         topTitle =  "Trust but Verify"
         enable  = true
-        title   = "Benefits and Features for the Future of Work"
-        subtitle = "Improve <strong>user experience</strong> by knowing what the user <strong>actually experiences</strong>. Whether for <strong>sales demos</strong>, <strong>customer success calls</strong>, or family conferences... ensure you can solve issues rapidly and remotely with in-path <strong>Real User Monitoring</strong>."
+        title   = "Benefits and Features <br>for the Future of Work"
+        subtitle = "Improve <strong>user experience</strong> by knowing what the user <strong>actually experiences</strong>. Whether for <strong>sales demos</strong>, <strong>customer success calls</strong>, or family conferences... in an office, coworking space, or at home, ensure your team can solve issues rapidly and remotely with simple in-path <strong>Real User Monitoring</strong> and <strong>Synthetic testing</strong>."
         punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
         onetitle = "Pinpoint Issues Effortlessly and Remotely"
         one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."

@@ -110,7 +110,7 @@ check_ga();
 			{
 			"@context": "http://schema.org/",
 			"@type": "VideoObject",
-			"contentUrl": "https://pansift.com/video/ps_intro_video_v2_opt.mp4",
+			"contentUrl": "",
 			"playerType": "HTML5",
 			"uploadDate": "2019-11-10 18:21:23 +0100",
 			"thumbnailUrl": "https://pansift.com//images/hero/3_steps_v15.png",
@@ -138,11 +138,11 @@ check_ga();
 		<link rel="stylesheet" href="{{ "plugins/bootstrap/dist/css/bootstrap.min.css" | absURL }}">
 		{{ "<!-- Main Stylesheet -->" | safeHTML }}
 		<link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
-		{{ if or (.IsHome) (eq .Page.Title "How It Works") (eq .Page.Title "Deception")}}
+		{{/* if or (.IsHome) (eq .Page.Title "How It Works") (eq .Page.Title "Deception") */}}
 		{{ "<!-- VideoJS -->" | safeHTML }}
-		<link rel="stylesheet" href="{{ "plugins/videojs/dist/css/video-js.min.css" | absURL }}">
-		<link rel="stylesheet" href="{{ "plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}">
-		{{ end }}
+		<!-- link rel="stylesheet" href="{{ "plugins/videojs/dist/css/video-js.min.css" | absURL }}"-->
+		<!-- link rel="stylesheet" href="{{ "plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}"-->
+		{{/* end */}}
 		{{ "<!-- Font Awesome -->" | safeHTML }}
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" media="none" onload="this.media='all'">
 		{{ if (.IsHome)}}

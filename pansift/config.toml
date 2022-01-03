@@ -12,9 +12,7 @@ enableGitInfo = true
 
 # Site Params
 [params]
-  # description = "Stay connected and sane. Rapid find and fix for network and system issues, remotely. Better technical support for your team, tribe, or family."
-  # description = "Flying blind doing remote support for your team, tribe, or family? Make the invisible visible. Stay connected and sane. Instrument your user edge."
-	description = "Remote troubleshooting is hard. Empower your team to work from anywhere with confidence! Rapid find and fix for Wifi, ISP, DNS and laptop issues."
+	description = "Remote troubleshooting is hard. Regain control of your time with PanSift and fix Wifi, ISP, DNS and laptop issues in moments."
   og_image = "https://pansift.com/images/laptop_inlay_insights_v3_social.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -30,9 +28,8 @@ enableGitInfo = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Easy remote <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>troubleshooting</a> so you and your team can <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>work</a> from anywhere with confidence."
-        description = "" 
-        description2 = "Save everyone time and stress. Automatic and remote troubleshooting with a focus on network connectivity (wired and wireless). Provide confident and rapid support no matter the location or network owner."
+				heading = "Easy remote troubleshooting so you can <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>regain control</a> of your time and confidently support any team."
+        description2 = "Remote work requires reliable connectivity for all laptop voice, video, and data interactions. Make the invisible visible with PanSift and solve issues rapidly whether at home, in a coworking space, or in the office, (and irrespective of network owner)." 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -65,7 +62,7 @@ enableGitInfo = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Benefits and Features <br>for the Future of Work"
-        subtitle = "Improve <strong>user experience</strong> by knowing what the user <strong>actually experiences</strong>. Whether for <strong>sales demos</strong>, <strong>customer success calls</strong>, or family conferences... in an office, coworking space, or at home, ensure your team can solve issues rapidly and remotely with simple in-path <strong>Real User Monitoring</strong> and <strong>Synthetic testing</strong>."
+        subtitle = "Improve <strong>user experience</strong> by knowing what the user <strong>actually experiences</strong>. Whether for <strong>sales demos</strong>, <strong>customer success calls</strong>, or even family conferences... ensure you can solve issues rapidly and remotely with simple in-path <br><strong>Real User Monitoring</strong> and <strong>Synthetic Testing</strong>."
         punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
         onetitle = "Pinpoint Issues Effortlessly and Remotely"
         one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."
@@ -176,22 +173,22 @@ enableGitInfo = true
 #        name    = "Deception Tech"
 #        url     = "/deception"
 #        weight  = 3
-    [[menu.nav]]
-        name    = "Sign Up"
-        url     = "https://app.pansift.com/demo/logout_demo"
-        weight  = 3
+   [[menu.nav]]
+       name    = "Sign Up"
+       url     = "https://app.pansift.com/demo/logout_demo"
+       weight  = 2
 #    [[menu.nav]]
 #        name    = "Why"
 #        url     = "/why"
 #        weight  = 1
     [[menu.nav]]
-        name    = "Pricing"
+        name    = "Free"
         url     = "/pricing"
         weight  = 1
-    [[menu.nav]]
-         name    = "Contact"
-         url     = "/contact"
-         weight  = 2
+#    [[menu.nav]]
+#         name    = "Contact"
+#         url     = "/contact"
+#         weight  = 2
 #    [[menu.nav]]
 #        name    = "Blog"
 #        url     = "/blog"

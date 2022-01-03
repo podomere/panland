@@ -57,14 +57,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-      <a href="https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link"><i class="fa fa-download align-middle mr-1" aria-hidden="true"></i>macOS Agent</a>
-      </li>
       {{ range .Site.Menus.nav }}
       <li class="nav-item">
       <a style="white-space:nowrap;" class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
       </li>
       {{ end }}
+      <li class="nav-item">
+      <a href="https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link"><i class="fa fa-download align-middle mr-1" aria-hidden="true"></i>macOS Agent</a>
+      </li>
       <li class="nav-item mt-1 ml-2">
       <a href="https://app.pansift.com/demo" style="white-space:nowrap; padding: .1rem .5rem !important;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_navigation');" class="btn btn-sm btn-primary nav-cta"><span class="align-middle" style="font-size: 1em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }} </span></a>
       </li>

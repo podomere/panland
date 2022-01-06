@@ -13,7 +13,7 @@ enableGitInfo = true
 # Site Params
 [params]
 	description = "Remote troubleshooting is hard. Regain control of your time with PanSift and fix Wifi, ISP, DNS and laptop issues in moments."
-  og_image = "https://pansift.com/images/laptop_inlay_insights_v3_social.png"
+  og_image = "https://pansift.com/images/laptop_inlay_insights_v4_social.png"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
   keywords = "future of work, userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"

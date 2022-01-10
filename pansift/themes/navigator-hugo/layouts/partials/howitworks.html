@@ -1,59 +1,76 @@
 {{ if .Site.Data.howitworks.enable }}
 {{ "<!-- howitworks Section Start -->" | safeHTML }}
 <section id="howitworks" class="about-mission-vision section">
-{{ "<!-- Video js -->" | safeHTML }}
-<!--script src="{{ "plugins/videojs/dist/js/video.min.js" | absURL }}"></script> -->
+	{{ "<!-- Video js -->" | safeHTML }}
+	<!--script src="{{ "plugins/videojs/dist/js/video.min.js" | absURL }}"></script> -->
 <!--script src="{{ "plugins/videojs-overlay/dist/js/videojs-overlay.min.js" | absURL }}"></script> -->
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="title" style="padding: 0 !important;">
-        {{ with .Site.Data.howitworks.title }}
-        <h2 id="how-it-works">{{ . }}</h2>
-        <span class="border"></span>
-        {{ end }}
-        {{ with .Site.Data.howitworks.subtitle }}<h5>{{ . }}</h5>{{ end }}
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    {{ range $index, $element := .Site.Data.howitworks.tabItem }}
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3 mb-3">
-      <h1>{{ .title }}</h1>
-      <div class="row mt-3 mb-5">
-        <div class="col-xl-8 col-md-6">
-          <h3 class="" style="color: #2980b9;">{{ with .heading }}{{ . }}{{ end }}</h3>
-          {{ with .content }}<p style="font-size: 1.2em;">{{ . | safeHTML }}{{ end }}</p>
-        </div>
-        <div class="col-xl-4 col-md-6 align-self-center">
-          <!-- <center><a href="#video-row">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center> -->
-          <center><a href="https://app.pansift.com/demo">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center>
-        </div>
-      </div>
-    </div>
-    {{ end }}
-  </div>
+	<div class="row">
+		<div class="col">
+			<div class="title" style="padding: 0 !important;">
+				{{ with .Site.Data.howitworks.title }}
+				<h2 id="how-it-works">{{ . }}</h2>
+				<span class="border"></span>
+				{{ end }}
+				{{ with .Site.Data.howitworks.subtitle }}<h5>{{ . }}</h5>{{ end }}
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		{{ range $index, $element := .Site.Data.howitworks.tabItem }}
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3 mb-3">
+			<h1>{{ .title }}</h1>
+			<div class="row mt-3 mb-5">
+				<div class="col-xl-8 col-md-6">
+					<h3 class="" style="color: #2980b9;">{{ with .heading }}{{ . }}{{ end }}</h3>
+					{{ with .content }}<p style="font-size: 1.2em;">{{ . | safeHTML }}{{ end }}</p>
+				</div>
+				<div class="col-xl-4 col-md-6 align-self-center">
+					<!-- <center><a href="#video-row">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center> -->
+					<center><a href="https://app.pansift.com/demo">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center>
+				</div>
+			</div>
+		</div>
+		{{ end }}
+		<div class="bottom-footer" style="background-color: white;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-2 text-center" style="">
+						<a href="https://www.producthunt.com/posts/pansift?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-pansift" target="_blank">
+							<img class="lozad m-4" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=325397&theme=dark" alt="PanSift - Easy remote troubleshooting. Work with confidence. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+						</a>
+						<a href="https://www.influxdata.com" target="_blank">
+							<img class="lozad m-4" data-src="/images/built-on-influxdb-white-400px.png" width="120" height="40" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+						</a>
+						<a href="https://www.algolia.com/?utm_source=instantsearch.js&utm_medium=website&utm_content=instantsearchjs.netlify.com&utm_campaign=poweredby" target="_blank">
+							<img class="lozad m-4" data-src="/images/search-by-algolia-light-background_20.png" width="140" height="20" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- 
-  <div id="video-row" class="row mb-5">
-    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 text-center">
-        <h4>Watch an Example Rapid Install and Tokening</h4>
-      <div id="video-bound" class="text-center">
-        <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" controls preload="none" data-setup='{}' poster="/images/hero/3_steps_v15.png">
-        <source src="https://pansift.com/video/ps_intro_video_v2_opt.mp4" type='video/mp4'>
-        <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a web browser that
-        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-        </p>
-        </video>
-      </div>
-    </div>
-  </div>
+	 <div id="video-row" class="row mb-5">
+	 <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 text-center">
+	 <h4>Watch an Example Rapid Install and Tokening</h4>
+	 <div id="video-bound" class="text-center">
+	 <video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" controls preload="none" data-setup='{}' poster="/images/hero/3_steps_v15.png">
+	 <source src="https://pansift.com/video/ps_intro_video_v2_opt.mp4" type='video/mp4'>
+	 <p class="vjs-no-js">
+	 To view this video please enable JavaScript, and consider upgrading to a web browser that
+	 <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+	 </p>
+	 </video>
+	 </div>
+	 </div>
+	 </div>
 	-->
-  <!-- <div class="row justify-content-center mt-3 text-center">
-    <p>Read more about <a href="/blog/intentional-cyberinsecurity/">Deception Tech</a>
-  </div>
-</div>
- -->
+	<!-- <div class="row justify-content-center mt-3 text-center">
+	 <p>Read more about <a href="/blog/intentional-cyberinsecurity/">Deception Tech</a>
+	 </div>
+	 </div>
+	-->
 </section>
 {{ "<!-- howitworks Section End -->" | safeHTML }}
 {{ end }}

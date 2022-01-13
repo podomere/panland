@@ -176,7 +176,7 @@ enableGitInfo = true
    [[menu.nav]]
        name    = "Sign Up"
        url     = "https://app.pansift.com/demo/logout_demo"
-       weight  = 2
+       weight  = 1
 #    [[menu.nav]]
 #        name    = "Why"
 #        url     = "/why"
@@ -184,7 +184,7 @@ enableGitInfo = true
     [[menu.nav]]
         name    = "Free"
         url     = "/pricing"
-        weight  = 1
+        weight  = 2
 #    [[menu.nav]]
 #         name    = "Contact"
 #         url     = "/contact"

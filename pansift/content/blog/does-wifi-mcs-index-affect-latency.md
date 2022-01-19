@@ -44,7 +44,7 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
   
 | MCS Index | IPv4 Gateway | IPv6 Gateway | 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N ( measurement sample size) | Correlation : Pearson R | Summary  / Note       |
 | :----:    |    :----:   |         :---: |      :---:           |   :---:            |   :---:                      |    :---:                                      | :---:          |
-| 0-31      | ✓           |               |                      | ✓                  |  361485                      |  -0.014                          | No correlation |
+| 0-31      | ✓           |               |                      | ✓                  |  361485                      |  -0.014                          | Almost no correlation |
 | 0-31      | ✓           |               | ✓                    |                    |   48762                      |   0.000                        | No correlation |
 | 0-31      |             |   ✓           | ✓                    |                    |   30836                      |  -0.014                          | Almost no correlation |
 | 0-31      |             |   ✓           |                      | ✓                  |  143508                      |  -0.006                         | No correlation |  

@@ -3,32 +3,55 @@
 {{ partial "navigation.html" . }}
 
 <section class="blog-single section">
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 mx-auto">
-      <h1>{{ .Title }}</h1>
-      <div class="post-meta mb-3">
-        <ul class="list-inline">
-          <li class="list-inline-item">
-          {{ .Params.subtitle }}
-          </li>
-        </ul>
-      </div>
-      <a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="rounded w-100 mb-3" alt="{{ .Summary }}"></a>
-      {{ .Content  | safeHTML }}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+				<h1>{{ .Title }}</h1>
+				<div class="post-meta mb-3">
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							{{ .Params.subtitle }}
+						</li>
+					</ul>
+				</div>
+				<a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="rounded w-100 mb-3" alt="{{ .Summary }}"></a>
+				{{ .Content  | safeHTML }}
 
-      <!-- {{ partial "post-micro-tip.html" .}} -->
+				{{ partial "post-micro-tip.html" .}} 
 
-      {{ partial "tags.html" .}}
 
-      <div class="mt-5">
-        <!-- {{ partial "blog-cta.html" . }} -->
-      </div>
-    </div>
-  </div>
-</div>
+
+				{{ partial "tags.html" .}}
+
+				<div id="disqus_thread"></div>
+
+				<div class="mt-5">
+					<!-- {{ partial "blog-cta.html" . }} -->
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 {{ partial "cta.html" . }}
 
 {{ partial "footer.html" . }}
+
+<script>
+	/**
+	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+	var disqus_config = function () {
+			this.page.url = {{ .Permalink }};  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = {{ .File.UniqueID }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://pansift.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

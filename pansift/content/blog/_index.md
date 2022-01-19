@@ -1,6 +1,6 @@
 ---
-title: Blog. Deterministic Security.
-subtitle: No more FUD in a post breach world.
-date: 2019-11-20T09:23:33+06:00
+title: Troubleshooting and Performance.
+subtitle: By The Numbers.
+date: 2022-01-19T20:37:00+08:00
 ---
 

@@ -10,6 +10,9 @@ enableGitInfo = true
   filename = "sitemap.xml"
   priority = 0
 
+[markup.goldmark.renderer]
+unsafe = true
+
 # Site Params
 [params]
 	description = "Remote troubleshooting is hard. Regain control of your time with PanSift and fix Wifi, ISP, DNS and laptop issues in moments."
@@ -176,7 +179,7 @@ enableGitInfo = true
    [[menu.nav]]
        name    = "Sign Up"
        url     = "https://app.pansift.com/demo/logout_demo"
-       weight  = 2
+       weight  = 3
 #    [[menu.nav]]
 #        name    = "Why"
 #        url     = "/why"
@@ -189,10 +192,10 @@ enableGitInfo = true
          name    = "Contact"
          url     = "/contact"
          weight  = 1
-#    [[menu.nav]]
-#        name    = "Blog"
-#        url     = "/blog"
-#        weight  = 5
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "/blog"
+        weight  = 2
 #   [[menu.nav]]
 #       name    = "Benefits"
 #       url     = "/benefits"

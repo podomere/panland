@@ -156,7 +156,7 @@ check_ga();
 		{{ "<!-- NoUISlider Map -->" | safeHTML }}
 		<link rel="stylesheet" href="{{ "plugins/nouislider/dist/css/nouislider.min.css" | absURL }}" media="none" onload="this.media='all'"/>
 		{{ end }}
-		{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "Deception") (eq .Page.Title "Blog. Raise the Bar.") (eq .Page.Title "Training") }}
+		{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Blog. Raise the Bar.") (eq .Page.Title "Training") }}
 		<!-- Algolia Search Live DB -->
 		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
 		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>

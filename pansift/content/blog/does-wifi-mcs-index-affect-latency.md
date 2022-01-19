@@ -25,21 +25,19 @@ published: true
 title: 'Does MCS Index Affect Latency?'
 ---
 
-**TL;DR:** From hundreds of thousands of data points, MCS would seem **not to correlate with latency**.
+**TL;DR:** From hundreds of thousands of data points, MCS (Modulation Coding Scheme) would seem **not to correlate** with latency.
 
 The question of latency and Wi-Fi intrigues me (especially for MCS indices of **4** and below). You may jump to conclusions and holler "it depends", but does it? 
 
-My gut told me latency depends on more than just **MCS*. Although clients use of MCS as a dynamic encoding scheme steps down to bolster resilience, I envisaged it would also constrain throughput and aggrevate congestion. But can "bad Wi-Fi" result from the lowest **MCS** rates and do other symptoms manifest? What is "bad Wi-Fi" really and just how resilient is Wi-Fi at lower MCS rates in **2.4GHz** or **5GHz**? 
+My gut told me latency depends on a little more than just **MCS**. Clients use MCS to dynamically step up or down encoding schemes to stay resilient in the face of changing conditions, I envisaged lower MCS would constrain throughput, aggrevate congestion, and thus increase latency. But does "*bad Wi-Fi*" result from the lowest **MCS** rates or do other elements conribute? What is "*bad Wi-Fi*" really, and just how resilient is it at lower MCS rates across **2.4GHz** or **5GHz** frequency ranges? 
 
-I set out to answer some of these questions and would love to hear what *your gut* tells you about Wi-Fi and whether we here at [PanSift](https://pansift.com) can help back it up with data.
+I set out to answer some of these questions using data from our new Wi-Fi assurance and remote troubleshooting tool ([live demo](https://app.pansift.com/demo)). I decided to look at over **20 million** sample data points across **20** randomly selected agents (using our maximum retention period of **30** days). Not all agents were online all of the time (*or actively transmitting*), yet [PanSift](https://pansift.com) agents perform network checks and measurements every **30** seconds for high fidelity analysis. [PanSift](https://pansift.com) grabs so much data I began by focussing on **MCS** and **latency**, and how they *may* or *may not* be correlated. Additionally, I looked at the impact of **2.4GHz** / **5GHz** and **IPv4** versus **IPv6** for some additional context. 
 
-Using our new Wi-Fi assurance and remote troubleshooting tool ([live demo](https://app.pansift.com/demo)), I decided to look at over **20 million** sample data points across **20** random agents (using our maximum retention period of **30** days). Not all agents were online all of the time (*or actively transmitting*), yet [PanSift](https://pansift.com) agents perform network checks and measurements every **30** seconds. PanSift grabs so much data I began by focussing in on **MCS** and **latency**, and how they *may* or *may not* be correlated. Additionally, I looked at **2.4GHz** / **5GHz** and **IPv4** versus **IPv6** for some additional context. 
+With queries to our <a target="_blank" href="https://www.influxdata.com/">Influx</a> backend (a <a target="_blank" href="https://en.wikipedia.org/wiki/Time_series_database">Time Series Database</a>), I chose data points only from agents that were "*locally_connected*" (i.e. the default gateway was responding), *"wlan_connected"* (WiFi connected of course!), *"dualstack"* (IPv6 **and** IPv4) and *"ipv4_only"* or *"ipv6_only"*... while ensuring that the **en0** interface was being used as the active default gateway (by checking the route table). The data spanned macOS versions *10.11.x*, *10.14.x*, *10.15.x*, *11.6.x*, and *12.x* with physical models ranging from *iMAC* to *Mini*s but mostly *Macbook Airs* and *MacBook Pros*.
 
-With queries to our <a target="_blank" href="https://www.influxdata.com/">Influx</a> backend (a <a target="_blank" href="https://en.wikipedia.org/wiki/Time_series_database">Time Series Database</a>), I chose data points only from agents that were "locally_connected" (the default gateway was responding), *"wlan_connected"* (WiFi connected!), *"dualstack"* (IPv6 and IPv4) and *"ipv4_only"* or *"ipv6_only"* while ensuring that the *en0* interface was being used as the active default gateway (via the route table). The data spanned macOS versions *10.11.x*, *10.14.x*, *10.15.x*, *11.6.x*, and *12.x* with physical models from *iMAC* to *Mini*s but mostly *Macbook Airs* and *MacBook Pros*.
+By using <a target="_blank" href="https://www.influxdata.com/">Influx</a>'s <a target="_blank" href="https://docs.influxdata.com/flux/v0.x/stdlib/universe/covariance/">covariance</a> functon with the <a target="_blank" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson R</a> value, I could check the correlation between **MCS** and **latency** values. Positive scores between **0** and **1** mean a correlation resulting in both values increasing together (a stronger correlation is closer to **1**) and then negative numbers from below **0** to **-1** would mean that as one value increases, the other decreases.
 
-By using <a target="_blank" href="https://www.influxdata.com/">Influx</a>'s <a target="_blank" href="https://docs.influxdata.com/flux/v0.x/stdlib/universe/covariance/">covariance</a> functon with the <a target="_blank" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson R</a> value, I could check the correlation between **MCS** and **latency** values (with additional filters in place to cherry pick different scenarios listed in the Tables (1-3) below). Positive scores between **0** and **1** mean a correlation for both values increasing together (a stronger correlation closer to **1**) and negative numbers below **0** to **-1** mean a that as one value increases the the other decreases.
-
-I was hoping for a strong negative correlation (**-0.5** to **-1**) that would prove a higher MCS index helped to reduced latency... or put another way, that a lower MCS index would lead to increased latency but this doesn't seem to be the case below:
+I was hoping for a strong negative correlation (**-0.5** to **-1**) that would prove a higher MCS index helped to reduced latency... or to put it another way, that a lower MCS index would lead to increased latency... but this doesn't seem to be the case below in Tables 1-3:
 
 <div class="table1-start"></div>
   
@@ -52,11 +50,10 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 | 0-31      |             |   ✓           |                      | ✓                  |  143508                      |  -0.006                         | No correlation |  
 <center><small>Table 1.0 - General MCS (0-31) and Latency Correlation</small></center>
  <br> 
-  
+ <br> 
 <div class="table1-end"></div>
 
 <div class="table2-start"></div>
-  
   
 | MCS Index | IPv4 Gateway | IPv6 Gateway | 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N ( measurement sample size) | Correlation : Pearson R | Summary        |
 | :----:    |    :----:   |         :---: |      :---:           |   :---:            |   :---:                      |    :---:                                      | :---:          |
@@ -65,6 +62,7 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 | **0-4**      |             |   ✓           | ✓                    |                    |    3772                      |  -0.015                           | Almost no correlation |
 | **0-4**      |             |   ✓           |                      |  ✓                 |   24823                      |  -0.014                          | Almost no correlation |  
 <center><small>Table 2.0 - Low MCS (0-4) and Latency Correlation</small></center>
+ <br> 
  <br> 
   
 <div class="table2-end"></div>
@@ -92,4 +90,6 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 })();
 </script>
 
-**Note:** The data is inconclusive and shows only a minor difference of positive and negative values which may give pause to wonder but more agents and data points are required!  **Low MCS does not seem to equate to higher latency...** so "bad Wi-Fi" must relate to airtime, SNR, noise, CCC / CCI (Co-Channel Contention / Interference) ? What should we delve in to next?
+**Note:** The data is inconclusive and shows only a minor difference relating to positive and negative values (which may give pause to wonder). More agents and data points are required!  
+
+**Low MCS does not seem to equate to higher latency...** so "bad Wi-Fi" must relate to airtime, SNR, noise, CCC / CCI (Co-Channel Contention / Interference) ? *What should we delve in to next, leave a comment below!?*

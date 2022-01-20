@@ -37,7 +37,7 @@ With queries to our <a target="_blank" href="https://www.influxdata.com/">Influx
 
 By using <a target="_blank" href="https://www.influxdata.com/">Influx</a>'s <a target="_blank" href="https://docs.influxdata.com/flux/v0.x/stdlib/universe/covariance/">covariance</a> functon with the <a target="_blank" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson R</a> value, I could check the correlation between **MCS** and **latency** values. Positive scores between **0** and **1** mean a correlation resulting in both values increasing together (a stronger correlation is closer to **1**) and then negative numbers from below **0** to **-1** would mean that as one value increases, the other decreases.
 
-I was hoping for a strong negative correlation (**-0.5** to **-1**) that would prove a higher **MCS** index helped to reduced latency... or to put it another way, that a lower **MCS** index would lead to increased latency... but this doesn't seem to be the case below in Tables 1-3:
+I was hoping for a strong negative correlation (**-0.5** to **-1**) that would prove a higher **MCS** index helped to reduce latency... or to put it another way, that a lower **MCS** index would lead to increased latency... but this doesn't seem to be the case below in Tables 1-3:
 
 <div class="table1-start"></div>
   

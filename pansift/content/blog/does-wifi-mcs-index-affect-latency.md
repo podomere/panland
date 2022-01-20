@@ -42,7 +42,7 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 <div class="table1-start"></div>
   
   
-| MCS Index | IPv4 Gateway | IPv6 Gateway | 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N ( measurement sample size) | Correlation : Pearson R | Summary  / Note       |
+| MCS Index | IPv4 				| IPv6  				| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R | Summary       |
 | :----:    |    :----:   |         :---: |      :---:           |   :---:            |   :---:                      |    :---:                                      | :---:          |
 | 0-31      | ✓           |               |                      | ✓                  |  361485                      |  -0.014                          | Almost no correlation |
 | 0-31      | ✓           |               | ✓                    |                    |   48762                      |   0.000                        | No correlation |
@@ -55,7 +55,7 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 
 <div class="table2-start"></div>
   
-| MCS Index | IPv4 Gateway | IPv6 Gateway | 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N ( measurement sample size) | Correlation : Pearson R | Summary        |
+| MCS Index | IPv4 				| IPv6					| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R | Summary        |
 | :----:    |    :----:   |         :---: |      :---:           |   :---:            |   :---:                      |    :---:                                      | :---:          |
 | **0-4**      | ✓           |               |                      | ✓                  |   40995                      |  -0.057                          | Almost no correlation |
 | **0-4**      | ✓           |               | ✓                    |                    |    3932                      |  -0.015                          | Almost no correlation |
@@ -70,7 +70,7 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 <div class="table3-start"></div>
   
   
-| MCS Index | IPv4 Gateway | IPv6 Gateway | 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N ( measurement sample size) | Correlation : Pearson R | Summary        |
+| MCS Index | IPv4 				| IPv6 					| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R | Summary        |
 | :----:    |    :----:   |         :---: |      :---:           |   :---:            |   :---:                      |    :---:                                      | :---:          |
 | 5-31      | ✓           |               |                      |  ✓                 |  320496                      |  0.007                          | No correlation |
 | 5-31      | ✓           |               | ✓                    |                    |   44852                      |  0.004                          | No correlation |

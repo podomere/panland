@@ -20,7 +20,7 @@ tags:
   - wlan
   - tsdb
   - data science
-image: /images/blog/bluelights.jpg
+image: /images/blog/mcs_or_latency.jpg
 published: true
 title: 'Does MCS Index Affect Latency?'
 ---

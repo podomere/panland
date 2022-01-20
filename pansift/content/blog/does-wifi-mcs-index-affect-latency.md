@@ -33,7 +33,7 @@ My gut told me latency depends on a little more than just **MCS**. Clients use M
 
 I set out to answer some of these questions using data from our new Wi-Fi assurance and remote troubleshooting tool ([live demo](https://app.pansift.com/demo)). I decided to look at over **20 million** sample data points across **20** randomly selected agents (using our maximum retention period of **30** days). Not all agents were online all of the time (*or actively transmitting*), yet [PanSift](https://pansift.com) agents perform network checks and measurements every **30** seconds for high fidelity data capture and analysis. [PanSift](https://pansift.com) grabs so much data I began by targeting **MCS** and **latency**, and how they *may* or *may not* be correlated. Additionally, I then looked at the impact of **2.4GHz** / **5GHz** and **IPv4** versus **IPv6** for additional context. 
 
-With queries to our <a target="_blank" href="https://www.influxdata.com/">Influx</a> backend (a <a target="_blank" href="https://en.wikipedia.org/wiki/Time_series_database">Time Series Database</a>), I only chose data points from agents that were "*locally_connected*" (i.e. the default gateway was responding), *"wlan_connected"* (WiFi connected of course!), *"dualstack"* (IPv6 **and** IPv4) and *"ipv4_only"* or *"ipv6_only"*... while ensuring that the **en0** interface was being used as the active default gateway (by checking the route table). The data spanned macOS versions *10.11.x*, *10.14.x*, *10.15.x*, *11.6.x*, and *12.x* with physical models ranging from *iMAC* to *Mini*s but mostly *Macbook Airs* and *MacBook Pros*.
+With queries to our <a target="_blank" href="https://www.influxdata.com/">Influx</a> backend (a <a target="_blank" href="https://en.wikipedia.org/wiki/Time_series_database">Time Series Database</a>), I only chose data points from agents that were "*locally_connected*" (i.e. the default gateway was responding), *"wlan_connected"* (WiFi connected of course!), *"dualstack"* (IPv6 **and** IPv4) and *"ipv4_only"* or *"ipv6_only"*... while ensuring that the **en0** interface was being used as the active default gateway (by checking the route table). The data spanned macOS versions *10.11.x*, *10.14.x*, *10.15.x*, *11.6.x*, and *12.x* with physical models ranging from *iMAC* to *Mini* but mostly *Macbook Airs* and *MacBook Pros*.
 
 By using <a target="_blank" href="https://www.influxdata.com/">Influx</a>'s <a target="_blank" href="https://docs.influxdata.com/flux/v0.x/stdlib/universe/covariance/">covariance</a> functon with the <a target="_blank" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson R</a> value, I could check the correlation between **MCS** and **latency** values. Positive scores between **0** and **1** mean a correlation resulting in both values increasing together (a stronger correlation is closer to **1**) and then negative numbers from below **0** to **-1** would mean that as one value increases, the other decreases.
 
@@ -42,7 +42,7 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 <div class="table1-start"></div>
   
   
-| MCS Index | IPv4 				| IPv6  				| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R | Summary       |
+| MCS Index | IPv4 				| IPv6  				| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R <br>Value | Summary       |
 | :----:    |    :----:   |         :---: |      :---:           |   :---:            |   :---:                      |    :---:                                      | :---:          |
 | 0-31      | ✓           |               |                      | ✓                  |  361485                      |  -0.014                          | Almost no correlation |
 | 0-31      | ✓           |               | ✓                    |                    |   48762                      |   0.000                        | No correlation |
@@ -55,7 +55,7 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 
 <div class="table2-start"></div>
   
-| MCS Index | IPv4 				| IPv6					| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R | Summary        |
+| MCS Index | IPv4 				| IPv6					| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R <br>Value | Summary        |
 | :----:    |    :----:   |         :---: |      :---:           |   :---:            |   :---:                      |    :---:                                      | :---:          |
 | **0-4**      | ✓           |               |                      | ✓                  |   40995                      |  -0.057                          | Almost no correlation |
 | **0-4**      | ✓           |               | ✓                    |                    |    3932                      |  -0.015                          | Almost no correlation |
@@ -70,7 +70,7 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 <div class="table3-start"></div>
   
   
-| MCS Index | IPv4 				| IPv6 					| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R | Summary        |
+| MCS Index | IPv4 				| IPv6 					| 2.4GHz Channel <= 14 | 5 GHz Channel > 14 | N <br>(sample size) | Correlation : Pearson R <br>Value | Summary        |
 | :----:    |    :----:   |         :---: |      :---:           |   :---:            |   :---:                      |    :---:                                      | :---:          |
 | 5-31      | ✓           |               |                      |  ✓                 |  320496                      |  0.007                          | No correlation |
 | 5-31      | ✓           |               | ✓                    |                    |   44852                      |  0.004                          | No correlation |
@@ -92,4 +92,4 @@ I was hoping for a strong negative correlation (**-0.5** to **-1**) that would p
 
 **Note:** The data is inconclusive and shows only a minor difference relating to positive and negative values (which may give pause to wonder). More agents and data points are required!  
 
-**Low MCS does not seem to equate to higher latency...** so "bad Wi-Fi" must relate to **airtime**, **SNR**, **noise**, **CCC / CCI** (Co-Channel Contention / Interference) ? *What should we delve in to next, leave a comment below!?*
+**Low MCS does not seem to equate to higher latency...** so "bad Wi-Fi" must relate to **airtime**, **SNR**, **CCC / CCI** (Co-Channel Contention / Interference) ? *What should we delve in to next, leave a comment below!?*

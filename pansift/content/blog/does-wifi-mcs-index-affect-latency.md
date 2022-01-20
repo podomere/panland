@@ -25,9 +25,9 @@ published: true
 title: 'Does MCS Index Affect Latency?'
 ---
 
-**TL;DR:** From hundreds of thousands of data points, **MCS** (Modulation Coding Scheme) would seem **not to correlate** with latency.
+**TL;DR:** From hundreds of thousands of data points, [**MCS** (Modulation Coding Scheme)](https://youtu.be/QBiBPbME5tY) would seem **not to correlate** with [latency](https://en.wikipedia.org/wiki/Latency_(engineering)).
 
-The question of latency and Wi-Fi intrigues me (especially for **MCS** indices of **4** and below). You may jump to conclusions and holler "it depends", but does it? 
+The question of latency and Wi-Fi intrigues me (especially for **MCS** [indices](https://mcsindex.com/) of **4** and below). You may jump to conclusions and holler "it depends", but does it? 
 
 My gut told me latency depends on a little more than just **MCS**. Clients use MCS to dynamically step up or down encoding schemes to stay resilient in the face of changing conditions. I envisaged lower **MCS** would constrain throughput, aggrevate congestion, and thus increase latency. But does "*bad Wi-Fi*" result from the lowest **MCS** rates or do other elements contribute? What is "*bad Wi-Fi*" really, and just how resilient is it at lower **MCS** rates across **2.4GHz** or **5GHz** frequency ranges? 
 

@@ -14,7 +14,7 @@ post_request='{
   "modifications": [
     {
       "name": "photo",
-      "image_url": "https://pansift.com/images/blog/bluelights.jpg"
+      "image_url": "https://pansift.com/images/laptop_inlay_insights_v4_social.png"
     },
     {
       "name": "overlay",
@@ -32,7 +32,7 @@ post_request='{
     },
     {
       "name": "title",
-      "text": "MCS Index and Latency",
+      "text": "Easy Remote Troubleshooting for IT Teams",
       "color": null,
       "background": null
     }

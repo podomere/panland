@@ -31,7 +31,7 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Easy remote troubleshooting for IT teams. <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>Regain control</a> by accelerating Time To Resolution."
+				heading = "Easy remote troubleshooting for IT teams. Remove toil, accelerate Time to Resolution, and <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>regain control</a>."
         description2 = "Remote work requires reliable connectivity for all laptop voice, video, and data interactions. Make the invisible visible with PanSift. Solve issues rapidly whether at home, in a coworking space, or in the office (and irrespective of network owner)." 
         button  = true
         btnTxt = "Early Access"

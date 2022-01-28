@@ -32,7 +32,7 @@ unsafe = true
     [params.hero]
         enable  = true
 				heading = "Easy remote troubleshooting for IT teams. <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>Regain control</a>, remove toil and accelerate Time to Resolution."
-        description2 = "Remote work requires <span style='color: white;'>reliable connectivity</span> for all laptop voice, video, and data. Make the invisible visible with <span style='color: white;'>end-user experience monitoring</span>. Solve issues <span style='color: white;'>rapidly</span> and <span style='color: white;'>even retrospectively</span> whether working from home, a shared space, or in the office (and irrespective of network owner)." 
+        description2 = "Remote work requires <span style='color: white;'>reliable connectivity</span> for all voice, video, and data. Solve issues <span style='color: white;'>rapidly</span> and <span style='color: white;'>retrospectively</span> no matter the network owner. Support your team working from home, in shared spaces, or from any office. Make the invisible visible with <span style='color: white;'>end-user experience monitoring</span>." 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

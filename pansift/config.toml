@@ -15,8 +15,8 @@ unsafe = true
 
 # Site Params
 [params]
-	description = "Remote troubleshooting is hard. Regain control of your time with PanSift and fix Wifi, ISP, DNS and laptop issues in moments."
-  og_image = "https://pansift.com/images/pansift_social_v35.jpg"
+	description = "Instant remote troubleshooting for IT teams. Regain control of your time with PanSift and fix Wifi, ISP, DNS and laptop issues in moments."
+  og_image = "https://pansift.com/images/pansift_social_v37.jpg"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
   keywords = "wifi assurance, network assurance, future of work, userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"
@@ -31,8 +31,8 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Easy remote troubleshooting for IT teams. <a href='https://app.pansift.com/demo'><span style='color: white; text-decoration: underline;'>Regain control</a>, remove toil and accelerate Time to Resolution."
-        description2 = "Remote work requires <span style='color: white;'>reliable connectivity</span> for all voice, video, and data. Solve issues <span style='color: white;'>rapidly</span> and <span style='color: white;'>retrospectively</span> no matter the network owner. Support your team working from home, in shared spaces, or from any office. Make the invisible visible with <span style='color: white;'>end-user experience monitoring</span>." 
+				heading = "Instant remote troubleshooting for IT teams so everyone can be productive no matter the location."
+        description2 = "Support your team <span style='color: white;'>Working From Anywhere (WFA)</span>. Solve Wi-Fi, network, and system issues <span style='color: white;'>rapidly</span>and <span style='color: white;'>retrospectively</span>. Accelerate Time to Resolution and move from WTF to supporting WFA with ease! 😎" 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

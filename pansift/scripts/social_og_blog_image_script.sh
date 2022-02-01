@@ -26,13 +26,13 @@ post_request='{
     },
     {
       "name": "author",
-      "text": "PanSift your Problems!",
+      "text": "PanSift your problems away! 😍",
       "color": null,
       "background": null
     },
     {
       "name": "title",
-      "text": "Easy Remote Troubleshooting for IT Teams",
+      "text": "Instant Remote Troubleshooting for IT Teams",
       "color": null,
       "background": null
     }
@@ -52,4 +52,4 @@ location=$(curl -s -H "Content-Type: application/json" -H "Authorization: Bearer
 echo $location
 
 echo "Argument supplied was $1"
-curl -s $location -o ../static/images/blog/$1.jpg
+curl -s $location -o ../static/images/$1.jpg

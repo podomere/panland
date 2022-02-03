@@ -32,7 +32,7 @@ unsafe = true
     [params.hero]
         enable  = true
 				heading = "Instant remote troubleshooting for IT teams so everyone can be productive no matter the location."
-        description2 = "Support your team <span style='color: white;'>Working From Anywhere (WFA)</span>. Solve Wi-Fi, network, and system issues <span style='color: white;'>rapidly</span>and <span style='color: white;'>retrospectively</span>. Accelerate Time to Resolution and move from WTF to supporting WFA with ease! 😎" 
+        description2 = "Support your team <span style='color: white;'>Working From Anywhere (WFA)</span>. Solve Wi-Fi, network, and system issues <span style='color: white;'>rapidly</span> and <span style='color: white;'>retrospectively</span>. Accelerate Time to Resolution and move from WTF to supporting WFA with ease! 😎" 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

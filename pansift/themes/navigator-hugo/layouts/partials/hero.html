@@ -34,7 +34,7 @@
         </div>
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" style="padding: 0px;">
-            <a target="_blank" href="https://app.pansift.com/demo" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero');" class="btn btn-lg btn-primary text-center mt-3"> <i style="font-size: 1em;" class="fas fa-user-clock"></i><span style="font-size: 1.3em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }}</span></a>
+            <a target="_blank" href="https://app.pansift.com/demo" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero');" class="btn btn-lg btn-primary text-center mt-3" onmouseover="this.style='background-color:#1F6ABE;';" onmouseout="this.style='background-color:#222222';" style="background-color: #222222; border-color: #1F6ABE;"> <i style="font-size: 1em;" class="fas fa-user-clock"></i><span style="font-size: 1.3em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }}</span></a>
             <div id="" class="mt-1">
               <small style="color: #ffffff;">No strings, no registration, <strong>live</strong> demo! </small>
             </div>

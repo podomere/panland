@@ -64,7 +64,7 @@ unsafe = true
     [params.benefits]
         topTitle =  "Trust but Verify"
         enable  = true
-        title   = "Benefits and Features <br>for the Future of Work"
+        title   = "Support Work From Anywhere"
         subtitle = "Improve <strong>user experience</strong> by knowing what the user <strong>actually experiences</strong>. Whether for <strong>sales demos</strong>, <strong>customer success calls</strong>, or even family conferences... ensure you can solve issues rapidly and remotely with simple in-path <br><strong>Real User Monitoring</strong> and <strong>Synthetic Testing</strong>."
         punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
         onetitle = "Pinpoint Issues Effortlessly and Remotely"
@@ -121,8 +121,8 @@ unsafe = true
     # Training Section
     [params.training]
         enable  = false
-        topTitle = "Technical / Security Training"
-        title   = "Grow Your Information And Cyber Security Skills"
+        topTitle = "Technical Training"
+        title   = "Grow Your Troubleshooting Skills"
         subtitle= "Partner Recommended Courses ( save up to 33% annually )"
 
     # Search Section
@@ -171,31 +171,31 @@ unsafe = true
 
 # Site Menus
 [menu]
-    # Navbar Menus
+# Navbar Menus
 #    [[menu.nav]]
 #        name    = "Deception Tech"
 #        url     = "/deception"
 #        weight  = 3
-   [[menu.nav]]
-       name    = "Sign Up"
-       url     = "https://app.pansift.com/demo/logout_demo"
-       weight  = 3
+#   [[menu.nav]]
+#       name    = "Sign Up"
+#       url     = "https://app.pansift.com/demo/logout_demo"
+#       weight  = 3
 #    [[menu.nav]]
 #        name    = "Why"
 #        url     = "/why"
 #        weight  = 1
     [[menu.nav]]
-        name    = "Free"
+        name    = "Pricing"
         url     = "/pricing"
-        weight  = 3
-    [[menu.nav]]
-         name    = "Contact"
-         url     = "/contact"
-         weight  = 1
-    [[menu.nav]]
-        name    = "Blog"
-        url     = "/blog"
-        weight  = 2
+        weight  = 1
+#   [[menu.nav]]
+#         name    = "Contact"
+#         url     = "/contact"
+#         weight  = 1
+#    [[menu.nav]]
+#        name    = "Blog"
+#        url     = "/blog"
+#        weight  = 2
 #   [[menu.nav]]
 #       name    = "Benefits"
 #       url     = "/benefits"
@@ -209,15 +209,15 @@ unsafe = true
 #        url     = "/contact"
 #        weight  = 7
     
-    # Footer Quick links Menu
-    # [[menu.quick]]
-    #    name    = "Team"
-    #    url     = "/team"
-    #    weight  = 1
-    [[menu.quick]]
-        name    = "Pricing"
-        url     = "/pricing"
+# Footer Quick links Menu
+     [[menu.quick]]
+        name    = "Blog"
+        url     = "/blog"
         weight  = 1
+#    [[menu.quick]]
+#       name    = "Pricing"
+#       url     = "/pricing"
+#       weight  = 1
     #[[menu.quick]]
     #    name    = "Deception"
     #    url     = "/faketestimonials"

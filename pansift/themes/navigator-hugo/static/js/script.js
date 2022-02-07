@@ -304,7 +304,7 @@
 			if (sliderFormat.noUiSlider.get() < 3) {
 				agent_cost = 0;
 			} else {
-				agent_cost = (sliderFormat.noUiSlider.get()) * 9;
+				agent_cost = (sliderFormat.noUiSlider.get()) * 19;
 			}
       var total_cost = agent_cost 
       $('#total_cost').html('<strong>' + total_cost + ' € p/m </strong>');

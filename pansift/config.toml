@@ -32,7 +32,7 @@ unsafe = true
     [params.hero]
         enable  = true
 				heading = "Instant remote troubleshooting so technical teams can support work from anywhere, anytime, anyplace."
-        description2 = "Support your team <span style='color: white;'>Working From Anywhere (WFA)</span>. Solve Wi-Fi, network, and system issues <span style='color: white;'>rapidly</span> and <span style='color: white;'>retrospectively</span>. Accelerate Time to Resolution and move from WTF to supporting WFA with ease! 😎" 
+        description2 = "Support your team <span style='color: white;'>Working From Anywhere (WFA)</span> by solving Wi-Fi, network, and system issues <span style='color: white;'>rapidly</span> and even <span style='color: white;'>retrospectively</span>. Accelerate Time to Resolution and go from WTF to WFA with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u> 😎" 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -47,8 +47,8 @@ unsafe = true
 
     [params.offer]
         enable  = true
-        title   = "<span style = 'color: #fff;'>PanSift, make the invisible visible!</span>"
-        subtitle = "Life's too short to fumble around in the dark! Light up your remote workers data path and performance. Claim your (<strike>life</strike>) time back!"
+        title   = "<span style = 'color: #fff;'>PanSift your Problems!</span>"
+        subtitle = "Life's too short to fumble around in the dark! Light up your remote workers data path and performance. Claim your time back!"
         description = ""
  
     [params.deception]

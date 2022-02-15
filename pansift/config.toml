@@ -15,7 +15,7 @@ unsafe = true
 
 # Site Params
 [params]
-	description = "Instant remote troubleshooting so technical teams can support work from anywhere, anytime, anyplace. Regain control of time. Fix Wifi, ISP, DNS and laptop issues in moments."
+	description = "Instant remote troubleshooting for forward thinking technical teams. Embrace work from anywhere. Regain control of time and fix Wifi, ISP, DNS and laptop issues in moments."
   og_image = "https://pansift.com/images/pansift_social_v37.jpg"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -31,8 +31,8 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Instant remote troubleshooting so technical teams can support work from anywhere, anytime, anyplace."
-        description2 = "Support your team <span style='color: white;'>Working From Anywhere (WFA)</span> by solving Wi-Fi, network (IPv4 + IPv6), and system issues <span style='color: white;'>rapidly</span>. Accelerate Time to Resolution and go from WTF to WFA with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u> 😎" 
+				heading = "Instant remote troubleshooting for forward thinking technical teams. P.S. Embrace work from anywhere."
+        description2 = "Support users and clients who <span style='color: white;'>Work From Anywhere (WFA)</span> by solving Wi-Fi, network (IPv4 + IPv6), and system issues <span style='color: white;'>rapidly</span>. Accelerate Time to Resolution and go from WTF to WFA 😎 starting with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>" 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -44,6 +44,7 @@ unsafe = true
         enable  = true
         title   = "Troubleshooting can and should be <span style = 'color: #000;'>black</span> and <span style = 'color: #fff;'>white</span>."
         subtitle = "Combat support fatigue with high fidelity automated troubleshooting."
+        proof = "Gartner <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>forecasts</a></u> that <strong>~53%</strong> of the UK & US workforce will work remotely during 2022, with <strong>31%</strong> globally."
 
     [params.offer]
         enable  = true
@@ -65,26 +66,26 @@ unsafe = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Support Work From Anywhere"
-        subtitle = "Improve <strong>user experience</strong> by knowing what the user <strong>actually experiences</strong>. Whether for <strong>sales demos</strong>, <strong>customer success calls</strong>, or even family conferences... ensure you can solve issues rapidly and remotely with simple in-path <br><strong>Real User Monitoring</strong> and <strong>Synthetic Testing</strong>."
+        subtitle = "It's not just <strong>sales demos</strong>, <strong>customer success calls</strong>, or <strong>interviews</strong> that are performed remotely but every aspect of modern business operations can and are distributed. Ensure you can solve issues rapidly and remotely so teams can stay connected and productive."
         punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
-        onetitle = "Pinpoint Issues Effortlessly and Remotely"
+        onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
         one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."
-        threetitle = "Accelerated Outcomes For Support"
+        threetitle = "Accelerated Outcomes For Technical Support Teams"
         three = "<strong>Claim back your time</strong> with up to date metrics, anomaly detection, and root cause(s) identification."
         twotitle = "Timetravel with Retrospective Troubleshooting"
         two = "Go back in time to when problems <strong>actually</strong> occurred rather than waiting for them to happen again."
         fourtitle = "Weeks Of Offline Buffering"
-        four = "When <strong>disconnected</strong> all metrics (inc Wifi) are buffered and then uploaded when reconnected."
+        four = "Even when <strong>disconnected</strong>, metrics are buffered and uploaded when reconnected or on hotspots."
         fivetitle = "Added Context From Users"
-        five = "Elective <strong>user annotations</strong> mean more context during any disruptions. The missing link!"
+        five = "Elective <strong>user annotations</strong> mean more context during any disruptions. The missing link not in any logs!"
         sixtitle = "Super Low Bandwdith"
-        six = "Metrics only use a few <strong>kilobits</strong> of bandwidth every 20-30 seconds and almost no CPU."
+        six = "Metrics only use a few <strong>kilobits</strong> of bandwidth every 30-60 seconds and almost no CPU."
         seventitle = "Unsurpassed Granularity"
         seven = "High frequency testing (<strong>30s</strong> for most tests) giving the highest fidelity. Non-normalized data means deep debugging!"
         eighttitle = "Synchronous Graphing"
         eight = "Interactive graphs and tabs all <strong>update</strong> when you zoom, pan, tab, or query. Rapidly linked contexts give the whole picture."
         ninetitle = "Real User Monitoring!"
-        nine = "IPv4, IPv6 info, dynamic MAC/OUI lookups, WLAN SSID / MCS / SNR / rogues, DNS, HTTP / TTFB, system stats etc. All <strong>in-path !</strong>"
+        nine = "IPv4 + IPv6 public/private info, MAC/OUI vendor lookups, WLAN SSID / MCS / rogues, DNS, HTTP(S), system stats etc. All <strong>in-path !</strong>"
 
     # NetDevOps
     [params.netdevops]
@@ -214,10 +215,10 @@ unsafe = true
         name    = "Blog"
         url     = "/blog"
         weight  = 1
-#    [[menu.quick]]
-#       name    = "Pricing"
-#       url     = "/pricing"
-#       weight  = 1
+    [[menu.quick]]
+       name    = "Pricing"
+       url     = "/pricing"
+       weight  = 2
     #[[menu.quick]]
     #    name    = "Deception"
     #    url     = "/faketestimonials"
@@ -225,11 +226,11 @@ unsafe = true
     [[menu.quick]]
         name    = "Training"
         url     = "/training"
-        weight  = 2
+        weight  = 4
     [[menu.quick]]
         name    = "Contact"
         url     = "/contact"
-        weight  = 4
+        weight  = 3
 
     # Footer About Menu
     [[menu.about]]

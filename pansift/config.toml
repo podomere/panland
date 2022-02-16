@@ -16,7 +16,7 @@ unsafe = true
 # Site Params
 [params]
 	description = "Instant remote troubleshooting for forward thinking technical teams. Embrace work from anywhere. Regain control of time and fix Wifi, ISP, DNS and laptop issues in moments."
-  og_image = "https://pansift.com/images/pansift_social_v37.jpg"
+  og_image = "https://pansift.com/images/pansift_social_v38.jpg"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
   keywords = "wifi assurance, network assurance, future of work, userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"

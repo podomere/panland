@@ -32,7 +32,7 @@ post_request='{
     },
     {
       "name": "title",
-      "text": "Instant Remote Troubleshooting for IT Teams",
+      "text": "Instant Remote Troubleshooting for Tech Teams",
       "color": null,
       "background": null
     }

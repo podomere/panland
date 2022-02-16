@@ -15,7 +15,7 @@ unsafe = true
 
 # Site Params
 [params]
-	description = "Instant remote troubleshooting for forward thinking technical teams. Embrace work from anywhere. Regain control of time and fix Wifi, ISP, DNS and laptop issues in moments."
+	description = "Instant remote troubleshooting for forward thinking technical teams. Support work from anywhere. Regain control of time and fix Wifi, ISP, DNS and laptop issues in moments."
   og_image = "https://pansift.com/images/pansift_social_v38.jpg"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -31,7 +31,7 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Instant remote troubleshooting for forward thinking technical teams. P.S. Embrace work from anywhere."
+				heading = "Instant remote troubleshooting for forward thinking technical teams. P.S. Support work from anywhere."
         description2 = "Support users and clients who <span style='color: white;'>Work From Anywhere (WFA)</span> by solving Wi-Fi, network (IPv4 + IPv6), and system issues <span style='color: white;'>rapidly</span>. Accelerate Time to Resolution and go from WTF to WFA 😎 starting with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>" 
         button  = true
         btnTxt = "Early Access"

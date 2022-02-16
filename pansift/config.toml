@@ -66,7 +66,7 @@ unsafe = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Support Work From Anywhere"
-        subtitle = "It's not just <strong>sales demos</strong>, <strong>customer success calls</strong>, or <strong>interviews</strong> that are performed remotely but every aspect of modern business operations can and are distributed. Ensure you can solve issues rapidly and remotely so teams can stay connected and productive."
+        subtitle = "No longer is it just <strong>sales demos</strong>, <strong>customer success calls</strong>, <strong>interviews</strong> and <strong>onboarding</strong> performed remotely, but incresingly every every aspect of modern business operations are distributed. Ensure teams can stay connected and productive."
         punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
         onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
         one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."
@@ -193,10 +193,10 @@ unsafe = true
 #         name    = "Contact"
 #         url     = "/contact"
 #         weight  = 1
-#    [[menu.nav]]
-#        name    = "Blog"
-#        url     = "/blog"
-#        weight  = 2
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "/blog"
+        weight  = 2
 #   [[menu.nav]]
 #       name    = "Benefits"
 #       url     = "/benefits"

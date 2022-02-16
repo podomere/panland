@@ -248,7 +248,7 @@
 
   if(document.getElementById("mapid") !== null){
     var mymap = null;
-    var  mymap = L.map('mapid',{attributionControl:false, zoomControl: false, minZoom: 2, maxZoom: 2, zoom: 2}).setView([31, -42], 2);
+    var  mymap = L.map('mapid',{attributionControl:false, zoomControl: false, minZoom: 2, maxZoom: 2, zoom: 2}).setView([46, -51], 2);
     L.tileLayer('https://api.mapbox.com/styles/v1/pansift/cjj4p9yei4ig22srzi0315fpm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGFuc2lmdCIsImEiOiJjamo0NTZmcGUxZ2d1M2txZzFlYWFzcWF5In0.SP3kz57m0HFfNU_EubbMYA').addTo(mymap);
     function getRandomInRange(from, to, fixed) {
       return (Math.random() * (to - from) + from).toFixed(fixed) * 1;
@@ -266,7 +266,7 @@
     function new_champion(lat,lng) {
       var popup = L.popup({closeButton:false})
         .setLatLng([lat, lng])
-        .setContent('<a target="_blank" href="https://app.pansift.com/demo" style="color: black;"><center><strong> Issue (Live Demo) <i class="fas fa-external-link-alt"></i></strong></center></a>')
+        .setContent('<a target="_blank" href="https://app.pansift.com/demo" style="color: black;"><center><strong> Insight Demo <i class="fas fa-external-link-alt"></i></strong></center></a>')
         .openOn(mymap);
       L.marker([lat,lng], {zIndexOffset: 1000}).addTo(mymap);
     }

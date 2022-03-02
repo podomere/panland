@@ -15,7 +15,11 @@
 		<meta content="{{ .Permalink }}" property="og:url">
 		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:site_name">
 		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" itemprop="name">
+		{{ if eq .Section "blog" }}
+		<meta content="post" property="og:type">
+		{{ else }}
 		<meta content="website" property="og:type">
+		{{ end }}
 		{{ if isset .Params "image" }}
 		<meta content="{{ .Params.image | absURL }}" property="og:image">
 		<meta content="{{ .Params.image | absURL }}" itemprop="image">

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "how-do-I-fix-ipv6-at-home.md",
+            "file": "how-to-fix-ipv6-connectivity.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "how-do-I-fix-ipv6-at-home.md",
+                "file": "how-to-fix-ipv6-connectivity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +88,7 @@
   },
   "active": "27f3e851b0929328",
   "lastOpenFiles": [
-    "how-do-I-fix-ipv6-at-home.md",
+    "how-to-fix-ipv6-connectivity.md",
     "does-wifi-mcs-index-affect-latency.md"
   ]
 }

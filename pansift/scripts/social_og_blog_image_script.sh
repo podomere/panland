@@ -14,7 +14,7 @@ post_request='{
   "modifications": [
     {
       "name": "photo",
-      "image_url": "https://pansift.com/images/laptop_inlay_insights_v4_social.png"
+      "image_url": "https://pansift.com/images/blog/duck.jpg"
     },
     {
       "name": "overlay",
@@ -32,7 +32,7 @@ post_request='{
     },
     {
       "name": "title",
-      "text": "Instant Remote Troubleshooting for Tech Teams",
+      "text": "How To Fix IPv6",
       "color": null,
       "background": null
     }

@@ -3,8 +3,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
-		<meta content="{{ .Site.Params.description }}" name="description">
-		<meta name="author" content="donal"> 
 		<link rel="canonical" href="{{ .Permalink }}">
 		<meta name="keywords" content="{{ .Site.Params.keywords }}">
 
@@ -128,8 +126,6 @@ check_ga();
 		</script>
 		<!-- Rich Data / Structured Data -->
 
-		<title>{{ .Site.Title }}</title>
-
 		{{ "<!-- Mobile Specific Meta -->" | safeHTML }}
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -161,7 +157,7 @@ check_ga();
 		{{ "<!-- NoUISlider Map -->" | safeHTML }}
 		<link rel="stylesheet" href="{{ "plugins/nouislider/dist/css/nouislider.min.css" | absURL }}" media="none" onload="this.media='all'"/>
 		{{ end }}
-		{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Troubleshooting and Performance.") (eq .Page.Title "Training")}}
+		{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Troubleshooting and Performance.") (eq .Page.Title "Training") (eq .Page.Title "Team")}}
 		<!-- Algolia Search Live DB -->
 		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
 		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>

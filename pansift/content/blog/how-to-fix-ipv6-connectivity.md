@@ -141,7 +141,7 @@ Check your specific flavour but most are alike ["linux disable ipv6"](https://ww
 # Automating It All With PanSift
 The other option is to just run an instant troubleshooting tool like PanSift which monitors a range of IPv6 metrics, settings, and even Wi-Fi performance. As PanSift is Zero Touch Provisioning you can even get family or team members to run it remotely with no fuss and then keep an eye on their connectivity remotely and retrospectively for whenever they need help. 
 
-[![Foo](/images/blog/dns_failures.png)](/)
+<a href="/"><img src="/images/blog/dns_failures.png" class="rounded img-fluid" alt="PanSift screenshot"></a>
 
 PanSift not only tracks your:
 
@@ -150,8 +150,9 @@ PanSift not only tracks your:
  - [x] local interface IPv6 (non-link local)
  - [x] IPv6 DNS performance (cached RRs and uncached unique RRs)
  - [x] traceroutes via IPv6 which include ASNs
+ - [x] but also lots of other useful IPv4, performance and Wi-Fi metrics continuously!
 <br><br>
 
-But surfaces insights and issues immediately so troubleshooting is a breeze including suggesting clear Wi-Fi channels and remediation steps.
+PanSift surfaces insights and issues so troubleshooting is instantaneous and easy, including suggesting clear Wi-Fi channels and remediation steps.
 
-[![Foo](/images/blog/example_dns_failures.png)](/)
+<a href="/"><img src="/images/blog/example_dns_failures.png" class="rounded img-fluid" alt="PanSift screenshot"></a>

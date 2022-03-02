@@ -17,6 +17,7 @@
 		<meta content="{{ .Permalink }}" property="og:url">
 		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:site_name">
 		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" itemprop="name">
+		<meta content="website" property="og:type">
 		{{ if isset .Params "image" }}
 		<meta content="{{ .Params.image | absURL }}" property="og:image">
 		<meta content="{{ .Params.image | absURL }}" itemprop="image">
@@ -42,7 +43,9 @@
 
 		<meta content="summary_large_image" name="twitter:card">
 		<meta name="author" content="PanSift Team">
-		<meta property="og:updated_time" content="{{ .Lastmod.Format "2020-01-02T15:04:05Z0700" | safeHTML }}">
+		{{ if not .PublishDate.IsZero }}<meta itemprop="datePublished" content='{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }} 
+		{{ if not .Lastmod.IsZero }}<meta itemprop="dateModified" content='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
+		{{ if not .Lastmod.IsZero }}<meta itemprop="og:updated_time" content='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
 
 		<link rel="dns-prefetch" href="//app.pansift.com">
 		<link rel="dns-prefetch" href="//sc.lfeeder.com">
@@ -158,7 +161,7 @@ check_ga();
 		{{ "<!-- NoUISlider Map -->" | safeHTML }}
 		<link rel="stylesheet" href="{{ "plugins/nouislider/dist/css/nouislider.min.css" | absURL }}" media="none" onload="this.media='all'"/>
 		{{ end }}
-		{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Blog. Raise the Bar.") (eq .Page.Title "Training") }}
+		{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Troubleshooting and Performance.") (eq .Page.Title "Training")}}
 		<!-- Algolia Search Live DB -->
 		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
 		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>

@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "8c85b60dc646fd24",
+    "type": "split",
+    "children": [
+      {
+        "id": "27f3e851b0929328",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "how-do-I-fix-ipv6-at-home.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a3f02d50954289f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebb22c73d7d9cf73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71170d28357a337f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "dca0342a4b58ea36",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "35bedc6ad6abbb27",
+    "type": "split",
+    "children": [
+      {
+        "id": "08579ede4021171b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34a356bd55b6a608",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "how-do-I-fix-ipv6-at-home.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "27f3e851b0929328",
+  "lastOpenFiles": [
+    "how-do-I-fix-ipv6-at-home.md",
+    "does-wifi-mcs-index-affect-latency.md"
+  ]
+}

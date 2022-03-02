@@ -99,7 +99,7 @@ pansift.com.		300	IN	AAAA	2606:4700:3032::ac43:ac41</code></pre>
 
 Healthy responses are generally returned in less than 20ms. Good enough responses are often between 20-150ms but anything consistently higher means it might be time to configure and use another DNS server. See the section towards the end on differnet public IPv6 DNS servers.
 
-At this point you should be content on the IPv6 Internet and can check again via [IPv6-Test](https://ipv6-test.com/) or with something like `cURL` to ensure you are getting HTTP status codes of `200`.
+At this point you should be connected on the IPv6 Internet and can check via [IPv6-Test](https://ipv6-test.com/) or with something like `cURL` to ensure you are getting HTTP status codes of `200`.
 
 ```curl -s -N -6 -I -L https://www.google.com | head -n1```
 
@@ -107,7 +107,7 @@ At this point you should be content on the IPv6 Internet and can check again via
 </code></pre>
 
 ## Monitor IPv6 Traffic
-The above is all essentially toil i.e. undifferentiated heavy lifting that requires you to get a command line on the problematic host (or try to get the user to find the terminal and type commands!). It doesn't help you spot intermittent problems or historical issues! 
+The above is all essentially **toil** i.e. undifferentiated heavy lifting that requires you to manually get a command line on the problematic host (or try to get the user to find the terminal and type commands!). It doesn't help you spot intermittent problems or historical issues! 
 
 It's important to keep an eye on whether or not remote workers are dual stack (IPv4 and IPv6) from the outset, and what ISPs they are connecting to as they work from different locations. PanSift solves for all of these issues [mentioned](/benefits) but let's keep rolling with the manual approach and potential solutions for now...
 

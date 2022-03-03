@@ -112,7 +112,7 @@ It's important to keep an eye on whether or not remote workers are dual stack (I
 <br>
 
 ### Quick Wins
-As noted previously, ensure you know whether or not you are supposed to have IPv6 as part of your service before changing or updating anything. **Always** take a backup of the configuration or note it all down before making any changes. Then, you can try some of the below:
+As noted previously, ensure you know whether or not you are supposed to have IPv6 as part of your service before changing or updating anything. **Always** take a backup of any configuration before making changes.
 
 <div class="table1-start"></div>
 

@@ -1,4 +1,5 @@
 {
   "legacyEditor": true,
-  "livePreview": true
+  "livePreview": true,
+  "autoConvertHtml": false
 }

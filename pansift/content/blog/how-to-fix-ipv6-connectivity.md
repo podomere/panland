@@ -98,7 +98,7 @@ Healthy responses are generally returned in less than 20ms. Good enough response
 
 At this point you should be connected on the IPv6 Internet and can check via [IPv6-Test](https://ipv6-test.com/) or with something like `cURL` to ensure you are getting HTTP status codes of `200`.
 
-```curl -s -N -6 -I -L https://www.google.com | head -n1```
+<code>curl -s -N -6 -I -L https://www.google.com | head -n1</code>
 
 <pre style="border-radius: 20px; padding: 50px; background-color: #222;color: #fff;"><code>HTTP/2 200
 </code></pre>

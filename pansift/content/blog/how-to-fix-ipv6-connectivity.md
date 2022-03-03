@@ -189,6 +189,6 @@ PanSift not only tracks your:
  - [x] but also lots of other useful IPv4, performance and Wi-Fi metrics continuously!
 <br><br>
 
-PanSift surfaces insights and issues so troubleshooting is instantaneous and easy, including suggesting clear Wi-Fi channels and remediation steps.
+PanSift surfaces insights and issues so troubleshooting is easy and instantaneous (even suggesting clear Wi-Fi channels and remediation steps).
 
 <a href="/"><img src="/images/blog/example_dns_failures.png" class="rounded img-fluid" alt="PanSift screenshot"></a>

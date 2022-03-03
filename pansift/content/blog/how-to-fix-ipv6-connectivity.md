@@ -6,13 +6,18 @@ author: Donal
 tags:
   - IPv6
   - DNS
-  - IPv6 DNS
-  - IPv4 DNS
+  - IPv6_DNS
+  - IPv4_DNS
   - AAAA
   - latency
   - macOS
   - userops
   - assurance
+  - remote_working
+  - work_from_anywhere
+  - support
+  - troubleshooting
+  - guide
 image: /images/blog/ipv6_duck.jpg
 published: true
 title: 'How To Fix IPv6 Connectivity'

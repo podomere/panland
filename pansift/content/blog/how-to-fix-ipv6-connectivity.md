@@ -145,7 +145,6 @@ The above is all essentially **toil** i.e. undifferentiated heavy lifting that r
 It's important to keep an eye on whether or not remote workers are dual stack (IPv4 and IPv6) from the outset, and what ISPs they are connecting to as they work from different locations. PanSift solves for all of these issues [mentioned](/benefits) but let's keep rolling with the manual approach and potential solutions for now...
 
 ## How Do I Fix My IPv6
-<br>
 
 ### Quick Wins
 As noted previously, ensure you know whether or not you are supposed to have IPv6 as part of your service before changing or updating anything. **Always** take a backup of any configuration before making changes.

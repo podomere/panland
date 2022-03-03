@@ -115,14 +115,16 @@ It's important to keep an eye on whether or not remote workers are dual stack (I
 As noted previously, ensure you know whether or not you are supposed to have IPv6 as part of your service before changing or updating anything. **Always** take a backup of the configuration or note it all down before making any changes. Then, you can try some of the below:
 
 <div class="table1-start"></div>
-  
-  
+
+
 | Recommendations | 
 | :----    |   
-| By disabling and re-enabling a Wi-Fi interface or disconnecting an ethernet cable it forces your compuer to re-ask for settings from the local router via DHCP (IPv4) and to reassign addresses via [SLAAC](https://support.apple.com/en-gb/guide/security/seccb625dcd9/web) (this would also mean a fresh DHCPv6 request if applicable).      | 
-| Log in to the local router and check that it is getting an IPv6 WAN/Internet address and is configured to hand out DNS settings via DHCP on the LAN (which should include IPv6 DNS server settings) though the router may offer its own address as a DNS cache/relay. You could also configure the public ones listed below.     | 
-| Reboot your local router/modem and check it has no warnings or errors in its logs.     | 
-|  Contact the nominated ISP support service to perform deeper health checks on your service, WAN connection, and account.     | 
+| **1.** By disabling and re-enabling a Wi-Fi interface or disconnecting an ethernet cable it forces your compuer to re-ask for settings from the local router via DHCP (IPv4) and to reassign addresses via [SLAAC](https://support.apple.com/en-gb/guide/security/seccb625dcd9/web) (this would also mean a fresh DHCPv6 request if applicable).      | 
+| **2.** Log in to the local router and check that it is getting an IPv6 WAN/Internet address and is configured to hand out DNS settings via DHCP on the LAN (which should include IPv6 DNS server settings) though the router may offer its own address as a DNS cache/relay. You could also configure the public ones listed below.     | 
+| **3.** Reboot your local router/modem and check it has no warnings or errors in its logs.     | 
+|  **4.** Contact the nominated ISP support service to perform deeper health checks on your service, WAN connection, and account. |
+
+
 <center><small>Table 1.0 - Quick Wins</small></center>
  <br> 
  <br> 

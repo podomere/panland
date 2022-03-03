@@ -130,11 +130,6 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
  <br> 
 <div class="table1-end"></div>
 
-
-<script>
-$("div.table1-start").nextUntil("div.table1-end", "table").addClass("table table-dark table-hover table-responsive");
-</script>
-
 #### Disable IPv6
 This is an **extreme** option and it is not recommended unless there is no other choice or solution found. You can disable IPv6 via the command line or via the GUI in macOS or Linux. 
 
@@ -194,3 +189,7 @@ PanSift not only tracks your:
 PanSift surfaces insights and issues so troubleshooting is easy and instantaneous (even suggesting clear Wi-Fi channels and remediation steps).
 
 <a href="/"><img src="/images/blog/example_dns_failures.png" class="rounded img-fluid" alt="PanSift screenshot"></a>
+
+<script>
+$("div.table1-start").nextUntil("div.table1-end", "table").addClass("table table-dark table-hover table-responsive");
+</script>

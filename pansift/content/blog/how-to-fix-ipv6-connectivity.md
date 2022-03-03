@@ -65,7 +65,7 @@ We can look for the presence of IPv6 addresses on a specific interface but let's
 
 <code>netstat -rn -f inet6 | grep -a1 -i default | column -t</code>
 
-The above should return at least one route (as per below) via a known interface such as "_en0_" on a Mac or "_wlan0_" depending upon your flavour of Linux. We're also assuming you don't have any fancy tunnels or VPNs set up for now! 
+The above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. We're also assuming you don't have any fancy tunnels or VPNs set up for now! 
 
 <pre><code>
 Destination  Gateway                        Flags  Netif  Expire
@@ -74,6 +74,12 @@ default      fe80::%utun0                   UGcIg  utun0
 default      fe80::%utun1                   UGcIg  utun1
 default      fe80::%utun2                   UGcIg  utun2
 ::1          ::1                            UHL    lo0</code></pre>
+
+Depending upon your flavour of Linux you might use "_wlan0_ " as the interface or the following command: 
+
+<code>ip -6 route | grep -i default</code>
+
+<pre><code>default via 2a03:b0c0:2:d0::1 dev eth0 proto static metric 1024 pref medium</code></pre>
 
 Next you might check if you can send data to the relevant IPv6 default gateway (using IPv6 of course!).
 

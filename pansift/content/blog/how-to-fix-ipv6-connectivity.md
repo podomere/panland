@@ -181,11 +181,11 @@ As PanSift uses [Zero Touch Provisioning](https://en.wikipedia.org/wiki/ZTP) you
 
 PanSift not only tracks your:
 
-- [x] public IPv6 address
- - [x] default gateway IPv6 status and latency
- - [x] local interface IPv6 (non-link local)
- - [x] IPv6 DNS performance (cached RRs and uncached unique RRs)
- - [x] traceroutes via IPv6 which include ASNs
+- [x] public facing IPv6 address
+ - [x] default gateway IPv6 address, status, and latency
+ - [x] local interface IPv6 addresses
+ - [x] IPv6 DNS performance (cached RRs + uncached unique RRs)
+ - [x] traceroutes via IPv6 (which include ASN paths)
  - [x] but also lots of other useful IPv4, performance and Wi-Fi metrics continuously!
 <br><br>
 

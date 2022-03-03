@@ -175,7 +175,7 @@ Check your specific flavour but most are alike for ["linux flavours"](https://ww
 # Automating It All With PanSift
 The other option is to just run an instant troubleshooting tool like [PanSift](/) which continuously monitors a range of IPv6 metrics, settings, and even Wi-Fi performance! 
 
-As PanSift uses [Zero Touch Provisioning](https://en.wikipedia.org/wiki/ZTP) you can even get a family or team member to run it remotely with no set up fuss and then keep an eye on their connectivity remotely for whenever they need help or report historical issues.
+As PanSift uses [Zero Touch Provisioning](https://en.wikipedia.org/wiki/ZTP) you can even get a family or team member to run it remotely with no set up fuss. You then keep an eye on their connectivity **remotely** for whenever they need help or inevitably report any issues.
 
 <a href="/"><img src="/images/blog/dns_failures.png" class="rounded img-fluid" alt="PanSift screenshot"></a>
 

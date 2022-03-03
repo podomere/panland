@@ -51,7 +51,7 @@ It's up to whomever owns the assets or pages you've requested as to whether they
 We need to check you have full IPv6 connectivity and are represented by a globally routable IPv6 unicast address (rather than just a **non-routable** IPv6 link local address).
 
 ### IPv6 Link Local and Multicast
-fe80::/10 are link-local addresses and ff00::/8 are multicast addresses. Your IPv6 default gateway will likely be an ```fe80::/10``` address but may be a global address.
+fe80::/10 are link-local addresses and ff00::/8 are multicast addresses. Your IPv6 default gateway will likely be an <code>fe80::/10</code> address but may be a global address.
 
 ### IPv6 Example
 You can rapidly check IPv6 from the outside -> in by visiting [IPv6-Test](https://ipv6-test.com/) as mentioned earlier, or you could simply send some [ICMPv6](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6) packets to Google's Public Primary DNS server <code>ping -6 2001:4860:4860::8888</code> . If either of those steps fail you then need to troubleshoot (partition your failure domain) and go step by step to find out what's wrong.
@@ -131,7 +131,7 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
 <div class="table1-end"></div>
 <script type="text/javascript">
 (function() {
-  $("div.table1-start").nextUntil("div.table1-end", "table").addClass("table table-dark table-hover table-responsive");
+    $('div.table1-start').nextUntil('div.table1-end', 'table').addClass('table table-dark table-hover table-responsive');
 })();
 </script>
 

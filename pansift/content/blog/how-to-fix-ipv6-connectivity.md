@@ -51,18 +51,19 @@ It's up to whomever owns the assets or pages you've requested as to whether they
 We need to check you have full IPv6 connectivity and are represented by a globally routable IPv6 unicast address (rather than just a **non-routable** IPv6 link local address).
 
 ### IPv6 Link Local and Multicast
-fe80::/10 are link-local addresses and ff00::/8 are multicast addresses. Your IPv6 default gateway will likely be an <code>fe80::/10</code> address but may be a global address.
+<code>fe80::/10</code> are link-local addresses and <code>ff00::/8</code> are multicast addresses. Your IPv6 default gateway will likely be an <code>fe80::/10</code> address but may be a global address.
 
 ### IPv6 Example
 You can rapidly check IPv6 from the outside -> in by visiting [IPv6-Test](https://ipv6-test.com/) as mentioned earlier, or you could simply send some [ICMPv6](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6) packets to Google's Public Primary DNS server <code>ping -6 2001:4860:4860::8888</code> . If either of those steps fail you then need to troubleshoot (partition your failure domain) and go step by step to find out what's wrong.
 
-You can look for the presence of IPv6 addresses on a specific interface but let's kill two birds with one stone and see if you have a default route in your local IPv6 route table (macOS/Linux):
+We can look for the presence of IPv6 addresses on a specific interface but let's kill two birds with one stone and see if you have a default route in your local IPv6 route table (macOS/Linux):
 
 <code>netstat -rn -f inet6 | grep -a1 -i default | column -t</code>
 
 The above should return at least one route (as per below) via a known interface such as "_en0_" on a Mac or "_wlan0_" depending upon your flavour of Linux. We're also assuming you don't have any fancy tunnels or VPNs set up for now! 
 
-<pre style="border-radius: 20px; padding: 50px; background-color: #222;color: #fff;"><code>Destination  Gateway                        Flags  Netif  Expire
+<pre><code>
+Destination  Gateway                        Flags  Netif  Expire
 default      fe80::5a23:8cff:fe1a:5f21%en0  UGcg   en0
 default      fe80::%utun0                   UGcIg  utun0
 default      fe80::%utun1                   UGcIg  utun1
@@ -80,27 +81,57 @@ Next you might check if you can send data to the relevant IPv6 default gateway (
 #### IPv6 DNS
 You can also see which DNS servers are configured via <code>cat /etc/resolv.conf</code> or also <code>scutil --dns</code> on macOS.
 
-Next we will check if you can send ICMPv6 requests to your IPv6 DNS server addresses, and then then try to ask your IPv6 configured DNS server for a record.
+Additionally, you can see if DHCPv4 or DHCPv6 have assigned IPv6 DNS servers as per the following where "_en0_" is the interface name in question:
+
+<code>ipconfig getpacket en0</code>
+
+<pre><code>
+...
+domain_name_server (ip_mult): {192.168.0.1, 192.168.0.2}
+end (none):
+...</code></pre>
+
+So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but...
+
+<code>ipconfig getv6packet en0</code>
+
+<pre><code>
+DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
+Options[4] = {
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 50:ed:3c:2f:46:04
+  DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
+  DOMAIN_LIST (24) Length 0:  Invalid
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 58:23:8c:1a:5f:21
+}</code></pre>
+
+We are indeed getting IPv6 DNS servers from the DHCPv6 reply. Next we will check if we can send ICMPv6 requests to your IPv6 DNS server addresses, and then then try to ask your IPv6 configured DNS server for a record.
 
 <code>ping6 2606:4700:4700::1111</code> 
 
 On macOS and Linux a common tool called <code>dig</code> can be used to make test DNS requests and you can specify which IP protocol and query you would like to make. 
 
-Making a test IPv6 query with <code>dig</code> could mean asking an IPv4 server for an IPv6 resource <code>dig @1.1.1.1 AAAA pansift.com</code> but what we really want here is to use the IPv6 protocol for transport i.e. ask an IPv6 server, using IPv6, for an IPv6 or IPv4 resource record <code>dig -6 @2606:4700:4700::1111 AAAA pansift.com</code>
+Making a test IPv6 query with <code>dig</code> could mean asking an IPv4 server for an IPv6 resource <code>dig @1.1.1.1 AAAA pansift.com</code> but what we really want here is to use the IPv6 protocol for transport i.e. ask an IPv6 server, using IPv6, for an IPv6 or IPv4 resource record:
 
-You can try some different permutations for yourself but you should get a positive response in the answer section much like the following:
+<code>dig -6 @2606:4700:4700::1111 AAAA pansift.com</code>
 
-<pre style="border-radius: 20px; padding: 50px; background-color: #222;color: #fff;"><code>;; ANSWER SECTION:
+You can try some different permutations for yourself but you should get a positive response in the _answer_ section much like the following:
+
+<pre><code>
+...
+;; ANSWER SECTION:
 pansift.com.		300	IN	AAAA	2606:4700:3033::6815:6023
-pansift.com.		300	IN	AAAA	2606:4700:3032::ac43:ac41</code></pre>
+pansift.com.		300	IN	AAAA	2606:4700:3032::ac43:ac41
+...</code></pre>
 
 Healthy responses are generally returned in less than 20ms. Good enough responses are often between 20-150ms but anything consistently higher means it might be time to configure and use another DNS server. See the section towards the end on differnet public IPv6 DNS servers.
 
 At this point you should be connected on the IPv6 Internet and can check via [IPv6-Test](https://ipv6-test.com/) or with something like `cURL` to ensure you are getting HTTP status codes of `200`.
 
-<code>curl -s -N -6 -I -L https://www.google.com | head -n1</code>
+<code>curl -s -N -6 -I -L https://pansift.com | head -n1</code>
 
-<pre style="border-radius: 20px; padding: 50px; background-color: #222;color: #fff;"><code>HTTP/2 200
+...should result in a...
+
+<pre><code>HTTP/2 200
 </code></pre>
 
 ## Monitor IPv6 Traffic
@@ -126,7 +157,6 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
 
 
 <center><small>Table 1.0 - Quick Wins</small></center>
- <br> 
  <br> 
 <div class="table1-end"></div>
 

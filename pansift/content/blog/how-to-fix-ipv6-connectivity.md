@@ -85,14 +85,14 @@ Next you might check if you can send data to the relevant IPv6 default gateway (
 
 <code>ping6 fe80::5a23:8cff:fe1a:5f21%en0</code> 
 
-**Note:** Notice that the IPv6 default gateway also specifies the interface "_en0_" too (which is different from IPv4 default gateways). If you manage to get responses, let's see if we can then talk to your configured IPv6 DNS servers.
+**Note:** Notice that the IPv6 default gateway also specifies the interface "_en0_ " too (which is different from IPv4 default gateways). If you manage to get responses, let's see if we can then talk to your configured IPv6 DNS servers.
 
 **Note:** You could just ask for the record immediately from the IPv6 DNS server and then 
 
 #### IPv6 DNS
 You can also see which DNS servers are configured via <code>cat /etc/resolv.conf</code> or also <code>scutil --dns</code> on macOS.
 
-Additionally, you can see if DHCPv4 or DHCPv6 have assigned IPv6 DNS servers as per the following where "_en0_" is the interface name in question:
+Additionally, you can see if DHCPv4 or DHCPv6 have assigned IPv6 DNS servers as per the following where "_en0_ " is the interface name in question:
 
 <code>ipconfig getpacket en0</code>
 

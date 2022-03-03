@@ -130,25 +130,19 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
  <br> 
 <div class="table1-end"></div>
 <script type="text/javascript">
-
-(function() {
-    $('div.table1-start').nextUntil('div.table1-end', 'table').addClass('table table-dark table-hover table-responsive');
-    $('div.table2-start').nextUntil('div.table2-end', 'table').addClass('table table-dark table-hover table-responsive');
-    $('div.table3-start').nextUntil('div.table3-end', 'table').addClass('table table-dark table-hover table-responsive');
-})();
-
+(function() { $("div.table1-start").nextUntil("div.table1-end", "table").addClass("table table-dark table-hover table-responsive"); })();
 </script>
 
 #### Disable IPv6
 This is an **extreme** option and it is not recommended unless there is no other choice or solution found. You can disable IPv6 via the command line or via the GUI in macOS or Linux. 
 
 ##### macOS Disable IPv6
-```networksetup -setv6off Ethernet```<br>
-```networksetup -setv6off Wi-Fi```
+<code>networksetup -setv6off Ethernet</code><br>
+<code>networksetup -setv6off Wi-Fi</code>
 
 ##### macOS Enable IPv6
-```networksetup -setv6automatic Wi-Fi```<br>
-```networksetup -setv6automatic Ethernet```
+<code>networksetup -setv6automatic Wi-Fi</code><br>
+<code>networksetup -setv6automatic Ethernet</code>
 
 ##### Linux Disable IPv6
 Check your specific flavour but most are alike for ["linux flavours"](https://www.google.com/search?q=linux+disable+ipv6).
@@ -156,23 +150,23 @@ Check your specific flavour but most are alike for ["linux flavours"](https://ww
 ## Alternate Public IPv6 DNS
 
 ### Google DNS IPv6
--   ```2001:4860:4860::8888```
--   ```2001:4860:4860::8844```
+-   <code>2001:4860:4860::8888</code>
+-   <code>2001:4860:4860::8844</code>
 <br><br>
 
 [More info...](https://developers.google.com/speed/public-dns/docs/using)
 
 ### Cloudflare DNS IPv6
 
--   ```2606:4700:4700::1111```
--   ```2606:4700:4700::1001```
+-   <code>2606:4700:4700::1111</code>
+-   <code>2606:4700:4700::1001</code>
 <br><br>
 
 [More info...](https://www.cloudflare.com/en-gb/learning/dns/dns-records/dns-aaaa-record/)
 
 ### Quad9 DNS IPv6
--   ```2620:fe::fe```
--   ```2620:fe::9```
+-   <code>2620:fe::fe</code>
+-   <code>2620:fe::9</code>
 <br><br>
 
 [More Quad9 info as some addresses offer "secured" and "insecure" services...](https://www.quad9.net/support/faq/#ipv6_support)

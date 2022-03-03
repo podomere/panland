@@ -111,11 +111,13 @@ Options[4] = {
 
 We are indeed getting IPv6 DNS servers from the DHCPv6 reply. Next we will check if we can send ICMPv6 requests to your IPv6 DNS server addresses, and then then try to ask your IPv6 configured DNS server for a record.
 
-<code>ping6 2606:4700:4700::1111</code> 
+<code>ping6 2606:4700:4700::1111</code>
 
-On macOS and Linux a common tool called <code>dig</code> can be used to make test DNS requests and you can specify which IP protocol and query you would like to make. 
+Once we've confirmed a positive response from the above we can use a common tool called <code>dig</code> to make test DNS requests. We can specify which IP protocol and query we would like to make. 
 
-Making a test IPv6 query with <code>dig</code> could mean asking an IPv4 server for an IPv6 resource <code>dig @1.1.1.1 AAAA pansift.com</code> but what we really want here is to use the IPv6 protocol for transport i.e. ask an IPv6 server, using IPv6, for an IPv6 or IPv4 resource record:
+**Note:**  <code>dig</code> is available on Linux via <code>bind-utils</code> and/or <code>dns-utils</code>.
+
+Making a test IPv6 query with <code>dig</code> might mean asking an IPv4 server for an IPv6 resource <code>dig @1.1.1.1 AAAA pansift.com</code> but what we really want here is to use the IPv6 protocol for the message transport i.e. ask an IPv6 server, using IPv6, for an IPv6 or IPv4 resource record:
 
 <code>dig -6 @2606:4700:4700::1111 AAAA pansift.com</code>
 
@@ -130,14 +132,13 @@ pansift.com.		300	IN	AAAA	2606:4700:3032::ac43:ac41
 
 Healthy responses are generally returned in less than 20ms. Good enough responses are often between 20-150ms but anything consistently higher means it might be time to configure and use another DNS server. See the section towards the end on differnet public IPv6 DNS servers.
 
-At this point you should be connected on the IPv6 Internet and can check via [IPv6-Test](https://ipv6-test.com/) or with something like `cURL` to ensure you are getting HTTP status codes of `200`.
+At this point you should be confident you're fully connected on the IPv6 Internet and can check via [IPv6-Test](https://ipv6-test.com/) or with something like `cURL` to ensure you are getting HTTP status codes of `200` from further afield.
 
-<code>curl -s -N -6 -I -L https://pansift.com | head -n1</code>
+<code>curl -6 -s -L -o /dev/null -w "%{http_code}\n" https://pansift.com</code>
 
 ...should result in a...
 
-<pre><code>HTTP/2 200
-</code></pre>
+<pre><code>200</code></pre>
 
 ## Monitor IPv6 Traffic
 The above is all essentially **toil** i.e. undifferentiated heavy lifting that requires you to manually get a command line on the problematic host (or try to get the user to find the terminal and type commands!). It doesn't help you spot intermittent problems or historical issues! 
@@ -146,7 +147,7 @@ It's important to keep an eye on whether or not remote workers are dual stack (I
 
 ## How Do I Fix My IPv6
 
-### Quick Wins
+### Some Quick Wins?
 As noted previously, ensure you know whether or not you are supposed to have IPv6 as part of your service before changing or updating anything. **Always** take a backup of any configuration before making changes.
 
 <div class="table1-start"></div>
@@ -154,7 +155,7 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
 
 | Recommendations |
 | :----    |
-| **1.** By disabling and re-enabling a Wi-Fi interface or disconnecting and reconnecting an ethernet cable it forces your computer to re-ask for settings from the local router via DHCP or to reassign addresses via [SLAAC](https://support.apple.com/en-gb/guide/security/seccb625dcd9/web).      |
+| **1.** By disabling and re-enabling a Wi-Fi interface or by disconnecting and reconnecting an ethernet cable, it forces your computer to re-ask for settings from the local router including DHCP or to re-initialize addresses via [SLAAC](https://support.apple.com/en-gb/guide/security/seccb625dcd9/web). The previous <code>getpacket</code> command can be used for DHCP only.      |
 | **2.** Log in to the local router and check that it is getting an IPv6 WAN/Internet address and is configured to hand out DNS settings via DHCP on the LAN (which should include IPv6 DNS server settings) though the router may offer its own address as a DNS cache/relay. You could also configure the public ones listed below.     |
 | **3.** Reboot your local router/modem and check it has no warnings or errors in its logs.     |
 |  **4.** Contact the nominated ISP support service to perform deeper health checks on your service, WAN connection, and account. |

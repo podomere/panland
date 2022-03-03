@@ -23,9 +23,9 @@ title: 'How To Fix IPv6 Connectivity'
 # The Diff Between IPv4 and IPv6
 Our Internet runs primarily on two versions of the Internet Protocol; **IPv4** and **IPv6**. IPv4 is [running out](https://www.ripe.net/analyse/statistics/number-of-remaining-ipv4-addresses-daily) of addresses, but IPv6 is still abundant and will be for a very long time. ISP (Internet Service Providers) and mobile ISPs are increasingly giving out IPv6 addresses **only** and then use mechanisms like [CGNAT (Carrier Grade Network Address Translation)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to ration and share IPv4 pools amongst us. Not all web and Internet assets are available via IPv4 **and** IPv6, though many are available on both. 
 
-You ask your computer for assets and web pages using words however it's the [**DNS (Domain Name System)**](https://en.wikipedia.org/wiki/Domain_Name_System) that tells your computer which IP addresses those assets are served by. DNS servers (caches/resolvers) answer your computer over whichever protocol is active and based upon the type of query they are asked. You may only IPv4 or IPv6 DNS servers configured, or you may have both. 
+You ask your computer for assets and web pages using words however it's the [**DNS (Domain Name System)**](https://en.wikipedia.org/wiki/Domain_Name_System) that tells your computer which IP addresses those assets are served by. DNS servers (caches/resolvers) answer your computer over whichever protocol is active and based upon the type of query they are asked. You may have IPv4 DNS servers or IPv6 DNS servers configured, or you may have both. 
 
-Most of these processes happen _automagically_, from your local router handing out IPv4, IPv6, and DNS settings, to the browser and operating system requesting the lookups which leverage mechanisms like [Happy Eyeballs](https://en.wikipedia.org/wiki/Happy_Eyeballs)
+Most of these processes happen _automagically_ including aspects of your IPv4, IPv6 and DNS settings being supplied by your local router. Your web browser and operating system then request DNS lookups which additionally leverage mechanisms like [Happy Eyeballs](https://en.wikipedia.org/wiki/Happy_Eyeballs) to decide which of the IPv4 or IPv6 supplied records to use.
 
 ## My IPv6
 The next question is, does your ISP support IPv6 and should you be getting IPv6 connectivity?
@@ -35,7 +35,7 @@ There are many ways to test your IPv6 settings and connectivity. You can do so m
 
 From the outside in, you should be represented by a public IPv4 and/or IPv6 address. You can manually check this by visiting [IPv6-Test](https://ipv6-test.com/) however this will only show you a specific point in time (tested over HTTPs) and will not show whether you have had any intermittent or historical issues. 
 
-You really need to be testing continuously. This includes making DNS requests and sending IPv6 probes to both your default gateway and also out on to the Internet to be **100%** sure you are connected end-to-end and that assets are reachable outside your ISP. Pinging your default gateway via [ICMP (Internet Control Message Protocol)](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) is one local test, but checking you can reach and query IPv6 DNS servers and other assets on the IPv6 Internet is another undertaking.
+You really need to be testing continuously. This includes making DNS requests and sending IPv6 probes to both your default gateway and also out on to the Internet to be **100%** sure you are connected end-to-end and that assets are reachable outside of your ISP. Pinging your default gateway via [ICMP (Internet Control Message Protocol)](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) is one local test, but checking you can reach and query IPv6 DNS servers and other assets on the IPv6 Internet is another undertaking, so let's initially look at how you might perform these tests manually.
 
 ## IPv6 DNS Not Working
 First, let's differentiate between IPv6 DNS requests for IPv6 _records_ and requests that actually _use IPv6 for transport_ i.e. requests that are sent using the IPv6 protocol. 
@@ -45,18 +45,15 @@ Without going too deep in to the DNS, you can ask a DNS server for IPv4 or IPv6 
 It's up to whomever owns the assets or pages you've requested as to whether they are a) accessible across the IPv4 or IPv6 Internet **and** b) whether they have the correct types of DNS RRs set to let us know "who" to ask!
 
 ### IPv6 DNS Not Resolving
-
 **If your IPv6 DNS is not working, how would you know?** Well, quite often you don't. If your fundamental IPv6 connectivity goes down you may experience connectivity problems, be unable to reach IPv6 resources, and/or be unable to connect to your configured IPv6 DNS servers.
 
 ## IPv6 Test
-
-First we should check you have IPv6 connectivity and are represented by a globally routable IPv6 unicast address (rather than just a **non-routable** IPv6 link local address).
+We need to check you have full IPv6 connectivity and are represented by a globally routable IPv6 unicast address (rather than just a **non-routable** IPv6 link local address).
 
 ### IPv6 Link Local and Multicast
 fe80::/10 are link-local addresses and ff00::/8 are multicast addresses. Your IPv6 default gateway will likely be an ```fe80::/10``` address but may be a global address.
 
 ### IPv6 Example
-
 You can rapidly check IPv6 from the outside -> in by visiting [IPv6-Test](https://ipv6-test.com/) as mentioned earlier, or you could simply send some [ICMPv6](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6) packets to Google's Public Primary DNS server <code>ping -6 2001:4860:4860::8888</code> . If either of those steps fail you then need to troubleshoot (partition your failure domain) and go step by step to find out what's wrong.
 
 You can look for the presence of IPv6 addresses on a specific interface but let's kill two birds with one stone and see if you have a default route in your local IPv6 route table (macOS/Linux):
@@ -137,7 +134,7 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
 </script>
 
 #### Disable IPv6
-This is an extreme option and it is not recommended unless there is no other option. You can disable IPv6 via the command line or in the GUI of macOS or Linux. 
+This is an **extreme** option and it is not recommended unless there is no other choice or solution found. You can disable IPv6 via the command line or via the GUI in macOS or Linux. 
 
 ##### macOS Disable IPv6
 ```networksetup -setv6off Ethernet```<br>

@@ -131,7 +131,7 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
 <div class="table1-end"></div>
 <script type="text/javascript">
 (function() {
-    $('div.table1-start').nextUntil('div.table1-end', 'table').addClass('table table-dark table-hover table-responsive');
+    $("div.table1-start").nextUntil("div.table1-end", "table").addClass("table table-dark table-hover table-responsive");
 })();
 </script>
 

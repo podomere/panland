@@ -138,7 +138,7 @@ pansift.com.		300	IN	AAAA	2606:4700:3032::ac43:ac41
 
 Healthy responses are generally returned in less than 20ms. Good enough responses are often between 20-150ms but anything consistently higher means it might be time to configure and use another DNS server. See the section towards the end on differnet public IPv6 DNS servers.
 
-At this point you should be confident you're fully connected on the IPv6 Internet and can check via [IPv6-Test](https://ipv6-test.com/) or with something like `cURL` to ensure you are getting HTTP status codes of `200` from further afield.
+At this point you should be confident you're fully connected on the IPv6 Internet and can check via [IPv6-Test](https://ipv6-test.com/) , a Chrome Extension like [IPFoo](https://github.com/pmarks-net/ipvfoo), or with something manual like `cURL` to explicitly check you are getting HTTP status codes of `200` over IPv6 from further afield.
 
 <code>curl -6 -s -L -o /dev/null -w "%{http_code}\n" https://pansift.com</code>
 

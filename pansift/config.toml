@@ -13,7 +13,7 @@ enableGitInfo = true
 [markup.goldmark.renderer]
 unsafe = true
 
-# Site Params
+# Site Params + Random Comment
 [params]
 	description = "Instant remote troubleshooting for forward thinking technical teams. Support work from anywhere. Regain control of time and fix Wi-Fi, ISP, DNS and laptop issues in moments."
   og_image = "https://pansift.com/images/pansift_social_v38.jpg"

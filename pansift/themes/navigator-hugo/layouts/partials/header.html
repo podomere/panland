@@ -43,6 +43,7 @@
 		<meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" name="twitter:description">
 		{{ end }}
 
+		<meta content="@pansifter" name="twitter:site">
 		<meta content="summary_large_image" name="twitter:card">
 		<meta name="author" content="PanSift Team">
 		{{ if not .PublishDate.IsZero }}<meta itemprop="datePublished" content='{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }} 

@@ -31,8 +31,8 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Instant remote troubleshooting for forward thinking technical teams who want to regain control of time."
-        description2 = "Keep users and clients who <span style='color: white;'>Work From Anywhere (WFA)</span>, connected. Solve Wi-Fi, network, DNS, IPv4, IPv6, and system issues <span style='color: white;'>in seconds</span>. Monitor any network and go from WTF to WFA 😎 starting with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>." 
+				heading = "Instant remote troubleshooting for forward thinking technical teams. Control your time and eliminate toil."
+        description2 = "Keep <span style='color: white;'>Work From Anywhere (WFA)</span> users and clients connected. Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues <span style='color: white;'>in seconds</span>. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

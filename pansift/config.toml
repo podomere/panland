@@ -31,8 +31,8 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Instant remote troubleshooting for forward thinking technical teams. P.S. Support work from anywhere."
-        description2 = "Support users and clients who <span style='color: white;'>Work From Anywhere (WFA)</span> by solving Wi-Fi, network (IPv4 + IPv6), and system issues <span style='color: white;'>rapidly</span>. Accelerate Time to Resolution and go from WTF to WFA 😎 starting with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>" 
+				heading = "Instant remote troubleshooting for forward thinking technical teams who want to regain control of time."
+        description2 = "Keep users and clients who <span style='color: white;'>Work From Anywhere (WFA)</span>, connected. Solve Wi-Fi, network, DNS, IPv4, IPv6, and system issues <span style='color: white;'>in seconds</span>. Monitor any network and go from WTF to WFA 😎 starting with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -65,8 +65,8 @@ unsafe = true
     [params.benefits]
         topTitle =  "Trust but Verify"
         enable  = true
-        title   = "Support Work From Anywhere"
-        subtitle = "No longer is it just <strong>sales demos</strong>, <strong>customer success calls</strong>, <strong>interviews</strong> and <strong>onboarding</strong> performed remotely, but increasingly every aspect of modern business operations are distributed. Ensure teams can stay connected and productive."
+        title   = "Fearless Support"
+        subtitle = "No longer is it just <strong>sales demos</strong>, <strong>customer success calls</strong>, <strong>interviews</strong> and <strong>onboarding</strong> that's performed remotely. Increasingly every aspect of modern business operations are distributed. Ensure your team (or tribe) stays connected and productive."
         punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
         onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
         one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."

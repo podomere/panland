@@ -147,9 +147,9 @@ At this point you should be confident you're fully connected on the IPv6 Interne
 <pre><code>200</code></pre>
 
 ## Monitor IPv6 Traffic
-The above is all essentially **toil** i.e. undifferentiated heavy lifting that requires you to manually get a command line on the problematic host (or try to get the user to find the terminal and type commands!). It doesn't help you spot intermittent problems or historical issues! 
+The above is all essentially **toil** i.e. undifferentiated heavy lifting. It requires you to manually get a command line on the problematic host (or try to get the user to find the terminal and type commands!). It doesn't help you spot intermittent issues or historical problems! 
 
-It's important to keep an eye on whether or not remote workers are dual stack (IPv4 and IPv6) from the outset, and what ISPs they are connecting to as they work from different locations. PanSift solves for all of these issues [mentioned](/benefits) but let's keep rolling with the manual approach and potential solutions for now...
+It's important to keep an eye on whether or not remote workers are dual stack (IPv4 and IPv6) from the outset including what ISPs they are connecting to (as they work from different locations). PanSift solves for all of these issues [mentioned](/benefits) but let's keep rolling with the manual approach so you can understand what's going on under the hood...
 
 ## How Do I Fix My IPv6
 

@@ -17,7 +17,7 @@ tags:
   - work_from_anywhere
   - support
   - troubleshooting
-  - guide
+  - guides
 image: /images/blog/ipv6_duck.jpg
 published: true
 title: 'How To Fix IPv6 Connectivity'
@@ -87,7 +87,7 @@ Next you might check if you can send data to the relevant IPv6 default gateway (
 
 **Note:** Notice that the IPv6 default gateway also specifies the interface "_en0_ " too (which is different from IPv4 default gateways). If you manage to get responses, let's see if we can then talk to your configured IPv6 DNS servers.
 
-**Note:** You could just ask for the record immediately from the IPv6 DNS server and then 
+**Note:** You could just ask for the record immediately from the IPv6 DNS server and then go from there, but let's verify our settings first.
 
 #### IPv6 DNS
 You can also see which DNS servers are configured via <code>cat /etc/resolv.conf</code> or also <code>scutil --dns</code> on macOS.

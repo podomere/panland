@@ -181,7 +181,7 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
  <br> 
 <div class="table1-end"></div>
 
-### Should I turn on IPv6? Why do we disable IPv6?
+### Should I turn off IPv6? Why do we disable IPv6?
 #### Disable IPv6 on your computer
 This is an **extreme** option and it is not recommended unless there is no other choice or solution found. You can disable IPv6 via the command line or via the GUI in macOS or Linux. 
 

@@ -33,7 +33,7 @@ Our Internet runs primarily on two versions of the Internet Protocol; **IPv4** a
 You ask your computer for assets and web pages using words, however it's the [**DNS (Domain Name System)**](https://en.wikipedia.org/wiki/Domain_Name_System) that tells your computer which IP addresses those assets are served by. DNS servers (caches/resolvers) answer your computer over whichever protocol is active and based upon the type of query they are asked. 
 
 ### Does IPv6 have DNS?
-You may have IPv4 or IPv6 DNS servers configured, or you may have both. In the following sections we will show you how to manually resolve IPv6 addresses and fully test your IPv6 connectivity.
+Yes, and you may have IPv4 or IPv6 DNS servers configured, or you may have both. In the following sections we will show you how to manually resolve IPv6 addresses and fully test your IPv6 connectivity.
 
 ## How to enable IPv6 connectivity?
 Most configuration processes happen _automagically_ including aspects of your IPv4, IPv6 and DNS settings being supplied by your local router (which is configured by your ISP or organization's IT team). Your web browser and operating system then request DNS lookups which additionally leverage mechanisms like [Happy Eyeballs](https://en.wikipedia.org/wiki/Happy_Eyeballs) to decide which of the IPv4 or IPv6 supplied records to use. IPv6 is enabled by default in most modern operating systems but you need to check with your ISP whether they provide (and support) IPv6.

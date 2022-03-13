@@ -4,11 +4,11 @@ date: "2022-03-02T15:35:00"
 subtitle: Remote Work Is Hurting My Eyeballs, Make It Stop!
 author: Donal
 tags:
-  - Ipv6
-  - DNS
-  - Ipv6_dns
-  - Ipv4_dns
-  - Aaaa
+  - ipv6
+  - dns
+  - ipv6_dns
+  - ipv4_dns
+  - aaaa
   - latency
   - macos
   - userops

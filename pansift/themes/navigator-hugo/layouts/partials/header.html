@@ -46,7 +46,9 @@
 		<meta content="@pansifter" name="twitter:site">
 		<meta content="summary_large_image" name="twitter:card">
 		<meta name="author" content="PanSift Team">
-		{{ if not .PublishDate.IsZero }}<meta itemprop="datePublished" content='{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }} 
+		{{ if not .PublishDate.IsZero }}<meta name="date" content='{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
+		{{ if not .PublishDate.IsZero }}<meta itemprop="datePublished" content='{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
+		{{ if not .Lastmod.IsZero }}<meta name="revised" content='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
 		{{ if not .Lastmod.IsZero }}<meta itemprop="dateModified" content='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
 		{{ if not .Lastmod.IsZero }}<meta itemprop="og:updated_time" content='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
 

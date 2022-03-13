@@ -161,8 +161,8 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
 
 | Recommendations |
 | :----    |
-| **1.** By disabling and re-enabling a Wi-Fi interface or by disconnecting and reconnecting an ethernet cable, it forces your computer to re-ask for settings from the local router including DHCP or to re-initialize addresses via [SLAAC](https://support.apple.com/en-gb/guide/security/seccb625dcd9/web). The previous <code>getpacket</code> command can be used for DHCP only.      |
-| **2.** Log in to the local router and check that it is getting an IPv6 WAN/Internet address and is configured to hand out DNS settings via DHCP on the LAN (which should include IPv6 DNS server settings) though the router may offer its own address as a DNS cache/relay. You could also configure the public ones listed below.     |
+| **1.** By disabling and re-enabling a Wi-Fi interface or by disconnecting and reconnecting an ethernet cable, it forces your computer to re-ask for settings from the local router including DHCP (or to re-initialize addresses via [SLAAC](https://support.apple.com/en-gb/guide/security/seccb625dcd9/web)). The previous <code>getpacket</code> commands can be used for DHCP only.      |
+| **2.** Log in to the local router and check that it is getting an IPv6 WAN/Internet address. Check it is configured to hand out DNS settings via DHCP on the LAN (which should include IPv6 DNS server settings) though the router may offer its own address as a DNS cache/relay. You could also configure the public ones listed below.     |
 | **3.** Reboot your local router/modem and check it has no warnings or errors in its logs.     |
 |  **4.** Contact the nominated ISP support service to perform deeper health checks on your service, WAN connection, and account. |
 

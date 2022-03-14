@@ -5,22 +5,18 @@
 		<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 		<link rel="canonical" href="{{ .Permalink }}">
 		<meta name="keywords" content="{{ .Site.Params.keywords }}">
-
 		<meta name="google-site-verification" content="{{ .Site.Params.GoogleVerification }}">
 		<meta name="msvalidate.01" content="{{ .Site.Params.MicrosoftVerification }}" />
 		<meta name="yandex-verification" content="0fd0817a6be1735d" />
-
-		{{ $isHomePage := eq .Title .Site.Title }}
+		{{ $isHomePage := eq .Title .Site.Title -}}
 		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:title">
 		<meta content="{{ .Permalink }}" property="og:url">
 		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" property="og:site_name">
 		<meta content="{{ if eq $isHomePage false }}PanSift - {{ end }}{{ .Title }}" itemprop="name">
-		{{ if eq .Section "blog" }}
-		<meta content="post" property="og:type">
-		{{ else }}
-		<meta content="website" property="og:type">
-		{{ end }}
-		{{ if isset .Params "image" }}
+		{{ if eq .Section "blog" -}}
+		<meta content="post" property="og:type">{{ else }}
+		<meta content="website" property="og:type">{{ end -}}
+		{{ if isset .Params "image" -}}
 		<meta content="{{ .Params.image | absURL }}" property="og:image">
 		<meta content="{{ .Params.image | absURL }}" itemprop="image">
 		<meta content="{{ .Params.image | absURL}}" name="twitter:image">
@@ -28,8 +24,8 @@
 		<meta content="{{ .Site.Params.og_image | absURL }}" property="og:image">
 		<meta content="{{ .Site.Params.og_image | absURL }}" itemprop="image">
 		<meta content="{{ .Site.Params.og_image | absURL }}" name="twitter:image">
-		{{ end }}
-		{{ if isset .Params "subtitle" }}
+		{{ end -}}
+		{{ if isset .Params "subtitle" -}}
 		<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" name="description">
 		<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" property="og:description">
 		<meta content="{{ .Params.subtitle }} {{ if eq $isHomePage false }}{{ .Description }}{{ end }}" itemprop="description">
@@ -41,7 +37,7 @@
 		<meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" itemprop="description">
 		<meta content="{{ .Title }}" name="twitter:title">
 		<meta content="{{ if eq $isHomePage false }}{{ .Description }}{{ end }} {{ .Site.Params.description }}" name="twitter:description">
-		{{ end }}
+		{{ end -}}
 
 		<meta content="@pansifter" name="twitter:site">
 		<meta content="summary_large_image" name="twitter:card">
@@ -51,7 +47,6 @@
 		{{ if not .Lastmod.IsZero }}<meta name="revised" content='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
 		{{ if not .Lastmod.IsZero }}<meta itemprop="dateModified" content='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
 		{{ if not .Lastmod.IsZero }}<meta itemprop="og:updated_time" content='{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}' />{{ end }}
-
 		<link rel="dns-prefetch" href="//app.pansift.com">
 		<link rel="dns-prefetch" href="//sc.lfeeder.com">
 		<script>
@@ -129,7 +124,7 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "{{ .Title }}",
-			{{ if .Params.image }}"image": "{{ .Params.image | absURL }}", {{ end }}
+			{{ if .Params.image }}"image": "{{ .Params.image | absURL }}", {{ end -}}
       "datePublished": "{{ if not .PublishDate.IsZero }}{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}{{ end }}",
       "dateModified": "{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}{{ end }}",
       "author": {
@@ -145,8 +140,8 @@
           "url": "{{ .Site.Params.logo }}"
         }
       },
-      "description": {{ .Summary | plainify | safeHTML }},
-      "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
+      {{ if .Summary }}"description": "{{ .Summary | plainify | safeHTML }}",{{ end -}}
+      "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
     }
     </script>
 		{{ end }}

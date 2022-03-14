@@ -123,8 +123,9 @@
 			] 
 		} 
 		</script>
+		{{ if eq .Section "blog" }}
 		<script type="application/ld+json">
-			{{ if eq .Section "blog" }} {
+			{
 			"@context": "https://schema.org",
 			"@type": "BlogPosting",
 			"headline": {{ .Title }},
@@ -147,8 +148,8 @@
 			"description": {{ .Summary | plainify | safeHTML }},
 			"keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
 		}
-{{ end }}
 		</script>
+	{{ end }}
 		<!-- Rich Data / Structured Data -->
 
 		{{ "<!-- Mobile Specific Meta -->" | safeHTML }}

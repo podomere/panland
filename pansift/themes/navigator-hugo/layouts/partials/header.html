@@ -123,6 +123,35 @@
 			] 
 		} 
 		</script>
+		{{ if eq .Section "blog" }}
+    <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ .Title }},
+			{{ if .Params.image }}
+      "image": {{ .Params.image | absURL }},
+			{{ end }}
+      "datePublished": {{ if not .PublishDate.IsZero }}{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}{{ end }},
+      "dateModified": {{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}{{ end }},
+      "author": {
+        "@type": "Person",
+        "name": "PanSift Team"
+      },
+      "mainEntityOfPage": { "@type": "WebPage" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PanSift",
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ .Site.Params.logo }}
+        }
+      },
+      "description": {{ .Summary | plainify | safeHTML }},
+      "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
+    }
+    </script>
+		{{ end }}
 		<!-- Rich Data / Structured Data -->
 
 		{{ "<!-- Mobile Specific Meta -->" | safeHTML }}

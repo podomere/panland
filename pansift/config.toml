@@ -203,7 +203,7 @@ unsafe = true
 #       weight  = 1
     [[menu.nav]]
         name    = "Login"
-        url     = "https://app.pansift.com/users/sign_in"
+        url     = "https://app.pansift.com/demo/logout_demo_login"
         weight  = 6
 #    [[menu.nav]]
 #        name    = "Sign Up"

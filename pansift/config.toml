@@ -201,10 +201,10 @@ unsafe = true
 #       name    = "Benefits"
 #       url     = "/benefits"
 #       weight  = 1
-    [[menu.nav]]
-        name    = "Login"
-        url     = "https://app.pansift.com/demo/logout_demo_login"
-        weight  = 6
+#    [[menu.nav]]
+#        name    = "Login"
+#        url     = "https://app.pansift.com/demo/logout_demo_login"
+#        weight  = 6
 #    [[menu.nav]]
 #        name    = "Sign Up"
 #        url     = "/contact"

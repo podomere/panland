@@ -1,32 +1,48 @@
 {{ if .Site.Params.aboutSm.enable }}
 {{ "<!-- Start About Section -->" | safeHTML }}
-<section class="about-2 section" id="about" style="padding: 20px 0 !important;background-color: #333;color: #bdc3c7;">
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-md-12 text-center mb-4">
-      <a href=""><img class="img-fluid rounded float-left" width="75" height="75" src="/images/large_white_ps_v1.png"></a>
-      {{ with .Site.Params.aboutSm.title }}
-      <h1>{{ . | safeHTML }}</h1>
-      {{ end }}
-      {{ with .Site.Params.aboutSm.subtitle }}
-      <h5>{{ . | safeHTML }}</h5>
-      {{ end }}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm text-center mb-4">
-      <center>
-					<a href="/pricing" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_about-sm');" ><img class="img-fluid lozad rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="1141" height="694" data-src="/images/ps_in_taskbar_v1.png"></a>
+ <section class="about-2 section" id="about" style="padding: 20px 0 !important;background-color: #333;color: #bdc3c7;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 text-center">
+				<a href=""><img class="img-fluid rounded float-left" width="75" height="75" src="/images/large_white_ps_v1.png"></a>
+				{{ with .Site.Params.aboutSm.title }}
+				<h1 class="float-left" style="padding: 10px 20px 0px 50px !important;">{{ . | safeHTML }}</h1>
+				{{ end }}
+				{{ with .Site.Params.aboutSm.subtitle }}
+				<!-- <h5>{{ . | safeHTML }}</h5> -->
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+<section class="about-2 section" id="about" style="padding: 20px 0 !important;background-color: #000;color: #bdc3c7;">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm text-center mb-4">
+				<div id="video-row" class="row mb-5">
+					<div class="col text-center">
+						<div id="video-bound" class="text-center">
+							<video id="my-video" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered mt-5" controls preload="none" data-setup='{}' poster="/images/see_how_v1.png">
+								<source src="/video/pansift_tour_v1.mp4" type='video/mp4'>
+								<p class="vjs-no-js">
+								To view this video please enable JavaScript, and consider upgrading to a web browser that
+								<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+								</p>
+							</video>
+						</div>
+					</div>
+				</div>
+				<center>
 					<!-- <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Could you contribute 60 seconds or less about your experience troubleshooting your team or family&#39;s laptops (8 simple questions!) at <a href="https://t.co/HTe9YjdXLt">https://t.co/HTe9YjdXLt</a> 🔧</p>&mdash; PanSift : for a rapid find and fix! (@pansifter) <a href="https://twitter.com/pansifter/status/1365704536476762124?ref_src=twsrc%5Etfw">February 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-      {{ with .Site.Params.aboutSm.proof }}
-      <p style="color: white;" class="mt-4">{{ . | safeHTML }}</p>
-      {{ end }}
-      </center>
-    </div>
-    </div>
-    <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+					{{ with .Site.Params.aboutSm.proof }}
+					<p style="color: white;" class="mt-4">{{ . | safeHTML }}</p>
+					{{ end }}
+				</center>
+			</div>
+		</div>
+		<!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
-  </div>
-  </section>
-  {{ "<!-- End About section -->" | safeHTML }}
-  {{ end }}
+	</div>
+</section>
+{{ "<!-- End About section -->" | safeHTML }}
+{{ end }}

@@ -31,7 +31,7 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Instant remote troubleshooting for forward thinking technical teams. Control your time and eliminate toil."
+				heading = "Instant remote troubleshooting for forward thinking technical teams."
         description2 = "Keep <span style='color: white;'>Work From Anywhere (WFA)</span> users and clients connected. Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues <span style='color: white;'>in seconds</span>. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"
@@ -42,8 +42,8 @@ unsafe = true
 
     [params.aboutSm]
         enable  = true
-        title   = "Troubleshooting can and should be <span style = 'color: #000;'>black</span> and <span style = 'color: #fff;'>white</span>."
-        subtitle = "Combat support fatigue with high fidelity automated troubleshooting."
+        title   = "Control your <span style = 'color: #fff;'>time, </span>eliminate <span style = 'color: #fff;'>toil</span>, and focus <span style = 'color: #fff;'>elsewhere</span> !"
+        subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
         proof = "Gartner <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>forecasts</a></u> that <strong>~53%</strong> of the UK & US workforce will work remotely during 2022, with <strong>31%</strong> globally."
 
     [params.offer]
@@ -67,7 +67,7 @@ unsafe = true
         enable  = true
         title   = "Fearless Support"
         subtitle = "No longer is it just <strong>sales demos</strong>, <strong>customer success calls</strong>, <strong>interviews</strong> and <strong>onboarding</strong> that's performed remotely. Increasingly every aspect of modern business operations are distributed. Ensure your team (or tribe) stays connected and productive."
-        punchline = "Peace of mind in an era of remote work and non-managed networks!<br>Get your time and sanity back irrespective of where you are and who you are helping."
+        punchline = "Peace of mind in an era of remote work and non-managed networks!"
         onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
         one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."
         threetitle = "Accelerated Outcomes For Technical Support Teams"
@@ -186,9 +186,13 @@ unsafe = true
 #        url     = "/why"
 #        weight  = 1
     [[menu.nav]]
+        name    = "Tech"
+        url     = "/how-it-works"
+        weight  = 1
+    [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"
-        weight  = 1
+        weight  = 2
 #   [[menu.nav]]
 #         name    = "Contact"
 #         url     = "/contact"
@@ -196,7 +200,7 @@ unsafe = true
     [[menu.nav]]
         name    = "Blog"
         url     = "/blog"
-        weight  = 2
+        weight  = 3
 #   [[menu.nav]]
 #       name    = "Benefits"
 #       url     = "/benefits"

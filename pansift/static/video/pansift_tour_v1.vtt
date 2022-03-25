@@ -1,0 +1,402 @@
+WEBVTT
+
+1
+00:00:00.001 --> 00:00:02.284
+Welcome to PanSift. This is the dashboard. No
+
+2
+00:00:02.284 --> 00:00:04.466
+matter where you are located or who you are
+
+3
+00:00:04.466 --> 00:00:07.055
+supporting remotely, you can see real time insights
+
+4
+00:00:07.055 --> 00:00:09.491
+into their computer's Internet connection, their
+
+5
+00:00:09.491 --> 00:00:12.130
+local Wi-fi, and other key metrics that affect their
+
+6
+00:00:12.130 --> 00:00:14.465
+voice and video connectivity or laptop health.
+
+7
+00:00:15.039 --> 00:00:16.902
+Let's take a look at the most
+
+8
+00:00:16.902 --> 00:00:18.443
+recent Internet outages.
+
+9
+00:00:20.519 --> 00:00:23.431
+By clicking on the insight we are immediately taken
+
+10
+00:00:23.431 --> 00:00:25.714
+to the issue. Let's zoom in a little and
+
+11
+00:00:25.714 --> 00:00:27.655
+see what's going on on "laptop 3".
+
+12
+00:00:27.770 --> 00:00:30.651
+We can see it's not specifically the Internet, as
+
+13
+00:00:30.651 --> 00:00:32.298
+there was a problem reaching
+
+14
+00:00:32.298 --> 00:00:33.592
+the local network too.
+
+15
+00:00:33.710 --> 00:00:37.859
+Here we can see IPv6 and IPv4 failing locally.
+
+16
+00:00:39.350 --> 00:00:41.883
+We have fast access to the previous
+
+17
+00:00:41.883 --> 00:00:43.331
+public IP addresses.
+
+18
+00:00:43.403 --> 00:00:45.694
+But we also notice that ARP was failing
+
+19
+00:00:45.694 --> 00:00:47.162
+to complete at times too.
+
+20
+00:00:47.221 --> 00:00:50.399
+With built-in lookups we can also see the vendor's
+
+21
+00:00:50.399 --> 00:00:52.750
+organizationally unique identifier to
+
+22
+00:00:52.750 --> 00:00:54.975
+help with equipment identification.
+
+23
+00:00:55.102 --> 00:00:57.390
+We can also see the interfaces used by the
+
+24
+00:00:57.390 --> 00:00:59.678
+default route including the hardware type.
+
+25
+00:00:59.732 --> 00:01:02.545
+And we can also see the local interface
+
+26
+00:01:02.545 --> 00:01:04.853
+IPs used during this time range.
+
+27
+00:01:04.925 --> 00:01:07.477
+At all times, the host details are available
+
+28
+00:01:07.477 --> 00:01:09.100
+to us on the left hand side.
+
+29
+00:01:13.045 --> 00:01:17.001
+We can also see the test hosts used for DNS, trace
+
+30
+00:01:17.001 --> 00:01:20.482
+routes, and basic HTTP tests. These hosts are
+
+31
+00:01:20.482 --> 00:01:22.855
+editable on the paid plan with
+
+32
+00:01:22.855 --> 00:01:24.912
+up to 5 arbitrary records.
+
+33
+00:01:25.150 --> 00:01:28.120
+Now let's take a peak at DNS. We actively query the
+
+34
+00:01:28.120 --> 00:01:31.033
+DNS servers for the test host records, but also do
+
+35
+00:01:31.033 --> 00:01:33.945
+additional random queries to force full resolution
+
+36
+00:01:33.945 --> 00:01:36.159
+rather than relying on cached records.
+
+37
+00:01:36.830 --> 00:01:39.487
+Let's add 30 minutes to either side, to
+
+38
+00:01:39.487 --> 00:01:42.144
+get a better picture of response times.
+
+39
+00:01:42.810 --> 00:01:45.494
+Now let's see where in the world this agent's IP
+
+40
+00:01:45.494 --> 00:01:48.291
+addresses are coming from during this time period.
+
+41
+00:01:48.291 --> 00:01:50.640
+Our lighthouses reflect back the public IP
+
+42
+00:01:50.640 --> 00:01:53.493
+addresses, as seen from the agent requests. We give
+
+43
+00:01:53.493 --> 00:01:57.353
+city level resolution and depending on the ISP's attention to detail,
+
+44
+00:01:57.353 --> 00:01:58.863
+we can get pretty specific.
+
+45
+00:01:59.143 --> 00:02:02.759
+In the trace and A S N section, we show, not just
+
+46
+00:02:02.759 --> 00:02:06.079
+the hops, but also generate real time, ASN 
+
+47
+00:02:06.079 --> 00:02:09.622
+lookups, and also include the AS names. You can
+
+48
+00:02:09.622 --> 00:02:13.311
+spot changes in hop length, and autonomous system,
+
+49
+00:02:13.311 --> 00:02:13.902
+rapidly.
+
+50
+00:02:14.197 --> 00:02:17.097
+These paths are available historically for all your
+
+51
+00:02:17.097 --> 00:02:19.599
+configured test hosts, which includes either
+
+52
+00:02:19.599 --> 00:02:21.931
+IP or A S N paths for easy cut and paste.
+
+53
+00:02:22.045 --> 00:02:24.880
+Similarly we can see status codes
+
+54
+00:02:24.880 --> 00:02:27.371
+and baseline speeds for HTTP.
+
+55
+00:02:27.457 --> 00:02:30.356
+PanSift's agents also allow the missing link, which
+
+56
+00:02:30.356 --> 00:02:33.142
+is, for a user to add custom notes giving missing
+
+57
+00:02:33.142 --> 00:02:35.871
+context, during an issue or outage. Even if they
+
+58
+00:02:35.871 --> 00:02:38.315
+are offline, all notes and measurements are
+
+59
+00:02:38.315 --> 00:02:40.418
+buffered until the agent syncs again,
+
+60
+00:02:40.418 --> 00:02:42.237
+via a local network, or hotspot.
+
+61
+00:02:42.522 --> 00:02:45.602
+Notice that each tab change preserves the current
+
+62
+00:02:45.602 --> 00:02:48.682
+time window, but if you want to be more specific,
+
+63
+00:02:48.682 --> 00:02:51.511
+you can specify exact query times quickly and
+
+64
+00:02:51.511 --> 00:02:54.654
+easily. Additionally, you can even share URL links
+
+65
+00:02:54.654 --> 00:02:56.477
+with those you invite to view
+
+66
+00:02:56.477 --> 00:02:58.174
+or administer your account.
+
+67
+00:02:58.489 --> 00:03:00.810
+With the explosion in Wi-Fi devices, it's
+
+68
+00:03:00.810 --> 00:03:03.415
+imperative to understand airtime and channels,
+
+69
+00:03:03.415 --> 00:03:06.190
+especially in dense environments. PanSift watches
+
+70
+00:03:06.190 --> 00:03:08.795
+our for weak MCS values and color codes them
+
+71
+00:03:08.795 --> 00:03:10.777
+showing you when bad signal quality
+
+72
+00:03:10.777 --> 00:03:12.589
+is causing issues or slow downs.
+
+73
+00:03:12.872 --> 00:03:15.366
+Pansift is also scanning your local Wi-Fi
+
+74
+00:03:15.366 --> 00:03:18.285
+environment and records other networks including
+
+75
+00:03:18.285 --> 00:03:21.325
+what channels, widths, and vendors they are using.
+
+76
+00:03:21.325 --> 00:03:24.366
+This means you can tell what parts of the airspace
+
+77
+00:03:24.366 --> 00:03:27.346
+are contended and what R F space is free. PanSift
+
+78
+00:03:27.346 --> 00:03:30.447
+will even suggest alternate channels for you to use
+
+79
+00:03:30.447 --> 00:03:33.123
+based upon device supported channels and the
+
+80
+00:03:33.123 --> 00:03:35.555
+used channels in the current time frame.
+
+81
+00:03:35.981 --> 00:03:38.307
+So, you can rapidly and instantaneously
+
+82
+00:03:38.307 --> 00:03:41.109
+troubleshoot Wi-Fi, IP, interfaces, status and
+
+83
+00:03:41.109 --> 00:03:43.852
+more, but without having to try and access the
+
+84
+00:03:43.852 --> 00:03:46.178
+terminal on a remote machine or annoy a
+
+85
+00:03:46.178 --> 00:03:48.384
+non-technical user. You can see in to
+
+86
+00:03:48.384 --> 00:03:50.351
+the past right up to the present.
+
+87
+00:03:50.650 --> 00:03:53.833
+The agent section lets you go direct to any agent
+
+88
+00:03:53.833 --> 00:03:57.146
+to deep dive when need be. In the background , data
+
+89
+00:03:57.146 --> 00:04:00.394
+is stored in buckets, and there's a handy guide to
+
+90
+00:04:00.394 --> 00:04:03.707
+walk you through onboarding agents. From the remote
+
+91
+00:04:03.707 --> 00:04:06.435
+user perspective an agent install is hands
+
+92
+00:04:06.435 --> 00:04:08.514
+off and zero touch provisioning.
+
+93
+00:04:08.838 --> 00:04:11.513
+Well done, you've now got the power to save time,
+
+94
+00:04:11.513 --> 00:04:13.914
+trouble, and toil while supporting work from
+
+95
+00:04:13.914 --> 00:04:16.588
+anywhere. Gain the confidence to provide fearless
+
+96
+00:04:16.588 --> 00:04:18.935
+support! Step through the guide if you need
+
+97
+00:04:18.935 --> 00:04:21.227
+help and remember to instrument your edge!
+
+98
+00:04:21.445 --> 00:04:24.190
+Now, try out the one click demo yourself and
+
+99
+00:04:24.190 --> 00:04:26.936
+install some of the free agents on a problem
+
+100
+00:04:26.936 --> 00:04:28.995
+machine or in a problem location.
+

@@ -94,7 +94,7 @@ We can also see the interfaces used by the
 
 24
 00:00:58.044 --> 00:01:00.301
-default route including the hardware type.
+default rout including the hardware type.
 
 25
 00:01:00.356 --> 00:01:03.169
@@ -122,7 +122,7 @@ We can also see the test hosts used for DNS, trace
 
 31
 00:01:17.624 --> 00:01:21.106
-rowts, and basic HTTP tests. These hosts are
+routes, and basic HTTP tests. These hosts are
 
 32
 00:01:21.106 --> 00:01:23.479
@@ -325,74 +325,74 @@ what it sees, but taking in to account
 your device supported channels.
 
 82
-00:03:37.641 --> 00:03:40.129
+00:03:37.641 --> 00:03:40.104
 You can now instantaneously troubleshoot
 
 83
-00:03:40.129 --> 00:03:43.177
-intermittent Wi-Fi issues, IP, interfaces, laptop
+00:03:40.104 --> 00:03:43.182
+intermittent Wi-Fi, IP, interface issues and more.
 
 84
-00:03:43.177 --> 00:03:46.474
-health and more. All without having to try and access
+00:03:43.182 --> 00:03:45.952
+All without having to try and access a remote
 
 85
-00:03:46.474 --> 00:03:49.335
-a remote machine or annoy non-technical users.
+00:03:45.952 --> 00:03:48.230
+machine or annoy non-technical users.
 
 86
-00:03:49.522 --> 00:03:52.795
+00:03:48.414 --> 00:03:51.643
 The agent section lets you go direct to any agent
 
 87
-00:03:52.795 --> 00:03:55.935
-for a deep dive. Agent data is stored in remote
+00:03:51.643 --> 00:03:54.872
+for a deep dive across a range of issues. Data is
 
 88
-00:03:55.935 --> 00:03:58.741
-buckets, and there's a handy guide to help
+00:03:54.872 --> 00:03:57.969
+stored in buckets, and there's a handy guide to
 
 89
-00:03:58.741 --> 00:04:01.480
-onboarding agents. From the remote user's
+00:03:57.969 --> 00:04:01.000
+help onboarding agents. From the remote user's
 
 90
-00:04:01.480 --> 00:04:04.152
+00:04:01.000 --> 00:04:03.636
 perspective an agent install is a simple
 
 91
-00:04:04.152 --> 00:04:06.490
+00:04:03.636 --> 00:04:05.943
 click with Zero Touch Provisioning.
 
 92
-00:04:06.824 --> 00:04:09.681
+00:04:06.272 --> 00:04:09.129
 Congratulations, you've now got the power to save
 
 93
-00:04:09.681 --> 00:04:12.597
+00:04:09.129 --> 00:04:12.045
 time, trouble, and toil, all while supporting Work
 
 94
-00:04:12.597 --> 00:04:15.221
+00:04:12.045 --> 00:04:14.668
 From Anywhere. Gain the confidence to provide
 
 95
-00:04:15.221 --> 00:04:17.436
+00:04:14.668 --> 00:04:16.884
 fearless support! Remember, instrument
 
 96
-00:04:17.436 --> 00:04:18.719
+00:04:16.884 --> 00:04:18.167
 your remote user edge!
 
 97
-00:04:18.952 --> 00:04:22.088
+00:04:18.400 --> 00:04:21.536
 Try out the one click demo yourself, and install
 
 98
-00:04:22.088 --> 00:04:24.571
+00:04:21.536 --> 00:04:24.018
 some free agents on a problem machine,
 
 99
-00:04:24.571 --> 00:04:26.400
+00:04:24.018 --> 00:04:25.848
 or in an unmanaged location.
 

@@ -45,6 +45,10 @@ unsafe = true
         title   = "Control your <span style = 'color: #fff;'>time, </span>eliminate <span style = 'color: #fff;'>toil</span>, free up your <span style = 'color: #fff;'>focus</span> !"
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
         proof = "Gartner <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>forecasts</a></u> that <strong>~53%</strong> of the UK & US workforce will work remotely during 2022, with <strong>31%</strong> globally."
+    
+		[params.aboutsm2]
+        enable  = true
+        title   = "Remove <span style = 'color: #fff;'>complexity</span>. Time <span style = 'color: #fff;'>travel</span> to gain <span style = 'color: #fff;'>observability</span> !"
 
     [params.offer]
         enable  = true
@@ -61,6 +65,24 @@ unsafe = true
         one = "Some attackers are sentient, some are not. None of the humans above exist. They are all AI generated. Separating the signal from the noise is hard."
         two = "There are critical parts of your systems/apps that no external entities should have access to. Tripped honeytokens reveal not just the presence of but the intent of attackers."
         three = "By using honeytokens per pull request (on a deploy branch), you get <span style='font-size: 1.1em;' class='badge badge-dark mb-2'>high fidelity</span>, and <span style='font-size: 1.1em;' class='badge badge-dark'>high cardinality</span> breach signal."
+
+    [params.architecture]
+        topTitle =  "Trust but Verify"
+        enable  = true
+        title   = "System Design"
+        subtitle = "A default multi-tenant architecture, modular inspectable client scripts, and outbound only connection."
+        onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
+        one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."
+        threetitle = "Accelerated Outcomes For Technical Support Teams"
+        three = "<strong>Claim back your time</strong> with up to date metrics, anomaly detection, and root cause(s) identification."
+        twotitle = "Timetravel with Retrospective Troubleshooting"
+        two = "Go back in time to when problems <strong>actually</strong> occurred rather than waiting for them to happen again."
+        fourtitle = "Weeks Of Offline Buffering"
+        four = "Even when <strong>disconnected</strong>, metrics are buffered and uploaded when reconnected or on hotspots."
+        fivetitle = "Added Context From Users"
+        five = "Elective <strong>user annotations</strong> mean more context during any disruptions. The missing link not in any logs!"
+        sixtitle = "Super Low Bandwdith"
+        six = "Metrics only use a few <strong>kilobits</strong> of bandwidth every 30-60 seconds and almost no CPU."
 
     [params.benefits]
         topTitle =  "Trust but Verify"
@@ -186,21 +208,21 @@ unsafe = true
 #        url     = "/why"
 #        weight  = 1
     [[menu.nav]]
-        name    = "Tech"
-        url     = "/how-it-works"
+        name    = "How"
+        url     = "/howitworks"
         weight  = 1
+    [[menu.nav]]
+        name    = "Design"
+        url     = "/architecture"
+        weight  = 2
     [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"
-        weight  = 2
+        weight  = 3
 #   [[menu.nav]]
 #         name    = "Contact"
 #         url     = "/contact"
 #         weight  = 1
-    [[menu.nav]]
-        name    = "Blog"
-        url     = "/blog"
-        weight  = 3
 #   [[menu.nav]]
 #       name    = "Benefits"
 #       url     = "/benefits"

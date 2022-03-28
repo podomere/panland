@@ -1,0 +1,19 @@
+{{ if .Site.Params.aboutsm2.enable }}
+{{ "<!-- Start About Section -->" | safeHTML }}
+ <section class="about-2 section" id="about" style="padding: 20px 0 !important;background-color: #333;color: #bdc3c7;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 text-center">
+				<a href=""><img class="img-fluid rounded float-left" width="75" height="75" src="/images/large_white_ps_v1.png"></a>
+				{{ with .Site.Params.aboutsm2.title }}
+				<h1 class="float-left" style="padding: 10px 20px 0px 50px !important;">{{ . | safeHTML }}</h1>
+				{{ end }}
+				{{ with .Site.Params.aboutsm2.subtitle }}
+				<!-- <h5>{{ . | safeHTML }}</h5> -->
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+{{ "<!-- End About section -->" | safeHTML }}
+{{ end }}

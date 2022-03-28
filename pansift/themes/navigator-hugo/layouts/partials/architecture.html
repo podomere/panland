@@ -1,0 +1,79 @@
+{{ if .Site.Params.architecture.enable }}
+{{ "<!-- Start architecture section -->" | safeHTML }}
+<section class="architecture section" id="architecture" style="background-color: #222 !important; padding-bottom: 0;">
+	<div class="container">
+		{{ if (eq .Page.Title "Architecture") }}
+		<div class="row">
+			<div class="col">
+				<div class="archtitle text-center">
+					{{ with .Site.Params.architecture.title }}
+					<h2>{{. | safeHTML}}</h2>
+					<br>
+					{{ end }}
+					{{ with .Site.Params.architecture.subtitle }}<h5>{{. | safeHTML}}</h5>{{ end }}
+				</div>
+			</div>
+		</div>
+
+		{{ end }}
+		<!-- End row -->
+		<div class="row justify-content-center">
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<i class="fas fa-people-arrows"></i>
+					<h4>{{ with .Site.Params.architecture.onetitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.architecture.one }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div> 
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<i class="fas fa-stopwatch"></i>
+					<h4>{{ with .Site.Params.architecture.twotitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.architecture.two }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<i class="fas fa-history"></i>
+					<h4>{{ with .Site.Params.architecture.threetitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.architecture.three }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<i class="fa fa-ban"></i>
+					<h4>{{ with .Site.Params.architecture.fourtitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.architecture.four }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div> 
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<i class="fas fa-thumbtack"></i>
+					<h4>{{ with .Site.Params.architecture.fivetitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.architecture.five }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div> 
+			<div class="col-md-4 col-sm-6 col-xs-12 p-0">
+				<div class="service-item text-center">
+					<i class="fas fa-balance-scale"></i>
+					<h4>{{ with .Site.Params.architecture.sixtitle }}{{. | safeHTML}}</h4>{{ end }}
+					<p>{{ with .Site.Params.architecture.six }}<p>{{. | safeHTML}}</p>{{ end }}
+					</p>
+				</div>
+			</div> 
+		</div>
+
+		<div class="row p-5"></div>
+
+		<!-- End row -->
+</section>
+{{ "<!-- End section -->" | safeHTML }}
+{{ end }}

@@ -42,7 +42,7 @@ unsafe = true
 
     [params.aboutSm]
         enable  = true
-        title   = "Control your <span style = 'color: #fff;'>time, </span>eliminate <span style = 'color: #fff;'>toil</span>, and focus <span style = 'color: #fff;'>elsewhere</span> !"
+        title   = "Control your <span style = 'color: #fff;'>time, </span>eliminate <span style = 'color: #fff;'>toil</span>, free up your <span style = 'color: #fff;'>focus</span> !"
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
         proof = "Gartner <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>forecasts</a></u> that <strong>~53%</strong> of the UK & US workforce will work remotely during 2022, with <strong>31%</strong> globally."
 

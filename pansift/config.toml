@@ -44,11 +44,11 @@ unsafe = true
         enable  = true
         title   = "Control your <span style = 'color: #fff;'>time, </span>eliminate <span style = 'color: #fff;'>toil</span>, and free up your <span style = 'color: #fff;'>focus</span> !"
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
-        proof = "Gartner <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>forecasts</a></u> that <strong>~53%</strong> of the UK & US workforce will work remotely during 2022, with <strong>31%</strong> globally."
+        proof = "Gartner forecasts that <strong>~53%</strong> of the UK & US workforce will <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>work remotely during 2022</a></u>, with <strong>31%</strong> globally."
     
 		[params.aboutsm2]
         enable  = true
-        title   = "A secure <span style = 'color: #fff;'>hybrid </span> built on the <span style = 'color: #fff;'>least access principle</span> !"
+        title   = 'A secure <u><a href="/architecture">hybrid design</a></u> built on the <span style = "color: #fff;">least access principle</span> !'
 
     [params.offer]
         enable  = true
@@ -69,7 +69,7 @@ unsafe = true
     [params.architecture]
         enable  = true
         title   = "Design / Architecture"
-        subtitle = "A default multi-tenant architecture, with modular inspectable client scripts, and outbound only connection."
+        subtitle = "A default multi-tenant architecture, with modular inspectable client scripts, and outbound only connections."
         onetitle = "Multitenant Boundaries <br>Enforced Front / Back"
 					one = 'Accelerated by <a href="https://jumpstartrails.com/">JumpstartPro</a>, <a href="https://github.com/heartcombo/devise">Devise</a>, and <a href="https://github.com/ErwinM/acts_as_tenant">ActsAsTenant</a>, access boundaries are enforced on the front end. <a href="">Telegraf</a> and <a href="">InfluxDB</a> are used for <strong>fail-safe</strong> data ingestion, bucket separation, and storage on the back end (with optional <a href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">Influx Cloud SOC2 Type II certified data stores</a> vs. OSS).'
         twotitle = "Max 30 Day Agent Data Retention"
@@ -209,11 +209,11 @@ unsafe = true
     [[menu.nav]]
         name    = "How"
         url     = "/howitworks"
-        weight  = 1
+        weight  = 2
     [[menu.nav]]
         name    = "Design"
         url     = "/architecture"
-        weight  = 2
+        weight  = 1
     [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"

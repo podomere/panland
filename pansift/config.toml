@@ -67,12 +67,11 @@ unsafe = true
         three = "By using honeytokens per pull request (on a deploy branch), you get <span style='font-size: 1.1em;' class='badge badge-dark mb-2'>high fidelity</span>, and <span style='font-size: 1.1em;' class='badge badge-dark'>high cardinality</span> breach signal."
 
     [params.architecture]
-        topTitle =  "Trust but Verify"
         enable  = true
-        title   = "System Design"
+        title   = "Design / Architecture"
         subtitle = "A default multi-tenant architecture, with modular inspectable client scripts, and outbound only connection."
-        onetitle = "Multitenant Boundaries <br>Front and Back"
-					one = 'Accelerated by <a href="https://jumpstartrails.com/">JumpstartPro</a> (using <a href="https://github.com/heartcombo/devise">Devise</a> and <a href="https://github.com/ErwinM/acts_as_tenant">ActsAsTenant</a>. PanSift also uses <a href="">Telegraf</a> and <a href="">InfluxDB</a> for <strong>fail-safe</strong> data ingestion, bucket separation, and storage on the back end (with optional <a href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">Influx Cloud SOC2 Type II certified</a> Influx cloud vs. OSS).'
+        onetitle = "Multitenant Boundaries <br>Enforced Front / Back"
+					one = 'Accelerated by <a href="https://jumpstartrails.com/">JumpstartPro</a>, <a href="https://github.com/heartcombo/devise">Devise</a>, and <a href="https://github.com/ErwinM/acts_as_tenant">ActsAsTenant</a>, access boundaries are enforced on the front end. <a href="">Telegraf</a> and <a href="">InfluxDB</a> are used for <strong>fail-safe</strong> data ingestion, bucket separation, and storage on the back end (with optional <a href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">Influx Cloud SOC2 Type II certified data stores</a> vs. OSS).'
         twotitle = "Max 30 Day Agent Data Retention"
         two = "<strong>All agent specific data</strong> is aged out and deleted after <strong>30 days</strong>. Only non-identifiable metrics and aggregate data is used longer term to improve the service and iterate on new features and services."
         threetitle = "MFA (Multi-factor Authentication)"

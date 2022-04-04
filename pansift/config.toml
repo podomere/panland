@@ -48,7 +48,7 @@ unsafe = true
     
 		[params.aboutsm2]
         enable  = true
-        title   = "Remove <span style = 'color: #fff;'>complexity</span> and time <span style = 'color: #fff;'>travel</span> to gain <span style = 'color: #fff;'>observability</span> !"
+        title   = "A secure <span style = 'color: #fff;'>hybrid </span> built on the <span style = 'color: #fff;'>least access principle</span> !"
 
     [params.offer]
         enable  = true

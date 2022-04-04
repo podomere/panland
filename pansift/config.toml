@@ -31,8 +31,8 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = "Instant remote troubleshooting for forward thinking technical teams."
-        description2 = "Keep <span style='color: white;'>Work From Anywhere (WFA)</span> users and clients connected. Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues <span style='color: white;'>in seconds</span>. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>." 
+				heading = "Instant remote troubleshooting for forward thinking technical teams so anyone can work from anywhere."
+        description2 = "Keep <span style='color: white;'>Work From Anywhere (WFA)</span> teams and clients connected. Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues <span style='color: white;'>in seconds</span>. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -48,7 +48,7 @@ unsafe = true
     
 		[params.aboutsm2]
         enable  = true
-        title   = "Remove <span style = 'color: #fff;'>complexity</span>. Time <span style = 'color: #fff;'>travel</span> to gain <span style = 'color: #fff;'>observability</span> !"
+        title   = "Remove <span style = 'color: #fff;'>complexity</span> and time <span style = 'color: #fff;'>travel</span> to gain <span style = 'color: #fff;'>observability</span> !"
 
     [params.offer]
         enable  = true

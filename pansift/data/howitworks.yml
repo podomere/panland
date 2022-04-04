@@ -15,12 +15,12 @@ tabItem   :
     title     : Under the Hood
     heading   : The best Time Series Database (TSDB)... 
     content   : >
-      By using well known and trusted building blocks (such as <a href="https://www.influxdata.com/products/influxdb/" target="_blank">InfluxDB</a> and <a href="https://www.influxdata.com/time-series-platform/telegraf/" target="_blank">Telegraf</a>) we can develop and roll-out new features rapidly and with confidence across the rest of our platform.
+      By using well known and trusted building blocks (such as <a href="https://www.influxdata.com/products/influxdb/" target="_blank">InfluxDB</a> and <a href="https://www.influxdata.com/time-series-platform/telegraf/" target="_blank">Telegraf</a>) we can develop and roll-out new features rapidly, and with confidence, across the rest of our platform.
     icon      : fas fa-database
 
   - id        : install
     title     : Install An Agent
-    heading   : Then claim your bucket / UUID.
+    heading   : Then claim your data bucket.
     content   : >
       <strong>Once installed and claimed </strong> PanSift automatically watches and troubleshoots your specific environment to generate insights on your agents so you or your team can rapidly diagnose issues remotely.
     image     : images/howitworks/cogs.jpg

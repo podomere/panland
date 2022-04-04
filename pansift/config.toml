@@ -42,7 +42,7 @@ unsafe = true
 
     [params.aboutSm]
         enable  = true
-        title   = "Control your <span style = 'color: #fff;'>time, </span>eliminate <span style = 'color: #fff;'>toil</span>, free up your <span style = 'color: #fff;'>focus</span> !"
+        title   = "Control your <span style = 'color: #fff;'>time, </span>eliminate <span style = 'color: #fff;'>toil</span>, and free up your <span style = 'color: #fff;'>focus</span> !"
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
         proof = "Gartner <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>forecasts</a></u> that <strong>~53%</strong> of the UK & US workforce will work remotely during 2022, with <strong>31%</strong> globally."
     
@@ -70,19 +70,19 @@ unsafe = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "System Design"
-        subtitle = "A default multi-tenant architecture, modular inspectable client scripts, and outbound only connection."
-        onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
-        one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."
-        threetitle = "Accelerated Outcomes For Technical Support Teams"
-        three = "<strong>Claim back your time</strong> with up to date metrics, anomaly detection, and root cause(s) identification."
-        twotitle = "Timetravel with Retrospective Troubleshooting"
-        two = "Go back in time to when problems <strong>actually</strong> occurred rather than waiting for them to happen again."
-        fourtitle = "Weeks Of Offline Buffering"
-        four = "Even when <strong>disconnected</strong>, metrics are buffered and uploaded when reconnected or on hotspots."
-        fivetitle = "Added Context From Users"
-        five = "Elective <strong>user annotations</strong> mean more context during any disruptions. The missing link not in any logs!"
-        sixtitle = "Super Low Bandwdith"
-        six = "Metrics only use a few <strong>kilobits</strong> of bandwidth every 30-60 seconds and almost no CPU."
+        subtitle = "A default multi-tenant architecture, with modular inspectable client scripts, and outbound only connection."
+        onetitle = "Multitenant Boundaries <br>Front and Back"
+					one = 'Accelerated by <a href="https://jumpstartrails.com/">JumpstartPro</a> (using <a href="https://github.com/heartcombo/devise">Devise</a> and <a href="https://github.com/ErwinM/acts_as_tenant">ActsAsTenant</a>. PanSift also uses <a href="">Telegraf</a> and <a href="">InfluxDB</a> for <strong>fail-safe</strong> data ingestion, bucket separation, and storage on the back end (with optional <a href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">Influx Cloud SOC2 Type II certified</a> Influx cloud vs. OSS).'
+        twotitle = "Max 30 Day Agent Data Retention"
+        two = "<strong>All agent specific data</strong> is aged out and deleted after <strong>30 days</strong>. Only non-identifiable metrics and aggregate data is used longer term to improve the service and iterate on new features and services."
+        threetitle = "MFA (Multi-factor Authentication)"
+        three = 'Use <a href="https://en.wikipedia.org/wiki/Google_Authenticator">Google Authenticator</a>, <a href="https://authy.com/">Authy</a>, or any <a href="https://en.wikipedia.org/wiki/Time-based_one-time_password">TOTP (Time-based One Time Password)</a> generator to secure your account but remember to note your backup codes!'
+        fourtitle = "Least Access Principle / BCP NetSec Patterns"
+        four = "Agents can only talk <strong>outbound (push)</strong> from your machine. There is <strong>no inbound</strong> communication possible and <strong>no remote access</strong> tooling or functionality. There are <strong>no listening ports</strong> on the agent. It can only talk outbound via <strong>DNS and HTTPS TCP 443</strong> to <strong>write</strong> data to (<strong>not read</strong> data from) buckets."
+        sixtitle = "Apple Signed and Scanned <br> + OSS Modular Scripting"
+        six = 'The <strong>agent</strong> is an <a href="https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution">Apple notarized/signed</a> binary which comprises a customized fork of the modular <a href="https://github.com/matryer/xbar">BitBar (now Xbar)</a> agent. It contains <a href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a> and leverages OSS <a href="https://github.com/pansift/p3">inspectable scripts</a> hosted on <a href="https://github.com/pansift/p3">Github</a>.'
+        fivetitle = "Apple M1 Support"
+        five = "The <strong>agent</strong> is cross compiled for both Intel and Apple Silicon (Arm-based) architectures."
 
     [params.benefits]
         topTitle =  "Trust but Verify"

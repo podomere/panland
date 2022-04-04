@@ -209,11 +209,11 @@ unsafe = true
     [[menu.nav]]
         name    = "How"
         url     = "/howitworks"
-        weight  = 2
+        weight  = 1
     [[menu.nav]]
         name    = "Design"
         url     = "/architecture"
-        weight  = 1
+        weight  = 2
     [[menu.nav]]
         name    = "Pricing"
         url     = "/pricing"

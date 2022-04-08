@@ -307,7 +307,7 @@
 				agent_cost = (sliderFormat.noUiSlider.get()) * 19;
 			}
       var total_cost = agent_cost 
-      $('#total_cost').html('<strong>' + total_cost + ' € p/m </strong>');
+      $('#total_cost').html('<strong>' + total_cost + ' € (' + (total_cost * 1.2).toFixed(2) + ' USD)</strong>');
     }
 
 

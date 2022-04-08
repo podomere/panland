@@ -1,6 +1,6 @@
 {{ if .Site.Params.architecture.enable }}
 {{ "<!-- Start architecture section -->" | safeHTML }}
-<section class="architecture section" id="architecture" style="background-color: #222 !important; padding-bottom: 0;">
+<section class="architecture section" id="architecture" style="background-color: #fff !important; padding-bottom: 0;">
 	<div class="container">
 		{{ if (eq .Page.Title "Architecture") }}
 		<div class="row mb-4">
@@ -27,7 +27,25 @@
 		</div>
 	</div>
 </section>
-<section class="architecture section" id="architecture-explanation" style="background-color: #333 !important; padding-bottom: 0;">
+{{ if .Site.Params.aboutsm2.enable }}
+{{ "<!-- Start About Section -->" | safeHTML }}
+<section class="about-2 section" id="about" style="padding: 20px 0 !important;background-color: #333;color: #bdc3c7;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 text-center">
+				{{ with .Site.Params.aboutsm2.title }}
+				<h1 class="float-left" style="padding: 10px 20px 0px 50px !important;">{{ . | safeHTML }}</h1>
+				{{ end }}
+				{{ with .Site.Params.aboutsm2.subtitle }}
+				<!-- <h5>{{ . | safeHTML }}</h5> -->
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+{{ "<!-- End About section -->" | safeHTML }}
+{{ end }}
+<section class="architecture section" id="architecture-explanation" style="background-color: #fff !important; padding-bottom: 0;">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-4 col-sm-6 col-xs-12 p-0">

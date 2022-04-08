@@ -338,7 +338,7 @@ a:focus, a:hover {
 
 .archtitle h2 {
     font-size: 35px;
-    color: #bdc3c7 !important;
+    color: #222 !important;
     text-transform: capitalize;
     margin-bottom: 8px;
     font-weight: 700;
@@ -617,7 +617,8 @@ a:focus, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #222222; 
+  /* background: #222222; */
+  background: #ffffff; 
 }
 
 @media (max-width: 480px) {
@@ -1331,13 +1332,13 @@ a:focus, a:hover {
 }
 
 .architecture .service-item {
-  background: #333;
+  background: #fff;
   /* border: 1px solid #eee; */
   padding: 50px 20px;
   margin-right: -1px;
   margin-bottom: -1px;
   transition: all 0.3s ease 0s;
-	color: #bdc3c7;
+	color: #333;
 }
 
 .architecture .service-item .count {
@@ -1346,7 +1347,7 @@ a:focus, a:hover {
   top: 0;
   left: 20px;
   /* color: #f3f1f1; */
-  color: #bdc3c7;
+  color: #333;
   font-weight: 700;
 }
 
@@ -1364,15 +1365,15 @@ a:focus, a:hover {
 }
 
 .architecture p { 
-	color: #fff !important;
+	color: #333 !important;
 
 }
 .architecture .title { 
-	color: #fff !important;
+	color: #333 !important;
 
 }
 .archtitle { 
-	color: #fff !important;
+	color: #333 !important;
 }
 
 .gradient, .title .border, .architecture .service-item i {

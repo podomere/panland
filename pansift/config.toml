@@ -31,8 +31,8 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = 'Instant remote troubleshooting for forward thinking technical teams. <span style="color: #bdc3c7">Support Work From Anywhere</span>'
-        description2 = "Keep your <span style='color: white;'>teams and clients</span> connected and <span style='color: white;'>productive</span>. Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues <span style='color: white;'>in seconds</span>. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: white;'><strong>2 x free agents</strong></a></u>." 
+				heading = '<a href="/demo"><span style="color: #007bff">Support Work From Anywhere</span></a> with instant remote troubleshooting for forward thinking technical teams.'
+        description2 = "Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues <span style='color: #007bff;'>in seconds</span>. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: #007bff;'><strong>2 x free agents</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -48,7 +48,7 @@ unsafe = true
     
 		[params.aboutsm2]
         enable  = true
-        title   = 'A secure <u><a href="/architecture">hybrid design</a></u> built on the <span style = "color: #fff;">least access principle</span> !'
+        title   = 'A secure <u><a href="/howitworks">hybrid design</a></u> built on the <span style = "color: #fff;">least access principle</span> !'
 
     [params.offer]
         enable  = true

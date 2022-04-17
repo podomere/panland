@@ -224,8 +224,8 @@ This is definitely not recommended as it may be the only type of connectivity yo
 [More Quad9 info as some addresses offer "secured" and "insecure" services...](https://www.quad9.net/support/faq/#ipv6_support)
 <br><br>
 
-# Automating It All With PanSift
-The other option is to just run an instant troubleshooting tool like [PanSift](/) which continuously monitors a range of IPv6 metrics, settings, and even Wi-Fi performance!
+# Automating It All
+The other option is to just run an instant troubleshooting tool which continuously monitors a range of IPv6 metrics, settings, and even Wi-Fi performance!
 
 <script>
 $("div.table1-start").nextUntil("div.table1-end", "table").addClass("table table-dark table-hover table-responsive");

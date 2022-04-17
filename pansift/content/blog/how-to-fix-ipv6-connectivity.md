@@ -225,25 +225,7 @@ This is definitely not recommended as it may be the only type of connectivity yo
 <br><br>
 
 # Automating It All With PanSift
-The other option is to just run an instant troubleshooting tool like [PanSift](/) which continuously monitors a range of IPv6 metrics, settings, and even Wi-Fi performance! 
-
-As PanSift uses [Zero Touch Provisioning](https://en.wikipedia.org/wiki/ZTP) you can even get a family or team member to run it remotely with no set up fuss. You then keep an eye on their connectivity **remotely** for whenever they need help or inevitably report any issues.
-
-<a href="/"><img src="/images/blog/dns_failures.png" class="rounded img-fluid" alt="PanSift screenshot"></a>
-
-PanSift not only tracks your:
-
-- [x] public facing IPv6 address
- - [x] default gateway IPv6 address, status, and latency
- - [x] local interface IPv6 addresses
- - [x] IPv6 DNS performance (cached RRs + uncached unique RRs)
- - [x] traceroutes via IPv6 (which include ASN paths)
- - [x] but also lots of other useful IPv4, performance and Wi-Fi metrics continuously!
-<br><br>
-
-PanSift surfaces insights and issues so troubleshooting is easy and instantaneous (even suggesting clear Wi-Fi channels and remediation steps).
-
-<a href="/"><img src="/images/blog/example_dns_failures.png" class="rounded img-fluid" alt="PanSift screenshot"></a>
+The other option is to just run an instant troubleshooting tool like [PanSift](/) which continuously monitors a range of IPv6 metrics, settings, and even Wi-Fi performance!
 
 <script>
 $("div.table1-start").nextUntil("div.table1-end", "table").addClass("table table-dark table-hover table-responsive");

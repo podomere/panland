@@ -4,6 +4,7 @@ title = "PanSift for a rapid find and fix."
 theme = "navigator-hugo"
 summaryLength = 37
 enableGitInfo = true
+# buildDrafts = false
 
 [sitemap]
   changefreq = "daily"

@@ -1,0 +1,48 @@
+{{ partial "header.html" . }}
+
+{{ partial "navigation.html" . }}
+
+{{ "<!-- Blog Section Start -->" | safeHTML }}
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            {{ range (.Paginator 12).Pages }}
+            {{ "<!-- single blog post -->" | safeHTML }}
+            <article class="col-12 col-md-4">
+                <div class="post-item">
+                    <div class="post-thumb text-center">
+                        <a href="{{ .Permalink }}"><img class="img-fluid shadow rounded lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" alt="{{ .Summary }}" style="max-height: 220px"></a>
+                    </div>
+                    <div class="post-title">
+                        <h3 class="mt-0">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h3>
+                    </div>
+                    <div class="post-meta">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                {{ .Params.subtitle }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="post-content">
+                        <p>{{ .Summary }}</p>
+                    </div>
+                    <a class="btn btn-main" style="font-weight: 900 !important;" href="{{ .Permalink }}">Research</a>
+                </div>
+            </article>
+            {{ "<!-- /single blog post -->" | safeHTML }}
+            {{ end }}
+            <div class="col-12 text-center">
+                {{ template "_internal/pagination.html" . }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- Blog Section End -->" | safeHTML }}
+
+<!-- {{ partial "about-sm.html" . }} -->
+
+{{ partial "cta.html" . }}
+
+{{ partial "footer.html" . }}

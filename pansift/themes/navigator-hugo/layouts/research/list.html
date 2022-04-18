@@ -2,7 +2,7 @@
 
 {{ partial "navigation.html" . }}
 
-{{ "<!-- Blog Section Start -->" | safeHTML }}
+{{ "<!-- Research Section Start -->" | safeHTML }}
 <section class="blog section" id="blog">
     <div class="container">
         <div class="row">
@@ -10,9 +10,6 @@
             {{ "<!-- single blog post -->" | safeHTML }}
             <article class="col-12 col-md-4">
                 <div class="post-item">
-                    <div class="post-thumb text-center">
-                        <a href="{{ .Permalink }}"><img class="img-fluid shadow rounded lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" alt="{{ .Summary }}" style="max-height: 220px"></a>
-                    </div>
                     <div class="post-title">
                         <h3 class="mt-0">
                             <a href="{{ .Permalink }}">{{ .Title }}</a>

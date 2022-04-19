@@ -262,6 +262,10 @@ unsafe = true
     [[menu.about]]
         name    = "Cookie Policy"
         url     = "/cookies"
+        weight  = 3
+    [[menu.about]]
+        name    = "Research Topics"
+        url     = "/research"
         weight  = 2
 
 [blackfriday]

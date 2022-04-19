@@ -1,0 +1,20 @@
+---
+title: "How To Fix Ipv6 Connectivity"
+subtitle: "Penetrate The Market"
+layout: research
+ip_v4_address: "199.193.56.41"
+date: 2022-04-19T21:18:20+01:00
+draft: true
+---
+
+# Internet Addressing
+On the Internet you might have a Public IPv4 address like **199.193.56.41** or an IPv6 address like **dfb4:1b57:a636:fda:1862:911:11fa:ec6b**. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like **99:55:76:0e:94:e4**, it's error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+
+# Accessing the Web
+To get to a web page like https://hickle.co you initially access a DNS server to translate the host portion (hickle) of the URL to an IP address like **151.252.203.129**. 
+
+# Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like **127.70.96.193** (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For **IPv6** we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/).
+
+# Wired or Wireless
+At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 

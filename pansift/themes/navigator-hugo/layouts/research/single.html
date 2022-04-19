@@ -13,15 +13,13 @@
 						</li>
 					</ul>
 				</div>
-				<a href="/blog" ><img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="rounded w-100 mb-3" alt="{{ .Summary }}"></a>
+				<a href="/blog" ><img src="https://www.tinygraphs.com/labs/isogrids/hexa/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}?theme=bythepool&numcolors=4&size=100&fmt=svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<a href="/blog" ><img src="https://www.tinygraphs.com/labs/isogrids/hexa/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}?theme=duskfalling&numcolors=4&size=100&fmt=svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<a href="/blog" ><img src="https://www.tinygraphs.com/labs/isogrids/hexa/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}?theme=base&numcolors=4&size=100&fmt=svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<a href="/blog" ><img src="https://www.tinygraphs.com/labs/isogrids/hexa/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}?theme=seascape&numcolors=4&size=100&fmt=svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
 				{{ .Content  | safeHTML }}
 
 				{{ partial "post-micro-tip.html" .}} 
-
-
-
-				{{ partial "tags.html" .}}
-
 
 			</div>
 		</div>

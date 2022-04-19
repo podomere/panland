@@ -8,17 +8,21 @@ require "time"
 require "faker"
 
 # Always start prefix (not core) arrays with an empty so you get a mix
-@init_subprefix = ["","how to","how can I","how do you","what is"]
-@init_prefix = ["","fix", "fix for", "troubleshooting", "troubleshoot","test","check","support"]
-@init_suffix = ["","connectivity","internet", "no access", "router", "routing", "no-access", "address","speed","protocol"]
-@init_core = ["ipv6","ipv4","wifi","latency","jitter","macos","osx"]
 
 # Get the latest unsubscribe file from production
 puts "'./pseo.rb test' to run in test mode."
 case ARGV[0]
 when "test"  # Note proper syntax for File.exist?
+  @init_subprefix = ["","how to"]
+  @init_prefix = ["","fix"]
+  @init_suffix = ["","connectivity"]
+  @init_core = ["IPv6","IPv4"]
   puts "Running on test ENV localapp"   # Do this if value of ARGV[0] == result of File.exist?
 else
+  @init_subprefix = ["","how to","how can I","how do you",""]
+  @init_prefix = ["","fix", "troubleshoot","test","check","support"]
+  @init_suffix = ["","connectivity","internet", "no access", "router", "routing", "no-access", "address","speed","protocol"]
+  @init_core = ["IPv6","IPv4","wifi","latency","jitter","macOS","OSX","icmp","ping"]
   puts "Running on PROD ENV app"   # Do this if value of ARGV[0] == result of File.exist?
 end
 
@@ -39,30 +43,51 @@ def sample_file(core)
     @prefix.each_with_index do |prefix,prefix_index|
       @suffix.each_with_index do |suffix,suffix_index|
         title = subprefix.to_s + " " + prefix.to_s + " " + core.to_s + " " + suffix.to_s
-        subtitle = Faker::Internet.domain_name
-        @page_title = title.gsub(/\s/,"-").gsub(/\-\-/,'-').gsub(/^\-/,'').gsub(/\-$/,'').gsub(/\-\-/,'-')
-        puts "Page title: #{@page_title}"
+        domain = "#{Faker::Internet.domain_word}"
+        tld = "#{Faker::Internet.domain_suffix}"
+        subtitle = "#{Faker::Marketing.buzzwords}"
+        file_title = title.gsub(/\s/,"-").gsub(/\-\-/,'-').gsub(/^\-/,'').gsub(/\-$/,'').gsub(/\-\-/,'-')
+        page_title = title.gsub(/\s+/," ").gsub(/^\s/,'').gsub(/\s$/,'')
+        puts "File title: #{file_title}"
         timestamp = Time.now.iso8601.to_s
         puts "Timestamp: "+timestamp
         ip_v4_address = Faker::Internet.ip_v4_address
         private_ip_v4_address = Faker::Internet.private_ip_v4_address
         ip_v6_address = Faker::Internet.ip_v6_address 
-        mac_address = Faker::Internet.mac_address
-        puts "Domain name: #{subtitle}"
-        puts "You may have a Public IPv4 address like #{ip_v4_address} or an IPv6 address like #{ip_v6_address} as seen from [https://test-ipv6.com/](https://test-ipv6.com/). Yet for non-techies to try and communicate them, or call out MAC addresses like #{mac_address}, it gets complicated quickly. It's prone to errors and doesn't give you historical data especially when problems occured."
+          mac_address = Faker::Internet.mac_address
+        data = %Q^---
+title: \"#{page_title.split(" ").map(&:capitalize).join(" ")}\"
+subtitle: \"#{subtitle.split(" ").map(&:capitalize).join(" ")}\"
+layout: research
+ip_v4_address: \"#{ip_v4_address}\"
+date: #{timestamp}
+draft: true
+---
+
+# Internet Addressing
+On the Internet you #{['may','might'].sample} #{['have','get'].sample} a Public IPv4 address like **#{ip_v4_address}** or an IPv6 address like **#{ip_v6_address}**. #{['You','We'].sample} can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like **#{mac_address}**, it's error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+
+# Accessing the Web
+To get to a web page like https://#{domain}.#{tld} you initially access a DNS server to translate the host portion (#{domain}) of the URL to an IP address like **#{Faker::Internet.ip_v4_address}**. 
+
+# Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like **#{Faker::Internet.private_ip_v4_address}** (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For **IPv6** we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/).
+
+# Wired or Wireless
+At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
+^
+        txt = File.open("../content/research/#{file_title}.md",'w+')
+        txt.write(data)
+        txt.close()
+
         # Send to file of the same name inc. data about subprefix, prefix, core, suffix
-				#---
-				#title: "#{@page_title}"
-				#layout: research
-				#date: #{timestamp}
-				#draft: true
-				#tags:
-				#  - #{subprefix}
-				#  - #{prefix}
-				#  - #{core}
-				#  - #{suffix}
-				#---
-      end
+        #---
+        #title: "#{@page_title}"
+        #layout: research
+        #date: #{timestamp}
+        #draft: true
+        #---
+        end
     end
   end
   re_init_prefixes

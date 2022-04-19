@@ -1,7 +1,6 @@
 ---
-title: "Test"
-subtitle: "Stuff"
-layout: research
+title: "Test-dash"
+subtitle: "Stuff-dash"
 date: 2022-04-18T16:54:07+01:00
 draft: true
 tags:

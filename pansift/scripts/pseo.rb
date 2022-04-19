@@ -2,18 +2,19 @@
 
 # PSEO creates files and pages for Hugo for programmatic SEO
 
-require 'rubygems'
 require "csv"
-require 'fileutils'
-require 'time'
+require "fileutils"
+require "time"
+require "faker"
 
-@init_subprefix = ["how to"]
-@init_prefix = ["fix", "troubleshoot"]
-@init_core = ["ipv6","ipv4"]
-@init_suffix = ["connectivity","internet"]
+# Always start prefix (not core) arrays with an empty so you get a mix
+@init_subprefix = ["","how to","how can I","how do you","what is"]
+@init_prefix = ["","fix", "fix for", "troubleshooting", "troubleshoot","test","check","support"]
+@init_suffix = ["","connectivity","internet", "no access", "router", "routing", "no-access", "address","speed","protocol"]
+@init_core = ["ipv6","ipv4","wifi","latency","jitter","macos","osx"]
 
 # Get the latest unsubscribe file from production
-puts "'./toasty.rb test' to run in test mode."
+puts "'./pseo.rb test' to run in test mode."
 case ARGV[0]
 when "test"  # Note proper syntax for File.exist?
   puts "Running on test ENV localapp"   # Do this if value of ARGV[0] == result of File.exist?
@@ -33,44 +34,50 @@ def re_init_prefixes
   @suffix = @init_suffix
 end
 
-def delete_core_word(index)
-  @init_core.delete_at(index) 
-end
-
-def sample_title(core)
-  @subprefix_index = (0 .. @subprefix.length).to_a.sample
-  @prefix_index = (0 .. @prefix.length).to_a.sample
-  @suffix_index = (0 .. @suffix.length).to_a.sample
-  !@subprefix_index.nil? ?  sub = @subprefix[@subprefix_index] : sub = ""
-  !@prefix_index.nil? ?  pre = @prefix[@prefix_index] : pre = ""
-  !@suffix_index.nil? ?  suf = @suffix[@suffix_index] : suf = ""
-  @title = sub.to_s + " " + pre.to_s + " " + core.to_s + " " + suf.to_s
-  puts "Interim title: #{@title}"
-  @page_title = @title.tr(" ","-").gsub(/^-/,'').gsub(/-$/,'').gsub(/--/,'-')
-  # Remove used prefix/suffixes
-  @subprefix.delete_at(@subprefix_index)
-  @prefix.delete_at(@prefix_index)
-  @suffix.delete_at(@suffix_index)
+def sample_file(core)
+  @subprefix.each_with_index do |subprefix,subprefix_index|
+    @prefix.each_with_index do |prefix,prefix_index|
+      @suffix.each_with_index do |suffix,suffix_index|
+        title = subprefix.to_s + " " + prefix.to_s + " " + core.to_s + " " + suffix.to_s
+        subtitle = Faker::Internet.domain_name
+        @page_title = title.gsub(/\s/,"-").gsub(/\-\-/,'-').gsub(/^\-/,'').gsub(/\-$/,'').gsub(/\-\-/,'-')
+        puts "Page title: #{@page_title}"
+        timestamp = Time.now.iso8601.to_s
+        puts "Timestamp: "+timestamp
+        ip_v4_address = Faker::Internet.ip_v4_address
+        private_ip_v4_address = Faker::Internet.private_ip_v4_address
+        ip_v6_address = Faker::Internet.ip_v6_address 
+        mac_address = Faker::Internet.mac_address
+        puts "Domain name: #{subtitle}"
+        puts "You may have a Public IPv4 address like #{ip_v4_address} or an IPv6 address like #{ip_v6_address} as seen from [https://test-ipv6.com/](https://test-ipv6.com/). Yet for non-techies to try and communicate them, or call out MAC addresses like #{mac_address}, it gets complicated quickly. It's prone to errors and doesn't give you historical data especially when problems occured."
+        # Send to file of the same name inc. data about subprefix, prefix, core, suffix
+				#---
+				#title: "#{@page_title}"
+				#layout: research
+				#date: #{timestamp}
+				#draft: true
+				#tags:
+				#  - #{subprefix}
+				#  - #{prefix}
+				#  - #{core}
+				#  - #{suffix}
+				#---
+      end
+    end
+  end
+  re_init_prefixes
 end
 
 def generate
   init_prefixes_and_core
-  until @init_core.empty? do
-    core_index = (0 .. @init_core.length).to_a.sample
-    core = @init_core[core_index]
-    puts "Chose core: #{core}"
-    until @subprefix.empty? && @prefix.empty? && @suffix.empty? do 
-      sample_title(core)
-      puts @page_title
-    end
-    delete_core_word(core_index)
-    re_init_prefixes
+  puts "Core terms: #{@init_core}"
+  @init_core.each_with_index do |core, core_index|
+    puts "Iterating core: #{core}"
+    sample_file(core)
   end
 end
 
 
-timestamp = Time.now.iso8601.to_s
-puts "Timestamp: "+timestamp
 
 def csv_file
   CSV.foreach('pseo.txt', :headers => true) do |page|

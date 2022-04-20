@@ -6,6 +6,11 @@ require "csv"
 require "fileutils"
 require "time"
 require "faker"
+require "yt"
+
+$yt_config_key = "AIzaSyBJTQntR5QuYcHP-XOhN0ZzFX9mr2nU9a0"
+
+$emoji = (([0x1F60D,0x1F607,0x1F600,0x1F604,0x1F61C,0x1F914,0x1F917,0x1F60E,0x1F913,0x1F63B,0x1F4BC,0x2764,0x1F44B,0x1F44C,0x270C,0x1F449,0x1F44D,0x1F44A,0x1F44F,0x1F64C,0x270D,0x1F4AA,0x1F440,0x1F441,0x1F468,0x1F469,0x1F47C,0x1F463,0x23F3,0x1F308,0x1F3AF,0x1F3B2,0x1F3AD,0x1F453,0x1F50D,0x1F4D6,0x1F4DA,0x1F4EC,0x270F,0x1F4CC,0x1F52C,0x26A0,0x267B,0x2705,0x1F1EA].sample).to_i).chr('UTF-8')
 
 # Always start prefix (not core) arrays with an empty so you get a mix
 
@@ -70,7 +75,8 @@ def sample_file(core)
         ip_v4_address = Faker::Internet.ip_v4_address
         private_ip_v4_address = Faker::Internet.private_ip_v4_address
         ip_v6_address = Faker::Internet.ip_v6_address 
-          mac_address = Faker::Internet.mac_address
+        mac_address = Faker::Internet.mac_address
+        yt_get_urls # This generates a @link for the video to embed.
         data = %Q^---
 title: \"#{page_title}\"
 subtitle: \"#{subtitle}\"
@@ -91,22 +97,58 @@ Your default gateway is normally an automatically configured address via DHCP. Y
 
 # Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
-^
-        txt = File.open("../content/research/#{file_title}.md",'w+')
-        txt.write(data)
-        txt.close()
 
-        # Send to file of the same name inc. data about subprefix, prefix, core, suffix
-        #---
-        #title: "#{@page_title}"
-        #layout: research
-        #date: #{timestamp}
-        #draft: true
-        #---
+# Apple macOS / OSX
+No matter what version you are on, **#{Faker::App.semantic_version(major: 10..10, minor: 11..15)}**, **#{Faker::App.semantic_version(major: 11..11, minor: 0..6)}**, or **#{Faker::App.semantic_version(major: 12..12, minor: 0..3)}**, there are a range of tools for troubleshooting but between manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especialy for teams that embrace remote work and Work From Anywhere (WFA).
+^
+txt = File.open("../content/research/#{file_title}.md",'w+')
+txt.write(data)
+txt.close()
+
+# Send to file of the same name inc. data about subprefix, prefix, core, suffix
+#---
+#title: "#{@page_title}"
+#layout: research
+#date: #{timestamp}
+#draft: true
+#---
         end
     end
   end
   re_init_prefixes
+end
+
+def yt_get_urls(page_title)
+
+  # Not IPv4 restricted
+  # Not IPv6 restricted
+  # You have 10,000 units per day and a search uses 100 units
+  # This is the quota system for YouTube... so you have like 100 searches.
+
+  Yt.configuration.api_key = $yt_config_key
+  Yt.configure do |config|
+    config.log_level = :debug
+  end
+
+  videos = Yt::Collections::Videos.new
+  answer = videos.where(q: page_title, order: 'viewCount', safe_search: 'strict', type: 'video', max_results: 3, publishedAfter: '2018-01-01T00:00:00Z')
+  answers = []
+  answer.each do |video| 
+    answers.push(video)
+  end
+  video_1 = answers[0]
+  video_1_thumbnail_url = video_1.thumbnail_url
+  video_1_id = video1.id
+  video_1_link = "https://www.youtube.com/watch?v="+video_1_id
+  video_2 = answers[1]
+  video_2_thumbnail_url = video_2.thumbnail_url
+  video_2_id = video2.id
+  video_2_link = "https://www.youtube.com/watch?v="+video_2_id
+  video_3 = answers[2]
+  video_3_thumbnail_url = video_3.thumbnail_url
+  video_3_id = video3.id
+  video_3_link = "https://www.youtube.com/watch?v="+video_3_id
+
 end
 
 def generate

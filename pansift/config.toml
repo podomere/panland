@@ -32,7 +32,7 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = '<a href="/demo" rel="nofollow"><span style="color: #007bff">Support Work From Anywhere</span></a>. Instant remote troubleshooting for forward thinking technical teams.'
+				heading = '<a href="/demo/" rel="nofollow"><span style="color: #007bff">Support Work From Anywhere</span></a>. Instant remote troubleshooting for forward thinking technical teams.'
         description2 = "Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues <span style='color: #007bff;'>in seconds</span>. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: #007bff;'><strong>2 x free agents</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"
@@ -49,7 +49,7 @@ unsafe = true
     
 		[params.aboutsm2]
         enable  = true
-        title   = 'A secure <u><a href="/howitworks">hybrid design</a></u> built on the <span style = "color: #fff;">least access principle</span> !'
+        title   = 'A secure <u><a href="/howitworks/">hybrid design</a></u> built on the <span style = "color: #fff;">least access principle</span> !'
 
     [params.offer]
         enable  = true
@@ -197,7 +197,7 @@ unsafe = true
 # Navbar Menus
 #    [[menu.nav]]
 #        name    = "Deception Tech"
-#        url     = "/deception"
+#        url     = "/deception/"
 #        weight  = 3
 #   [[menu.nav]]
 #       name    = "Sign Up"
@@ -205,15 +205,15 @@ unsafe = true
 #       weight  = 3
 #    [[menu.nav]]
 #        name    = "Why"
-#        url     = "/why"
+#        url     = "/why/"
 #        weight  = 1
     [[menu.nav]]
         name    = "How"
-        url     = "/howitworks"
+        url     = "/howitworks/"
         weight  = 1
     [[menu.nav]]
         name    = "Design"
-        url     = "/architecture"
+        url     = "/architecture/"
         weight  = 2
     [[menu.nav]]
         name    = "Pricing"
@@ -221,11 +221,11 @@ unsafe = true
         weight  = 3
 #   [[menu.nav]]
 #         name    = "Contact"
-#         url     = "/contact"
+#         url     = "/contact/"
 #         weight  = 1
 #   [[menu.nav]]
 #       name    = "Benefits"
-#       url     = "/benefits"
+#       url     = "/benefits/"
 #       weight  = 1
 #    [[menu.nav]]
 #        name    = "Login"
@@ -233,17 +233,17 @@ unsafe = true
 #        weight  = 6
 #    [[menu.nav]]
 #        name    = "Sign Up"
-#        url     = "/contact"
+#        url     = "/contact/"
 #        weight  = 7
     
 # Footer Quick links Menu
      [[menu.quick]]
         name    = "Blog"
-        url     = "/blog"
+        url     = "/blog/"
         weight  = 1
     [[menu.quick]]
        name    = "Pricing"
-       url     = "/pricing"
+       url     = "/pricing/"
        weight  = 2
     #[[menu.quick]]
     #    name    = "Deception"
@@ -251,21 +251,21 @@ unsafe = true
     #    weight  = 3
     [[menu.quick]]
         name    = "Training"
-        url     = "/training"
+        url     = "/training/"
         weight  = 4
     [[menu.quick]]
         name    = "Contact"
-        url     = "/contact"
+        url     = "/contact/"
         weight  = 3
 
     # Footer About Menu
     [[menu.about]]
         name    = "Cookie Policy"
-        url     = "/cookies"
+        url     = "/cookies/"
         weight  = 3
     [[menu.about]]
         name    = "Research Topics"
-        url     = "/research"
+        url     = "/research/"
         weight  = 2
 
 [blackfriday]

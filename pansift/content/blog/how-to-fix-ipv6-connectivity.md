@@ -18,6 +18,8 @@ tags:
   - support
   - troubleshooting
   - guides
+categories:
+  - troubleshooting
 image: /images/blog/ipv6_duck.jpg
 published: true
 title: 'How To Fix IPv6 Connectivity'

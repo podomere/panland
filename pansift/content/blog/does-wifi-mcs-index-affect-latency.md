@@ -14,12 +14,14 @@ tags:
   - wlan
   - 802.11
   - userops
-  - Wi-Fi
+  - WiFi
   - assurance
-  - Wi-Fi assurance
+  - WiFi_assurance
   - wlan
   - tsdb
   - data science
+categories:
+  - WiFi
 image: /images/blog/mcs_or_latency.jpg
 published: true
 title: 'Does MCS Index Affect Latency?'

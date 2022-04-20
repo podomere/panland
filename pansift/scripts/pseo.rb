@@ -68,7 +68,7 @@ draft: true
 On the Internet you #{['may','might'].sample} #{['have','get'].sample} a Public IPv4 address like **#{ip_v4_address}** or an IPv6 address like **#{ip_v6_address}**. #{['You','We'].sample} can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like **#{mac_address}**, it's error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 # Accessing the Web
-To get to a web page like https://#{domain}.#{tld} you initially access a DNS server to translate the host portion (#{domain}) of the URL to an IP address like **#{Faker::Internet.ip_v4_address}**. 
+To get to a web page like https://#{domain}.#{tld} you initially access a DNS server to translate the host portion (#{domain}) combined with the Top Level Domain #{tld} of the URL, to an IP address like **#{Faker::Internet.ip_v4_address}**. 
 
 # Default Gateways
 Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like **#{Faker::Internet.private_ip_v4_address}** (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For **IPv6** we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/).

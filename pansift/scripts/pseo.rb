@@ -16,14 +16,26 @@ when "test"  # Note proper syntax for File.exist?
   @init_subprefix = ["","how to"]
   @init_prefix = ["","fix"]
   @init_suffix = ["","connectivity"]
-  @init_core = ["IPv6","IPv4"]
-  puts "Running on test ENV localapp"   # Do this if value of ARGV[0] == result of File.exist?
-else
+  @init_core = ["IP"]
+  puts "Running on test IP words"   # Do this if value of ARGV[0] == result of File.exist?
+when "osx"
   @init_subprefix = ["","how to","how can I","how do you",""]
-  @init_prefix = ["","fix", "troubleshoot","test","check","support"]
-  @init_suffix = ["","connectivity","internet", "no access", "router", "routing", "no-access", "address","speed","protocol"]
-  @init_core = ["IPv6","IPv4","wifi","latency","jitter","macOS","OSX","icmp","ping"]
-  puts "Running on PROD ENV app"   # Do this if value of ARGV[0] == result of File.exist?
+  @init_prefix = ["","fix","diagnose","troubleshoot","test","check","support","understand"]
+  @init_core = ["macOS","OSX","Apple","Mac"]
+  @init_suffix = ["","issues","connectivity","internet", "internet connection", "IP settings", "no-access"]
+  puts "Running on Apple Mac OSX words"   # Do this if value of ARGV[0] == result of File.exist?
+when "network"
+  @init_subprefix = ["","how to","how can I","how do you",""]
+  @init_prefix = ["","fix", "diagnose","troubleshoot","test","check","support","understand"]
+  @init_core = ["IPv6","IPv4","wifi","common WiFi","latency","jitter","icmp","ping", "http", "https"]
+  @init_suffix = ["","issues", "connectivity","internet issues", "no access", "router issues", "routing issues", "no-access", "address","speed","protocol"]
+  puts "Running on IP and network words"   # Do this if value of ARGV[0] == result of File.exist?
+else
+  @init_subprefix = [""]
+  @init_prefix = [""]
+  @init_suffix = [""]
+  @init_core = [""]
+  puts "Running on nothing by default, choose a type of words"   # Do this if value of ARGV[0] == result of File.exist?
 end
 
 def init_prefixes_and_core
@@ -45,10 +57,14 @@ def sample_file(core)
         title = subprefix.to_s + " " + prefix.to_s + " " + core.to_s + " " + suffix.to_s
         domain = "#{Faker::Internet.domain_word}"
         tld = "#{Faker::Internet.domain_suffix}"
-        subtitle = "#{Faker::Marketing.buzzwords}"
-        file_title = title.gsub(/\s/,"-").gsub(/\-\-/,'-').gsub(/^\-/,'').gsub(/\-$/,'').gsub(/\-\-/,'-')
+        subtitle = "#{Faker::Marketing.buzzwords}?"
+        subtitle = subtitle.split(" ").map(&:capitalize).join(" ")
+        file_title = title.gsub(/\s/,"-").gsub(/\-\-/,'-').gsub(/^\-/,'').gsub(/\-$/,'').gsub(/\-\-/,'-').downcase
         page_title = title.gsub(/\s+/," ").gsub(/^\s/,'').gsub(/\s$/,'')
+        page_title = page_title.split(" ").map(&:capitalize).join(" ")
+        page_title = page_title.gsub(/ip/i, &:upcase).gsub(/osx/i, &:upcase).gsub(/os/i, &:upcase)
         puts "File title: #{file_title}"
+        puts "Page title: #{page_title}"
         timestamp = Time.now.iso8601.to_s
         puts "Timestamp: "+timestamp
         ip_v4_address = Faker::Internet.ip_v4_address
@@ -56,8 +72,8 @@ def sample_file(core)
         ip_v6_address = Faker::Internet.ip_v6_address 
           mac_address = Faker::Internet.mac_address
         data = %Q^---
-title: \"#{page_title.split(" ").map(&:capitalize).join(" ")}\"
-subtitle: \"#{subtitle.split(" ").map(&:capitalize).join(" ")}\"
+title: \"#{page_title}\"
+subtitle: \"#{subtitle}\"
 layout: research
 ip_v4_address: \"#{ip_v4_address}\"
 date: #{timestamp}

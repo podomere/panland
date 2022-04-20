@@ -32,7 +32,7 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = '<a href="/demo"><span style="color: #007bff">Support Work From Anywhere</span></a>. Instant remote troubleshooting for forward thinking technical teams.'
+				heading = '<a href="/demo" rel="nofollow"><span style="color: #007bff">Support Work From Anywhere</span></a>. Instant remote troubleshooting for forward thinking technical teams.'
         description2 = "Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues <span style='color: #007bff;'>in seconds</span>. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: #007bff;'><strong>2 x free agents</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"

@@ -4,7 +4,7 @@ subtitle: "Heavy Lifting?"
 layout: research
 ip_v4_address: "56.141.165.192"
 date: 2022-04-20T16:00:32+01:00
-draft: true
+draft: false
 ---
 
 # Internet Addressing

@@ -13,16 +13,27 @@
 						</li>
 					</ul>
 				</div>
+				<!--
 				<a href="/blog" ><img src="https://www.tinygraphs.com/labs/isogrids/hexa/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}?theme=bythepool&numcolors=4&size=100&fmt=svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
 				<a href="/blog" ><img src="https://www.tinygraphs.com/labs/isogrids/hexa/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}?theme=duskfalling&numcolors=4&size=100&fmt=svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
 				<a href="/blog" ><img src="https://www.tinygraphs.com/labs/isogrids/hexa/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}?theme=base&numcolors=4&size=100&fmt=svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
 				<a href="/blog" ><img src="https://www.tinygraphs.com/labs/isogrids/hexa/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}?theme=seascape&numcolors=4&size=100&fmt=svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				-->
+				<!-- <a href="/blog" ><img src="https://robohash.org/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}.png" class="rounded mb-3" alt="{{ .Summary }}"></a> -->
+				<a href="/blog" ><img width="100px" src="https://avatars.dicebear.com/api/bottts/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}.svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<a href="/blog" ><img width="100px" src="https://avatars.dicebear.com/api/bottts/{{ with .Params.ip_v6_address }}{{ . }}{{ end }}.svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<!-- <a href="/blog" ><img width="100px" src="https://avatars.dicebear.com/api/big-ears-neutral/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}.svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<a href="/blog" ><img width="100px" src="https://avatars.dicebear.com/api/adventurer-neutral/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}.svg" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<a href="/blog" ><img width="100px" src="https://avatars.dicebear.com/api/pixel-art-neutral/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}.svg" class="rounded mb-3" alt="{{ .Summary }}"></a> -->
+
 				{{ .Content  | safeHTML }}
 
+			<br>
+			<br>
 
 				{{ partial "post-micro-tip.html" .}} 
 
-				<h1>Deep Dive with Targeted Online Training</h1>
+				<h1>Deep Dive with Partner Online Training</h1>
 				<center>
 					<div class="blog-tags mt-3 mb-3">
 						<div class="tag">

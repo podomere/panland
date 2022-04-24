@@ -1,27 +1,27 @@
 ---
 title: "How Can I Check Mac"
-subtitle: "Streamline?"
+subtitle: "Sales Funnel?"
 layout: research
-ip_v4_address: "37.234.141.162"
-date: 2022-04-24T18:31:59+01:00
+ip_v4_address: "123.7.53.77"
+date: 2022-04-24T19:00:25+01:00
 draft: false
 ---
 
 # Internet Addressing
-On the Internet you may get a Public IPv4 address like <code>37.234.141.162</code> or an IPv6 address like <code>2000:3bda:5052:a03e:de2a:cf52:dd68:43c7</code>. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like <code>7c:f0:ec:0f:0a:07</code>, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+On the Internet you might get a Public IPv4 address like <code>123.7.53.77</code> or an IPv6 address like <code>2000:7fe0:835:4974:d6b1:6296:d630:55dd</code>. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like <code>75:c4:1d:3b:20:6b</code>, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 # Accessing the Web
-To get to a web page like https://lowe.io you initially access a DNS server to translate the host portion (lowe) combined with the Top Level Domain (io) of the URL, to an IP address like <code>13.243.117.111</code>. Your computer and browser actually sends its type with all web requests e.g. <br><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A</code>
+To get to a web page like https://jacobi.name you initially access a DNS server to translate the host portion (jacobi) combined with the Top Level Domain (name) of the URL, to an IP address like <code>124.101.140.218</code>. Your computer and browser actually sends its type with all web requests e.g. <br><code>Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16</code>
 
 # Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like <code>192.0.0.77</code> (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For <code>IPv6</code> we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like <code>10.229.4.198</code> (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For <code>IPv6</code> we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
 ## IPv4 (inc. VPN)
 <code>netstat -rn -f inet | grep -i "default|0/1|128.0/1"</code>
 
 <pre><code>
 0/1      172.18.12.193  UGScg  utun3
-default  192.0.0.77    UGScg  en0
+default  10.229.4.198    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</code></pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  192.0.0.77    UGScg  en0
 If you have IPv6 actvive the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre><code>
-default   7a84:24f3:4cae:5c:e3d6:4eb6:dd20:7f6a%en0  UGcg   en0
+default   fe80:dc97:626b:2f30:a929%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre><code>
 ...
-domain_name_server (ip_mult): {196.75.80.102, 49.207.27.232}
+domain_name_server (ip_mult): {186.43.163.222, 149.5.188.89}
 end (none):
 ...</code></pre>
 
@@ -59,17 +59,17 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre><code>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 7c:f0:ec:0f:0a:07
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 75:c4:1d:3b:20:6b
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr d5:07:b8:96:2c:5c
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 33:34:cb:2f:6d:46
 }</code></pre>
 
 # Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
 ## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, <code>10.15.9</code>, <code>11.1.2</code>, or <code>12.3.3</code>, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+No matter what version of OSX/macOS you are on, <code>10.12.3</code>, <code>11.0.8</code>, or <code>12.2.8</code>, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
 ### Scripts
 One very helpful tool on OSX/macOS is <code>sudo wdutil info</code> which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the <code>sysdiagnose</code> tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is <code>sudo wdutil info</code> which gives 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=qXmO5NK0KWc" data-lity><img src="https://i.ytimg.com/vi/qXmO5NK0KWc/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=qXmO5NK0KWc" data-lity>Mac Malware explained: Do Macs need antivirus software?</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
-|<a href="https://www.youtube.com/watch?v=VMbALon9IEQ" data-lity><img src="https://i.ytimg.com/vi/VMbALon9IEQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=VMbALon9IEQ" data-lity>10 things we love about Mavericks</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
-|<a href="https://www.youtube.com/watch?v=khlseBM2rvo" data-lity><img src="https://i.ytimg.com/vi/khlseBM2rvo/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=khlseBM2rvo" data-lity>Essential Mac Keyboard Shortcuts You Ought To Know</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
-|<a href="https://www.youtube.com/watch?v=BfuCWcf34kY" data-lity><img src="https://i.ytimg.com/vi/BfuCWcf34kY/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=BfuCWcf34kY" data-lity>OS X Mavericks Finder Tips</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
-|<a href="https://www.youtube.com/watch?v=rPp9OWjnICQ" data-lity><img src="https://i.ytimg.com/vi/rPp9OWjnICQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=rPp9OWjnICQ" data-lity>Apple launch event post mortem: OS X Mavericks, new Mac Pro, MacBooks</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
+|<a href="https://www.youtube.com/watch?v=-VP2NVv3LHg" data-lity><img src="https://i.ytimg.com/vi/-VP2NVv3LHg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=-VP2NVv3LHg" data-lity>Homebrew Bundle: Set Up a Mac Fast - Hands-on Mac 9</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=QAY5F0B-_kM" data-lity><img src="https://i.ytimg.com/vi/QAY5F0B-_kM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=QAY5F0B-_kM" data-lity>iStat Menus - Best System Monitoring App for macOS</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=YUQpDewATro" data-lity><img src="https://i.ytimg.com/vi/YUQpDewATro/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=YUQpDewATro" data-lity>Aliases, What Are They Good For?</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity><img src="https://i.ytimg.com/vi/7KdhJimuhNw/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity>Securing macOS Big Sur</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity><img src="https://i.ytimg.com/vi/TWzWd_DiaJ0/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity>Mac Activity Monitor - How to Troubleshoot Your Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

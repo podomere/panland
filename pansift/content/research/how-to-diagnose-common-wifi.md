@@ -1,27 +1,27 @@
 ---
 title: "How To DiagnOSe Common Wifi"
-subtitle: "Market Share?"
+subtitle: "Ideate?"
 layout: research
-ip_v4_address: "123.188.227.30"
-date: 2022-04-24T18:32:41+01:00
+ip_v4_address: "253.128.186.100"
+date: 2022-04-24T19:00:33+01:00
 draft: false
 ---
 
 # Internet Addressing
-On the Internet you may get a Public IPv4 address like <code>123.188.227.30</code> or an IPv6 address like <code>2000:6d83:bcbf:361a:9217:27ca:fbad:3add</code>. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like <code>80:7b:c2:09:08:d7</code>, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+On the Internet you might get a Public IPv4 address like <code>253.128.186.100</code> or an IPv6 address like <code>2000:56a7:19c7:e576:63cd:42a7:4529:d49d</code>. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like <code>6c:22:a3:ff:e4:41</code>, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 # Accessing the Web
-To get to a web page like https://macgyver-prosacco.info you initially access a DNS server to translate the host portion (macgyver-prosacco) combined with the Top Level Domain (info) of the URL, to an IP address like <code>51.130.14.218</code>. Your computer and browser actually sends its type with all web requests e.g. <br><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A</code>
+To get to a web page like https://mills.name you initially access a DNS server to translate the host portion (mills) combined with the Top Level Domain (name) of the URL, to an IP address like <code>30.221.98.241</code>. Your computer and browser actually sends its type with all web requests e.g. <br><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A</code>
 
 # Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like <code>192.168.38.143</code> (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For <code>IPv6</code> we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like <code>10.115.24.11</code> (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For <code>IPv6</code> we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
 ## IPv4 (inc. VPN)
 <code>netstat -rn -f inet | grep -i "default|0/1|128.0/1"</code>
 
 <pre><code>
 0/1      172.18.12.193  UGScg  utun3
-default  192.168.38.143    UGScg  en0
+default  10.115.24.11    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</code></pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  192.168.38.143    UGScg  en0
 If you have IPv6 actvive the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre><code>
-default   fe80:4ac:9f55:42e9:4829%en0  UGcg   en0
+default   fe80:87a0:bc42:dccc:411a%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre><code>
 ...
-domain_name_server (ip_mult): {87.223.7.54, 112.180.145.178}
+domain_name_server (ip_mult): {73.49.228.210, 71.29.183.40}
 end (none):
 ...</code></pre>
 
@@ -59,17 +59,17 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre><code>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 80:7b:c2:09:08:d7
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 6c:22:a3:ff:e4:41
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 80:b3:a4:ed:21:65
+  SERVERID (2) Length 10: DUID LL HW 1 Addr ec:55:f5:f3:f8:66
 }</code></pre>
 
 # Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
 ## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, <code>10.13.3</code>, <code>11.0.8</code>, or <code>12.1.2</code>, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+No matter what version of OSX/macOS you are on, <code>10.14.7</code>, <code>11.6.2</code>, or <code>12.0.7</code>, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
 ### Scripts
 One very helpful tool on OSX/macOS is <code>sudo wdutil info</code> which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the <code>sysdiagnose</code> tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is <code>sudo wdutil info</code> which gives 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=QBiBPbME5tY" data-lity><img src="https://i.ytimg.com/vi/QBiBPbME5tY/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=QBiBPbME5tY" data-lity>MCS Table and How You Can Use it</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=qRs_5K4EgnM" data-lity><img src="https://i.ytimg.com/vi/qRs_5K4EgnM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=qRs_5K4EgnM" data-lity>802.11ax Lessons Learned   Wes Purvis   WLPC Phoenix 2020</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=TdF6SGfujH4" data-lity><img src="https://i.ytimg.com/vi/TdF6SGfujH4/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=TdF6SGfujH4" data-lity>Do Not Place APs Above The Ceiling</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=V05dSfoopLE" data-lity><img src="https://i.ytimg.com/vi/V05dSfoopLE/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=V05dSfoopLE" data-lity>Know Your PHY</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=vtfnlgTj_-A" data-lity><img src="https://i.ytimg.com/vi/vtfnlgTj_-A/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=vtfnlgTj_-A" data-lity>Indoor Location Detection using Wifi   Marko Tisler   WLPC EU Budapest 2016</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=kofi_P9oLNQ" data-lity><img src="https://i.ytimg.com/vi/kofi_P9oLNQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=kofi_P9oLNQ" data-lity>Understanding dB Math</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
 |<a href="https://www.youtube.com/watch?v=8GQaWCjS-vk" data-lity><img src="https://i.ytimg.com/vi/8GQaWCjS-vk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=8GQaWCjS-vk" data-lity>WLAN Analysis Tricks   Peter Mackenzie   WLPC Phoenix 2020</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=gjdHpZWxujA" data-lity><img src="https://i.ytimg.com/vi/gjdHpZWxujA/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=gjdHpZWxujA" data-lity>OFDMA – The Secret Sauce of 802.11ax   David Coleman   WLPC Phoenix 2019</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=TdF6SGfujH4" data-lity><img src="https://i.ytimg.com/vi/TdF6SGfujH4/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=TdF6SGfujH4" data-lity>Do Not Place APs Above The Ceiling</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

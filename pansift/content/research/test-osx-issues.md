@@ -1,27 +1,27 @@
 ---
 title: "Test OSX Issues"
-subtitle: "Value Proposition?"
+subtitle: "Immersive Experience?"
 layout: research
-ip_v4_address: "59.121.214.96"
-date: 2022-04-24T18:31:58+01:00
+ip_v4_address: "50.162.220.70"
+date: 2022-04-24T19:00:24+01:00
 draft: false
 ---
 
 # Internet Addressing
-On the Internet you may have a Public IPv4 address like <code>59.121.214.96</code> or an IPv6 address like <code>2000:becc:e331:ed7:4543:f909:b43f:285f</code>. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like <code>5e:d2:70:45:a4:ba</code>, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+On the Internet you might have a Public IPv4 address like <code>50.162.220.70</code> or an IPv6 address like <code>2000:c4ce:bfdd:93d4:2a7c:e760:2e5e:701a</code>. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like <code>91:a8:b6:b8:87:cf</code>, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 # Accessing the Web
-To get to a web page like https://white.biz you initially access a DNS server to translate the host portion (white) combined with the Top Level Domain (biz) of the URL, to an IP address like <code>131.250.67.124</code>. Your computer and browser actually sends its type with all web requests e.g. <br><code>Mozilla/5.0 (Windows NT x.y; Win64; x64; rv:10.0) Gecko/20100101 Firefox/10.0</code>
+To get to a web page like https://donnelly.net you initially access a DNS server to translate the host portion (donnelly) combined with the Top Level Domain (net) of the URL, to an IP address like <code>174.195.75.217</code>. Your computer and browser actually sends its type with all web requests e.g. <br><code>Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko</code>
 
 # Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like <code>192.168.130.52</code> (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For <code>IPv6</code> we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like <code>192.168.33.63</code> (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For <code>IPv6</code> we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
 ## IPv4 (inc. VPN)
 <code>netstat -rn -f inet | grep -i "default|0/1|128.0/1"</code>
 
 <pre><code>
 0/1      172.18.12.193  UGScg  utun3
-default  192.168.130.52    UGScg  en0
+default  192.168.33.63    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</code></pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  192.168.130.52    UGScg  en0
 If you have IPv6 actvive the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre><code>
-default   fe80:b6d0:fb77:4002:7ecf%en0  UGcg   en0
+default   fe80:b0cd:40d5:1cc6:b8ce%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre><code>
 ...
-domain_name_server (ip_mult): {60.9.152.235, 164.237.72.145}
+domain_name_server (ip_mult): {108.143.235.158, 162.166.127.240}
 end (none):
 ...</code></pre>
 
@@ -59,17 +59,17 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre><code>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 5e:d2:70:45:a4:ba
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 91:a8:b6:b8:87:cf
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 54:16:14:58:c6:d4
+  SERVERID (2) Length 10: DUID LL HW 1 Addr fc:93:16:ad:d8:09
 }</code></pre>
 
 # Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
 ## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, <code>10.12.2</code>, <code>11.3.4</code>, or <code>12.2.2</code>, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+No matter what version of OSX/macOS you are on, <code>10.14.2</code>, <code>11.3.1</code>, or <code>12.0.1</code>, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
 ### Scripts
 One very helpful tool on OSX/macOS is <code>sudo wdutil info</code> which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the <code>sysdiagnose</code> tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is <code>sudo wdutil info</code> which gives 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=UTdOiXV_kEA" data-lity><img src="https://i.ytimg.com/vi/UTdOiXV_kEA/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=UTdOiXV_kEA" data-lity>How to run Windows on any Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
-|<a href="https://www.youtube.com/watch?v=BfuCWcf34kY" data-lity><img src="https://i.ytimg.com/vi/BfuCWcf34kY/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=BfuCWcf34kY" data-lity>OS X Mavericks Finder Tips</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
-|<a href="https://www.youtube.com/watch?v=pZTOu-AO1V0" data-lity><img src="https://i.ytimg.com/vi/pZTOu-AO1V0/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=pZTOu-AO1V0" data-lity>How to take a screenshot on a Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
-|<a href="https://www.youtube.com/watch?v=xfGKZ1-2Duk" data-lity><img src="https://i.ytimg.com/vi/xfGKZ1-2Duk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=xfGKZ1-2Duk" data-lity>Mac OS X Yosemite tips &amp; tricks</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
-|<a href="https://www.youtube.com/watch?v=bISNJegh_PY" data-lity><img src="https://i.ytimg.com/vi/bISNJegh_PY/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=bISNJegh_PY" data-lity>Best new features in iOS 8 &amp; OS X Yosemite</a>|<a target="_blank" href="https://www.youtube.com/channel/UCT7WejN8j_nGiSfwK8TnBcw" >Macworld UK</a>|
+|<a href="https://www.youtube.com/watch?v=dmRGvZGCsZI" data-lity><img src="https://i.ytimg.com/vi/dmRGvZGCsZI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=dmRGvZGCsZI" data-lity>Finder Tips - Resizing, Slideshows, Customization, and more!</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity><img src="https://i.ytimg.com/vi/P-t0_wQ1wWg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity>Using FileVault to Secure Your Data - Hands-on Mac 10</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=2U9FiIelMQI" data-lity><img src="https://i.ytimg.com/vi/2U9FiIelMQI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=2U9FiIelMQI" data-lity>Syncthing - Free, Open-Source, Continuous File Synchronization</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=JMKi6o9kaZI" data-lity><img src="https://i.ytimg.com/vi/JMKi6o9kaZI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=JMKi6o9kaZI" data-lity>macOS Big Sur - What&#39;s New in Apple macOS 11</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=mJn_5U6qOwQ" data-lity><img src="https://i.ytimg.com/vi/mJn_5U6qOwQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=mJn_5U6qOwQ" data-lity>Organizing Windows (Magnet Tiles &amp; Workspaces)</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

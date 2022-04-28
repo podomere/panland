@@ -17,3 +17,4 @@
 
 # Don't do scripts directory
 /pansift/scripts/
+.obsidian

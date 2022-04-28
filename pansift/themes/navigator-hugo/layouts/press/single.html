@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<section class="blog-single section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+				<h1>{{ .Title }}</h1>
+				<div class="post-meta mb-3">
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							{{ .Params.subtitle }}
+						</li>
+					</ul>
+				</div>
+				<!-- <a href="/blog" ><img width="100px" src="https://avatars.dicebear.com/api/bottts/{{ with .Params.ip_v4_address }}{{ . }}{{ end }}.svg" class="rounded mb-3" alt="{{ .Summary }}"></a> -->
+
+				{{ .Content  | safeHTML }}
+
+			<br>
+			<br>
+
+				{{ partial "post-micro-tip.html" .}} 
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ partial "footer.html" . }}

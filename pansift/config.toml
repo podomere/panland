@@ -70,7 +70,7 @@ unsafe = true
     [params.design]
         enable  = true
         title   = "Design"
-        subtitle = "A default multi-tenant architecture, with modular inspectable client scripts, and outbound only connections."
+        subtitle = "A default multi-tenant architecture, with inspectable client scripts, and outbound only connections."
         sixtitle = "Multitenant Boundaries <br>Enforced Front / Back"
 				six = '<a href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a> and <a href="https://www.influxdata.com/time-series-database/">InfluxDB</a> are used for <strong>fail-safe</strong> data ingestion, bucket separation, and storage (with optional <a href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">SOC2 Type II cloud</a> vs. OSS).'
         threetitle = "30 Day Data Retention"

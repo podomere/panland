@@ -16,7 +16,7 @@ unsafe = true
 
 # Site Params + Random Comment
 [params]
-	description = "Support Work From Anywhere with instant remote troubleshooting for you, your team, or your family."
+	description = "Support Work From Anywhere with instant remote troubleshooting for you, your team, and your family."
   og_image = "https://pansift.com/images/pansift_social_v38.jpg"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -32,7 +32,7 @@ unsafe = true
     # Hero Area Section
     [params.hero]
         enable  = true
-				heading = '<a href="/demo/" rel="nofollow"><span style="color: #007bff">Support Work From Anywhere</span></a> with instant remote troubleshooting for you, your team, or your family.'
+				heading = '<a href="/demo/" rel="nofollow"><span style="color: #007bff">Support Work From Anywhere</span></a> with instant remote troubleshooting for you, your team, and your family.'
         description2 = "Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues in seconds. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: #007bff;'><strong>2 x free agents</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"

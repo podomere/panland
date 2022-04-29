@@ -33,7 +33,7 @@ unsafe = true
     [params.hero]
         enable  = true
 				heading = '<a href="/demo/" rel="nofollow"><span style="color: #007bff">Support Work From Anywhere</span></a> with instant remote troubleshooting for you, your team, and your family.'
-        description2 = "Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues in seconds. Keep an eye on user experience + go from WTF to WFA 😎 with <u><a href='/pricing' style='color: #007bff;'><strong>2 x free agents</strong></a></u>." 
+        description2 = "Start with <u><a href='https://app.pansift.com/demo/logout_demo' style='color: #007bff;'><strong>2 x free agents</strong></a></u> and no credit card. Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues. Go from WTF to WFA 😎 in seconds." 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -45,7 +45,7 @@ unsafe = true
         enable  = true
         title   = "Control your <span style = 'color: #fff;'>time, </span>eliminate <span style = 'color: #fff;'>toil</span>, and free up your <span style = 'color: #fff;'>focus</span> !"
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
-        proof = "Gartner forecasts that <strong>~53%</strong> of the UK & US workforce will <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>work remotely during 2022</a></u>, with <strong>31%</strong> globally."
+        proof = "Gartner forecasts that <strong>~53%</strong> of the UK & US workforce will <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>work remotely during 2022</a></u>."
     
 		[params.aboutsm2]
         enable  = true
@@ -67,28 +67,28 @@ unsafe = true
         two = "There are critical parts of your systems/apps that no external entities should have access to. Tripped honeytokens reveal not just the presence of but the intent of attackers."
         three = "By using honeytokens per pull request (on a deploy branch), you get <span style='font-size: 1.1em;' class='badge badge-dark mb-2'>high fidelity</span>, and <span style='font-size: 1.1em;' class='badge badge-dark'>high cardinality</span> breach signal."
 
-    [params.architecture]
+    [params.design]
         enable  = true
-        title   = "Design / Architecture"
+        title   = "Design"
         subtitle = "A default multi-tenant architecture, with modular inspectable client scripts, and outbound only connections."
-        onetitle = "Multitenant Boundaries <br>Enforced Front / Back"
-					one = 'Accelerated by <a href="https://jumpstartrails.com/">JumpstartPro</a>, <a href="https://github.com/heartcombo/devise">Devise</a>, and <a href="https://github.com/ErwinM/acts_as_tenant">ActsAsTenant</a>, access boundaries are enforced on the front end. <a href="">Telegraf</a> and <a href="">InfluxDB</a> are used for <strong>fail-safe</strong> data ingestion, bucket separation, and storage on the back end (with optional <a href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">Influx Cloud SOC2 Type II certified data stores</a> vs. OSS).'
-        twotitle = "Max 30 Day Agent Data Retention"
-        two = "<strong>All agent specific data</strong> is aged out and deleted after <strong>30 days</strong>. Only non-identifiable metrics and aggregate data is used longer term to improve the service and iterate on new features and services."
-        threetitle = "MFA (Multi-factor Authentication)"
-        three = 'Use <a href="https://en.wikipedia.org/wiki/Google_Authenticator">Google Authenticator</a>, <a href="https://authy.com/">Authy</a>, or any <a href="https://en.wikipedia.org/wiki/Time-based_one-time_password">TOTP (Time-based One Time Password)</a> generator to secure your account but remember to note your backup codes!'
-        fourtitle = "Least Access Principle / BCP NetSec Patterns"
-        four = "Agents can only talk <strong>outbound (push)</strong> from your machine. There is <strong>no inbound</strong> communication possible and <strong>no remote access</strong> tooling or functionality. There are <strong>no listening ports</strong> on the agent. It only talks outbound via <strong>DNS and HTTPS TCP 443</strong> to <strong>write</strong> data to (<strong>not read</strong> data from) buckets."
-        sixtitle = "Apple Signed and Scanned <br> + OSS Modular Scripting"
-        six = 'The <strong>agent</strong> is an <a href="https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution">Apple notarized/signed</a> binary which comprises a customized fork of the modular <a href="https://github.com/matryer/xbar">BitBar (now Xbar)</a> agent. It contains <a href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a> and leverages OSS <a href="https://github.com/pansift/p3">inspectable scripts</a> hosted on <a href="https://github.com/pansift/p3">Github</a>.'
-        fivetitle = "Apple M1 Support"
-        five = "The <strong>agent</strong> is cross compiled for both Intel and Apple Silicon (Arm-based) architectures."
+        sixtitle = "Multitenant Boundaries <br>Enforced Front / Back"
+				six = '<a href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a> and <a href="https://www.influxdata.com/time-series-database/">InfluxDB</a> are used for <strong>fail-safe</strong> data ingestion, bucket separation, and storage (with optional <a href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">SOC2 Type II cloud</a> vs. OSS).'
+        threetitle = "30 Day Data Retention"
+        three = "<strong>All agent specific data</strong> is aged out and deleted after <strong>30 days</strong>. Only non-identifiable metrics and aggregate data is used longer term to improve the service."
+        fourtitle = "MFA (Multi-factor Authentication)"
+        four = 'Use <a href="https://en.wikipedia.org/wiki/Google_Authenticator">Google Authenticator</a>, <a href="https://authy.com/">Authy</a>, or any <a href="https://en.wikipedia.org/wiki/Time-based_one-time_password">TOTP (Time-based One Time Password)</a> generator to secure your account but remember to note your backup codes!'
+        fivetitle = "Least Access Principle / BCP NetSec Patterns"
+        five = "Agents can only talk <strong>outbound (push)</strong> from your machine. There is <strong>no inbound</strong> communication possible and <strong>no remote access</strong> tooling or functionality. There are <strong>no listening ports</strong> on the agent. It only talks outbound via <strong>DNS and HTTPS TCP 443</strong> to <strong>write</strong> data to (<strong>not read</strong> data from) buckets."
+        onetitle = "Apple Signed + Security Scanned"
+        one = 'The <strong>agent</strong> is an <a href="https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution">Apple notarized/signed</a> binary which comprises a customized fork of the modular <a href="https://github.com/matryer/xbar">BitBar (now Xbar)</a> agent with OSS <a href="https://github.com/pansift/p3">inspectable scripts</a>.'
+        twotitle = "Apple M1 Support"
+        two = "The <strong>agent</strong> is cross compiled for both Intel and Apple Silicon (Arm-based) architectures."
 
     [params.benefits]
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Fearless Support"
-        subtitle = "No longer is it just <strong>sales demos</strong>, <strong>customer success calls</strong>, <strong>interviews</strong> and <strong>onboarding</strong> that's performed remotely. Increasingly every aspect of modern business operations are distributed. Ensure your team (or tribe) stays connected and productive."
+        subtitle = " Modern business operations are distributed.<br>Ensure your team stays connected and productive for <strong>sales demos</strong>, <strong>customer success</strong>, <strong>contact centre (CX)</strong>, <strong>interviews</strong> and more..."
         punchline = "Peace of mind in an era of remote work and non-managed networks!"
         onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
         one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."
@@ -99,7 +99,7 @@ unsafe = true
         fourtitle = "Weeks Of Offline Buffering"
         four = "Even when <strong>disconnected</strong>, metrics are buffered and uploaded when reconnected or on hotspots."
         fivetitle = "Added Context From Users"
-        five = "Elective <strong>user annotations</strong> mean more context during any disruptions. The missing link not in any logs!"
+        five = "<strong>User generated</strong> notes mean more context during any disruptions. The missing link not in any logs!"
         sixtitle = "Super Low Bandwdith"
         six = "Metrics only use a few <strong>kilobits</strong> of bandwidth every 30-60 seconds and almost no CPU."
         seventitle = "Unsurpassed Granularity"
@@ -213,7 +213,7 @@ unsafe = true
         weight  = 1
     [[menu.nav]]
         name    = "Design"
-        url     = "/architecture/"
+        url     = "/design/"
         weight  = 2
     [[menu.nav]]
         name    = "Pricing"

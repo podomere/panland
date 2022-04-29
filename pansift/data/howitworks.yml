@@ -1,8 +1,16 @@
 enable    : true
 topTitle   : Troubleshooting Tech
 title     : How PanSift Works
-subtitle  : PanSift installs as a lightweight agent on a laptop. You then claim it in the web app and can troubleshoot remotely!
+subtitle  : Zero Touch Provisioning (ZTP) whether Local or Remote
 tabItem   :
+  - id        : install
+    title     : Install An Agent
+    heading   : Claim your data bucket ID.
+    content   : >
+      <strong>Once installed and claimed </strong> PanSift automatically watches and troubleshoots your specific environment to generate insights on your agents so you or your team can rapidly diagnose issues remotely.
+    image     : images/howitworks/cogs.jpg
+    icon      : fas fa-user-shield
+
   - id        : continuous
     title     : Continuous Testing
     heading   : Embrace the remote-first wireless world.
@@ -11,26 +19,10 @@ tabItem   :
     image     : images/howitworks/cloud.jpg
     icon      : fas fa-wifi
 
-  - id        : token
-    title     : Under the Hood
-    heading   : The best Time Series Database (TSDB)... 
-    content   : >
-      By using well known and trusted building blocks (such as <a href="https://www.influxdata.com/products/influxdb/" target="_blank">InfluxDB</a> and <a href="https://www.influxdata.com/time-series-platform/telegraf/" target="_blank">Telegraf</a>) we can develop and roll-out new features rapidly, and with confidence, across the rest of our platform.
-    icon      : fas fa-database
-
-  - id        : install
-    title     : Install An Agent
-    heading   : Then claim your data bucket.
-    content   : >
-      <strong>Once installed and claimed </strong> PanSift automatically watches and troubleshoots your specific environment to generate insights on your agents so you or your team can rapidly diagnose issues remotely.
-    image     : images/howitworks/cogs.jpg
-    icon      : fas fa-user-shield
-
-
   - id        : claim
     title     : Automatic Troubleshooting
     heading   : Sane defaults + custom targets! 
     content   : >
-      <strong>PanSift</strong> empowers you and your IT support team to rapidly diagnose a whole host of issues remotely (and even retrospectively). Whether for family or work, find peace of mind and reduce everyone's stress by embracing the type of monitoring you do for your servers. Control the more complex edge where mobility and remote work mean unmanaged networks and more variability!  
+      <strong>PanSift</strong> empowers you and your IT support team to rapidly diagnose a whole host of issues remotely (and even retrospectively). Whether for family or work, find peace of mind and reduce everyone's stress by embracing the type of monitoring you do for your servers. Control the more intelligent but complex edge where mobility and remote work often mean unmanaged networks and greater variability!  
     icon      : fas fa-robot
 

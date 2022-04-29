@@ -1311,27 +1311,27 @@ a:focus, a:hover {
   transition: all 0.3s ease 0s;
 }
 /*=================================================================
-  Architecture Section
+  design Section
 ==================================================================*/
 @media (max-width: 480px) {
-  .architecture .p-0 {
+  .design .p-0 {
     padding: 0 15px !important;
   }
 }
 
 @media (max-width: 768px) {
-  .architecture .p-0 {
+  .design .p-0 {
     padding: 0 15px !important;
   }
 }
 
 @media (max-width: 400px) {
-  .architecture .p-0 {
+  .design .p-0 {
     padding: 0 15px !important;
   }
 }
 
-.architecture .service-item {
+.design .service-item {
   background: #fff;
   /* border: 1px solid #eee; */
   padding: 50px 20px;
@@ -1341,7 +1341,7 @@ a:focus, a:hover {
 	color: #333;
 }
 
-.architecture .service-item .count {
+.design .service-item .count {
   font-size: 80px;
   position: absolute;
   top: 0;
@@ -1351,7 +1351,7 @@ a:focus, a:hover {
   font-weight: 700;
 }
 
-.architecture .service-item i {
+.design .service-item i {
   font-size: 30px;
   display: inline-block;
   border-radius: 30px;
@@ -1364,11 +1364,11 @@ a:focus, a:hover {
   transition: all 0.3s ease 0s;
 }
 
-.architecture p { 
+.design p { 
 	color: #333 !important;
 
 }
-.architecture .title { 
+.design .title { 
 	color: #333 !important;
 
 }
@@ -1376,7 +1376,7 @@ a:focus, a:hover {
 	color: #333 !important;
 }
 
-.gradient, .title .border, .architecture .service-item i {
+.gradient, .title .border, .design .service-item i {
   background-image: linear-gradient(100deg, #3498db, #2980b9);
 }
 .service-list .block {

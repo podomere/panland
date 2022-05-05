@@ -62,10 +62,15 @@ unsafe = true
 
     [params.offer]
         enable  = true
-        title   = "<span style = 'color: #fff;'>PanSift your problems away!</span>"
+        title   = "<span style = 'color: #fff;'>And PanSift your Problems Away!</span>"
         subtitle = "Life's too short to fumble around in the dark! Light up your remote workers data path and performance. Claim your time back!"
         description = ""
  
+    [params.levelone]
+        enable  = true
+        title   = "<span style = 'color: #fff;'>Cut Out Hours of Expensive Interactions</span>"
+        subtitle = "How much does a level 1 helpdesk, level 2 operator, or level 3 engineer cost per hour?"
+
     [params.deception]
         topTitle =  "Trust but Verify"
         enable  = true

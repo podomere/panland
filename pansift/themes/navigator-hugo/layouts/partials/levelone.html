@@ -1,0 +1,18 @@
+{{ if .Site.Params.levelone.enable }}
+{{ "<!-- Start levelone -->" | safeHTML }}
+<section class="about-2 section" id="levelone" style="padding: 20px 0 !important;background-color: #333;color: #bdc3c7;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 text-center">
+					{{ with .Site.Params.levelone.title }}
+					<h1 class="d-inline-block">{{ . | safeHTML }}</h1>
+					{{ end }}
+					{{ with .Site.Params.levelone.subtitle }}
+					<h5 class="mb-3">{{ . | safeHTML }}</h5>
+					{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+{{ "<!-- End About section -->" | safeHTML }}
+{{ end }}

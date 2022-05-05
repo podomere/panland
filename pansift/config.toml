@@ -6,13 +6,22 @@ summaryLength = 37
 enableGitInfo = true
 # buildDrafts = false
 
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+	# smartypants = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
 [sitemap]
   changefreq = "daily"
   filename = "sitemap.xml"
   priority = 0
 
-[markup.goldmark.renderer]
-unsafe = true
+[security.funcs]
+	getenv = [ "^HUGO_", "^WC_","^BRANCH" ]
 
 # Site Params + Random Comment
 [params]
@@ -268,6 +277,3 @@ unsafe = true
         url     = "/research/"
         weight  = 2
 
-[blackfriday]
-  plainIDAnchors = true
-  hrefTargetBlank = true

@@ -66,97 +66,97 @@ It's up to whomever owns the assets or pages you've requested as to whether they
 We need to check you are represented by a globally routable IPv6 unicast address (rather than just a **non-routable** IPv6 link local address).
 
 ### IPv6 Link Local and Multicast
-<code>fe80::/10</code> are link-local addresses and <code>ff00::/8</code> are multicast addresses. Your IPv6 default gateway will likely be an <code>fe80::/10</code> address but alternatively may be a global address.
+```fe80::/10``` are link-local addresses and ```ff00::/8``` are multicast addresses. Your IPv6 default gateway will likely be an ```fe80::/10``` address but alternatively may be a global address.
 
 ### What to do with no IPv6 connectivity?
-You can rapidly check IPv6 from the outside -> in by visiting [IPv6-Test](https://ipv6-test.com/) as mentioned previously, or you could simply send some [ICMPv6](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6) packets to Google's Public Primary DNS server <code>ping -6 2001:4860:4860::8888</code> . If either of those steps fail you then need to troubleshoot (partition your failure domain) and go step by step to find out what's wrong...
+You can rapidly check IPv6 from the outside -> in by visiting [IPv6-Test](https://ipv6-test.com/) as mentioned previously, or you could simply send some [ICMPv6](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6) packets to Google's Public Primary DNS server ```ping -6 2001:4860:4860::8888``` . If either of those steps fail you then need to troubleshoot (partition your failure domain) and go step by step to find out what's wrong...
 
-#### IPv6 Example
-We can look for the presence of IPv6 addresses on a specific interface but let's kill two birds with one stone and see if you have a default route in your local IPv6 route table (macOS/Linux):
+#### IPv6 Example (inc. VPN)
+We can look for the presence of IPv6 addresses on a specific interface but let's kill two birds with one stone and see if you have a default route in your local IPv6 route table (macOS/Linux) but let's also see if there's a VPN running with a better match prefix 😎 :
 
-<code>netstat -rn -f inet6 | grep -a1 -i default | column -t</code>
+```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 The above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. We're also assuming you don't have any fancy tunnels or VPNs set up for now! 
 
-<pre><code>
+<pre>
 Destination  Gateway                        Flags  Netif  Expire
 default      fe80::5a23:8cff:fe1a:5f21%en0  UGcg   en0
 default      fe80::%utun0                   UGcIg  utun0
 default      fe80::%utun1                   UGcIg  utun1
 default      fe80::%utun2                   UGcIg  utun2
-::1          ::1                            UHL    lo0</code></pre>
+::1          ::1                            UHL    lo0</pre>
 
 Depending upon your flavour of Linux you might use "_wlan0_ " as the interface or the following command: 
 
-<code>ip -6 route | grep -i default</code>
+```ip -6 route | egrep -i "default|2000::/3"```
 
-<pre><code>default via 2a03:b0c0:2:d0::1 dev eth0 proto static metric 1024 pref medium</code></pre>
+<pre>default via 2a03:b0c0:2:d0::1 dev eth0 proto static metric 1024 pref medium</pre>
 
 Next you might check if you can send data to the relevant IPv6 default gateway (using IPv6 of course!).
 
-<code>ping6 fe80::5a23:8cff:fe1a:5f21%en0</code> 
+```ping6 fe80::5a23:8cff:fe1a:5f21%en0``` 
 
 **Note:** Notice that the IPv6 default gateway also specifies the interface "_en0_ " too (which is different from IPv4 default gateways). If you manage to get responses, let's see if we can then talk to your configured IPv6 DNS servers.
 
 **Note:** You could just ask for the record immediately from the IPv6 DNS server and then go from there, but let's verify our settings first.
 
 #### IPv6 DNS
-You can also see which DNS servers are configured via <code>cat /etc/resolv.conf</code> or also <code>scutil --dns</code> on macOS.
+You can also see which DNS servers are configured via ```cat /etc/resolv.conf``` or also ```scutil --dns``` on macOS.
 
 Additionally, you can see if DHCPv4 or DHCPv6 have assigned IPv6 DNS servers as per the following where "_en0_ " is the interface name in question:
 
-<code>ipconfig getpacket en0</code>
+```ipconfig getpacket en0```
 
-<pre><code>
+<pre>
 ...
 domain_name_server (ip_mult): {192.168.0.1, 192.168.0.2}
 end (none):
-...</code></pre>
+...</pre>
 
 So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but...
 
-<code>ipconfig getv6packet en0</code>
+```ipconfig getv6packet en0```
 
-<pre><code>
+<pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
   CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 50:ed:3c:2f:46:04
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
   SERVERID (2) Length 10: DUID LL HW 1 Addr 58:23:8c:1a:5f:21
-}</code></pre>
+}</pre>
 
 #### How do I ping IPv6 DNS server?
 We are indeed getting IPv6 DNS servers from the DHCPv6 reply. Next we will check if we can send ICMPv6 requests to your IPv6 DNS server addresses, and then then try to ask your IPv6 configured DNS server for a record.
 
-<code>ping6 2606:4700:4700::1111</code>
+```ping6 2606:4700:4700::1111```
 
-Once we've confirmed a positive response from the above we can use a common tool called <code>dig</code> to make test DNS requests. We can specify which IP protocol and query we would like to make. 
+Once we've confirmed a positive response from the above we can use a common tool called ```dig``` to make test DNS requests. We can specify which IP protocol and query we would like to make. 
 
-**Note:**  <code>dig</code> is available on Linux via <code>bind-utils</code> and/or <code>dns-utils</code>.
+**Note:**  ```dig``` is available on Linux via ```bind-utils``` and/or ```dns-utils```.
 
-Making a test IPv6 query with <code>dig</code> might mean asking an IPv4 server for an IPv6 resource <code>dig @1.1.1.1 AAAA pansift.com</code> but what we really want here is to use the IPv6 protocol for the message transport i.e. ask an IPv6 server, using IPv6, for an IPv6 or IPv4 resource record:
+Making a test IPv6 query with ```dig``` might mean asking an IPv4 server for an IPv6 resource ```dig @1.1.1.1 AAAA pansift.com``` but what we really want here is to use the IPv6 protocol for the message transport i.e. ask an IPv6 server, using IPv6, for an IPv6 or IPv4 resource record:
 
-<code>dig -6 @2606:4700:4700::1111 AAAA pansift.com</code>
+```dig -6 @2606:4700:4700::1111 AAAA pansift.com```
 
 You can try some different permutations for yourself but you should get a positive response in the _answer_ section much like the following:
 
-<pre><code>
+<pre>
 ...
 ;; ANSWER SECTION:
 pansift.com.		300	IN	AAAA	2606:4700:3033::6815:6023
 pansift.com.		300	IN	AAAA	2606:4700:3032::ac43:ac41
-...</code></pre>
+...</pre>
 
 Healthy responses are generally returned in less than 20ms. Good enough responses are often between 20-150ms but anything consistently higher means it might be time to configure and use another DNS server. See the section towards the end on differnet public IPv6 DNS servers.
 
-At this point you should be confident you're fully connected on the IPv6 Internet and can check your address via [IPv6-Test](https://ipv6-test.com/) , or surf to a known IPv6 enabled website using a Chrome Extension like [IPFoo](https://github.com/pmarks-net/ipvfoo). You can also check on the command line with `cURL` to explicitly see the HTTP status code which should be `200` (via the IPv6 switch <code>-6</code>). Try a few websites yourself to see if they have an IPv6 presence. 
+At this point you should be confident you're fully connected on the IPv6 Internet and can check your address via [IPv6-Test](https://ipv6-test.com/) , or surf to a known IPv6 enabled website using a Chrome Extension like [IPFoo](https://github.com/pmarks-net/ipvfoo). You can also check on the command line with `cURL` to explicitly see the HTTP status code which should be `200` (via the IPv6 switch ```-6```). Try a few websites yourself to see if they have an IPv6 presence. 
 
-<code>curl -6 -s -L -o /dev/null -w "%{http_code}\n" https://pansift.com</code>
+```curl -6 -s -L -o /dev/null -w "%{http_code}\n" https://pansift.com```
 
 ...should result in...
 
-<pre><code>200</code></pre>
+<pre>200</pre>
 
 ## Monitor IPv6 Traffic
 The above is all essentially **toil** i.e. undifferentiated heavy lifting. It requires you to manually get a command line on the problematic host (or try to get the user to find the terminal and type commands!). It doesn't help you spot intermittent issues or historical problems! 
@@ -173,7 +173,7 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
 
 | Recommendations |
 | :----    |
-| **1.** By disabling and re-enabling a Wi-Fi interface or by disconnecting and reconnecting an ethernet cable, it forces your computer to re-ask for settings from the local router including DHCP (or to re-initialize addresses via [SLAAC](https://support.apple.com/en-gb/guide/security/seccb625dcd9/web)). The previous <code>getpacket</code> commands can be used for DHCP only.      |
+| **1.** By disabling and re-enabling a Wi-Fi interface or by disconnecting and reconnecting an ethernet cable, it forces your computer to re-ask for settings from the local router including DHCP (or to re-initialize addresses via [SLAAC](https://support.apple.com/en-gb/guide/security/seccb625dcd9/web)). The previous ```getpacket``` commands can be used for DHCP only.      |
 | **2.** Log in to the local router and check that it is getting an IPv6 WAN/Internet address. Check it is configured to hand out DNS settings via DHCP on the LAN (which should include IPv6 DNS server settings) though the router may offer its own address as a DNS cache/relay. You could also configure the public ones listed below.     |
 | **3.** Reboot your local router/modem and check it has no warnings or errors in its logs.     |
 |  **4.** Contact the nominated ISP support service to perform deeper health checks on your service, WAN connection, and account. |
@@ -188,12 +188,12 @@ As noted previously, ensure you know whether or not you are supposed to have IPv
 This is an **extreme** option and it is not recommended unless there is no other choice or solution found. You can disable IPv6 via the command line or via the GUI in macOS or Linux. 
 
 ##### macOS Disable IPv6
-<code>networksetup -setv6off Ethernet</code><br>
-<code>networksetup -setv6off Wi-Fi</code>
+```networksetup -setv6off Ethernet```<br>
+```networksetup -setv6off Wi-Fi```
 
 ##### macOS Enable IPv6
-<code>networksetup -setv6automatic Wi-Fi</code><br>
-<code>networksetup -setv6automatic Ethernet</code>
+```networksetup -setv6automatic Wi-Fi```<br>
+```networksetup -setv6automatic Ethernet```
 
 ##### Linux Disable IPv6
 Check your specific flavour but most are alike for ["linux flavours"](https://www.google.com/search?q=linux+disable+ipv6).
@@ -204,23 +204,23 @@ This is definitely not recommended as it may be the only type of connectivity yo
 ## Alternate Public IPv6 DNS
 
 ### Google DNS IPv6
--   <code>2001:4860:4860::8888</code>
--   <code>2001:4860:4860::8844</code>
+-   ```2001:4860:4860::8888```
+-   ```2001:4860:4860::8844```
 <br><br>
 
 [More info...](https://developers.google.com/speed/public-dns/docs/using)
 
 ### Cloudflare DNS IPv6
 
--   <code>2606:4700:4700::1111</code>
--   <code>2606:4700:4700::1001</code>
+-   ```2606:4700:4700::1111```
+-   ```2606:4700:4700::1001```
 <br><br>
 
 [More info...](https://www.cloudflare.com/en-gb/learning/dns/dns-records/dns-aaaa-record/)
 
 ### Quad9 DNS IPv6
--   <code>2620:fe::fe</code>
--   <code>2620:fe::9</code>
+-   ```2620:fe::fe```
+-   ```2620:fe::9```
 <br><br>
 
 [More Quad9 info as some addresses offer "secured" and "insecure" services...](https://www.quad9.net/support/faq/#ipv6_support)

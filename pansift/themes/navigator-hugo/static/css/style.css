@@ -606,7 +606,8 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  padding: 120px 0 120px 0;
+  padding: 60px 0 60px 0;
+  /* padding: 120px 0 120px 0; */
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,7 +619,8 @@ a:focus, a:hover {
       -ms-flex-align: center;
           align-items: center;
   /* background: #222222; */
-  background: #ffffff; 
+  /* background: #ffffff; */
+	background: rgba(0,0,0,0);
 }
 
 @media (max-width: 480px) {
@@ -639,7 +641,8 @@ a:focus, a:hover {
     padding: 0;
   }
   .navbar-brand {
-    padding: 0 0 10px;
+    padding: 0 0 0px;
+    /* padding: 0 0 10px; */
   }
 }
 

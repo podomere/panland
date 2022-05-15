@@ -5,7 +5,7 @@
     <div style="padding: 0 !important;" class="col-md-12">
       <nav class="navbar navbar-expand-md">
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-        <img src="{{ with .Site.Params.logo }}{{ . | absURL }}{{ end }}" alt="{{ .Site.Params.description }}" height="22" width="84">
+        <img src="{{ with .Site.Params.logo }}{{ . | absURL }}{{ end }}" alt="{{ .Site.Params.description }}" height="40" width="40" class="img-responsive align-left">
       </a>
       {{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Design") (eq .Page.Title "Troubleshooting and Performance.") (eq .Page.Title "Training") (eq .Page.Title "Testimonials") (eq .Page.Title "Team") }}
       <div class="aa-input-container" id="aa-input-nav-container">
@@ -59,7 +59,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-      <a href="https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link"><i class="fa fa-download align-middle mr-1" aria-hidden="true"></i>macOS Agent</a>
+      <a href="https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link"><i class="fa fa-download align-middle mr-1" aria-hidden="true"></i>macOS</a>
       </li>
       {{ range .Site.Menus.nav }}
       <li class="nav-item">

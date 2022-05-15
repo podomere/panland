@@ -1,26 +1,26 @@
 {{ if .Site.Params.hero.enable }}
 {{ "<!-- Hero Area -->" | safeHTML }}
-<section class="hero-area" style="">
+<section class="hero-area lozad">
 	<div class="container mb-3">
 		<div class="row">
-			<div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12 mt-4 mb-3">
+			<div class="col-12 col-xl-9 col-lg-9 col-md-12 col-sm-12 mt-4 mb-3">
 				<div class="block">
-					<h1 class="mt-3 mb-4"><strong style="font-size: 1em;font-weight: 900;">
+					<h1 class="mt-3 mb-4"><strong style="font-size: 1.5em;font-weight: 900;">
 							{{ with .Site.Params.hero.heading | safeHTML }}
 							{{ . }}
 							{{ end }}
 						</strong></h1>
-						<div class="text-center">
+						<div class="align-left">
 							<h5>
 								{{ with .Site.Params.hero.description2 | safeHTML }} {{ . }} {{ end }}
 							</h5>
 						</div>
 				</div>
 			</div>
-			<div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12 text-center mt-5 mb-3" style="background-color: #fff;">
+			<div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-12 text-center mt-5 mb-3" style="background: rgba(0,0,0,0);">
 				<center>
-					<div id="mapholder" style="padding-bottom: 20px; background-color: #fff;">
-						<div id="mapid" onclick="javascript:void(0);window.open('https://app.pansift.com/demo','_blank');" style="z-index: 100; height: 230px; width: 100%; outline: 0; border-color: #3a96cf; border-radius: 10px; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
+					<div id="mapholder" style="padding-bottom: 20px; background: rgba(0,0,0,0);">
+						<div id="mapid" onclick="javascript:void(0);window.open('https://app.pansift.com/demo','_blank');" style="z-index: 100; height: 280px; width: 100%; outline: 0; border-color: #3a96cf; border-radius: 10px; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
 					</div>
 				</center>
 			</div>

@@ -59,7 +59,7 @@ unsafe = true
     
 		[params.aboutsm2]
         enable  = true
-        title   = 'A secure <u><a href="/howitworks/">hybrid design</a></u> built on the <span style = "color: #fff;">least access principle</span> !'
+        title   = 'A secure <u><a href="/design/">hybrid design</a></u> built on the <span style = "color: #fff;">least access principle</span> !'
 
     [params.offer]
         enable  = true
@@ -69,7 +69,7 @@ unsafe = true
  
     [params.levelone]
         enable  = true
-        title   = "<span style = 'color: #fff;'>Cut Out Hours of Expensive Interactions</span>"
+        title   = "<span style = 'color: #fff;'>Cut Hours of Expensive Interactions</span>"
         subtitle = "How much does a level 1 helpdesk, level 2 operator, or level 3 engineer currently cost per hour per incident?"
 
     [params.deception]

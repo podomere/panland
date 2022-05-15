@@ -42,7 +42,7 @@ unsafe = true
     [params.hero]
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
-				heading = 'Support <a href="/demo/" rel="nofollow"><span style="color: #007bff">Work From Anywhere!</span></a><br>Instant remote troubleshooting for you, your team, and clients.'
+				heading = 'Support <a href="/demo/" rel="nofollow"><span style="color: #007bff">Work From Anywhere!</span></a> Instant remote troubleshooting for you, your team, and clients.'
         description2 = "Experiment with family or friends (no credit card required). Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues. Start with <u><a href='https://app.pansift.com/demo/logout_demo' style='color: #007bff;'><strong>2 x free agents</strong></a></u> and go from WTF to WFA 😎 in <u><a href='/demo/' style='color: #007bff;'><strong>seconds</strong></a></u>." 
         button  = true
         btnTxt = "Early Access"

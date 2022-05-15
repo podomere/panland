@@ -63,7 +63,7 @@ unsafe = true
 
     [params.offer]
         enable  = true
-        title   = "<span style = 'color: #fff;'>And PanSift your Problems Away!</span>"
+        title   = "<span style = 'color: #fff;'>And PanSift your problems away!</span>"
         subtitle = "Life's too short to fumble around in the dark! Light up your remote workers data path and performance. Claim your time back!"
         description = ""
  

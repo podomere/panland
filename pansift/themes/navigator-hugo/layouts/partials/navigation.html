@@ -33,13 +33,13 @@
               //'suggestion' templating function used to render a single suggestion
               suggestion: function(suggestion) {
                 if (suggestion.host) {
-                  token = (suggestion.host).substring(0,14)+'..';
+                  token = (suggestion.host).split(".")[0].substring(0,11);
                 } else if (suggestion.model_label) {
                   token = suggestion.model_label;
                 } else {
                   token = "laptop-3.local";
                 }
-                return '<span>'+token+'</span><span class="label label-primary pull-right">'+suggestion.model_label+'</span>';
+                return '<span>'+token+'</span><span class="label label-primary pull-right">Demo '+suggestion.model_label+'</span>';
               }
             }
             }).on('autocomplete:selected', function(event, suggestion, dataset) {

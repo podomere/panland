@@ -307,7 +307,11 @@
 				agent_cost = (sliderFormat.noUiSlider.get()) * 3.70;
 			}
       var total_cost = agent_cost
+			if (total_cost > 0) {
+      $('#total_cost').html('<strong>' + total_cost.toFixed(2) + ' € (~' + Math.round(total_cost * 1.06) + ' USD)</strong>');
+			} else {
       $('#total_cost').html('<strong>' + total_cost.toFixed(2) + ' € (' + Math.round(total_cost * 1.06) + ' USD)</strong>');
+			}
     }
 
 

@@ -304,10 +304,10 @@
 			if (sliderFormat.noUiSlider.get() < 3) {
 				agent_cost = 0;
 			} else {
-				agent_cost = (sliderFormat.noUiSlider.get()) * 19;
+				agent_cost = (sliderFormat.noUiSlider.get()) * 3.70;
 			}
-      var total_cost = agent_cost 
-      $('#total_cost').html('<strong>' + total_cost + ' € (' + (total_cost * 1.2).toFixed(2) + ' USD)</strong>');
+      var total_cost = agent_cost
+      $('#total_cost').html('<strong>' + total_cost.toFixed(2) + ' € (' + Math.round(total_cost * 1.06) + ' USD)</strong>');
     }
 
 

@@ -42,8 +42,8 @@ unsafe = true
     [params.hero]
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
-				heading = 'Support <a href="/demo/" rel="nofollow"><span style="color: #007bff">Work From Anywhere!</span></a> Instant remote troubleshooting for you, your team, and clients.'
-        description2 = "Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues, remotely. Start with <u><a href='https://app.pansift.com/demo/logout_demo' style='color: #007bff;'><strong>2 x free agents</strong></a></u> and go from WTF to WFA 😎 in <u><a href='/demo/' style='color: #007bff;'><strong>seconds</strong></a></u>. Try it free with family or friends." 
+				heading = 'Support <a href="/demo/" rel="nofollow"><span style="color: #007bff">Work From Anywhere!</span></a> Instant remote troubleshooting for I.T. support and network teams.'
+        description2 = "Whether for <strong>white glove</strong> VIP executive support, or teams of CX agents, solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues, remotely. Start with <u><a href='https://app.pansift.com/demo/logout_demo' style='color: #007bff;'><strong>2 x free agents</strong></a></u> and go from WTF to WFA 😎 in <u><a href='/demo/' style='color: #007bff;'><strong>seconds</strong></a></u>. Why not test the free agents with family or friends?" 
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

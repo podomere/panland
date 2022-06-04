@@ -274,10 +274,10 @@ unsafe = true
         weight  = 3
 
     # Footer About Menu
-    [[menu.about]]
-        name    = "Cookie Policy"
-        url     = "/cookies/"
-        weight  = 3
+    # [[menu.about]]
+    #    name    = "Cookie Policy"
+    #    url     = "/cookies/"
+    #    weight  = 3
     [[menu.about]]
         name    = "Research Topics"
         url     = "/research/"

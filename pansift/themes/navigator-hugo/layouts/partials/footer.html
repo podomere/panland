@@ -59,9 +59,9 @@
 <script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>
 <script src="{{ "plugins/bootstrap/dist/js/bootstrap.min.js" | absURL }}"></script>
 {{ "<!-- Custom js -->" | safeHTML }}
-<script data-cookieconsent="functionality" type="text/javascript" src="{{ "js/script.js" | absURL }}"></script>
+<script type="text/javascript" src="{{ "js/script.js" | absURL }}"></script>
 {{ "<!-- Lazy loading -->" | safeHTML }}
-<script data-cookieconsent="functionality" src="{{ "plugins/lozad/lozad.min.js" | absURL }}"></script>
+<script type="text/javascript" src="{{ "plugins/lozad/lozad.min.js" | absURL }}"></script>
 <script>
 	$(function () {
 			el = document.querySelectorAll('.lozad');
@@ -70,7 +70,7 @@
 		});
 </script>
 <!--Start of Tawk.to Script-->
-<script data-cookieconsent="functionality" type="text/javascript" async>
+<script type="text/javascript" async>
 	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 	(function(){
 			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -81,7 +81,7 @@
 			s0.parentNode.insertBefore(s1,s0);
 		})();
 </script>
-<!-- <script data-cookieconsent="marketing" type="text/javascript">
+<!-- <script type="text/javascript">
 	_linkedin_partner_id = "587796";
  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
@@ -95,14 +95,5 @@
 <noscript>
 	<img height="1" width="1" style="display:none;" alt="Linkedin Image" src="https://px.ads.linkedin.com/collect/?pid=587796&fmt=gif" />
 </noscript> -->
-{{ if in (.Site.BaseURL | string) "pansift.com" }}
-<!--  Previous holder for FullStory UX code -->
-<script data-cookieconsent="usability" type="text/javascript" async>
-</script>
-<!-- End Full Story -->
-{{ end }}
-<!-- Cookiebot -->
-<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="36478925-83e6-4823-8253-383befc9659f" type="text/javascript" async></script>
-<!-- Cookiebot -->
 </body>
 </html>

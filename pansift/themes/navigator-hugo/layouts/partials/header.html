@@ -55,7 +55,7 @@
 		</script>
 		{{ if in (.Site.BaseURL | string) "pansift.com" }}
 		<!-- Google Tag Manager -->
-		<script type="text/plain" data-cookieconsent="statistics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		<script type="text/plain">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -181,8 +181,8 @@
 		{{ end }}
 		{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Design") (eq .Page.Title "Troubleshooting and Performance.") (eq .Page.Title "Training") (eq .Page.Title "Team")}}
 		<!-- Algolia Search Live DB -->
-		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
-		<script data-cookieconsent="functionality" src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
+		<script src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
+		<script src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
 		{{ end }}
 		{{ "<!-- jQuery -->" | safeHTML }}
 		<script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>

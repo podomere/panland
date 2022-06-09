@@ -52,9 +52,15 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 
 <center><small>Table 1.0 - IPv4 vs. IPv6 Total Latency Results</small></center>
  <br> 
- <br> 
 <div class="table1-end"></div>
+ <a href="https://app.pansift.com/demo" target="_blank" rel="nofollow"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/blog/ipv4.png"></img></a>
 
+<center><small>Image 1.0 - IPv4 Total Latency Results</small></center>
+ <br>
+ <a href="https://app.pansift.com/demo" target="_blank" rel="nofollow"><img class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/blog/ipv6.png"></img></a>
+ <br>
+<center><small>Image 2.0 - IPv6 Total Latency Results</small></center>
+ <br>
 <div class="table2-start"></div>
 
 | Response Type   | # IPv4 Faster | # IPv6 Faster  | # Tied / Same | N <br>(sample size) | Summary |
@@ -63,7 +69,6 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 | Percentages     | 32.36%   | **42.20%**  | 25.43% | 100%   | IPv6 won !        |
 
 <center><small>Table 2.0 - IPv4 vs. IPv6 Latency By WLAN</small></center>
- <br> 
  <br> 
 <div class="table2-end"></div>
 
@@ -76,7 +81,7 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 
 <center><small>Table 3.0 - IPv4 vs. IPv6 Latency By Wired*</small></center>
  <br> 
- * We could use a bigger data set here as it looks like most agent data was from Wi-Fi / WLAN connected hosts.
+ * We require a bigger data set here as most agent data was from Wi-Fi / WLAN connected hosts.
  <br>  
 <div class="table3-end"></div>
 
@@ -88,7 +93,7 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 We've previously done a primer on IPv6 connectivity and troubleshooting [here](/blog/how-to-fix-ipv6-connectivity/), so let's take a brief look at some of the fundamental differences between IPv4 and IPv6 in relation to our data.
   
 ### ICMPv4 and v6
-The ICMPv6 format is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc4443">RFC4443</a> whereas ICMP (v4) is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc792">RFC792</a>. 
+The ICMPv6 format is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc4443">RFC4443</a> whereas ICMP is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc792">RFC792</a>. 
 
 ### Feedback
 Let us know what you think, good or bad... or if you have suggestions or ideas as to why **IPv6** ICMPv6 seems faster over Wi-Fi...

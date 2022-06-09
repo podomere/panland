@@ -5,16 +5,12 @@ subtitle: Or is IPv4 slower than IPv6 :)
 author: Donal
 tags:
   - ipv6
-  - ipv6_dns
-  - ipv4_dns
-  - aaaa
   - latency
   - macos
   - userops
   - assurance
   - remote_working
   - work_from_anywhere
-  - guides
 categories:
   - troubleshooting
 image: /images/blog/faster.jpg
@@ -24,7 +20,7 @@ title: 'Is IPv6 Faster Than IPv4?'
 
 **TL;DR:** IPv6 is faster than IPv4 **~39%** of the time (locally anyway!).	
 
-To answer this question we decided to look at anonymized data we had collected from a range of monitoring agents over a 30 day period. For simplicity, the data used only focused on the client's RTT (Round Trip Time) to their default gateway. This *sub-path* does not cover a full round trip to Internet based assets, it's just the first leg of a journey (often over Wi-Fi), which admittedly can suffer extreme variability. Later, we will highlight some of the nuances that may affect our initial results, including but not limited to, differences in device, OS (Operating System) level, the medium, protocol, CoS type,  etc. It is, however, precisely because of the complexity involved that we decided to look at one simple and comparable metric!
+To answer this question we decided to look at anonymized data we had collected from a range of monitoring agents over a 30 day period. For simplicity, the data used only focused on the client's RTT (Round Trip Time) to their default gateway. This *sub-path* does not cover a full round trip to Internet based assets, it's just the first leg of a journey (often over Wi-Fi), which admittedly can suffer extreme variability. There are many nuances that may affect our initial results, including but not limited to, size of data set, differences in device, OS (Operating System) level, the medium, protocol, CoS type, etc. It is, however, precisely because of the complexity involved that we decided to look at one simple and comparable metric! We would love for you to leave a comment, [below](/blog/is-ipv6-faster-than-ipv4/#feedback) if you have any ideas or suggestions regarding our data and results!
 
 ## The Approach
 To answer this speed question we began by using our Wi-Fi assurance and remote troubleshooting <a href="/demo" target="_blank" rel="nofollow">tool (live demo)</a>). called [PanSift](https://pansift.com). We started with **2.4 million** *network related* gateway data points. These measurements were taken every **30** seconds from **16** randomly selected macOS agents (using our maximum data retention period of **30** days). Subsequently, the data points used were from agents when **fully online with dualstack connectivity** (i.e. can reach Internet based lighthouses), rather than just being *locally_connected*. This makes any comparison fairer such that there's the potential for ongoing traffic traversing connections and gateways. Additionally, it should be noted that [PanSift](https://pansift.com) does not normalize data and retains full fidelity metrics. This allows for fine grained analysis and even retrospective troubleshooting. After filtering data for agents with concurrent IPv4 and IPv6 Internet reachability, we were then left with **342,980** valid data points.   
@@ -92,18 +88,10 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 We've previously done a primer on IPv6 connectivity and troubleshooting [here](/blog/how-to-fix-ipv6-connectivity/), so let's take a brief look at some of the fundamental differences between IPv4 and IPv6 in relation to our data.
   
 ### ICMPv4 and v6
-
 The ICMPv6 format is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc4443">RFC4443</a> whereas ICMP (v4) is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc792">RFC792</a>. 
 
-### Gateway Devices
-? OS, stack, handling/priority of ICMP types?
-
-### RIBs and FIBs
-Negligible anyway for locally connected routes?
-
-### Packet Sizes
-?
-
+### Feedback
+Let us know what you think, good or bad... or if you have suggestions or ideas as to why **IPv6** ICMPv6 seems faster over Wi-Fi...
 
 <script type="text/javascript">
 (function() {

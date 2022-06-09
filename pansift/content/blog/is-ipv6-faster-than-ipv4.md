@@ -19,7 +19,7 @@ categories:
   - troubleshooting
 image: /images/blog/faster.jpg
 published: true
-title: 'Is IPv6 Faster Than IPv4'
+title: 'Is IPv6 Faster Than IPv4?'
 ---
 
 **TL;DR:** IPv6 is faster than IPv4 **~39%** of the time (locally anyway!).	

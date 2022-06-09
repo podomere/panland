@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "how-to-fix-ipv6-connectivity.md",
+            "file": "is-ipv6-faster-than-ipv4.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 154.0068016052246
   },
   "right": {
     "id": "a55fba809511cf84",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "how-to-fix-ipv6-connectivity.md",
+                "file": "is-ipv6-faster-than-ipv4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,8 @@
   },
   "active": "bdfc7785910e7ea3",
   "lastOpenFiles": [
+    "is-ipv6-faster-than-ipv4.md",
+    "does-wifi-mcs-index-affect-latency.md",
     "how-to-fix-ipv6-connectivity.md"
   ]
 }

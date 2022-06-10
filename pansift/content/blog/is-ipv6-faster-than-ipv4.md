@@ -26,14 +26,14 @@ To answer this question we decided to look at anonymized data we had collected f
 To answer this speed question we began by using our Wi-Fi assurance and remote troubleshooting <a href="/demo" target="_blank" rel="nofollow">tool (live demo)</a>). called [PanSift](https://pansift.com). We started with **2.4 million** *network related* gateway data points. These measurements were taken every **30** seconds from **16** randomly selected macOS agents (using our maximum data retention period of **30** days). Subsequently, the data points used were from agents when **fully online with dualstack connectivity** (i.e. can reach Internet based lighthouses), rather than just being *locally_connected*. This makes any comparison fairer such that there's the potential for ongoing traffic traversing connections and gateways. Additionally, it should be noted that [PanSift](https://pansift.com) does not normalize data and retains full fidelity metrics. This allows for fine grained analysis and even retrospective troubleshooting. After filtering data for agents with concurrent IPv4 and IPv6 Internet reachability, we were then left with **342,980** valid data points.   
 
 ### Under The Hood
-The [PanSift](https://pansift.com) agent sends 3 ICMP *echo_request*s every 30 seconds using both **IPv4** (ping) and **IPv6** (ping6) while also explicitly setting the *Best Effort* COS (Class of Service). The options used with *ping* and *ping6* for clarity and just to be explicit are:
+The [PanSift](https://pansift.com) agent sends 3 ICMP *echo_request*s every 30 seconds using both **IPv4** (ping) and **IPv6** (ping6) while also explicitly setting the COS (Class of Service) to *Best Effort* . The options used with *ping* and *ping6* (just to be explicit) are:
 
 - `-c 3` = to send a count of 3 requests and then stop
 - `-i 1` = explicitly wait 1 second between requests (default)
 - `-k BE` = *Best Effort* normal class (default)
 <br>
 <br>
-**Note:** We explicitly use and mention the above defaults as placeholders and reminders for potential further tweaking. We also used a parent timeout of 5 seconds.  IPv4 requests went first, then IPv6, and we recorded the *average* latency of the 3 requests as the resulting data point (using a <a target="_blank" href="https://docs.influxdata.com/influxdb/v2.2/reference/syntax/line-protocol/#data-types-and-format">float</a> value in milliseconds). 
+**Note:** We explicitly use and mention the above defaults as placeholders and reminders to ourselves for potential further tweaking. We also used a parent process timeout of 5 seconds for ICMP to the gateway.  IPv4 requests went first, then IPv6, and we recorded the *average* latency of the 3 requests as the resulting data point (using a <a target="_blank" href="https://docs.influxdata.com/influxdb/v2.2/reference/syntax/line-protocol/#data-types-and-format">float</a> value in milliseconds). 
 
 With queries to our <a target="_blank" href="https://www.influxdata.com/">Influx</a> backend (a <a target="_blank" href="https://en.wikipedia.org/wiki/Time_series_database">Time Series Database</a>), the data spanned macOS versions *10.11.x*, *10.14.x*, *10.15.x*, *11.6.x*, and *12.x* with physical models ranging from *iMAC* to *Mini* but mostly *Macbook Airs* and *MacBook Pros*.
 

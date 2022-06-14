@@ -81,7 +81,7 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 
 <center><small>Table 3.0 - IPv4 vs. IPv6 Latency By Wired*</small></center>
  <br> 
- <small>* We require a wider data set as most agent data was from Wi-Fi / WLAN connected hosts. The types of wired hardware recorded were primarily, "USB LAN" and "USB-C LAN" types, some of which may have been synching at lower than gigabit (1000) speeds. As such, we need to also start to grab the media output, however both IPv4 and IPv6 are traversing the same media! </small> 
+ <small>* We require a wider data set as most agent data was from Wi-Fi / WLAN connected hosts. The types of wired hardware recorded were primarily, "USB LAN" and "USB-C LAN" types, some of which may have been synching at lower than gigabit (1000 Mbps) speeds. As such, we need to also start to grab the media output, however both IPv4 and IPv6 are traversing the same media! </small> 
  <br>  
 <div class="table3-end"></div>
 

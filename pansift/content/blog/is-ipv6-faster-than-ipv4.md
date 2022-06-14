@@ -76,8 +76,8 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 
 | Response Type   | # IPv4 Faster | # IPv6 Faster  | # Tied / Same | N <br>(sample size) | Summary |
 | :----:          | :----:   |  :---:  | :---:  | :---:  | :---:   |
-| Not WLAN (Wired)| 10,243 | 7066    |  **23,967** |  41,276 | **IPv4 wins!** |
-| Percentages     | 24.81%   | 17.11%  | **58.06%** | 100%   | IPv4 won !        |
+| Not WLAN (Wired)| 10,243 | 7066    |  **23,967** |  41,276 | **Tied / Same** |
+| Percentages     | 24.81%   | 17.11%  | **58.06%** | 100%   | Tied / Same        |
 
 <center><small>Table 3.0 - IPv4 vs. IPv6 Latency By Wired*</small></center>
  <br> 

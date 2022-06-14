@@ -93,13 +93,13 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 We've previously done a primer on IPv6 connectivity and troubleshooting [here](/blog/how-to-fix-ipv6-connectivity/), so let's take a brief look at some of the fundamental differences between IPv4 and IPv6 in relation to our data.
   
 ### ICMPv4 and v6
-The ICMPv6 format is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc4443">RFC4443</a> whereas ICMP is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc792">RFC792</a>, yet apart from Extension Headers, one wonders about why, in certain scenarios, IPv6 might be faster than the other in responding (perhaps related to the gateway stack and utilization?).
+The ICMPv6 format is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc4443">RFC4443</a> whereas ICMP is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc792">RFC792</a>, yet apart from the difference in Extension Headers (which are not relevant here), one wonders about why IPv6 might be faster than IPv4 (perhaps related to the gateway stack and utilization?).
 
 ### Next Steps?
 We now need to expand the above analysis to see if:
-  - [x] there's any correlation with the MAC addresses, and thus the vendor OUIs which show what type of device is performing the gateway functions?
-  - [x] perhaps this is also skewed or unique to certain client device types, operating system version, or patch levels?
-  - [x] a larger sample set of dualstack devices results in the same outcomes
+  - [x] there's any correlation with the MAC addresses (and thus the vendor OUIs) which show what type/make of device is acting as the gateway?
+  - [x] perhaps this is related to certain client device types, operating system versions, or patch levels?
+  - [x] a larger sample set of dualstack devices will result in the same outcomes
 
 <br>
 

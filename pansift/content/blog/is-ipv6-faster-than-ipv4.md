@@ -76,12 +76,12 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 
 | Response Type   | # IPv4 Faster | # IPv6 Faster  | # Tied / Same | N <br>(sample size) | Summary |
 | :----:          | :----:   |  :---:  | :---:  | :---:  | :---:   |
-| Not WLAN (Wired)| 10,243 | 7066    |  **23,967** |  41,276 | **Tied / Same** |
+| Not WLAN (Wired*)| 10,243 | 7066    |  **23,967** |  41,276 | **Tied / Same** |
 | Percentages     | 24.81%   | 17.11%  | **58.06%** | 100%   | Tied / Same        |
 
 <center><small>Table 3.0 - IPv4 vs. IPv6 Latency By Wired*</small></center>
  <br> 
- * We require a bigger data set here as most agent data was from Wi-Fi / WLAN connected hosts.
+ <small>* We require a wider data set as most agent data was from Wi-Fi / WLAN connected hosts. The types of wired hardware recorded were primarily, "USB LAN" and "USB-C LAN" types, some of which may have been synching at lower than gigabit (1000) speeds. As such, we need to also start to grab the media output, however both IPv4 and IPv6 are traversing the same media! </small> 
  <br>  
 <div class="table3-end"></div>
 
@@ -93,7 +93,7 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 We've previously done a primer on IPv6 connectivity and troubleshooting [here](/blog/how-to-fix-ipv6-connectivity/), so let's take a brief look at some of the fundamental differences between IPv4 and IPv6 in relation to our data.
   
 ### ICMPv4 and v6
-The ICMPv6 format is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc4443">RFC4443</a> whereas ICMP is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc792">RFC792</a> yet apart from Extension Headers, one wonders about why in certain scenarios one might be faster than the other in responding (perhaps related to the gateway stack and utilization?).
+The ICMPv6 format is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc4443">RFC4443</a> whereas ICMP is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc792">RFC792</a>, yet apart from Extension Headers, one wonders about why, in certain scenarios, IPv6 might be faster than the other in responding (perhaps related to the gateway stack and utilization?).
 
 ### Next Steps?
 We now need to expand the above analysis to see if:
@@ -104,7 +104,7 @@ We now need to expand the above analysis to see if:
 <br>
 
 ### Feedback
-Let us know what you think below, good or bad... and if you have suggestions or ideas as to why **IPv6** ICMPv6 seems faster over Wi-Fi... what are we missing?
+Let us know what you think below, good or bad... and if you have suggestions or ideas as to why **IPv6** (ICMPv6) seems faster over Wi-Fi... what are we missing?
 
 <script type="text/javascript">
 (function() {

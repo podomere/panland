@@ -99,8 +99,11 @@ The ICMPv6 format is described in <a target="_blank" href="https://datatracker.i
 We now need to expand the above analysis to see if:
   - [x] there's any correlation with the MAC addresses (and thus the vendor OUIs) which show what type/make of device is acting as the gateway?
   - [x] perhaps this is related to certain client device types, operating system versions, or patch levels?
-  - [x] a larger sample set of dualstack devices will result in the same outcomes
+  - [x] a larger sample set of dualstack devices will result in the same outcomes?
+  - [x] are there ARP and NDP considerations (based upon traffic or lack thereof)?
+  - [x] could the order of testing, serial versus parallel (or random) play an effect?   
 
+**Note:** Based upon feedback to this article on the potential for sleeping Wi-Fi radios and differences with ARP and NDP, we are going to <a target="blank_" href="https://github.com/pansift/p3/blob/45b816d9a5e3d4d3eaaa7a7f7b3853ddc14619c9/Scripts/osx_default_script.sh#L263">randomize</a> which of the default gateway ICMP tests (in the agent) go first. Once a critical mass of the install base have the new agent <a target="blank_" href="https://github.com/pansift/p3/blob/45b816d9a5e3d4d3eaaa7a7f7b3853ddc14619c9/Scripts/osx_default_script.sh#L263">scripts</a> we will re-run the above experiment.
 <br>
 
 ### Feedback

@@ -52,10 +52,12 @@
       <div class="address-block contact-meta-block">
         <i class="fas fa-map-marker"></i>
         <h4>Location</h4>
-        {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .Site.Params.contact.address }}<p style="color: white;">{{ . | safeHTML }}</p>{{ end }}
       </div>
     </div>
   </div>
+</div>
+<div class="col-12 col-md-12 text-center" style="min-height:300px !important;padding: 0px !important;">
 </div>
 </section>
 {{ end }}

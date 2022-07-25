@@ -304,7 +304,7 @@
 			if (sliderFormat.noUiSlider.get() < 3) {
 				agent_cost = 0;
 			} else {
-				agent_cost = (sliderFormat.noUiSlider.get()) * 3.70;
+				agent_cost = (sliderFormat.noUiSlider.get()) * 3.75;
 			}
       var total_cost = agent_cost
 			if (total_cost > 0) {

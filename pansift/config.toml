@@ -25,7 +25,7 @@ unsafe = true
 
 # Site Params + Random Comment
 [params]
-	description = "Support Work From Anywhere with instant remote troubleshooting for you, your team, and your family."
+	description = "Support Work From Anywhere with instant remote troubleshooting (Wired + Wi-Fi) for you, your team, your clients, and your family."
   og_image = "https://pansift.com/images/pansift_social_v38.jpg"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"

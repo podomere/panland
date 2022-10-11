@@ -34,7 +34,7 @@ unsafe = true
     logo = "/images/64.png"
     dateFormat = "6 January 2006"
     footerDescription = ""
-    btnTxt = "Live Demo"
+    btnTxt = "Instant Demo"
     marketing_tweet = "1189663292312211456"
     marketing_linkedin = "6595640699503288320"
 

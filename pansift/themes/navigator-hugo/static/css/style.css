@@ -1987,12 +1987,12 @@ a:focus, a:hover {
   color: #fff;
 }
 .vjs-overlay-background {
-  background-color: rgba(0,0,0,0.8) !important;
-  width: 80% !important;
+  background-color: rgba(0,0,0,0) !important;
+  width: 100% !important;
 }
 .vjs-overlay-top {
-  top: 5% !important;
-  left: 25% !important;
+  top: 30% !important;
+  left: 15% !important;
 }
 .vjs-text-track-display div {
   font-size: 1.8em;

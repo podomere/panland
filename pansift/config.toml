@@ -43,7 +43,7 @@ unsafe = true
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
 				heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
-        description2 = "From <strong>white-glove</strong> VIP executive support to <strong>CX agents</strong> and <strong>remote workers</strong>, you and your team can rapidly solve network, Wi-Fi, DNS, IPv4/IPv6, and system issues instantly. Start with <u><a href='https://app.pansift.com/demo/logout_demo' style='color: #007bff;'><strong>2 x free agents</strong></a></u> 😎 or <u><a href='https://app.pansift.com/demo?first_insight=true' style='color: #007bff;'><strong>demo</strong></a></u> on family and friend's  <u><a href='https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true' style='color: #007bff;'><strong>laptops </strong></a></u>!"
+        description2 = "From <strong>white-glove</strong> VIP executive support to <strong>CX agents</strong> and <strong>remote workers</strong>, you and your team can solve network, Wi-Fi, DNS, IPv4/IPv6, and system issues instantly. Start with <u><a href='https://app.pansift.com/demo/logout_demo' style='color: #007bff;'><strong>2 x free agents</strong></a></u> 😎 or <u><a href='https://app.pansift.com/demo?first_insight=true' style='color: #007bff;'><strong>demo</strong></a></u> on family and friend's  <u><a href='https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true' style='color: #007bff;'><strong>laptops </strong></a></u>!"
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

@@ -1,18 +1,18 @@
-{{ if .Site.Params.aboutsm2.enable }}
+{{ if .Site.Params.aboutsm3.enable }}
 {{ "<!-- Start About-sm2 Section -->" | safeHTML }}
  <section class="about-2 section" id="about" style="padding: 20px 0 !important;background-color: #333;color: #bdc3c7;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-12 text-center">
-				{{ with .Site.Params.aboutsm2.title }}
+				{{ with .Site.Params.aboutsm3.title }}
 				<h2 class="" style="font-size: 2.5em; padding: 10px 20px 0px 50px !important;">{{ . | safeHTML }}</h2>
 				{{ end }}
-				{{ with .Site.Params.aboutsm2.subtitle }}
+				{{ with .Site.Params.aboutsm3.subtitle }}
 				<!-- <h5>{{ . | safeHTML }}</h5> -->
 				{{ end }}
 			</div>
 		</div>
 	</div>
 </section>
-{{ "<!-- End About-sm2 section -->" | safeHTML }}
+{{ "<!-- End About-sm3 section -->" | safeHTML }}
 {{ end }}

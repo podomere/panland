@@ -9,7 +9,7 @@
 		<div class="col">
 			<div class="title" style="padding: 0 !important;">
 				{{ with .Site.Data.howitworks.title }}
-				<h2 id="how-it-works">{{ . }}</h2>
+				<h2 style="font-size: 2.5rem;" id="how-it-works">{{ . }}</h2>
 				<br>
 				{{ end }}
 				{{ with .Site.Data.howitworks.subtitle }}<h5>{{ . }}</h5>{{ end }}
@@ -40,4 +40,5 @@
 	-->
 </section>
 {{ "<!-- howitworks Section End -->" | safeHTML }}
+{{ partial "about-sm.html" . }}
 {{ end }}

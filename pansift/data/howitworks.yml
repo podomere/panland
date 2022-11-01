@@ -1,6 +1,6 @@
 enable    : true
 topTitle   : Troubleshooting Tech
-title     : How PanSift Works
+title     : How It Works
 subtitle  : End User Performance Monitoring For Remote and Local Teams
 tabItem   :
   - id        : install

@@ -25,7 +25,7 @@ unsafe = true
 
 # Site Params + Random Comment
 [params]
-	description = "Support Work From Anywhere with instant remote troubleshooting (Wired and Wi-Fi!) for you, your family, your teams, or clients."
+	description = "Support Work From Anywhere 🌎 with instant remote troubleshooting (Wired and Wi-Fi!) for you, your family, your teams, or clients."
   og_image = "https://pansift.com/images/pansift_social_v38.jpg"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
@@ -42,8 +42,9 @@ unsafe = true
     [params.hero]
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
-				heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
-        description2 = "From <strong>white-glove</strong> VIP executive support to <strong>CX agents</strong> and <strong>remote workers</strong>, you and your team can solve network, Wi-Fi, DNS, IPv4/IPv6, and system issues instantly. Start with <u><a href='https://app.pansift.com/demo/logout_demo' style='color: #007bff;'><strong>2 x free agents</strong></a></u> 😎 or <u><a href='https://app.pansift.com/demo?first_insight=true' style='color: #007bff;'><strong>demo</strong></a></u> on family and friend's  <u><a href='https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true' style='color: #007bff;'><strong>laptops </strong></a></u>!"
+				heading = 'Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues instantly!'
+				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
+        description2 = "Support Work From Anywhere (WFA) 🌎 with instant remote troubleshooting for forward thinking technical teams. Install lightweight agents to continuously troubleshoot and monitor laptop performance (just like for servers!).<br><br><strong>TL;DR</strong> Download and install <u><a href='https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true' style='color: #007bff;'><strong>2 x free  agents</strong></a></u> and <u><a href='https://app.pansift.com/demo/logout_demo' target='_blank'><strong>sign up</strong></a></u> to claim/see data 😎"
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -53,13 +54,16 @@ unsafe = true
 
     [params.aboutSm]
         enable  = true
-        title   = "Get <span style = 'color: #fff;'>real</span> with <span style = 'color: #fff;'>RUM</span> (Real User Monitoring). Find your <span style = 'color: #fff;'>focus</span> !"
+        title   = "Automate your <span style = 'color: #fff;'>troubleshooting</span> with Real User Monitoring."
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
         proof = "Gartner forecasts that <strong>~53%</strong> of the UK & US workforce will <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>work remotely during 2022</a></u>.<br><strong>DEM (Digital Experience Monitoring)</strong> is the first step to guarantee productivity."
     
 		[params.aboutsm2]
         enable  = true
-        title   = '<u><a href="/design/">Transparent</a></u> and <u><a href="/design/">trusted</a></u> end user monitoring software.'
+        title   = '<u><a href="/howitworks/">Simple</a></u> and <u><a href="/design/">secure</a></u> real user monitoring for macOS'
+		[params.aboutsm3]
+        enable  = true
+        title   = '<u><a href="/design/">Transparent</a></u> and <u><a href="/design/">trusted</a></u> real user monitoring for macOS'
 
     [params.offer]
         enable  = true
@@ -102,7 +106,7 @@ unsafe = true
     [params.benefits]
         topTitle =  "Trust but Verify"
         enable  = true
-        title   = "Seamless User Experience"
+        title   = "Stay Connected and Sane"
         subtitle = " Modern business operations are already distributed. From the user to the workload, whether cloud based or on-premises, ensure your team stays connected and productive for <strong>sales demos</strong>, <strong>customer success</strong> calls, <strong>contact centre (CX)</strong> work, or <strong>interviews</strong>, no matter the location."
         punchline = "Peace of mind in an era of remote work and non-managed networks!"
         onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
@@ -173,7 +177,7 @@ unsafe = true
     [params.cta]
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
-        title   = "End user experience monitoring tools for your team or tribe!"
+        title   = "End user experience monitoring for your team or tribe!"
         subtitle= ""
         btnTxt = "Early Access"
 

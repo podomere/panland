@@ -42,9 +42,9 @@ unsafe = true
     [params.hero]
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
-				heading = 'Solve network, Wi-Fi, DNS, IPv4, IPv6, and system issues instantly!'
+				heading = 'Solve Wi-Fi, DNS, IP (v4/v6), HTTP, and system issues instantly!'
 				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
-        description2 = "Support Work From Anywhere (WFA) 🌎 with instant remote troubleshooting for forward thinking technical teams. Install lightweight agents to continuously troubleshoot and monitor laptop performance (just like for servers!).<br><br><strong>TL;DR</strong> Download and install <u><a href='https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true' style='color: #007bff;'><strong>2 x free  agents</strong></a></u> and <u><a href='https://app.pansift.com/demo/logout_demo' target='_blank'><strong>sign up</strong></a></u> to claim/see data 😎"
+        description2 = "Support Work From Anywhere (WFA) 🌎 with instant remote troubleshooting for technical teams and users. Install lightweight laptop agents to proactively monitor and automatically troubleshoot issues (similar to servers and networks!).<br><br><strong>TL;DR</strong> Download and install <u><a href='https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true' style='color: #007bff;'><strong>2 x free  agents</strong></a></u> and <u><a href='https://app.pansift.com/demo/logout_demo' target='_blank'><strong>sign up</strong></a></u> to view <u><a href='https://app.pansift.com/demo?first_insight=true'><strong>insights</strong></a></u> 😎"
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 
@@ -60,10 +60,10 @@ unsafe = true
     
 		[params.aboutsm2]
         enable  = true
-        title   = '<u><a href="/howitworks/">Simple</a></u> and <u><a href="/design/">secure</a></u> real user monitoring for macOS'
+        title   = '<u><a href="/howitworks/">Simple</a></u> and <u><a href="/design/">secure</a></u> Real User Monitoring for macOS'
 		[params.aboutsm3]
         enable  = true
-        title   = '<u><a href="/design/">Transparent</a></u> and <u><a href="/design/">trusted</a></u> real user monitoring for macOS'
+        title   = '<u><a href="/design/">Transparent</a></u> and <u><a href="/design/">trusted</a></u> Real User Monitoring for macOS'
 
     [params.offer]
         enable  = true
@@ -107,7 +107,7 @@ unsafe = true
         topTitle =  "Trust but Verify"
         enable  = true
         title   = "Stay Connected and Sane"
-        subtitle = " Modern business operations are already distributed. From the user to the workload, whether cloud based or on-premises, ensure your team stays connected and productive for <strong>sales demos</strong>, <strong>customer success</strong> calls, <strong>contact centre (CX)</strong> work, or <strong>interviews</strong>, no matter the location."
+        subtitle = " Modern business operations are already distributed. Whether cloud based or on-premises, ensure your team stays connected and productive. For everything from <strong>sales demos</strong> and <strong>customer success</strong> calls, to <strong>contact centre (CX)</strong> work and <strong>interviews</strong>, figure out what's going on irrespective of the location (home office, coffee shop, coworking space, main office, etc.)"
         punchline = "Peace of mind in an era of remote work and non-managed networks!"
         onetitle = "Pinpoint Issues Effortlessly, Remotely, and Rapidly"
         one = "Surface wired, <strong>wireless</strong>, and system issues in seconds. Track laptop health for when it's needed most."

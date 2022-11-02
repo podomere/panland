@@ -54,16 +54,16 @@ unsafe = true
 
     [params.aboutSm]
         enable  = true
-        title   = "Automate your <span style = 'color: #fff;'>troubleshooting</span> with Real User Monitoring."
+        title   = "Automate your <span style = 'color: #fff;'>troubleshooting</span> and claim back your time!"
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
         proof = "Gartner forecasts that <strong>~53%</strong> of the UK & US workforce will <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>work remotely during 2022</a></u>.<br><strong>DEM (Digital Experience Monitoring)</strong> is the first step to guarantee productivity."
     
 		[params.aboutsm2]
         enable  = true
-        title   = '<u><a href="/howitworks/">Simple</a></u> and <u><a href="/design/">secure</a></u> Real User Monitoring for macOS'
+        title   = '<a href="/design"><strong>Simple</strong></a> and <a href="/design"><strong>secure</strong></a> Real User Monitoring for macOS'
 		[params.aboutsm3]
         enable  = true
-        title   = '<u><a href="/design/">Transparent</a></u> and <u><a href="/design/">trusted</a></u> Real User Monitoring for macOS'
+        title   = ' A <a href="/design/"><strong>transparent</strong></a> and <a href="/design/"><strong>trusted</strong></a> time series solution!'
 
     [params.offer]
         enable  = true
@@ -226,10 +226,10 @@ unsafe = true
 #        name    = "Why"
 #        url     = "/why/"
 #        weight  = 1
-    [[menu.nav]]
-        name    = "How"
-        url     = "/howitworks/"
-        weight  = 1
+#   [[menu.nav]]
+#       name    = "How"
+#        url     = "/howitworks/"
+#        weight  = 1
     [[menu.nav]]
         name    = "Design"
         url     = "/design/"

@@ -229,7 +229,7 @@
       $('.video-js')[0].player.on('play', function() {
 			dataLayer.push({'event': 'started_watching_explainer', 'category':'Visitor', 'action':'Video Played', 'label':'Video','value':'1'})
       });
-      var overlay_content = '<div class="col-12 justify-content-center align-items-center"><a rel="nofollow" href="https://app.pansift.com/demo?first_insight=true"><div style="font-size: 4em; font-weight: bold; color: white !important;" class="btn btn-lg btn-primary">Instant Live Demo</div></a>';
+      var overlay_content = '<div class="col-12 justify-content-center align-items-center"><a rel="nofollow" href="https://app.pansift.com/demo?first_insight=true"><div style="font-size: 4em; font-weight: bold; color: white !important;" class="btn btn-lg btn-primary">Insight</div></a>';
       $('.video-js')[0].player.overlay({
         overlays: [{
                     start: 'pause',
@@ -266,7 +266,7 @@
     function new_champion(lat,lng) {
       var popup = L.popup({closeButton:false})
         .setLatLng([lat, lng])
-        .setContent('<a target="_blank" rel="nofollow" href="https://app.pansift.com/demo?first_insight=true" style="color: black;"><center><strong> Instant Live Demo <i class="fas fa-external-link-alt"></i></strong></center></a>')
+        .setContent('<a target="_blank" rel="nofollow" href="https://app.pansift.com/demo?first_insight=true" style="color: black;"><center><strong> Insight <i class="fas fa-external-link-alt"></i></strong></center></a>')
         .openOn(mymap);
       L.marker([lat,lng], {zIndexOffset: 1000}).addTo(mymap);
     }

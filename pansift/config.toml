@@ -42,7 +42,7 @@ unsafe = true
     [params.hero]
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
-				heading = 'Solve Wi-Fi, DNS, IP (v4/v6), HTTP, and system issues instantly!'
+				heading = '💻 Solve Wi-Fi, DNS, IP (v4/v6), HTTP, and system issues instantly...'
 				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
         description2 = "Confidently support Work From Anywhere (WFA) 🌎 with instant remote troubleshooting. Lightweight laptop agents proactively monitor and identify issues so you, your team, and your clients can stay productive, irrespective of their location!"
 				description3 = "Instant Live Demo"

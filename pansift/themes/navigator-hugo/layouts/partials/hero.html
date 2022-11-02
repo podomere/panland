@@ -22,7 +22,7 @@
 					<div id="mapholder" style="padding-bottom: 20px; background: rgba(0,0,0,0);">
 						<div id="mapid" onclick="javascript:void(0);ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero_map');window.open('https://app.pansift.com/demo?first_insight=true','_blank');" style="z-index: 100; height: 220px; width: 100%; outline: 0; border-color: #3a96cf; border-radius: 10px; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
 						<div class="text-center">
-							<a target="_blank" href="https://app.pansift.com/demo?first_insight=true" rel="nofollow" onclick="javascript:void(0);ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero_button');" class="btn btn-block btn-primary text-center mt-5" style="//background-color: rgb(34, 34, 34);"> <i style="font-size: 1.5em;" class="fas fa-user-clock"></i><span class="ml-3" style="font-size: 1.8em; font-weight: 900;">{{ with .Site.Params.hero.description3 | safeHTML }} {{ . }} {{ end }}</span></a>
+							<a target="_blank" href="https://app.pansift.com/demo?first_insight=true" rel="nofollow" onclick="javascript:void(0);ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero_button');" class="btn btn-block btn-primary text-center mt-5" style="//background-color: rgb(34, 34, 34);"><span class="ml-3" style="font-size: 1.8em; font-weight: 900;">⏰{{ with .Site.Params.hero.description3 | safeHTML }} {{ . }} {{ end }}</span></a>
 						</div>
 					</div>
 				</center>

@@ -266,7 +266,7 @@
     function new_champion(lat,lng) {
       var popup = L.popup({closeButton:false})
         .setLatLng([lat, lng])
-        .setContent('<a target="_blank" rel="nofollow" href="https://app.pansift.com/demo?first_insight=true" style="color: black;"><center><strong> Insight <i class="fas fa-external-link-alt"></i></strong></center></a>')
+        .setContent('<a target="_blank" rel="nofollow" href="https://app.pansift.com/demo?first_insight=true" style="color: black;"><center><strong> Instant Live Demo <i class="fas fa-external-link-alt"></i></strong></center></a>')
         .openOn(mymap);
       L.marker([lat,lng], {zIndexOffset: 1000}).addTo(mymap);
     }

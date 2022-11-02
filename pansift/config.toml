@@ -44,7 +44,7 @@ unsafe = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
 				heading = 'Solve Wi-Fi, DNS, IP (v4/v6), HTTP, and system issues instantly!'
 				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
-        description2 = "Support Work From Anywhere (WFA) 🌎 with instant remote troubleshooting for technical teams and users. Install lightweight laptop agents to proactively monitor and automatically troubleshoot issues (similar to servers and networks!).<br><br><strong>TL;DR</strong> Download and install <u><a href='https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true' style='color: #007bff;'><strong>2 x free  agents</strong></a></u> and <u><a href='https://app.pansift.com/demo/logout_demo' target='_blank'><strong>sign up</strong></a></u> to view <u><a href='https://app.pansift.com/demo?first_insight=true'><strong>insights</strong></a></u> 😎"
+        description2 = "Confidently support Work From Anywhere (WFA) 🌎 with instant remote troubleshooting. Lightweight laptop agents proactively monitor and identify issues so you, your team, and your clients stay productive, irrespective of location.<br><br><strong>TL;DR</strong> Download and install <u><a href='https://github.com/pansift/p3/blob/main/Pansift.dmg?raw=true' style='color: #007bff;'><strong>2 x free  agents</strong></a></u> and <u><a href='https://app.pansift.com/demo/logout_demo' target='_blank'><strong>sign up</strong></a></u> to view <u><a href='https://app.pansift.com/demo?first_insight=true'><strong>insights</strong></a></u> 😎"
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

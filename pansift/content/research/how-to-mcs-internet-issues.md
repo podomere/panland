@@ -1,27 +1,27 @@
 ---
 title: "How To Mcs Internet Issues"
-subtitle: "Tee It Up?"
+subtitle: "Deep Dive?"
 layout: research
-ip_v4_address: "77.204.73.197"
-date: 2022-11-19T19:13:09+00:00
+ip_v4_address: "173.202.116.232"
+date: 2022-12-15T13:50:04+00:00
 draft: false
 ---
 
 # Internet Addressing
-On the Internet you may get a Public IPv4 address like ```77.204.73.197``` or an IPv6 address like ```2000:5f56:df06:3a2d:6afd:ceca:c460:bf3f```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```e1:db:0b:24:6a:67```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+On the Internet you may have a Public IPv4 address like ```173.202.116.232``` or an IPv6 address like ```2000:aed1:3ad1:5a45:1bb2:f1a2:d870:178e```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```30:15:e2:92:ba:be```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 # Accessing the Web
-To get to a web page like https://gulgowski.co you initially access a DNS server to translate the host portion (gulgowski) combined with the Top Level Domain (co) of the URL, to an IP address like ```138.184.220.32```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows NT x.y; Win64; x64; rv:10.0) Gecko/20100101 Firefox/10.0```
+To get to a web page like https://bauch-dach.co you initially access a DNS server to translate the host portion (bauch-dach) combined with the Top Level Domain (co) of the URL, to an IP address like ```72.101.255.230```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows; U; Win 9x 4.90; SG; rv:1.9.2.4) Gecko/20101104 Netscape/9.1.0285```
 
 # Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```192.168.194.153``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.90.116.234``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
 ## IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  192.168.194.153    UGScg  en0
+default  10.90.116.234    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  192.168.194.153    UGScg  en0
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:1899:4c24:181b:e3bd%en0  UGcg   en0
+default   fe80:7990:7d77:601b:71d4%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {191.250.182.253, 214.253.110.49}
+domain_name_server (ip_mult): {22.70.27.118, 200.122.238.66}
 end (none):
 ...</pre>
 
@@ -59,17 +59,17 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr e1:db:0b:24:6a:67
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 30:15:e2:92:ba:be
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 9b:26:6a:20:07:e3
+  SERVERID (2) Length 10: DUID LL HW 1 Addr d8:3f:46:8e:21:9d
 }</pre>
 
 # Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
 ## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.11.7```, ```11.2.5```, or ```12.2.1```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+No matter what version of OSX/macOS you are on, ```10.12.5```, ```11.4.2```, or ```12.1.2```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
 ### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=VU1mOSMru8s" data-lity><img src="https://i.ytimg.com/vi/VU1mOSMru8s/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=VU1mOSMru8s" data-lity>Spectrum Analyzer Comparison</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=SgL53Lh5TJE" data-lity><img src="https://i.ytimg.com/vi/SgL53Lh5TJE/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=SgL53Lh5TJE" data-lity>Wi-Fi 6E: It’s Almost Like Wi-Fi is Being Born Again!   David Coleman   WLPC 2022 Phoenix</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=dd85M-dJO6A" data-lity><img src="https://i.ytimg.com/vi/dd85M-dJO6A/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=dd85M-dJO6A" data-lity>Wi-Fi/CBRS/Private LTE 5G - Better Together?   Bob Friday   WLPC Phoenix 2020</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=QBiBPbME5tY" data-lity><img src="https://i.ytimg.com/vi/QBiBPbME5tY/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=QBiBPbME5tY" data-lity>MCS Table and How You Can Use it</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=GIDDmzcPkns" data-lity><img src="https://i.ytimg.com/vi/GIDDmzcPkns/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=GIDDmzcPkns" data-lity>The Impact of 6GHz on Network Design   Wes Purvis   WLPC 2022 Phoenix</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=hV3xDxkuM8I" data-lity><img src="https://i.ytimg.com/vi/hV3xDxkuM8I/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=hV3xDxkuM8I" data-lity>Pwnie Express PwnPhone Wi-Fi Pentetration Testing   Rick Farina   WLPC US Dallas 2015</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=cYvP8Ck2zDY" data-lity><img src="https://i.ytimg.com/vi/cYvP8Ck2zDY/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=cYvP8Ck2zDY" data-lity>Do NOT Put APs in Hallways</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=KK4NL_wjXSk" data-lity><img src="https://i.ytimg.com/vi/KK4NL_wjXSk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=KK4NL_wjXSk" data-lity>Wi-Fi 6E / 6GHz Design Ad-hoc discussion panel</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=fCsR8aK4mqE" data-lity><img src="https://i.ytimg.com/vi/fCsR8aK4mqE/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=fCsR8aK4mqE" data-lity>WPA3, OWE and DPP   Hemant Chaskar   WLPC Phoenix 2019</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=jHBEFy-_LWg" data-lity><img src="https://i.ytimg.com/vi/jHBEFy-_LWg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=jHBEFy-_LWg" data-lity>Tips, Tricks and Tools for Site Survey   Ferney Munoz   WLPC Prague 2018</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

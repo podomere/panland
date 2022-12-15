@@ -1,27 +1,27 @@
 ---
 title: "Troubleshoot MacOS No-access"
-subtitle: "Buying Cycle?"
+subtitle: "Get A Pulse On?"
 layout: research
-ip_v4_address: "99.96.40.217"
-date: 2022-11-19T19:13:15+00:00
+ip_v4_address: "229.250.203.31"
+date: 2022-12-15T13:50:09+00:00
 draft: false
 ---
 
 # Internet Addressing
-On the Internet you may get a Public IPv4 address like ```99.96.40.217``` or an IPv6 address like ```2000:54ca:f5b9:2ff1:a1cc:12a8:3842:bba8```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```2a:09:bc:10:ba:92```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+On the Internet you might get a Public IPv4 address like ```229.250.203.31``` or an IPv6 address like ```2000:dd28:9c9d:bfdd:a36c:de0c:64d2:11f7```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```0d:9d:81:1d:1c:02```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 # Accessing the Web
-To get to a web page like https://kunde.io you initially access a DNS server to translate the host portion (kunde) combined with the Top Level Domain (io) of the URL, to an IP address like ```124.61.131.187```. Your computer and browser actually sends its type with all web requests e.g. <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
+To get to a web page like https://kuvalis.info you initially access a DNS server to translate the host portion (kuvalis) combined with the Top Level Domain (info) of the URL, to an IP address like ```251.45.9.105```. Your computer and browser actually sends its type with all web requests e.g. <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
 
 # Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```172.25.9.19``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.133.19.140``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
 ## IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  172.25.9.19    UGScg  en0
+default  10.133.19.140    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  172.25.9.19    UGScg  en0
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:d23c:ef62:4e97:4966%en0  UGcg   en0
+default   fe80:a68:ac28:717b:d18%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {209.119.83.75, 60.101.118.133}
+domain_name_server (ip_mult): {235.221.240.56, 95.198.130.61}
 end (none):
 ...</pre>
 
@@ -59,17 +59,17 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 2a:09:bc:10:ba:92
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 0d:9d:81:1d:1c:02
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 11:53:a7:f0:a8:6d
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 05:2d:4f:97:7d:b8
 }</pre>
 
 # Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
 ## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.15.5```, ```11.2.6```, or ```12.2.9```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+No matter what version of OSX/macOS you are on, ```10.14.3```, ```11.4.9```, or ```12.1.9```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
 ### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
@@ -85,10 +85,10 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity><img src="https://i.ytimg.com/vi/P-t0_wQ1wWg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity>Using FileVault to Secure Your Data - Hands-on Mac 10</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=SLcz5iKLpuQ" data-lity><img src="https://i.ytimg.com/vi/SLcz5iKLpuQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=SLcz5iKLpuQ" data-lity>Easily Adjust File Creation Dates for Photos - A Better Finder Attributes</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=sr6SEe5zuwM" data-lity><img src="https://i.ytimg.com/vi/sr6SEe5zuwM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=sr6SEe5zuwM" data-lity>Protect your Mac with Lulu - Hands-On Mac 2</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=1uvr9-zUB3w" data-lity><img src="https://i.ytimg.com/vi/1uvr9-zUB3w/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=1uvr9-zUB3w" data-lity>Homebrew: macOS Package Manager</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=5MN-A7a4rgk" data-lity><img src="https://i.ytimg.com/vi/5MN-A7a4rgk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=5MN-A7a4rgk" data-lity>The Ins and Outs of Gatekeeper - Hands-on Mac 3</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity><img src="https://i.ytimg.com/vi/P-t0_wQ1wWg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity>Using FileVault to Secure Your Data - Hands-on Mac 10</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=Qh2dIMTDx-g" data-lity><img src="https://i.ytimg.com/vi/Qh2dIMTDx-g/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=Qh2dIMTDx-g" data-lity>Make Free iPhone Ringtones - How to Make Ringtones With Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=MxXnZXmhKVI" data-lity><img src="https://i.ytimg.com/vi/MxXnZXmhKVI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=MxXnZXmhKVI" data-lity>The New and Improved Safari - Everything New in Safari 14</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>

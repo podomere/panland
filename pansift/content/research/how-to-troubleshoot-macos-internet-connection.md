@@ -1,27 +1,27 @@
 ---
 title: "How To Troubleshoot MacOS Internet Connection"
-subtitle: "Synergy?"
+subtitle: "Home Stretch?"
 layout: research
-ip_v4_address: "236.116.139.16"
-date: 2022-11-19T19:13:16+00:00
+ip_v4_address: "135.212.63.22"
+date: 2022-12-15T13:50:09+00:00
 draft: false
 ---
 
 # Internet Addressing
-On the Internet you may have a Public IPv4 address like ```236.116.139.16``` or an IPv6 address like ```2000:c810:418b:dd6c:b37e:95be:11f9:b53c```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```4c:ad:3c:6b:91:a4```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+On the Internet you might get a Public IPv4 address like ```135.212.63.22``` or an IPv6 address like ```2000:6d0f:cc44:e7b5:7175:56ee:9840:bdab```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```19:3d:8e:09:df:a6```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 # Accessing the Web
-To get to a web page like https://weber.co you initially access a DNS server to translate the host portion (weber) combined with the Top Level Domain (co) of the URL, to an IP address like ```108.100.231.51```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows; U; Win 9x 4.90; SG; rv:1.9.2.4) Gecko/20101104 Netscape/9.1.0285```
+To get to a web page like https://ryan.biz you initially access a DNS server to translate the host portion (ryan) combined with the Top Level Domain (biz) of the URL, to an IP address like ```182.182.13.8```. Your computer and browser actually sends its type with all web requests e.g. <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
 
 # Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```192.0.0.169``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```192.0.0.106``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
 ## IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  192.0.0.169    UGScg  en0
+default  192.0.0.106    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  192.0.0.169    UGScg  en0
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:c949:58bd:e05f:2cac%en0  UGcg   en0
+default   4823:5179:97ca:57:1fe6:2819:6cdd:a79e%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {21.102.77.200, 215.177.122.204}
+domain_name_server (ip_mult): {252.156.106.76, 80.32.147.103}
 end (none):
 ...</pre>
 
@@ -59,17 +59,17 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 4c:ad:3c:6b:91:a4
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 19:3d:8e:09:df:a6
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 1f:d4:fe:b1:71:39
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 5e:2e:42:b6:97:73
 }</pre>
 
 # Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
 ## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.14.4```, ```11.6.6```, or ```12.2.7```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+No matter what version of OSX/macOS you are on, ```10.15.3```, ```11.2.4```, or ```12.0.6```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
 ### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
+|<a href="https://www.youtube.com/watch?v=dmRGvZGCsZI" data-lity><img src="https://i.ytimg.com/vi/dmRGvZGCsZI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=dmRGvZGCsZI" data-lity>Finder Tips - Resizing, Slideshows, Customization, and more!</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=SLcz5iKLpuQ" data-lity><img src="https://i.ytimg.com/vi/SLcz5iKLpuQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=SLcz5iKLpuQ" data-lity>Easily Adjust File Creation Dates for Photos - A Better Finder Attributes</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=aRtx2X-T3gk" data-lity><img src="https://i.ytimg.com/vi/aRtx2X-T3gk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=aRtx2X-T3gk" data-lity>Inside the Mac Filesystem - Hands-On Mac 12</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=2U9FiIelMQI" data-lity><img src="https://i.ytimg.com/vi/2U9FiIelMQI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=2U9FiIelMQI" data-lity>Syncthing - Free, Open-Source, Continuous File Synchronization</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=1uvr9-zUB3w" data-lity><img src="https://i.ytimg.com/vi/1uvr9-zUB3w/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=1uvr9-zUB3w" data-lity>Homebrew: macOS Package Manager</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=ctF-S3RLcME" data-lity><img src="https://i.ytimg.com/vi/ctF-S3RLcME/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=ctF-S3RLcME" data-lity>Fun With Mac Terminal Commands - Hands-On Mac 5</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=tzIWMkkPQ9o" data-lity><img src="https://i.ytimg.com/vi/tzIWMkkPQ9o/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=tzIWMkkPQ9o" data-lity>Writing Your Own Folder Actions with Automator - An Easier Way to Create a Script</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=-VP2NVv3LHg" data-lity><img src="https://i.ytimg.com/vi/-VP2NVv3LHg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=-VP2NVv3LHg" data-lity>Homebrew Bundle: Set Up a Mac Fast - Hands-on Mac 9</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

@@ -25,7 +25,7 @@
         function al_autocomplete(){
           autocomplete('#aa-search-nav',
           { hint: true }, {
-            source: autocomplete.sources.hits(al_index, {hitsPerPage: 3}),
+            source: autocomplete.sources.hits(al_index, {hitsPerPage: 6}),
             //value to be displayed in input control after user's suggestion selection
             displayKey: 'host',
             //hash of templates used when rendering dataset
@@ -34,16 +34,18 @@
               suggestion: function(suggestion) {
                 if (suggestion.host) {
                   token = (suggestion.host).split(".")[0].substring(0,11);
-                } else if (suggestion.model_label) {
-                  token = suggestion.model_label;
+                // } else if (suggestion.model_label) {
+                //  token = suggestion.model_label;
                 } else {
-                  token = "laptop-3.local";
+                  token = "laptop";
                 }
-                return '<span>'+token+'</span><span class="label label-primary pull-right">Demo '+suggestion.model_label+'</span>';
+                return '<span>'+token+'</span><span class="label label-primary pull-right">'+(suggestion.model_label).substring(0,13)+'</span>';
               }
             }
             }).on('autocomplete:selected', function(event, suggestion, dataset) {
-						window.open("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+suggestion.host, "_blank");
+						search_term = (suggestion.host).replace(/-/g, '%20').substring(0,13);
+						// console.log("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+search_term);
+						window.open("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+search_term, "_blank");
             // location.href = "https://app.pansift.com/demo";
           });
         }

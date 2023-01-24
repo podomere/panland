@@ -43,7 +43,7 @@
               }
             }
             }).on('autocomplete:selected', function(event, suggestion, dataset) {
-						search_term = (suggestion.host).replace(/-/g, '%20').substring(0,13);
+						search_term = (suggestion.host).replace(/-/g, '%20');
 						// console.log("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+search_term);
 						window.open("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+search_term, "_blank");
             // location.href = "https://app.pansift.com/demo";

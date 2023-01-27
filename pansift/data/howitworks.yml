@@ -15,7 +15,7 @@ tabItem   :
     title     : Continuous Real Time Network Monitoring
     heading   : Embrace the remote-first wireless world.
     content   : >
-      Pansift is <strong>continuously monitoring</strong> and reporting a whole suite of metrics relating to the network and overall health of the user's laptop. This <strong>in-path</strong> monitoring is the only true way to understand what the user is experiencing and what network conditions are really like. <br><br><strong>PanSift even watches the radio airspace and can suggest better Wi-Fi channels to use to solve all manner of problems with video conferencing, gaming, and voice calls.</strong>
+      PanSift is <strong>continuously monitoring</strong> and reporting a whole suite of metrics relating to the network and overall health of the user's laptop. This <strong>in-path</strong> monitoring is the only true way to understand what the user is experiencing and what network conditions are really like. <br><br><strong>PanSift even watches the radio airspace and can suggest better Wi-Fi channels to use to solve all manner of problems with video conferencing, gaming, and voice calls.</strong>
     image     : images/howitworks/cloud.jpg
     icon      : fas fa-wifi
 

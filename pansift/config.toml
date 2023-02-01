@@ -287,4 +287,8 @@ unsafe = true
         name    = "Research Topics"
         url     = "/research/"
         weight  = 2
+    [[menu.about]]
+        name    = "System Status"
+        url     = "https://status.pansift.com/"
+        weight  = 1
 

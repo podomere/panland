@@ -292,7 +292,7 @@
       step: 1,
       range: {
         'min': [ 0 ],
-      'max': [ 50 ]
+      'max': [ 150 ]
       },
       format: wNumb({
                 decimals: 0

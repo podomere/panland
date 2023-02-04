@@ -25,16 +25,16 @@ unsafe = true
 
 # Site Params + Random Comment
 [params]
-	description = "Support Work From Anywhere 🌎 with instant remote troubleshooting (Wired and Wi-Fi!) for you, your family, your teams, or clients."
+	description = "Support Work From Anywhere 🌎 with instant remote troubleshooting (Wired and Wi-Fi!) for you, your team, and your clients."
   og_image = "https://pansift.com/images/pansift_social_v38.jpg"
   googleverification = "Um05lPnDDDWPoeNlH_CZ80l6mGzHP0k85-e0fYxY8Z0"
   microsoftverification = "39D63DFF4C2CBD00C9F08F819F62DB65"
-  keywords = "wifi assurance, network assurance, future of work, userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"
+  keywords = "digital experience monitoring, wifi assurance, network assurance, future of work, userops, edgeops, incident response, nre, network reliability, sre, site reliability, troubleshooting, wlan, wireless, performance, intermittent issues, defense, network reliability engineering, 802.11, http, synthetic testing, RUM, real user monitoring"
     home = "Home"
     logo = "/images/64.png"
     dateFormat = "6 January 2006"
     footerDescription = ""
-    btnTxt = "Instant Demo"
+    btnTxt = "See Instant Demo"
     marketing_tweet = "1189663292312211456"
     marketing_linkedin = "6595640699503288320"
 
@@ -42,10 +42,10 @@ unsafe = true
     [params.hero]
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
-				heading = '💻 Solve Wi-Fi, DNS, IP (v4/v6), HTTP, and system issues instantly...'
+				heading = 'Digital Experience Monitoring for Macs 💻 <br>Assure Yourself and Others.'
 				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
-        description2 = "Confidently support Work From Anywhere (WFA) 🌎 with instant remote troubleshooting. Lightweight laptop agents proactively monitor and identify issues so you, your team, and your clients can stay productive, irrespective of their location!"
-				description3 = "Instant Live Demo"
+        description2 = "Confidently solve current and historical Wi-Fi, DNS, IPv4, IPv6, HTTP, and system issues. Support your team and clients to Work From Anywhere (WFA) 🌎. Instant remote troubleshooting ensures teams stay productive, irrespective of their location!"
+				description3 = "See Instant Demo"
         button  = true
         btnTxt = "Early Access"
         btnTest = "" 

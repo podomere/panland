@@ -55,7 +55,7 @@ unsafe = true
 
     [params.aboutSm]
         enable  = true
-        title   = "Automate your <span style = 'color: #fff;'>troubleshooting</span> and claim back your time!"
+        title   = "Automate your <span style = 'color: #fff;'>troubleshooting</span> and claim your time back!"
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
         proof = "Gartner forecasts that <strong>~53%</strong> of the UK & US workforce will <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>work remotely during 2022</a></u>.<br><strong>DEM (Digital Experience Monitoring)</strong> is the first step to guarantee productivity."
     

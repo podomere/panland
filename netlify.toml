@@ -67,6 +67,11 @@ HUGO_ENABLEGITINFO = "true"
   force = true
 
 [[redirects]]
+  from = "/demo_reports"
+  to = "https://app.pansift.com/demo?reports=true"
+  force = true
+
+[[redirects]]
   from = "/dl/latest_pkg"
   to = "https://github.com/pansift/p3/raw/main/Pansift-0.6.1.pkg"
   force = true

@@ -178,7 +178,7 @@ unsafe = true
     [params.cta]
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
-        title   = "End user experience monitoring for your team or tribe!"
+        title   = "Digital Experience Monitoring for your team or tribe!"
         subtitle= ""
         btnTxt = "Early Access"
 

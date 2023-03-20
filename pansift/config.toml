@@ -42,9 +42,10 @@ unsafe = true
     [params.hero]
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
-				heading = 'Digital Experience Monitoring for Macs in a remote-first world. Regain your edge.'
+				# heading = 'Digital Experience Monitoring for Macs in a remote-first world. Regain your edge.'
+				heading = 'Regain your edge. Support Work From Anywhere with Digital Experience Monitoring for Macs.'
 				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
-        description2 = "Confidently solve current and historical Wi-Fi, DNS, IPv4, IPv6, HTTP, and system issues. Support everyone to Work From Anywhere(WFA) 🌎. Get instant remote troubleshooting to ensure teams stay productive irrespective of their location!"
+        description2 = "Confidently solve current and historical Wi-Fi, DNS, IPv4, IPv6, HTTP/web, and system issues. Get instant remote troubleshooting and in-path distributed performance monitoring so teams and support staff stay connected and productive!"
 				description3 = "Instant Demo"
         button  = true
         btnTxt = "Early Access"

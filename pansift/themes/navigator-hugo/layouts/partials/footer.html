@@ -39,8 +39,8 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="">
 					<p class="text-center">CRO: 610070, TAX / VAT: IE 3490731JH<br><a href="https://www.algolia.com/?utm_source=instantsearch.js&utm_medium=website&utm_content=instantsearchjs.netlify.com&utm_campaign=poweredby" target="_blank">
-					              <img class="lozad" data-src="/images/search-by-algolia-light-background_20.png" width="140" height="20" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-												            </a></p>
+						<img class="lozad" data-src="/images/search-by-algolia-light-background_20.png" width="140" height="20" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+					</a></p>
 				</div>
 			</div>
 		</div>
@@ -95,5 +95,67 @@
 <noscript>
 	<img height="1" width="1" style="display:none;" alt="Linkedin Image" src="https://px.ads.linkedin.com/collect/?pid=587796&fmt=gif" />
 </noscript> -->
+<!-- Capterra -->
+<script type="text/javascript">
+	// Replace the text on the right hand side of the '=' with the id of your button.
+	// Make sure you do not remove the single quotes.
+	// var nav_download_agent = 'nav_download_agent'; // Change this
+	// var nav_instant_demo = 'nav_instant_demo'; // Change this
+	// var hero_instant_demo = 'hero_instant_demo'; // Change this
+	// DO NOT CHANGE THE CODE BELOW
+	function trackingListener() {
+			var capterra_vkey = '1edbb75110b2b31f9d03c9f7acf91383',
+				capterra_vid = '2250296',
+				ct = document.createElement('img');
+			ct.src = 'https://ct.capterra.com/capterra_tracker.gif?vid='
+				+ capterra_vid + '&vkey=' + capterra_vkey;
+			document.body.appendChild(ct);
+			// console.log("Capterra Fired");
+		};
+	var nav_dl = document.getElementById('nav_download_agent');
+	var nav_demo = document.getElementById('nav_instant_demo');
+	var nav_sign_up = document.getElementById('nav_sign_up');
+	var pri_sign_up = document.getElementById('pri_sign_up');
+	var hero_demo = document.getElementById('hero_instant_demo');
+	var cta_dl = document.getElementById('cta_download_agent');
+	var cta_demo = document.getElementById('cta_instant_demo');
+	// nav_dl.addEventListener(
+	//		'click',
+	//		trackingListener
+	//	);
+	// nav_demo.addEventListener(
+	//		'click',
+	//		trackingListener
+	//	);
+	nav_sign_up.addEventListener(
+			'click',
+			trackingListener
+		);
+	if (pri_sign_up) {
+			pri_sign_up.addEventListener(
+			'click',
+			trackingListener
+		);
+	}
+	// if (hero_demo) {
+	//		hero_demo.addEventListener(
+	//		'click',
+	//		trackingListener
+	//	);
+	//}
+	// if (cta_dl) {
+	//		cta_dl.addEventListener(
+	//		'click',
+	//		trackingListener
+	//	);
+	//}
+	// if (cta_demo) {
+	//	cta_demo.addEventListener(
+	//		'click',
+	//		trackingListener
+	//	);
+	//}
+</script>
+<!-- End Capterra -->
 </body>
 </html>

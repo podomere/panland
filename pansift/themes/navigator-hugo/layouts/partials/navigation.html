@@ -1,94 +1,92 @@
 {{ "<!-- Fixed Navigation -->" | safeHTML }}
 <section class="header navigation">
-<div class="container">
-  <div class="row">
-    <div style="padding: 0 !important;" class="col-md-12">
-      <nav class="navbar navbar-expand-md">
-      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-        <img src="{{ with .Site.Params.logo }}{{ . | absURL }}{{ end }}" alt="{{ .Site.Params.description }}" height="40" width="40" class="img-responsive align-left">
-      </a>
-      {{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Design") (eq .Page.Title "Troubleshooting and Performance.") (eq .Page.Title "Training") (eq .Page.Title "Testimonials") (eq .Page.Title "Team") }}
-      <div class="aa-input-container" id="aa-input-nav-container">
-        <input type="search" id="aa-search-nav" class="aa-input-nav" placeholder="Explore host insights" name="search" autocomplete="off" autofocus="false" />
-        <svg height="16" width="16" class="aa-input-icon-nav" viewBox="654 -372 1664 1664">
-        <path d="M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z" />
-        </svg>
-      </div>
-      <script>
-        (function ($) {
-        if(document.getElementById("aa-input-nav-container") !== null){
-        //if ($('#aa-input-container').length) {
-        var al_client = algoliasearch('AJV2LM71WS', '5e6f9e73a96000a01f3f272b8509c15e');
-        var al_index = al_client.initIndex('Agent_production');
-        //initialize autocomplete on search input (ID selector must match)
-
-        function al_autocomplete(){
-          autocomplete('#aa-search-nav',
-          { hint: true }, {
-            source: autocomplete.sources.hits(al_index, {hitsPerPage: 6}),
-            //value to be displayed in input control after user's suggestion selection
-            displayKey: 'host',
-            //hash of templates used when rendering dataset
-            templates: {
-              //'suggestion' templating function used to render a single suggestion
-              suggestion: function(suggestion) {
-                if (suggestion.host) {
-                  token = (suggestion.host).split(".")[0].substring(0,11);
-                // } else if (suggestion.model_label) {
-                //  token = suggestion.model_label;
-                } else {
-                  token = "laptop";
-                }
-                return '<span>'+token+'</span><span class="label label-primary pull-right">'+(suggestion.model_label).substring(0,13)+'</span>';
-              }
-            }
-            }).on('autocomplete:selected', function(event, suggestion, dataset) {
-						search_term = (suggestion.host).replace(/-/g, '%20');
-						// console.log("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+search_term);
-						window.open("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+search_term, "_blank");
-            // location.href = "https://app.pansift.com/demo";
-          });
-        }
-        al_autocomplete();
-      }
-    })(jQuery);
-  </script>
-  {{ end }}
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      {{ range .Site.Menus.nav }}
-      <li class="nav-item">
-      	<a style="white-space:nowrap;" class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-      <li class="nav-item">
-      <a href="https://pansift.com/dl/latest_pkg" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link"><i class="fa fa-download align-middle mr-1" aria-hidden="true"></i>Rapid Install</a>
-      </li>
-      <li class="nav-item">
-      	<a target="_blank" href="https://status.pansift.com/" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','status_up_from_navigation');" class="nav-link">Status</a>
-      </li>
-      <li class="nav-item">
-      	<a target="_blank" href="https://app.pansift.com/demo/logout_demo" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','sign_up_from_navigation');" class="nav-link">Sign Up</a>
-      </li>
-      <li class="nav-item">
-      	<a target="_blank" href="https://app.pansift.com/demo/logout_demo_login" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','login_from_navigation');" class="nav-link">Login</a>
-      </li>
-			<li class="nav-item ml-2" style="margin-top: 2px !important">
-      	<a target="_blank" href="https://app.pansift.com/demo?first_insight=true" style="white-space:nowrap; padding: .1rem .5rem !important;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_navigation');" class="btn btn-sm btn-primary nav-cta"><span class="align-middle" style="font-size: 1.1em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }} </span></a>
-      </li>
-    </ul>
-  </div>
-  </nav>
-</div>
-    </div>
-  </div>
-  </section>
-  <script>
-    if ($(window).width() < 1024) {
-      $("#aa-input-nav-container").remove();
-    }
-  </script>
+	<div class="container">
+		<div class="row">
+			<div style="padding: 0 !important;" class="col-md-12">
+				<nav class="navbar navbar-expand-md">
+					<a class="navbar-brand" href="{{ .Site.BaseURL }}">
+						<img src="{{ with .Site.Params.logo }}{{ . | absURL }}{{ end }}" alt="{{ .Site.Params.description }}" height="40" width="40" class="img-responsive align-left">
+					</a>
+					{{ if or (.IsHome) (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Design") (eq .Page.Title "Troubleshooting and Performance.") (eq .Page.Title "Training") (eq .Page.Title "Testimonials") (eq .Page.Title "Team") }}
+					<div class="aa-input-container" id="aa-input-nav-container">
+						<input type="search" id="aa-search-nav" class="aa-input-nav" placeholder="Explore host insights" name="search" autocomplete="off" autofocus="false" />
+						<svg height="16" width="16" class="aa-input-icon-nav" viewBox="654 -372 1664 1664">
+							<path d="M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z" />
+						</svg>
+					</div>
+					<script>
+						(function ($) {
+													if(document.getElementById("aa-input-nav-container") !== null){
+																				//if ($('#aa-input-container').length) {
+																				var al_client = algoliasearch('AJV2LM71WS', '5e6f9e73a96000a01f3f272b8509c15e');
+																				var al_index = al_client.initIndex('Agent_production');
+																				//initialize autocomplete on search input (ID selector must match)
+																				function al_autocomplete(){
+																											autocomplete('#aa-search-nav',
+																																		{ hint: true }, {
+																																									source: autocomplete.sources.hits(al_index, {hitsPerPage: 6}),
+																																									//value to be displayed in input control after user's suggestion selection
+																																									displayKey: 'host',
+																																									//hash of templates used when rendering dataset
+																																									templates: {
+																																																//'suggestion' templating function used to render a single suggestion
+																																																suggestion: function(suggestion) {
+																																																							if (suggestion.host) {
+																																																														token = (suggestion.host).split(".")[0].substring(0,11);
+																																																														// } else if (suggestion.model_label) {
+																																																														//  token = suggestion.model_label;
+																																																													} else {
+																																																																				token = "laptop";
+																																																																			}
+																																																							return '<span>'+token+'</span><span class="label label-primary pull-right">'+(suggestion.model_label).substring(0,13)+'</span>';
+																																																						}
+																																															}
+																																								}).on('autocomplete:selected', function(event, suggestion, dataset) {
+																																															search_term = (suggestion.host).replace(/-/g, '%20');
+																																															// console.log("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+search_term);
+																																															window.open("https://app.pansift.com/demo?filterrific%5Bsearch_query%5D="+search_term, "_blank");
+																																															// location.href = "https://app.pansift.com/demo";
+																																														});
+																										}
+																				al_autocomplete();
+																			}
+												})(jQuery);
+					</script>
+					{{ end }}
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-bars"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							{{ range .Site.Menus.nav }}
+							<li class="nav-item">
+								<a style="white-space:nowrap;" class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+							</li>
+							{{ end }}
+							<li class="nav-item">
+								<a id="nav_download_agent" href="https://pansift.com/dl/latest_pkg" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link"><i class="fa fa-download align-middle mr-1" aria-hidden="true"></i>Rapid Install</a>
+							</li>
+							<li class="nav-item">
+								<a target="_blank" href="https://status.pansift.com/" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','status_up_from_navigation');" class="nav-link">Status</a>
+							</li>
+							<li class="nav-item">
+								<a target="_blank" id="nav_sign_up" href="https://app.pansift.com/demo/logout_demo" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','sign_up_from_navigation');" class="nav-link">Sign Up</a>
+							</li>
+							<li class="nav-item">
+								<a target="_blank" href="https://app.pansift.com/demo/logout_demo_login" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','login_from_navigation');" class="nav-link">Login</a>
+							</li>
+							<li class="nav-item ml-2" style="margin-top: 2px !important">
+								<a target="_blank" id="nav_instant_demo" href="https://app.pansift.com/demo?first_insight=true" style="white-space:nowrap; padding: .1rem .5rem !important;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_navigation');" class="btn btn-sm btn-primary nav-cta"><span class="align-middle" style="font-size: 1.1em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }} </span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	if ($(window).width() < 1024) {
+			$("#aa-input-nav-container").remove();
+		}
+</script>

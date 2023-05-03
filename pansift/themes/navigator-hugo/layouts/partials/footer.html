@@ -97,6 +97,8 @@
 </noscript> -->
 <!-- Capterra -->
 <script type="text/javascript">
+  // TODO: probably move this to the app sign_up page or trigger as a background job once
+	// in app via httparty post signup.
 	// Replace the text on the right hand side of the '=' with the id of your button.
 	// Make sure you do not remove the single quotes.
 	// var nav_download_agent = 'nav_download_agent'; // Change this
@@ -119,14 +121,14 @@
 	var hero_demo = document.getElementById('hero_instant_demo');
 	var cta_dl = document.getElementById('cta_download_agent');
 	var cta_demo = document.getElementById('cta_instant_demo');
-	nav_dl.addEventListener(
-		'click',
-		trackingListener
-	);
-	nav_demo.addEventListener(
-			'click',
-			trackingListener
-	);
+	// nav_dl.addEventListener(
+	//	'click',
+	//	trackingListener
+	//);
+	//nav_demo.addEventListener(
+	//		'click',
+	//		trackingListener
+	//);
 	nav_sign_up.addEventListener(
 		'click',
 		trackingListener
@@ -137,24 +139,24 @@
 			trackingListener
 		);
 	}
-	if (hero_demo) {
-		hero_demo.addEventListener(
-			'click',
-			trackingListener
-		);
-	}
-	if (cta_dl) {
-			cta_dl.addEventListener(
-				'click',
-				trackingListener
-		);
-	}
-	if (cta_demo) {
-		cta_demo.addEventListener(
-			'click',
-			trackingListener
-		);
-	}
+	//if (hero_demo) {
+	//	hero_demo.addEventListener(
+	//		'click',
+	//		trackingListener
+	//	);
+	//}
+	//if (cta_dl) {
+	//		cta_dl.addEventListener(
+	//			'click',
+	//			trackingListener
+	//	);
+	//}
+	//if (cta_demo) {
+	//	cta_demo.addEventListener(
+	//		'click',
+	//		trackingListener
+	//	);
+	//}
 </script>
 <!-- End Capterra -->
 </body>

@@ -4,6 +4,7 @@ title = "PanSift: Instant Remote Troubleshooting."
 theme = "navigator-hugo"
 summaryLength = 37
 enableGitInfo = true
+paginate = 9
 # buildDrafts = false
 
 

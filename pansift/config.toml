@@ -50,7 +50,7 @@ unsafe = true
 				# heading = 'Instant Remote Troubleshooting for Macs. Confidently support Work From Anywhere <i class="fas fa-umbrella-beach"></i>'
 				# heading = 'Regain your edge with instant remote troubleshooting and Real User Monitoring for Macs.'
 				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
-        description2 = "Digital Experience Monitoring for both managed or unmanaged locations. Solve Wi-Fi, DNS, IPv4, IPv6, web, and system issues rapidly and retrospectively. Ensure teams and clients stay connected and productive! Control your time, regain your edge..."
+        description2 = 'Digital Experience Monitoring for <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-user-lock"></i> managed</a></div></div> and <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-home"></i> unmanaged</a></div></div> locations. Solve Wi-Fi, DNS, IPv4, IPv6, web, and system issues rapidly and retrospectively. Ensure teams and clients stay connected and productive! Control your time, regain your edge...'
 				description3 = "Instant Demo"
         button  = true
         btnTxt = "Early Access"

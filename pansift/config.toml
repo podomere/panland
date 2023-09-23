@@ -97,18 +97,18 @@ unsafe = true
         enable  = true
         title   = "Design"
         subtitle = "A default multi-tenant architecture, with inspectable client scripts, and outbound only connections."
-        sixtitle = "Multitenant Boundaries <br>Enforced Front / Back"
-				six = '<a target="_blank" href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a> and <a target="_blank" href="https://www.influxdata.com/time-series-database/">InfluxDB</a> are used for <strong>fail-safe</strong> data ingestion, bucket separation, and storage (with optional <a target="_blank" href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">SOC2 Type II cloud</a> vs. OSS).'
-        threetitle = "30 Day Data Retention"
-        three = "<strong>All agent specific data</strong> is aged out and deleted after <strong>30 days</strong>. Only non-identifiable metrics and aggregate data is used longer term to improve the service."
-        fourtitle = "MFA (Multi-factor Authentication)"
-        four = 'Use <a target="_blank" href="https://en.wikipedia.org/wiki/Google_Authenticator">Google Authenticator</a>, <a target="_blank" href="https://authy.com/">Authy</a>, or any <a target="_blank" href="https://en.wikipedia.org/wiki/Time-based_one-time_password">TOTP (Time-based One Time Password)</a> generator to secure your account but remember to note your backup codes!'
-        fivetitle = "Least Access Principle / BCP NetSec Patterns"
-        five = "Agents can only talk <strong>outbound (push)</strong> from your machine. There is <strong>no inbound</strong> communication possible and <strong>no remote access</strong> tooling or functionality. There are <strong>no listening ports</strong> on the agent. It only talks outbound via <strong>DNS and HTTPS TCP 443</strong> to <strong>write</strong> data to (<strong>not read</strong> data from) buckets."
-        onetitle = "Apple Signed + Security Scanned"
-        one = 'The <strong>agent</strong> is an <a href="https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution">Apple notarized/signed</a> binary which comprises a customized fork of the modular <a target="_blank" href="https://github.com/matryer/xbar">BitBar (now Xbar)</a> agent with OSS <a target="_blank" href="https://github.com/pansift/p3">inspectable scripts</a>.'
-        twotitle = "Apple M1 Support"
-        two = "The <strong>agent</strong> is cross compiled for both Intel and Apple Silicon (Arm-based) architectures."
+        threetitle = "Multitenant Boundaries <br>Enforced Front / Back"
+				three = '<a target="_blank" href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a> and <a target="_blank" href="https://www.influxdata.com/time-series-database/">InfluxDB</a> are used for <strong>fail-safe</strong> data ingestion, bucket separation, and storage (with optional <a target="_blank" href="https://docs.influxdata.com/influxdb/cloud/reference/internals/security/">SOC2 Type II cloud</a> vs. OSS).'
+        onetitle = "30 Day Data Retention"
+        one = "<strong>All agent specific data</strong> is aged out and deleted after <strong>30 days</strong>. Only non-identifiable metrics and aggregate data is used longer term to improve the service."
+        sixtitle = "MFA (Multi-factor Authentication)"
+        six = 'Use <a target="_blank" href="https://en.wikipedia.org/wiki/Google_Authenticator">Google Authenticator</a>, <a target="_blank" href="https://authy.com/">Authy</a>, or any <a target="_blank" href="https://en.wikipedia.org/wiki/Time-based_one-time_password">TOTP (Time-based One Time Password)</a> generator to secure your account but remember to note your backup codes!'
+        twotitle = "Least Access Principle / BCP NetSec Patterns"
+        two = "Agents can only talk <strong>outbound (push)</strong> from your machine. There is <strong>no inbound</strong> communication possible and <strong>no remote access</strong> tooling or functionality. There are <strong>no listening ports</strong> on the agent. It only talks outbound via <strong>DNS and HTTPS TCP 443</strong> to <strong>write</strong> data to (<strong>not read</strong> data from) buckets."
+        fourtitle = "Apple Signed + Security Scanned"
+        four = 'The lightweight <strong>agent</strong> is an <a href="https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution">Apple notarized/signed</a> binary which comprises a custom fork of the modular <a target="_blank" href="https://github.com/matryer/xbar">BitBar (now Xbar)</a> agent with OSS <a target="_blank" href="https://github.com/pansift/p3">inspectable scripts</a>.'
+        fivetitle = "Native Apple M Chip Support"
+        five = 'The <strong>agent</strong> (inc. <a target="_blank" href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a>) is cross compiled for both Intel and Apple Silicon (Arm-based) architectures.'
 
     [params.benefits]
         topTitle =  "Trust but Verify"
@@ -297,8 +297,3 @@ unsafe = true
         name    = "Research Topics"
         url     = "/research/"
         weight  = 2
-    [[menu.about]]
-        name    = "System Status"
-        url     = "https://status.pansift.com/"
-        weight  = 1
-

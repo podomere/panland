@@ -1,7 +1,7 @@
 enable    : true
 topTitle   : Troubleshooting Tech
 title     : How It Works
-subtitle  : 1, 2, 3 Digital Exeprience Monitoring For Local and Remote
+subtitle  : Digital Experience Monitoring For Both Local and Remote Teams
 tabItem   :
   - id        : install
     title     : A Lightweight Instant Agent

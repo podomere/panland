@@ -226,7 +226,7 @@ unsafe = true
 #        url     = "/deception/"
 #        weight  = 3
 #   [[menu.nav]]
-#       name    = "Sign Up"
+#       name    = "Start Free"
 #       url     = "https://app.pansift.com/demo/logout_demo"
 #       weight  = 3
 #    [[menu.nav]]

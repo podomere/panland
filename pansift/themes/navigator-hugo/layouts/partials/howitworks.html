@@ -18,20 +18,30 @@
 	<div class="row">
 		{{ range $index, $element := .Site.Data.howitworks.tabItem }}
 		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3 mb-3">
-			<h1>{{ .title }}</h1>
 			<div class="row mt-3 mb-5">
+				<div class="col-xl-4 col-md-6 mb-4">
+					<div class="text-center">
+						<a target="_blank" rel="nofollow" href="https://app.pansift.com/demo?first_insight=true">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a>
+					</div>
+				</div>
 				<div class="col-xl-8 col-md-6">
+					<div>
+					<h1>{{ .title }}</h1>
 					<h3 class="" style="color: #2980b9;">{{ with .heading }}{{ . }}{{ end }}</h3>
 					{{ with .content }}<p style="font-size: 1.2em;">{{ . | safeHTML }}{{ end }}</p>
-				</div>
-				<div class="col-xl-4 col-md-6 align-self-center">
-					<!-- <center><a href="#video-row">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center> -->
-					<center><a target="_blank" rel="nofollow" href="/design/">{{ with .icon }}<i class="{{ . | safeHTML }}" style="color: #2980b9; font-size: 10em;"></i>{{ end }}</a></center>
+					</div>
+					<div class="">
+					  <a target="{{ with .button_link_target }}{{ . }}{{ end }}" id="hero_instant_demo" href="{{ with .button_link }}{{ . }}{{ end }}" rel="nofollow" onclick="javascript:void(0);ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero_button');" class="btn btn-dark btn-block text-center mt-2" style="">
+						    <span class="" style="font-size: 1em; font-weight: 900;">{{ with .button_text }}{{ . }}{{ end }}</span>
+						</a>
+					</div>
+
 				</div>
 			</div>
 		</div>
 		{{ end }}
 	</div>
+</div>
 	<!-- <div class="row justify-content-center mt-3 text-center">
 	 <p>Read more about <a href="/blog/intentional-cyberinsecurity/">Deception Tech</a>
 	 </div>

@@ -1,15 +1,18 @@
 enable    : true
 topTitle   : Troubleshooting Tech
 title     : How It Works
-subtitle  : End User Performance Monitoring For Remote and Local Teams
+subtitle  : 1, 2, 3 Digital Exeprience Monitoring For Local and Remote
 tabItem   :
   - id        : install
-    title     : A Lightweight Agent
-    heading   : Claim your data bucket (locally or remotely).
+    title     : A Lightweight Instant Agent
+    heading   : Claim your bucket (locally or remotely).
     content   : >
       <strong>With Zero Touch Provisioning (ZTP)</strong> PanSift automatically watches and troubleshoots your specific environment to generate insights on your devices and network so you or your team can rapidly diagnose issues, remotely.
     image     : images/howitworks/cogs.jpg
     icon      : fas fa-user-shield
+    button_text: Simple, Secure, Scalable Design
+    button_link: /design
+    button_link_target: 
 
   - id        : continuous
     title     : Continuous Real Time Network Monitoring
@@ -18,6 +21,9 @@ tabItem   :
       PanSift is <strong>continuously monitoring</strong> and reporting a whole suite of metrics relating to the network and overall health of the user's laptop. This <strong>in-path</strong> monitoring is the only true way to understand what the user is experiencing and what network conditions are really like. <br><br><strong>PanSift even watches the radio airspace and can suggest better Wi-Fi channels to use to solve all manner of problems with video conferencing, gaming, and voice calls.</strong>
     image     : images/howitworks/cloud.jpg
     icon      : fas fa-wifi
+    button_text: 2 x Free Agents + Simple Pricing
+    button_link: /pricing
+    button_link_target: 
 
   - id        : claim
     title     : Automatic Troubleshooting
@@ -25,4 +31,6 @@ tabItem   :
     content   : >
       PanSift empowers you and your IT support team to rapidly diagnose a whole host of issues <strong>remotely and retrospectively</strong>. Insights are built on full fidelity, high cardinality data, presented simply. Whether for family or work, find peace of mind and reduce everyone's stress by embracing the type of monitoring you do for your servers. 
     icon      : fas fa-robot
-
+    button_text: One Click Instant Demo
+    button_link: https://app.pansift.com/demo?first_insight=true
+    button_link_target: _blank

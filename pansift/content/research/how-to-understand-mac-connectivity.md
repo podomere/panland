@@ -1,38 +1,38 @@
 ---
 title: "How To Understand Mac Connectivity"
-subtitle: "Bleeding Edge?"
+subtitle: "Etc. Etc.?"
 layout: research
-ip_v4_address: "131.208.106.164"
-date: 2023-02-04T17:07:50+00:00
+ip_v4_address: "85.69.119.138"
+date: 2023-10-06T17:10:43+01:00
 draft: false
 ---
 
-# Internet Addressing
-On the Internet you may get a Public IPv4 address like ```131.208.106.164``` or an IPv6 address like ```2000:4ffb:756b:7f76:1aad:748a:a8c3:cd20```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```32:06:04:0b:0c:69```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+## Internet Addressing
+On the Internet you might get a Public IPv4 address like ```85.69.119.138``` or an IPv6 address like ```2000:a4fc:6960:27dd:a6e7:117a:4d84:a96e```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```7e:cb:44:ba:9c:ad```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
-# Accessing the Web
-To get to a web page like https://yundt.name you initially access a DNS server to translate the host portion (yundt) combined with the Top Level Domain (name) of the URL, to an IP address like ```13.124.211.9```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows; U; Win 9x 4.90; SG; rv:1.9.2.4) Gecko/20101104 Netscape/9.1.0285```
+## Accessing the Web
+To get to a web page like https://fay.com you initially access a DNS server to translate the host portion (fay) combined with the Top Level Domain (com) of the URL, to an IP address like ```210.40.121.69```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko```
 
-# Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```192.0.0.216``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+## Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.242.135.37``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
-## IPv4 (inc. VPN)
+### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  192.0.0.216    UGScg  en0
+default  10.242.135.37    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
 
-## IPv6 (inc. VPN)
+### IPv6 (inc. VPN)
 ```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:20ad:aaef:86d0:31b9%en0  UGcg   en0
+default   fe80:ca65:d092:3da2:419d%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -40,7 +40,7 @@ default   fe80::%utun2                   UGcIg  utun2
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
 
-# DHCP for IPv4 and IPv6
+## DHCP for IPv4 and IPv6
 
 To get a look at the low level DHCP configuration (Mac/Linux): 
 
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {218.26.108.201, 138.224.30.124}
+domain_name_server (ip_mult): {177.142.155.54, 107.22.172.89}
 end (none):
 ...</pre>
 
@@ -59,25 +59,25 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 32:06:04:0b:0c:69
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 7e:cb:44:ba:9c:ad
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr b1:f7:6d:e6:0c:02
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 50:00:9c:83:32:60
 }</pre>
 
-# Wired or Wireless
+## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
-## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.11.3```, ```11.1.3```, or ```12.2.5```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+### Apple macOS / OSX
+No matter what version of OSX/macOS you are on, ```10.11.2```, ```11.2.3```, or ```12.3.9```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
-### Scripts
+#### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
 
 ```sudo nohup /usr/bin/sysdiagnose -u &``` will run it in the background and it will write logs to ```/var/tmp/<blah>.tar.gz``` for you. If you want to run it *interactively* (though there is not much interaction) you can run<br>```sudo /usr/bin/sysdiagnose``` and it will give a privacy warning. When not run in the background it should open Finder in the correct location or you can then navigate to ```/var/tmp``` or use Finder with Cmd+Shift+G to point Finder to the path. Just beware the file sizes of about 300MB more or less.
 
 <br><br>
-# Possible Helpful Videos
+## Possible Helpful Videos
 
 <link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
 <script src="/plugins/lity/js/lity.min.js"></script>
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
+|<a href="https://www.youtube.com/watch?v=VwNYWAxHCgM" data-lity><img src="https://i.ytimg.com/vi/VwNYWAxHCgM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=VwNYWAxHCgM" data-lity>Secret Mac Boot Commands - Mac Boot Key Combinations</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=YUQpDewATro" data-lity><img src="https://i.ytimg.com/vi/YUQpDewATro/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=YUQpDewATro" data-lity>Aliases, What Are They Good For?</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity><img src="https://i.ytimg.com/vi/P-t0_wQ1wWg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity>Using FileVault to Secure Your Data - Hands-on Mac 10</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=ctF-S3RLcME" data-lity><img src="https://i.ytimg.com/vi/ctF-S3RLcME/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=ctF-S3RLcME" data-lity>Fun With Mac Terminal Commands - Hands-On Mac 5</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=tzIWMkkPQ9o" data-lity><img src="https://i.ytimg.com/vi/tzIWMkkPQ9o/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=tzIWMkkPQ9o" data-lity>Writing Your Own Folder Actions with Automator - An Easier Way to Create a Script</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=SLcz5iKLpuQ" data-lity><img src="https://i.ytimg.com/vi/SLcz5iKLpuQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=SLcz5iKLpuQ" data-lity>Easily Adjust File Creation Dates for Photos - A Better Finder Attributes</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=vw19GDo-d1I" data-lity><img src="https://i.ytimg.com/vi/vw19GDo-d1I/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=vw19GDo-d1I" data-lity>Install Mac Fonts on Terminal - Fastest Way to Add Mac Fonts</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=mJn_5U6qOwQ" data-lity><img src="https://i.ytimg.com/vi/mJn_5U6qOwQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=mJn_5U6qOwQ" data-lity>Organizing Windows (Magnet Tiles &amp; Workspaces)</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

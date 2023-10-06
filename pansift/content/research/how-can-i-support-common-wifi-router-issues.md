@@ -1,38 +1,38 @@
 ---
 title: "How Can I Support Common Wifi Router Issues"
-subtitle: "Thought Leader?"
+subtitle: "Best Practice?"
 layout: research
-ip_v4_address: "218.42.187.87"
-date: 2023-02-04T17:07:42+00:00
+ip_v4_address: "173.114.205.106"
+date: 2023-10-06T17:10:31+01:00
 draft: false
 ---
 
-# Internet Addressing
-On the Internet you may get a Public IPv4 address like ```218.42.187.87``` or an IPv6 address like ```2000:289d:748d:dcb4:6805:9640:6343:7ced```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```8f:f0:62:28:17:6a```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+## Internet Addressing
+On the Internet you might get a Public IPv4 address like ```173.114.205.106``` or an IPv6 address like ```2000:9a92:2083:3738:14ff:47a:a10b:71df```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```f4:3a:08:4b:35:f3```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
-# Accessing the Web
-To get to a web page like https://zulauf.name you initially access a DNS server to translate the host portion (zulauf) combined with the Top Level Domain (name) of the URL, to an IP address like ```180.127.72.214```. Your computer and browser actually sends its type with all web requests e.g. <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
+## Accessing the Web
+To get to a web page like https://kshlerin-hoppe.co you initially access a DNS server to translate the host portion (kshlerin-hoppe) combined with the Top Level Domain (co) of the URL, to an IP address like ```162.15.77.244```. Your computer and browser actually sends its type with all web requests e.g. <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
 
-# Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```172.25.94.146``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+## Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.207.68.187``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
-## IPv4 (inc. VPN)
+### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  172.25.94.146    UGScg  en0
+default  10.207.68.187    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
 
-## IPv6 (inc. VPN)
+### IPv6 (inc. VPN)
 ```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:4ce5:7494:c36c:7e42%en0  UGcg   en0
+default   fe80:47be:bc3e:f41d:9cfd%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -40,7 +40,7 @@ default   fe80::%utun2                   UGcIg  utun2
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
 
-# DHCP for IPv4 and IPv6
+## DHCP for IPv4 and IPv6
 
 To get a look at the low level DHCP configuration (Mac/Linux): 
 
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {136.51.150.65, 152.237.250.143}
+domain_name_server (ip_mult): {4.26.236.138, 97.6.144.221}
 end (none):
 ...</pre>
 
@@ -59,25 +59,25 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 8f:f0:62:28:17:6a
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr f4:3a:08:4b:35:f3
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 86:f0:1e:1b:95:3e
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 71:1c:d7:ea:ea:bc
 }</pre>
 
-# Wired or Wireless
+## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
-## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.13.4```, ```11.5.1```, or ```12.2.9```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+### Apple macOS / OSX
+No matter what version of OSX/macOS you are on, ```10.13.2```, ```11.6.6```, or ```12.1.3```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
-### Scripts
+#### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
 
 ```sudo nohup /usr/bin/sysdiagnose -u &``` will run it in the background and it will write logs to ```/var/tmp/<blah>.tar.gz``` for you. If you want to run it *interactively* (though there is not much interaction) you can run<br>```sudo /usr/bin/sysdiagnose``` and it will give a privacy warning. When not run in the background it should open Finder in the correct location or you can then navigate to ```/var/tmp``` or use Finder with Cmd+Shift+G to point Finder to the path. Just beware the file sizes of about 300MB more or less.
 
 <br><br>
-# Possible Helpful Videos
+## Possible Helpful Videos
 
 <link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
 <script src="/plugins/lity/js/lity.min.js"></script>
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=V05dSfoopLE" data-lity><img src="https://i.ytimg.com/vi/V05dSfoopLE/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=V05dSfoopLE" data-lity>Know Your PHY</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=VU1mOSMru8s" data-lity><img src="https://i.ytimg.com/vi/VU1mOSMru8s/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=VU1mOSMru8s" data-lity>Spectrum Analyzer Comparison</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=-DFpwXDEThA" data-lity><img src="https://i.ytimg.com/vi/-DFpwXDEThA/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=-DFpwXDEThA" data-lity>What is Going on in the 2.4GHz Spectrum?</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=hV3xDxkuM8I" data-lity><img src="https://i.ytimg.com/vi/hV3xDxkuM8I/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=hV3xDxkuM8I" data-lity>Pwnie Express PwnPhone Wi-Fi Pentetration Testing   Rick Farina   WLPC US Dallas 2015</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=pHN2VEdWXgI" data-lity><img src="https://i.ytimg.com/vi/pHN2VEdWXgI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=pHN2VEdWXgI" data-lity>11ax MU-MIMO   Srikanth Subramanian   WLPC Phoenix 2018</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=CPvoejF9k2o" data-lity><img src="https://i.ytimg.com/vi/CPvoejF9k2o/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=CPvoejF9k2o" data-lity>Liv Harness vs Harlem Globetrotters 😨 #shorts</a>|<a target="_blank" href="https://www.youtube.com/channel/UCd_EkHbEutirFl_XSrg95kA" >GD's Highlights</a>|
+|<a href="https://www.youtube.com/watch?v=YBHQbu5rbdQ" data-lity><img src="https://i.ytimg.com/vi/YBHQbu5rbdQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=YBHQbu5rbdQ" data-lity>Fifth Harmony - Worth It (Official Video) ft. Kid Ink</a>|<a target="_blank" href="https://www.youtube.com/channel/UC09d82usokACH1z5YeKnfiA" >FifthHarmonyVEVO</a>|
+|<a href="https://www.youtube.com/watch?v=Kuc0GK65tGs" data-lity><img src="https://i.ytimg.com/vi/Kuc0GK65tGs/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=Kuc0GK65tGs" data-lity>How to run business for short term 😂 ~ Greed is evil 👿 ~ @manish_saini ~ Dushyant kukreja #shorts</a>|<a target="_blank" href="https://www.youtube.com/channel/UCo6y9hnRawAqtyWhRhblXqg" >Dushyant kukreja</a>|
+|<a href="https://www.youtube.com/watch?v=kzPiRtGL9Sw" data-lity><img src="https://i.ytimg.com/vi/kzPiRtGL9Sw/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=kzPiRtGL9Sw" data-lity>What Hyperrealistic Cake Should I Make Next?!</a>|<a target="_blank" href="https://www.youtube.com/channel/UChKQYI9z5rO_sdNjhwyyjSg" >Sideserf Cake Studio</a>|
+|<a href="https://www.youtube.com/watch?v=GDyL2tPyXFA" data-lity><img src="https://i.ytimg.com/vi/GDyL2tPyXFA/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=GDyL2tPyXFA" data-lity>Put a Desktop GPU in a LAPTOP… The CHEAP WAY!</a>|<a target="_blank" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw" >Linus Tech Tips</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

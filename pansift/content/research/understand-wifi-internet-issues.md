@@ -1,38 +1,38 @@
 ---
 title: "Understand Wifi Internet Issues"
-subtitle: "Out Of Pocket?"
+subtitle: "Tee It Up?"
 layout: research
-ip_v4_address: "180.165.98.28"
-date: 2023-02-04T17:07:41+00:00
+ip_v4_address: "144.218.83.124"
+date: 2023-10-06T17:10:30+01:00
 draft: false
 ---
 
-# Internet Addressing
-On the Internet you may have a Public IPv4 address like ```180.165.98.28``` or an IPv6 address like ```2000:9c62:d551:57a2:7d70:d70a:d871:4fbd```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```22:04:30:24:61:50```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+## Internet Addressing
+On the Internet you may have a Public IPv4 address like ```144.218.83.124``` or an IPv6 address like ```2000:489c:ce10:757d:f10d:504c:8c3:f9a3```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```e7:e3:f9:6b:ae:c8```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
-# Accessing the Web
-To get to a web page like https://toy.net you initially access a DNS server to translate the host portion (toy) combined with the Top Level Domain (net) of the URL, to an IP address like ```253.106.164.5```. Your computer and browser actually sends its type with all web requests e.g. <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
+## Accessing the Web
+To get to a web page like https://zboncak.name you initially access a DNS server to translate the host portion (zboncak) combined with the Top Level Domain (name) of the URL, to an IP address like ```116.206.89.21```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows NT x.y; Win64; x64; rv:10.0) Gecko/20100101 Firefox/10.0```
 
-# Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```192.168.249.216``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+## Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.193.29.31``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
-## IPv4 (inc. VPN)
+### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  192.168.249.216    UGScg  en0
+default  10.193.29.31    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
 
-## IPv6 (inc. VPN)
+### IPv6 (inc. VPN)
 ```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:4efe:600e:3840:ae0f%en0  UGcg   en0
+default   fe80:970f:41f4:af76:636b%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -40,7 +40,7 @@ default   fe80::%utun2                   UGcIg  utun2
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
 
-# DHCP for IPv4 and IPv6
+## DHCP for IPv4 and IPv6
 
 To get a look at the low level DHCP configuration (Mac/Linux): 
 
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {151.144.98.129, 202.204.84.131}
+domain_name_server (ip_mult): {37.208.35.163, 251.249.62.155}
 end (none):
 ...</pre>
 
@@ -59,25 +59,25 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 22:04:30:24:61:50
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr e7:e3:f9:6b:ae:c8
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr a0:73:f5:00:dc:74
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 38:b1:fa:26:5a:d2
 }</pre>
 
-# Wired or Wireless
+## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
-## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.14.5```, ```11.1.3```, or ```12.1.5```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+### Apple macOS / OSX
+No matter what version of OSX/macOS you are on, ```10.11.4```, ```11.1.9```, or ```12.3.9```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
-### Scripts
+#### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
 
 ```sudo nohup /usr/bin/sysdiagnose -u &``` will run it in the background and it will write logs to ```/var/tmp/<blah>.tar.gz``` for you. If you want to run it *interactively* (though there is not much interaction) you can run<br>```sudo /usr/bin/sysdiagnose``` and it will give a privacy warning. When not run in the background it should open Finder in the correct location or you can then navigate to ```/var/tmp``` or use Finder with Cmd+Shift+G to point Finder to the path. Just beware the file sizes of about 300MB more or less.
 
 <br><br>
-# Possible Helpful Videos
+## Possible Helpful Videos
 
 <link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
 <script src="/plugins/lity/js/lity.min.js"></script>
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=PEyVZR5hBeo" data-lity><img src="https://i.ytimg.com/vi/PEyVZR5hBeo/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=PEyVZR5hBeo" data-lity>Impact of MAC Randomization on Wi-Fi Networks   Jim Palmer   WLPC 2022 Phoenix</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=ohexy5VE170" data-lity><img src="https://i.ytimg.com/vi/ohexy5VE170/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=ohexy5VE170" data-lity>Wi-Fi 7: Multilink Operation   Metka Dragos   WLPC 2022 Phoenix</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=z2HZ7BJ6rGw" data-lity><img src="https://i.ytimg.com/vi/z2HZ7BJ6rGw/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=z2HZ7BJ6rGw" data-lity>What Is Wi-Fi HaLow-802.11ah?   Scott McDermott   WLPC US Phoenix 2017</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=gjdHpZWxujA" data-lity><img src="https://i.ytimg.com/vi/gjdHpZWxujA/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=gjdHpZWxujA" data-lity>OFDMA – The Secret Sauce of 802.11ax   David Coleman   WLPC Phoenix 2019</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=KK4NL_wjXSk" data-lity><img src="https://i.ytimg.com/vi/KK4NL_wjXSk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=KK4NL_wjXSk" data-lity>Wi-Fi 6E / 6GHz Design Ad-hoc discussion panel</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=lACHhr7RKXc" data-lity><img src="https://i.ytimg.com/vi/lACHhr7RKXc/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=lACHhr7RKXc" data-lity>Why hasn&#39;t Apple invented this yet?!</a>|<a target="_blank" href="https://www.youtube.com/channel/UCB4NFn-8oipHct0IfAQBQrQ" >Unnecessary Inventions</a>|
+|<a href="https://www.youtube.com/watch?v=B2zHIq5-jmE" data-lity><img src="https://i.ytimg.com/vi/B2zHIq5-jmE/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=B2zHIq5-jmE" data-lity>Jatt Airways   Jaswinder Bhalla   B N Sharma   Binnu Dhillon   Blockbuster Comedy Movie</a>|<a target="_blank" href="https://www.youtube.com/channel/UCqn6IMEa8WtY4_ZhJqjZn8Q" >Shemaroo Punjabi</a>|
+|<a href="https://www.youtube.com/watch?v=dHKD-9uI24I" data-lity><img src="https://i.ytimg.com/vi/dHKD-9uI24I/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=dHKD-9uI24I" data-lity>How to install the Google Nest Learning Thermostat</a>|<a target="_blank" href="https://www.youtube.com/channel/UCWmlRLAOpx9f1t_cVkBx8-g" >Google Nest</a>|
+|<a href="https://www.youtube.com/watch?v=x3c1ih2NJEg" data-lity><img src="https://i.ytimg.com/vi/x3c1ih2NJEg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=x3c1ih2NJEg" data-lity>How does the INTERNET work?   ICT #2</a>|<a target="_blank" href="https://www.youtube.com/channel/UCqZQJ4600a9wIfMPbYc60OQ" >Lesics</a>|
+|<a href="https://www.youtube.com/watch?v=QUVo4WBzg7Y" data-lity><img src="https://i.ytimg.com/vi/QUVo4WBzg7Y/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=QUVo4WBzg7Y" data-lity>Peeling a Taxidermy Deer Eye</a>|<a target="_blank" href="https://www.youtube.com/channel/UCew_Z2y_q9JcH4yQmLZ-YWA" >Ashley Eve</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

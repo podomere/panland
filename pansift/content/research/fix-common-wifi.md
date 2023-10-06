@@ -1,38 +1,38 @@
 ---
 title: "Fix Common Wifi"
-subtitle: "Immersive Experience?"
+subtitle: "Snackable Content?"
 layout: research
-ip_v4_address: "95.173.213.182"
-date: 2023-02-04T17:07:42+00:00
+ip_v4_address: "27.62.149.23"
+date: 2023-10-06T17:10:30+01:00
 draft: false
 ---
 
-# Internet Addressing
-On the Internet you might get a Public IPv4 address like ```95.173.213.182``` or an IPv6 address like ```2000:b7a4:bfef:c9a3:1af8:e7c1:96d6:d53```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```24:31:8f:6b:40:10```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+## Internet Addressing
+On the Internet you might get a Public IPv4 address like ```27.62.149.23``` or an IPv6 address like ```2000:7aa0:477d:8216:8077:fc3c:27eb:5031```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```3f:88:f1:78:d2:43```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
-# Accessing the Web
-To get to a web page like https://zieme-hermiston.com you initially access a DNS server to translate the host portion (zieme-hermiston) combined with the Top Level Domain (com) of the URL, to an IP address like ```38.88.233.105```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36```
+## Accessing the Web
+To get to a web page like https://berge.name you initially access a DNS server to translate the host portion (berge) combined with the Top Level Domain (name) of the URL, to an IP address like ```109.172.250.36```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36```
 
-# Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```172.23.82.97``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+## Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```172.28.214.117``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
-## IPv4 (inc. VPN)
+### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  172.23.82.97    UGScg  en0
+default  172.28.214.117    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
 
-## IPv6 (inc. VPN)
+### IPv6 (inc. VPN)
 ```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:6e47:fb07:92e5:ef28%en0  UGcg   en0
+default   fe80:994b:e474:adf1:854a%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -40,7 +40,7 @@ default   fe80::%utun2                   UGcIg  utun2
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
 
-# DHCP for IPv4 and IPv6
+## DHCP for IPv4 and IPv6
 
 To get a look at the low level DHCP configuration (Mac/Linux): 
 
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {22.37.73.181, 236.150.121.152}
+domain_name_server (ip_mult): {244.180.4.18, 233.235.57.106}
 end (none):
 ...</pre>
 
@@ -59,25 +59,25 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 24:31:8f:6b:40:10
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 3f:88:f1:78:d2:43
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 9e:fd:25:38:ee:8e
+  SERVERID (2) Length 10: DUID LL HW 1 Addr ce:2e:5b:b5:8a:0c
 }</pre>
 
-# Wired or Wireless
+## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
-## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.15.6```, ```11.4.1```, or ```12.3.8```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+### Apple macOS / OSX
+No matter what version of OSX/macOS you are on, ```10.14.5```, ```11.0.2```, or ```12.0.1```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
-### Scripts
+#### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
 
 ```sudo nohup /usr/bin/sysdiagnose -u &``` will run it in the background and it will write logs to ```/var/tmp/<blah>.tar.gz``` for you. If you want to run it *interactively* (though there is not much interaction) you can run<br>```sudo /usr/bin/sysdiagnose``` and it will give a privacy warning. When not run in the background it should open Finder in the correct location or you can then navigate to ```/var/tmp``` or use Finder with Cmd+Shift+G to point Finder to the path. Just beware the file sizes of about 300MB more or less.
 
 <br><br>
-# Possible Helpful Videos
+## Possible Helpful Videos
 
 <link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
 <script src="/plugins/lity/js/lity.min.js"></script>
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=PEyVZR5hBeo" data-lity><img src="https://i.ytimg.com/vi/PEyVZR5hBeo/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=PEyVZR5hBeo" data-lity>Impact of MAC Randomization on Wi-Fi Networks   Jim Palmer   WLPC 2022 Phoenix</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=eQGKSe7KWpA" data-lity><img src="https://i.ytimg.com/vi/eQGKSe7KWpA/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=eQGKSe7KWpA" data-lity>Wi-Fi Transceiver Architecture and Performance   Veli-Pekka Ketonen   WLPC US 2017 Phoenix</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=jHBEFy-_LWg" data-lity><img src="https://i.ytimg.com/vi/jHBEFy-_LWg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=jHBEFy-_LWg" data-lity>Tips, Tricks and Tools for Site Survey   Ferney Munoz   WLPC Prague 2018</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=vtfnlgTj_-A" data-lity><img src="https://i.ytimg.com/vi/vtfnlgTj_-A/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=vtfnlgTj_-A" data-lity>Indoor Location Detection using Wifi   Marko Tisler   WLPC EU Budapest 2016</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
-|<a href="https://www.youtube.com/watch?v=VU1mOSMru8s" data-lity><img src="https://i.ytimg.com/vi/VU1mOSMru8s/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=VU1mOSMru8s" data-lity>Spectrum Analyzer Comparison</a>|<a target="_blank" href="https://www.youtube.com/channel/UCIzBSS46vcqhwmBZ7ZpY-yg" >Wireless LAN Professionals</a>|
+|<a href="https://www.youtube.com/watch?v=f2mdMcf-fJs" data-lity><img src="https://i.ytimg.com/vi/f2mdMcf-fJs/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=f2mdMcf-fJs" data-lity>Who says one nozzle is enough!? 3D printing with different nozzle sizes</a>|<a target="_blank" href="https://www.youtube.com/channel/UCMvNnP9oAQl5IApL8XBQIkQ" >MihaiDesigns</a>|
+|<a href="https://www.youtube.com/watch?v=qfS8-Qvvmfk" data-lity><img src="https://i.ytimg.com/vi/qfS8-Qvvmfk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=qfS8-Qvvmfk" data-lity>What Router Settings Should You Change?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=PXYQWWKeGzM" data-lity><img src="https://i.ytimg.com/vi/PXYQWWKeGzM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=PXYQWWKeGzM" data-lity>Tunnel Dive   FPV Drone Freestyle (🎥:​ @itsjackfpv)</a>|<a target="_blank" href="https://www.youtube.com/channel/UCiVmHW7d57ICmEf9WGIp1CA" >Drone Racing League</a>|
+|<a href="https://www.youtube.com/watch?v=av2yfDokA6k" data-lity><img src="https://i.ytimg.com/vi/av2yfDokA6k/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=av2yfDokA6k" data-lity>Daddy Yankee &amp; Wisin y Yandel - Si Supieras (Video Oficial)</a>|<a target="_blank" href="https://www.youtube.com/channel/UC9TO_oo4c_LrOiKNaY6aysA" >Daddy Yankee</a>|
+|<a href="https://www.youtube.com/watch?v=CPvoejF9k2o" data-lity><img src="https://i.ytimg.com/vi/CPvoejF9k2o/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=CPvoejF9k2o" data-lity>Liv Harness vs Harlem Globetrotters 😨 #shorts</a>|<a target="_blank" href="https://www.youtube.com/channel/UCd_EkHbEutirFl_XSrg95kA" >GD's Highlights</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

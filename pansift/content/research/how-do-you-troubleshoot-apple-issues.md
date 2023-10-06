@@ -1,38 +1,38 @@
 ---
 title: "How Do You Troubleshoot Apple Issues"
-subtitle: "Immersive Experience?"
+subtitle: "Penetrate The Market?"
 layout: research
-ip_v4_address: "96.130.218.152"
-date: 2023-02-04T17:07:49+00:00
+ip_v4_address: "137.107.211.11"
+date: 2023-10-06T17:10:43+01:00
 draft: false
 ---
 
-# Internet Addressing
-On the Internet you might have a Public IPv4 address like ```96.130.218.152``` or an IPv6 address like ```2000:c3d:4558:d255:1cd5:2828:3149:3f10```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```23:c2:d7:f4:65:ca```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+## Internet Addressing
+On the Internet you may have a Public IPv4 address like ```137.107.211.11``` or an IPv6 address like ```2000:2291:bdcc:219a:4b49:b6a5:129a:db7e```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```90:17:9e:63:75:e2```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
-# Accessing the Web
-To get to a web page like https://rosenbaum.co you initially access a DNS server to translate the host portion (rosenbaum) combined with the Top Level Domain (co) of the URL, to an IP address like ```11.176.103.119```. Your computer and browser actually sends its type with all web requests e.g. <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
+## Accessing the Web
+To get to a web page like https://hermann.net you initially access a DNS server to translate the host portion (hermann) combined with the Top Level Domain (net) of the URL, to an IP address like ```107.199.166.244```. Your computer and browser actually sends its type with all web requests e.g. <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
 
-# Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```172.29.184.53``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+## Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.20.4.118``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
-## IPv4 (inc. VPN)
+### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  172.29.184.53    UGScg  en0
+default  10.20.4.118    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
 
-## IPv6 (inc. VPN)
+### IPv6 (inc. VPN)
 ```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:8dea:48bf:173b:183e%en0  UGcg   en0
+default   fe80:6b30:a450:a501:bcfe%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -40,7 +40,7 @@ default   fe80::%utun2                   UGcIg  utun2
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
 
-# DHCP for IPv4 and IPv6
+## DHCP for IPv4 and IPv6
 
 To get a look at the low level DHCP configuration (Mac/Linux): 
 
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {17.5.16.210, 51.131.160.253}
+domain_name_server (ip_mult): {34.171.169.240, 94.5.105.2}
 end (none):
 ...</pre>
 
@@ -59,25 +59,25 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 23:c2:d7:f4:65:ca
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 90:17:9e:63:75:e2
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 24:92:1b:6f:06:95
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 40:70:c6:93:cf:0a
 }</pre>
 
-# Wired or Wireless
+## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
-## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.15.1```, ```11.4.7```, or ```12.2.2```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+### Apple macOS / OSX
+No matter what version of OSX/macOS you are on, ```10.14.8```, ```11.1.1```, or ```12.1.5```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
-### Scripts
+#### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
 
 ```sudo nohup /usr/bin/sysdiagnose -u &``` will run it in the background and it will write logs to ```/var/tmp/<blah>.tar.gz``` for you. If you want to run it *interactively* (though there is not much interaction) you can run<br>```sudo /usr/bin/sysdiagnose``` and it will give a privacy warning. When not run in the background it should open Finder in the correct location or you can then navigate to ```/var/tmp``` or use Finder with Cmd+Shift+G to point Finder to the path. Just beware the file sizes of about 300MB more or less.
 
 <br><br>
-# Possible Helpful Videos
+## Possible Helpful Videos
 
 <link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
 <script src="/plugins/lity/js/lity.min.js"></script>
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=Qh2dIMTDx-g" data-lity><img src="https://i.ytimg.com/vi/Qh2dIMTDx-g/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=Qh2dIMTDx-g" data-lity>Make Free iPhone Ringtones - How to Make Ringtones With Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=vw19GDo-d1I" data-lity><img src="https://i.ytimg.com/vi/vw19GDo-d1I/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=vw19GDo-d1I" data-lity>Install Mac Fonts on Terminal - Fastest Way to Add Mac Fonts</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=fWLgMZsAGXQ" data-lity><img src="https://i.ytimg.com/vi/fWLgMZsAGXQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=fWLgMZsAGXQ" data-lity>On the Road to Big Sur 5 - Let&#39;s Install!</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=NqvWvMV0F4w" data-lity><img src="https://i.ytimg.com/vi/NqvWvMV0F4w/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=NqvWvMV0F4w" data-lity>Mac Keyboard Magic - Keyboard Shortcuts, Modifier Keys, Text Abbreviations</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=IQK85ehIm28" data-lity><img src="https://i.ytimg.com/vi/IQK85ehIm28/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=IQK85ehIm28" data-lity>Getting Your Mac to Read to You - Hands-on Mac 17</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=WU0PcCQ31C4" data-lity><img src="https://i.ytimg.com/vi/WU0PcCQ31C4/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=WU0PcCQ31C4" data-lity>Get to Know Your Terminal - Hands-On Mac 4</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=aRtx2X-T3gk" data-lity><img src="https://i.ytimg.com/vi/aRtx2X-T3gk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=aRtx2X-T3gk" data-lity>Inside the Mac Filesystem - Hands-On Mac 12</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=YUQpDewATro" data-lity><img src="https://i.ytimg.com/vi/YUQpDewATro/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=YUQpDewATro" data-lity>Aliases, What Are They Good For?</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=JMKi6o9kaZI" data-lity><img src="https://i.ytimg.com/vi/JMKi6o9kaZI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=JMKi6o9kaZI" data-lity>macOS Big Sur - What&#39;s New in Apple macOS 11</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

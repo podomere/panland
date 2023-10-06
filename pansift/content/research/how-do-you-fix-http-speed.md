@@ -2,37 +2,37 @@
 title: "How Do You Fix Http Speed"
 subtitle: "Buying Cycle?"
 layout: research
-ip_v4_address: "78.46.173.193"
-date: 2023-02-04T17:08:40+00:00
+ip_v4_address: "165.75.128.147"
+date: 2023-10-06T17:11:08+01:00
 draft: false
 ---
 
-# Internet Addressing
-On the Internet you might get a Public IPv4 address like ```78.46.173.193``` or an IPv6 address like ```2000:de2e:1dfb:f801:ab64:1a64:c5fd:3080```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```15:4c:2d:4d:a1:bb```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+## Internet Addressing
+On the Internet you might get a Public IPv4 address like ```165.75.128.147``` or an IPv6 address like ```2000:fdd8:2080:3197:38e5:ebf0:c78f:dafe```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```86:4a:87:42:f3:86```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
-# Accessing the Web
-To get to a web page like https://gislason.com you initially access a DNS server to translate the host portion (gislason) combined with the Top Level Domain (com) of the URL, to an IP address like ```169.98.216.237```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A```
+## Accessing the Web
+To get to a web page like https://dickens.org you initially access a DNS server to translate the host portion (dickens) combined with the Top Level Domain (org) of the URL, to an IP address like ```233.172.149.196```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36```
 
-# Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.24.218.25``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+## Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```192.0.0.128``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
-## IPv4 (inc. VPN)
+### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  10.24.218.25    UGScg  en0
+default  192.0.0.128    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
 
-## IPv6 (inc. VPN)
+### IPv6 (inc. VPN)
 ```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:c715:f3ee:7f4c:4f25%en0  UGcg   en0
+default   fe80:e960:ac80:570:73ae%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -40,7 +40,7 @@ default   fe80::%utun2                   UGcIg  utun2
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
 
-# DHCP for IPv4 and IPv6
+## DHCP for IPv4 and IPv6
 
 To get a look at the low level DHCP configuration (Mac/Linux): 
 
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {3.113.15.116, 175.255.35.169}
+domain_name_server (ip_mult): {238.163.148.60, 91.192.156.222}
 end (none):
 ...</pre>
 
@@ -59,25 +59,25 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 15:4c:2d:4d:a1:bb
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 86:4a:87:42:f3:86
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr ce:18:94:82:36:1d
+  SERVERID (2) Length 10: DUID LL HW 1 Addr c9:91:51:85:98:6c
 }</pre>
 
-# Wired or Wireless
+## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
-## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.14.8```, ```11.5.2```, or ```12.2.2```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+### Apple macOS / OSX
+No matter what version of OSX/macOS you are on, ```10.11.2```, ```11.4.3```, or ```12.2.7```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
-### Scripts
+#### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
 
 ```sudo nohup /usr/bin/sysdiagnose -u &``` will run it in the background and it will write logs to ```/var/tmp/<blah>.tar.gz``` for you. If you want to run it *interactively* (though there is not much interaction) you can run<br>```sudo /usr/bin/sysdiagnose``` and it will give a privacy warning. When not run in the background it should open Finder in the correct location or you can then navigate to ```/var/tmp``` or use Finder with Cmd+Shift+G to point Finder to the path. Just beware the file sizes of about 300MB more or less.
 
 <br><br>
-# Possible Helpful Videos
+## Possible Helpful Videos
 
 <link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
 <script src="/plugins/lity/js/lity.min.js"></script>
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=aor29pGhlFE" data-lity><img src="https://i.ytimg.com/vi/aor29pGhlFE/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=aor29pGhlFE" data-lity>Internet Protocol - IPv4 vs IPv6 as Fast As Possible</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
-|<a href="https://www.youtube.com/watch?v=WXbidC6q5-Y" data-lity><img src="https://i.ytimg.com/vi/WXbidC6q5-Y/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=WXbidC6q5-Y" data-lity>Why Does Your Internet Connection Randomly Stop Working?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
-|<a href="https://www.youtube.com/watch?v=qfS8-Qvvmfk" data-lity><img src="https://i.ytimg.com/vi/qfS8-Qvvmfk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=qfS8-Qvvmfk" data-lity>What Router Settings Should You Change?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
-|<a href="https://www.youtube.com/watch?v=4OZ8lqB3K0U" data-lity><img src="https://i.ytimg.com/vi/4OZ8lqB3K0U/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=4OZ8lqB3K0U" data-lity>People Still Use Dial-Up Internet!</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
-|<a href="https://www.youtube.com/watch?v=jQCY-jmoY5o" data-lity><img src="https://i.ytimg.com/vi/jQCY-jmoY5o/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=jQCY-jmoY5o" data-lity>Why Wi-Fi 6 Will CHANGE Gaming</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=WOZQppVNGvA" data-lity><img src="https://i.ytimg.com/vi/WOZQppVNGvA/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=WOZQppVNGvA" data-lity>What The Heck Is Port Forwarding?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=PpsEaqJV_A0" data-lity><img src="https://i.ytimg.com/vi/PpsEaqJV_A0/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=PpsEaqJV_A0" data-lity>What is TCP/IP?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=aPoe4WtX2mU" data-lity><img src="https://i.ytimg.com/vi/aPoe4WtX2mU/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=aPoe4WtX2mU" data-lity>Next-Gen Wi-Fi Security - WPA3 Explained</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=M7Ew_zube4M" data-lity><img src="https://i.ytimg.com/vi/M7Ew_zube4M/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=M7Ew_zube4M" data-lity>Windows 11 Just Changed AGAIN</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=2Oz2_3sFajQ" data-lity><img src="https://i.ytimg.com/vi/2Oz2_3sFajQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=2Oz2_3sFajQ" data-lity>This Is The World&#39;s Fastest Internet #Shorts</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

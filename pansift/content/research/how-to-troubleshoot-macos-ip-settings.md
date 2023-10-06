@@ -1,38 +1,38 @@
 ---
 title: "How To Troubleshoot MacOS IP Settings"
-subtitle: "Data Points?"
+subtitle: "Button Up The Loose Ends?"
 layout: research
-ip_v4_address: "83.191.49.202"
-date: 2023-02-04T17:07:48+00:00
+ip_v4_address: "186.162.55.9"
+date: 2023-10-06T17:10:40+01:00
 draft: false
 ---
 
-# Internet Addressing
-On the Internet you may have a Public IPv4 address like ```83.191.49.202``` or an IPv6 address like ```2000:a895:dea9:57f4:b8f0:64e8:d659:3586```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```2d:69:d2:0b:70:73```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+## Internet Addressing
+On the Internet you might have a Public IPv4 address like ```186.162.55.9``` or an IPv6 address like ```2000:1e8e:1ecc:ebcf:2f5f:e681:23af:e0ae```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```c5:88:09:b4:c2:c4```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
-# Accessing the Web
-To get to a web page like https://legros.org you initially access a DNS server to translate the host portion (legros) combined with the Top Level Domain (org) of the URL, to an IP address like ```83.15.45.40```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows; U; Win 9x 4.90; SG; rv:1.9.2.4) Gecko/20101104 Netscape/9.1.0285```
+## Accessing the Web
+To get to a web page like https://boyle.net you initially access a DNS server to translate the host portion (boyle) combined with the Top Level Domain (net) of the URL, to an IP address like ```208.129.222.253```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (compatible; MSIE 9.0; AOL 9.7; AOLBuild 4343.19; Windows NT 6.1; WOW64; Trident/5.0; FunWebProducts)```
 
-# Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```172.27.19.54``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+## Default Gateways
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.102.26.246``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
-## IPv4 (inc. VPN)
+### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  172.27.19.54    UGScg  en0
+default  10.102.26.246    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
 
-## IPv6 (inc. VPN)
+### IPv6 (inc. VPN)
 ```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:27d1:c8d3:867b:a989%en0  UGcg   en0
+default   60d5:d298:f4:a09d:a8d:aa99:bf91:3e2%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -40,7 +40,7 @@ default   fe80::%utun2                   UGcIg  utun2
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
 
-# DHCP for IPv4 and IPv6
+## DHCP for IPv4 and IPv6
 
 To get a look at the low level DHCP configuration (Mac/Linux): 
 
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {163.2.41.105, 244.28.254.85}
+domain_name_server (ip_mult): {12.159.227.203, 238.221.70.107}
 end (none):
 ...</pre>
 
@@ -59,25 +59,25 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 2d:69:d2:0b:70:73
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr c5:88:09:b4:c2:c4
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 61:00:1a:cf:76:cf
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 7e:0e:a0:78:91:6d
 }</pre>
 
-# Wired or Wireless
+## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
-## Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.15.8```, ```11.2.6```, or ```12.0.5```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+### Apple macOS / OSX
+No matter what version of OSX/macOS you are on, ```10.12.7```, ```11.4.8```, or ```12.1.8```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
-### Scripts
+#### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
 
 ```sudo nohup /usr/bin/sysdiagnose -u &``` will run it in the background and it will write logs to ```/var/tmp/<blah>.tar.gz``` for you. If you want to run it *interactively* (though there is not much interaction) you can run<br>```sudo /usr/bin/sysdiagnose``` and it will give a privacy warning. When not run in the background it should open Finder in the correct location or you can then navigate to ```/var/tmp``` or use Finder with Cmd+Shift+G to point Finder to the path. Just beware the file sizes of about 300MB more or less.
 
 <br><br>
-# Possible Helpful Videos
+## Possible Helpful Videos
 
 <link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
 <script src="/plugins/lity/js/lity.min.js"></script>
@@ -86,10 +86,10 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
 |<a href="https://www.youtube.com/watch?v=vw19GDo-d1I" data-lity><img src="https://i.ytimg.com/vi/vw19GDo-d1I/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=vw19GDo-d1I" data-lity>Install Mac Fonts on Terminal - Fastest Way to Add Mac Fonts</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity><img src="https://i.ytimg.com/vi/7KdhJimuhNw/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity>Securing macOS Big Sur</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=mJn_5U6qOwQ" data-lity><img src="https://i.ytimg.com/vi/mJn_5U6qOwQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=mJn_5U6qOwQ" data-lity>Organizing Windows (Magnet Tiles &amp; Workspaces)</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity><img src="https://i.ytimg.com/vi/TWzWd_DiaJ0/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity>Mac Activity Monitor - How to Troubleshoot Your Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=SLcz5iKLpuQ" data-lity><img src="https://i.ytimg.com/vi/SLcz5iKLpuQ/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=SLcz5iKLpuQ" data-lity>Easily Adjust File Creation Dates for Photos - A Better Finder Attributes</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=NqvWvMV0F4w" data-lity><img src="https://i.ytimg.com/vi/NqvWvMV0F4w/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=NqvWvMV0F4w" data-lity>Mac Keyboard Magic - Keyboard Shortcuts, Modifier Keys, Text Abbreviations</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=ySr5JSWNnsk" data-lity><img src="https://i.ytimg.com/vi/ySr5JSWNnsk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=ySr5JSWNnsk" data-lity>Using Hazel with Folder Actions - An easy way to automate your Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=2U9FiIelMQI" data-lity><img src="https://i.ytimg.com/vi/2U9FiIelMQI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=2U9FiIelMQI" data-lity>Syncthing - Free, Open-Source, Continuous File Synchronization</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

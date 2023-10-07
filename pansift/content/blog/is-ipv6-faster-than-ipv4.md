@@ -22,10 +22,10 @@ title: 'Is IPv6 Faster Than IPv4?'
 
 To answer this question we decided to look at anonymized data we had collected from a range of monitoring agents over a 30 day period. For simplicity, the data used only focused on the client's RTT (Round Trip Time) to their **default gateway**. This *sub-path* does not cover a full round trip to Internet based assets, it's just the first leg of a journey (often over Wi-Fi), which admittedly can suffer extreme variability. There are many nuances that may affect our initial results, including but not limited to, size of data set, differences in device, OS (Operating System) level, the medium, protocol, CoS type, etc. It is, however, precisely because of the complexity involved that we decided to look at one simple and comparable metric! 
 
-## The Approach
+### The Approach
 We began by using our Wi-Fi assurance and remote troubleshooting tool called [PanSift](https://pansift.com) <a href="/demo" target="_blank" rel="nofollow">(see a live demo)</a>. We started with **2.4 million** *network related* gateway data points. These measurements were taken every **30** seconds from **16** randomly selected macOS agents (using our maximum data retention period of **30** days). Subsequently, the data points used were from agents when **fully online with dualstack connectivity** (i.e. can reach Internet based lighthouses), rather than just being *locally_connected* yet we only used the data from the client to the default gateway. Using Internet connected hosts makes any comparison fairer such that there's the potential for ongoing traffic traversing connections and the gateways we're measuring to. Additionally, it should be noted that [PanSift](https://pansift.com) does not normalize data and retains full fidelity metrics. This allows for fine grained analysis and even retrospective troubleshooting. After filtering data for agents with concurrent IPv4 and IPv6 Internet reachability, we were then left with **342,980** valid gateway related data points.   
 
-### Under The Hood
+#### Under The Hood
 The [PanSift](https://pansift.com) agent sends 3 ICMP *echo_request*s every 30 seconds using both **IPv4** (ping) and **IPv6** (ping6) while also explicitly setting the COS (Class of Service) to *Best Effort* . The options used with *ping* and *ping6* (just to be explicit) are:
 
 - `-c 3` = to send a count of 3 requests and then stop
@@ -41,7 +41,7 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
 
 **Note:** To simplify, we also rounded the (float) values to (integer) whole numbers so we could quickly and more fairly compare "ties" between **IPv4** and **IPv6**.
 
-## Results
+### Results
 
 <div class="table1-start"></div>
 
@@ -88,14 +88,14 @@ We then used Influx's <a target="_blank" href="https://www.influxdata.com/produc
  <br>
  
  
-## IPv4 and IPv6; Relevant Differences? 
-### What is IPv6 connectivity anyway?
+### IPv4 and IPv6; Relevant Differences? 
+#### What is IPv6 connectivity anyway?
 We've previously done a primer on IPv6 connectivity and troubleshooting [here](/blog/how-to-fix-ipv6-connectivity/), so let's take a brief look at some of the fundamental differences between IPv4 and IPv6 in relation to our data.
   
-### ICMPv4 and v6
+#### ICMPv4 and v6
 The ICMPv6 format is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc4443">RFC4443</a> whereas ICMP is described in <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc792">RFC792</a>, yet apart from the difference in Extension Headers (which are not relevant here), one wonders about why IPv6 might be faster than IPv4 (perhaps related to the gateway stack and utilization?).
 
-### Next Steps?
+#### Next Steps?
 We now need to expand the above analysis to see if:
   - [x] there's any correlation with the MAC addresses (and thus the vendor OUIs) which show what type/make of device is acting as the gateway?
   - [x] perhaps this is related to certain client device types, operating system versions, or patch levels?

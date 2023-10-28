@@ -307,7 +307,7 @@ Then I started wondering if there were only nibbles of the bitmask being used so
 
 <hr>
 
-💡 It took me a while, but then I found this [**https://newosxbook.com/articles/11208ellpA-II.html**](https://newosxbook.com/articles/11208ellpA-II.html) from [Jonathan Levin](https://twitter.com/technologeeks) and some great info referencing the early **Apple80211_*.h** headers -> specifically "**apple80211_var.h**". 
+💡 It took me a while, but then I found this [**https://newosxbook.com/articles/11208ellpA-II.html**](https://newosxbook.com/articles/11208ellpA-II.html) from [Jonathan Levin](https://twitter.com/technologeeks) and some great info referencing the early Apple 80211 headers -> specifically **apple80211_var.h**. 
 
 His post also provided an old copy of the header files! (🙏 Jonathan)! They were from an old **OS X 10.5 SDK** (before Apple pulled the file). I eagerly read his [post](https://newosxbook.com/articles/11208ellpA-II.html) from 2015 and dove in to the header files... yikes, look at the below!
 

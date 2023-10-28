@@ -333,7 +333,7 @@ enum apple80211_channel_flag
  											// extension channel is below.
 };
 ```
-<small>And they look quite different from the _radiotap.headers_ **channel flags** from the pcap above :)</small>
+<small>And they look quite different from the _radiotap.headers_ **channel flags** from the pcap :)</small>
 
 <center><img src="/images/blog/podomere-legacy-pcap-subset.png"></center>
 <br><br>

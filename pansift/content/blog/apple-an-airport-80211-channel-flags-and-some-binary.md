@@ -365,11 +365,11 @@ Then we can left pad the value (we could pad to 16 [as only 10 bits listed in th
 
 <hr>
 
-✅ I then set about applying this learning to the `XML` scan data which also contains Apple's `CHANNEL_FLAGS` in the output from `airport -s -x`. This will be rolled out in the next PanSift agent update from version `0.6.1` current to `0.6.2` soon.
+✅ I then set about applying this learning to the `XML` plist based scan data which also has `CHANNEL_FLAGS` in the output from `airport -s -x`. This will be rolled out in the next [PanSift](/) agent update from the current version `0.6.1` to `0.6.2` real soon!
 
 <hr>
 
-With a little bit more testing on `6GHz` using `80MHz` and `160MHz` channel widths, I can establish the exact higher order bits relevance (without access to the latest header files). 
+With a little bit more testing on `6GHz` using `80MHz` and `160MHz` channel widths, I hope to establish the exact usage of the currently undocumented higher order bits (without having access to the latest header files!). 
 
 It means we can also infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network via `CHANNEL_FLAGS`. This `CHANNEL_FLAGS` approach works for old versions of OS X and macOS for now, so Apple, please don't deprecate the `airport` utility, I'll have to do some funky stuff with Python and [PyObjC](https://pypi.org/project/pyobjc/) :)
 

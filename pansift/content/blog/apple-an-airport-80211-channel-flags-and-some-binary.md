@@ -365,7 +365,7 @@ Then we can left pad the value (we could pad to 16 [as only 10 bits listed in th
 
 <hr>
 
-✅ I then set about applying this learning to the `XML` scan data which also contains Apple's `CHANNEL_FLAGS` inside the output from `airport -s -x`. This will be rolled out in the next PanSift agent update from version `0.6.1` current to `0.6.2` soon.
+✅ I then set about applying this learning to the `XML` scan data which also contains Apple's `CHANNEL_FLAGS` in the output from `airport -s -x`. This will be rolled out in the next PanSift agent update from version `0.6.1` current to `0.6.2` soon.
 
 <hr>
 

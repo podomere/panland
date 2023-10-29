@@ -21,13 +21,18 @@ published: true
 title: Apple, an Airport, 802.11 Channel Flags, and Some Binary
 ---
 
-Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If you don't know what that means, then this post is probably not for you. However, if you do know your `2.4GHz` from your `5GHz` , then read on for some reverse engineering relating to; packet captures, custom bitmasks, and how to figure out which **WLAN bands** and **channel widths** are around you and your Mac (without having to use Apple's CoreWLAN or clicking in the UI).
+Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If you don't know what that means, then this post is probably not for you. However, if you do know your `2.4GHz` from your `5GHz` , then read on for some reverse engineering relating to; packet captures, custom bitmasks, and how to figure out which **WLAN bands** and **channel widths** are around your Mac (without having to use Apple's <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> or clicking the Wi-Fi icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21"> in the menubar part of the UI).
 
-This is not an `IEEE 802.11` wireless LAN history lesson, but suffice to say, the `802.11` standard and protocol (that underpins **Wi-Fi**) is revised and updated with new functionality relatively frequently and has a naming convention that uses lettered versioning such as `802.11a` , `802.11b` , `802.11g` , `802.11n` , `802.11ac` , `802.11ax` , and `802.11be`. 
+<hr>
 
-Each have some unique properties, but often build off what has come before. There are often differences in **RF** bands, modulation, encoding, and then some sprinkles of additional features all in an attempt to pack greater amounts of data in to radio waves. As our thirst for data and usage grows, each successive standard tries to bundle ever more bits in to the air. Partly, this is an attempt to have devices get on and off the medium as quickly as possible. Only one device can speak on one frequency at a time (half-duplex) within a certain range. **Wi-Fi** is a shared medium designed to serve multiple devices _almost_ concurrently (effectively within a shared cell). It tries to avoid collisions and is unable to detect them, but I digress...
+💡 This is not going to be an `IEEE 802.11` wireless LAN history 📜 lesson, but suffice to say, the `802.11` standard and protocol (the one that underpins **Wi-Fi**) is revised and updated with new functionality _relatively_ frequently and has a naming convention that uses lettered versioning such as `802.11a` , `802.11b` , `802.11g` , `802.11n` , `802.11ac` , `802.11ax` , and `802.11be`. Each `802.11*` standard has some unique properties and often builds off what has come before. 
 
-So, one of the latest'ish IEEE standards for Wi-Fi is `802.11ax` and it led to the Wi-Fi Alliance re-branding `802.11ax` as **Wi-Fi 6** for marketing purposes. 
+There are differences in **RF** bands, modulation, encoding, and then some sprinkles of additional features, all in an attempt to pack greater amounts of data in to radio waves. As our thirst for data grows, each successive standard tries to bundle ever more bits in to the air. Partly, this is an attempt to have devices get on and off the medium as quickly as possible as only one device can speak on a specific channel frequency at a time (half-duplex) once within range. **Wi-Fi** is a shared medium designed to serve multiple devices _almost_ concurrently. It tries to avoid collisions as it is unable to detect them, but I digress... finding clear channels to reduce **contention** and **interference** is crucial to **optimal** performance. 
+
+
+<hr>
+
+So, one of the latest'ish IEEE standards for Wi-Fi is `802.11ax`. The existing naming convention led the Wi-Fi Alliance to rebrand `802.11ax` as **Wi-Fi 6** for marketing purposes. 
 
 🚩 And here's where my problem begins and continues! 🚩 
 
@@ -37,29 +42,31 @@ All good so far. This means that if you can quickly find out the active/primary 
 
 A **simple heuristic** that _had_ worked for a long time. 
 
-But apparently naming things has to get harder 🚩. The amendment to `802.11ax` that enabled the `6GHz` frequency range (**yay!**) was named by the Wi-Fi Alliance as **Wi-Fi 6E**. They effectively broke their own simple marketing naming standard and tacked on letters rather than incremental digits to differentiate capabilities (and the associated benefits). 
+🚩 But apparently naming things has to get harder 🚩. 
 
-Not only is this somewhat confusing from a consumer perspective (looking for *Wi-Fi **6*** vs *Wi-Fi **6E*** capable access points and devices) but **Wi-Fi 6E** also **re-uses existing channel numbers** in the `6GHz` range. This channel catastrophe however is perhaps a legacy thing and not just an IEEE car crash. 
+The amendment to `802.11ax` that enabled the `6GHz` frequency range (**yay!**) was named by the <a target="_blank" href="https://www.wi-fi.org/who-we-are">**Wi-Fi Alliance**</a> as **Wi-Fi 6E**. They effectively broke their own simple marketing naming standard and tacked on letters rather than incremental digits to differentiate capabilities (in the vain hope of clear messaging!). 
 
-So the previously simple channel based heuristic **now fails** to correctly and easily identify the frequency band! 
-<br>
-<br>
-`Channel 1` can now be either in the `2.4GHz` or `6GHz` band. 
-<br>
-<br>
-🚩 In fact, the channel numbers `1`,`3`,`5`,`7`,`9`,`11`,`13`,`149`,`151`,`157`,`161`,`165`,`169`,`173`,`177` overlap directly from the `2.4GHz` and `5GHz` bands **with** the channel numbers (but not frequencies) in the `6GHz` range.  
+Not only is this **confusing** from a consumer perspective (looking for *Wi-Fi **6*** vs *Wi-Fi **6E*** capable access points and devices), but **Wi-Fi 6E** also **re-uses existing channel numbers** in the `6GHz` range. This channel car crash 💥, however, is perhaps a legacy thing owed to the <a target="_blank" href="https://www.ieee.org/">**IEEE**</a> who were trying to be consistent across regulatory domains. 
+
+So, the previously simple _channel_ based heuristic **now fails** to correctly and easily identify the **RF** frequency band! 
+<hr>
+
+**Channel `1` can now be either in the `2.4GHz` or `6GHz` band**.
+<hr>
+
+🚩 In fact, the channel numbers `1`, `3`, `5`, `7`, `9`, `11`, `13`, `149`, `151`, `157`, `161`, `165`, `169`, `173`, `177` overlap directly from the `2.4GHz` and `5GHz` bands, **with** the channel numbers (_but not frequencies_) in the `6GHz` range.  
 
 So how do you know which channel is in which band ❓ 
 
-Conveniently, the **macOS** UI(User Interface) will tell you (if you _Alt or Option Click_ the Wi-Fi airport icon!). But what if you want to find out progammatically via the command line and without learning new languages?
+The most reliable way to get at **WLAN** information in **macOS** is to query the <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> framework. <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>, as Apple states, _"provides APIs for querying AirPort interfaces and choosing networks."_ Though, to natively query this information requires the ability to write <a target="_blank" href="https://en.wikipedia.org/wiki/Objective-C">**Objective-C**</a> _syntax_ based code (which I don't currently have) or use Apple's <a target="_blank" href="https://developer.apple.com/swift/">**Swift**</a> language. 
 
-The most reliable way to get at WLAN information in **macOS** is actually to query the [**CoreWLAN**](https://developer.apple.com/documentation/corewlan) framework. [**CoreWLAN**](https://developer.apple.com/documentation/corewlan), as Apple states, _"provides APIs for querying AirPort interfaces and choosing networks."_ To natively query this information requires the ability to write [**Objective-C**](https://en.wikipedia.org/wiki/Objective-C) formatted code (which I don't currently have) or use [**Apple's Swift**](https://developer.apple.com/swift/) language. 
+Also, the **macOS** UI(User Interface) will tell you (if you _Alt or Option Click_ the Wi-Fi airport icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21">!). But what if you want to find out _progammatically_ via the command line and _without_ learning a new language? Well, there's also the `airport` command line utility and even some `system_profiler` keys to query.
 
-As an ex-network engineer with a computer science degree (and a some proficiency in software development), I've been building [**PanSift**](/) using Ruby on Rails, Javascript, and good old BASH scripting. Much of the design of PanSift is outlined [**here**](/design) (in case you're interested), but whereas I could previously use the `airport` command line utility to rapidly infer frequencies from channels, with the introduction of `6GHz`, it became problematic, or did it?
+As an ex-network engineer with a computer science degree (and a some proficiency in software development), I've been building [**PanSift**](/) using <a target="_blank" href="https://rubyonrails.org/">Ruby on Rails</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>, and good old <a target="_blank" href="https://www.gnu.org/software/bash/">Bash</a> scripting. Much of the design of [**PanSift**](/) is outlined [**here**](/design) (in case you're interested), but whereas I could previously use the `airport` command line utility to rapidly infer frequencies from channels, with the introduction of `6GHz`, it's became problematic, or has it?
 
-The Apple macOS airport utility can be used from the command line to output information about the currently connected Wi-Fi network or scan surrounding networks. It's super handy for basic scripting but has limitations. 
+The Apple macOS `airport` utility can be used from the command line to output information about the currently connected Wi-Fi network or scan surrounding networks. It's super handy for basic scripting but has limitations. 
 
-Some people alias or soft link the `airport` binary ```/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport``` to facilitate just typing `airport` directly in the terminal without modifying any paths:
+Some people alias or soft link the `airport` binary from ```/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport``` to facilitate the ability to just type `airport` directly in the terminal without modifying their paths:
 
 So, let's see what we can do using the `airport` binary with the `-I` getinfo switch:
 
@@ -85,7 +92,7 @@ lastAssocStatus: 0
 </pre>
 <small>Note: In later macOS versions the `BSSID` (MAC address) is hidden for privacy purposes.</small>
 
-I had been using the command line airport utility in the [PanSift](/) agent to grab information about the currently connected WLAN and also to **scan** what Wi-Fi networks were around using the `-s` scanning switch (inc. some other switches). You can output some very useful information to the terminal in human readable format.
+I had been using the command line airport utility in the [PanSift](/) agent to grab information about the currently connected WLAN and also to **scan** what Wi-Fi networks were around using the `-s` scanning switch (inc. some other switches mentioned below). You can output some very useful information to the terminal in human readable format.
 
 <pre>
 minis-Mac-mini:Pansift mini$ airport -s
@@ -99,9 +106,9 @@ minis-Mac-mini:Pansift mini$ airport -s
            SKYFXTKT                   -70  6       Y  -- RSN(PSK/AES/AES)
 </pre>
 
-But you can actually output more information from the airport utility using the additional `-x` flag to get an `XML` _plist_ formatted output (either for current info or to scan). 
+But you can actually output more information from the airport utility using the additional `-x` flag to get an `XML` <a target="_blank" href="https://developer.apple.com/documentation/bundleresources/information_property_list">plist</a> formatted output (either for current info or to scan). 
 
-🚩 Keep an eye on the `CHANNEL_FLAGS` key, value, and value type in the output below...
+🚩 Keep an eye on the `CHANNEL_FLAGS` key, value, and value type from the output below...
 
 ```
 
@@ -152,16 +159,15 @@ minis-Mac-mini:Pansift mini$ airport -Ix
 </plist>
 ```
 
-I wondered if and how the key/value fields lined up with any of the standard 802.11 ones, so I started looking at some packet captures, and spoiler... (more below) but they do **not** map exactly and in some cases **not at all** :) 
+I wondered if, and how, the key/value fields lined up with any of the standard 802.11 ones. So, I started looking at some packet captures, and spoiler... (more below) but they do **not** map exactly and in some cases **not at all** :) 
 
-The Apple [plist](https://developer.apple.com/documentation/bundleresources/information_property_list) keys outputed are also not consistent across major OS releases (irrespective of the `PHY` type!). Now I could be missing something, as the OS is now proprietary and closed, but some historical digging and research really helped out a lot! I was also interested in finding out _progammatically_ what the channel widths are without [**CoreWLAN**](https://developer.apple.com/documentation/corewlan). 
+The Apple <a target="_blank" href="https://developer.apple.com/documentation/bundleresources/information_property_list">plist</a> key output is also not consistent across major OS releases (irrespective of the `PHY` type!). Now I could be missing something, as the OS is now proprietary and closed, but some historical digging and research really helped out a lot! I was also interested in finding out _progammatically_ what the channel widths were without using <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>. 
 
-At this point I pivoted a bit to poke around using other command line utilities such as ```system_profiler SPAirPortDataType``` which actually gives (at least in macOS Ventura 13.x) some added information about supported, currently connected, and recently scanned cached 🚩 networks (including the channel bands and widths ✅). 
+At this point I pivoted a bit to other command line utilities such as ```system_profiler``` looking at the ```SPAirPortDataType``` which actually gives (at least in macOS Ventura 13.x) some additional information about supported, currently connected, and recently scanned cached 🚩 WLAN networks (including the channel bands and widths ✅). 
 
 <small>Note: There's nothing wrong with a cache 🚩 of scan information, just that we needed fresher data for our time series troubleshooting solution.</small>
 
 ```
-
 mini# system_profiler SPAirPortDataType
 Wi-Fi:
 
@@ -209,16 +215,67 @@ Wi-Fi:
               Network Type: Infrastructure
               Security: WPA/WPA2 Personal
               Signal / Noise: -94 dBm / -96 dBm
-            SKYFXTKT:
-              PHY Mode: 802.11
-              Channel: 6 (2GHz, 20MHz)
-              Network Type: Infrastructure
-              Security: WPA2 Personal
-              Signal / Noise: -74 dBm / -96 dBm
 		...
 ```
 
-Yay, well kinda... we could potentially parse the information here for what is needed but the scan data is not necessarily up to date... and, if you are on earlier OS X versions or macOS 11.x then the command ```system_profiler SPAirPortDataType``` doesn't contain the band **or** width (with the exception of the odd channel offset!).
+and an example with 6GHz:
+
+```
+mini-6GHz# system_profiler SPAirPortDataType
+Wi-Fi:
+
+      Software Versions:
+          CoreWLAN: 16.0 (1657)
+          CoreWLANKit: 16.0 (1657)
+          Menu Extra: 17.0 (1728)
+          System Information: 15.0 (1502)
+          IO80211 Family: 12.0 (1200.13.0)
+          Diagnostics: 11.0 (1163)
+          AirPort Utility: 6.3.9 (639.21)
+      Interfaces:
+        en1:
+          Card Type: Wi-Fi  (0x14E4, 0x4388)
+          Firmware Version: wl0: Apr 15 2023 07:46:47 version 23.20.84.0.40.50.94..
+          MAC Address: 5c:1b:f4:xx:xx:xx
+          Locale: ETSI
+          Country Code: IE
+          Supported PHY Modes: 802.11 a/b/g/n/ac/ax
+          Supported Channels: ✅ 1 (2GHz), 2 (2GHz), 3 (2GHz), 4 (2GHz), 5 (2GHz),
+	6 (2GHz), 7 (2GHz), 8 (2GHz), 9 (2GHz), 10 (2GHz), 11 (2GHz), 12 (2GHz), 
+	13 (2GHz), 36 (5GHz), 40 (5GHz), 44 (5GHz), 48 (5GHz), 52 (5GHz), 56 (5GHz), 
+	60 (5GHz), 64 (5GHz), 100 (5GHz), 104 (5GHz), 108 (5GHz), 112 (5GHz), 
+	116 (5GHz), 120 (5GHz), 124 (5GHz), 128 (5GHz), 132 (5GHz), 136 (5GHz), 
+	140 (5GHz), 149 (5GHz), 153 (5GHz), 157 (5GHz), 161 (5GHz), 165 (5GHz), ✅
+	🚩 1 (6GHz), 5 (6GHz), 9 (6GHz), 13 (6GHz),🚩 17 (6GHz), 21 (6GHz), 25 (6GHz), 
+	29 (6GHz), 33 (6GHz), 37 (6GHz), 41 (6GHz), 45 (6GHz), 49 (6GHz), 53 (6GHz), 
+	57 (6GHz), 61 (6GHz), 65 (6GHz), 69 (6GHz), 73 (6GHz), 77 (6GHz), 81 (6GHz), 
+	85 (6GHz), 89 (6GHz), 93 (6GHz) ✅
+          Wake On Wireless: Supported
+          AirDrop: Supported
+          AirDrop Channel: 44
+          Auto Unlock: Supported
+          Status: Connected
+          Current Network Information:
+            podomere-legacy:
+              PHY Mode: 802.11n
+              Channel: 1 (2GHz, 20MHz) ✅
+              Country Code: IE
+              Network Type: Infrastructure
+              Security: WPA2 Personal
+              Signal / Noise: -69 dBm / -91 dBm
+              Transmit Rate: 144
+              MCS Index: 15
+          Other Local Wi-Fi Networks: 🚩
+            SKYFXTKT:
+              PHY Mode: 802.11
+              Channel: 11 (2GHz, 20MHz)
+              Network Type: Infrastructure
+              Security: WPA2 Personal
+              Signal / Noise: -66 dBm / 0 dBm
+...
+```
+
+Yay, well kinda... we could potentially parse the information here for what is needed but the scan data is not necessarily up to date... and, if you are on earlier **OS X** versions or **macOS 11.x** then ```system_profiler SPAirPortDataType``` doesn't contain the channel band **or** width (with the exception of the odd channel offset!).
 ```
 
 laptop# system_profiler SPAirPortDataType
@@ -260,13 +317,6 @@ Wi-Fi:
               Transmit Rate: 144
               MCS Index: 15
           Other Local Wi-Fi Networks:
-            DIRECT-19-HP OfficeJet Pro 9010:
-              PHY Mode: 802.11
-              BSSID: 86:2a:fd:99:6b:19
-              Channel: 6
-              Network Type: Infrastructure
-              Security: WPA2 Personal
-              Signal / Noise: -86 dBm / -92 dBm
             Horizon Wi-Free:
               PHY Mode: 802.11
               BSSID: ae:f8:cc:65:5a:96
@@ -279,11 +329,13 @@ Wi-Fi:
 
 <hr>
 
-❓ So where am I going with all of this. I needed a **simple** way to establish, from the command line, and with a range of OS X/macOS versions (including `6GHz` on the new **M2** chip), what **band** we were operating in both quickly and reliably (using **consistent** commands). I wanted to write _simple_ logic to be able to discern and then recommend potentially clear Wi-Fi channels for use a specified time period (hence the channel widths would be needed too!). 
+❓ So where am I going with all of this. I needed a **simple** way to establish, from the **command line**, and with a range of **OS X** / **macOS** versions (including `6GHz` on the new **M2** chip), what **band** we were operating in, quickly and reliably (using **consistent** commands!). 
+
+**Note:** One [**PanSift**](/) feature is to find clean air space to use over a defined period of time, so it's really important to us. I wanted to write _simple_ logic to be able to discern and then recommend potentially clear Wi-Fi channels across `2.4GHz`, `5GHz`, and `6GHz` bands for a queried time range (hence the _channel widths_ would be needed too!). 
 
 <hr>
 
-I went back to the ```airport``` utilities `XML` output and decided to try and figure out what the hell was contained in the `CHANNEL_FLAGS` key  🚩 (and associated values). It _seemed_ to be consistently present across most **OS X** and **macOS** versions. It looked like a simple decimal value, but what did it mean and what did it encode exactly? 
+I went back to the ```airport``` utility's `XML` output and decided to try and figure out what the hell was this `CHANNEL_FLAGS` key  🚩 and associated integer values like `10`. 
 
 ```
 ...
@@ -292,24 +344,26 @@ I went back to the ```airport``` utilities `XML` output and decided to try and f
 ...
 ```
 
-The packet captures I took did indeed show `802.11` channel flags but only really in the radiotap headers. Sure, there was the presence or absence of `HT`, `VHT`, or `HE` IEs and `Tags` for `Operating Class` but Apple wasn't giving them to me via the `airport` utility. 
+It _seemed_ to be consistently present across most **OS X** and **macOS** versions and it was in both the `-I` getinfo and `-s` scan output, but what did it mean and what did it encode exactly? So, pcaps or it didn't happen! 
+
+The packet captures I took below (via Wireshark) did indeed show `802.11` channel flags, but only really in the radiotap headers. Sure, there was the presence or absence of `HT`, `VHT`, or `HE` IEs and `Tags` for `Operating Class` but Apple wasn't giving me all the keys I needed via the `airport` utility.
 
 <img src="/images/blog/podomere-legacy-pcap.png">
 <br><br>
 
-I was really at a loss for how the `CHANNEL_FLAGS` in the airport utility's output lined up with the monitor mode captures "_radiotap.channel.flags_". Try as I did, I could not get the integer values to line up with the HEX for networks like "_podomere-legacy_" in the **pcaps** above.
+I was really at a loss for how the `CHANNEL_FLAGS` in the airport utility's output lined up with the monitor mode captures "_radiotap.channel.flags_". Try as I did, I could not get the integer values to line up with the HEX for networks like "_podomere-legacy_" in the **pcaps** above. 
 
-How does an integer of `10` map to a HEX value of `0x0480`? Maybe I should have been looking elsewhere in one of the "Tags" but how would I know in advance if there was going to be `HT`, `VHT`, or `HE` tags. Messy logic that would be slow and tediuos?
+In the `airport` utility output there were some `HT`, `VHT`, and `HE` keys in scan data, but selective ones like the odd channel offset or center and secondary channel. Helpful, but super messy logic itrying to test for the absence or presence of lots of keys especially for scans and still lacking crucial data.
 
-I racked my brain. Decimal `10` is `0xA` i.e. `A` in hex. Hex `0x0408` is `1032` in decimal (base 10) as an integer. None of the networks or values lined up 🚩. 
+🚩 Basically though, an integer value of `10` doesn't map to a HEX value of `0x0480`! I racked my brain. Decimal `10` is `0xA` i.e. `A` in hex. Hex `0x0408` is `1032` in decimal (base 10) as an integer. None of the networks or values lined up 🚩. 
 
-Then I started wondering if there were only nibbles of the bitmask being used somehow? Desperation, I know.
+Then I started wondering if there were only _nibbles_ of the bitmask being used somehow? **Desperation had set in**.
 
 <hr>
 
-💡 It took me a while, but then I found this [**https://newosxbook.com/articles/11208ellpA-II.html**](https://newosxbook.com/articles/11208ellpA-II.html) from [Jonathan Levin](https://twitter.com/technologeeks) and some great info referencing the early Apple 80211 headers -> specifically **apple80211_var.h**. 
+💡 It took me a while, but then I found this <a target="_blank" href="https://newosxbook.com/articles/11208ellpA-II.html">**https://newosxbook.com/articles/11208ellpA-II.html**</a> from [Jonathan Levin](https://twitter.com/technologeeks) and some really **great** info referencing the early Apple 80211 headers and specifically "**apple80211_var.h**". 
 
-His post also provided an old copy of the header files! (🙏 Jonathan)! They were from an old **OS X 10.5 SDK** (before Apple pulled the file). I eagerly read his [post](https://newosxbook.com/articles/11208ellpA-II.html) from 2015 and dove in to the header files... yikes, look at the below!
+His post also provided an old copy of the header files! (🙏 Jonathan)! They were from an old **OS X 10.5 SDK** (before Apple pulled the file). I eagerly read his <a target="_blank" href="https://newosxbook.com/articles/11208ellpA-II.html">post</a> from 2015 and dove in to the header files... yikes, look at the below!
 
 <hr>
 

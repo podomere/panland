@@ -16,7 +16,7 @@ tags:
   - guides
 categories:
   - troubleshooting
-image: /images/blog/channel_flags_v2.png
+image: /images/blog/binary_apple_v2.png
 published: true
 title: Apple, an Airport, 802.11 Channel Flags, and Some Binary
 ---

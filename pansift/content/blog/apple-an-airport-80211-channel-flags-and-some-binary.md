@@ -25,7 +25,7 @@ Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If
 
 <hr>
 
-💡 This is not going to be an `IEEE 802.11` wireless LAN history 📜 lesson, but suffice to say, the `802.11` standard and protocol (the one that underpins **Wi-Fi**) is revised and updated with new functionality _relatively_ frequently and has a naming convention that uses lettered versioning such as `802.11a` , `802.11b` , `802.11g` , `802.11n` , `802.11ac` , `802.11ax` , and `802.11be`. Each `802.11*` standard has some unique properties and often builds off what has come before. 
+💡 This is not going to be an `IEEE 802.11` wireless LAN history 📜 lesson, but suffice to say, the `802.11` standard and protocol, the one that underpins **Wi-Fi**, is revised and updated with new functionality _relatively_ frequently and has a naming convention that uses lettered versioning such as `802.11a` , `802.11b` , `802.11g` , `802.11n` , `802.11ac` , `802.11ax` , and `802.11be`. Each `802.11*` standard has some unique properties and often builds off what has come before. 
 
 There are differences in **RF** bands, modulation, encoding, and then some sprinkles of additional features, all in an attempt to pack greater amounts of data in to radio waves. As our thirst for data grows, each successive standard tries to bundle ever more bits in to the air. Partly, this is an attempt to have devices get on and off the medium as quickly as possible as only one device can speak on a specific channel frequency at a time (half-duplex) once within range. **Wi-Fi** is a shared medium designed to serve multiple devices _almost_ concurrently. It tries to avoid collisions as it is unable to detect them, but I digress... finding clear channels to reduce **contention** and **interference** is crucial to **optimal** performance. 
 
@@ -51,12 +51,12 @@ Not only is this **confusing** from a consumer perspective (looking for *Wi-Fi *
 So, the previously simple _channel_ based heuristic **now fails** to correctly and easily identify the **RF** frequency band! 
 <hr>
 
-**Channel `1` can now be either in the `2.4GHz` or `6GHz` band**.
+**Channel `1` can now refer to _either_ the `2.4GHz` or `6GHz` band**.
 <hr>
 
-🚩 In fact, the channel numbers `1`, `3`, `5`, `7`, `9`, `11`, `13`, `149`, `151`, `157`, `161`, `165`, `169`, `173`, `177` overlap directly from the `2.4GHz` and `5GHz` bands, **with** the channel numbers (_but not frequencies_) in the `6GHz` range.  
+🚩 In fact, the channel numbers `1`, `3`, `5`, `7`, `9`, `11`, `13`, `149`, `151`, `157`, `161`, `165`, `169`, `173`, `177` overlap directly from the `2.4GHz` and `5GHz` bands, **with** the channel numbers in the `6GHz` range (_but not frequencies_).  
 
-So how do you know which channel is in which band ❓ 
+So how do you know which channel is in which band on a Mac ❓ 
 
 The most reliable way to get at **WLAN** information in **macOS** is to query the <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> framework. <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>, as Apple states, _"provides APIs for querying AirPort interfaces and choosing networks."_ Though, to natively query this information requires the ability to write <a target="_blank" href="https://en.wikipedia.org/wiki/Objective-C">**Objective-C**</a> _syntax_ based code (which I don't currently have) or use Apple's <a target="_blank" href="https://developer.apple.com/swift/">**Swift**</a> language. 
 

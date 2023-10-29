@@ -1,27 +1,27 @@
 ---
 title: "How Can I Fix IPv6 Address"
-subtitle: "Two-way Street?"
+subtitle: "Tee It Up?"
 layout: research
-ip_v4_address: "228.116.210.221"
-date: 2023-10-06T17:11:03+01:00
+ip_v4_address: "254.27.238.226"
+date: 2023-10-29T15:13:24+00:00
 draft: false
 ---
 
 ## Internet Addressing
-On the Internet you may get a Public IPv4 address like ```228.116.210.221``` or an IPv6 address like ```2000:a462:4f21:9a2e:87f6:8b9d:6cbc:909a```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```27:b8:4a:ca:9f:7e```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+On the Internet you might have a Public IPv4 address like ```254.27.238.226``` or an IPv6 address like ```2000:c5fa:f0f4:f134:841b:ad6b:9bbf:c75f```. We can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```45:06:3a:26:00:a6```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 ## Accessing the Web
-To get to a web page like https://daniel-macejkovic.biz you initially access a DNS server to translate the host portion (daniel-macejkovic) combined with the Top Level Domain (biz) of the URL, to an IP address like ```45.203.38.194```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (compatible; MSIE 9.0; AOL 9.7; AOLBuild 4343.19; Windows NT 6.1; WOW64; Trident/5.0; FunWebProducts)```
+To get to a web page like https://toy.io you initially access a DNS server to translate the host portion (toy) combined with the Top Level Domain (io) of the URL, to an IP address like ```152.223.131.52```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko```
 
 ## Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```192.168.33.234``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```172.28.243.138``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
 ### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  192.168.33.234    UGScg  en0
+default  172.28.243.138    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  192.168.33.234    UGScg  en0
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:cf13:85d6:a3d9:bf7c%en0  UGcg   en0
+default   fe80:ee86:8f4e:86ff:8847%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {232.117.203.250, 254.195.230.40}
+domain_name_server (ip_mult): {220.212.139.82, 179.132.82.78}
 end (none):
 ...</pre>
 
@@ -59,17 +59,17 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 27:b8:4a:ca:9f:7e
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 45:06:3a:26:00:a6
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 6d:28:5c:6f:c0:ea
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 84:8f:41:44:5f:37
 }</pre>
 
 ## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
 ### Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.13.2```, ```11.4.9```, or ```12.1.8```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+No matter what version of OSX/macOS you are on, ```10.15.8```, ```11.5.3```, or ```12.0.5```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
 #### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=M7Ew_zube4M" data-lity><img src="https://i.ytimg.com/vi/M7Ew_zube4M/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=M7Ew_zube4M" data-lity>Windows 11 Just Changed AGAIN</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
-|<a href="https://www.youtube.com/watch?v=UrG7RTWIJak" data-lity><img src="https://i.ytimg.com/vi/UrG7RTWIJak/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=UrG7RTWIJak" data-lity>What is a MAC Address?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
-|<a href="https://www.youtube.com/watch?v=2LOkI3Xyd_E" data-lity><img src="https://i.ytimg.com/vi/2LOkI3Xyd_E/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=2LOkI3Xyd_E" data-lity>Is Your Internet FAST Enough?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
-|<a href="https://www.youtube.com/watch?v=PpsEaqJV_A0" data-lity><img src="https://i.ytimg.com/vi/PpsEaqJV_A0/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=PpsEaqJV_A0" data-lity>What is TCP/IP?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
-|<a href="https://www.youtube.com/watch?v=Rck3BALhI5c" data-lity><img src="https://i.ytimg.com/vi/Rck3BALhI5c/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=Rck3BALhI5c" data-lity>DNS as Fast As Possible</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=6e95dNq-pjY" data-lity><img src="https://i.ytimg.com/vi/6e95dNq-pjY/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=6e95dNq-pjY" data-lity>Try This To Fix Gaming Lag #Shorts</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=jQCY-jmoY5o" data-lity><img src="https://i.ytimg.com/vi/jQCY-jmoY5o/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=jQCY-jmoY5o" data-lity>Why Wi-Fi 6 Will CHANGE Gaming</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=WOZQppVNGvA" data-lity><img src="https://i.ytimg.com/vi/WOZQppVNGvA/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=WOZQppVNGvA" data-lity>What The Heck Is Port Forwarding?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=zIYkol851dU" data-lity><img src="https://i.ytimg.com/vi/zIYkol851dU/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=zIYkol851dU" data-lity>BIOS and UEFI As Fast As Possible</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
+|<a href="https://www.youtube.com/watch?v=WXbidC6q5-Y" data-lity><img src="https://i.ytimg.com/vi/WXbidC6q5-Y/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=WXbidC6q5-Y" data-lity>Why Does Your Internet Connection Randomly Stop Working?</a>|<a target="_blank" href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q" >Techquickie</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

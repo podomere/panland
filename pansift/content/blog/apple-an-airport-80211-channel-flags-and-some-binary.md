@@ -374,10 +374,10 @@ enum apple80211_channel_flag
  {
  	APPLE80211_C_FLAG_NONE		= 0x0,		// no flags
  	APPLE80211_C_FLAG_10MHZ		= 0x1,		// 10 MHz wide
- 	APPLE80211_C_FLAG_20MHZ		= 0x2,		// 20 MHz wide  ✅
- 	APPLE80211_C_FLAG_40MHZ		= 0x4,		// 40 MHz wide
- 	APPLE80211_C_FLAG_2GHZ		= 0x8,		// 2.4 GHz  ✅
- 	APPLE80211_C_FLAG_5GHZ		= 0x10,		// 5 GHz
+ 	APPLE80211_C_FLAG_20MHZ		= 0x2,		// 20 MHz wide   ✅
+ 	APPLE80211_C_FLAG_40MHZ		= 0x4,		// 40 MHz wide   ✅
+ 	APPLE80211_C_FLAG_2GHZ		= 0x8,		// 2.4 GHz       ✅
+ 	APPLE80211_C_FLAG_5GHZ		= 0x10,		// 5 GHz         ✅
  	APPLE80211_C_FLAG_IBSS		= 0x20,		// IBSS supported
  	APPLE80211_C_FLAG_HOST_AP	= 0x40,		// HOST AP mode supported
  	APPLE80211_C_FLAG_ACTIVE	= 0x80,		// active scanning supported
@@ -411,22 +411,25 @@ enum apple80211_channel_flag
  	APPLE80211_C_FLAG_10MHZ		= 0x1,		// 10 MHz wide
  	APPLE80211_C_FLAG_20MHZ		= 0x2,		// 20 MHz wide  ✅
  	APPLE80211_C_FLAG_40MHZ		= 0x4,		// 40 MHz wide
- 	APPLE80211_C_FLAG_2GHZ		= 0x8,		// 2.4 GHz  ✅
+ 	APPLE80211_C_FLAG_2GHZ		= 0x8,		// 2.4 GHz      ✅
 ...
 }
 ```
-Then we can left pad the value (we could pad to 16 [as only 10 bits listed in the old header file] or perhaps a max of 32 bits as this is a bitmask for a **uint32** AFAIK!]. I padded it to 16 for now as I figured out from test scans and captures that some of the higher order bits were **on** e.g. `1` for 80MHz networks (but if anyone has access to a newer "**apple80211_var.h**" I would be eternally grateful!).
+Then we can left pad the value (we could pad to 16 [as only 10 bits listed in the old header file] or perhaps we should use a max of 32 as this is a bitmask for a **uint32** AFAIK!]. I padded it to 16 for now as I figured out from test scans and captures that some of the higher order bits were **on** e.g. `1` for 80MHz networks (❓ but if anyone has access to a newer "**apple80211_var.h**" I would be eternally grateful!).
 
 <hr>
 
-✅ I then set about applying this learning to the `XML` plist based scan data which also has `CHANNEL_FLAGS` in the output from `airport -s -x`. This will be rolled out in the next [PanSift](/) agent update from the current version `0.6.1` to `0.6.2` real soon!
+✅ I then set about applying this learning to the `XML` plist based scan data which also has `CHANNEL_FLAGS` in the output from the command `airport -s -x`. This will be rolled out in the next [**PanSift**](/) agent update from the current version `0.6.1` to `0.6.2` real soon!
 
 <hr>
 
 With a little bit more testing on `6GHz` using `80MHz` and `160MHz` channel widths, I hope to establish the exact usage of the currently undocumented higher order bits (without having access to the latest header files!). 
 
-It means we can also infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network via `CHANNEL_FLAGS`. This `CHANNEL_FLAGS` approach works for old versions of OS X and macOS for now, so Apple, please don't deprecate the `airport` utility, I'll have to do some funky stuff with Python and [PyObjC](https://pypi.org/project/pyobjc/) :)
+It means we can also infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz`.
 
-Big ups to [Jonathan Levin](https://twitter.com/technologeeks)!
+This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS** for now, so Apple, please don't deprecate the `airport` utility, I'll have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
+<br>
+<br>
+📝 Big ups to [Jonathan Levin](https://twitter.com/technologeeks) and I'd love any reader comments, suggestions, ideas, or criticisms you have [**here 💬**](/contact).
 <br>
 <br>

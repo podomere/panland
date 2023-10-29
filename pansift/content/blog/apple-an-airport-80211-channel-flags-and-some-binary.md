@@ -218,7 +218,7 @@ Wi-Fi:
 		...
 ```
 
-and an example with 6GHz:
+and an example with `6GHz`:
 
 ```
 mini-6GHz# system_profiler SPAirPortDataType

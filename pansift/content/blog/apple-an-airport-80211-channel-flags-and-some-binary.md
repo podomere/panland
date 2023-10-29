@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2023-10-27T15:35:00"
-subtitle: From Data to Information in Plain Sight
+subtitle: From Data to Information
 author: Donal
 tags:
   - pcaps

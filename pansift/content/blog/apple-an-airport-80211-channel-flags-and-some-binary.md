@@ -430,6 +430,6 @@ It means we can also infer things like **if** the bits for `2.4GHz` and `5GHz` a
 This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS** for now, so Apple, please don't deprecate the `airport` utility, I'll have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
 <br>
 <br>
-📝 Big ups to [Jonathan Levin](https://twitter.com/technologeeks) and I'd love any reader comments, suggestions, ideas, or criticisms you have [**here 💬**](/contact).
+📝 Big ups to <a target="_blank" href="https://twitter.com/technologeeks">Jonathan Levin</a> and I'd love any reader comments, suggestions, ideas, or criticisms you have [**here 💬**](/contact).
 <br>
 <br>

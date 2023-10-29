@@ -353,7 +353,7 @@ The packet captures I took below (via Wireshark) did indeed show `802.11` channe
 
 I was really at a loss for how the `CHANNEL_FLAGS` in the airport utility's output lined up with the monitor mode captures "_radiotap.channel.flags_". Try as I did, I could not get the integer values to line up with the HEX for networks like "_podomere-legacy_" in the **pcaps** above. 
 
-In the `airport` utility output there were some `HT`, `VHT`, and `HE` keys in scan data, but selective ones like the odd channel offset or center and secondary channel. Helpful, but super messy logic itrying to test for the absence or presence of lots of keys especially for scans and still lacking crucial data.
+In the `airport` utility output there were some `HT`, `VHT`, and `HE` keys in scan data, but selective ones like the odd channel offset or center and secondary channel. Helpful, but super messy logic if trying to test for the absence or presence of lots of keys (especially for scans that still lacked crucial data).
 
 🚩 Basically though, an integer value of `10` doesn't map to a HEX value of `0x0480`! I racked my brain. Decimal `10` is `0xA` i.e. `A` in hex. Hex `0x0408` is `1032` in decimal (base 10) as an integer. None of the networks or values lined up 🚩. 
 

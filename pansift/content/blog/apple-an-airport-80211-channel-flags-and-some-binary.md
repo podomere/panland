@@ -25,14 +25,14 @@ Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If
 
 <hr>
 
-💡 This is not going to be an `IEEE 802.11` wireless LAN history 📜 lesson, but suffice to say, the `802.11` standard and protocol, the one that underpins **Wi-Fi**, is revised and updated with new functionality _relatively_ frequently and has a naming convention that uses lettered versioning such as `802.11a` , `802.11b` , `802.11g` , `802.11n` , `802.11ac` , `802.11ax` , and `802.11be`. Each `802.11*` standard has some unique properties and often builds off what has come before. 
+💡 This is not going to be an <a target="_blank" href="https://www.ieee.org/">**IEEE**</a> `802.11` wireless LAN history lesson, but suffice to say, the `802.11` standard and protocol, the one that underpins **Wi-Fi**, is revised and updated with new functionality _relatively_ frequently and has a naming convention that uses lettered versioning such as `802.11a` , `802.11b` , `802.11g` , `802.11n` , `802.11ac` , `802.11ax` , and `802.11be`. Each `802.11*` standard has some unique properties and often builds off what has come before. 
 
 There are differences in **RF** bands, modulation, encoding, and then some sprinkles of additional features, all in an attempt to pack greater amounts of data in to radio waves. As our thirst for data grows, each successive standard tries to bundle ever more bits in to the air. Partly, this is an attempt to have devices get on and off the medium as quickly as possible as only one device can speak on a specific channel frequency at a time (half-duplex) once within range. **Wi-Fi** is a shared medium designed to serve multiple devices _almost_ concurrently. It tries to avoid collisions as it is unable to detect them, but I digress... finding clear channels to reduce **contention** and **interference** is crucial to **optimal** performance. 
 
 
 <hr>
 
-So, one of the latest'ish IEEE standards for Wi-Fi is `802.11ax`. The existing naming convention led the Wi-Fi Alliance to rebrand `802.11ax` as **Wi-Fi 6** for marketing purposes. 
+So, one of the latest'ish <a target="_blank" href="https://www.ieee.org/">**IEEE**</a> standards for Wi-Fi is `802.11ax`. The existing naming convention led the Wi-Fi Alliance to rebrand `802.11ax` as **Wi-Fi 6** for marketing purposes. 
 
 🚩 And here's where my problem begins and continues! 🚩 
 
@@ -331,7 +331,7 @@ Wi-Fi:
 
 ❓ So where am I going with all of this. I needed a **simple** way to establish, from the **command line**, and with a range of **OS X** / **macOS** versions (including `6GHz` on the new **M2** chip), what **band** we were operating in, quickly and reliably (using **consistent** commands!). 
 
-**Note:** One [**PanSift**](/) feature is to find clean air space to use over a defined period of time, so it's really important to us. I wanted to write _simple_ logic to be able to discern and then recommend potentially clear Wi-Fi channels across `2.4GHz`, `5GHz`, and `6GHz` bands for a queried time range (hence the _channel widths_ would be needed too!). 
+**Note:** One [**PanSift**](/) feature is to find clean air space to use over a defined period of time, so it's really important to us. I wanted to write _simple_ logic to be able to discern and then recommend potentially clear **Wi-Fi** channels across `2.4GHz`, `5GHz`, and `6GHz` bands for a queried time range (hence the _channel widths_ would be needed too!). 
 
 <hr>
 
@@ -355,13 +355,13 @@ I was really at a loss for how the `CHANNEL_FLAGS` in the airport utility's outp
 
 In the `airport` utility output there were some `HT`, `VHT`, and `HE` keys in scan data, but selective ones like the odd channel offset or center and secondary channel. Helpful, but super messy logic if trying to test for the absence or presence of lots of keys (especially for scans that still lacked crucial data).
 
-🚩 Basically though, an integer value of `10` doesn't map to a HEX value of `0x0480`! I racked my brain. Decimal `10` is `0xA` i.e. `A` in hex. Hex `0x0408` is `1032` in decimal (base 10) as an integer. None of the networks or values lined up 🚩. 
+🚩 Basically though, an integer value of `10` doesn't map to a HEX value of `0x0480`! I racked my brain. Decimal `10` is `0xA` i.e. `A` in hex. Hex `0x0408` is `1032` in decimal (base `10`) as an integer. None of the networks or values lined up 🚩. 
 
 Then I started wondering if there were only _nibbles_ of the bitmask being used somehow? **Desperation had set in**.
 
 <hr>
 
-💡 It took me a while, but then I found this <a target="_blank" href="https://newosxbook.com/articles/11208ellpA-II.html">**https://newosxbook.com/articles/11208ellpA-II.html**</a> from [Jonathan Levin](https://twitter.com/technologeeks) and some really **great** info referencing the early Apple 80211 headers and specifically "**apple80211_var.h**". 
+💡 It took me a while, but then I found this <a target="_blank" href="https://newosxbook.com/articles/11208ellpA-II.html">**https://newosxbook.com/articles/11208ellpA-II.html**</a> from [Jonathan Levin](https://twitter.com/technologeeks) and some really **great** info referencing the early Apple `802.11` headers and specifically "**apple80211_var.h**". 
 
 His post also provided an old copy of the header files! (🙏 Jonathan)! They were from an old **OS X 10.5 SDK** (before Apple pulled the file). I eagerly read his <a target="_blank" href="https://newosxbook.com/articles/11208ellpA-II.html">post</a> from 2015 and dove in to the header files... yikes, look at the below!
 
@@ -392,7 +392,7 @@ enum apple80211_channel_flag
 <center><img src="/images/blog/podomere-legacy-pcap-subset.png"></center>
 <br><br>
 
-OK, now we are getting somewhere. The `10` integer for "**podomere-legacy**" in the `airport -Ix` `XML` plist output: 
+OK, now we are getting somewhere. The `CHANNEL_FLAGS` for my `2GHz` , `20MHz` wide "**podomere-legacy**" network output from `airport -Ix` is below: 
 
 ```
 ...
@@ -401,7 +401,7 @@ OK, now we are getting somewhere. The `10` integer for "**podomere-legacy**" in 
 ...
 ```
 
-is `1010` in binary. This maps to (8) `2.4GHz` and (2) giving `20MHz` wide from the Apple header definitions! 
+Decimal `10` is `1010` in binary.
 
 
 ```
@@ -412,10 +412,42 @@ enum apple80211_channel_flag
  	APPLE80211_C_FLAG_20MHZ		= 0x2,		// 20 MHz wide  ✅
  	APPLE80211_C_FLAG_40MHZ		= 0x4,		// 40 MHz wide
  	APPLE80211_C_FLAG_2GHZ		= 0x8,		// 2.4 GHz      ✅
+ 	APPLE80211_C_FLAG_5GHZ		= 0x10,		// 5 GHz
 ...
 }
 ```
-Then we can left pad the value (we could pad to 16 [as only 10 bits listed in the old header file] or perhaps we should use a max of 32 as this is a bitmask for a **uint32** AFAIK!]. I padded it to 16 for now as I figured out from test scans and captures that some of the higher order bits were **on** e.g. `1` for 80MHz networks (❓ but if anyone has access to a newer "**apple80211_var.h**" I would be eternally grateful!).
+
+This maps the LSB(Least Significant Bit) 2nd position for (`0x2`) -> `20MHz` wide and the fourth (`0x8`) -> `2.4GHz`
+
+We can then left pad the value (we could pad to `16` bits [as only `10` bits listed in the old header file] or perhaps we should use a max of `32` as this is a bitmask for a **uint32** AFAIK!]. I padded it to `16` bits for now as I figured out from test scans and captures that some of the higher order (most significant) bits were **on** e.g. `1` for `80MHz` networks in position `6` of `16` etc.
+
+<hr>
+
+✅ My "__podomere-a__" `5GHz` test `802.11ac` network is `80MHz` wide. 
+
+Its `CHANNEL_FLAGS` are decimal **1040** which in `16bit` binary is: <span style="font-size: 6.5em;">`0000010000010000`</span><br> in `16` bit binary, so the MSB(Most Significant Bit) position `6` represents decimal **1024** (the `80MHz` bit) + position `12` represents decimal value **16** (the `5GHz` bit) i.e. **1024** + **16** = **1040**. 
+
+```
+enum apple80211_channel_flag
+ {
+ 	APPLE80211_C_FLAG_NONE		= 0x0,		// no flags
+ 	APPLE80211_C_FLAG_10MHZ		= 0x1,		// 10 MHz wide
+ 	APPLE80211_C_FLAG_20MHZ		= 0x2,		// 20 MHz wide
+ 	APPLE80211_C_FLAG_40MHZ		= 0x4,		// 40 MHz wide
+ 	APPLE80211_C_FLAG_2GHZ		= 0x8,		// 2.4 GHz      
+ 	APPLE80211_C_FLAG_5GHZ		= 0x10,		// 5 GHz        ✅
+...
+ 	/** APPLE80211_C_FLAG_80MHZ 	= 0x400,*/ 	// 80MHz  ??? 	✅ <---- This is my guess ???
+ 	/** APPLE80211_C_FLAG_160MHZ 	= 0x800,*/ 	// 160MHz ??? 	   <---- Another guess, can we keep going for 320MHz
+}
+```
+
+
+And these bits marry with other `80MHz` wide `5GHz` networks observed...
+
+<hr>
+
+❓ But if anyone has access to a newer "**apple80211_var.h**" or any suggestions, I would be eternally grateful!
 
 <hr>
 
@@ -425,7 +457,7 @@ Then we can left pad the value (we could pad to 16 [as only 10 bits listed in th
 
 With a little bit more testing on `6GHz` using `80MHz` and `160MHz` channel widths, I hope to establish the exact usage of the currently undocumented higher order bits (without having access to the latest header files!). 
 
-It means we can also infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz`.
+It means we can also infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network for now (until more spectrum is released in the future but I also hope there's a higher order bit being used to denote `6GHz` networks in the Apple `CHANNEL_FLAGS` too).
 
 This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS** for now, so Apple, please don't deprecate the `airport` utility, I'll have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
 <br>

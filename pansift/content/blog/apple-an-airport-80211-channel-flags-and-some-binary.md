@@ -417,15 +417,22 @@ enum apple80211_channel_flag
 }
 ```
 
-This maps the LSB(Least Significant Bit) 2nd position for (`0x2`) -> `20MHz` wide and the fourth (`0x8`) -> `2.4GHz`
+This maps the LSB(Least Significant Bit) second position (from the right) for (`0x2`) -> `20MHz` wide ✅ and the fourth (`0x8`) -> `2.4GHz` ✅
 
-We can then left pad the value (we could pad to `16` bits [as only `10` bits listed in the old header file] or perhaps we should use a max of `32` as this is a bitmask for a **uint32** AFAIK!]. I padded it to `16` bits for now as I figured out from test scans and captures that some of the higher order (most significant) bits were **on** e.g. `1` for `80MHz` networks in position `6` of `16` etc.
+**Note:** We can then left pad the value to `16` bits (as only `10` bits listed in the old header file) or perhaps we should use a max of `32`, as this is a bitmask for a **uint32** AFAIK!. I padded it to `16` bits for now, as I figured out from test scans and captures that some of the higher order MSB(Most Significant Bits) were **on** e.g. `1` for `80MHz`. 
 
 <hr>
 
-✅ My "__podomere-a__" `5GHz` test `802.11ac` network is `80MHz` wide. 
+✅ My "__podomere-a__" `5GHz` test `802.11ac` network is `80MHz` wide and its `CHANNEL_FLAGS` are decimal integer **1040**.
 
-Its `CHANNEL_FLAGS` are decimal **1040** which in `16bit` binary is: <span style="font-size: 6.5em;">`0000010000010000`</span><br> in `16` bit binary, so the MSB(Most Significant Bit) position `6` represents decimal **1024** (the `80MHz` bit) + position `12` represents decimal value **16** (the `5GHz` bit) i.e. **1024** + **16** = **1040**. 
+```
+...
+<key>CHANNEL_FLAGS</key>
+<integer>1040</integer>
+...
+```
+
+Decimal **1040** in `16bit` binary is <span style="font-size: 3em;">`0000010000010000`</span><br><br>The MSB(Most Significant Bit) position `6` (from the left) represents decimal **1024** (the `80MHz` bit?) + position `12` represents decimal value **16** (the `5GHz` bit, which we know for sure) i.e. **1024** + **16** = **1040**. 
 
 ```
 enum apple80211_channel_flag
@@ -437,13 +444,13 @@ enum apple80211_channel_flag
  	APPLE80211_C_FLAG_2GHZ		= 0x8,		// 2.4 GHz      
  	APPLE80211_C_FLAG_5GHZ		= 0x10,		// 5 GHz        ✅
 ...
- 	/** APPLE80211_C_FLAG_80MHZ 	= 0x400,*/ 	// 80MHz  ??? 	✅ <---- This is my guess ???
- 	/** APPLE80211_C_FLAG_160MHZ 	= 0x800,*/ 	// 160MHz ??? 	   <---- Another guess, can we keep going for 320MHz
+ 	/** APPLE80211_C_FLAG_80MHZ 	= 0x400,*/ 	// 80MHz  ??? 	✅ <---- This are my guesses ???
+ 	/** APPLE80211_C_FLAG_160MHZ 	= 0x800,*/ 	// 160MHz ??? 	   <---- Can we keep going for 320MHz
 }
 ```
 
 
-And these bits marry with other `80MHz` wide `5GHz` networks observed...
+And these bits marry with other `80MHz` wide `5GHz` networks... but more testing on the way for `160MHz` and `6GHz` !
 
 <hr>
 
@@ -455,11 +462,9 @@ And these bits marry with other `80MHz` wide `5GHz` networks observed...
 
 <hr>
 
-With a little bit more testing on `6GHz` using `80MHz` and `160MHz` channel widths, I hope to establish the exact usage of the currently undocumented higher order bits (without having access to the latest header files!). 
+It means we could possibly infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network for now (until more spectrum is released in the future and more bits needed ?)
 
-It means we can also infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network for now (until more spectrum is released in the future but I also hope there's a higher order bit being used to denote `6GHz` networks in the Apple `CHANNEL_FLAGS` too).
-
-This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS** for now, so Apple, please don't deprecate the `airport` utility, I'll have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
+This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS**, so Apple, please don't deprecate the `airport` utility, I'd have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
 <br>
 <br>
 📝 Big ups to <a target="_blank" href="https://twitter.com/technologeeks">Jonathan Levin</a> and I'd love any reader comments, suggestions, ideas, or criticisms you have [**here 💬**](/contact).

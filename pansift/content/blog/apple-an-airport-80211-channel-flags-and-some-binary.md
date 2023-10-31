@@ -427,7 +427,7 @@ This maps the LSB(Least Significant Bit) second position (from the right) for (`
 
 <hr>
 
-✅ My "__podomere-a__" `5GHz` test `802.11ac` network is `80MHz` wide and its `CHANNEL_FLAGS` are decimal integer **1040**. I figured out from test scans and captures that some of the higher order MSB(Most Significant Bits) were **on** e.g. `1` for `80MHz`.
+✅ My "__podomere-a__" `5GHz` test `802.11ac` network is `80MHz` wide and its `CHANNEL_FLAGS` are decimal integer **1040**. 
 
 ```
 ...
@@ -435,6 +435,8 @@ This maps the LSB(Least Significant Bit) second position (from the right) for (`
 <integer>1040</integer>
 ...
 ```
+
+I figured out from test scans and captures that some of the higher order MSB(Most Significant Bits) were **on** e.g. `1` for `80MHz`.
 
 Decimal **1040** in `16` bit binary is <span style="font-size: 3em;">`0000` `0100` `0001` `0000`</span><br><br>The MSB(Most Significant Bit) position `6` (from the left) represents decimal **1024** (the `80MHz` bit?) + position `12` represents decimal value **16** (the `5GHz` bit, which we know for sure) i.e. **1024** + **16** = **1040**. 
 
@@ -448,14 +450,32 @@ enum apple80211_channel_flag
  	APPLE80211_C_FLAG_2GHZ		= 0x8,		// 2.4 GHz      
  	APPLE80211_C_FLAG_5GHZ		= 0x10,		// 5 GHz        ✅
 ...
- 	/** APPLE80211_C_FLAG_80MHZ 	= 0x400,*/ 	// 80MHz  ??? 	✅ <---- This are my guesses ???
- 	/** APPLE80211_C_FLAG_160MHZ 	= 0x800,*/ 	// 160MHz ??? 	   <---- Can we keep going for 320MHz
+	/** Here I am just speculating as this is not in the 2015 file 	*/
+	/** 								*/
+ 	/** APPLE80211_C_FLAG_80MHZ 	= 0x400,*/ 	// 80MHz  ??? 	✅ <-- Guessing here?
+ 	/** APPLE80211_C_FLAG_160MHZ 	= 0x800,*/ 	// 160MHz ??? 	   <-- Guessing again...
+ 	/** APPLE80211_C_FLAG_320MHZ 	= 0x1000,*/ 	// 160MHz ??? 	   <-- And again, can we expect 0x1000 for 320MHz ?
+	/** 								*/
+	/** Here I am just speculating as this is not in the 2015 file */
 }
 ```
 
 
-And these bits marry with other `80MHz` wide `5GHz` networks... but more testing on the way for `160MHz` and `6GHz` !
+And these bits marry with other `80MHz` wide `5GHz` networks... but more testing needed below for `6GHz` + `160MHz` !
 
+<hr>
+
+✅  "__podomere-6e__" is a `6GHz` `802.11ax` network running at `160MHz` and its `CHANNEL_FLAGS` are decimal **102400**.
+
+Decimal **102400** in `16` bit binary is <span style="font-size: 3em;">`0010` `1000` `0000` `0000`</span><br><br>
+
+But then when changing it to `80MHz` width we get `CHANNEL_FLAGS` with decimal **9216**. 
+
+Decimal  &nbsp; &nbsp; **9216** in `16` bit binary is <span style="font-size: 3em;">`0010` `0100` `0000` `0000`</span><br><br>
+
+So, it would seem that the third MSB `0x2000` denotes `6Ghz` and the fifth `0x800` and sixth `0x400` MSB bits do indeed indicate `160MHz` and `80MHz` widths respectively. 
+
+Can we now also assume `0x1000` will be for **Wi-Fi 7** `320MHz` wide channels? 
 <hr>
 
 ❓ But if anyone has access to a newer "**apple80211_var.h**" or any suggestions, I would be eternally grateful!
@@ -465,8 +485,6 @@ And these bits marry with other `80MHz` wide `5GHz` networks... but more testing
 ✅ I then set about applying this learning to the `XML` plist based scan data which also has `CHANNEL_FLAGS` in the output from the command `airport -s -x`. This will be rolled out in the next [**PanSift**](/) agent update from the current version `0.6.1` to `0.6.3` real soon!
 
 <hr>
-
-It means we can infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network? Until more spectrum is released in the future and more bits needed, or maybe the `0x2000` bit denotes `6GHz`?
 
 This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS**, so Apple, please don't deprecate the `airport` utility, I'd have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
 <hr>

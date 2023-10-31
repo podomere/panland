@@ -464,10 +464,11 @@ And these bits marry with other `80MHz` wide `5GHz` networks... but more testing
 
 <hr>
 
-It means we could possibly infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network for now (until more spectrum is released in the future and more bits needed ?)
+It means we can infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network for now (until more spectrum is released in the future and more bits needed ?)
 
 This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS**, so Apple, please don't deprecate the `airport` utility, I'd have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
 <hr>
+<br>
 
 **Summary:** The airport utility is a very handy command line tool. It outputs additional information in `XML` format if you ask for it. This additional data summarizes some very useful fields about **Wi-Fi** networks around you but in a custom format. With some digging, building on others deep work, and then some inferences from observations, it has saved writing custom scripts or a re-write of the whole PanSift agent. <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> remains the source of truth for querying what the OS sees in the air but there are other ways to get at this data. I hope you got something out of this exploration and it might motivate you to poke around a little deeper yourself or try one of our free [**PanSift**](/) agents that give you historical insight in to your **Wi-Fi** and even some recommendations on better channels to use ;)
 <br>

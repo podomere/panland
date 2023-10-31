@@ -331,7 +331,7 @@ Wi-Fi:
 
 <hr>
 
-❓ So where am I going with all of this. I needed a **simple** way to establish, from the **command line**, and with a range of **OS X** / **macOS** versions (including `6GHz` on the new **M2** chip), what **band** we were operating in, quickly and reliably (using **consistent** commands!). 
+❓ So where am I going with all of this. I needed a **simple** way to establish, from the **command line**, and with a range of **OS X** / **macOS** versions (including `6GHz` on the new **M2** and **M3** chips), what **band** we were operating in, quickly and reliably (using **consistent** commands!). 
 
 **Note:** One [**PanSift**](/) feature is to find clean air space to use over a defined period of time, so it's really important to us. I wanted to write _simple_ logic to be able to discern and then recommend potentially clear **Wi-Fi** channels across `2.4GHz`, `5GHz`, and `6GHz` bands for a queried time range (hence the _channel widths_ would be needed too!). 
 
@@ -466,7 +466,7 @@ And these bits marry with other `80MHz` wide `5GHz` networks... but more testing
 
 <hr>
 
-It means we can infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network for now (until more spectrum is released in the future and more bits needed ?)
+It means we can infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network? Until more spectrum is released in the future and more bits needed, or maybe the `0x2000` bit denotes `6GHz`?
 
 This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS**, so Apple, please don't deprecate the `airport` utility, I'd have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
 <hr>

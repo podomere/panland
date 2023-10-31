@@ -419,13 +419,15 @@ enum apple80211_channel_flag
 }
 ```
 
-This maps the LSB(Least Significant Bit) second position (from the right) for (`0x2`) -> `20MHz` wide ✅ and the fourth (`0x8`) -> `2.4GHz` ✅
+We can then left pad the value to `16` bits (as only `10` bits are listed in the old header file) or perhaps we should use a max of `32`, as this is a bitmask for a **uint32** AFAIK!. Anyway, I padded it to `16` bits for now.
 
-**Note:** We can then left pad the value to `16` bits (as only `10` bits listed in the old header file) or perhaps we should use a max of `32`, as this is a bitmask for a **uint32** AFAIK!. I padded it to `16` bits for now, as I figured out from test scans and captures that some of the higher order MSB(Most Significant Bits) were **on** e.g. `1` for `80MHz`. 
+Decimal **10** in `16` bit binary is <span style="font-size: 3em;">`0000` `0000` `0000` `1010`</span><br><br>
+
+This maps the LSB(Least Significant Bit) second position (from the right) for (`0x2`) -> `20MHz` wide ✅ and the fourth (`0x8`) -> `2.4GHz` ✅
 
 <hr>
 
-✅ My "__podomere-a__" `5GHz` test `802.11ac` network is `80MHz` wide and its `CHANNEL_FLAGS` are decimal integer **1040**.
+✅ My "__podomere-a__" `5GHz` test `802.11ac` network is `80MHz` wide and its `CHANNEL_FLAGS` are decimal integer **1040**. I figured out from test scans and captures that some of the higher order MSB(Most Significant Bits) were **on** e.g. `1` for `80MHz`.
 
 ```
 ...
@@ -434,7 +436,7 @@ This maps the LSB(Least Significant Bit) second position (from the right) for (`
 ...
 ```
 
-Decimal **1040** in `16bit` binary is <span style="font-size: 3em;">`0000010000010000`</span><br><br>The MSB(Most Significant Bit) position `6` (from the left) represents decimal **1024** (the `80MHz` bit?) + position `12` represents decimal value **16** (the `5GHz` bit, which we know for sure) i.e. **1024** + **16** = **1040**. 
+Decimal **1040** in `16` bit binary is <span style="font-size: 3em;">`0000` `0100` `0001` `0000`</span><br><br>The MSB(Most Significant Bit) position `6` (from the left) represents decimal **1024** (the `80MHz` bit?) + position `12` represents decimal value **16** (the `5GHz` bit, which we know for sure) i.e. **1024** + **16** = **1040**. 
 
 ```
 enum apple80211_channel_flag

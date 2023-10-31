@@ -23,6 +23,8 @@ title: Apple, an Airport, 802.11 Channel Flags, and Some Binary
 
 Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If you don't know what that means, then this post is probably not for you. However, if you do know your `2.4GHz` from your `5GHz` , then read on for some reverse engineering relating to; packet captures, custom bitmasks, and how to figure out which **WLAN bands** and **channel widths** are around your Mac (without having to use Apple's <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> or clicking the Wi-Fi icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21"> in the menubar part of the UI).
 
+**TL;DR** Used some old Apple header fields from 2015 to figure out the airport utility `CHANNEL_FLAGS` bit mask which doesn't map directly to 802.11 radiotap headers. This technique is being rolled in to the latest PanSift agent as the agent doesn't actively query <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>.
+
 <hr>
 
 💡 This is not going to be an <a target="_blank" href="https://www.ieee.org/">**IEEE**</a> `802.11` wireless LAN history lesson, but suffice to say, the `802.11` standard and protocol, the one that underpins **Wi-Fi**, is revised and updated with new functionality _relatively_ frequently and has a naming convention that uses lettered versioning such as `802.11a` , `802.11b` , `802.11g` , `802.11n` , `802.11ac` , `802.11ax` , and `802.11be`. Each `802.11*` standard has some unique properties and often builds off what has come before. 
@@ -458,13 +460,16 @@ And these bits marry with other `80MHz` wide `5GHz` networks... but more testing
 
 <hr>
 
-✅ I then set about applying this learning to the `XML` plist based scan data which also has `CHANNEL_FLAGS` in the output from the command `airport -s -x`. This will be rolled out in the next [**PanSift**](/) agent update from the current version `0.6.1` to `0.6.2` real soon!
+✅ I then set about applying this learning to the `XML` plist based scan data which also has `CHANNEL_FLAGS` in the output from the command `airport -s -x`. This will be rolled out in the next [**PanSift**](/) agent update from the current version `0.6.1` to `0.6.3` real soon!
 
 <hr>
 
 It means we could possibly infer things like **if** the bits for `2.4GHz` and `5GHz` are **not** on e.g. both `0` **and** `0`, then it's a `6GHz` network for now (until more spectrum is released in the future and more bits needed ?)
 
 This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS**, so Apple, please don't deprecate the `airport` utility, I'd have to do some funky stuff with Python and <a target="_blank" href="https://pypi.org/project/pyobjc/">**PyObjC**</a> :)
+<hr>
+
+**Summary:** The airport utility is a very handy command line tool. It outputs additional information in `XML` format if you ask for it. This additional data summarizes some very useful fields about **Wi-Fi** networks around you but in a custom format. With some digging, building on others deep work, and then some inferences from observations, it has saved writing custom scripts or a re-write of the whole PanSift agent. <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> remains the source of truth for querying what the OS sees in the air but there are other ways to get at this data. I hope you got something out of this exploration and it might motivate you to poke around a little deeper yourself or try one of our free [**PanSift**](/) agents that give you historical insight in to your **Wi-Fi** and even some recommendations on better channels to use ;)
 <br>
 <br>
 📝 Big ups to <a target="_blank" href="https://twitter.com/technologeeks">Jonathan Levin</a> and I'd love any reader comments, suggestions, ideas, or criticisms you have [**here 💬**](/contact).

@@ -35,7 +35,7 @@ color: #474747;
 padding: 3px 5px 3px 5px;
 }
 </style>
-Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If you don't know what that means, then this post is probably not for you. However, if you do know your `2.4GHz` from your `5GHz` , then read on for some reverse engineering relating to; packet captures, custom bitmasks, and how to figure out which **WLAN bands** and **channel widths** are around your Mac (without having to use Apple's <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> or clicking the Wi-Fi icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21"> in the menubar part of the UI).
+Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If you don't know what that means, then this post is probably not for you. However, if you do know your `2.4GHz` from your `5GHz` , then read on for some reverse engineering relating to; packet captures, custom bitmasks, and how to figure out which **WLAN bands** and **channel widths** are around your Mac (without having to use Apple's <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> or clicking the Wi-Fi icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21"> in the menubar).
 
 **TL;DR** Used some old Apple header fields from 2015 to figure out the airport utility `CHANNEL_FLAGS` bit mask which doesn't map directly to 802.11 radiotap headers. This technique is being rolled in to the latest PanSift agent as the agent doesn't actively query <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>.
 

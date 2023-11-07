@@ -22,12 +22,16 @@ title: Apple, an Airport, 802.11 Channel Flags, and Some Binary
 ---
 <style>
 pre {
-background-color: rgba(189, 195, 199,1.0);
-color: #222;
+/* background-color: rgba(189, 195, 199,1.0);*/
+background-color: #f3f3f3;
+/* color: #222; */
+color: #474747;
 }
 code {
-background-color: rgba(189, 195, 199,1.0);
-color: #222;
+/* background-color: rgba(189, 195, 199,1.0);*/
+background-color: #f3f3f3;
+/* color: #222; */
+color: #474747;
 padding: 3px 5px 3px 5px;
 }
 </style>

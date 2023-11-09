@@ -17,6 +17,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+pre {
+/* background-color: rgba(189, 195, 199,1.0);*/
+background-color: #f3f3f3;
+/* color: #222; */
+color: #474747;
+}
+
+code {
+/* background-color: rgba(189, 195, 199,1.0);*/
+background-color: #f3f3f3;
+/* color: #222; */
+color: #474747;
+padding: 3px 5px 3px 5px;
+}
+
 /*=== MEDIA QUERY ===*/
 .no-padding {
   padding: 0 !important;

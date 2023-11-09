@@ -352,7 +352,7 @@ The packet captures I took below (via Wireshark) did indeed show `802.11` channe
 <img src="/images/blog/podomere-legacy-pcap.png">
 <br><br>
 
-I was really at a loss for how the `CHANNEL_FLAGS` in the airport utility's output lined up with the monitor mode captures "_radiotap.channel.flags_". Try as I did, I could not get the integer values to line up with the HEX (hexidecimal) for networks like "_podomere-legacy_" in the **pcaps** above. 
+I was really at a loss for how the `CHANNEL_FLAGS` in the airport utility's output lined up with the monitor mode captures "_radiotap.channel.flags_". Try as I did, I could not get the integer values to line up with the HEX (hexadecimal) for networks like "_podomere-legacy_" in the **pcaps** above. 
 
 In the `airport` utility output there were some `HT`, `VHT`, and `HE` keys in scan data, but selective ones like the odd channel offset or center and secondary channel. Helpful, but super messy logic if trying to test for the absence or presence of lots of keys (especially for scans that still lacked crucial data).
 

@@ -22,7 +22,7 @@ title: Apple, an Airport, 802.11 Channel Flags, and Some Binary
 ---
 Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If you don't know what that means, then this post is probably not for you. However, if you do know your `2.4GHz` from your `5GHz` , then read on for some reverse engineering relating to; packet captures, custom bitmasks, and how to figure out which **WLAN bands** and **channel widths** are around your Mac (without having to use Apple's <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> or clicking the Wi-Fi icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21"> in the menubar).
 
-**TL;DR** Used some old Apple header fields from 2015 to figure out the airport utility `CHANNEL_FLAGS` bit mask which doesn't map directly to 802.11 radiotap headers. This technique is being rolled in to the latest PanSift agent as the agent doesn't actively query <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>.
+**TL;DR** Used some old Apple header fields from 2015 to figure out the airport utility `CHANNEL_FLAGS` bit mask which doesn't map directly to 802.11 radiotap headers. This technique is being rolled in to the latest <a target="_blank" href="/">**PanSift**</a> agent as the agent doesn't actively query <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>.
 
 <hr>
 
@@ -33,7 +33,7 @@ There are differences in **RF** bands, modulation, encoding, and then some sprin
 
 <hr>
 
-So, one of the latest'ish <a target="_blank" href="https://www.ieee.org/">**IEEE**</a> standards for Wi-Fi is `802.11ax`. The existing naming convention led the Wi-Fi Alliance to rebrand `802.11ax` as **Wi-Fi 6** for marketing purposes. 
+So, one of the latest'ish <a target="_blank" href="https://www.ieee.org/">**IEEE**</a> standards for Wi-Fi is `802.11ax`. The existing naming convention led the <a target="_blank" href="https://www.wi-fi.org/who-we-are">**Wi-Fi Alliance**</a> to rebrand `802.11ax` as **Wi-Fi 6** for marketing purposes. 
 
 🚩 And here's where my problem begins and continues! 🚩 
 
@@ -63,7 +63,7 @@ The most reliable way to get at **WLAN** information in **macOS** is to query th
 
 Also, the **macOS** UI(User Interface) will tell you (if you _Alt or Option Click_ the Wi-Fi airport icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21">!). But what if you want to find out _progammatically_ via the command line and _without_ learning a new language? Well, there's also the `airport` command line utility and even some `system_profiler` keys to query.
 
-As an ex-network engineer with a computer science degree (and a some proficiency in software development), I've been building [**PanSift**](/) using <a target="_blank" href="https://rubyonrails.org/">Ruby on Rails</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>, and good old <a target="_blank" href="https://www.gnu.org/software/bash/">Bash</a> scripting. Much of the design of [**PanSift**](/) is outlined [**here**](/design) (in case you're interested), but whereas I could previously use the `airport` command line utility to rapidly infer frequencies from channels, with the introduction of `6GHz`, it's became problematic, or has it?
+As an ex-network engineer with a computer science degree (and a some proficiency in software development), I've been building <a target="_blank" href="/">**PanSift**</a> using <a target="_blank" href="https://rubyonrails.org/">Ruby on Rails</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>, and good old <a target="_blank" href="https://www.gnu.org/software/bash/">Bash</a> scripting. Much of the design of <a target="_blank" href="/">**PanSift**</a> is outlined <a target="_blank" href="/design">**here**</a> (in case you're interested), but whereas I could previously use the `airport` command line utility to rapidly infer frequencies from channels, with the introduction of `6GHz`, it's became problematic, or has it?
 
 The Apple macOS `airport` utility can be used from the command line to output information about the currently connected Wi-Fi network or scan surrounding networks. It's super handy for basic scripting but has limitations. 
 
@@ -93,7 +93,7 @@ lastAssocStatus: 0
 </pre>
 <small>**Note:** In later macOS versions the `BSSID` (MAC address) is hidden for privacy purposes but can be accessed when run with `sudo` HT <a target="_blank" href="https://twitter.com/jsnyder81">jsnyder81</a>.</small>
 
-I had been using the command line airport utility in the [PanSift](/) agent to grab information about the currently connected WLAN and also to **scan** what Wi-Fi networks were around using the `-s` scanning switch (inc. some other switches mentioned below). You can output some very useful information to the terminal in human readable format.
+I had been using the command line airport utility in the <a target="_blank" href="/">**PanSift**</a> agent to grab information about the currently connected WLAN and also to **scan** what Wi-Fi networks were around using the `-s` scanning switch (inc. some other switches mentioned below). You can output some very useful information to the terminal in human readable format.
 
 <pre>
 minis-Mac-mini:Pansift mini$ airport -s
@@ -332,7 +332,7 @@ Wi-Fi:
 
 ❓ So where am I going with all of this. I needed a **simple** way to establish, from the **command line**, and with a range of **OS X** / **macOS** versions (including `6GHz` on the new **M2** and **M3** chips), what **band** we were operating in, quickly and reliably (using **consistent** commands!). 
 
-**Note:** One [**PanSift**](/) feature is to find clean air space to use over a defined period of time, so it's really important to us. I wanted to write _simple_ logic to be able to discern and then recommend potentially clear **Wi-Fi** channels across `2.4GHz`, `5GHz`, and `6GHz` bands for a queried time range (hence the _channel widths_ would be needed too!). 
+**Note:** One <a target="_blank" href="/">**PanSift**</a> feature is to find clean air space to use over a defined period of time, so it's really important to us. I wanted to write _simple_ logic to be able to discern and then recommend potentially clear **Wi-Fi** channels across `2.4GHz`, `5GHz`, and `6GHz` bands for a queried time range (hence the _channel widths_ would be needed too!). 
 
 <hr>
 
@@ -481,7 +481,7 @@ Can we now also assume `0x1000` will be for **Wi-Fi 7** `320MHz` wide channels?
 
 <hr>
 
-✅ I then set about applying this learning to the `XML` plist based scan data which also has `CHANNEL_FLAGS` in the output from the command `airport -s -x`. This will be rolled out in the next [**PanSift**](/) agent update from the current version `0.6.1` to `0.6.3` real soon!
+✅ I then set about applying this learning to the `XML` plist based scan data which also has `CHANNEL_FLAGS` in the output from the command `airport -s -x`. This has now been rolled out in the latest <a target="_blank" href="/">**PanSift**</a> agent update to `0.6.3`!
 
 <hr>
 
@@ -489,7 +489,7 @@ This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS**, 
 <hr>
 <br>
 
-**Summary:** The airport utility is a very handy command line tool. It outputs additional information in `XML` format if you ask for it. This additional data summarizes some very useful fields about **Wi-Fi** networks around you but in a custom format. With some digging, building on others deep work, and then some inferences from observations, it has saved writing custom scripts or a re-write of the whole PanSift agent. <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> remains the source of truth for querying what the OS sees in the air but there are other ways to get at this data. I hope you got something out of this exploration and it might motivate you to poke around a little deeper yourself or try one of our free [**PanSift**](/) agents that give you historical insight in to your **Wi-Fi** and even some recommendations on better channels to use ;)
+**Summary:** The airport utility is a very handy command line tool. It outputs additional information in `XML` format if you ask for it. This additional data summarizes some very useful fields about **Wi-Fi** networks around you but in a custom format. With some digging, building on others deep work, and then some inferences from observations, it has saved writing custom scripts or a re-write of the whole <a target="_blank" href="/">**PanSift**</a> agent. <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> remains the source of truth for querying what the OS sees in the air but there are other ways to get at this data. I hope you got something out of this exploration and it might motivate you to poke around a little deeper yourself or try one of our free <a target="_blank" href="/">**PanSift**</a> agents that give you historical insight in to your **Wi-Fi** and even some recommendations on better channels to use ;)
 <br>
 <br>
 📝 Big ups to <a target="_blank" href="https://twitter.com/technologeeks">Jonathan Levin</a> and I'd love any reader comments, suggestions, ideas, or criticisms you have [**here 💬**](/contact).

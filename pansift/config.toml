@@ -43,14 +43,16 @@ unsafe = true
     [params.hero]
         enable  = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
+				#	heading = 'Instant Remote Troubleshooting for Macs. Confidently support Work From Anywhere 🏠🏝🛰'
+				heading = "Keep an eye on client Wi-Fi, ISP, and more, with instant remote troubleshooting for Macs 🏠🏝💻"
 				# heading = 'Work less, do more. Regain your edge and fix faster with Digital Experience Monitoring for Macs.'
 				# heading = 'Digital Experience Monitoring for Macs. Confidently support Work From Anywhere 🌎 🕶'
 				# heading = 'Instant Remote Troubleshooting for Macs. Confidently support Work From Anywhere 🏠🩴 🏝'
-				heading = 'Instant Remote Troubleshooting for Macs. Confidently support Work From Anywhere 🏠🏝🛰'
 				# heading = 'Instant Remote Troubleshooting for Macs. Confidently support Work From Anywhere <i class="fas fa-umbrella-beach"></i>'
 				# heading = 'Regain your edge with instant remote troubleshooting and Real User Monitoring for Macs.'
 				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
-        description2 = 'Keep an eye on your Wi-Fi in <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-user-lock"></i> managed</a></div></div> and <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-home"></i> unmanaged</a></div></div> locations. Solve DNS, IPv4, IPv6, web, and system issues rapidly. Go back in time with retrospective Digital Experience Monitoring! Control your time, follow the data, and regain your edge...'
+        # description2 = 'Keep an eye on your Wi-Fi in <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-user-lock"></i> managed</a></div></div> and <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-home"></i> unmanaged</a></div></div> locations. Solve DNS, IPv4, IPv6, web, and system issues rapidly. Go back in time with retrospective Digital Experience Monitoring! Control your time, follow the data, and regain your edge...'
+        description2 = 'Irrespective of <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-user-lock"></i> managed</a></div></div> or <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-home"></i> unmanaged</a></div></div> locations, solve DNS, IPv4, IPv6, web, and system issues rapidly. Go back in time with retrospective Digital Experience Monitoring! Automagically surface issues to regain your edge and control your time!'
 				description3 = "Instant Demo"
         button  = true
         btnTxt = "Early Access"
@@ -61,9 +63,9 @@ unsafe = true
 
     [params.aboutSm]
         enable  = true
-        title   = "Simple <span style = 'color: #fff;'>troubleshooting</span> and <span style = 'color: #fff;'>monitoring</span> for Macs."
+        title   = "Simple but advanced <span style = 'color: #fff;'>troubleshooting</span> and <span style = 'color: #fff;'>monitoring</span> for Macs."
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
-        proof = "Gartner forecasts that <strong>~53%</strong> of the UK & US workforce will <u><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021'>work remotely during 2022</a></u>.<br><strong>DEM (Digital Experience Monitoring)</strong> is the first step to guarantee productivity."
+        proof = "<strong>71%</strong> of the US workforce <strong><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2023-03-01-gartner-forecasts-39-percent-of-global-knowledge-workers-will-work-hybrid-by-the-end-of-2023'>will work hybrid (a mix of office and remote)</a></strong> in 2023.<br><strong>DEM (Digital Experience Monitoring)</strong> is the first step to guarantee productivity."
     
 		[params.aboutsm2]
         enable  = true

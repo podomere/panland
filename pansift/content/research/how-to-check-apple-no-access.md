@@ -1,27 +1,27 @@
 ---
 title: "How To Check Apple No-access"
-subtitle: "Synergy?"
+subtitle: "Sprint To The Finish Line?"
 layout: research
-ip_v4_address: "252.235.39.109"
-date: 2023-10-29T15:13:19+00:00
+ip_v4_address: "67.73.141.196"
+date: 2023-11-18T13:36:29+00:00
 draft: false
 ---
 
 ## Internet Addressing
-On the Internet you might get a Public IPv4 address like ```252.235.39.109``` or an IPv6 address like ```2000:448b:3af9:d612:fa5b:160:d53f:e401```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```84:d4:22:c6:2f:ed```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
+On the Internet you might have a Public IPv4 address like ```67.73.141.196``` or an IPv6 address like ```2000:f73f:acef:b161:b879:6b3b:de33:7401```. You can check this from [https://test-ipv6.com/](https://test-ipv6.com/). Yet, for 'non-techies' to try and communicate these addresses, or even call out MAC addresses like ```58:f0:6e:56:ff:73```, it can be error prone and gets complicated quickly. Additionally, this doesn't give you any historical data (especially back when previous problems occured).
 
 ## Accessing the Web
-To get to a web page like https://mohr-runolfsdottir.biz you initially access a DNS server to translate the host portion (mohr-runolfsdottir) combined with the Top Level Domain (biz) of the URL, to an IP address like ```127.169.204.51```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A```
+To get to a web page like https://rosenbaum-sipes.info you initially access a DNS server to translate the host portion (rosenbaum-sipes) combined with the Top Level Domain (info) of the URL, to an IP address like ```92.243.82.35```. Your computer and browser actually sends its type with all web requests e.g. <br>```Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko```
 
 ## Default Gateways
-Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```10.108.181.95``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
+Your default gateway is normally an automatically configured address via DHCP. You get a default gateway like ```172.29.39.45``` (though they normally end in .1 or .254 depending upon the scope size) and this is where your computer sends all its traffic to be routed onwards. For ```IPv6``` we have a deep dive on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) but you can check on Mac or Linux with:
 
 ### IPv4 (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  10.108.181.95    UGScg  en0
+default  172.29.39.45    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  10.108.181.95    UGScg  en0
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   fe80:3638:b09b:1f4:161f%en0  UGcg   en0
+default   fe80:7888:e2f:e696:21ff%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -48,7 +48,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {66.207.55.219, 0.12.67.53}
+domain_name_server (ip_mult): {173.204.15.201, 58.145.161.192}
 end (none):
 ...</pre>
 
@@ -59,17 +59,17 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 84:d4:22:c6:2f:ed
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 58:f0:6e:56:ff:73
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 45:d7:d5:73:a4:1f
+  SERVERID (2) Length 10: DUID LL HW 1 Addr b9:bb:45:b2:94:72
 }</pre>
 
 ## Wired or Wireless
 At the physical and data layer you may be using a wired or wireless (Wi-Fi) medium to send this data towards your router. 
 
 ### Apple macOS / OSX
-No matter what version of OSX/macOS you are on, ```10.11.6```, ```11.0.4```, or ```12.2.4```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
+No matter what version of OSX/macOS you are on, ```10.15.8```, ```11.6.2```, or ```12.0.6```, there are a range of tools for troubleshooting. Unfortunately, between these manual actions and scripts, they don't give you a series of correlated values over time. This is where automated remote troubleshooting comes in to its own, especially for teams that embrace remote work and Work From Anywhere (WFA).
 
 #### Scripts
 One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump to the CLI of current wireless related settings, and this can be configured to also generate specific logs for troubleshooting. Additionally, and perhaps more comprehensively the ```sysdiagnose``` tool can be used to generate a whole host of logs (though much is point in time only in relation to wireless just like wdutil).
@@ -85,11 +85,11 @@ One very helpful tool on OSX/macOS is ```sudo wdutil info``` which gives a dump 
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=QAY5F0B-_kM" data-lity><img src="https://i.ytimg.com/vi/QAY5F0B-_kM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=QAY5F0B-_kM" data-lity>iStat Menus - Best System Monitoring App for macOS</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity><img src="https://i.ytimg.com/vi/P-t0_wQ1wWg/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=P-t0_wQ1wWg" data-lity>Using FileVault to Secure Your Data - Hands-on Mac 10</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=ySr5JSWNnsk" data-lity><img src="https://i.ytimg.com/vi/ySr5JSWNnsk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=ySr5JSWNnsk" data-lity>Using Hazel with Folder Actions - An easy way to automate your Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=BG2tqr1t640" data-lity><img src="https://i.ytimg.com/vi/BG2tqr1t640/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=BG2tqr1t640" data-lity>Folder Actions: Part 1 - Associate AppleScripts with folders on your Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity><img src="https://i.ytimg.com/vi/TWzWd_DiaJ0/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity>Mac Activity Monitor - How to Troubleshoot Your Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity><img src="https://i.ytimg.com/vi/7KdhJimuhNw/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity>Securing macOS Big Sur</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=VwNYWAxHCgM" data-lity><img src="https://i.ytimg.com/vi/VwNYWAxHCgM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=VwNYWAxHCgM" data-lity>Secret Mac Boot Commands - Mac Boot Key Combinations</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=HEbK-Tignuc" data-lity><img src="https://i.ytimg.com/vi/HEbK-Tignuc/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=HEbK-Tignuc" data-lity>On the Road to Big Sur 2 - Compatibility</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=RslZ4W1EPqk" data-lity><img src="https://i.ytimg.com/vi/RslZ4W1EPqk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=RslZ4W1EPqk" data-lity>Spotlight on Spotlight - Hands-On Mac 7</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>
  <br>

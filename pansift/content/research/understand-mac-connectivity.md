@@ -1,0 +1,106 @@
+---
+title: "Understand Mac Connectivity"
+subtitle: "Customer Journey?"
+layout: research
+ip_v4_address: "231.136.35.90"
+date: 2023-11-18T19:20:27+00:00
+draft: false
+---
+
+## Understanding Internet Addressing
+
+When using the Internet, you are assigned a Public IPv4 address such as ```231.136.35.90``` or an IPv6 address like ```2000:4053:76de:e105:c3bc:78ef:eb17:bb5c```. You can verify this information at [https://test-ipv6.com/](https://test-ipv6.com/). However, conveying these addresses to non-technical individuals, or even referencing MAC addresses such as ```c6:a9:99:fe:42:ac```, can be prone to errors and become complex. Moreover, it does not provide any historical data.
+## Navigating the World Wide Web
+
+When attempting to access a website like https://hoeger-powlowski.org, you start by contacting a DNS server to convert the host portion (hoeger-powlowski) and the Top Level Domain (org) of the URL into an IP address, such as ```63.194.153.45```. Your computer and browser include its type in all web requests, for example:<br>```Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A```
+## Significance of Default Gateways
+
+The default gateway is usually an automatically configured address obtained via DHCP. It typically ends in .1 or .254 based on the scope size, and your computer sends all its traffic to this address to be routed onwards. For ```IPv6```, a detailed explanation is available at [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/). On Mac or Linux, you can check this through:
+
+```bash
+code block
+```
+### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
+```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
+
+<pre>
+0/1      172.18.12.193  UGScg  utun3
+default  172.18.73.90    UGScg  en0
+128.0/1  172.18.12.193  UGSc   utun3</pre>
+
+**Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
+
+### IPv6 Routes and the Host IPv6 Route Table (inc. VPN)
+```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
+
+If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
+
+<pre>
+default   fe80:b04e:db8a:2b6c:4a2%en0  UGcg   en0
+default   fe80::%utun0                   UGcIg  utun0
+default   fe80::%utun1                   UGcIg  utun1
+default   fe80::%utun2                   UGcIg  utun2
+2000::/3  utun3                          USc    utun3</pre>
+
+**Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
+<br>
+
+## Debugging DHCP for both IPv4 and IPv6
+
+To get a look at the low level DHCP configuration (Mac/Linux): 
+
+```ipconfig getpacket en0```
+
+<pre>
+...
+domain_name_server (ip_mult): {193.135.23.53, 220.13.121.136}
+end (none):
+...</pre>
+
+So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but...
+
+```ipconfig getv6packet en0```
+
+<pre>
+DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
+Options[4] = {
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr c6:a9:99:fe:42:ac
+  DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
+  DOMAIN_LIST (24) Length 0:  Invalid
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 20:a7:f9:50:40:6f
+}</pre>
+
+
+
+
+## Resolve Connection Issues for Wired or Wireless Networks
+When it comes to transmitting data to your router, you could be using either a wired or wireless (Wi-Fi) medium at the physical and data layer.
+### Resolving Problems on Apple macOS / OSX
+No matter which version of OSX/macOS you have - whether it's ```10.14.8```, ```11.2.6```, or ```12.2.5``` - there are various tools available for troubleshooting. However, these manual actions and scripts fail to provide a consistent set of correlated values over time. This is where automated remote troubleshooting becomes invaluable, especially for teams that embrace remote work and Work From Anywhere (WFA).
+#### Utilizing Built-in Scripts to Aid in Troubleshooting
+A helpful tool on OSX/macOS is the ```sudo wdutil info``` command, which provides a dump of current wireless settings to the CLI and can be configured to generate specific logs for troubleshooting. Moreover, the ```sysdiagnose``` tool offers a more comprehensive option for generating a wide range of logs, although much of it is only relevant to wireless issues, much like the wdutil tool.
+
+Running ```sudo nohup /usr/bin/sysdiagnose -u &``` in the background will generate logs in ```/var/tmp/<blah>.tar.gz``` for you. Alternatively, running it *interactively* by using ```sudo /usr/bin/sysdiagnose``` will prompt a privacy warning. When not run in the background, it should open Finder in the correct location, or you can navigate to ```/var/tmp``` using Finder by pressing Cmd+Shift+G. However, be cautious of the large file sizes, which are typically around 300MB.
+## Possibly Helpful Videos
+
+<link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
+<script src="/plugins/lity/js/lity.min.js"></script>
+<div class="table1-start"></div>
+
+|Video | Title | Channel |
+| :---: | :---: | :---: |
+|<a href="https://www.youtube.com/watch?v=VwNYWAxHCgM" data-lity><img src="https://i.ytimg.com/vi/VwNYWAxHCgM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=VwNYWAxHCgM" data-lity>Secret Mac Boot Commands - Mac Boot Key Combinations</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=RslZ4W1EPqk" data-lity><img src="https://i.ytimg.com/vi/RslZ4W1EPqk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=RslZ4W1EPqk" data-lity>Spotlight on Spotlight - Hands-On Mac 7</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity><img src="https://i.ytimg.com/vi/7KdhJimuhNw/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity>Securing macOS Big Sur</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=HEbK-Tignuc" data-lity><img src="https://i.ytimg.com/vi/HEbK-Tignuc/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=HEbK-Tignuc" data-lity>On the Road to Big Sur 2 - Compatibility</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity><img src="https://i.ytimg.com/vi/TWzWd_DiaJ0/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity>Mac Activity Monitor - How to Troubleshoot Your Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+
+<center><small>Table 1.0 - Video Help</small></center>
+ <br>
+<div class="table1-end"></div>
+<script type="text/javascript">
+(function() {
+    $('div.table1-start').nextUntil('div.table1-end', 'table').addClass('table thead-dark table-striped table-responsive rounded').attr('id', 't1');
+    $('#t1').find('thead').addClass('thead-dark');
+})();
+</script>

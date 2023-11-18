@@ -17,9 +17,9 @@ paginate = 9
 unsafe = true
 
 [sitemap]
-  changefreq = "daily"
+  changefreq = "weekly"
   filename = "sitemap.xml"
-  priority = 0
+  priority = 1
 
 [security.funcs]
 	getenv = [ "^HUGO_", "^WC_","^BRANCH" ]

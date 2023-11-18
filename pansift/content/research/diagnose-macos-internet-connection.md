@@ -1,27 +1,27 @@
 ---
 title: "DiagnOSe MacOS Internet Connection"
-subtitle: "Infographic?"
+subtitle: "Immersive Experience?"
 layout: research
-ip_v4_address: "60.168.71.93"
-date: 2023-11-18T17:10:48+00:00
+ip_v4_address: "136.59.216.23"
+date: 2023-11-18T22:22:06+00:00
 draft: false
 ---
 
 ## Understanding Internet Addressing
 
-When using the Internet, you are assigned a Public IPv4 address, such as ```60.168.71.93```, or an IPv6 address like ```2000:e212:feb7:aee6:38fe:effc:141b:12cc```. You can verify these addresses at [https://test-ipv6.com/](https://test-ipv6.com/). However, explaining or sharing these addresses, and even mentioning MAC addresses like ```25:ca:7b:24:f2:0e```, can be prone to errors and quickly become complex. Moreover, this method does not provide any historical data, especially in cases of past issues.
-## Navigating the World Wide Web
+When using the Internet, you are assigned a Public IPv4 address, such as ```136.59.216.23```, or an IPv6 address, like ```2000:d7ff:808d:87a3:807e:f41a:d1a3:fe31```. You can verify this information by visiting [https://test-ipv6.com/](https://test-ipv6.com/). However, explaining these addresses to non-technical individuals, or even referencing MAC addresses like ```5b:46:fb:98:0d:0d```, can be prone to errors and become complex. Furthermore, this method does not provide historical data, particularly from past issues.
+## Navigating the Web and the Process of Lookups
 
-In order to access a website, such as https://buckridge.biz, a DNS server is used to convert the host portion (buckridge) along with the Top Level Domain (biz) of the URL into an IP address, for example ```236.188.107.180```. When making web requests, your computer and browser also send their types, for instance: <br>```Mozilla/5.0 (compatible; MSIE 9.0; AOL 9.7; AOLBuild 4343.19; Windows NT 6.1; WOW64; Trident/5.0; FunWebProducts)```
-## Significance of Default Gateways
+When accessing a website such as https://bogan.io, you first contact a DNS server to convert the host portion (bogan) combined with the Top Level Domain (io) of the URL into an IP address, like ```224.86.183.142```. Your computer and browser transmit its type with all web requests, for example: <br>```Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16```
+## The Significance of Default Gateways
 
-Your default gateway is typically an automatically assigned address via DHCP. You will receive a default gateway, such as ```192.168.17.67``` (usually ending in .1 or .254 depending on the scope size), where your computer forwards all its traffic for routing. For ```IPv6```, more in-depth information is available at [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) and can also be checked on Mac or Linux systems using: <br>
+Your default gateway is usually an automatically assigned address via DHCP, such as ```172.30.2.150``` (although they normally end in .1 or .254 depending on the scope size). This is where your computer sends all its traffic to be routed onwards. For ```IPv6```, you can refer to an in-depth guide on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/), or check on Mac or Linux with: <br>
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
-default  192.168.17.67    UGScg  en0
+default  172.30.2.150    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 
 **Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
@@ -32,7 +32,7 @@ default  192.168.17.67    UGScg  en0
 If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
 
 <pre>
-default   e7b6:7b:d278:1ba9:f43f:d5f3:de7c:9d52%en0  UGcg   en0
+default   fe80:135b:cf0f:a621:acb8%en0  UGcg   en0
 default   fe80::%utun0                   UGcIg  utun0
 default   fe80::%utun1                   UGcIg  utun1
 default   fe80::%utun2                   UGcIg  utun2
@@ -49,7 +49,7 @@ To get a look at the low level DHCP configuration (Mac/Linux):
 
 <pre>
 ...
-domain_name_server (ip_mult): {189.229.6.164, 11.79.237.210}
+domain_name_server (ip_mult): {210.142.90.160, 146.233.62.65}
 end (none):
 ...</pre>
 
@@ -60,23 +60,25 @@ So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but..
 <pre>
 DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
 Options[4] = {
-  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 25:ca:7b:24:f2:0e
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 5b:46:fb:98:0d:0d
   DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
   DOMAIN_LIST (24) Length 0:  Invalid
-  SERVERID (2) Length 10: DUID LL HW 1 Addr 94:93:65:82:ca:f3
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 66:19:41:f3:65:23
 }</pre>
 
 
 
 
-## Resolving Issues with Wired and Wireless Connections
-When transferring data to your router, you may encounter issues at the physical and data layer, whether you are using a wired or wireless (Wi-Fi) medium.
-### Troubleshooting Tips for Apple macOS / OSX
-Regardless of the version of OSX/macOS you are using - whether it's ```10.14.5```, ```11.4.4```, or ```12.2.8```, there are several tools available for troubleshooting. However, these manual actions and scripts do not provide a series of correlated values over time. This is where automated remote troubleshooting becomes invaluable, particularly for teams that have embraced remote work and Work From Anywhere (WFA).
-#### Helpful Built-in Scripts
-One useful tool on OSX/macOS is the ```sudo wdutil info``` command, which provides a dump of the current wireless settings to the CLI and can be configured to generate specific logs for troubleshooting. Additionally, the ```sysdiagnose``` tool can be used to generate a wide range of logs, although much of it is only relevant to wireless settings at a specific point in time, similar to wdutil.
+## Resolving Connectivity Issues for Wired and Wireless Networks
 
-To run it in the background and generate logs in ```/var/tmp/<blah>.tar.gz```, you can use the command ```sudo nohup /usr/bin/sysdiagnose -u &```. If you prefer to run it interactively, you can use the command ```sudo /usr/bin/sysdiagnose``` and it will provide a privacy warning. If not run in the background, it should open Finder in the correct location, or you can navigate to ```/var/tmp``` using Finder with Cmd+Shift+G. It's important to be aware of the file sizes, which are approximately 300MB.
+When it comes to sending data to your router, you might be using either a wired or a wireless (Wi-Fi) medium at the physical and data layer.
+### Troubleshooting Tips for Apple macOS / OSX
+Regardless of whether you're running OSX/macOS version 10.11.3, 11.4.5, or 12.1.6, there are various troubleshooting tools available. However, these manual actions and scripts do not provide a series of correlated values over time. This is where automated remote troubleshooting becomes valuable, particularly for teams that embrace remote work and Work From Anywhere (WFA).
+
+  #### Useful Built-in Scripts and Commands
+  A very helpful tool on OSX/macOS is the ```sudo wdutil info```, which provides a dump of current wireless related settings to the CLI and can be configured to generate specific logs for troubleshooting. Additionally, the ```sysdiagnose``` tool can be used to generate a wide range of logs, although much of it is only point-in-time in relation to wireless, similar to wdutil.
+
+  To run it in the background and write logs to ```/var/tmp/<blah>.tar.gz```, use ```sudo nohup /usr/bin/sysdiagnose -u &```. If you prefer to run it interactively, you can use ```sudo /usr/bin/sysdiagnose```, which will give a privacy warning. If not run in the background, it should open Finder in the correct location or you can navigate to ```/var/tmp``` or use Finder with Cmd+Shift+G to point Finder to the path. Keep in mind that the file sizes are about 300MB more or less.
 ## Possibly Helpful Videos
 
 <link href="/plugins/lity/css/lity.min.css" rel="stylesheet">
@@ -85,10 +87,10 @@ To run it in the background and generate logs in ```/var/tmp/<blah>.tar.gz```, y
 
 |Video | Title | Channel |
 | :---: | :---: | :---: |
-|<a href="https://www.youtube.com/watch?v=JMKi6o9kaZI" data-lity><img src="https://i.ytimg.com/vi/JMKi6o9kaZI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=JMKi6o9kaZI" data-lity>macOS Big Sur - What&#39;s New in Apple macOS 11</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
-|<a href="https://www.youtube.com/watch?v=RslZ4W1EPqk" data-lity><img src="https://i.ytimg.com/vi/RslZ4W1EPqk/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=RslZ4W1EPqk" data-lity>Spotlight on Spotlight - Hands-On Mac 7</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=HEbK-Tignuc" data-lity><img src="https://i.ytimg.com/vi/HEbK-Tignuc/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=HEbK-Tignuc" data-lity>On the Road to Big Sur 2 - Compatibility</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=JMKi6o9kaZI" data-lity><img src="https://i.ytimg.com/vi/JMKi6o9kaZI/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=JMKi6o9kaZI" data-lity>macOS Big Sur - What&#39;s New in Apple macOS 11</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=VwNYWAxHCgM" data-lity><img src="https://i.ytimg.com/vi/VwNYWAxHCgM/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=VwNYWAxHCgM" data-lity>Secret Mac Boot Commands - Mac Boot Key Combinations</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
+|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity><img src="https://i.ytimg.com/vi/7KdhJimuhNw/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=7KdhJimuhNw" data-lity>Securing macOS Big Sur</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 |<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity><img src="https://i.ytimg.com/vi/TWzWd_DiaJ0/default.jpg" class="img-fluid"></a>|<a href="https://www.youtube.com/watch?v=TWzWd_DiaJ0" data-lity>Mac Activity Monitor - How to Troubleshoot Your Mac</a>|<a target="_blank" href="https://www.youtube.com/channel/UCg43DP8MdHVcl4rFK_delBg" >Hands-On Mac</a>|
 
 <center><small>Table 1.0 - Video Help</small></center>

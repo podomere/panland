@@ -57,9 +57,9 @@
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-WXBBXQJ');</script>
+							j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+							'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+					})(window,document,'script','dataLayer','GTM-WXBBXQJ');</script>
 		<!-- End Google Tag Manager -->
 		<script>
 			var google_tracker_name = ""
@@ -83,7 +83,7 @@
 		{{ end }}
 		<!-- Rich Data / Structured Data -->
 		<script type="application/ld+json"> 
-		{ 
+			{ 
 			"@context": "http://schema.org", 
 			"@type": "Organization", 
 			"name" : "PanSift", 
@@ -99,7 +99,7 @@
 		} 
 		</script> 
 		<script type="application/ld+json"> 
-		{ 
+			{ 
 			"@context": "http://schema.org", 
 			"@type": "LocalBusiness", 
 			"name" : "{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}", 
@@ -120,31 +120,31 @@
 		} 
 		</script>
 		{{ if eq .Section "blog" }}
-    <script type="application/ld+json">
-      {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "{{ .Title }}",
+		<script type="application/ld+json">
+			{
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			"headline": "{{ .Title }}",
 			{{ if .Params.image }}"image": "{{ .Params.image | absURL }}", {{ end -}}
-      "datePublished": "{{ if not .PublishDate.IsZero }}{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}{{ end }}",
-      "dateModified": "{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}{{ end }}",
-      "author": {
-        "@type": "Person",
-        "name": "PanSift Team"
-      },
-      "mainEntityOfPage": { "@type": "WebPage" },
-      "publisher": {
-        "@type": "Organization",
-        "name": "PanSift",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.Params.logo }}"
-        }
-      },
-      {{ if .Summary }}"description": "{{ .Summary | plainify | safeHTML }}",{{ end }}
-      "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
-    }
-    </script>
+			"datePublished": "{{ if not .PublishDate.IsZero }}{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" | safeHTML }}{{ end }}",
+			"dateModified": "{{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}{{ end }}",
+			"author": {
+				"@type": "Person",
+				"name": "PanSift Team"
+			},
+			"mainEntityOfPage": { "@type": "WebPage" },
+			"publisher": {
+				"@type": "Organization",
+				"name": "PanSift",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "{{ .Site.Params.logo }}"
+				}
+			},
+			{{ if .Summary }}"description": "{{ .Summary | plainify | safeHTML }}",{{ end }}
+			"keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
+		}
+		</script>
 		{{ end }}
 		<!-- Rich Data / Structured Data -->
 
@@ -189,25 +189,37 @@
 
 		<!-- PostHog Testing 030923: Donal -->
 		<script>
-		    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-				    posthog.init('phc_WqEwpgTJJUS7hRhjLmEfwVcgtoPHCao8Yy09QjmkgVZ',{api_host:'https://eu.posthog.com'})
+			!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+			posthog.init('phc_WqEwpgTJJUS7hRhjLmEfwVcgtoPHCao8Yy09QjmkgVZ',{api_host:'https://eu.posthog.com'})
 		</script>
 
-<!-- Reddit Pixel -->
-<script>
-!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_drcmlr6jnqtt', {"optOut":false,"useDecimalCurrencyValues":true});rdt('track', 'PageVisit');
-</script>
-<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
-<!-- End Reddit Pixel -->
+			<!-- Reddit Pixel -->
+			<script>
+				!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_drcmlr6jnqtt', {"optOut":false,"useDecimalCurrencyValues":true});rdt('track', 'PageVisit');
+			</script>
+			<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+			<!-- End Reddit Pixel -->
+			<!-- Twitter conversion tracking base code -->
+			<script>
+				!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+								},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+									a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+				twq('config','nywkp');
+			</script>
+			<script type="text/javascript">
+				// Insert Twitter Event ID
+				twq('event', 'tw-nywkp-ohhof', {
+								});
+			</script>
+			<!-- End Twitter conversion tracking base code -->
 
+			<!-- Feeding some leads with LeadFeeder? -->
+			<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)},1); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('YEgkB8lRJ0x4ep3Z'); </script>
 
-		<!-- Feeding some leads? -->
-		<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)},1); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('YEgkB8lRJ0x4ep3Z'); </script>
-	
 	</head>
 
 	<body id="body" style="background-color: #fff;">
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXBBXQJ"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXBBXQJ"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->

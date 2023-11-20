@@ -1,27 +1,67 @@
 ---
 title: "DiagnOSe MacOS Issues"
-subtitle: "Value Proposition?"
+subtitle: "Deep Dive?"
 layout: research
-ip_v4_address: "38.15.204.220"
-date: 2023-11-18T22:21:44+00:00
+ip_v4_address: "172.121.128.229"
+date: 2023-11-18T21:59:01+00:00
 draft: false
 ---
 
-## Demystifying How Internet Addressing Functions
 
-When it comes to the Internet, your device may be assigned a Public IPv4 address, such as ```38.15.204.220```, or an IPv6 address like ```2000:2a24:cad5:481f:f96e:304a:aa12:dfa4```. You can verify this at [https://test-ipv6.com/](https://test-ipv6.com/). Communicating these addresses, or even discussing MAC addresses like ```19:85:1a:9e:bd:78```, can become complex and prone to errors. Additionally, this method does not provide historical data, especially during past incidents.
-## Understanding Web Access and the Process of Lookups
-
-When attempting to access a webpage, for example, https://ondricka-wilderman.co, your initial interaction is with a DNS server. This server translates the host portion (ondricka-wilderman) in combination with the Top Level Domain (co) of the URL to an IP address, such as ```48.10.252.112```. Notably, your computer and browser convey their type with all web requests, for instance: <br>```Mozilla/5.0 (Windows; U; Win 9x 4.90; SG; rv:1.9.2.4) Gecko/20101104 Netscape/9.1.0285```
-## Unveiling the Significance of Default Gateways
-
-Typically, your default gateway is an automatically configured address through DHCP. This gateway, such as ```10.149.13.168```, serves as the point where your computer forwards all of its traffic for routing. For a comprehensive discussion on ```IPv6```, please refer to our article [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/). Moreover, you can verify this on Mac or Linux with the following command:
-<br>
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 
 <pre>
 0/1      172.18.12.193  UGScg  utun3
+default  10.37.150.21    UGScg  en0
+128.0/1  172.18.12.193  UGSc   utun3</pre>
+
+**Note:** We are not just looking for the default but also for any VPN that overrides the public v4 address space.
+
+### IPv6 Routes and the Host IPv6 Route Table (inc. VPN)
+```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
+
+If you have IPv6 active the above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. 
+
+<pre>
+default   fe80:d092:4f49:5fb9:af1a%en0  UGcg   en0
+default   fe80::%utun0                   UGcIg  utun0
+default   fe80::%utun1                   UGcIg  utun1
+default   fe80::%utun2                   UGcIg  utun2
+2000::/3  utun3                          USc    utun3</pre>
+
+**Note:** We are not just looking for the default but also for any VPN that overrides the public v6 address space.
+<br>
+
+## Debugging DHCP for both IPv4 and IPv6
+
+To get a look at the low level DHCP configuration (Mac/Linux): 
+
+```ipconfig getpacket en0```
+
+<pre>
+...
+domain_name_server (ip_mult): {48.177.219.247, 79.124.11.37}
+end (none):
+...</pre>
+
+So, in the above we are not getting IPv6 DNS servers from the DHCPv4 reply but...
+
+```ipconfig getv6packet en0```
+
+<pre>
+DHCPv6 REPLY (7) Transaction ID 0x80940b Length 76
+Options[4] = {
+  CLIENTID (1) Length 14: DUID LLT HW 1 Time 668691856 Addr 54:2b:fb:1d:0d:d2
+  DNS_SERVERS (23) Length 32: 2606:4700:4700::1111, 2001:4860:4860::8844
+  DOMAIN_LIST (24) Length 0:  Invalid
+  SERVERID (2) Length 10: DUID LL HW 1 Addr 8f:ff:cf:51:b3:a3
+}</pre>
+
+
+
+
+    172.18.12.193  UGScg  utun3
 default  10.149.13.168    UGScg  en0
 128.0/1  172.18.12.193  UGSc   utun3</pre>
 

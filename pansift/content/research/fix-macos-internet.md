@@ -1,13 +1,13 @@
 ---
 title: "Fix MacOS Internet"
-subtitle: "Plug And Chug?"
+subtitle: "Gamification?"
 layout: research
-ip_v4_address: "5.122.14.147"
-date: 2023-11-18T22:21:12+00:00
+ip_v4_address: "232.202.161.183"
+date: 2023-11-18T22:20:10+00:00
 draft: false
 ---
 
-## Understanding Internet Address Allocation
+ Understanding Internet Address Allocation
 
 When you connect to the Internet, you're assigned a public IPv4 address like ```5.122.14.147``` or an IPv6 address like ```2000:136f:6781:6d56:4ca3:7ece:e5de:c25```. You can verify this information by visiting [https://test-ipv6.com/](https://test-ipv6.com/). However, for individuals who are not well-versed in technology, conveying these addresses or even referencing MAC addresses like ```08:05:d0:5d:21:59``` can be prone to errors and become complex. Moreover, this method does not provide any historical data, especially related to past issues.
 

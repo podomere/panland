@@ -1,13 +1,13 @@
 ---
 title: "Fix MacOS No-access"
-subtitle: "Data Points?"
+subtitle: "Customer Journey?"
 layout: research
-ip_v4_address: "162.114.122.6"
-date: 2023-11-18T22:21:35+00:00
+ip_v4_address: "177.137.26.95"
+date: 2023-11-18T22:15:53+00:00
 draft: false
 ---
 
-## Understanding How Internet Addressing Functions
+derstanding How Internet Addressing Functions
 
 When using the Internet, you are assigned a Public IPv4 address, such as ```162.114.122.6```, or an IPv6 address, like ```2000:f4c1:dfb3:a0c9:5d64:9082:5661:7c49```. You can verify this information at [https://test-ipv6.com/](https://test-ipv6.com/). However, communicating these addresses, as well as MAC addresses like ```05:22:4c:9f:de:eb```, can be prone to errors and quickly become complex, especially for individuals who are not tech-savvy. In addition, it does not provide historical data, particularly related to past issues.
 

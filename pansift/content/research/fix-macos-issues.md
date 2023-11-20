@@ -1,11 +1,13 @@
 ---
 title: "Fix MacOS Issues"
-subtitle: "Impact Map?"
+subtitle: "Branding?"
 layout: research
-ip_v4_address: "29.124.117.32"
-date: 2023-11-18T22:20:57+00:00
+ip_v4_address: "255.47.76.7"
+date: 2023-11-18T22:05:28+00:00
 draft: false
 ---
+
+--
 
 ## Understanding the Functionality of Internet Addressing
 

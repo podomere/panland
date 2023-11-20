@@ -1,10 +1,13 @@
 ---
 title: "Fix MacOS Connectivity"
-subtitle: "Bandwidth-constrained?"
+subtitle: "Expansion Play?"
 layout: research
-ip_v4_address: "132.182.129.200"
-date: 2023-11-18T22:21:05+00:00
+ip_v4_address: "35.155.73.42"
+date: 2023-11-18T22:08:34+00:00
 draft: false
+---
+
+alse
 ---
 
 ## Understanding the Functioning of Internet Addressing

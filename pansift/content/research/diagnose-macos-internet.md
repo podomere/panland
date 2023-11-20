@@ -1,11 +1,13 @@
 ---
 title: "DiagnOSe MacOS Internet"
-subtitle: "T-shirt Sizes?"
+subtitle: "Streamline?"
 layout: research
-ip_v4_address: "153.64.225.225"
-date: 2023-11-18T22:21:59+00:00
+ip_v4_address: "126.79.224.42"
+date: 2023-11-18T22:03:18+00:00
 draft: false
 ---
+
+--
 
 ## Understanding Internet Addressing 
 

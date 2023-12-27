@@ -20,7 +20,7 @@ image: /images/blog/binary_apple_v2.png
 published: true
 title: Apple, an Airport, 802.11 Channel Flags, and Some Binary
 ---
-Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If you don't know what that means, then this post is probably not for you. However, if you do know your `2.4GHz` from your `5GHz` , then read on for some reverse engineering relating to; packet captures, custom bitmasks, and how to figure out which **WLAN bands** and **channel widths** are around your Mac (without having to use Apple's <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> or clicking the Wi-Fi icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21"> in the menubar).
+Apple M2 chips support the `6GHz` RF(Radio Frequency) spectrum for **Wi-Fi**. If you don't know what that means, then this post is probably not for you. However, if you do know your `2.4GHz` from your `5GHz` , then read on for some reverse engineering relating to; packet captures, custom bitmasks, and how to figure out which **WLAN bands** and **channel widths** are around your Mac (without having to use Apple's <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> or clicking the Wi-Fi icon <img class="img-fluid" src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21"> in the menubar).
 
 **TL;DR** Used some old Apple header fields from 2015 to figure out the airport utility `CHANNEL_FLAGS` bit mask which doesn't map directly to 802.11 radiotap headers. This technique is being rolled in to the latest <a target="_blank" href="/">**PanSift**</a> agent as the agent doesn't actively query <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>.
 
@@ -61,7 +61,7 @@ So how do you know which channel is in which band on a Mac ❓
 
 The most reliable way to get at **WLAN** information in **macOS** is to query the <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a> framework. <a target="_blank" href="https://developer.apple.com/documentation/corewlan">**CoreWLAN**</a>, as Apple states, _"provides APIs for querying AirPort interfaces and choosing networks."_ Though, to natively query this information requires the ability to write <a target="_blank" href="https://en.wikipedia.org/wiki/Objective-C">**Objective-C**</a> _syntax_ based code (which I don't currently have) or use of Apple's <a target="_blank" href="https://developer.apple.com/swift/">**Swift**</a> language. 
 
-Also, the **macOS** UI(User Interface) will tell you (if you _Alt or Option Click_ the Wi-Fi airport icon <img src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21">!). But what if you want to find out _progammatically_ via the command line and _without_ learning a new language? Well, there's also the `airport` command line utility and even some `system_profiler` keys to query.
+Also, the **macOS** UI(User Interface) will tell you (if you _Alt or Option Click_ the Wi-Fi airport icon <img class="img-fluid" src="/images/blog/wifi_icon_v1.png" class="inline-block rounded" height="22" width="21">!). But what if you want to find out _progammatically_ via the command line and _without_ learning a new language? Well, there's also the `airport` command line utility and even some `system_profiler` keys to query.
 
 As an ex-network engineer with a computer science degree (and some proficiency in software development), I've been building <a target="_blank" href="/">**PanSift**</a> using <a target="_blank" href="https://rubyonrails.org/">Ruby on Rails</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>, and good old <a target="_blank" href="https://www.gnu.org/software/bash/">Bash</a> scripting. Much of the design of <a target="_blank" href="/">**PanSift**</a> is outlined <a target="_blank" href="/design">**here**</a> (in case you're interested), but whereas I could previously use the `airport` command line utility to rapidly infer frequencies from channels, with the introduction of `6GHz`, it's became problematic, or has it?
 
@@ -349,7 +349,7 @@ It _seemed_ to be consistently present across most **OS X** and **macOS** versio
 
 The packet captures I took below (via Wireshark) did indeed show `802.11` channel flags, but only really in the radiotap headers. Sure, there was the presence or absence of `HT`, `VHT`, or `HE` IEs and `Tags` for `Operating Class` but Apple wasn't giving me all the keys I needed via the `airport` utility.
 
-<img src="/images/blog/podomere-legacy-pcap.png">
+<img class="img-fluid" src="/images/blog/podomere-legacy-pcap.png">
 <br><br>
 
 I was really at a loss for how the `CHANNEL_FLAGS` in the airport utility's output lined up with the monitor mode captures "_radiotap.channel.flags_". Try as I did, I could not get the integer values to line up with the HEX (hexadecimal) for networks like "_podomere-legacy_" in the **pcaps** above. 
@@ -390,7 +390,7 @@ enum apple80211_channel_flag
 ```
 <small>And they look quite different from the _radiotap.headers_ **channel flags** from the pcap :)</small>
 
-<center><img src="/images/blog/podomere-legacy-pcap-subset.png"></center>
+<center><img class="img-fluid" src="/images/blog/podomere-legacy-pcap-subset.png"></center>
 <br><br>
 
 OK, now we are getting somewhere. The `CHANNEL_FLAGS` for my `2GHz` , `20MHz` wide "**podomere-legacy**" network output from `airport -Ix` is below: 

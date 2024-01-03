@@ -43,13 +43,14 @@ Most configuration processes happen _automagically_ including aspects of your IP
 ### How do I get IPv6 connectivity?
 As mentioned above, a really important question is, does your ISP support IPv6 and should you be getting IPv6 connectivity with your chosen plan or account type. Additionally, you need to ensure that your ISP supplied home router or associated equipment fully supports IPv6.
 
-## IPv6 Testing and Troubleshooting
-### How do I troubleshoot IPv6?
+## IPv6 Troubleshooting
+### How to test IPv6
 There are many ways to test your IPv6 settings and connectivity. You can do so manually by looking at your operating system settings, running command line tools, or visiting remote sites to check how you appear publicly on the IPv4 and IPv6 Internets. 
 
-#### Why does my IPv6 have no Internet access?
-From the outside in, you should be represented by a public IPv4 and/or IPv6 address. You can manually check this by visiting [IPv6-Test](https://ipv6-test.com/) however this will only show you a specific point in time (tested over HTTPs) and will not show whether you have had any intermittent or historical issues. 
+#### IPv6 Check
+From the outside in, you should be represented by a public IPv4 and/or IPv6 address. You can manually check this by visiting [IPv6-Test](https://ipv6-test.com/) or the simpler [Test IPv6](https://test-ipv6.com/) however this will only show you a specific point in time (tested over HTTPs) and will not show whether you have had any intermittent or historical issues. 
 
+##### IPv6 Not Detected
 You really need to be testing continuously. This includes making DNS requests and sending IPv6 probes to both your default gateway and also out on to the Internet to be **100%** sure you are connected end-to-end and that assets are reachable outside of your ISP. Pinging your default gateway via [ICMPv6 (Internet Control Message Protocol for IPv6)](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6) is one local test, but checking you can reach and query IPv6 DNS servers and other assets on the IPv6 Internet is another undertaking, so let's initially look at how you might perform these tests manually.
 
 ### IPv6 DNS Not Working
@@ -68,15 +69,17 @@ We need to check you are represented by a globally routable IPv6 unicast address
 #### IPv6 Link Local and Multicast
 ```fe80::/10``` are link-local addresses and ```ff00::/8``` are multicast addresses. Your IPv6 default gateway will likely be an ```fe80::/10``` address but alternatively may be a global address.
 
-#### What to do with no IPv6 connectivity?
+#### IPv6 Not Working on Router
 You can rapidly check IPv6 from the outside -> in by visiting [IPv6-Test](https://ipv6-test.com/) as mentioned previously, or you could simply send some [ICMPv6](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6) packets to Google's Public Primary DNS server ```ping -6 2001:4860:4860::8888``` . If either of those steps fail you then need to troubleshoot (partition your failure domain) and go step by step to find out what's wrong...
 
 ##### IPv6 Example (inc. VPN)
-We can look for the presence of IPv6 addresses on a specific interface but let's kill two birds with one stone and see if you have a default route in your local IPv6 route table (macOS/Linux) but let's also see if there's a VPN running with a better match prefix 😎 :
+We can look for the presence of IPv6 addresses on your host's specific interface but let's kill two birds with one stone and see if you have a default route in your local IPv6 route table (macOS/Linux) but let's also see if there's a VPN running with a better match prefix 😎 :
 
 ```netstat -rn -f inet6 | egrep -i "default|2000::/3"```
 
 The above should return at least one route (as per below) via a known interface such as "_en0_ " on a Mac. We're also assuming you don't have any fancy tunnels or VPNs set up for now! 
+
+💡 That's why we also check for `2000::/3` as it's an overriding route for the public IPv6 address space used by VPNs to trump the `default` entry.
 
 <pre>
 Destination  Gateway                        Flags  Netif  Expire
@@ -86,21 +89,21 @@ default      fe80::%utun1                   UGcIg  utun1
 default      fe80::%utun2                   UGcIg  utun2
 ::1          ::1                            UHL    lo0</pre>
 
-Depending upon your flavour of Linux you might use "_wlan0_ " as the interface or the following command: 
+Depending upon your flavour of Linux you might see "_wlan0_ " as the interface or you can also use the following command: 
 
-```ip -6 route | egrep -i "default|2000::/3"```
+<code><a target="_blank" href="https://explainshell.com/explain?cmd=ip+-6+route+%7C+egrep+-i+%22default%7C2000%3A%3A%2F3%22">ip -6 route | egrep -i "default|2000::/3"</a></code> ⬅ Click for explanation!
 
 <pre>default via 2a03:b0c0:2:d0::1 dev eth0 proto static metric 1024 pref medium</pre>
 
-Next you might check if you can send data to the relevant IPv6 default gateway (using IPv6 of course!).
+Next you might check if you can send data to the relevant IPv6 default gateway above `fe80::5a23:8cff:fe1a:5f21%en0` (using IPv6 of course which also requires the interface appended!).
 
 ```ping6 fe80::5a23:8cff:fe1a:5f21%en0``` 
 
-**Note:** Notice that the IPv6 default gateway also specifies the interface "_en0_ " too (which is different from IPv4 default gateways). If you manage to get responses, let's see if we can then talk to your configured IPv6 DNS servers.
+**Note:** As mentioned, the IPv6 default gateway also specifies the interface "_en0_ " too (which is different from IPv4 default gateways). If you manage to get responses, let's see if we can then talk to your configured IPv6 DNS servers.
 
-**Note:** You could just ask for the record immediately from the IPv6 DNS server and then go from there, but let's verify our settings first.
+**Note:** You could just ask for the record immediately from the IPv6 DNS server and then go from there, but let's verify our settings first by learning and partitioning the problem space.
 
-##### IPv6 DNS
+##### Test IPv6 DNS
 You can also see which DNS servers are configured via ```cat /etc/resolv.conf``` or also ```scutil --dns``` on macOS.
 
 Additionally, you can see if DHCPv4 or DHCPv6 have assigned IPv6 DNS servers as per the following where "_en0_ " is the interface name in question:
@@ -135,9 +138,11 @@ Once we've confirmed a positive response from the above we can use a common tool
 
 **Note:**  ```dig``` is available on Linux via ```bind-utils``` and/or ```dns-utils```.
 
+##### Test if your ISP's Server Uses IPv6
+
 Making a test IPv6 query with ```dig``` might mean asking an IPv4 server for an IPv6 resource ```dig @1.1.1.1 AAAA pansift.com``` but what we really want here is to use the IPv6 protocol for the message transport i.e. ask an IPv6 server, using IPv6, for an IPv6 or IPv4 resource record:
 
-```dig -6 @2606:4700:4700::1111 AAAA pansift.com```
+<code><a target="_blank" href="https://explainshell.com/explain?cmd=dig+-6+%402606%3A4700%3A4700%3A%3A1111+AAAA+pansift.com">dig -6 @2606:4700:4700::1111 AAAA pansift.com</a></code> ⬅ Click for explanation!
 
 You can try some different permutations for yourself but you should get a positive response in the _answer_ section much like the following:
 
@@ -152,7 +157,7 @@ Healthy responses are generally returned in less than 20ms. Good enough response
 
 At this point you should be confident you're fully connected on the IPv6 Internet and can check your address via [IPv6-Test](https://ipv6-test.com/) , or surf to a known IPv6 enabled website using a Chrome Extension like [IPFoo](https://github.com/pmarks-net/ipvfoo). You can also check on the command line with `cURL` to explicitly see the HTTP status code which should be `200` (via the IPv6 switch ```-6```). Try a few websites yourself to see if they have an IPv6 presence. 
 
-```curl -6 -s -L -o /dev/null -w "%{http_code}\n" https://pansift.com```
+<code><a target="_blank" href="https://explainshell.com/explain?cmd=curl+-6+-s+-L+-o+%2Fdev%2Fnull+-w+%22%25%7Bhttp_code%7D%5Cn%22+pansift.com">curl -6 -s -L -o /dev/null -w "%{http_code}\n" pansift.com</a></code>  ⬅ Click for explanation!
 
 ...should result in...
 
@@ -168,8 +173,10 @@ It's important to keep an eye on whether or not remote workers are dual stack (I
 #### Some Quick Wins?
 As noted previously, ensure you know whether or not you are supposed to have IPv6 as part of your service before changing or updating anything. **Always** take a backup of any configuration before making changes.
 
-<div class="table1-start"></div>
+##### IPv6 Causing DNS Issues
+Also, check if one of your issues might be that perhaps you are on CGNAT(Carrier Grade NAT) where you have native IPv6 connectivity but shared/pooled IPv4 addresses performing NAT64 for you in the carrier or ISP cloud. In this case, sometimes when their IPV4 pool or translations have issues, no IPv4 traffic passes but IPv6 does. What entails is that much of the sites or endpoints on the World Wide Web or parent Internet do not have IPv6 reachable interfaces. In this case, sites with IPv6 presence and AAAA DNS RRs will load (think Google, Cloudflare, Cisco) but sites that are only IPv4 enabled will not. This can also affect other protocols riding atop IP such as email SMTP/POP/IMAP, SSH, RDP, etc. 
 
+<div class="table1-start"></div>
 
 | Recommendations |
 | :----    |

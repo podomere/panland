@@ -247,8 +247,12 @@ unsafe = true
         weight  = 2
     [[menu.nav]]
         name    = "Pricing"
-        url     = "/pricing"
+        url     = "/pricing/"
         weight  = 3
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "/blog"
+        weight  = 4
 #   [[menu.nav]]
 #       name    = "Updates"
 #       url     = "https://app.pansift.com/announcements"

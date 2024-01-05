@@ -64,24 +64,24 @@
 							</li>
 							{{ end }}
 							<!-- li class="nav-item">
-								<a target="_blank" href="https://app.pansift.com/announcements" style="white-space:nowrap;" rel="nofollow" class="nav-link">Updates</a>
-							</li -->
-							<!-- li class="nav-item">
-								<a target="_blank" href="https://status.pansift.com/" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','status_up_from_navigation');" class="nav-link">Status</a>
-							</li -->
-							<li class="nav-item">
-								<a target="_blank" id="nav_sign_up" href="https://app.pansift.com/demo/logout_demo" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','sign_up_from_navigation');" class="nav-link">Start</a>
-							</li>
-							<!-- li class="nav-item">
-								<a target="_blank" href="https://app.pansift.com/demo/logout_demo_login" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','login_from_navigation');" class="nav-link">Login</a>
-							</li -->
-							<li class="nav-item">
-								<!--a id="nav_download_agent" href="https://pansift.com/dl/latest_pkg" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link">Download<i style="font-size: 1em;" class="fa fa-download align-middle mr-1" aria-hidden="true"></i></a> -->
-								<a id="nav_download_agent" href="https://pansift.com/dl/latest_pkg" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link">Download</a>
-							</li>
-							<li class="nav-item ml-2" style="margin-top: 2px !important">
-								<a target="_blank" id="nav_instant_demo" href="https://app.pansift.com/demo?first_insight=true" style="border-radius: 10px;white-space:nowrap; padding: .1rem .5rem !important;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_navigation');" class="btn btn-sm btn-dark nav-cta" style="border-radius: 10px;"><span class="align-middle" style="font-size: 1.1em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }} </span></a>
-							</li>
+				 <a target="_blank" href="https://app.pansift.com/announcements" style="white-space:nowrap;" rel="nofollow" class="nav-link">Updates</a>
+				 </li -->
+				 <!-- li class="nav-item">
+			 <a target="_blank" href="https://status.pansift.com/" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','status_up_from_navigation');" class="nav-link">Status</a>
+			 </li -->
+			 <li class="nav-item">
+				 <a target="_blank" id="nav_sign_up" href="https://app.pansift.com/demo/logout_demo" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','sign_up_from_navigation');" class="nav-link">Sign Up</a>
+			 </li>
+			 <!-- li class="nav-item">
+			<a target="_blank" href="https://app.pansift.com/demo/logout_demo_login" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','login_from_navigation');" class="nav-link">Login</a>
+			</li -->
+			<li class="nav-item">
+				<!--a id="nav_download_agent" href="https://pansift.com/dl/latest_pkg" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link">Download<i style="font-size: 1em;" class="fa fa-download align-middle mr-1" aria-hidden="true"></i></a> -->
+				<a id="nav_download_agent" href="https://pansift.com/dl/latest_pkg" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_agent_from_navigation');" class="nav-link">DL Agent</a>
+			</li>
+			<li class="nav-item ml-2" style="margin-top: 2px !important">
+				<a target="_blank" id="nav_instant_demo" href="https://app.pansift.com/demo?first_insight=true" style="border-radius: 10px;white-space:nowrap; padding: .1rem .5rem !important;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','visit_demo_from_navigation');" class="btn btn-sm btn-dark nav-cta" style="border-radius: 10px;"><span class="align-middle" style="font-size: 1.1em; font-weight: 900;"> {{ with .Site.Params.btnTxt }}{{ . | safeHTML }}{{ end }} </span></a>
+			</li>
 						</ul>
 					</div>
 				</nav>
@@ -90,7 +90,7 @@
 	</div>
 </section>
 <script>
-	if ($(window).width() < 1024) {
-			$("#aa-input-nav-container").remove();
-		}
+if ($(window).width() < 1024) {
+$("#aa-input-nav-container").remove();
+													 }
 </script>

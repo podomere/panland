@@ -453,7 +453,7 @@ enum apple80211_channel_flag
 	/** 								*/
  	/** APPLE80211_C_FLAG_80MHZ 	= 0x400,*/ 	// 80MHz  ??? 	✅ <-- Guessing here?
  	/** APPLE80211_C_FLAG_160MHZ 	= 0x800,*/ 	// 160MHz ??? 	   <-- Guessing again...
- 	/** APPLE80211_C_FLAG_320MHZ 	= 0x1000,*/ 	// 160MHz ??? 	   <-- And again, can we expect 0x1000 for 320MHz ?
+ 	/** APPLE80211_C_FLAG_320MHZ 	= 0x1000,*/ 	// 320MHz ??? 	   <-- And again, can we expect 0x1000 for 320MHz ?
 	/** 								*/
 	/** Here I am just speculating as this is not in the 2015 file */
 }

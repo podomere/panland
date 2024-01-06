@@ -621,8 +621,8 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  padding: 10px 0 10px 0;
-  /* padding: 60px 0 60px 0; */
+  /* padding: 10px 0 10px 0; */
+  padding: 60px 0 60px 0;
   /* padding: 120px 0 120px 0; */
   position: relative;
   display: -webkit-box;
@@ -1871,7 +1871,8 @@ a:focus, a:hover {
   Footer section
 ==================================================================*/
 .top-footer {
-  background-color: #222222;
+  background-color: #000000;
+  /* background-color: #222222; */
   /* border-top: 1px solid #404040; */
   border-top: 1px solid #222222;
   padding: 100px 0 80px;

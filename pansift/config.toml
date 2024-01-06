@@ -192,6 +192,14 @@ unsafe = true
         subtitle= ""
         btnTxt = "Early Access"
 
+    # Call to Action Section on About Page
+    [params.install_on]
+        enable  = true
+        bg      = ""
+        title   = "Install across multiple user Macbooks or remote Minis."
+        subtitle= ""
+        btnTxt = "Early Access"
+
     # Pricing
     [params.pricing]
         enable  = true
@@ -305,3 +313,7 @@ unsafe = true
         name    = "Research Topics"
         url     = "/research/"
         weight  = 2
+    [[menu.about]]
+        name    = "Solving"
+        url     = "/solving/wireless-network-watcher/"
+        weight  = 3

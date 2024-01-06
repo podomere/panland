@@ -1,0 +1,37 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<section class="blog-single section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+				<h1>{{ .Title }}</h1>
+				<div class="post-meta mb-3">
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							{{ .Params.subtitle }}
+						</li>
+					</ul>
+				</div>
+				<a href="/solving" ><img width="100px" src="https://api.dicebear.com/7.x/initials/svg?seed=ps&backgroundColor=4966f6" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<a href="/solving" ><img width="100px" src="https://api.dicebear.com/7.x/icons/svg?icon=alarm&backgroundColor=4966f6" class="rounded mb-3" alt="{{ .Summary }}"></a>
+				<a href="/solving" ><img width="100px" src="https://api.dicebear.com/7.x/icons/svg?seed={{ $seed := now.Unix }}.svg&backgroundColor=4966f6" class="rounded mb-3" alt="{{ .Summary }}"></a>
+
+				{{ .Content  | safeHTML }}
+
+				<br>
+				<br>
+				{{ partial "feature_summary.html" . }}
+				{{ partial "post-micro-tip.html" .}} 
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{{ partial "install_on.html" . }}
+
+{{ partial "cta.html" . }}
+
+{{ partial "footer.html" . }}

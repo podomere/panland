@@ -9,22 +9,19 @@
 				<div class="post-meta mb-3">
 					<ul class="list-inline">
 						<li class="list-inline-item">
-							{{ .Params.subtitle }}
+							{{ .Params.subtitle  | safeHTML }}
 						</li>
 					</ul>
 				</div>
-				<a href="/solving" ><img width="100px" src="https://api.dicebear.com/7.x/initials/svg?seed=ps&backgroundColor=4966f6" class="rounded mb-3" alt="{{ .Summary }}"></a>
-				<a href="/solving" ><img width="100px" src="https://api.dicebear.com/7.x/icons/svg?icon=alarm&backgroundColor=4966f6" class="rounded mb-3" alt="{{ .Summary }}"></a>
-				<a href="/solving" ><img width="100px" src="https://api.dicebear.com/7.x/icons/svg?seed={{ $seed := now.Unix }}.svg&backgroundColor=4966f6" class="rounded mb-3" alt="{{ .Summary }}"></a>
-
+				<center>
+					<a id="solving_network_watcher_install" href="https://pansift.com/dl/latest_pkg" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_from_solving_network_watcher');" class="text-center mt-3" onmouseover="this.style='opacity: 0.5;';" onmouseout="this.style='opacity: 1;';"><img alt="Click for a frictionless and instant live demo" title="Click to download + check your download folder. Double click the PKG file to install and run." class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/install_on/mini2.png"></img></a>
+				</center>
 				{{ .Content  | safeHTML }}
-
-				<br>
-				<br>
+				<center>
+				            <a id="solving_network_watcher_2_install" href="https://pansift.com/dl/latest_pkg" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','download_from_install_on');" class="text-center mt-3" onmouseover="this.style='opacity: 0.5;';" onmouseout="this.style='opacity: 1;';"><img alt="Click for a frictionless and instant live demo" title="Click to download + check your download folder. Double click the PKG file to install and run." class="img-fluid lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/images/install_on/macbookpro3.png"></img></a>
+				</center>
 				{{ partial "feature_summary.html" . }}
-				{{ partial "post-micro-tip.html" .}} 
-
-
+				{{/* partial "post-micro-tip.html" . */}} 
 			</div>
 		</div>
 	</div>

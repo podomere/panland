@@ -56,4 +56,4 @@ With full fidelity time series data (at up to 30s granular intervals), PanSift d
 ## Wireless Network Watcher Download
 #### Simplified Setup for Mac Users
 
-PanSift ensures that optimizing your network is just a click away for your Mac users, whether they work remotely or in the office. [Download](/dl/latest_pkg/) now to ensure your Mac users stay connected without interruptions.
+PanSift ensures that optimizing your network is just a click away for your Mac users, whether they work remotely or in the office. [Download](/dl/latest_pkg/) now to ensure your Mac users stay connected without interruptions. Deploy manually or with your favourite MDM (Mobile Device Management) solution such as Kandji or Jamf.

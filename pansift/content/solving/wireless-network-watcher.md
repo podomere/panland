@@ -17,7 +17,7 @@ A 'Wireless Network Watcher' addresses a range of concerns related to network pe
 ## Wireless Network Watcher For Mac
 #### Uninterrupted Connectivity
 
-Experience seamless connectivity with PanSift's dedicated Wireless Network Watcher for Mac. Effortless setup awaits with our straightforward Wireless Network Watcher download and Zero Touch Provisioning. 
+Experience seamless connectivity with PanSift's dedicated Wireless Network Watcher for Mac. Effortless setup awaits with our straightforward Wireless Network Watcher [download](/dl/latest_pkg/) using Zero Touch Provisioning. 
 
 ## Internet Connection Monitor
 #### Stability Wherever You Work

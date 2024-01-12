@@ -3,6 +3,7 @@ title: "Wireless Network Watcher"
 subtitle: "Elevate productivity and ensure a stable online experience with PanSift's advanced tools for wireless network monitoring on Apple Macs."
 layout: solving
 date: 2024-01-06T15:37:43+00:00
+image: "/images/solving/og_solving_social_image_01.png"
 draft: false
 ---
 <style>

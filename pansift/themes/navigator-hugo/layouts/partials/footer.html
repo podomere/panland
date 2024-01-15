@@ -53,20 +53,22 @@
 </footer>
 {{ "<!-- end footer -->" | safeHTML }}
 
-
-{{ "<!-- Essential Scripts -->" | safeHTML }}
-{{ if or (.IsHome) (eq .Page.Title "Design") (eq .Page.Title "About Sm") (eq .Page.Title "How It Works") }}
+{{ if or (eq .Page.Title "Design") (eq .Page.Title "How It Works") }}
 {{ "<!-- VideoJS -->" | safeHTML }}
 <script src="/plugins/videojs/dist/js/video.7.18.1.min.js"></script>
 <script src="/plugins/videojs-overlay/dist/js/videojs-overlay.min.js"></script>
 {{ end }}
+
+{{ "<!-- Essential Scripts -->" | safeHTML }}
+{{ if or (.IsHome) (eq .Page.Title "Design") (eq .Page.Title "About Sm") (eq .Page.Title "How It Works") }}
+{{ end }}
 {{ "<!-- Bootstrap -->" | safeHTML }}
-<script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>
-<script src="{{ "plugins/bootstrap/dist/js/bootstrap.min.js" | absURL }}"></script>
+<script src="/plugins/bootstrap/dist/js/popper.min.js"></script>
+<script src="/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
 {{ "<!-- Custom js -->" | safeHTML }}
-<script type="text/javascript" src="{{ "js/script.js" | absURL }}"></script>
+<script type="text/javascript" src="/js/script.js"></script>
 {{ "<!-- Lazy loading -->" | safeHTML }}
-<script type="text/javascript" src="{{ "plugins/lozad/lozad.min.js" | absURL }}"></script>
+<script type="text/javascript" src="/plugins/lozad/lozad.min.js"></script>
 <script>
 	$(function () {
 			el = document.querySelectorAll('.lozad');
@@ -74,6 +76,7 @@
 			observer.observe();
 		});
 </script>
+{{ if eq .Page.Title "Contact" }}
 <!--Start of Tawk.to Script-->
 <script type="text/javascript" async>
 	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -86,6 +89,7 @@
 			s0.parentNode.insertBefore(s1,s0);
 		})();
 </script>
+{{ end }}
 <!-- <script type="text/javascript">
 	_linkedin_partner_id = "587796";
  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];

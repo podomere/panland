@@ -161,31 +161,33 @@
 
 		{{"<!-- Stylesheets -->" | safeHTML}}
 		{{ "<!-- bootstrap.min css -->" | safeHTML}}
-		<link rel="stylesheet" href="{{ "plugins/bootstrap/dist/css/bootstrap.min.css" | absURL }}">
+		<link rel="stylesheet" href="/plugins/bootstrap/dist/css/bootstrap.min.css">
 		{{ "<!-- Main Stylesheet -->" | safeHTML }}
-		<link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+		<link rel="stylesheet" href="/css/style.css">
 		{{ if or (.IsHome) (eq .Page.Title "Design") (eq .Page.Title "About Sm") (eq .Page.Title "How It Works") }}
 		{{ "<!-- VideoJS -->" | safeHTML }}
-		<link rel="stylesheet" href="{{ "/plugins/videojs/dist/css/video-js.min.css" | absURL }}">
-		<link rel="stylesheet" href="{{ "/plugins/videojs-overlay/dist/css/videojs-overlay.css" | absURL }}">
+		<link rel="stylesheet" href="/plugins/videojs/dist/css/video-js.min.css">
+		<link rel="stylesheet" href="/plugins/videojs-overlay/dist/css/videojs-overlay.css">
 		{{ end }}
 		{{ "<!-- Font Awesome -->" | safeHTML }}
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" media="none" onload="this.media='all'">
 		{{ if (.IsHome)}}
 		{{ "<!-- Leaflet Map -->" | safeHTML }}
-		<link rel="stylesheet" href="{{ "plugins/leaflet/dist/css/leaflet.css" | absURL }}" media="none" onload="this.media='all'"/>
+		<link rel="stylesheet" href="/plugins/leaflet/dist/css/leaflet.css" media="none" onload="this.media='all'"/>
 		{{ end }}
 		{{ if (eq .Page.Title "Pricing")}}
 		{{ "<!-- NoUISlider Map -->" | safeHTML }}
-		<link rel="stylesheet" href="{{ "plugins/nouislider/dist/css/nouislider.min.css" | absURL }}" media="none" onload="this.media='all'"/>
+		<link rel="stylesheet" href="/plugins/nouislider/dist/css/nouislider.min.css" media="none" onload="this.media='all'"/>
 		{{ end }}
+		<!-- Scripts -->
 		{{ if or (.IsHome) (eq .Page.Title "Design") (eq .Page.Title "Benefits") (eq .Page.Title "How It Works") (eq .Page.Title "Design") (eq .Page.Title "Troubleshooting and Performance.") (eq .Page.Title "Training") (eq .Page.Title "Team")}}
 		<!-- Algolia Search Live DB -->
-		<script src="{{ "plugins/algolia/dist/js/algoliasearch.min.js" | absURL }}"></script>
-		<script src="{{ "plugins/algolia/dist/js/autocomplete.min.js" | absURL }}"></script>
+		<!-- We only need this on Desktop, not mobile, need to use detection and logic to remove/add -->
+		<script src="/plugins/algolia/dist/js/algoliasearch.min.js"></script>
+		<script src="/plugins/algolia/dist/js/autocomplete.min.js"></script>
 		{{ end }}
 		{{ "<!-- jQuery -->" | safeHTML }}
-		<script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
+		<script src="/plugins/jquery/dist/jquery.min.js"></script>
 
 		<!-- PostHog Testing 030923: Donal -->
 		<script>
@@ -200,7 +202,7 @@
 			<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
 			<!-- End Reddit Pixel -->
 			<!-- Feeding some leads with LeadFeeder? -->
-			<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)},1); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('YEgkB8lRJ0x4ep3Z'); </script>
+			<script async> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)},1); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('YEgkB8lRJ0x4ep3Z'); </script>
 
 	</head>
 

@@ -315,5 +315,5 @@ unsafe = true
         weight  = 2
     [[menu.about]]
         name    = "Solving"
-        url     = "/solving/wireless-network-watcher/"
+        url     = "/solving/"
         weight  = 3

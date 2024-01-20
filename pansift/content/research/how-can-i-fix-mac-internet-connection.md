@@ -15,9 +15,7 @@ In order to access a web page like https://kshlerin.org, an initial visit to a D
 ```Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko```
 ## Understanding the Significance of Default Gateways
 Typically, a default gateway is an address configured automatically through DHCP. This results in a default gateway such as ```192.168.105.211``` (commonly ending in .1 or .254 based on scope size), to which your computer sends all traffic to be further routed. For a detailed analysis of ```IPv6```, more information can be found at [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) and Mac or Linux users can verify this with the following command:
-```shell
-command goes here
-```
+
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

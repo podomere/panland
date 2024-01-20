@@ -17,10 +17,7 @@ Mozilla/5.0 (compatible; MSIE 9.0; AOL 9.7; AOLBuild 4343.19; Windows NT 6.1; WO
 ```
 ## The Significance of Default Gateways
 Typically, your default gateway is assigned automatically via DHCP and takes the form of an address like ```192.168.205.245``` (although they often end in .1 or .254 based on the scope size). This is where all the traffic from your computer is directed for further routing. For in-depth information on configuring ```IPv6```, visit [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/). Alternatively, you can perform a check on Mac or Linux using the following command:
-```html
-```bash
-command goes here
-```
+
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

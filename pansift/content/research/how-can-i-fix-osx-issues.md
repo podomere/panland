@@ -19,9 +19,6 @@ Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16
 ## The Significance of Default Gateways
 Typically, your default gateway is an automatically configured address through DHCP, such as ```192.168.251.129``` (although they usually end in .1 or .254 depending on the scope size). This is where your computer directs all its traffic for further routing. For information on setting up ```IPv6```, refer to our detailed guide on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/), or alternatively, you can check on Mac or Linux using the following command:
 
-```sh
-command goes here
-```
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

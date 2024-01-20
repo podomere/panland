@@ -17,9 +17,6 @@ In order to access a web page such as https://huel.org, you first contact a DNS 
 
 The default gateway is typically assigned automatically through DHCP and manifests as an address like ```10.26.166.158``` (although they usually end in .1 or .254 based on the scope). This is the location where your computer sends all of its traffic to be directed to the appropriate destination. For ```IPv6```, we delve deeply into the topic in our article [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/), or you can verify it on Mac or Linux using:
 
-```bash
-command line command goes here.
-```
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

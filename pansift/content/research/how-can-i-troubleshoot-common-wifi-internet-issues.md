@@ -16,9 +16,6 @@ In order to access a webpage like https://jacobson.net, you first connect with a
 ## Significance of Predefined Gateways
 The default gateway is typically an address that is automatically configured via DHCP. This address, such as ```10.31.163.253``` (although typically ending in .1 or .254 depending on the scope size), is where your computer sends all of its traffic to be routed onwards. A detailed breakdown of ```IPv6``` can be accessed in our write-up on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/); however, the verification process can be done on Mac or Linux with:
 
-```shell
-command goes here
-```
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

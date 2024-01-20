@@ -17,9 +17,6 @@ When accessing a website like https://collier.io, your computer first contacts a
 
 Your default gateway is typically assigned automatically through DHCP, resulting in an address such as ```192.0.0.20``` (although they usually end in .1 or .254 depending on the scope size). This is where your computer directs all its traffic to be routed onwards. For more information on ```IPv6```, you can refer to our in-depth guide on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/). If you are using Mac or Linux, you can check the default gateway with:
 
-```bash
-command goes here
-```
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

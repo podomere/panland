@@ -17,9 +17,7 @@ When accessing a website, such as https://ullrich.co, your computer initially co
 ## The Significance of Default Gateways
 
 Your default gateway is typically an address that is automatically configured via DHCP. This address, such as ```10.141.91.71``` (although they normally end in .1 or .254 depending on the scope size), is where your computer forwards all its traffic to be routed onwards. For ```IPv6```, you can find more detailed information at [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/). On Mac or Linux systems, you can check this using:
-```bash
-command goes here
-```
+
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

@@ -16,9 +16,7 @@ When attempting to access a website such as https://ratke.biz, the first step in
 ## Significance of Default Gateways
 
 Typically, your default gateway is an address that is automatically configured through DHCP. This default gateway, like ```192.168.73.64``` (although they generally end in .1 or .254 based on the scope size), is where your computer forwards all its traffic to be further routed. For ```IPv6```, detailed information on this topic can be found [here](/blog/how-to-fix-ipv6-connectivity/). You can also perform this check on Mac or Linux by using the following command:
-```bash
-command goes here
-```
+
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

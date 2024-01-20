@@ -15,9 +15,6 @@ When visiting a website such as https://padberg-bosco.net, the first step is to 
 ## Significance of Default Gateways
 You typically receive a default gateway automatically as a DHCP-configured address, such as ```172.31.118.5``` (usually ending in .1 or .254 depending on the scope size). This is where your computer sends all its traffic to be routed onwards. For ```IPv6```, you can find detailed information on [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/) or check on a Mac or Linux using:
 
-```bash
-your command here
-```
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

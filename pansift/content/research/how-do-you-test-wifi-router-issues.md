@@ -17,9 +17,7 @@ Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.
 ```
 ## The Significance of Default Gateways
 In most cases, your default gateway is automatically configured via DHCP and assigned an address, such as ```10.162.98.61``` (commonly ending in .1 or .254 based on the scope size). This is the location where your computer sends all its traffic to be routed onwards. For ```IPv6```, a detailed guide is available at [how-to-fix-ipv6-connectivity/](/blog/how-to-fix-ipv6-connectivity/). On Mac or Linux, you can verify this using the following commands:
-```html
-command goes here
-```
+
 ### IPv4 Routes and the Host IPv4 Route Table (inc. VPN)
 ```netstat -rn -f inet | egrep -i "default|0/1|128.0/1"```
 

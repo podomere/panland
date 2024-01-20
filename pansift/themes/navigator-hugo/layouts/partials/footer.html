@@ -10,6 +10,9 @@
 							<li>
 								<a target="_blank" href="https://app.pansift.com/demo/logout_demo_login" style="white-space:nowrap;" rel="nofollow" onclick="ga(google_tracker_name+'.send','event','Client','login_from_navigation');" class="">Login</a>
 							</li>
+							<li>
+								<a target="_blank" href="https://status.pansift.com" style="white-space:nowrap;" rel="nofollow" class="">System Status</a>
+							</li>
 							{{ range .Site.Menus.quick }}
 							<li>
 								<a href="{{ .URL }}">{{ .Name }}</a>
@@ -28,9 +31,6 @@
 							</li>
 							<li>
 								<a target="_blank" href="https://app.pansift.com/announcements" style="white-space:nowrap;" rel="nofollow" class="">Updates</a>
-							</li>
-							<li>
-								<a target="_blank" href="https://status.pansift.com" style="white-space:nowrap;" rel="nofollow" class="">System Status</a>
 							</li>
 							{{ range .Site.Menus.about }}
 							<li>
@@ -53,7 +53,7 @@
 </footer>
 {{ "<!-- end footer -->" | safeHTML }}
 
-{{ if or (eq .Page.Title "Design") (eq .Page.Title "How It Works") }}
+{{ if or (eq .Page.Title "Design") (eq .Page.Title "How It Works") (eq .Page.Title "About-PS") }}
 {{ "<!-- VideoJS -->" | safeHTML }}
 <script src="/plugins/videojs/dist/js/video.7.18.1.min.js"></script>
 <script src="/plugins/videojs-overlay/dist/js/videojs-overlay.min.js"></script>

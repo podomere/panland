@@ -1,13 +1,13 @@
-{{ if .Site.Params.aboutSm.enable }}
+{{ if .Site.Params.aboutPs.enable }}
 {{ "<!-- Start About Section -->" | safeHTML }}
 <section class="about-2 section" id="about" style="padding: 20px 0 !important;background-color: #333;color: #bdc3c7;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-12 text-center">
-				{{ with .Site.Params.aboutSm.title }}
+				{{ with .Site.Params.aboutPs.title }}
 				<h2 class="float-center" style="font-size: 2em; padding: 10px 20px 0px 50px !important;">{{ . | safeHTML }}</h2>
 				{{ end }}
-				{{ with .Site.Params.aboutSm.subtitle }}
+				{{ with .Site.Params.aboutPs.subtitle }}
 				<!-- <h5>{{ . | safeHTML }}</h5> -->
 				{{ end }}
 			</div>
@@ -34,7 +34,7 @@
 				</div>
 				<center>
 					<!-- <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Could you contribute 60 seconds or less about your experience troubleshooting your team or family&#39;s laptops (8 simple questions!) at <a href="https://t.co/HTe9YjdXLt">https://t.co/HTe9YjdXLt</a> 🔧</p>&mdash; PanSift : for a rapid find and fix! (@pansifter) <a href="https://twitter.com/pansifter/status/1365704536476762124?ref_src=twsrc%5Etfw">February 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-					{{ with .Site.Params.aboutSm.proof }}
+					{{ with .Site.Params.aboutPs.proof }}
 					<p style="color: white;" class="mt-4">{{ . | safeHTML }}</p>
 					{{ end }}
 				</center>

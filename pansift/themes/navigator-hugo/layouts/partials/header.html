@@ -164,7 +164,7 @@
 		<link rel="stylesheet" href="/plugins/bootstrap/dist/css/bootstrap.min.css">
 		{{ "<!-- Main Stylesheet -->" | safeHTML }}
 		<link rel="stylesheet" href="/css/style.css">
-		{{ if eq .Page.Title "Design" }}
+		{{ if or (eq .Page.Title "Design") (eq .Page.Title "About-PS")}}
 		{{ "<!-- VideoJS -->" | safeHTML }}
 		<link rel="stylesheet" href="/plugins/videojs/dist/css/video-js.min.css">
 		<link rel="stylesheet" href="/plugins/videojs-overlay/dist/css/videojs-overlay.css">

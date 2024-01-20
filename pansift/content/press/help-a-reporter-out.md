@@ -5,15 +5,6 @@ draft: false
 layout: press
 ---
 
-# Hooks / Ideas
- * [ ] The Network Reality of Work From Anywhere  
- * [ ] Monitoring The Unmanaged Edge of Work From Anywhere  
- * [ ] Synthetic Testing, Holding your Providers to Account
- * [ ] The New Edge of Remote Working
- * [ ] The Criticality of Home and Coworking Data Networks
- * [ ] Getting Past Turning it Off and On Again, WFA Support
- * [ ] When there's something strange in your home network, who you gonna call? 
-<br><br>
 
 ## Elevator Pitch
 Data networks are crucial but have never been brought in to so much focus as with the migration to Work From Anywhere. Our residential ISPs and local networks now facilitate what our employers office networks used to. But how do you support technical and network issues with a distributed and flexible workforce? It's not as easy to do a desk visit and how much time does one flaky location or a user with intermittent access issues cost you? Is it the ISP, the Wi-Fi, the local network, the router, the laptop, the user etc. the list goes on?
@@ -46,8 +37,19 @@ Once aggregated, anonymized, and normalized, there's a lot that PanSift can then
  * [x] What countries use which ISPs/vendors and who should I buy from?
  <br>
  <br>
- ## Notes
- PanSift has paying customers, is self-funded, and built by a solo-preneur. With free and paid users it's focused on scaling and confident that bets its taken on [Influx](https://www.influxdata.com/) and [time series](https://www.influxdata.com/time-series-database/) will pay off as the platform evolves.
+
+# Hooks / Ideas
+ * [ ] The Network Reality of Work From Anywhere  
+ * [ ] Monitoring The Unmanaged Edge of Work From Anywhere  
+ * [ ] Synthetic Testing, Holding your Providers to Account
+ * [ ] The New Edge of Remote Working
+ * [ ] The Criticality of Home and Coworking Data Networks
+ * [ ] Getting Past Turning it Off and On Again, WFA Support
+ * [ ] When there's something strange in your home network, who you gonna call? 
+<br><br>
+
+## Notes
+ PanSift has paying customers, is self-funded, and founded by a solo-preneur. With free and paid users it's focused on scaling and confident that bets its taken on [Influx](https://www.influxdata.com/) and [time series](https://www.influxdata.com/time-series-database/) will pay off as the platform evolves.
  
  Email: [donal@pansift.com](mailto:donal@pansift.com) for any other angles, questions, or queries... and see the main site for more info [PanSift](/).
  

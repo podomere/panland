@@ -63,11 +63,11 @@ unsafe = true
         videoThumb = "images/slider/3_steps_v15.png"
         videoURL   = "https://www.youtube.com/embed/xxxxxxxxx"
 
-    [params.aboutSm]
+    [params.aboutPs]
         enable  = true
         title   = "Simple but advanced <span style = 'color: #fff;'>troubleshooting</span> and <span style = 'color: #fff;'>monitoring</span> for Macs."
         subtitle = "Watch the video to see how to combat support fatigue with instant remote troubleshooting."
-        proof = "<strong>71%</strong> of the US workforce <strong><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2023-03-01-gartner-forecasts-39-percent-of-global-knowledge-workers-will-work-hybrid-by-the-end-of-2023'>will work hybrid (a mix of office and remote)</a></strong> in 2023.<br><strong>DEM (Digital Experience Monitoring)</strong> is the first step to guarantee productivity."
+        proof = "<strong>71%</strong> of the US workforce <strong><a target='_blank' href='https://www.gartner.com/en/newsroom/press-releases/2023-03-01-gartner-forecasts-39-percent-of-global-knowledge-workers-will-work-hybrid-by-the-end-of-2023'>worked hybrid (a mix of office and remote)</a></strong> in 2023.<br><strong>DEM (Digital Experience Monitoring)</strong> is the first step to guaranteeing supportability and productivity."
     
 		[params.aboutsm2]
         enable  = true
@@ -283,14 +283,14 @@ unsafe = true
 #        weight  = 7
     
 # Footer Quick links Menu
-     [[menu.quick]]
-        name    = "Blog"
-        url     = "/blog/"
-        weight  = 1
-    [[menu.quick]]
-       name    = "Pricing"
-       url     = "/pricing/"
-       weight  = 2
+    #[[menu.quick]]
+    #   name    = "Blog"
+    #   url     = "/blog/"
+    #   weight  = 1
+    #[[menu.quick]]
+    #  name    = "Pricing"
+    #  url     = "/pricing/"
+    #  weight  = 2
     #[[menu.quick]]
     #    name    = "Deception"
     #    url     = "/faketestimonials"
@@ -303,6 +303,10 @@ unsafe = true
         name    = "Contact"
         url     = "/contact/"
         weight  = 3
+    [[menu.quick]]
+        name    = "Video"
+        url     = "/about-ps/"
+        weight  = 4
 
     # Footer About Menu
     # [[menu.about]]
@@ -317,3 +321,9 @@ unsafe = true
         name    = "Solving"
         url     = "/solving/"
         weight  = 3
+    [[menu.about]]
+        name    = "Press"
+        url     = "/press/help-a-reporter-out/"
+        weight  = 4
+
+

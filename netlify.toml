@@ -88,3 +88,9 @@ HUGO_ENABLEGITINFO = "true"
   from = "/randomtest"
   to = "https://app.pansift.com/"
   force = true
+
+[[redirects]]
+  from = "/video"
+  to = "/about-ps/"
+	status = 302
+  force = true

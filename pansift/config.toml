@@ -196,7 +196,7 @@ unsafe = true
     [params.install_on]
         enable  = true
         bg      = ""
-        title   = "Download and install on <strong>any</strong> Macbook or Mini."
+        title   = "Download and install on <strong>any</strong> mobile or stationary Mac."
         subtitle= ""
         btnTxt = "Early Access"
 

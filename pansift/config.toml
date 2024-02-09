@@ -45,7 +45,7 @@ unsafe = true
         bg      = "images/hero/cockpit_inverted_v1.jpg"
 				#	heading = 'Instant Remote Troubleshooting for Macs. Confidently support Work From Anywhere 🏠🏝🛰'
 				# heading = "Remote monitoring and instant troubleshooting for Wi-Fi, ISP, and more! Install on any Mac 💻 🏠 🏝"
-				heading = "Instant remote troubleshooting for <i class='fab fa-apple'></i> Macs. Confident support starts with the client device perspective and data."
+				heading = "Instant remote troubleshooting on <i class='fab fa-apple'></i> Macs. Confident support starts with the client device perspective and data."
 				# heading = "Remote monitoring for Wi-Fi, ISP, and more! Install on a Mac for instant troubleshooting 🏠🏝"
 				# heading = 'Work less, do more. Regain your edge and fix faster with Digital Experience Monitoring for Macs.'
 				# heading = 'Digital Experience Monitoring for Macs. Confidently support Work From Anywhere 🌎 🕶'
@@ -54,7 +54,7 @@ unsafe = true
 				# heading = 'Regain your edge with instant remote troubleshooting and Real User Monitoring for Macs.'
 				# heading = 'Support Work From Anywhere 🌎 Instant remote troubleshooting for forward thinking technical teams.'
         # description2 = 'Keep an eye on your Wi-Fi in <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-user-lock"></i> managed</a></div></div> and <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-home"></i> unmanaged</a></div></div> locations. Solve DNS, IPv4, IPv6, web, and system issues rapidly. Go back in time with retrospective Digital Experience Monitoring! Control your time, follow the data, and regain your edge...'
-        description2 = 'Irrespective of <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-user-lock"></i> managed</a></div></div> or <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-home"></i> unmanaged</a></div></div> locations, <strong>solve</strong> Wi-Fi, DNS, IP, web, and system issues rapidly. Go back in time with retrospective Digital Experience Monitoring for remote and local teams! Control your time, save money and toil!'
+        description2 = 'Irrespective of <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-user-lock"></i> managed</a></div></div> or <div class="d-inline blog-tags"><div class="tag" style="margin: 0;"><a href="/demo" target="_blank"> <i class="fas fa-home"></i> unmanaged</a></div></div> locations, <strong>solve</strong> Wi-Fi, DNS, IP, web, and system issues rapidly. Go back in time with retrospective Digital Experience Monitoring for remote or local sites! Control your time, save money and reduce toil!'
 				description3 = "Live Demo"
         button  = true
         btnTxt = "Early Access"
@@ -71,7 +71,7 @@ unsafe = true
     
 		[params.aboutsm2]
         enable  = true
-        title   = '<a href="/design"><strong>Simple</strong></a> and <a href="/design"><strong>secure</strong></a> Real User Monitoring for macOS'
+        title   = '<a href="/design"><strong>Simple</strong></a> and <a href="/design"><strong>secure</strong></a> Real User Monitoring on macOS'
 		[params.aboutsm3]
         enable  = true
         title   = ' A <a href="/design/"><strong>transparent</strong></a> and <a href="/design/"><strong>trusted</strong></a> time series solution!'
@@ -188,7 +188,7 @@ unsafe = true
     [params.cta]
         enable  = true
         bg      = "images/call-to-action/cockpit_v3.jpg"
-        title   = "Rapid Digital Experience Monitoring for teams and tribes!"
+        title   = "Rapid Digital Experience Monitoring for teams, clients, and sites!"
         subtitle= ""
         btnTxt = "Early Access"
 
@@ -196,7 +196,7 @@ unsafe = true
     [params.install_on]
         enable  = true
         bg      = ""
-        title   = "Download and install on <strong>any</strong> mobile or stationary Mac."
+        title   = "Install on <strong>any</strong> mobile or stationary Mac to find out more..."
         subtitle= ""
         btnTxt = "Early Access"
 

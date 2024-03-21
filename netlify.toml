@@ -72,6 +72,12 @@ HUGO_ENABLEGITINFO = "true"
   force = true
 
 [[redirects]]
+  from = "/dl/candidate_pkg"
+  to = "https://github.com/pansift/p3/raw/main/Pansift-0.6.6.pkg"
+	status = 302
+  force = true
+
+[[redirects]]
   from = "/dl/latest_pkg"
   to = "https://github.com/pansift/p3/raw/main/Pansift-0.6.5.pkg"
   # to = "https://github.com/pansift/p3/raw/main/Pansift-0.6.4.pkg"

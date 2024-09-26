@@ -74,7 +74,7 @@ unsafe = true
     
 		[params.aboutsm2]
         enable  = true
-        title   = '<a href="/design"><strong>Simple</strong></a> and <a href="/design"><strong>secure</strong></a> Real User Monitoring on macOS'
+        title   = 'RUM (Real User Monitoring) for remote work, but <a href="/design"><strong><u>how?</u></strong></a>'
 		[params.aboutsm3]
         enable  = true
         title   = ' A <a href="/design/"><strong>transparent</strong></a> and <a href="/design/"><strong>trusted</strong></a> time series solution!'

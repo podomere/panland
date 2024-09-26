@@ -11,8 +11,21 @@
 				<!-- <h5>{{ . | safeHTML }}</h5> -->
 				{{ end }}
 			</div>
+			<div class="col-12 col-md-12 text-center">
+				<center>
+					<div id="mapholder" style="padding-bottom: 0px; background: rgba(0,0,0,0);">
+						<div id="mapid" onclick="javascript:void(0);ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero_map');window.open('https://app.pansift.com/demo?first_insight=true','_blank');" style="margin-bottom: 3rem!important; z-index: 100; height: 400px; width: 100%; outline: 0; border-color: #3a96cf; border-radius: 20px; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
+				</center>
+					</div>
+			</div>
 		</div>
-	</div>
+		<script>
+			if ($(window).width() < 1024) {
+							$("#mapholder").remove();
+						}
+		</script>
+		{{ "<!-- Leaflet js -->" | safeHTML }}
+		<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}" type="text/javascript"></script>
+		{{ "<!-- End About-sm2 section -->" | safeHTML }}
 </section>
-{{ "<!-- End About-sm2 section -->" | safeHTML }}
 {{ end }}

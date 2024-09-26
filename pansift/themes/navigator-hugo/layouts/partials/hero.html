@@ -1,40 +1,27 @@
 {{ if .Site.Params.hero.enable }}
 {{ "<!-- Hero Area -->" | safeHTML }}
-<section class="hero-area lozad">
+<section class="hero-area lozad" style="padding-bottom: 0px;">
 	<div class="container mb-3">
 		<div class="row">
-			<div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 mb-3" style="padding-left: 10px; padding-right: 10px;">
+			<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-1" style="padding-left: 10px; padding-right: 10px;">
 				<div class="block">
-					<h1 class="mt-3 mb-5 text-wrap"><strong style="font-size: 1.1em;font-weight: 900;">
+					<h1 class="mt-3 mb-1 text-wrap"><strong style="font-size: calc(1em + 2vw);font-weight: 900;">
 							{{ with .Site.Params.hero.heading | safeHTML }}
 							{{ . }}
 							{{ end }}
 						</strong></h1>
-						<div class="align-left mt-5">
-							<h5>
-								{{ with .Site.Params.hero.description2 | safeHTML }} {{ . }} {{ end }}
-							</h5>
-						</div>
 				</div>
 			</div>
-			<div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 text-center mt-4 mb-3" style="background: rgba(0,0,0,0);">
+			<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center mt-4 mb-3" style="background: rgba(0,0,0,0);">
 				<center>
-					<div id="mapholder" style="padding-bottom: 20px; background: rgba(0,0,0,0);">
-						<div id="mapid" onclick="javascript:void(0);ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero_map');window.open('https://app.pansift.com/demo?first_insight=true','_blank');" style="margin-bottom: 3rem!important; z-index: 100; height: 155px; width: 100%; outline: 0; border-color: #3a96cf; border-radius: 10px; box-shadow: 4, 4, 0, rgba(58, 150, 207, 0.1);"></div>
-						<div class="text-center">
-							<a target="_blank" id="hero_instant_demo" href="https://app.pansift.com/demo?first_insight=true" rel="nofollow" onclick="javascript:void(0);ga(google_tracker_name+'.send','event','Client','visit_demo_from_hero_button');" class="btn btn-block btn-primary text-center mt-4" style="border-radius: 10px;//background-color: rgb(34, 34, 34);"><span class="ml-3" style="font-size: 2.1em; font-weight: 900;">{{ with .Site.Params.hero.description3 | safeHTML }} {{ . }} {{ end }} 💻</span></a>
-						</div>
+					<div class="align-left mt-1">
+						<h5>
+							{{ with .Site.Params.hero.description2 | safeHTML }} {{ . }} {{ end }}
+						</h5>
 					</div>
 				</center>
 			</div>
 		</div>
 	</div>
 </section>
-<script>
-	if ($(window).width() < 1024) {
-			$("#mapholder").remove();
-		}
-</script>
-{{ "<!-- Leaflet js -->" | safeHTML }}
-<script src="{{ "plugins/leaflet/dist/js/leaflet.js" | absURL }}" type="text/javascript"></script>
 {{ end }}

@@ -495,3 +495,6 @@ This `CHANNEL_FLAGS` approach works for old versions of **OS X** and **macOS**, 
 📝 Big ups to <a target="_blank" href="https://twitter.com/technologeeks">Jonathan Levin</a> and I'd love any reader comments, suggestions, ideas, or criticisms you have [**here 💬**](/contact).
 <br>
 <br>
+🚩 Unfortunately the Apple airport utility has been deprecated as of Sonoma macOS 14.4 and above. Now we must use a mixture of other CLI commands such as `wdutil` to get the info we need. The above, however, was a fun deep dive and a good test of the underlying principles and understanding required to adapt to non-complete data in a real life product challenge.
+<br>
+<br>

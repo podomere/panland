@@ -356,7 +356,7 @@ I was really at a loss for how the `CHANNEL_FLAGS` in the airport utility's outp
 
 In the `airport` utility output there were some `HT`, `VHT`, and `HE` keys in scan data, but selective ones like the odd channel offset or center and secondary channel. Helpful, but super messy logic if trying to test for the absence or presence of lots of keys (especially for scans that still lacked crucial data).
 
-🚩 Basically though, an integer value of `10` doesn't map to a HEX value of `0x0480`, no sh*t! I racked my brain. Decimal `10` is `0xA` i.e. `A` in hex. Hex `0x0408` is `1032` in decimal (base `10`) as an integer. None of the networks or values lined up 🚩. 
+🚩 Basically though, an integer value of `10` doesn't map to a HEX value of `0x0480`, no sh*t! I racked my brain. Decimal `10` is `0xA` i.e. `A` in hex. Hex `0x0480` is `1032` in decimal (base `10`) as an integer. None of the networks or values lined up 🚩. 
 
 Then I started wondering if there were only _nibbles_ of the bitmask being used somehow? **Desperation had set in**.
 
